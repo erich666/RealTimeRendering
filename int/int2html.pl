@@ -175,6 +175,7 @@ sub OUTPUTLINES {
         <li><a class="nav-current" title="Object / object intersection page"  href="intersections.html">Intersections</a></li>
         <li><a title="Sites we like"  href="portal.html">Portal</a></li>
         <li><a title="Main resources page"  href="index.html">Resources</a></li>
+		<li><a title="WebGL/three.js Resources"  href="webgl.html">WebGL</a></li>
       <ul>
     </div>
   </div>
@@ -193,7 +194,7 @@ sub OUTPUTLINES {
       <td class="bodyText">
 
 <div class="metadata">
-Last changed: February 19, 2016
+Last changed: November 21, 2016
 </div>
 
 <P>
