@@ -1,0 +1,572 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <title>Resource for Computer Graphics - Ke-Sen Huang&#39;s Home Page</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+  #g_title p, #g_footer p, #g_description p {
+    margin: 0;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	Browser Fixes
+  	-- -- -- -- -- -- --
+  	
+  	This file uses CSS filtering methods to fix various
+  	layout bugs.
+
+  	Each of the following three imported files is a 
+  	separate, browser-specific CSS file that keeps all 
+  	hacks out of the main style sheet.
+  	
+  	Over time, as supporting these browsers no longer
+  	remains a priority, cleaning up the hacks is as
+  	easy as deleting the @import statement below, or
+  	simply no longer linking this file from the HTML.
+  	
+  */
+
+  /* 
+    fix ie6 "peekaboo bug" using the "holly hack". 
+    Note, this style only gets applied to ie6
+  */
+  * html .wrapper {
+    height: 0.1%;
+  }
+
+  /* 
+   * IE5 mac - overrides the IE/Win hack 
+   */
+
+  /*\*//*/
+
+  * html #threecolumn div {
+  	height: auto;
+  }
+
+  /**/
+
+
+  /* 
+   * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+   */
+
+  @media tty {
+   i{content:"\";/*" "*/}} * html #container { height: 1%; } /*";}
+  }/* */
+  /* Styling for editable elements. Eventually, this will be part of the style. */
+  .editable {
+    border: 1px dashed blue;
+  }
+  
+  #footer {
+    clear: both;
+  }
+  
+  /* Extra divs hidden by default. The custom CSS can override this though */
+  #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+    display: none;
+  }
+  
+  a img,:link img,:visited img {border: none;}
+
+
+  body {
+    text-align: center;
+  }
+  #container {
+    width: 718px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  /** BEGIN CUSTOM SKIN **/
+  /*
+
+  	-- -- -- -- -- -- --
+  	Base CSS
+  	-- -- -- -- -- -- --
+  	
+  	This file simply removes default styling on most HTML elements in 
+  	order to reduce the need to later override them.
+  	
+  */
+
+  h1,h2,h3,h4,h5,h6,pre,code,p {font-size: 1em;}
+  dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+  a img,:link img,:visited img {border: none;}
+  address {font-style: normal;}/*
+
+  	-- -- -- -- -- -- --
+  	Type Scheme: Deco
+  	-- -- -- -- -- -- --
+  	
+  */
+
+  body {
+  	font: 76% Verdana, sans-serif;
+  }	
+
+  h1, h2, h3, h4, h5, h6, p.description {
+  	font-family: "Trebuchet MS", Trebuchet, sans-serif;
+  }
+  h1 {
+  	font-size: 3em;
+  	font-weight: bold;
+  	letter-spacing: 2px;
+  }
+  h2 {
+  	font-size: 2em;
+  	font-weight: normal;
+  }
+  h3 {
+  	font-size: 1.5em;
+  }
+  h4 {
+  	font-size: 1.2em;
+  	letter-spacing: 0.2em;
+  }
+  h5 {
+  	font-size: 1.2em;
+  }
+  h6 {
+  	font-size: 1em;
+  	font-weight: bold;
+  }
+
+  p, td {
+  	line-height: 1.8em;
+  }
+  code, kbd {
+  	font-size: 1.25em;
+  }/*
+
+  	-- -- -- -- -- -- --
+  	STYLE: Chemise
+  	-- -- -- -- -- -- --
+
+  */
+
+
+
+
+  /* ie6win */
+
+  #footer {
+  	height: 1%;
+  }
+
+  /* ie5mac */
+
+  /*\*//*/
+  #footer { height: auto; }
+  /**/
+
+  /* ie5 win */
+  @media tty {
+   i{content:"\";/*" "*/}} td, * html th { font-size: 0.8em; } h1 { height: 1%; } /*";}
+  }/* */
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  a:link {
+  	padding: 0 2px;
+  }
+  body {
+  	font: 80% "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  }
+  blockquote {
+          margin: 1em 1em;
+          font-style: italic;
+  }
+  caption {
+  	font-size: 1em;
+  	text-align: left;
+  	padding: 4px 6px;
+  }
+  	font-weight: bold;
+  }
+  dd {
+  	margin: 0 0 1em 1em;
+  }
+  hr {
+  	color: #222;
+  	background: #222;
+  	border-color: #222;
+  }
+  td {
+  	padding: 2px 5px;
+  	vertical-align: top;
+  }
+  th {
+  	font-size: 1em;
+  	padding: 2px 5px;
+  	text-align: left;
+  	border-top: solid 1px #000;
+  	border-right: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  }
+
+  td p {
+  	margin-top: 0;
+  }
+
+  ul li {
+  	margin-bottom: 0.8em;
+  }
+  ol li {
+  	list-style: lower-alpha;
+  	margin-left: 2em;
+  	margin-bottom: 0.8em;
+  }
+
+
+
+
+
+
+
+
+  /* Header
+  ----------------------------------------------- */
+  #container {
+  }
+
+  #header {
+  	border-bottom: solid 1px #000;
+  	position: relative;
+  	margin: 0;
+  	margin-bottom: 10px;
+  }
+  p.description {
+  	font-size: 1em;
+  	margin: 0;
+  	padding: 0.5em 15px;
+  	border-bottom: solid 1px #000;
+  }
+  #g_description {
+  	margin: 1em 0 1em 15px;
+  }
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  p {
+  	margin: 1em 0;
+  	line-height: 1.5;
+  }
+  td, td p {
+  	line-height: 1.5;
+  }
+  h1,h2,h3,h4,h5,h6 {
+  	font-family: "Trebuchet MS", arial, sans-serif;
+  }
+  h1 {
+  	text-align: left;
+  	font-weight: normal;
+  	font-size: 2em;
+  	font-weight: bold;
+  	line-height: 1.5em;
+  	padding: 30px 20px 10px 15px;
+  	margin: 0;
+  	border-top: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  }
+  h2 {
+  	font-size: 1.5em;
+  	color: #000;
+  	margin: 0 0 1em 0;
+  	background: url(/-/include/style/chemise/slate/h2.gif) no-repeat left bottom;
+
+  }
+  h3 {
+  	font-size: 1.2em;
+  	padding: 4px 10px;
+  	margin-top: 0.5em;
+  }
+  h4 {
+  	margin-top: 0.6em;
+  	margin-left: 0.2em;
+  	font-size: 0.9em;
+  }
+  h5 {
+  	padding-left: 10px;
+  	font-size: 1em;
+  }
+  h6 {
+  	font-size: 0.9em;
+  }
+
+  a:link {
+     	color: #f6952e;
+  }
+  a:hover {
+  	background-color: #dbd4a6;
+  }
+
+  /* sidebar
+  ----------------------------------------------- */
+  #sidebar, #sidebar-alternate {
+  	margin-bottom: 2em;
+  }
+  #sidebar h3, #sidebar-alternate h3 {
+  	font-weight: normal;
+  	font-size: 1.3em;
+  	border-top: solid 1px #000;
+  	margin-bottom: 0.5em;
+  }
+  #sidebar h4, #sidebar h5, #sidebar h6,
+  #sidebar-alternate h4, #sidebar-alternate h5, #sidebar-alternate h6,
+  #sidebar p, #sidebar-alternate p {
+  	margin-left: 10px;
+  	margin-right: 20px;
+  }
+
+  #sidebar li, #sidebar-alternate li {
+  	margin-bottom: 0.8em;
+  }
+  #sidebar .links {
+  	margin-bottom: 2em;
+  }
+  #adsense {
+  	text-align: center;
+  }
+
+
+  .editable {
+  	border: dashed 1px #666;
+  }
+
+
+
+  /* layout patches
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #sidebar {
+  	float: left;
+  }
+  #twocolumn-liquid-right #sidebar {
+  	float: right;
+  }
+  #threecolumn #sidebar-alternate {
+  	float: right;
+  }
+
+
+
+  /* Footer
+  ----------------------------------------------- */
+  #footer {
+  	padding: 1px 15px;
+  	border-top: solid 1px #000;
+  	border-bottom: solid 1px #000;
+  	clear: both;
+  }
+  #footer hr {
+  	display: none;
+  }
+
+
+
+  /* fixed 1 column
+  ----------------------------------------------- */
+  #onecolumn #main-content .wrapper {
+  	margin: 20px;
+  }
+
+
+  /* fixed left 2 column
+  ----------------------------------------------- */
+  #twocolumn-left #main-content .wrapper {
+  	padding: 0 20px;
+  }
+
+
+
+  /* fixed right 2 column
+  ----------------------------------------------- */
+  #twocolumn-right #main-content .wrapper {
+  	padding: 0 20px;
+  }
+
+  /* fixed right 3 column
+  ----------------------------------------------- */
+  #threecolumn #main-content .wrapper {
+  	padding: 0 20px;
+  }
+  #threecolumn #sidebar h3, #threecolumn #sidebar-alternate h3 {
+  	margin-bottom: 0;
+  }
+
+  /* liquid left 2 column
+  ----------------------------------------------- */
+  #twocolumn-liquid-left #main-content .wrapper {
+  	margin: 0 20px;
+  }
+
+
+  /* liquid right 2 column
+  ----------------------------------------------- */
+  #twocolumn-liquid-right #main-content .wrapper {
+  	margin: 0 20px;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	COLOR SCHEME: Asp
+  	-- -- -- -- -- -- --
+
+  */
+
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  body {
+  	color: #1C2023;
+  	background: #F4F4F4 url(/-/includes/style/chemise/asp/body.gif) repeat-y center top;
+  }
+  caption {
+  	color: #fff;
+  	background: #2AA63B url(/-/includes/style/chemise/asp/h3.gif) repeat;
+  }
+  code, kbd {
+  	color: #139522;
+  }
+  dt {
+  	color: #139522;
+  }
+  hr {
+  	background: #604829;
+  	border-color: #604829;
+  	border-top: none;
+  }
+  th {
+  	color: #fff;
+  	background: #001474 url(/-/includes/style/chemise/asp/th.gif) repeat-x 0 0;
+  	border-top: solid 1px #63AFDF;
+  	border-right: solid 1px #002797;
+  	border-bottom: solid 1px #002797;
+  }
+
+
+
+
+
+
+
+
+  /* Header
+  ----------------------------------------------- */
+  #container {
+  	background: #fff url(/-/includes/style/chemise/asp/container.gif) repeat-x;
+  }
+
+  #header {
+  	border-bottom: solid 1px #7DA9C5;
+  }
+  p.description {
+  	color: #85C0E5;
+  	background: #0039A0 url(/-/includes/style/chemise/asp/description.gif) repeat-x 0 0;
+  	border-bottom: solid 1px #002797;
+  }
+
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  h1 {
+  	color: #fff;
+  	background: #55C76B url(/-/includes/style/chemise/asp/h1.gif) repeat-x left bottom;
+  	border-top: solid 1px #9EDFAA;
+  	border-bottom: solid 1px #63AFDF;
+  }
+  h2 {
+  	color: #0D83CE;
+  	background: url(/-/includes/style/chemise/asp/h2.gif) no-repeat left bottom;
+  }
+  h3 {
+  	color: #fff;
+  	background: #2AA63B url(/-/includes/style/chemise/asp/h3.gif) repeat;
+  }
+  h4 {
+  	color: #0D83CE;
+  	border-bottom: dotted 1px #7F9CCF;
+  }
+  h5 {
+  	color: #139522;
+  	background: url(/-/includes/style/chemise/asp/h5.gif) no-repeat left center;
+  }
+
+
+  /* sidebar
+  ----------------------------------------------- */
+  #sidebar, #sidebar-alternate {
+  	background: url(/-/includes/style/chemise/asp/sidebar.gif) repeat-x 0 0;
+  }
+  #sidebar h3, #sidebar-alternate h3 {
+  	color: #0D83CE;
+  	background: #E5E5E5 url(/-/includes/style/chemise/asp/sidebar-h3.gif) repeat-x left top;
+  	border-top: solid 1px #ddd;
+  }
+
+  .editable {
+  	border: dashed 1px #f00;
+  }
+
+
+
+  /* Footer
+  ----------------------------------------------- */
+  #footer {
+  	color: #fff;
+  	background: #55C76B url(/-/includes/style/chemise/asp/h1.gif) repeat-x left bottom;
+  	border-top: solid 1px #9EDFAA;
+  	border-bottom: solid 1px #0B8218;
+  }
+
+  /** END CUSTOM SKIN **/
+  </style>
+
+  <!-- Hack to avoid flash of unstyled content in IE -->
+  <script> </script>
+</head>
+
+<body id="onecolumn">
+  <div id="container">
+    <div class="wrapper">
+      <div id="header">
+        <div class="wrapper">
+          <h1 id="page-title"><div id='g_title'><p></p>Ke-Sen Huang&#39;s Home Page</div></h1>
+          <div style="clear: both;"></div>
+          <p class="description"><div id='g_description'><ul><li><span class="BigSF">Ph.D Student</span> <br></li><li><font class="FontSize9" color="#303030">Adviser: Professor <b>Shi-Nine Yang</b></font></li><li><font class="FontSize9" color="#303030"><a class="blue-small" href="http://www.cs.nthu.edu.tw/english/intro.html">Department of Computer Science</a>, <a class="blue-small" href="http://www.nthu.edu.tw/english/index.php">National Tsing Hua University</a></font><font class="FontSize9" color="#303030">,Taiwan.</font> </li><li>My research interests include: animation synthesis, animation summarization, and motion retrieval.</li><li><a href="ke-senhuang%27shomepagechangelog">My Web Changelog</a> </li></ul></div></p>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /editable --><!-- /wrapper --><!-- /header -->
+      <div id="main-content">
+        
+        <div class="wrapper">
+          <div class="content-item "><div id='g_body'><h3>Paper Collection / Resources<br></h3><ul><li><a href="PointBasedPaper.html" target="_blank">Point-based Graphics Papers</a></li><li><a href="http://www.realtimerendering.com/">Real-Time Rendering Resources</a> (Maintained by <a href="http://www.cs.lth.se/%7Etam/">Tomas
+ Akenine-Möller</a>, <a href="http://www.erichaines.com/">Eric
+ Haines</a>, and <a href="http://www.renderwonk.com/">Naty Hoffman</a>) <img style="" src="new.gif"></li></ul><h3>Computer Graphics Conference and Special Issue Calendar</h3><ul><li><a href="conference.html" target="_blank">2010</a><img style="" src="new.gif">, <a href="conference2009.html" target="_blank">2009</a>, <a href="conference2008.html" target="_blank">2008</a></li></ul><h3>SIGGRAPH</h3><ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/">Ke-Sen Huang</a><br></li><ul><li><a href="sig2009.html" target="_blank">SIGGRAPH 2009</a> (Submitted: 439     Accepted:    78     Acceptance Rate: 18%) <img src="new.gif"><br></li><li><a href="sig2008.html" target="_blank">SIGGRAPH 2008</a> (Submitted: 518     Accepted:    90     Acceptance Rate: 17%) </li></ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/">Ke-Sen Huang</a> and <a href="http://trowley.org/">Tim Rowley</a><br></li><ul><li><a href="sig2007.html" target="_blank">SIGGRAPH 2007</a> (Submitted: 455     Accepted: 108     Acceptance Rate: 24%)</li></ul><ul><li><a href="sig2006.html" target="_blank">SIGGRAPH 2006</a> (Submitted: 474     Accepted:   86     Acceptance Rate: 18%) </li></ul><ul><li><a href="sig2005.html" target="_blank">SIGGRAPH 2005</a> (Submitted: 461     Accepted:   98     Acceptance Rate: 21%) 
+</li></ul><li>Page maintained by <a href="http://trowley.org/">Tim Rowley</a><br></li><ul><li><a href="http://trowley.org/sig2004.html" target="_blank">SIGGRAPH 2004</a> (Submitted: 478     Accepted:   83     Acceptance Rate: 17%) </li></ul><ul><li><a href="http://trowley.org/sig2003.html" target="_blank">SIGGRAPH 2003</a> (Submitted: 424     Accepted:   81     Acceptance Rate: 19%) <br></li></ul><ul><li><a href="http://trowley.org/sig2002.html" target="_blank">SIGGRAPH 2002</a> (Submitted: 358     Accepted:   67     Acceptance Rate: 19%) <br></li></ul><ul><li><a href="http://trowley.org/sig2001.html" target="_blank">SIGGRAPH 2001</a> (Submitted: 300     Accepted:   65     Acceptance Rate: 22%) <br></li></ul><ul><li><a href="http://trowley.org/sig2000.html" target="_blank">SIGGRAPH 2000</a> (Submitted: 304     Accepted:   59     Acceptance Rate: 19%)<br></li></ul></ul><h3>SIGGRAPH Asia<br></h3><ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/">Ke-Sen Huang</a><br></li><ul><li><a href="siga2009Papers.htm" target="_blank">SIGGRAPH Asia 2009</a> (Submitted:  275     Accepted:   70     Acceptance Rate:  25%) <img src="new.gif"></li><li><a href="siga2008Papers.htm" target="_blank">SIGGRAPH Asia 2008</a> (Submitted:  320     Accepted:   59     Acceptance Rate:  18%)</li></ul></ul><h3>Eurographics</h3><ul><li><a href="eg2010Papers.htm" target="_blank">EG 2010</a> (Submitted:   ??     Accepted:   ??     Acceptance Rate: ??%) <img src="new.gif"></li><li><a href="eg2009Papers.htm" target="_blank">EG 2009</a> (Submitted:   243     Accepted:   56     Acceptance Rate: 23%)  <br></li><li><a href="eg2008Papers.htm" target="_blank">EG 2008</a> (Submitted:   300     Accepted:   58     Acceptance Rate: 19%)  <br></li><li><a href="eg2007Papers.htm" target="_blank">EG 2007</a> (Submitted:   212     Accepted:   50     Acceptance Rate:  24%)</li><li><a href="eg2006Papers.htm">EG 2006</a> (Submitted:   250     Accepted:   42     Acceptance Rate: 17%)</li><li><a href="eg2005Papers.htm">EG 2005</a> (Submitted:   303     Accepted:   47     Acceptance Rate: 16%) <br></li><li><a href="eg2004Papers.htm">EG 2004</a> (Submitted:   243     Accepted:   44     Acceptance Rate: 18%) </li><li><a href="eg2003Papers.htm">EG 2003</a> (Submitted:   221     Accepted:   45     Acceptance Rate: 20%)</li></ul><h3>Symposium on Interactive 3D Graphics and Games</h3><ul><li><a href="i3d2010Papers.htm" target="_blank">I3D 2010</a> (Submitted:   72     Accepted:   24     Acceptance Rate: 33%) <img src="new.gif"></li><li><a href="i3d2009Papers.htm" target="_blank">I3D 2009</a> (Submitted:   87     Accepted:   28     Acceptance Rate: 32%) <br></li><li><a href="i3d2008Papers.htm" target="_blank">I3D 2008</a> (Submitted:   57     Accepted:   24     Acceptance Rate: 42%) <br></li><li><a href="i3d2007Papers.htm" target="_blank">I3D 2007</a> (Submitted:   72     Accepted:   25     Acceptance Rate: 35%)</li><li><a href="i3d2006Papers.htm" target="_blank">I3D 2006</a> (Submitted:   73     Accepted:   28     Acceptance Rate: 38%)</li><li><a href="i3d2005Papers.htm" target="_blank">I3D 2005</a> (Submitted:   95     Accepted:   26     Acceptance Rate: 27%)</li><li><a href="i3d2003Papers.htm" target="_blank">I3D 2003</a> (Submitted: 102     Accepted:   27     Acceptance Rate: 26%) <br></li></ul><h3>Eurographics Symposium on Rendering</h3><ul><li><a href="egsr2009Papers.htm" target="_blank">EGSR 2009</a> (Submitted:   72     Accepted:   21     Acceptance Rate:  29%)  <img src="new.gif"></li><li><a href="egsr2008Papers.htm" target="_blank">EGSR 2008</a> (Submitted:   71     Accepted:   26     Acceptance Rate:  37%)  </li><li><a href="egsr2007Papers.htm" target="_blank">EGSR 2007</a> (Submitted:   94     Accepted:   33     Acceptance Rate:  35%) </li><li><a href="egsr2006Papers.htm" target="_blank">EGSR 2006</a> (Submitted: 109     Accepted:   39     Acceptance Rate:  36%) </li><li><a href="egsr2005Papers.htm" target="_blank">EGSR 2005</a> (Submitted:   93     Accepted:   31     Acceptance Rate:  33%) </li><li><a href="egsr2004Papers.htm" target="_blank">EGSR 2004</a> (Submitted:   98     Accepted:   39     Acceptance Rate:  40%) </li><li><a href="egsr2003Papers.htm" target="_blank">EGSR 2003</a> (Submitted:   81     Accepted:   30     Acceptance Rate:  37%)  <br></li></ul><h3>ACM SIGGRAPH / Eurographics Symposium on Computer Animation</h3><ul><li><a href="sca2009Papers.htm" target="_blank">SCA 2009</a> (Submitted:   67     Accepted:   26     Acceptance Rate: 39%)  <img src="new.gif"></li><li><a href="sca2008Papers.htm" target="_blank">SCA 2008</a> (Submitted:   60     Accepted:   24     Acceptance Rate: 40%) </li><li><a href="sca2007Papers.htm" target="_blank">SCA 2007</a> (Submitted:   81     Accepted:   28     Acceptance Rate: 35%)  <br></li><li><a href="sca2006Papers.htm" target="_blank">SCA 2006</a> (Submitted: 126     Accepted:   37     Acceptance Rate: 29%) <br></li><li><a href="sca2005Papers.htm" target="_blank">SCA 2005</a> (Submitted: 100     Accepted:   35     Acceptance Rate: 35%) <br></li><li><a href="sca2004Papers.htm" target="_blank">SCA 2004</a> (Submitted: 120     Accepted:   37     Acceptance Rate: 31%) <br></li><li><a href="sca2003Papers.htm" target="_blank">SCA 2003</a> (Submitted: 100     Accepted:   38     Acceptance Rate: 38%)</li></ul><h3>IEEE/Eurographics Symposium on Point-based Graphics</h3><ul><li><a href="pbg2007Papers.htm" target="_blank">PBG 2007</a> (Submitted:  26     Accepted:   14     Acceptance Rate:  54%)  </li><li><a href="pbg2006Papers.htm" target="_blank">PBG 2006</a> (Submitted:  33     Accepted:   16     Acceptance Rate: 48%) </li><li><a href="pbg2005Papers.htm" target="_blank">PBG 2005</a> (Submitted:  30     Accepted:   15     Acceptance Rate: 50%)</li><li><a href="pbg2004Papers.htm" target="_blank">PBG 2004</a> (Submitted:  44     Accepted:   24     Acceptance Rate: 55%) <br></li></ul><h3>Eurographics Symposium on Geometry Processing</h3><ul><li><a href="sgp2009Papers.htm" target="_blank">SGP 2009</a> (Submitted:  ?     Accepted:   26     Acceptance Rate:    ?%)<img style="" src="new.gif"></li><li><a href="sgp2008Papers.htm" target="_blank">SGP 2008</a> (Submitted:  96     Accepted:   23     Acceptance Rate:    24%)</li><li><a href="sgp2007Papers.htm" target="_blank">SGP 2007</a> (Submitted:  74     Accepted:   21     Acceptance Rate:    28%)  <br></li><li><a href="sgp2006Papers.htm" target="_blank">SGP 2006</a> (Submitted:  79     Accepted:   21     Acceptance Rate:    27%)  <br></li><li><a href="sgp2005Papers.htm" target="_blank">SGP 2005</a> (Submitted:  87     Accepted:   22     Acceptance Rate:    25%)  <br></li><li><a href="sgp2004Papers.htm" target="_blank">SGP 2004</a> (Submitted:    ?     Accepted:   25     Acceptance Rate:    29%)  <br></li><li><a href="sgp2003Papers.htm" target="_blank">SGP 2003</a> (Submitted:  72     Accepted:   25     Acceptance Rate:   35%) </li></ul><h3>High Performance Graphics<br></h3><ul><li><a href="hpg2009Papers.htm" target="_blank">HPG 2009</a> (Submitted: 72     Accepted: 21     Acceptance Rate: 29%)<img style="" src="new.gif"></li><ul><li>This conference is the synthesis of two highly-successful conference series: <b>Graphics Hardware</b> and <b>Interactive Ray Tracing</b><br></li></ul></ul><h3>IEEE/EG Symposium on Interactive Ray Tracing</h3><ul><li><a href="rt2008Papers.htm" target="_blank">RT 2008</a> (Submitted: 46     Accepted: 24     Acceptance Rate: 52%) <br></li><li><a href="rt2007Papers.htm" target="_blank">RT 2007</a> (Submitted: 43     Accepted: 23     Acceptance Rate: 53%)</li><li><a href="rt2006Papers.htm" target="_blank">RT 2006</a> (Submitted: 41     Accepted: 22     Acceptance Rate: 54%) <br></li></ul><h3>Eurographics Workshop on 3D Object Retrieval</h3><ul><li><a href="3dor2008Papers.htm" target="_blank">3DOR 2008</a> (Submitted:  19     Accepted:  10     Acceptance Rate: 53%)</li></ul><h3>Eurographics Workshop on Sketch-Based Interfaces and Modeling</h3><ul><li>Page maintained by <a href="http://wu.xiaomao.googlepages.com/">Xiaomao Wu</a></li><ul><li><a href="http://wu.xiaomao.googlepages.com/sbim08" target="_blank">SBIM 2008</a> (Submitted:  ?     Accepted:  ?     Acceptance Rate: ?%)</li></ul></ul><h3>Symposium on Applied Perception in Graphics and Visualization</h3><ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/"></a><a href="http://roy.walmsley.googlepages.com/home">Roy Walmsley</a><br></li><ul><li><a href="http://roy.walmsley.googlepages.com/apgv2008papers.htm">APGV 2008</a>  (Submitted: ?     Accepted: ?     Acceptance Rate: ?%)</li></ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/">Ke-Sen Huang</a> and <a href="http://roy.walmsley.googlepages.com/home">Roy Walmsley</a><br></li><ul><li><a href="apgv2007Papers.htm" target="_blank">APGV 2007</a> (Submitted: 39     Accepted: 14     Acceptance Rate: 36%)</li><li><a href="apgv2006Papers.htm" target="_blank">APGV 2006</a> (Submitted: 45     Accepted: 20     Acceptance Rate: 44%)</li></ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/">Ke-Sen Huang</a><br></li><ul><li><a href="apgv2005Papers.htm" target="_blank">APGV 2005</a> (Submitted: 43     Accepted: 21     Acceptance Rate: 49%)</li><li><a href="apgv2004Papers.htm" target="_blank">APGV 2004</a> (Submitted: 38     Accepted: 21     Acceptance Rate: 55%) <br></li></ul></ul><h3>Non-Photorealistic Animation and Rendering</h3><ul><li><a href="npar2009Papers.htm" target="_blank">NPAR 2009</a> (Submitted: 21     Accepted:   7     Acceptance Rate: 33%)  <img style="" src="new.gif"></li><li><a href="npar2008Papers.htm" target="_blank">NPAR 2008</a> (Submitted: 27     Accepted:  11    Acceptance Rate: 41%)  <br></li><li><a href="npar2007Papers.htm" target="_blank">NPAR 2007</a> (Submitted: 34     Accepted: 16     Acceptance Rate: 47%)</li><li><a href="npar2006Papers.htm" target="_blank">NPAR 2006</a> (Submitted: 43     Accepted: 17     Acceptance Rate: 40%)</li><li><a href="npar2004Papers.htm">NPAR 2004</a> (Submitted: 63     Accepted: 14     Acceptance Rate: 22%)</li></ul><h3>Pacific Graphics</h3><ul><li><a href="pg2009Papers.htm" target="_blank">PG 2009</a> (Submitted:  ?     Accepted:  31     Acceptance Rate:  ?%) <img style="" src="new.gif"></li><li><a href="pg2008Papers.htm" target="_blank">PG 2008</a> (Submitted:  ?     Accepted:  ?     Acceptance Rate:  ?%)</li><li><a href="pg2007Papers.htm" target="_blank">PG 2007</a> (Submitted:  179     Accepted:  39     Acceptance Rate:  22%) <br></li><li><a href="pg2006Papers.htm" target="_blank">PG 2006</a> (Submitted:  206     Accepted:  35    Acceptance Rate:   17%)</li><li><a href="pg2005Papers.htm" target="_blank">PG 2005</a> (Submitted:  267     Accepted:  37     Acceptance Rate:  14%)</li><li><a href="pg2004Papers.htm" target="_blank">PG 2004</a> (Submitted:  164    Accepted:    41     Acceptance Rate:  25%)  <br></li><li><a href="pg2003Papers.htm" target="_blank">PG 2003</a> (Submitted:  182     Accepted:  35     Acceptance Rate:  19%) <br></li><li>PG 2001 (Submitted:  112     Accepted:  41     Acceptance Rate:  37%)</li><li>PG 2000 (Submitted: 121     Accepted:  40     Acceptance Rate:  33%)</li></ul><h3>International Conference on Computational Photography</h3><ul><li><a href="iccp2009.html">ICCP 2009</a> (Submitted: ?     Accepted: ?     Acceptance Rate: ?%) <img src="new.gif"></li></ul><h3> Shape Modeling International</h3><ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/">Ke-Sen Huang</a></li><ul><li><a href="smi2009Papers.htm">SMI 2009</a> (Submitted: 105     Accepted:  26    Acceptance Rate: 25%) <img src="new.gif"></li></ul><li>Page maintained by <a href="http://roy.walmsley.googlepages.com/home">Roy Walmsley</a></li><ul><li><a href="http://roy.walmsley.googlepages.com/smi2008papers.htm">SMI 2008</a> (Submitted: ?     Accepted: 24     Acceptance Rate: ?%)</li></ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/">Ke-Sen Huang</a> and <a href="http://roy.walmsley.googlepages.com/home">Roy Walmsley</a><br></li><ul><li><a href="smi2007Papers.htm" target="_blank">SMI 2007</a> (Submitted: 62     Accepted: 23     Acceptance Rate: 37%)</li></ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/">Ke-Sen Huang</a><br></li><ul><li><a href="smi2006Papers.htm" target="_blank">SIM 2006</a> (Submitted: 58     Accepted: 20     Acceptance Rate: 34%)</li><li><a href="smi2005Papers.htm" target="_blank">SMI 2005</a> (Submitted: 80     Accepted: 30     Acceptance Rate: 38%) </li><li><a href="smi2004Papers.htm" target="_blank">SMI 2004</a> (Submitted: 79     Accepted: 29     Acceptance Rate: 37%) <br></li></ul></ul><h3>Computer Animation and Social Agents</h3><ul><li>Page maintained by <a href="http://roy.walmsley.googlepages.com/home">Roy Walmsley</a><br></li><ul><li><a href="http://roy.walmsley.googlepages.com/casa2008papers.htm">CASA 2008</a></li><li><a href="http://roy.walmsley.googlepages.com/casa2007papers.htm" target="_blank">CASA 2007</a><a href="http://roy.walmsley.googlepages.com/home"></a></li></ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/">Ke-Sen Huang</a><br></li><ul><li><a href="casa2004Papers.htm" target="_blank">CASA 2004</a></li><li><a href="casa2003Papers.htm" target="_blank">CASA 2003</a></li></ul></ul><h3>Computer Graphics International</h3><ul><li>Page maintained by <a href="http://roy.walmsley.googlepages.com/">Roy Walmsley</a></li><ul><li><a href="http://roy.walmsley.googlepages.com/cgi2008papers.htm" target="_blank">CGI 2008</a> (Submitted: ?     Accepted: ?     Acceptance Rate: ?%)  <br></li></ul><ul><li><a href="http://roy.walmsley.googlepages.com/cgi2007Papers.htm" target="_blank">CGI 2007</a> (Submitted: ?     Accepted: ?     Acceptance Rate: ?%)</li><li><a href="http://roy.walmsley.googlepages.com/cgi2006papers.htm" target="_blank">CGI 2006</a> (Submitted: ?     Accepted: ?     Acceptance Rate: ?%)   <br></li></ul><li>Page maintained by <a href="http://wu.xiaomao.googlepages.com/">Xiaomao Wu</a><br></li><ul><li><a href="http://ibr.cs.nthu.edu.tw/%7Exmwu/_private/CGI2005.htm" target="_blank">CGI 2005</a> (Submitted: 111     Accepted: 36     Acceptance Rate: 32%)</li><li><a href="http://ibr.cs.nthu.edu.tw/%7Exmwu/_private/CGI2004.htm" target="_blank">CGI 2004</a> (Submitted: 172     Accepted: 60     Acceptance Rate: 35%)</li></ul><li>Page maintained by <a href="http://kesen.huang.googlepages.com/">Ke-Sen Huang</a><br></li><ul><li><a href="cgi2003Papers.htm" target="_blank">CGI 2003</a> (Submitted: ?     Accepted: ?     Acceptance Rate: ?%) <br></li></ul></ul><h3>Eurographics/SIGGRAPH Graphics Hardware</h3><ul><li>Page maintained by <a href="http://roy.walmsley.googlepages.com/">Roy Walmsley</a></li><ul><li><a href="http://roy.walmsley.googlepages.com/gh2008papers.htm">GH 2008</a> (Submitted: 32     Accepted: 11    Acceptance Rate: 32%)</li></ul><li> Page maintained by <a href="http://trowley.org/">Tim Rowley</a></li><ul><li><a href="http://trowley.org/gh2007.html" target="_blank">GH 2007</a> (Submitted: 30     Accepted: 12     Acceptance Rate: 40%)</li></ul><ul><li><a href="http://trowley.org/gh2006.html" target="_blank">GH 2006</a> (Submitted: 45     Accepted: 14     Acceptance Rate: 31%)</li></ul><ul><li><a href="http://trowley.org/gh2005.html" target="_blank">GH 2005</a> (Submitted: 32     Accepted: 13     Acceptance Rate: 41%)</li></ul><ul><li><a href="http://trowley.org/gh2004.html" target="_blank">GH 2004</a> (Submitted: 43     Accepted: 14     Acceptance Rate: 33%)</li></ul><ul><li><a href="http://trowley.org/hwws2003.html" target="_blank">GH 2003</a> (Submitted: 39     Accepted: 13     Acceptance Rate: 33%)</li></ul><ul><li><a href="http://trowley.org/hwws2002.html" target="_blank">GH 2002</a> (Submitted: 32     Accepted: 14     Acceptance Rate: 44%)</li></ul><ul><li><a href="http://trowley.org/hwws2001.html" target="_blank">GH 2001</a> (Submitted:   ?     Accepted:   ?     Acceptance Rate:    ?%)</li></ul><ul><li><a href="http://trowley.org/hwws2000.html" target="_blank">GH 2000</a> (Submitted: 31     Accepted: 14     Acceptance Rate: 45%) <br></li></ul></ul><h3>IEEE Visualization</h3><ul><li>Page maintained by <a href="http://sites.google.com/site/wuyingcai/home">Yingcai Wu</a><br></li><ul><li><a href="http://sites.google.com/site/wuyingcai/vispapers/vis09" target="_blank">IEEE Visualization 2009</a> (Submitted: 202, Accepted: 54, Acceptance rate: 27%) <img src="new.gif"></li><li><a href="http://www.cse.ust.hk/%7Ewuyc/Vis08.htm" target="_blank">2008</a>, <a href="http://www.cse.ust.hk/%7Ewuyc/Vis07.htm" target="_blank">2007</a>, <a href="http://www.cse.ust.hk/%7Ewuyc/Vis06.htm" target="_blank">2006</a>, <a href="http://www.cs.ust.hk/%7Ewuyc/Vis05_2.htm" target="_blank">2005</a></li></ul><li>Page maintained by <a href="http://www.cg.tuwien.ac.at/%7Emsh/">Markus Hadwiger</a><br></li><ul><li><a href="http://www.vrvis.at/vis/resources/vis-paper-links/vis2004.html" target="_blank">2004</a>, <a href="http://www.vrvis.at/vis/resources/vis-paper-links/vis2003.html" target="_blank">2003</a></li></ul></ul><h3>IEEE Information Visualization</h3><ul><li> Page maintained by <a href="http://sites.google.com/site/wuyingcai/home">Yingcai Wu</a><a href="http://www.cse.ust.hk/%7Ezhouhong/"></a><ul><li><a href="http://sites.google.com/site/wuyingcai/vispapers/infovis09">IEEE InfoVis 2009</a> (Submitted:   ?     Accepted:   ?     Acceptance Rate:    ?%)  <img src="new.gif">  </li></ul></li><li> Page maintained by <a href="http://www.cse.ust.hk/%7Ezhouhong/">Hong Zhou</a><ul><li><a href="http://www.cse.ust.hk/%7Ezhouhong/InfoVis08_paper.html">IEEE InfoVis 2008</a> (Submitted: ? Accepted: ? Acceptance Rate: ?%) </li><li><a href="http://www.cse.ust.hk/%7Ezhouhong/InfoVis07_paper.html">IEEE InfoVis 2007</a> (Submitted: 116 Accepted: 27 Acceptance Rate: 23%) <br></li><li><a href="http://www.cse.ust.hk/%7Ezhouhong/InfoVis06_paper.html">IEEE InfoVis 2006</a> (Submitted: 104 Accepted: 24 Acceptance Rate: 23%) </li></ul></li></ul><h3>Eurographics/IEEE symposium on Visualization (EuroVis) (Page maintained by <a href="http://www.cse.ust.hk/%7Ewinchan/">Wing-Yi Chan</a>)</h3><ul><li><p><a href="http://www.cse.ust.hk/%7Ewinchan/eurovis/eurovis2008.html" target="_blank">2008</a>, <a href="http://www.cse.ust.hk/%7Ewinchan/eurovis/eurovis2007.html" target="_blank">2007</a>, <a href="http://www.cse.ust.hk/%7Ewinchan/eurovis/eurovis2006.html" target="_blank">2006</a>, <a href="http://www.cse.ust.hk/%7Ewinchan/eurovis/eurovis2005.html" target="_blank">2005</a></p></li></ul><h3>ACM Symposium on Solid and Physical Modeling</h3><ul><li><a href="spm2008Papers.htm" target="_blank">SPM 2008</a> (Submitted: 79     Accepted: 25     Acceptance Rate: 32%) <br></li><li><a href="spm2007Papers.htm" target="_blank">SPM 2007</a> (Submitted: 94     Accepted: 25     Acceptance Rate: 27%)</li><li><a href="spm2006Papers.htm" target="_blank">SPM 2006</a> (Submitted: 56     Accepted: 21     Acceptance Rate: 38%)</li><li><a href="spm2005Papers.htm" target="_blank">SPM 2005</a> (Submitted: 60     Accepted: 22     Acceptance Rate: 37%)  <br></li></ul><h3>Graphics Interface</h3><ul><li><a href="gi2009Papers.htm" target="_blank">GI 2009</a> (Submitted:   77     Accepted: 28     Acceptance Rate: 36%)<img src="new.gif"></li><li><a href="gi2008Papers.htm" target="_blank">GI 2008</a> (Submitted:   85     Accepted: 34     Acceptance Rate: 40%) <br></li><li><a href="gi2007Papers.htm" target="_blank">GI 2007</a> (Submitted:   89     Accepted: 43     Acceptance Rate: 48%)</li><li><a href="gi2006Papers.htm" target="_blank">GI 2006</a> (Submitted:   94     Accepted: 31     Acceptance Rate: 33%) <br></li><li><a href="gi2005Papers.htm" target="_blank">GI 2005</a> (Submitted: 104     Accepted: 30     Acceptance Rate: 29%) <br></li></ul><h3>Winter School of Computer Graphics (WSCG)<br></h3><ul><li><a href="http://wscg.zcu.cz/DL/wscg_DL.htm">Journal of WSCG <img src="new.gif"></a></li><li><a href="http://wscg.zcu.cz/DL/wscg_DL.htm">WSCG Proceedings <img src="new.gif"></a></li></ul><h3>ACM Multimedia</h3><ul><li>Page maintained by <a href="http://mpac.ee.ntu.edu.tw/%7Eyihsuan/">Yi-Hsuan Yang</a> and <a href="http://mpac.ee.ntu.edu.tw/people/chiakai/">Chia-Kai Liang</a></li><ul><li><a href="http://mpac.ee.ntu.edu.tw/multimediaconf/acmmm2008.html">MM 2008</a> (Submitted: ?    Accepted: ?     Acceptance Rate: ?%) </li></ul></ul><h3>IASTED Computer Graphics and Imaging (Page maintained by <a href="http://roy.walmsley.googlepages.com/">Roy Walmsley</a>)</h3><ul><li><a href="http://roy.walmsley.googlepages.com/cgim2008papers.htm" target="_blank">2008</a>, <a href="http://roy.walmsley.googlepages.com/cgim2007papers.htm" target="_blank">2007</a></li></ul><h3>IEEE VGTC Pacific Visualization Symposium (PacificVis) (Page maintained by <a href="http://roy.walmsley.googlepages.com/">Roy Walmsley</a>)</h3><ul><li><a href="http://roy.walmsley.googlepages.com/pacificvis2008papers.htm" target="_blank">PacificVis 2008</a><img style="" src="new.gif"></li><li><a href="http://roy.walmsley.googlepages.com/apvis2007papers.htm" target="_blank">Asian-Pacific Symposium on Information Visualization (APVIS) 2007</a></li></ul><h3>Computer Vision Resource (Page maintained by <a href="http://www.gmazars.info/conf/index.html">Gilles Mazars</a>)</h3><ul><li>European Conference on Computer Vision (ECCV)</li><ul><li><a href="http://www.gmazars.info/conf/eccv2008.html">ECCV 2008</a> (<a href="http://www.gmazars.info/conf/rss/rss_builder.php?feed=rss_eccv2008.xml">rss</a>)</li><li><a href="http://www.gmazars.info/conf/eccv2006.html">ECCV 2006</a><br></li></ul><li>Asian Conference on Computer Vision (ACCV) </li><ul><li><a href="http://www.gmazars.info/conf/accv2007.html">ACCV 2007</a> (<a href="http://www.gmazars.info/conf/rss/rss_builder.php?feed=rss_accv2007.xml">rss</a>) <br></li></ul><li>IEEE International Conference on Computer Vision (ICCV) </li><ul><li><a href="http://gmazars.info/conf/iccv2007.html" target="_blank">ICCV 2007</a></li></ul><li>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) </li><ul><li><a href="http://www.gmazars.info/conf/cvpr2009.html" target="_blank">CVPR 2009</a> (<a href="http://www.gmazars.info/conf/rss/rss_builder.php?feed=rss_cvpr2009.xml">RSS</a>)<img src="new.gif"></li><li><a href="http://gmazars.info/conf/cvpr2008.html" target="_blank">CVPR 2008</a> (<a href="http://www.gmazars.info/conf/rss/rss_builder.php?feed=rss_cvpr2008.xml">RSS</a>)  <br></li><li><a href="http://www.gmazars.info/conf/cvpr2007.html" target="_blank">CVPR 2007</a> (<a href="http://www.gmazars.info/conf/rss/rss_cvpr2007.xml">RSS</a>)</li></ul></ul><h3>Acceptance Rates</h3><ul><li><a href="http://web.cs.wpi.edu/%7Egogo/hive/AcceptanceRates/" target="_blank">Acceptance Rates for Publications in Virtual Reality / Graphics / HCI / Visualization / Vision</a></li><li><a href="http://www.cs.ucsb.edu/%7Ealmeroth/conf/stats/">Networking Conferences Statistics</a></li><li><a href="http://people.engr.ncsu.edu/txie/seconferences.htm">Software Engineering Conferences Statistics</a></li><li><a href="http://wwwhome.cs.utwente.nl/%7Eapers/rates.html">Database Conferences Statistics</a></li></ul><h3>Central European Seminar on Computer Graphics for students</h3><ul><li><a href="http://www.cescg.org/CESCG-2008/index.html">2008</a>, <a href="http://www.cescg.org/CESCG-2007/index.html" target="_blank">2007</a>, <a href="http://www.cescg.org/CESCG-2006/index.html" target="_blank">2006</a>, <a href="http://www.cescg.org/CESCG-2005/index.html" target="_blank">2005</a>, <a href="http://www.cescg.org/CESCG-2004/index.html" target="_blank">2004</a>, <a href="http://www.cescg.org/CESCG-2003/index.html" target="_blank">2003</a>, <a href="http://www.cescg.org/CESCG-2002/index.html" target="_blank">2002</a>, <a href="http://www.cescg.org/CESCG-2001/index.html" target="_blank">2001</a>, <a href="http://www.cescg.org/CESCG-2000/index.html" target="_blank">2000</a>, <a href="http://www.cescg.org/CESCG99/index.html" target="_blank">1999</a>, <a href="http://www.cescg.org/CESCG98/index.html" target="_blank">1998</a>, <a href="http://www.cescg.org/CESCG97/index.html" target="_blank">1997</a></li></ul></div></div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /main-content -->
+      <div id="footer"><div class="wrapper">
+        <hr />
+        <p><div id='g_footer'><p></p><a class="blue-small" href="mailto:kesen.huang@gmail.com"><font color="#0000ff" size="2">kesen.huang@gmail.com</font></a></div></p>
+        <div style="clear: both"></div>
+      </div></div>
+      <!-- /wrapper --><!-- /footer -->
+    </div>
+  </div>
+<!-- /wrapper --><!-- /container -->
+
+<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div>
+<div id="extraDiv3"><span></span></div><div id="extraDiv4"><span></span></div>
+<div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+
+</body>
+</html>

@@ -1,0 +1,459 @@
+Stormy Weather
+Willi Geiger
+
+Tile-Based Texture Mapping on Graphics Hardware
+Li-Yi Wei
+
+Superimposing Pictorial Artwork with Projected Imagery
+Oliver Bimber
+
+Video See-Through and Optical Tracking with Consumer Cell Phones
+Mathias Möhring
+
+Inter-frame caching for high quality terrain rendering
+Mårten Larsson
+
+Creating Animations of Fluids and Cloth with Moving Characters
+Nobuhiro Kondoh
+
+X-Ray Window: Portable Visualization on the International Space Station
+William W. White
+
+Controsenso But Not So Much: Digital Artifacts to Ease Communication and Exchange with Seeing-Impaired People
+Maria Alberta Alberti
+
+Reflectance Field Rendering of Human Faces in  "Spider-Man 2"
+Mark Sagar
+
+Making The Leap: Crosstraing Traditional Artists in 3D
+Matt Elson
+
+Throwing A CGI Curve Ball: Cartoony Character Setup on Chicken Little
+Kevin Geiger
+
+Making of The Superpunch
+George D. Borshukov
+
+Fast Solutions to Gas Volumetrics in Matrix Revolutions
+Johnny Gibson
+
+lgf3: A Versatile Framework for Image-Based Modeling and Rendering
+Christian Vogelgsang
+
+Conceiving embodiment: the dance-architecture of Spawn
+Mette Ramsgard Thomsen
+
+Constrained Segmentation of Complex Models for Image-Based Texture Editing
+Ioana Boier-Martin
+
+Interactive Scene Modeling from Dense Color and Sparse Depth
+Voicu Popescu
+
+Wrangling Lighting and Rendering Data at Disney Feature Animation
+Mark A. McLaughlin
+
+Sketch Pose: Artist Friendly Posing Tool
+Brendan Duncan
+
+Visualization of Heart Function
+Vassili Hurmusiadis
+
+A Framework for Haptic Rendering of Large-Scale Virtual Environments
+Mashhuda Glencross
+
+Synaesthesia, Data Mapping and Synchronicity
+Brian Evans
+
+All This Useless Beauty
+Anthony Santoro
+
+A Software for Reconstructing 3D-Terrains from Scanned Maps
+Joachim Pouderoux
+
+Haptic Rendering of Interaction between Textured Models
+Miguel A. Otaduy
+
+Real-Time Skin Rendering on Graphics Hardware
+Pedro V. Sander
+
+Practical Real-Time Hair Rendering and Shading
+Thorsten Scheuermann
+
+There's More Than One Way to Skin a Wolf: Wolf Transformations in "Van Helsing"
+Nigel Sumner
+
+Interactive Motion Decomposition
+Ari Shapiro
+
+Abstracting design, designing abstractions… Use of computer graphics in early stages of architectural design
+Andrzej Zarzycki
+
+Geometry Synthesis
+Ares Lagae
+
+Marker-less Human Motion Transfer
+Kong-man Cheung
+
+Swirling-Sweepers: Constant-Volume Modeling
+Alexis Angelidis
+
+Ecce Homology
+Ruth West
+
+Constraint-based Synthesis of Visual Speech
+James Edge
+
+Reflection Morphing
+Andrew Martin
+
+Bulging Muscles and Sliding Skin: Deformation Systems for Hellboy
+Paul G. Thuriot
+
+Real-time rendering for autostereoscopic 3D display systems
+Shingo Yanagawa
+
+Modeling Expressive 3D Caricatures
+Ergun Akleman
+
+Column Modeling
+Esan Mandal
+
+Subband Encoding of High Dynamic Range Imagery
+Greg Ward
+
+Artifacts of the Presence Era: Visualizing Presence for Posterity
+Fernanda B. Viégas
+
+Computer-Linked Autofabricated 3D Model For Teaching Structural Biology
+Alexandre Gillet
+
+A Heightfield on an Isometric Grid
+Morgan McGuire
+
+Galilean Invariance for Fluid Simulation
+Maurya Shah
+
+Cords: Keyframe Control of Curves with Physical Properties
+Patrick Coleman
+
+The Day After Tomorrow Twister sequence Barbie Toolkit
+Jonah Hall
+
+Veggie Diaries: Urban Mobile MR Entertainment
+Tomoki Saso
+
+An efficient production pipeline to create 52 full 3DCGI anime episodes.
+Ken Suzuki
+
+Adaptable Setup For Performance Driven Facial Animation
+Volker Helzle
+
+Fragra: A Visual-Olfactory VR Game
+Takashi Amada
+
+Rendering Falling Rain and Snow
+Niniane Wang
+
+Workflow and CG Tools for the Cartoon TV Program ""Monkey Turn"
+Megumi Kondo
+
+Tweaking stylized light and shade
+Ken Anjyo
+
+Strokes for Drawings Using Illuminated Paper Surfaces
+Kyoko Murakami
+
+Radiance Caching and Local Geometry Correction
+Okan Arikan
+
+Improved Automatic Caricature by Feature Normalization and Exaggeration
+Zhenyao Mo
+
+NightDriving – Videodance in Performance
+John Crawford
+
+3D Character Extension for Stop Motion Puppets
+Melanie Beisswenger
+
+Experimental Validation of Analytical BRDF Models
+Addy Ngan
+
+Sketch Interface for 3D Modeling of Flowers
+Takashi Ijiri
+
+A New Style of Ancient Culture – Animated Chinese Dunhuang Murals
+Yi-Bo Zhu
+
+Long Hair and Fur for "Van Helsing"
+Zoran Kacic-Alesic
+
+Mosaic for Stackable Objects
+Jin Wan Park
+
+Practical Simulation of Surface Tension Flows
+Jonathan M. Cohen
+
+Non-Linear Kernel-based Precomputed Light Transport
+Paul Green
+
+A Self-Reconfigurable Camera Array
+Cha Zhang
+
+Image-based lighting using a piecewise-constant importance function
+Jonathan M. Cohen
+
+Cafe Tools: Contents that Connect People
+Atsuro Ueki
+
+Extracting Face Bump Maps From Video
+James Paterson
+
+Quick-VDR: Interactive View-Dependent Rendering of Massive Models
+Sungeui Yoon
+
+Making Space for Time in Time-Lapse Photography
+Michael Terry
+
+Learning Silhouette Features for Control of Human Motion
+Liu Ren
+
+zDOF -  A Fast, Physically Accurate Algorithm for Simulating Depth-of-Field Effects in Synthetic Images Using Z-Buffers
+Clay Budin
+
+I,Robot: Character Pipeline, Tools, and Methods
+Serge Sretschinsky
+
+A Viscous Paint Model for Interactive Applications
+William Baxter
+
+A Perceptual Metric for Production Testing
+Hector Yee
+
+Procedural Building Destruction for "The Day After Tomorrow"
+Jens Zalzala
+
+Robust Rendering of High Resolution Terrain
+Matt Fairclough
+
+Fast and Reliable Collision Culling using Graphics Processors
+Naga Govindaraju
+
+Outdoor Mixed Reality Utilizing Surveillance Cameras
+Taisuke Takemasa
+
+Refolding Planar Polygons
+James F. O'Brien
+
+Shape Preserving Mesh Deformation
+Alla Sheffer
+
+Illusory Interactive Performance by Self Eye Movement
+Junji Watanabe
+
+Quick Image-Based Lighting of Hair
+Neulander
+
+Displacement mapping with ray-casting in hardware
+Keith Yerex
+
+BLADESHIPS -An Interactive Attraction in Mixed Reality-
+Masayuki Takemura
+
+PACKMAN: Texture Compression for Mobile Phones
+Jacob Strom
+
+Re-usable Implicit Functions
+Alyn Rockwood
+
+Inside-Out Interaction: An Interaction Technique for Dealing with Large Interface Surfaces such as Web Pages on Small Screen Displays
+Daniel Fallman
+
+Towards a unified approach to 3D environment capture and rendering.
+Gordon Watson
+
+Quality Issues in Asset Creation on a Massive Scale for EverQuest II
+Stuart Compton
+
+Tile-based kolam patterns
+Saty Raghavachary
+
+Fair LVC-Curves on Subdivision Surfaces
+Carlo H. Sequin
+
+A Self-Shadow Algorithm for Dynamic Hair using Density Clustering
+Tom Mertens
+
+RLE Sparse Level Sets
+Ben Houston
+
+Motion Emphasis Filter for Making Mental Motion of 3D Characters
+Yoshiyuki Koie
+
+Squashing Cubes: Automating Deformable Model Construction for Graphics
+Doug L. James
+
+The Body's Surface as a Multimedia Interface: Closed-Eyes Nonverbal Telehaptic Communication
+William Meyer
+
+Electric Sheep
+Scott Draves
+
+Automatic Image Retargeting
+Vidya Setlur
+
+Generalized Approach to Rendering Fabric
+Rick Glumac
+
+Virtual Instrument Design and Animation
+Cynthia Bruyns
+
+CC Shadow Volumes
+Brandon Lloyd
+
+Animating Puss in Boots' Feather in Shrek2
+Scott Peterson
+
+Fireballs in Shrek2
+Arnauld Lamorlette
+
+Image Based Fluids
+Lewis Kofsky
+
+Procedural Petticoats in Shrek2
+Matt Baer
+
+Art-Driven Fluids & Foliage
+Francois Antoine
+
+Photometric Stereo for Archeological Inscriptions
+Per Einarsson
+
+Functionally Optimized Subdivision Surfaces
+Pushkar Joshi
+
+Rendering translucent Robots
+Paul George
+
+Unlighting the Parthenon
+Chris Tchou
+
+Be-heading a Vampire: Combining 2D and 3D Elements with On-set Motion Capture to Create the Vampire Brides in Van Helsing.
+Doug Griffin
+
+Faster GPU Computations Using Adaptive Refinement
+Craig Donner
+
+Growing Up With Fluid Simulation on ""Day After Tomorrow"
+Jason Iversen
+
+Similarity-Based Surface Modelling Using Geodesic Fans
+Steve Zelinka
+
+The Art of SSX3
+Henry LaBounta
+
+Multilinear Models for Facial Synthesis
+Daniel Vlasic
+
+Wearable scanning laser projector (WSLP)
+Taro Maeda
+
+UberFlow: A GPU-Based Particle Engine
+Peter Kipfer
+
+Imitation and Social Intelligence for Synthetic Characters
+Daphna Buchsbam
+
+Multi-Resolution Sound Rendering
+Michael Wand
+
+Visual Simulation of the Interaction between Market Demand, Planning Rules and City Form
+Michael Flaxman
+
+Very Slowly Animating Textiles: Shimmering Flower
+Joanna Berzowska
+
+Prong Features Detection of a 3D Model Based on the Watershed Algorithm
+Fu-Che Wu
+
+Ray Maps for Global Illumination
+Jiri Bittner
+
+Building Crowds Of Unique Characters
+David Prescott
+
+Image-Based Tomographic Reconstruction of Flames
+Ivo Ihrke
+
+Interactive Visualization of Exceptionally Complex Industrial CAD Datasets
+Andreas Dietrich
+
+Interactive American Sign Language Dictionary
+Jose L. Hernandez-Rebollar
+
+Spherical Harmonic Gradients
+Thomas Annen
+
+DD::Fluid::Solver::SolverFire
+Henrik Falt
+
+A Physically Based Model of Ice
+Theodore Kim
+
+Inelastic Scattering in Participating Media Using Curved Photon Mapping
+D. Gutierrez
+
+RenderMonkey: An Effective Environment for Shader Prototyping and Development
+Natalya Tatarchuk
+
+A Malleable Surface Touch Interface
+Florian Vogt
+
+Posing as a Werewolf: The Creature Matchmove Tool Used for Van Helsing
+Marla Newall
+
+Scents of Space: an interactive smell system
+Usman Haque
+
+The Tar Monster: Creating a Character With Fluid Simulation
+Mark Wiebe
+
+Simulating and Rendering Wet Hair
+Kelly Ward
+
+An Autostereoscopic Optical See-Through Display for Augmented Reality
+Alex Olwal
+
+Bidirectional Importance Sampling for Illumination from Environment Maps
+David Burke
+
+Symbol Mall
+Jirayu Uttaranakorn
+
+Abstract Virtual Environments for Assessing Cognitive Abilities
+Matthew Rizzo
+
+Building a Machine City for Matrix Revolutions
+Charles Rose
+
+Skeletal Parameter Estimation from Optical Motion Capture Data
+Adam Kirk
+
+Modeling and Simulation of Sharp Creases
+Min-Hyung Choi
+
+Nice and Fast Implicit Surfaces over Noisy Point Clouds
+Jan Klein
+
+Rendering Skewed Plane of Sharp Focus and Associated Depth of Field
+Brian A. Barsky
+
+Model and control of simulated respiration for animation
+Victor Zordan
+
+Live Cinema: an instrument for cinema editing as a live performance
+Michael Lew
+
+Jiggly Bits and Motion Retargeting: Bringing the Motion of Hyde to Life in Van Helsing with Dynamics
+Ryan Kautzman
+

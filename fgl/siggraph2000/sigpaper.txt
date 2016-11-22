@@ -1,0 +1,336 @@
+
+Pen-and-Ink Illustration of Trees
+Oliver Deussen
+Thomas Strothotte
+
+A Simple, Efficient Method for Realistic Animation of Clouds
+Yoshinori Dobashi
+Kazufumi Kaneda
+Hideo Yamashita
+Tsuyoshi Okita
+Tomoyuki Nishita
+
+Animating Explosions
+Gary D. Yngve
+James F. O'Brien
+Jessica K. Hodgins
+
+Computer Modeling of Fallen Snow
+Paul Fearing
+
+Time-Dependent Visual Adaptation for Realistic Real-Time Image Display
+Sumanta N. Pattanaik
+Jack Tumblin
+Hector Yee
+Donald P. Greenberg
+
+Toward a Psychophysically Based Light Reflection Model for Image Synthesis
+Fabio Pellacini
+James A. Ferwerda
+Donald P. Greenberg
+
+A Microfacet-Based BRDF Generator
+Michael Ashikhmin
+Simon Premoze
+Peter Shirley
+
+Monte Carlo Evaluation of Non-Linear Scattering Equations for Subsurface Reflection
+Matt Pharr
+Pat Hanrahan
+
+Displaced Subdivision Surfaces
+Aaron W.F. Lee
+Henry Moreton
+Hugues Hoppe
+
+Normal Meshes
+Igor Guskov
+Peter Schröder
+Kiril Vidimce
+Wim Sweldens
+
+A Microfacet-Based BRDF Generator
+Michael Ashikhmin
+Simon Premoze
+Peter Shirley
+
+!3 Subdivision
+Leif Kobbelt
+
+Piecewise Smooth Subdivision Surfaces With Normal Control
+Henning Biermann
+Denis Zorin
+Adi Levin
+
+Environment Matting Extensions: Towards Higher Accuracy and Real-Time Capture
+Yung-Yu Chuang
+Douglas E. Zongker
+Joel Hindorff
+Brian Curless
+David H. Salesin
+Richard Szeliski
+
+The Digital Michelangelo Project: 3D Scanning of Large Statues
+Marc Levoy
+Kari Pulli
+Szymon Rusinkiewicz
+David Koller
+Lucas Pereira
+Matt Ginzton
+Sean E. Anderson
+James Davis
+Jeremy Ginsberg
+Brian Curless
+Jonathan W. Shade
+Duane Fulk
+
+Acquiring the Reflectance Field of a Human Face
+Paul E. Debevec
+Tim Hawkins
+Chris Tchou
+Haarm-Pieter Duiker
+Westley Sarokin
+Mark Sagar
+
+As-Rigid-As-Possible Shape Interpolation
+Marc Alexa
+Daniel Cohen-Or
+David Levin
+
+Pose Space Deformations: A Unified Approach to Shape Interpolation and Skeleton-Driven Deformation
+J.P. Lewis
+Matt Cordner
+Nickson Fong
+
+The EMOTE Model for Effort and Shape
+Monica Costa
+Liwei Zhao
+Diane M. Chi
+Norman I. Badler
+
+Style Machines
+Matthew Brand
+Aaron Hertzmann
+
+Timewarp Rigid Body Simulation
+Brian Mirtich
+
+Interactive Control and Composition of Physically Based Animation
+Joseph F. Laszlo
+Michiel van de Panne
+Eugene Fiume
+
+Interactive Manipulation of Rigid Body Simulations
+Jovan Popovic
+Steven M. Seitz
+Michael Erdmann
+Zoran Popovic
+Andrew Witkin
+
+Sampling Plausible Solutions to Multi-Body Constraint Problems
+Stephen Chenney
+D.A. Forsyth
+
+Conservative Volumetric Visibility With Occluder Fusion
+Gernot Schaufler
+Julie Dorsey
+Xavier Decoret
+François X. Sillion
+
+Conservative Visibility Preprocessing Using Extended Projections
+Frédo Durand
+George Drettakis
+Joelle Thollot
+Claude Puech
+
+Adaptively Sampled Fields: A General Representation of Shape for Computer Graphics
+Sarah F. Frisken
+Ronald Perry
+Alyn Rockwood
+Thouis Jones
+
+Patching Catmull-Clark Meshes
+Jorg Peters
+
+Out-of-Core Simplification of Large Polygonal Models
+Peter Lindstrom
+
+Face Fixer: Compressing Polygon Meshes With Properties
+Martin Isenburg
+Jack Snoeyink
+
+Progressive Geometry Compression
+Andrei Khodakovsky
+Peter Schröder
+Wim Sweldens
+
+Spectral Compression of Mesh Geometry
+Zachi Karni
+Craig Gotsman
+
+Surface Light Fields for 3D Photography
+Daniel N. Wood
+Daniel I. Azuma
+Ken Aldinger
+Brian Curless
+Tom Duchamp
+Werner Stuetzle
+David H. Salesin
+
+Dynamically Reparameterized Light Fields
+Aaron Isaksen
+Leonard McMillan
+Steven J. Gortler
+
+Plenoptic Sampling
+Jin-Xiang Chai
+Xin Tong
+Shing-Chow Chan
+Harry Shum
+
+An Autostereoscopic Display
+Ken Perlin
+Salvatore Paxia
+Joel Kollin
+
+Silhouette Clipping
+Pedro V. Sander
+Xianfeng Gu
+Steven J. Gortler
+Hugues Hoppe
+John M. Snyder
+
+Surfels: Surface Elements as Rendering Primitives
+Hanspeter Pfister
+Jeroen van Baar
+Matthias Zwicker
+Markus H. Gross
+
+QSplat: A Multiresolution Point Rendering System for Large Meshes
+Szymon Rusinkiewicz
+Marc Levoy
+
+A Fast Relighting Engine for Interactive Cinematic Lighting Design
+Reid Gershbein
+Pat Hanrahan
+
+Relief Texture Mapping
+Manuel M. Oliveira
+Gary Bishop
+David McAllister
+
+Image-Based Visual Hulls
+Wojciech Matusik
+Chris Buehler
+Leonard McMillan
+Ramesh Raskar
+Steven J. Gortler
+
+Efficient Image-Based Methods for Rendering Soft Shadows
+Maneesh Agrawala
+Ravi Ramamoorthi
+Alan Heirich
+Laurent Moll
+
+Deep Shadow Maps
+Tom Lokovic
+Eric Veach
+
+Tangible Interaction and Graphical Interpretation: A New Approach to Intuitive 3D Modeling
+David Anderson
+Joe Marks
+Aseem Agarwala
+Paul A. Beardsley
+Darren Leigh
+Eddie Sullivan
+Jonathan Yedidia
+James Frankel
+Jessica K. Hodgins
+Kathy Ryall
+
+Accessible Animation and Customizable Graphics via Simplicial Configuration Modeling
+Tom Ngo
+Jenny Dana
+Doug Cutrell
+Bruce Donald
+Lorie Loeb
+Shunhui Zhu
+
+Example-Based Hinting of TrueType Fonts
+Douglas E. Zongker
+David H. Salesin
+Geraldine Wade
+
+Image Inpainting
+Marcelo Bertalmio
+Guillermo Sapiro
+Vicent Caselles
+Coloma Ballester
+
+Interactive Multi-Pass Programmable Shading
+Mark Peercy
+Marc Olano
+John Airey
+Jeff Ungar
+
+The WarpEngine: An Architecture for the Post-Polygonal Age
+Voicu Popescu
+John Eyles
+Anselmo Lastra
+Josh Steinhurst
+Nick England
+Lars Nyland
+
+Pomegranate: A Fully Scalable Graphics Architecture
+Matthew Eldridge
+Homan Igehy
+Pat Hanrahan
+
+Illuminating Micro Geometry Based on Precomputed Visibility
+Wolfgang Heidrich
+Katja Daubert
+Jan Kautz
+Hans-Peter Seidel
+
+Lapped Textures
+Emil Praun
+Adam Finkelstein
+Hugues Hoppe
+
+Seamless Texture Mapping of Subdivision Surfaces by Model Pelting and Texture Blending
+Dan Piponi
+George D. Borshukov
+
+Fast Texture Synthesis Using Tree-Structured Vector Quantization
+Li-Yi Wei
+Marc Levoy
+
+Video Textures
+Arno Schodl
+Irfan Essa
+Richard Szeliski
+David H. Salesin
+
+Escherization
+Craig S. Kaplan
+David H. Salesin
+
+Shadows for Cel Animation
+Lena Petrovic
+Brian Fujito
+Adam Finkelstein
+Lance Williams
+
+Illustrating Smooth Surfaces
+Denis Zorin
+Aaron Hertzmann
+
+Artistic Virtual Environments
+Allison W. Klein
+Wilmot W. Li
+Michael Kazhdan
+Wagner Toledo Corrêa
+Adam Finkelstein
+Thomas A. Funkhouser
+
+

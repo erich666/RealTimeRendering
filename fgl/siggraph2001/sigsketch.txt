@@ -1,0 +1,415 @@
+An Interactive System for Robust Topological Modeling of Meshes 
+Ergun Akleman
+
+Mapping-independent triangulation of parametric surfaces 
+Marco Attene
+
+Tighter Bounding Volumes for Better Occlusion Performance 
+Dirk Bartz
+
+Non-graphical application of hardware accelerated voxelization 
+Steffi Beckhaus
+
+Averaged Area Tables for Texture Filtering 
+Uwe Behrens
+
+Crashing Planes the Easy Way: Pearl Harbor 
+Scott Benza
+
+Virtual Showcases 
+Oliver Bimber
+
+Hardware Acceleration for Physical Modeling of Deformable Objects 
+Benjamin Bishop
+
+Sketching Space: Virtual to Real 
+Bill Brody
+
+CREATING TOOLS FOR PLAYSTATION2 GAME DEVELOPMENT 
+Simon Brown
+
+X3D Content Examples, Editing, Conformance Suite and Software Development Kit (SDK) CDs 
+Don Brutzman
+
+Practical Image-Based Lighting for Surfaces and Fur 
+Deborah Carlson
+
+Change blindness with varying rendering fidelity: looking but not seeing 
+Kirsten Cater
+
+SUMMER BREEZE: Creating a High-End 3D Movie using Limited Resources 
+Sheng-Fang Chen
+
+FRENCH SURFACE: A New Technique for Surface Design 
+Zita Cheng
+
+Immersive Visualization of a Very Large Scale Seismic Model 
+Prashant Chopra
+
+The Development of the Virtual Human Abdomen: Algorithms and Methodologies 
+Kevin Chugh
+
+''Character Setup and Animation for 3-2-1 Penguins!'' by Big Idea Productions 
+Michael Comet
+
+PlaceWorld: An Integration of Shared Virtual Worlds 
+Jon Cook
+
+CONTIGRA: A High-Level Declarative Approach to Interactive 3D Components 
+Raimund Dachselt
+
+Collisions and Adaptive Levels of Detail 
+John Dingliana
+
+Modeling of Clouds Using a Coupled Map Lattice 
+Yoshinori Dobashi
+
+A Flexible Approach to 3D Reconstruction from Single Images 
+Sabry El-Hakim
+
+''Budweiser Alien'' Commercial Sketch 
+Leandro Estebecorena
+
+Rendering ''Pepe'' with Global Illumination 
+Marcos Fajardo
+
+Paint the Town Red: Recreating Stalingrad For ''Enemy at the Gates'' 
+Paul Franklin
+
+Real-Time Stroke Textures 
+Bert Freudenberg
+
+A Computationally Efficient Framework for Modeling Soft Body Impact 
+Sarah F. Frisken
+
+Computing 3D Geometry Directly from Range Images 
+Sarah F. Frisken
+
+Intuitive Multiple Viewpoints Control using Interlocked Motion of Coordinate Pairs 
+Shinji Fukatsu
+
+Hand Held Torque Feedback Device 
+Yukio Fukui
+
+Occlusion Culling and Summed-Area Tables 
+Andreas Genz
+
+Image-Based Photometric Reconstruction for Mixed-Reality 
+Simon Gibson
+
+High Dynamic Range Photography, Global Illumination, and Mental Ray on a Commercial Budget and Timeline 
+Brian Goldberg
+
+How Changes in Technology Change the Use of Computer Animation at Walt Disney Feature Animation 
+Steve Goldberg
+
+Growing Fitted Textures 
+Gabriele Gorla
+
+Computing Nearly Exact Visible Sets within a Shaft with 4D Hierarchical Z-Buffering 
+Ned Greene
+
+3D Traffic Visualization in Real Time 
+André Gueziec
+
+Calibration Free, Easy 3D Modeling from Turntable Image Sequences 
+Sumit Gupta
+
+Visual Attention Driven Progressive Rendering for Interactive Walkthroughs 
+JÖrg Haber
+
+Implementing Vector Based Texturing in RenderMan 
+john Haddon
+
+Hardware-Accelerated High-Quality Filtering of Solid Textures 
+Markus Hadwiger
+
+Light Stage 2.0 
+Tim Hawkins
+
+Using Precomputed Cloth Simulations for Interactive Applications 
+Daniel L. Herman
+
+RainMan: Fluid Pseudodynamics with Probabilistic Control for Stylized Raindrops 
+Daniel L. Herman
+
+Imaging the Living Computer -- Neuroscience Methods in Visualizing the Performance of Parallel Programs 
+Daniel L. Herman
+
+Simulation of Deforming Elastic Solids in Contact 
+Gentaro Hirota
+
+Compressing Large Polygonal Models 
+Jeffrey Ho
+
+Using Color-Changing Textiles as a Computer Graphics Display 
+Lars Erik Holmquist
+
+The Attack on Pearl Harbor Battleship Row: Everything including the kitchen sink 
+David Frederic Horsley
+
+Model-base analysis and synthesis of human body images 
+Junichi Hoshino
+
+A Head-Mounted Projective Display and its Applications in Interactive Augmented Environments 
+Hong Hua
+
+Grooming and Rendering Cats and Dogs 
+Pedro Huang
+
+Bringing Photorealism to Fantasy, the Hybrid Approach of a Digital Matte Artist 
+Paul Huston
+
+Suggestive Interface for 3D Drawing 
+Takeo Igarashi
+
+2D Shape Interpolation Using A Hierarchical Approach 
+Henry Johan
+
+Creative Approaches to the Integration of CGI with Traditional Animation in Disney's ''Atlantis - The Lost Empire'' 
+Kiran Joshi
+
+ALVIN on the Web - Distributive Mission Rehearsal for a Deep Submersible Vehicle 
+Jan Jungclaus
+
+Tangible Communication 
+Ken-ichi Kameyama
+
+Bing Locally Reparameterized Light Fields 
+Sing Kang
+
+Elastic Object Manipulation Using Coarse-to-fine Representation of Mass-Spring Models 
+Hirofumi Kawai
+
+Image-Based Rendering for Animated Deforming Objects 
+Hiroshi Kawasaki
+
+Digital Tricks for Japanese Cel Animation 
+Akio Kazumi
+
+Permanent Shutdown ž experiments in interactivity 
+Justin Kent
+
+Open Processes Create Open Products: ™Interface Ecologyš As A Metadisciplinary Base For CollageMachine 
+Andruid Kerne
+
+Light Field Rendering with Triangular Viewpoint Mesh 
+Dongho Kim
+
+ELMO: A Head Mount Display for Real-time Image Synthesis 
+Kiyoshi Kiyokawa
+
+The Magic behind the Magic: Pearl Harbor 
+Marshall Krasser
+
+Procedural Dynamics System for Animating the Sleigh in ''How the Grinch stole Christmas'' 
+Markus Kurtz
+
+An Integrated Solution to Camera Animation for Stage 
+Mathew Lamb
+
+Multi-resolution depth buffer 
+Eugene Lapidous
+
+Feature-based Topological Mesh Metamorphosis 
+Seungyong Lee
+
+Image-Based Reconstruction of Shift-Variant Materials 
+Hendrik Lensch
+
+Lifting Detail from Darkness 
+J.P. Lewis
+
+Decomposing Animation into BlendShapes 
+J.P. Lewis
+
+Variational Classification for Visualization of 3D Ultrasound Data 
+Dani Lischinski
+
+The Empathic Visualisation Algorithm: Chernoff Faces Revisited 
+Andreas Loizides
+
+Life-Sized Projector-Based Dioramas Spatially Real and Visually Virtual 
+Kok-Lim Low
+
+The Mouthesizer: A Facial Gesture Musical Interface 
+Michael Lyons
+
+Simulation Fidelity Metrics for Virtual Environments based on Memory Semantics 
+Katerina Mania
+
+Trees in ''How The Grinch Stole Christmas'': Automating the task of creating and rendering large numbers of complex objects. 
+Charlotte Manning
+
+Enhanced Reality: A New Frontier for Computer Entertainment 
+Richard Marks
+
+Interactive Virtual Clay Using Implicit Surfaces and Particle Systems 
+Masatoshi Matsumiya
+
+genieBottles: An Interactive Narrative in Bottles 
+Ali Mazalek
+
+Dynamic Flesh and Muscle Simulation: Jurassic Park III 
+Tim McLaughlin
+
+Simultaneous Model Assembly in Real and Virtual Spaces 
+Eckhard Meier
+
+Organic Textures with Controlled Anisotropy and Directionality 
+Kazunori Miyata
+
+RitSens - Computer aided system for studying rhythmic abilities in bimanual coordination 
+Artemis Moroni
+
+Lighting Sensitive Displays 
+Shree K. Nayar
+
+NATO.0+55 - Realtime Trimodal Signal Processing 
+Netochka Nezvanova
+
+The Living Forest: The Story of a 3D Feature Film in Europe 
+Juan Nouche
+
+Image Based Rendering and Illumination Using Spherical Mosaics 
+James F. O'Brien
+
+Real vs. Approximate Collisions: When can we tell the difference? 
+Carol O'Sullivan
+
+Multi-Modal Translation System by Using Automatic Facial Image Tracking and Model-Based Lip Synchronization 
+Shin Ogata
+
+''2001: An MR-Space Odyssey''---Applying Mixed Reality Technology to VFX in Filmmaking 
+Toshikazu Ohshima
+
+Mayhem: A New Trend for Virtual Environments (and Online Games) 
+Manuel M. Oliveira
+
+Real-time Cloth Simulation with Sparse Particles 
+Masaki Oshita
+
+A Multipurpose Array of Tactile Rods for Interactive eXpression 
+Dan Overholt
+
+Flow Noise 
+Ken Perlin
+
+A Method For Numerical Constrained Optimization 
+Ronald Perry
+
+Multi-Resolution Light Field Rendering with the Wavelet Stream 
+Ingmar Peter
+
+digital stupa: interactive animations 
+Daniel Pirofsky
+
+Dynamic Meshing Using Adaptively Sampled Distance Fields 
+Jackson Pope
+
+Fast-moving Water in DreamWorks "Spirit" 
+Saty Raghavachary
+
+View-Dependent Texture-Mapping of Video for Realistic Avatars in Collaborative Virtual Environments 
+Vivek Rajan
+
+Skinning Cats and Dogs Using Muscle Deformations 
+Hans Rijpkema
+
+My Finger's Getting Tired: Interactive Installations for the Mind and Body 
+Don Ritter
+
+Real-Time Computer Graphics for On-Set Visualization: A.I. and The Mummy Returns 
+Seth Rosenthal
+
+Micro Archiving 
+Tatsuya Saito
+
+ComicDiary: Representing Individual Experiences in Comics Style 
+Ryuuki Sakamoto
+
+Symplectic Raytracing: Raytracing with Hamiltonian Dynamics in Blackhole Spacetime 
+Tetsu Satoh
+
+Whippin' up a Storm 
+Alex Seiden
+
+Death Valley Flyby: A Simulation Comparing Fault-Controlled Alluvial Fans Along the Black Mountain Range 
+Carlos Seligo
+
+Hyun Color Paper Mosaic Rendering 
+Sang Seo
+
+Fair and Robust Curve Interpolation on the Sphere 
+Carlo Sequin
+
+Large Time-Critical Volume Rendering 
+Han-Wei Shen
+
+Rendering by manifold hopping 
+Heung-Yeung Shum
+
+Efficient Update of Geometric Constraints in an Evolving Mesh Representation 
+Maryann Simmons
+
+Rendering Semi-solid Objects With Particles: The Mud ''Poop'' Effect From PDI/DreamWorks' CG Animated Film, ''Shrek'' 
+Scott Singer
+
+Solving a 3D Cube Puzzle in a Collaborative Virtual Environment: As Good as Really Being There Together? 
+Anthony Steed
+
+AntiAliasing Perlin Noise 
+Ian Stephenson
+
+Manipulate the Unreachable: Through-The-Lens Remote Object Manipulation in Virtual Environments 
+Stanislav Stoev
+
+The Animator Oriented Motion Generator, Animanium, based on Humanoid Robots Control Algorithm 
+Fumio Sumi
+
+Explict Control of Topological Evolution in 3D Mesh Morphing 
+Shigeo Takahashi
+
+Hybrid Ink-Line Rendering in a Production Environment 
+Rasmus Tamstorf
+
+HDR Shop 
+Chris Tchou
+
+Real Time Rendering of Populated Urban Environments 
+Franco Tecchia
+
+VideoFOCUS and VideoFOCUSWire: Transforming Moving Images to Stills. 
+Laura Teodosio
+
+Shadermaps: A Method For Accelerating Procedural Shading 
+Jones Thouis
+
+Destroying a Dam Without Getting Wet - Rule Based Dynamic Simulation for "Wave of Death" 
+Stephan Trojansky
+
+Human Motion Signature for Character Animation 
+M. Alex O. Vasilescu
+
+A Real Time High Dynamic Range Light Probe 
+Jamie Waese
+
+A fast simulating system for realistic motion and realistic appearance of fluids 
+Yukio Watanabe
+
+Linux for the Production Pipeline 
+Jeffrey Wike
+
+Spatial Resolution in Haptic Rendering 
+Juli Yamashita
+
+Elmo's World: Digital Puppetry on Sesame Street 
+Emre Yilmaz
+
+Texture and Shape Synthesis on Surfaces 
+Lexing Ying
+
+Analysis and Simulation of Facial Movements in Elicited and Posed Expressions Using High-Speed Camera 
+Tatsuo Yotsukura
+
+

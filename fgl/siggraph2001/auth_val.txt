@@ -1,0 +1,93 @@
+
+
+
+
+Authors ranked by highest point value
+### Value Cost Efficiency Name
+==============================
+381 106.00  220   0.4818   Pat Hanrahan
+425 70.00   15   4.6667   Sarah F. Frisken
+168 60.00  100   0.6000   Greg Turk
+ 57 60.00   30   2.0000   Bruno Lévy
+404 60.00   75   0.8000   Ravi Ramamoorthi
+482 60.00  110   0.5455   Victor Ostromoukhov
+416 50.00   30   1.6667   Ronald Perry
+188 48.57   60   0.8095   Heung-Yeung Shum
+446 47.00   75   0.6267   Steven J. Gortler
+330 45.00   25   1.8000   Markus H. Gross
+315 45.00  160   0.2812   Marc Levoy
+198 45.00   30   1.5000   Ingrid Carlbom
+264 45.00   75   0.6000   Julie Dorsey
+183 45.00   40   1.1250   Henrik Wann Jensen
+335 45.00   15   3.0000   Mathieu Desbrun
+202 40.00   20   2.0000   J.P. Lewis
+209 40.00   80   0.5000   James F. O'Brien
+130 35.00   40   0.8750   Emil Praun
+486 30.00    5   6.0000   W. Freeman
+300 30.00   30   1.0000   Li-Yi Wei
+194 30.00  310   0.0968   Hugues Hoppe
+177 30.00   60   0.5000   Hans-Peter Seidel
+311 30.00   45   0.6667   Maneesh Agrawala
+ 89 30.00   30   1.0000   Daniel G. Aliaga
+481 30.00   60   0.5000   Victor Milenkovic
+508 30.00   10   3.0000   Y. Parish
+372 30.00   30   1.0000   Nick Foster
+199 30.00   15   2.0000   Irfan Essa
+115 30.00   50   0.6000   Dimitris Metaxas
+153 30.00   30   1.0000   Gary W. Meyer
+116 28.57   30   0.9524   Dinesh K. Pai
+146 25.00   35   0.7143   Frédo Durand
+313 20.00   20   1.0000   Manuel M. Oliveira
+110 20.00   40   0.5000   Demetri Terzopoulos
+469 20.00   25   0.8000   Tim Hawkins
+369 20.00   60   0.3333   Ned Greene
+393 20.00  140   0.1429   Peter Schröder
+457 20.00   20   1.0000   Takeo Igarashi
+500 20.00  120   0.1667   Wim Sweldens
+182 20.00   20   1.0000   Henning Biermann
+111 20.00   90   0.2222   Denis Zorin
+ 69 20.00   10   2.0000   Chris Tchou
+275 20.00   50   0.4000   Ken Perlin
+155 20.00   20   1.0000   Gentaro Hirota
+363 20.00   40   0.5000   Michiel van de Panne
+259 20.00  180   0.1111   Jos Stam
+ 87 20.00   40   0.5000   Dani Lischinski
+187 20.00   20   1.0000   Henry Moreton
+512 20.00   30   0.6667   Yoshinori Dobashi
+ 29 20.00   10   2.0000   Anthony Steed
+265 20.00   10   2.0000   Justin Legakis
+ 26 20.00   15   1.3333   André Gueziec
+118 20.00   10   2.0000   Dirk Bartz
+510 20.00   45   0.4444   Yizhou Yu
+166 16.00   20   0.8000   Gordon Stoll
+341 16.00   20   0.8000   Matthew Eldridge
+  7 15.00  110   0.1364   Adam Finkelstein
+459 15.00  100   0.1500   Thomas A. Funkhouser
+503 15.00   30   0.5000   Wolfgang Straßer
+226 15.00   15   1.0000   Jeroen van Baar
+431 15.00   10   1.5000   Sebastian Fernandez
+120 15.00  150   0.1000   Donald P. Greenberg
+ 11 15.00   45   0.3333   Alan H. Barr
+496 15.00   10   1.5000   William Mark
+179 15.00   30   0.5000   Hanspeter Pfister
+398 15.00   40   0.3750   Przemyslaw Prusinkiewicz
+389 15.00   10   1.5000   Pedro V. Sander
+117 15.00   75   0.2000   Dinesh Manocha
+249 15.00   85   0.1765   John M. Snyder
+318 15.00   30   0.5000   Marie-Paule Cani
+345 15.00   15   1.0000   Matthias Zwicker
+295 15.00   75   0.2000   Leif Kobbelt
+364 15.00   30   0.5000   Ming Lin
+477 15.00   30   0.5000   Tosiyasu L. Kunii
+ 99 12.00  330   0.0364   David H. Salesin
+ 66 12.00   10   1.2000   Chris Buehler
+ 49 12.00   70   0.1714   Brian Curless
+350 12.00   50   0.2400   Michael F. Cohen
+  4 12.00  120   0.1000   Aaron Hertzmann
+ 63 12.00   20   0.6000   Charles E. Jacobs
+297 12.00   30   0.4000   Leonard McMillan
+436 10.00   40   0.2500   Simon Premoze
+358 10.00   15   0.6667   Michael M. Stark
+394 10.00  110   0.0909   Peter Shirley
+ 36  8.57   60   0.1429   Baining Guo
+122  8.57   30   0.2857   Doug L. James

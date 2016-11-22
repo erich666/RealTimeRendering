@@ -1,0 +1,257 @@
+# 1995
+Michael F. Deering
+Marc Levoy
+Shenchang Eric Chen
+Leonard McMillan and Gary Bishop
+Bruce M. Blumberg and Tinsley A. Galyean
+Yuencheng Lee and Demetri Terzopoulos and Keith Waters
+Radek Grzeszczuk and Demetri Terzopoulos
+Jessica K. Hodgins and Wayne L. Wooten and David C. Brogan and James F. O'Brien
+Jean-Daniel Fekete and Érick Bizouarn and Éric Cournarie and Thierry Galas and Frédéric Taillefer
+Munetoshi Unuma and Ken-ichi Anjyo and Ryozo Takeuchi
+Armin Bruderlin and Lance Williams
+Andrew Witkin and Zoran Popovic
+Chandrajit L. Bajaj and Fausto Bernardini and Guoliang Xu
+Jason Weber and Joseph Penn
+Jos Stam and Eugene Fiume
+Martin Courshesnes and Pascal Volino and Nadia Magnenat Thalmann
+François X. Sillion and George Drettakis
+Ken Perlin and Luiz Velho
+Peter Schröder and Wim Sweldens
+Matthias Eck and Tony DeRose and Tom Duchamp and Hugues Hoppe and Michael Lounsbery and Werner Stuetzle
+Michael Gleicher
+Eric N. Mortensen and William A. Barrett
+Mikako Harada and Andrew Witkin and David Baraff
+John M. Snyder
+Victor Ostromoukhov and Roger D. Hersch
+David J. Heeger and James R. Bergen
+Kurt W. Fleischer and David Laidlaw and Bena Currin and Alan H. Barr
+Detlev Stalling and Hans-Christian Hege
+Denis Zorin and Alan H. Barr
+Tomoo Mitsunaga and Taku Yokoyama and Takashi Totsuka
+Luiz Velho and Jonas Gomes
+Charles E. Jacobs and Adam Finkelstein and David H. Salesin
+Mathieu Desbrun and Marie-Paule Gascuel
+Hans Køhling Pedersen
+Thomas W. Sederberg and Falai Chen
+Jules Bloomenthal and Keith Ferguson
+Craig Kolb and Pat Hanrahan and Don P. Mitchell
+Greg Spencer and Peter Shirley and Kurt Zimmerman and Donald P. Greenberg
+James Arvo
+Brian Guenter and Todd B. Knoblock and Erik Ruf
+Gabriel Taubin
+Cindy M. Grimm and John F. Hughes
+Myoung-Jun Kim and Sung Yong Shin and Myung-Soo Kim
+Carole Blanc and Christophe Schlick
+Mark Lucente and Tinsley A. Galyean
+Enrico Gobbetti and Jean-Francis Balaguer
+Randy Pausch and Tommy Burnette and Dan Brockway and Michael E. Weiblen
+Ronald Azuma and Gary Bishop
+Mark R. Bolin and Gary W. Meyer
+Eric Veach and Leonidas J. Guibas
+Michael D. McCool
+James Arvo
+Seung-Yong Lee and Kyung-Yong Chwa and Sung Yong Shin and George Wolberg
+Jed Lengyel and Donald P. Greenberg and Richard Popp
+Georgios Sakas and Stefan Walter
+# 1996
+Paul E. Debevec and Camillo J. Taylor and Jitendra Malik
+Steven M. Seitz and Charles R. Dyer
+Marc Levoy and Pat Hanrahan
+Steven J. Gortler and Radek Grzeszczuk and Richard Szeliski and Michael F. Cohen
+Han-Ming Chen and Wen-Teng Wang
+Ned Greene
+Jonathan W. Shade and Dani Lischinski and David H. Salesin and Tony DeRose and John M. Snyder
+Normand Briére and Pierre Poulin
+Andrew Certain and Jovan Popovic and Tony DeRose and Tom Duchamp and David H. Salesin and Werner Stuetzle
+Hugues Hoppe
+Peter Lindstrom and David Koller and William Ribarsky and Larry F. Hughes and Nick Faust and Gregory Turner
+Jonathan M. Cohen and Amitabh Varshney and Dinesh Manocha and Greg Turk and Hans Weber and Pankaj Agarwal and Frederick P. Brooks, Jr. and William Wright
+Victor Milenkovic
+David Baraff
+Charles F. Rose and Brian Guenter and Bobby Bodenheimer and Michael F. Cohen
+Joseph F. Laszlo and Michiel van de Panne and Eugene Fiume
+Robert C. Zeleznik and Kenneth P. Herndon and John F. Hughes
+Stefan Gottschalk and Ming Lin and Dinesh Manocha
+Ron MacCracken and Kenneth I. Joy
+Denis Zorin and Peter Schröder and Wim Sweldens
+Randy Pausch and Jon Snoddy and Eric Hazeltine and Robert Taylor and Scott Watson
+Ken Perlin and Athomas Goldberg
+Li-wei He and Michael F. Cohen and David H. Salesin
+David Kurlander and Tim Skelly and David H. Salesin
+Joanna L. Power and Brad S. West and Eric J. Stollnitz and David H. Salesin
+James A. Ferwerda and Sumanta N. Pattanaik and Peter Shirley and Donald P. Greenberg
+Alvy Ray Smith and James F. Blinn
+Anil N. Hirani and Takashi Totsuka
+Don P. Mitchell
+Adam Finkelstein and Charles E. Jacobs and David H. Salesin
+Steven P. Worley
+Hans Køhling Pedersen
+Brian Curless and Marc Levoy
+Venkat Krishnamurthy and Marc Levoy
+Matthias Eck and Hugues Hoppe
+Mark Halstead and Brian Barsky and Stanley Klein and Robert Mandell
+Thomas A. Funkhouser
+Jay Torborg and Jim Kajiya
+Satoshi Nishimura and Tosiyasu L. Kunii
+Andrew C. Beers and Maneesh Agrawala and Navin Chaddha
+Tomoyuki Nishita and Eihachiro Nakamae and Yoshinori Dobashi
+Julie Dorsey and Pat Hanrahan
+Radomír Mech and Przemyslaw Prusinkiewicz
+Julie Dorsey and Hans Køhling Pedersen and Pat Hanrahan
+R. M. Koch and Markus H. Gross and F. R. Carls and D. F. von Büren and G. Fankhauser and Y. Parish
+Andrei State and Gentaro Hirota and David T. Chen and William F. Garrett and Mark A. Livingston
+Andrei State and Mark A. Livingston and Gentaro Hirota and William F. Garrett and Mary C. Whitton and Henry Fuchs
+William Mark and Scott Randolph and Mark Finch and James Van Verth and Russell M. Taylor II
+Greg Turk and David Banks
+Michael P. Salisbury and Corin Anderson and Dani Lischinski and David H. Salesin
+Georges Winkenbach and David H. Salesin
+Barbara J. Meier
+# 1997
+Randy Pausch and Dennis Proffitt and George Williams
+Mark R. Mine and Frederick P. Brooks, Jr. and Carlo H. Séquin
+Lichan Hong and Shigeru Muraki and Arie Kaufman and Dirk Bartz and Taosong He
+Richard Bukowski and Carlo H. Séquin
+Bruce Walter and Gün Alppay and Eric P. F. Lafortune and Sebastian Fernandez and Donald P. Greenberg
+Alexander Keller
+George Drettakis and François X. Sillion
+Eric Veach and Leonidas J. Guibas
+Hansong Zhang and Dinesh Manocha and Thomas Hudson and Kenneth E. Hoff III
+Frédo Durand and George Drettakis and Claude Puech
+Matt Pharr and Craig Kolb and Reid Gershbein and Pat Hanrahan
+Victoria L. Interrante
+Eric P. F. Lafortune and Sing-Choong Foo and Kenneth E. Torrance and Donald P. Greenberg
+Dan B. Goldman
+Joe Geigel and F. Kenton Musgrave
+James A. Ferwerda and Sumanta N. Pattanaik and Peter Shirley and Donald P. Greenberg
+Jessica K. Hodgins and Nancy S. Pollard
+Ferdi Scheepers and Richard E. Parent and Wayne E. Carlson and Stephen F. May
+Jane Wilhelms and Allen Van Gelder
+Nick Foster and Dimitris Metaxas
+Hugues Hoppe
+David Luebke and Carl Erikson
+Michael Garland and Paul S. Heckbert
+Jovan Popovic and Hugues Hoppe
+Youichi Horry and Ken-ichi Anjyo and Kiyoshi Arai
+Jed Lengyel and John M. Snyder
+Daniel N. Wood and Adam Finkelstein and John F. Hughes and Craig E. Thayer and David H. Salesin
+Richard Szeliski and Heung-Yeung Shum
+Denis Zorin and Peter Schröder and Wim Sweldens
+Ari Rappoport and Steven Spitz
+Barton T. Stander and John C. Hart
+Ravi Ramamoorthi and Alan H. Barr
+John S. Montrym and Daniel R. Baum and David L. Dignam and Christopher J. Migdal
+Mark Peercy and John Airey and Brian Cabral
+Stephanie Winner and Michael Kelley and Brent Pease and Bill Rivard and Alex Yen
+A. E. Fabris and A. R. Forrest
+Maneesh Agrawala and Andrew C. Beers and Bernd Fröhlich and Pat Hanrahan and Ian McDowall and Mark Bolas
+Greg Welch and Gary Bishop
+Diego C. Ruspini and Krasimir Kolarov and Oussama Khatib
+Christoph Bregler and Michele Covell and Malcolm Slaney
+Jeremy S. De Bonet
+Paul E. Debevec and Jitendra Malik
+Yoichi Sato and Mark D. Wheeler and Katsushi Ikeuchi
+Joe Marks and B. Andalman and Paul A. Beardsley and W. Freeman and S. Gibson and Jessica K. Hodgins and T. Kang and Brian Mirtich and Hanspeter Pfister and W. Ruml and K. Ryall and Joshua E. Seims and S. Shieber
+Michael P. Salisbury and Michael T. Wong and John F. Hughes and David H. Salesin
+Peter Litwinowicz
+Lee Markosian and Michael A. Kowalski and Samuel J. Trychin and Lubomir D. Bourdev and Daniel Goldstein and John F. Hughes
+Cassidy J. Curtis and Sean E. Anderson and Joshua E. Seims and Kurt W. Fleischer and David H. Salesin
+Donald P. Greenberg and Kenneth E. Torrance and Peter Shirley and James Arvo and James A. Ferwerda and Sumanta N. Pattanaik and Eric P. F. Lafortune and Bruce Walter and Sing-Choong Foo and Ben Trumbore
+# 1998
+Radek Grzeszczuk and Demetri Terzopoulos and Geoffrey Hinton
+Thomas A. Funkhouser and Ingrid Carlbom and Gary Elko and Gopal Pingali and Mohan Sondhi and Jim West
+Michael Gleicher
+David Baraff and Andrew Witkin
+Brian Guenter and Cindy M. Grimm and Daniel N. Wood and Henrique Malvar and Frédéric Pighin
+Douglas DeCarlo and Dimitris Metaxas and Matthew Stone
+Frédéric Pighin and Jamie Hecker and Dani Lischinski and Richard Szeliski and David H. Salesin
+Tony DeRose and Michael Kass and Tien Truong
+Aaron W.F. Lee and Wim Sweldens and Peter Schröder and Lawrence Cowsar and David Dobkin
+Leif Kobbelt and Swen Campagna and Jens Vorsatz and Hans-Peter Seidel
+Jonathan M. Cohen and Marc Olano and Dinesh Manocha
+Gabriel Taubin and André Gueziec and William Horn and Francis Lazarus
+Stefan Gumhold and Wolfgang Straßer
+Homan Igehy and Gordon Stoll and Pat Hanrahan
+Christopher C. Tanner and Christopher J. Migdal and Michael T. Jones
+Marc Olano and Anselmo Lastra
+Rüdiger Westermann and Thomas Ertl
+Ramesh Raskar and Greg Welch and Matt Cutts and Adam Lake and Lev Stesin and Henry Fuchs
+Paul E. Debevec
+Paul Rademacher and Gary Bishop
+Yizhou Yu and Jitendra Malik
+John M. Snyder and Jed Lengyel
+Jonathan W. Shade and Steven J. Gortler and Li-wei He and Richard Szeliski
+Michael Halle
+Baining Guo
+Eric J. Stollnitz and Victor Ostromoukhov and David H. Salesin
+Oliver Deussen and Pat Hanrahan and Matt Pharr and Bernd Lintermann and Radomír Mech and Przemyslaw Prusinkiewicz
+Sumanta N. Pattanaik and James A. Ferwerda and Mark D. Fairchild and Donald P.  Greenberg
+Mark R. Bolin and Gary W. Meyer
+Henrik Wann Jensen and Per H. Christensen
+Cyril Soler and François X. Sillion
+Eyal Ofek and Ari Rappoport
+Bruno Lévy and Jean-Laurent Mallet
+Gianpaolo U. Carraro and John T. Edmark and J. Robert Ensor
+Blair MacIntyre and Steven Feiner
+Eric Foxlin and Michael Harrington and George Pfeifer
+Brygg Ullmer and Hiroshi Ishii and Dylan Glas
+Thomas W. Sederberg and Jianmin Zheng and David Sewell and Malcolm Sabin
+Jos Stam
+Karan Singh and Eugene Fiume
+Nina Amenta and Marshall Bern and Manolis Kamvysselis
+Michael T. Wong and Douglas E. Zongker and David H. Salesin
+Wagner Toledo Corrêa and Robert J. Jensen and Craig E. Thayer and Adam Finkelstein
+Amy Gooch and Bruce Gooch and Peter Shirley and Elaine Cohen
+Aaron Hertzmann
+# 1999
+Zoran Popovic and Andrew Witkin
+Matthew Brand
+John Funge and Xiaoyuan Tu and Demetri Terzopoulos
+Jehee Lee and Sung Yong Shin
+Emil Praun and Hugues Hoppe and Adam Finkelstein
+Adi Levin
+Doug L. James and Dinesh K. Pai
+Mahesh Ramasubramanian and Sumanta N. Pattanaik and Donald P. Greenberg
+Jack Tumblin and Greg Turk
+A. J. Preetham and Peter Shirley and Brian E. Smits
+Jos Stam
+Henrik Weimer and Joe Warren
+Jos Stam
+Patrick Witting
+James F. O'Brien and Jessica K. Hodgins
+David Hart and Philip Dutré and Donald P. Greenberg
+Michael M. Stark and Elaine Cohen and Tom Lyche and Richard F. Riesenfeld
+Brian Cabral and Marc Olano and Philip Nemec
+Wolfgang Heidrich and Hans-Peter Seidel
+Homan Igehy
+Volker Blanz and Thomas Vetter
+Ravi Ramamoorthi and James Arvo
+Douglas E. Zongker and Dawn M. Werner and Brian Curless and David H. Salesin
+Yizhou Yu and Paul E. Debevec and Jitendra Malik and Tim Hawkins
+Julie Dorsey and Alan Edelman and Justin Legakis and Henrik Wann Jensen and Hans Køhling Pedersen
+Fabrice Neyret and Marie-Paule Cani
+Joel McCormack and Ronald Perry and Keith I. Farkas and Norman P. Jouppi
+Hanspeter Pfister and Jan Hardenbergh and Jim Knittel and Hugh Lauer and Larry Seiler
+Daniel Cohen-Or and Yair Mann and Shachar Fleishman
+Hugues Hoppe
+Kenneth E. Hoff III and Tim Culver and John Keyser and Ming Lin and Dinesh Manocha
+Matthew J.P. Regan and Gavin S.P. Miller and Steven M. Rubin and Chris Kogelnik
+Chun-Fa Chang and Gary Bishop and Anselmo Lastra
+Heung-Yeung Shum and Li-wei He
+Daniel G. Aliaga and Anselmo Lastra
+Mathieu Desbrun and Mark Meyer and Peter Schröder and Alan H. Barr
+Igor Guskov and Wim Sweldens and Peter Schröder
+Greg Turk and James F. O'Brien
+Aaron W.F. Lee and David Dobkin and Wim Sweldens and Peter Schröder
+Zachary Wartell and Larry F. Hodges and William Ribarsky
+Martin Usoh and Kevin Arthur and Mary C. Whitton and Rui Bastos and Anthony Steed and Mel Slater and Frederick P. Brooks, Jr.
+Thomas A. Funkhouser and Patrick Min and Ingrid Carlbom
+Chris Greenhalgh and Steve Benford and Ian Taylor and John Bowers and Graham Walker and John Wyver
+John Underkoffler and Brygg Ullmer and Hiroshi Ishii
+Lee Markosian and Jonathan M. Cohen and Thomas Crulli and John F. Hughes
+William A. McNeely and Kevin D. Puterbaugh and James J. Troy
+Takeo Igarashi and Satoshi Matsuoka and Hidehiko Tanaka
+Victor Ostromoukhov
+Victor Ostromoukhov and Roger D. Hersch
+Michael A. Kowalski and Lee Markosian and J. D. Northrup and Lubomir D. Bourdev and Ronen Barzel and Loring S. Holden and John F. Hughes
+Paul Rademacher

@@ -1,0 +1,585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Top 20 Publishers of Videogames</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAE-cLjk47EV83U9SDY3oOPRSv2HLC9Jz8bCDl4I9iIJf4AYotwxSo0d8yYT1V_gz2WEuf_HggI8lqkg" type="text/javascript"></script>
+  </head>
+<font face="LUCIDA, ARIAL, HELVETICA">
+<H1>Top 20 Publishers of Videogames</H1>
+</font>
+  <body onunload="GUnload()">
+
+    <div id="map" style="width: 800px; height: 600px"></div>
+
+    <noscript><b>JavaScript must be enabled in order for you to use Google Maps.</b> 
+      However, it seems JavaScript is either disabled or not supported by your browser. 
+      To view Google Maps, enable JavaScript by changing your browser options, and then 
+      try again.
+    </noscript>
+ 
+
+    <script type="text/javascript">
+    //<![CDATA[
+    
+    if (GBrowserIsCompatible()) { 
+
+      // A function to create the marker and set up the event window
+      // Dont try to unroll this function. It has to be here for the function closure
+      // Each instance of the function preserves the contends of a different instance
+      // of the "marker" and "html" variables which will be needed later when the event triggers.    
+      function createMarker(point,html) {
+        var marker = new GMarker(point,icon);
+        GEvent.addListener(marker, "click", function() {
+          marker.openInfoWindowHtml(html);
+        });
+        return marker;
+      }
+      function createIcon(string) {
+        var icon = new GIcon();
+        icon.shadow = "http://www.realtimerendering.com/mapfiles/mm_20_shadow.png";
+        icon.iconSize = new GSize(20, 34);
+        icon.shadowSize = new GSize(36, 34);
+        icon.iconAnchor = new GPoint(9, 29);
+        icon.infoWindowAnchor = new GPoint(9, 1);
+        icon.image = string;
+        return icon;
+      }
+
+      // Display the map, with some controls and set the initial location 
+      var map = new GMap2(document.getElementById("map"));
+      map.addControl(new GLargeMapControl());
+      map.addControl(new GMapTypeControl());
+      map.enableDoubleClickZoom();
+      map.enableContinuousZoom();
+      map.setCenter(new GLatLng(37.439974,-93.779297),4);
+    
+      // EA markers
+    
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/iconr1.png");
+      var point = new GLatLng(37.485347,-122.232342);
+      var marker = createMarker(point,'<a href="http://www.ea.com">Electronic Arts HQ</a> and Redwood Shores<br>Redwood City, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong1.png");
+      var point = new GLatLng(42.977023,-81.245613);
+      var marker = createMarker(point,'EA: Digital Illusions CE<BR>London, Ont., Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong1.png");
+      var point = new GLatLng(49.281804,-123.107128);
+      var marker = createMarker(point,'EA Black Box<br>Vancouver, Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong1.png");
+      var point = new GLatLng(49.2445,-122.969627);
+      var marker = createMarker(point,'EA Canada<br>Burnaby, British Columbia, Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong1.png");
+      var point = new GLatLng(33.972122,-118.427467);
+      var marker = createMarker(point,'EA Los Angeles<br>Playa Vista, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong1.png");
+      var point = new GLatLng(45.502016,-73.56883);
+      var marker = createMarker(point,'EA Montreal<br>Montreal, Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong1.png");
+      var point = new GLatLng(38.851473,-77.304955);
+      var marker = createMarker(point,'EA Mythic<br>Fairfax, VA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong1.png");
+      var point = new GLatLng(37.938782,-122.213974);
+      var marker = createMarker(point,'EA: Maxis<br>Emeryville, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong1.png");
+      var point = new GLatLng(28.636965,-81.397705);
+      var marker = createMarker(point,'EA Tiburon<br>Orlando, FL')
+      map.addOverlay(marker);
+
+      // Nintendo
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong2.png");
+      var point = new GLatLng(47.653016,-122.132607);
+      var marker = createMarker(point,'Nintendo Software Technology Corp.<BR>Redmond, WA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong2.png");
+      var point = new GLatLng(30.387684,-97.697983);
+      var marker = createMarker(point,'Nintendo: Retro Studios<BR>Austin, TX')
+      map.addOverlay(marker);
+
+      // Activision
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/iconr3.png");
+      var point = new GLatLng(34.01738,-118.448925);
+      var marker = createMarker(point,'<a href="http://www.activision.com">Activision HQ</a>, Luxoflux, Treyarch<BR>Santa Monica, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong3.png");
+      var point = new GLatLng(30.387684,-97.697983);
+      var marker = createMarker(point,'Activision: Beenox<BR>Quebec City, Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong3.png");
+      var point = new GLatLng(34.155568,-118.475876);
+      var marker = createMarker(point,'Activision: Infinity Ward<BR>Encino, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong3.png");
+      var point = new GLatLng(34.163807,-118.572006);
+      var marker = createMarker(point,'Activision: Neversoft<BR>Woodland Hills, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong3.png");
+      var point = new GLatLng(43.059356,-89.498062);
+      var marker = createMarker(point,'Activision: Raven Studios<BR>Madison, WI')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong3.png");
+      var point = new GLatLng(37.368793,-122.035446);
+      var marker = createMarker(point,'Activision: RedOctane<BR>Sunnyvale, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong3.png");
+      var point = new GLatLng(37.787742,-122.394218);
+      var marker = createMarker(point,'Activision: Shaba Games<BR>San Francisco, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong3.png");
+      var point = new GLatLng(38.109818,-122.569206);
+      var marker = createMarker(point,'Activision: Toys For Bob<BR>Novato, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong3.png");
+      var point = new GLatLng(37.40446,-122.111578);
+      var marker = createMarker(point,'Activision: Vicarious Visions<BR>Mountain View, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong3.png");
+      var point = new GLatLng(42.674359,-73.700409);
+      var marker = createMarker(point,'Activision: Vicarious Visions<BR>Troy, NY')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong3.png");
+      var point = new GLatLng(37.564718,-122.262383);
+      var marker = createMarker(point,'Activision: Z-Axis<BR>Foster City, CA')
+      map.addOverlay(marker);
+
+
+      // Sony
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong4.png");
+      var point = new GLatLng(44.059219,-121.314125);
+      var marker = createMarker(point,'Sony<BR>Bend, OR')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong4.png");
+      var point = new GLatLng(37.559548,-122.269936);
+      var marker = createMarker(point,'Sony<BR>Foster City, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong4.png");
+      var point = new GLatLng(40.769134,-111.887426);
+      var marker = createMarker(point,'Sony: Incognito Entertainment<BR>Salt Lake City, UT')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong4.png");
+      var point = new GLatLng(34.197321,-118.307991);
+      var marker = createMarker(point,'Sony: Insomniac<BR>Burbank, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong4.png");
+      var point = new GLatLng(32.890255,-117.156487);
+      var marker = createMarker(point,'Sony<BR>San Diego, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong4.png");
+      var point = new GLatLng(34.028727,-118.473516);
+      var marker = createMarker(point,'Sony: Naughty Dog<BR>Santa Monica, CA')
+      map.addOverlay(marker);
+
+      // Take Two
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/iconr5.png");
+      var point = new GLatLng(40.725665,-73.998756);
+      var marker = createMarker(point,'<a href="http://www.take2games.com">Take Two Interactive HQ</a><br>New York, NY')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong5.png");
+      var point = new GLatLng(47.626529,-122.143421);
+      var marker = createMarker(point,'Take Two: Cat Daddy Games<BR>Bellevue, WA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong5.png");
+      var point = new GLatLng(39.493709,-76.65925);
+      var marker = createMarker(point,'Take Two: Firaxis Games<BR>Hunt Valley, MD')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong5.png");
+      var point = new GLatLng(42.246564,-71.000175);
+      var marker = createMarker(point,'Take Two: Irrational Games<BR>Quincy, MA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong5.png");
+      var point = new GLatLng(34.216842,-119.030514);
+      var marker = createMarker(point,'Take Two: Kush Games<BR>Camarillo, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong5.png");
+      var point = new GLatLng(33.135826,-117.280426);
+      var marker = createMarker(point,'Take Two: Rockstar San Diego<BR>San Diego, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong5.png");
+      var point = new GLatLng(43.72149,-79.393044);
+      var marker = createMarker(point,'Take Two: Rockstar Toronto<BR>Toronto, Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong5.png");
+      var point = new GLatLng(49.278109,-123.11451);
+      var marker = createMarker(point,'Take Two: Rockstar Vancouver<BR>Vancouver, Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong5.png");
+      var point = new GLatLng(37.99995,-122.547684);
+      var marker = createMarker(point,'Take Two: Visual Concepts<BR>San Rafael, CA')
+      map.addOverlay(marker);
+
+
+      // Microsoft Game Studios
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/iconr6.png");
+      var point = new GLatLng(47.664925,-122.094841);
+      var marker = createMarker(point,'<a href="http://www.microsoft.com/games/">Microsoft Game Studios, Bungie, FASA</a><br>Redmond, WA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong6.png");
+      var point = new GLatLng(32.887083,-96.770325);
+      var marker = createMarker(point,'Microsoft: Ensemble Studios<BR>Dallas, TX')
+      map.addOverlay(marker);
+
+
+      // THQ
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/iconr7.png");
+      var point = new GLatLng(34.137668,-118.712082);
+      var marker = createMarker(point,'<a href="http://www.thq.com/">THQ</a>, THQ Wireless<br>Calabasas Hills, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(34.137668,-118.712082);
+      var marker = createMarker(point,'THQ: Concrete Games, Incinerator<BR>Carlsbad, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(47.698787,-122.178268);
+      var marker = createMarker(point,'THQ: Cranky Pants Games<BR>Kirkland, WA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(33.972406,-118.391418);
+      var marker = createMarker(point,'THQ: Heavy Iron Studios<BR>Los Angeles, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(42.48691,-71.221962);
+      var marker = createMarker(point,'THQ: Helixe<BR>Burlington, MA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(40.749338,-73.987427);
+      var marker = createMarker(point,'THQ: Kaos Studios<BR>New York, NY')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(37.403165,-121.980858);
+      var marker = createMarker(point,'THQ: Locomotive Games<BR>Santa Carla, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(32.932623,-96.9207);
+      var marker = createMarker(point,'THQ: Paradigm<BR>Dallas, TX')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(33.503614,-112.044754);
+      var marker = createMarker(point,'THQ: Rainbow Studios<BR>Phoenix, AZ')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(49.276989,-123.118629);
+      var marker = createMarker(point,'THQ: Relic Entertainment<BR>Vancouver, Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(30.281602,-97.825356);
+      var marker = createMarker(point,'THQ: Vigil Games<BR>Austin, TX')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong7.png");
+      var point = new GLatLng(40.111426,-88.207254);
+      var marker = createMarker(point,'THQ: Volition<BR>Champaign, IL')
+      map.addOverlay(marker);
+
+
+      // Ubisoft
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong8.png");
+      var point = new GLatLng(45.526074,-73.57338);
+      var marker = createMarker(point,'Ubisoft<BR>Montreal, Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong8.png");
+      var point = new GLatLng(46.811104,-71.223679);
+      var marker = createMarker(point,'Ubisoft<BR>Quebec City, Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong8.png");
+      var point = new GLatLng(35.891275,-78.796005);
+      var marker = createMarker(point,'Ubisoft: Red Storm<BR>Morrisville, NC')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong8.png");
+      var point = new GLatLng(30.493651,-97.689056);
+      var marker = createMarker(point,'Ubisoft: Wolfpack<BR>Austin, TX')
+      map.addOverlay(marker);
+
+
+      // Konami
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong9.png");
+      var point = new GLatLng(33.930827,-118.392105);
+      var marker = createMarker(point,'Konami: Blue Label Interactive<BR>Los Angeles, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong9.png");
+      var point = new GLatLng(37.524159,-122.251396);
+      var marker = createMarker(point,'Konami: Hudson Soft<BR>Redwood City, CA')
+      map.addOverlay(marker);
+
+
+      // Sega Sammy Holdings
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong10.png");
+      var point = new GLatLng(37.769493,-122.401772);
+      var marker = createMarker(point,'Sega Studios USA, and Secret Level<BR>San Francisco, CA')
+      map.addOverlay(marker);
+
+
+      // Namco Bandai
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong11.png");
+      var point = new GLatLng(37.365519,-121.918716);
+      var marker = createMarker(point,'Namco Networks America<BR>San Jose, CA')
+      map.addOverlay(marker);
+
+
+      // Vivendi Games
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/iconr12.png");
+      var point = new GLatLng(40.750378,-73.99086);
+      var marker = createMarker(point,'<a href="http://www.vivendi.com">Vivendi HQ</a><br>New York, NY')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong12.png");
+      var point = new GLatLng(33.606041,-117.743225);
+      var marker = createMarker(point,'Vivendi: Blizzard Console<BR>Aliso Viejo, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong12.png");
+      var point = new GLatLng(33.973545,-118.388672);
+      var marker = createMarker(point,'Vivendi: Blizzard Entertainment<BR>Irvine, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong12.png");
+      var point = new GLatLng(37.494201,-122.22393);
+      var marker = createMarker(point,'Vivendi: Blizzard North<BR>San Mateo, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong12.png");
+      var point = new GLatLng(33.124038,-117.265663);
+      var marker = createMarker(point,'Vivendi: High Moon Studios<BR>Carlsbad, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong12.png");
+      var point = new GLatLng(49.271165,-123.096657);
+      var marker = createMarker(point,'Vivendi: Radical Entertainment<BR>Vancouver, Canada')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong12.png");
+      var point = new GLatLng(47.582373,-122.154493);
+      var marker = createMarker(point,'Vivendi: Sierra Entertainment<BR>Bellevue, WA')
+      map.addOverlay(marker);
+
+
+      // Square Enix
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong13.png");
+      var point = new GLatLng(47.622595,-122.159557);
+      var marker = createMarker(point,'Square Enix: UIEvolution<BR>Bellevue, WA')
+      map.addOverlay(marker);
+
+
+      // Capcom
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong14.png");
+      var point = new GLatLng(34.050384,-118.242073);
+      var marker = createMarker(point,'Capcom Interactive<BR>Los Angeles, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong14.png");
+      var point = new GLatLng(43.329174,-79.799538);
+      var marker = createMarker(point,'Capcom: Cosmic Infinity<BR>Burlington, Ont., Canada')
+      map.addOverlay(marker);
+
+
+      // NCsoft
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong15.png");
+      var point = new GLatLng(47.609288,-122.193031);
+      var marker = createMarker(point,'NCsoft: ArenaNet<BR>Bellevue, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong15.png");
+      var point = new GLatLng(30.361026,-97.787933);
+      var marker = createMarker(point,'NCsoft Austin<BR>Austin, TX')
+      map.addOverlay(marker);
+
+
+      // SCi/Eidos
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong16.png");
+      var point = new GLatLng(37.446516,-122.164707);
+      var marker = createMarker(point,'SCi/Eidos: Crystal Dynamics<BR>Palo Alto, CA')
+      map.addOverlay(marker);
+
+
+      // LucasArts
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/iconr17.png");
+      var point = new GLatLng(37.799747,-122.448807);
+      var marker = createMarker(point,'<a href="http://www.lucasarts.com">Lucasarts HQ</a><br>San Francisco, CA')
+      map.addOverlay(marker);
+
+
+      // Buena Vista Games
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/iconr18.png");
+      var point = new GLatLng(34.157273,-118.28722);
+      var marker = createMarker(point,'<a href="http://buenavistagames.go.com/">Buena Vista Games HQ</a><br>Burbank, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong18.png");
+      var point = new GLatLng(40.758473,-111.894121);
+      var marker = createMarker(point,'Buena Vista: Avalanche Software<BR>Salt Lake City, UT')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong18.png");
+      var point = new GLatLng(49.248983,-123.11039);
+      var marker = createMarker(point,'Buena Vista: Propaganda Games<BR>Vancouver, Canada')
+      map.addOverlay(marker);
+
+
+      // Atari
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong19.png");
+      var point = new GLatLng(40.748818,-73.981247);
+      var marker = createMarker(point,'Atari: Humongous Inc.<BR>New York, NY')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong19.png");
+      var point = new GLatLng(33.620105,-117.924886);
+      var marker = createMarker(point,'Atari: Shiny Entertainment<BR>Newport Beach, CA')
+      map.addOverlay(marker);
+
+
+      // Midway
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/iconr20.png");
+      var point = new GLatLng(41.942,-87.695961);
+      var marker = createMarker(point,'<a href="http://www.take2games.com">Midway HQ</a><br>Chicago, IL')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong20.png");
+      var point = new GLatLng(30.38339,-97.742786);
+      var marker = createMarker(point,'Midway (was Inevitable Entertainment)<BR>Austin, TX')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong20.png");
+      var point = new GLatLng(34.049246,-118.247223);
+      var marker = createMarker(point,'Midway<BR>Los Angeles, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong20.png");
+      var point = new GLatLng(32.903515,-117.170563);
+      var marker = createMarker(point,'Midway<BR>San Diego, CA')
+      map.addOverlay(marker);
+
+      var icon = createIcon("http://www.realtimerendering.com/mapfiles/icong20.png");
+      var point = new GLatLng(47.649547,-122.349243);
+      var marker = createMarker(point,'Midway: Surreal Software<BR>Seattle, WA')
+      map.addOverlay(marker);
+
+    }
+    
+    // display a warning if the browser was not compatible
+    else {
+      alert("Sorry, the Google Maps API is not compatible with this browser");
+    }
+
+    // This Javascript is based on code provided by the
+    // Blackpool Community Church Javascript Team
+    // http://www.commchurch.freeserve.co.uk/   
+    // http://www.econym.demon.co.uk/googlemaps/
+
+    //]]>
+    </script>
+<font face="LUCIDA, ARIAL, HELVETICA">
+<P>
+This map shows the top 20 publishers in the field of videogames in 2006. Data is taken from <a href="http://www.gdmag.com"><I>Game Developer</I> magazine</a>, October 2006, "Top 20 Publishers", by <A HREF="mailto:twilson@gdmag.com">Trevor Wilson</a>. Headquarters are shown in red, the rest in green. Only sites in the continental United States and Canada are shown. Click on each map marker's tip to learn more about it, double-click to zoom in. The top 20 are judged by six measures: annual sales turnover, number of releases, average review score, quality of producers, reliability of milestone payments, and quality of staff pay and perks.
+<P>
+If you want to see the map data and names of firms, simply view the source for this page - you'll figure it out. Many of the locations are actually extremely precise, others are an average location between two or more offices, others are just rough guesses. A subtle detail: the density of the drop shadow from the markers is related to the number of firms in a particular location, e.g. Austin's is darker than Dallas'. Search <a href="http://maps.google.com">Google Maps</a> for a company and its town to find it more precisely; this works about 2/3rds of the time. <a href="http://www.gamestats.com/companies/a.html">Gamestats.com's companies list</a> is a good resource for finding more about any game company.
+<P>
+Yes, this map is in no way comprehensive. For example, in the Boston area there's Turbine Games and Harmonix, both with recognizable offerings, but not aligned with these large publishers. I made it mostly for my own understanding of where a sampling of companies are located, so take it for what it is.
+<P>
+1. Electronic Arts
+<br>
+2. Nintendo
+<br>
+3. Activision
+<br>
+4. Sony Computer Entertainment
+<br>
+5. Take Two Interactive
+<br>
+6. Microsoft Game Studios
+<br>
+7. THQ
+<br>
+8. Ubisoft
+<br>
+9. Konami
+<br>
+10. Sega Sammy Holdings
+<br>
+11. Namco Bandai
+<br>
+12. Vivendi Games
+<br>
+13. Square Enix
+<br>
+14. Capcom
+<br>
+15. NCsoft
+<br>
+16. SCi/Eidos
+<br>
+17. LucasArts
+<br>
+18. Buena Vista Games
+<br>
+19. Atari
+<br>
+20. Midway
+<P>
+Icons from <a href="http://brennan.offwhite.net/blog/2005/07/23/new-google-maps-icons-free/">Brennan's Blog</a>.
+<P>
+Back to the <I><a href="index.html">Real-Time Rendering homepage</a></I>
+<HR>
+<ADDRESS>
+<A HREF="http://www.erichaines.com/">Eric Haines</A>, <A HREF="mailto:erich@acm.org">erich@acm.org</A>
+</ADDRESS>
+Last change: <I>November 2, 2006</I> 
+</font>
+  </body>
+</html>
+
+
+
+

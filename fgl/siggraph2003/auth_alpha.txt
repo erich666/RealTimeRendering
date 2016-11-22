@@ -1,0 +1,609 @@
+
+
+
+
+Data for all authors with a cost
+### Value Cost Efficiency Name
+==============================
+  1  0.00   20   0.0000   A. J. Preetham
+  2  0.00  130   0.0000   Aaron Hertzmann
+  3  0.00   20   0.0000   Aaron Isaksen
+  4  0.00   20   0.0000   Aaron McGaffey
+  5  0.00   45   0.0000   Aaron W.F. Lee
+  6 30.00  100   0.3000   Adam Finkelstein
+  7  0.00   10   0.0000   Adam Lake
+  8  0.00   20   0.0000   Adam W. Bargteil
+  9  0.00   25   0.0000   Addy Ngan
+ 10  0.00   80   0.0000   Adi Levin
+ 11  0.00   20   0.0000   Alain Fournier
+ 12  0.00   30   0.0000   Alan Cheney
+ 13  0.00   10   0.0000   Alan Edelman
+ 14  0.00   45   0.0000   Alan H. Barr
+ 15  0.00   15   0.0000   Alan Heirich
+ 16  0.00   60   0.0000   Alejo Hausner
+ 17  0.00   30   0.0000   Alexei A. Efros
+ 18  0.00   20   0.0000   Alexis Angelidis
+ 19  0.00   20   0.0000   Alinda Friedman
+ 20  0.00   10   0.0000   Allison W. Klein
+ 21  0.00   15   0.0000   Alyn Rockwood
+ 22  0.00   15   0.0000   Amy Gooch
+ 23  0.00   30   0.0000   Andreas Kolb
+ 24  0.00   10   0.0000   Andreas Wenger
+ 25 20.00   20   1.0000   Andrei Khodakovsky
+ 29 15.00   10   1.5000   Andrew Gardner
+ 26 20.00   85   0.2353   Andrew Witkin
+ 27  0.00   30   0.0000   André Gagalowicz
+ 28  0.00   15   0.0000   André Gueziec
+ 30  0.00   20   0.0000   Anis Ahmad
+ 31  0.00   90   0.0000   Anselmo Lastra
+ 32  0.00   10   0.0000   Ansul Panday
+ 33 15.00   30   0.5000   Anthony Santella
+ 34  0.00   10   0.0000   Anthony Steed
+ 35  0.00   30   0.0000   Ari Rappoport
+ 36  0.00   30   0.0000   Arnauld Lamorlette
+ 37  0.00   15   0.0000   Arno Schodl
+ 38  0.00    5   0.0000   Art Webb
+ 39  0.00   20   0.0000   Aseem Agarwala
+ 40 22.00  110   0.2000   Baining Guo
+ 41  0.00   10   0.0000   Barbara Cutler
+ 42  0.00    5   0.0000   Barbara J. Meier
+ 43  0.00   20   0.0000   Benjamin Watson
+ 44  0.00   10   0.0000   Bernd Lintermann
+ 45  0.00   10   0.0000   Bernd Schoner
+ 46  0.00   30   0.0000   Blair MacIntyre
+ 47  0.00   30   0.0000   Bob Coyne
+ 48  0.00   15   0.0000   Brendan Lane
+ 49  0.00   15   0.0000   Brent Insko
+ 50 20.00   20   1.0000   Brett Allen
+ 51  0.00   20   0.0000   Brian Cabral
+ 52 32.00   95   0.3368   Brian Curless
+ 53  0.00   20   0.0000   Brian E. Smits
+ 54  0.00   10   0.0000   Brian Emerson
+ 55  0.00   15   0.0000   Brian Fujito
+ 56  0.00   10   0.0000   Brian Guenter
+ 57  0.00   60   0.0000   Brian Mirtich
+ 58  0.00   10   0.0000   Bruce Blumberg
+ 59  0.00   10   0.0000   Bruce C. McCallum
+ 60  0.00   10   0.0000   Bruce Donald
+ 61  0.00   15   0.0000   Bruce Gooch
+ 62 20.00   15   1.3333   Bruce Walter
+ 63 72.00  110   0.6545   Bruno Lévy
+ 64  0.00   40   0.0000   Brygg Ullmer
+ 65  0.00   15   0.0000   Byong Mok Oh
+ 66  0.00   30   0.0000   C. Karen Liu
+ 67 12.00   10   1.2000   Charles E. Jacobs
+ 68  0.00   25   0.0000   Chris Buehler
+ 69  0.00    5   0.0000   Chris Caywood
+ 70  0.00   10   0.0000   Chris Greenhalgh
+ 71  0.00   15   0.0000   Chris Kogelnik
+ 72  0.00   30   0.0000   Chris Stolte
+ 73 15.00   20   0.7500   Chris Tchou
+ 74  0.00   45   0.0000   Christoph Bregler
+ 75  0.00   20   0.0000   Christopher C. Tanner
+ 76  0.00   20   0.0000   Christopher J. Migdal
+ 77  0.00   20   0.0000   Chun-Fa Chang
+ 78  0.00   10   0.0000   Cindy M. Grimm
+ 79  0.00   15   0.0000   Claude Puech
+ 80  0.00   15   0.0000   Coloma Ballester
+ 81  0.00   15   0.0000   Craig E. Thayer
+ 82 40.00   30   1.3333   Craig Gotsman
+ 83  0.00   30   0.0000   Craig S. Kaplan
+ 84  0.00   50   0.0000   Cyril Soler
+ 86  0.00   20   0.0000   Dan Gelb
+ 87  0.00    5   0.0000   Dan Patterson
+ 88  0.00   30   0.0000   Dan Piponi
+ 89  0.00   30   0.0000   Dani Lischinski
+ 90 60.00   40   1.5000   Daniel Cohen-Or
+ 91  0.00   60   0.0000   Daniel G. Aliaga
+ 92  0.00   10   0.0000   Daniel I. Azuma
+ 93  0.00   20   0.0000   Daniel Kristjansson
+ 94  0.00   20   0.0000   Daniel Menevaux
+ 95  0.00   20   0.0000   Daniel N. Wood
+ 96  0.00    5   0.0000   Darren Leigh
+ 97  0.00   15   0.0000   David (grue) DeBry
+ 85 20.00   60   0.3333   David A. Forsyth
+ 98  0.00    5   0.0000   David Anderson
+ 99 20.00   30   0.6667   David Baraff
+100  0.00   30   0.0000   David Benson
+101  0.00   25   0.0000   David Dobkin
+102  0.00   15   0.0000   David E. Breen
+103 24.00  170   0.1412   David H. Salesin
+104 20.00   20   1.0000   David Hart
+105  0.00    5   0.0000   David Koller
+106  0.00   20   0.0000   David Levin
+107  0.00   20   0.0000   David McAllister
+108  0.00   30   0.0000   David Naegle
+109  0.00   15   0.0000   David Sewell
+110  0.00   15   0.0000   Dawn M. Werner
+111  0.00   60   0.0000   Demetri Terzopoulos
+112  0.00   85   0.0000   Denis Zorin
+113  0.00   15   0.0000   Devorah DeLeon Petty
+114  0.00   15   0.0000   Diane M. Chi
+115  0.00   50   0.0000   Dimitris Metaxas
+116  0.00   90   0.0000   Dinesh K. Pai
+117 42.00   45   0.9333   Dinesh Manocha
+118 20.00  140   0.1429   Donald P. Greenberg
+119  0.00   10   0.0000   Doug Cutrell
+120 30.00   70   0.4286   Doug L. James
+121 15.00   50   0.3000   Douglas DeCarlo
+122  0.00   65   0.0000   Douglas E. Zongker
+123  0.00   20   0.0000   Douglas P. Enright
+124  0.00    5   0.0000   Duane Fulk
+125 15.00   20   0.7500   Duc Nguyen
+126  0.00   20   0.0000   Dylan Glas
+127  0.00    5   0.0000   Eddie Sullivan
+128 15.00   20   0.7500   Eitan Grinspun
+129  0.00   30   0.0000   Elaine Cohen
+130 30.00   75   0.4000   Emil Praun
+131  0.00   10   0.0000   Enhua Wu
+132  0.00   20   0.0000   Eric Foxlin
+133  0.00   20   0.0000   Eric J. Stollnitz
+134  0.00   30   0.0000   Eric Schenk
+135  0.00   30   0.0000   Eric Veach
+136  0.00   20   0.0000   Erik Lindholm
+137  0.00   15   0.0000   Erik Reinhard
+138  0.00   15   0.0000   Erika Chuang
+139  0.00   50   0.0000   Eugene Fiume
+140  0.00   30   0.0000   Eyal Ofek
+141  0.00   85   0.0000   Fabio Pellacini
+142  0.00   30   0.0000   Fabrice Neyret
+143  0.00   15   0.0000   Fausto Bernardini
+144  0.00   30   0.0000   Florent Duguet
+145  0.00   15   0.0000   Francis Lazarus
+146  0.00   15   0.0000   Frank Losasso
+147 30.00   45   0.6667   François X. Sillion
+148  0.00   25   0.0000   Frederick P. Brooks, Jr.
+149 35.00   70   0.5000   Frédo Durand
+150  0.00   45   0.0000   Frédéric Pighin
+151  0.00   15   0.0000   Fumio Kishino
+152  0.00   15   0.0000   Fumitaka Nakaizumi
+153  0.00   30   0.0000   Gabriel Brostow
+154  0.00   15   0.0000   Gabriel Taubin
+155  0.00   20   0.0000   Gadi Geiger
+156  0.00   70   0.0000   Gary Bishop
+157 20.00   20   1.0000   Gary D. Yngve
+158  0.00   10   0.0000   Gary Elko
+159  0.00   60   0.0000   Gary W. Meyer
+160  0.00   15   0.0000   Gavin S.P. Miller
+161  0.00   20   0.0000   Geoffrey Hinton
+162  0.00   20   0.0000   Georg Essl
+163 40.00   30   1.3333   George D. Borshukov
+164  0.00   75   0.0000   George Drettakis
+165  0.00   20   0.0000   George Pfeifer
+166  0.00   20   0.0000   Geraldine Wade
+167  0.00   15   0.0000   Gernot Schaufler
+168  0.00   20   0.0000   Gianpaolo U. Carraro
+169  0.00   15   0.0000   Gilles Debunne
+170  0.00   10   0.0000   Gopal Pingali
+171  0.00   35   0.0000   Gordon Stoll
+172  0.00   10   0.0000   Graham Walker
+173  0.00   20   0.0000   Greg Humphreys
+174 24.00  120   0.2000   Greg Turk
+175  0.00   10   0.0000   Greg Welch
+176  0.00   15   0.0000   Guillermo Sapiro
+177 20.00   10   2.0000   Haarm-Pieter Duiker
+178  0.00   20   0.0000   Hannes Vilhjalmsson
+179  0.00   10   0.0000   Hans Køhling Pedersen
+180  0.00   20   0.0000   Hans Wolters
+181 62.00   90   0.6889   Hans-Peter Seidel
+182 15.00   55   0.2727   Hanspeter Pfister
+183  0.00   30   0.0000   Harald Schmidl
+184  0.00   30   0.0000   Harold B. Westlund
+185  0.00   30   0.0000   Harold C. Sun
+186  0.00   10   0.0000   Harpreet S. Sawhney
+187  0.00   15   0.0000   Hector Yee
+188  0.00   55   0.0000   Henning Biermann
+189 27.00  140   0.1929   Henrik Wann Jensen
+190  0.00   30   0.0000   Henrik Weimer
+191  0.00   10   0.0000   Henrique Malvar
+192  0.00   10   0.0000   Henry Fuchs
+193  0.00   40   0.0000   Henry Moreton
+194 37.00  130   0.2846   Heung-Yeung Shum
+195  0.00   20   0.0000   Hidehiko Tanaka
+196  0.00   10   0.0000   Hideo Yamashita
+197  0.00   15   0.0000   Hiroaki Yano
+198  0.00   15   0.0000   Hiroo Iwata
+199  0.00   40   0.0000   Hiroshi Ishii
+200  0.00   15   0.0000   Hiroyuki Akamine
+201  0.00  100   0.0000   Homan Igehy
+202  0.00   15   0.0000   Hrishikesh Deshpande
+203  0.00   10   0.0000   Hua Zhong
+204  0.00   10   0.0000   Hugh Lauer
+205 30.00  180   0.1667   Hugues Hoppe
+206 30.00   30   1.0000   Hyeong-Seok Ko
+207  0.00   25   0.0000   Ian Buck
+208  0.00   10   0.0000   Ian Taylor
+209  0.00   35   0.0000   Igor Guskov
+210  0.00   15   0.0000   Ingmar Peter
+211  0.00   75   0.0000   Ingrid Carlbom
+212  0.00   15   0.0000   Ioana Martin
+213 12.00   45   0.2667   Irfan Essa
+214  0.00   15   0.0000   Irving Oppenheim
+215  0.00   10   0.0000   J. D. Northrup
+216  0.00   20   0.0000   J. Robert Ensor
+217  0.00   20   0.0000   J.P. Lewis
+218  0.00   30   0.0000   Jack Snoeyink
+219  0.00   45   0.0000   Jack Tumblin
+220  0.00   50   0.0000   James A. Ferwerda
+221  0.00   30   0.0000   James Arvo
+222  0.00    5   0.0000   James Davis
+223 40.00  120   0.3333   James F. O'Brien
+224  0.00    5   0.0000   James Frankel
+225  0.00   20   0.0000   James J. Troy
+226  0.00   10   0.0000   Jamie Hecker
+227  0.00   10   0.0000   Jan Hardenbergh
+228  0.00   35   0.0000   Jan Kautz
+229  0.00   60   0.0000   Jarke J. van Wijk
+230  0.00   20   0.0000   Jason Ang
+231  0.00   20   0.0000   Jean-Bouguet
+232  0.00   30   0.0000   Jean-Laurent Mallet
+233  0.00   30   0.0000   Jed Lengyel
+234  0.00   60   0.0000   Jeff Tupper
+235  0.00   15   0.0000   Jeff Ungar
+236  0.00   15   0.0000   Jeffry Smith
+237  0.00   40   0.0000   Jehee Lee
+238  0.00   10   0.0000   Jenny Dana
+239  0.00   15   0.0000   Jens Vorsatz
+240  0.00   20   0.0000   Jeremy B. Badler
+241  0.00    5   0.0000   Jeremy Ginsberg
+242 10.00   30   0.3333   Jeroen van Baar
+243  0.00   15   0.0000   Jerome Maillot
+244  0.00  100   0.0000   Jessica K. Hodgins
+245 15.00   15   1.0000   Jianmin Zheng
+246  0.00   10   0.0000   Jim Klosowski
+247  0.00   10   0.0000   Jim Knittel
+248  0.00   10   0.0000   Jim West
+249  0.00   10   0.0000   Jin-Xiang Chai
+250 12.00   10   1.2000   Jingdan Zhang
+251  0.00   15   0.0000   Jinxiang Chai
+252  0.00   45   0.0000   Jitendra Malik
+253  0.00   10   0.0000   Jochen Lang
+254  0.00    5   0.0000   Joe Marks
+255  0.00   45   0.0000   Joe Warren
+256  0.00   30   0.0000   Joel Davis
+257  0.00   10   0.0000   Joel Hindorff
+258  0.00   20   0.0000   Joel Kollin
+259  0.00   15   0.0000   Joel McCormack
+260  0.00   15   0.0000   Joelle Thollot
+261  0.00   10   0.0000   Joey Richards
+262  0.00   15   0.0000   John Airey
+263  0.00   20   0.0000   John Anderson
+264  0.00   10   0.0000   John Bowers
+265  0.00   10   0.0000   John E. Lloyd
+266  0.00   10   0.0000   John Eyles
+267  0.00   30   0.0000   John F. Hughes
+268  0.00   20   0.0000   John Funge
+269  0.00   10   0.0000   John Keyser
+270 30.00   75   0.4000   John M. Snyder
+271  0.00   20   0.0000   John T. Edmark
+272  0.00   20   0.0000   John Underkoffler
+273  0.00   10   0.0000   John Wyver
+274  0.00   10   0.0000   Jon B. Cherrie
+275  0.00   10   0.0000   Jonathan C. Carr
+276  0.00   15   0.0000   Jonathan Gibbs
+277 20.00   35   0.5714   Jonathan M. Cohen
+278 15.00   20   0.7500   Jonathan W. Shade
+279  0.00    5   0.0000   Jonathan Yedidia
+280  0.00   60   0.0000   Jorg Peters
+281 75.00  200   0.3750   Jos Stam
+282  0.00    5   0.0000   Joseph C. Lee
+283  0.00   20   0.0000   Joseph F. Laszlo
+284  0.00   10   0.0000   Josh Steinhurst
+285  0.00   10   0.0000   Joshua L. Richmond
+286 20.00   10   2.0000   Jovan Popovic
+287  0.00   30   0.0000   Juan Buhler
+288 15.00  110   0.1364   Julie Dorsey
+289  0.00   30   0.0000   Jun-yong Noh
+290  0.00   30   0.0000   Junhwan Kim
+291  0.00   30   0.0000   Justin Legakis
+292  0.00   20   0.0000   Justine Cassell
+293  0.00   30   0.0000   Karan Singh
+294  0.00    5   0.0000   Kari Pulli
+295  0.00   15   0.0000   Karol Myszkowski
+296  0.00   30   0.0000   Katherine Pullen
+297  0.00    5   0.0000   Kathy Ryall
+298  0.00   15   0.0000   Katja Daubert
+299 20.00   15   1.3333   Kavita Bala
+300  0.00   10   0.0000   Kazufumi Kaneda
+301  0.00   30   0.0000   Kees van den Doel
+302  0.00   10   0.0000   Keith Hanna
+303  0.00   15   0.0000   Keith I. Farkas
+304  0.00   15   0.0000   Kekoa Proudfoot
+305  0.00   10   0.0000   Kelly Dobson
+306  0.00   10   0.0000   Ken Aldinger
+307  0.00   15   0.0000   Ken Museth
+308 30.00   80   0.3750   Ken Perlin
+309  0.00   10   0.0000   Kenneth E. Hoff III
+310  0.00   10   0.0000   Kevin Arthur
+311  0.00   20   0.0000   Kevin D. Puterbaugh
+312  0.00   15   0.0000   Kiril Vidimce
+313  0.00   20   0.0000   Klaus Mueller
+314  0.00   30   0.0000   Kwang-Jin Choi
+315  0.00   15   0.0000   Lance Williams
+316  0.00   20   0.0000   Larry F. Hodges
+317  0.00   10   0.0000   Larry Seiler
+318  0.00   15   0.0000   Lars Muendermann
+319  0.00   10   0.0000   Lars Nyland
+320  0.00   15   0.0000   Laurent Moll
+321  0.00   10   0.0000   Lawrence Cowsar
+322 15.00   30   0.5000   Lee Markosian
+323 15.00   90   0.1667   Leif Kobbelt
+324  0.00   15   0.0000   Lena Petrovic
+325 35.00   70   0.5000   Leonard McMillan
+326  0.00   10   0.0000   Lev Stesin
+327 20.00   60   0.3333   Li-Yi Wei
+328  0.00   45   0.0000   Li-wei He
+329 10.00   15   0.6667   Lifeng Wang
+330 10.00   10   1.0000   Ligang Liu
+331  0.00   15   0.0000   Liwei Zhao
+332  0.00   25   0.0000   Lorie Loeb
+333  0.00   10   0.0000   Loring S. Holden
+334  0.00   10   0.0000   Lubomir D. Bourdev
+335  0.00   20   0.0000   Lucas Kovar
+336  0.00    5   0.0000   Lucas Pereira
+337  0.00   30   0.0000   Lutz Latta
+338  0.00   20   0.0000   Mahesh Ramasubramanian
+339  0.00   15   0.0000   Malcolm Sabin
+340  8.57   45   0.1905   Maneesh Agrawala
+341  0.00   20   0.0000   Manolis Kamvysselis
+342 20.00   20   1.0000   Manuel M. Oliveira
+343 12.00   80   0.1500   Marc Alexa
+344  0.00   10   0.0000   Marc Downie
+345  0.00  130   0.0000   Marc Levoy
+346  0.00   85   0.0000   Marc Olano
+347 20.00   30   0.6667   Marc Stamminger
+348  0.00   15   0.0000   Marcelo Bertalmio
+349  0.00   20   0.0000   Marcelo Walter
+350  0.00   65   0.0000   Marie-Paule Cani
+351  0.00   15   0.0000   Mario Botsch
+352  0.00   15   0.0000   Mark D. Fairchild
+353  0.00   20   0.0000   Mark Kilgard
+354  0.00   35   0.0000   Mark Meyer
+355 15.00   45   0.3333   Mark Pauly
+356  0.00   15   0.0000   Mark Peercy
+357  0.00   30   0.0000   Mark R. Bolin
+358  0.00   10   0.0000   Mark Sagar
+359 19.29   75   0.2571   Markus H. Gross
+360  0.00   20   0.0000   Marshall Bern
+361 30.00   30   1.0000   Martin Isenburg
+362  0.00   10   0.0000   Martin Usoh
+363  0.00   25   0.0000   Mary C. Whitton
+364  0.00   15   0.0000   Masaki Hilaga
+365 67.00   80   0.8375   Mathieu Desbrun
+366  0.00   10   0.0000   Matt Berlin
+367  0.00   20   0.0000   Matt Cordner
+368  0.00   10   0.0000   Matt Cutts
+369  0.00    5   0.0000   Matt Ginzton
+370  0.00   40   0.0000   Matt Pharr
+371  0.00   10   0.0000   Matt Reynolds
+372 15.00   90   0.1667   Matthew Brand
+373  0.00   35   0.0000   Matthew Eldridge
+374  0.00   10   0.0000   Matthew Everett
+375  0.00   15   0.0000   Matthew J.P. Regan
+376  0.00   20   0.0000   Matthew Stone
+377  0.00   20   0.0000   Matthew Webb
+378  0.00   15   0.0000   Matthias Fischer
+379  0.00   10   0.0000   Matthias Mueller
+380  0.00   45   0.0000   Matthias Zwicker
+381  0.00   15   0.0000   Max Chen
+382  0.00   10   0.0000   Mel Slater
+383  0.00   15   0.0000   Michael A. Kowalski
+384  0.00   40   0.0000   Michael Ashikhmin
+385  0.00   10   0.0000   Michael Bosse
+386  0.00   20   0.0000   Michael D. McCool
+387  0.00   10   0.0000   Michael Erdmann
+388 15.00   10   1.5000   Michael F. Cohen
+389  0.00   30   0.0000   Michael F. Deering
+390 30.00   80   0.3750   Michael Gleicher
+391  0.00   60   0.0000   Michael Halle
+392  0.00   20   0.0000   Michael Harrington
+393 20.00   20   1.0000   Michael Kass
+394  0.00   10   0.0000   Michael Kazhdan
+395  0.00   40   0.0000   Michael M. Stark
+396  0.00   15   0.0000   Michael Meehan
+397  0.00   10   0.0000   Michael Patrick Johnson
+398  0.00   20   0.0000   Michael T. Jones
+399  0.00   20   0.0000   Michael T. Wong
+400  0.00   15   0.0000   Michael Wand
+401  0.00   20   0.0000   Michael Werman
+402  0.00   40   0.0000   Michiel van de Panne
+403  0.00   10   0.0000   Mike Houston
+404  0.00    5   0.0000   Milton Taveira
+405 30.00   25   1.2000   Ming Lin
+406  0.00   10   0.0000   Mohan Sondhi
+407  0.00   15   0.0000   Monica Costa
+408 60.00   10   6.0000   Nancy S. Pollard
+409  0.00   15   0.0000   Nate Robins
+410  0.00   30   0.0000   Neil Dodgson
+411  0.00   10   0.0000   Neil Gershenfeld
+412  0.00   10   0.0000   Nick England
+413  0.00   60   0.0000   Nick Foster
+414  0.00   20   0.0000   Nickson Fong
+415  0.00   15   0.0000   Nicolas Ray
+416  0.00   15   0.0000   Nicolas Tsingos
+417  0.00   20   0.0000   Nina Amenta
+418  0.00   35   0.0000   Norman I. Badler
+419  0.00   15   0.0000   Norman P. Jouppi
+420  0.00   10   0.0000   Nuria Oliver
+421 40.00   30   1.3333   Okan Arikan
+422  0.00   20   0.0000   Olaf Hall-Holt
+423 35.00   40   0.8750   Oliver Deussen
+424  0.00   15   0.0000   Oliver Knoll
+425 12.00   30   0.4000   Olivier Devillers
+426  0.00   35   0.0000   Parag Tole
+427  0.00   30   0.0000   Pascal Mueller
+428 60.57  260   0.2330   Pat Hanrahan
+429  0.00   20   0.0000   Patrick Min
+430  0.00   60   0.0000   Patrick Witting
+431 10.00   20   0.5000   Paul A. Beardsley
+432 15.00   95   0.1579   Paul E. Debevec
+433  0.00   60   0.0000   Paul Fearing
+434  0.00   20   0.0000   Paul G. Kry
+435  0.00   30   0.0000   Paul Lalonde
+436  0.00   90   0.0000   Paul Rademacher
+437 30.00   10   3.0000   Paul S. A. Reitsma
+438  0.00   25   0.0000   Pedro V. Sander
+439  0.00   15   0.0000   Pemith Randima Fernando
+440  0.00   30   0.0000   Per H. Christensen
+441  0.00   20   0.0000   Perry R. Cook
+442  0.00   10   0.0000   Peter Kirchner
+443  0.00   60   0.0000   Peter Lindstrom
+444 55.00  140   0.3929   Peter Schröder
+445  0.00   80   0.0000   Peter Shirley
+446 30.00   20   1.5000   Peter-Pike Sloan
+447  0.00   20   0.0000   Petr Krysl
+448  0.00   20   0.0000   Petros Faloutsos
+449 45.00   20   2.2500   Philip Dutré
+450 15.00    5   3.0000   Philip L. Davidson
+451  0.00   20   0.0000   Philip Nemec
+452 12.00   50   0.2400   Pierre Alliez
+453  0.00   30   0.0000   Pierre-Marie Gandoin
+454  0.00   25   0.0000   Przemyslaw Prusinkiewicz
+455  0.00   20   0.0000   Raanan Fattal
+456 20.00   40   0.5000   Radek Grzeszczuk
+457 20.00   10   2.0000   Radomír Mech
+458  0.00   15   0.0000   Radoslaw Karwowski
+459  0.00   10   0.0000   Rakesh Kumar
+460 10.00   20   0.5000   Ramesh Raskar
+461  0.00   10   0.0000   Randall Frank
+462 35.00  140   0.2500   Ravi Ramamoorthi
+463  0.00   30   0.0000   Reid Gershbein
+588 20.00   10   2.0000   Ren Ng
+464  0.00   15   0.0000   Richard F. Riesenfeld
+465  0.00   10   0.0000   Richard K. Beatson
+466  0.00    5   0.0000   Richard Levy
+467  0.00   30   0.0000   Richard Sproat
+468 27.00   65   0.4154   Richard Szeliski
+469 20.00   20   1.0000   Robert Bridson
+470 15.00    5   3.0000   Robert D. Kalnins
+471  0.00   15   0.0000   Robert J. Jensen
+472  0.00   10   0.0000   Robert Jagnow
+473 20.00   30   0.6667   Roger D. Hersch
+474 35.00  110   0.3182   Ronald Fedkiw
+475  0.00   60   0.0000   Ronald Perry
+476  0.00   10   0.0000   Ronen Barzel
+477  0.00   15   0.0000   Ross T. Whitaker
+478  0.00   10   0.0000   Rui Bastos
+479  0.00   15   0.0000   Ryo Kawamura
+480 30.00   30   1.0000   Rüdiger Westermann
+481  0.00   20   0.0000   Salvatore Paxia
+482  0.00   30   0.0000   Samuel Boivin
+483  0.00   10   0.0000   Samuel Zhou
+484  0.00   45   0.0000   Sarah F. Frisken
+485  0.00   20   0.0000   Satoshi Matsuoka
+486  0.00   15   0.0000   Scott Schaefer
+487  0.00   10   0.0000   Sean Adkins
+488  0.00   10   0.0000   Sean Ahern
+489  0.00    5   0.0000   Sean E. Anderson
+490  0.00   15   0.0000   Sebastian Fernandez
+491  0.00   10   0.0000   Seth Green
+492 20.00   20   1.0000   Shachar Fleishman
+493  0.00   15   0.0000   Shing-Chow Chan
+494  0.00   10   0.0000   Shunhui Zhu
+495  0.00   30   0.0000   Simon Premoze
+496  0.00   10   0.0000   Som H. Yau
+497  0.00   20   0.0000   Sooha P. Lee
+498 30.00   30   1.0000   Stefan Gumhold
+499 20.00   30   0.6667   Stephen Brooks
+500  0.00   30   0.0000   Stephen Chenney
+501  0.00   10   0.0000   Steve Benford
+502  0.00   10   0.0000   Steve Capell
+503  0.00    5   0.0000   Steve Hunt
+504  0.00   10   0.0000   Steve Lin
+505 12.00   35   0.3429   Steve Marschner
+506  0.00    5   0.0000   Steven Berman
+507  0.00   30   0.0000   Steven Feiner
+508  0.00  130   0.0000   Steven J. Gortler
+509  0.00   15   0.0000   Steven M. Rubin
+510  0.00   10   0.0000   Steven M. Seitz
+511  0.00   50   0.0000   Sumanta N. Pattanaik
+512  0.00   15   0.0000   Sumihiko Yamamoto
+513 20.00   30   0.6667   Sung Yong Shin
+514  0.00   15   0.0000   Svetoslav Tzvetkov
+515  0.00   15   0.0000   Swen Campagna
+516  0.00   15   0.0000   Sylvain Petitjean
+517 15.00   55   0.2727   Szymon Rusinkiewicz
+518  0.00   30   0.0000   Tae-Yong Kim
+519  0.00   15   0.0000   Takashige Konishi
+520  0.00   15   0.0000   Takehiro Tawara
+521  0.00   20   0.0000   Takeo Igarashi
+522  0.00   15   0.0000   Taku Kohmura
+523  0.00   15   0.0000   Tao Ju
+524  0.00   55   0.0000   Thomas A. Funkhouser
+525  0.00   15   0.0000   Thomas Crulli
+526  0.00   30   0.0000   Thomas Ertl
+527  0.00   30   0.0000   Thomas Strothotte
+528  0.00   30   0.0000   Thomas Vetter
+529 15.00   15   1.0000   Thomas W. Sederberg
+530 20.00   15   1.3333   Thouis Jones
+531  0.00   20   0.0000   Tianshu Wang
+532  0.00   20   0.0000   Tien Truong
+533  0.00   20   0.0000   Tim Bickmore
+534  0.00   10   0.0000   Tim Culver
+535 15.00   35   0.4286   Tim Hawkins
+536  0.00   10   0.0000   Tim J. Mitchell
+537  0.00   10   0.0000   Tim R. Evans
+538  0.00   15   0.0000   Timothy J. Purcell
+539  0.00   20   0.0000   Tom Duchamp
+540  0.00   30   0.0000   Tom Lokovic
+541  0.00   15   0.0000   Tom Lyche
+542  0.00   20   0.0000   Tom Malzbender
+543  0.00   10   0.0000   Tom Ngo
+544  0.00   20   0.0000   Tomaso Poggio
+545  0.00   20   0.0000   Tomihisa Welsh
+546 20.00   10   2.0000   Tomoyuki Nishita
+547  0.00   20   0.0000   Tony DeRose
+548  0.00   20   0.0000   Tony Ezzat
+549  0.00   15   0.0000   Tosiyasu L. Kunii
+550  0.00   10   0.0000   Tsuyoshi Okita
+551  0.00   60   0.0000   Ulrich Neumann
+552  0.00   15   0.0000   Ulrich Schwanecke
+553  0.00   15   0.0000   Vicent Caselles
+554  0.00   30   0.0000   Victor Milenkovic
+555  0.00  170   0.0000   Victor Ostromoukhov
+556  0.00   15   0.0000   Vincent Scheib
+557  0.00   10   0.0000   Voicu Popescu
+558  0.00   30   0.0000   Volker Blanz
+559  0.00   30   0.0000   W. Freeman
+560  0.00   10   0.0000   W. Richard Fright
+561  0.00   25   0.0000   Wagner Toledo Corrêa
+562  0.00   20   0.0000   Wei-Chao Chen
+563  0.00   10   0.0000   Werner Stuetzle
+564  0.00   10   0.0000   Westley Sarokin
+565  0.00   20   0.0000   William A. McNeely
+566  0.00   30   0.0000   William Barrett
+567  0.00   15   0.0000   William Baxter
+568  0.00   15   0.0000   William Horn
+569 20.00   30   0.6667   William Mark
+570 15.00   20   0.7500   William Ribarsky
+571  0.00   10   0.0000   William Tomlinson
+572 12.00   10   1.2000   Wilmot W. Li
+573  0.00  100   0.0000   Wim Sweldens
+574 15.00   25   0.6000   Wojciech Matusik
+575 15.00   45   0.3333   Wolfgang Heidrich
+576  0.00   45   0.0000   Wolfgang Straßer
+577 15.00   15   1.0000   Xavier Decoret
+578 10.00   10   1.0000   Xi Wang
+579 20.00   30   0.6667   Xianfeng Gu
+580  0.00   20   0.0000   Xiaoyuan Tu
+581 10.00   25   0.4000   Xin Tong
+582 15.00   20   0.7500   Xinguo Liu
+583  0.00   30   0.0000   Y. Parish
+584  0.00   20   0.0000   Yair Mann
+585  0.00   20   0.0000   Yan Li
+586  0.00   10   0.0000   Yanlin Guo
+587  0.00   25   0.0000   Yanyun Chen
+589  0.00   20   0.0000   Ying Shan
+590  0.00   25   0.0000   Ying-Qing Xu
+591  0.00   65   0.0000   Yizhou Yu
+592  0.00   15   0.0000   Yoshifumi Kitamura
+593  0.00   15   0.0000   Yoshihisa Shinagawa
+594 20.00   10   2.0000   Yoshinori Dobashi
+595 12.00   20   0.6000   Yung-Yu Chuang
+596  0.00   10   0.0000   Yuri Ivanov
+597  0.00   20   0.0000   Zachary Wartell
+598  0.00   30   0.0000   Zachi Karni
+599  0.00   20   0.0000   Zhengyou Zhang
+600  0.00   15   0.0000   Zhunping Zhang
+601  0.00   20   0.0000   Zicheng Liu
+602 85.00  100   0.8500   Zoran Popovic

@@ -1,0 +1,1729 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="description" content="Real-Time Rendering Resources">
+   <meta name="keywords" content="computer graphics, real-time, real time, rendering, interactive, accelerator, hardware, OpenGL, DirectX, Direct3D">
+   <title>Real-Time Rendering Resources</title>
+<link rel="icon" href="http://tog.acm.org/resources/RTR/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://tog.acm.org/resources/RTR/favicon.ico" type="image/x-icon">
+</head>
+<body bgcolor="#FFFFFF" link="#2D4280" vlink="#9A6D03" alink="#2D92A0" background="background.jpg">
+<font face="LUCIDA, ARIAL, HELVETICA" color="#0D3256" size="+3"><h1>Real-Time
+Rendering</h1>
+</font> <font face="LUCIDA, ARIAL, HELVETICA" color="#0D3256">
+<I>Last changed: November 18, 2007</I>
+<P>
+<p>This is the Web site for the book <font size=+1><i><A HREF="http://www.amazon.com/exec/obidos/tg/detail/-/1568811829?tag=somebooksilike">Real-Time
+  Rendering</a></i></font>, by <a href="http://cs.lth.se/tomas_akenine-moller">Tomas
+  Akenine-M&ouml;ller</a> and <a href="http://www.erichaines.com/">Eric
+  Haines</a>, ~880 pages, from <a href="http://www.akpeters.com">A.K. Peters Ltd.</a>,
+  2nd edition, ISBN 1568811829<b>, </b>list price $64.
+
+<TABLE ALIGN="RIGHT" BORDER="0" WIDTH="200">
+  <TR ALIGN="CENTER" VALIGN="TOP">
+    <TD ROWSPAN="3">&nbsp;</TD>
+    <TD> <a href="rtr2ed.jpg"><IMG BORDER=1 SRC="rtr2ed_thumb.jpg" alt="2nd ed. cover image" WIDTH=156 HEIGHT=237></a>
+    </TD>
+  </TR>
+</TABLE>
+
+<P>Ordering information and excerpts from the book <a href="book.html">can be found here</a>. The rest of this page is supplemental material and links.
+
+<p>Book related resources include:
+<UL>
+  <LI><font color="#c850c8">Tomas' <B><a href="http://www.cs.lth.se/home/Tomas_Akenine_Moller/RTR/RTRslides.zip">Powerpoint Slides</a></B> for a semester's course derived from the book.</font>
+  <LI>The <B><a href=corrigenda.html">Corrections</a></B>
+    area (for first and second editions).
+  <LI>The <a href="refs2.html"><b>Bibliography</b></a> of the book, with hyperlinked
+    resources (the <a href="refs1.html">First Edition</a> bibliography is also
+    available).
+  <LI>A <a href="portal/"><b>Portal Page</b></a> for real-time web resources.
+  <LI>The <a href="http://www.realtimerendering.com/int/"><b>Object/Object Intersection
+    page</b></a> for information on 3D object intersections.
+  <LI>Our <B><a href="books.html">book recommendation list</a></B> for real-time
+    computer graphics; we would appreciate your comments.
+  <LI><font color="#c850c8">A Google map of <a href="http://www.realtimerendering.com/gd.html">the top 20 game publishers of 2006</a></font>.
+  <LI><B><a href="http://www.realtimerendering.com/fgl/">Fantasy Graphics League</a></B> results
+    - once a yearly contest, based on choosing the best graphics lab for SIGGRAPH.
+</UL>
+
+<P>Here are the book chapters and links to resources:
+<p>
+<table border=0 cellspacing=0 cellpadding=2 width="100%" >
+  <tr>
+    <td> <a href="#intro">Introduction </a> (<a href="#books">Recent Books</a>)
+    </td>
+    <td> <a href="#rendpipe">Rendering Pipeline </a> </td>
+    <td> <a href="#xforms">Transforms </a> </td>
+  </tr>
+  <tr>
+    <td> <a href="#visapp">Visual Appearance </a> </td>
+    <td> <a href="#texture">Texturing </a> </td>
+    <td> <a href="#specfx">Advanced Lighting and Shading</a> </td>
+  </tr>
+  <tr>
+    <td> <a href="#npr">Non-Photorealistic Rendering</a> </td>
+    <td> <a href="#ibr">Image-Based Rendering</a> </td>
+    <td> <a href="#speed">Acceleration Algorithms</a> </td>
+  </tr>
+  <tr>
+    <td> <a href="#pipeopt">Pipeline Optimization</a> </td>
+    <td> <a href="#polytech">Polygonal Techniques</a> </td>
+    <td> <a href="#curves">Curves and Curved Surfaces</a> </td>
+  </tr>
+  <tr>
+    <td> <a href="#isect">Intersection Test Methods</a> </td>
+    <td> <a href="#colldet">Collision Detection</a></td>
+    <td> <a href="#gfxhw">Graphics Hardware</a> (<a href="#ihv">IHVs and News</a>)
+    </td>
+  </tr>
+  <tr>
+    <td> <a href="#future">The Future</a> (<a href="#faq">FAQs</a>) </td>
+    <td> <a href="#opengl">(OpenGL)</a> </td>
+    <td> <a href="#directx">(DirectX)</a> </td>
+  </tr>
+  <tr>
+    <td> <a href="#linalg">Linear Algebra</a> </td>
+    <td> <a href="#trigo">Trigonometry</a> </td>
+    <td> <a href="#refs">Bibliography</a> </td>
+  </tr>
+</table>
+
+<P>This website has two locations, identical in content, which are worth bookmarking in case one server
+  becomes unavailable: <a href="http://tog.acm.org/resources/RTR/">http://tog.acm.org/resources/RTR</a>
+  and <a href="http://www.realtimerendering.com/">http://www.realtimerendering.com</a>.
+<P>
+ Thanks to all who bought this and other books by clicking through
+  to <a href="http://www.amazon.com/exec/obidos/tg/detail/-/1568811829?tag=somebooksilike">Amazon</a>
+  and <a href="http://bn.bfast.com/booklink/click?sourceid=9446116&amp;ISBN=1568811012">B&amp;N</a>;
+  money earned by doing so has paid for this site's costs for the next few years.
+<P> Since we are constantly adding new links (and deleting stale ones), <font color="#C850C8">the
+  newest additions are shown in this color</font>, <font color="#A043A0">fading
+  to this color</font>, <font color="#7A357A">then this color</font>, then to
+  black, over a period of a few months.
+<hr>
+
+<a NAME="intro">
+<h2> Introduction</h2>
+</a>
+<p>Our <a href="refs2.html">Bibliography page</a> has links to many of the references
+  in our book. Papers listed there will not also be listed on this page, unless
+  the article is particularly noteworthy.</p> <font color="#c850c8">If you are interested in slides based on our book
+  that could form the basis for course lectures, visit <a href="http://www.ce.chalmers.se/edu/course/EDA425/index.shtml">Tomas' course site</a>. Do not be daunted
+by the Swedish there, just scroll down to the "F&ouml;rel&auml;sning" area; the PDFs linked there are in English. Better yet, Tomas' <a href="http://www.cs.lth.se/home/Tomas_Akenine_Moller/RTR/RTRslides.zip">powerpoint slides</a> are now available.</font>
+<P><font color="#c850c8">Eric has an article, <a href="http://www.erichaines.com/AnIntroductoryTourOfInteractiveRendering.pdf">"An Introductory Tour of Interactive Rendering"</a>, from IEEE CG&amp;A, Jan/Feb 2006.</font>
+<p>There are many graphics related links pages, including ACM TOG's <a href="http://tog.acm.org/Software.html">software</a>
+  and <a href="http://tog.acm.org/BibLook.html">literature</a> areas, <a href="http://www.technomagi.com/links/graphics.html">Technomagi's</a>, and <a href="http://www.zen-x.net/Links.htm">Tomas Arce's</a>
+  (also see his <a href="http://www.zen-x.net/">homepage</a>). <a href="http://graphics.csail.mit.edu/~fredo/Book/index.html">Fr&eacute;do
+  Durand's</a> page has links to researchers, labs, conferences and publications.
+  <a href="http://www2.iro.umontreal.ca/%7Eratib/code/">Karim Ratib's page</a>
+  has links to older research literature in his Applications/Computer Graphics/Publications
+  subdirectory. We have a <a href="portal/index.html">portal page</a> that summarizes
+  popular and useful links. <a href="http://www2.iro.umontreal.ca/%7Eratib/code/"></a>
+</p>
+<P> The <a href="http://www.cs.brown.edu/exploratory/">Exploratory</a> at Brown
+  University has a wide range of <a href="http://www.cs.brown.edu/exploratories/freeSoftware/catalogs/repositoryApplets.html">computer
+  graphics applets</a>. These cover areas such as linear algebra, color science,
+  image processing, and hierarchy of transformations. Patrick Min at Princeton
+  has also made <a href="http://www.cs.princeton.edu/~min/cs426/applets.html">Java
+  applets</a> to aid in understanding computer graphics concepts.
+<p><a href="http://www.education.siggraph.org/materials/HyperGraph/hypergraph.htm">HyperGraph</a> 
+  covers the basics on many topics within computer graphics. A source for quick
+  summaries of various graphics algorithms is <a href="http://www.geocities.com/ResearchTriangle/Lab/1767/pol.html">The
+  White Flame Page of Learning</a>. <a href="http://www.math.mcgill.ca/~loisel/">Zed3d</a>,
+  an entire book on introductory and intermediate graphics (with code), is available
+  online for free. It is 5 years old and not maintained by the author, who notes
+  it has &quot;many many errors&quot;, but it does give a different view of the
+  world (and the price is right).
+
+<a NAME="books">
+<h3>Recent Books</h3>
+</a><font color="#7a357a">One good source for books on interactive 3D graphics is the database at <a href="http://www.3dlinks.com/3DBooks.cfm?subcategoryid=35">3D Links</a>.</font>
+
+<P><font color="#a043a0">Looking at Amazon's best-selling <a href="http://www.amazon.com/exec/obidos/tg/browse/-/3922/1/002-8174022-0714455?rank=%2Bsalesrank&submit.x=6&submit.y=7&submit=Go%21?tag=somebooksilike">DirectX</a> and <a href="http://www.amazon.com/exec/obidos/tg/browse/-/3935/1/002-8174022-0714455?rank=%2Bsalesrank&submit.x=11&submit.y=7&submit=Go%21?tag=somebooksilike">OpenGL</a> book lists can be helpful.</font>
+<P>
+Some books which have come out in the past few years and are relevant to the field:
+<UL>
+  <LI><font color="#c850c8"><a href="http://www.amazon.com/Mobile-3D-Graphics-Kaufmann-Computer/dp/0123737273?tag=somebooksilike">Mobile 3D Graphics: with OpenGL ES and M3G</a>, Kari Pulli, Tomi Aarnio, Ville Miettinen, Kimmo Roimela, Jani Vaarala, November 2007. <a href="http://www.graphicsformasses.com">More information.</a></font>
+  <LI><font color="#c850c8"><a href="http://www.amazon.com/Real-Time-Cameras-Kaufmann-Interactive-Technology/dp/0123116341?tag=somebooksilike">Real-Time Cameras</a>, Mark Haigh-Hutchinson, 2008.</font>
+  <LI><font color="#c850c8"><a href="http://www.amazon.com/GPU-Gems-3-Hubert-Nguyen/dp/0321515269?tag=somebooksilike">GPU Gems 3</a>, edited by Hubert Nguyen, August 2007.</font>
+  <LI><font color="#c850c8"><a href="http://www.amazon.com/Color-Imaging-Fundamentals-Erik-Reinhard/dp/1568813449?tag=somebooksilike">Color Imaging: Fundamentals and Applications</a>, by Erik Reinhard et al., August 2007.</font>
+  <LI><font color="#c850c8"><a href="http://www.amazon.com/Beginning-DirectX-10-Game-Programming/dp/1598633619?tag=somebooksilike">Beginning DirectX 10 Game Programming</a>, by Wendy Jones, July 2007.</font>
+  <LI><font color="#c850c8"><a href="http://www.amazon.com/Ultimate-Engine-Architecture-Charles-Development/dp/1584504730?tag=somebooksilike">Ultimate 3D Game Engine Design & Architecture</a>, by Allen Sherrod, December 2006.</font>
+  <LI><font color="#c850c8"><a href="http://www.amazon.com/gp/product/1568812876?tag=somebooksilike">Collada: Sailing the Gulf of 3d Digital Content Creation</a>, by Remi Arnaud and Mark C. Barnes, August 2006.</font>
+  <LI><font color="#c850c8"><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1568812663?tag=somebooksilike">Real-time Volume Graphics</a>, by Klaus Engel, Markus Hadwiger, Joe M. Kniss, Christof Rezk-Salama, and Daniel Weiskopf, July 2006.
+(<a href="http://www.real-time-volume-graphics.org/">book information page</a>, <a href="http://www.vrvis.at/via/resources/course-volgraphics-2004/">SIGGRAPH 2004 course notes</a>)</font>
+  <LI><font color="#c850c8"><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1568812841?tag=somebooksilike">The Game Programmer's Guide to Torque</a>, by Edward F. Maurina III, March 2006.</font>
+  <LI><font color="#c850c8"><a href="http://www.amazon.com/Introduction-Game-Programming-Direct-9-0c/dp/1598220160?tag=somebooksilike">Introduction to 3D Game Programming with Direct X 9.0c: A Shader Approach</a>, by Frank Luna, June 2006.</font>
+  <LI><a href="http://www.amazon.com/gp/product/1584504501?tag=somebooksilike">Game Programming Gems 6</a>, edited by Mike Dickheiser, March 2006. A little more info <a href="http://www.charlesriver.com/Books/BookDetail.aspx?productID=124038">here</a>.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0321334892?tag=somebooksilike">OpenGL Shading Language, 2nd Edition</a> ("The Orange Book"), by Randi Rost et alia, January 2006.
+  <LI><a href="http://www.amazon.com/High-Dynamic-Range-Imaging-Acquisition/dp/0125852630?tag=somebooksilike">High Dynamic Range Imaging: Acquisition, Display, and Image-Based Lighting</a>, by Erik Reinhard et al., 2006.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1584503572?tag=somebooksilike">ShaderX<sup>4</sup></a>, edited by Wolfgang Engel et alia, November 2005 (more information <a href="http://www.shaderx4.com/">here</a>).
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1592008305?tag=somebooksilike">More OpenGL Game Programming</a>, by Dave Astle and Kevin Hawkins, October 2005 (<a href="http://glbook.gamedev.net/moglgp/">table of contents</a>).
+  <LI><a href="http://www.amazon.com/gp/product/156881240X?tag=somebooksilike">Advanced Game Development with Programmable Graphics Hardware</a>, by Alan Watt and Fabio Policarpo, August 2005.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1568812698?tag=somebooksilike">Fundamentals
+    of Computer Graphics, 2nd Edition</a>, by Peter Shirley et alia, July 2005.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/012553180X?tag=somebooksilike">Physically Based Rendering</a>, by Matt Pharr and Greg Humphreys, August 2005 (<a href="http://pbrt.org/">more information</a>, including a sample chapter).
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0321335732?tag=somebooksilike">OpenGL Programming Guide, Version 2 (5th Edition)</a> ("The Red Book"), by the OpenGL Architecture Review Board, August 2005.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1592006507?tag=somebooksilike">Machinima: Making Animated Movies in 3D Virtual Environments</a>, by Dave Morris, Matt Kelland, Dave Lloyd, June 2005.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1584503521?tag=somebooksilike">Game Programming Gems 5</a>, edited by Kim Pallister, March 2005. A little more info <a href="http://www.charlesriver.com/titles/gamegems5.html">here</a>.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0321335597?tag=somebooksilike">GPU Gems II: Techniques for Graphics and Compute Intensive Programming</a>, edited by Matt Pharr (<a href="http://developer.nvidia.com/object/gpu_gems_2_home.html">homepage</a> here)
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1558606599?tag=somebooksilike">
+  Advanced Graphics Programming Using OpenGL</a> by Tom McReynolds and David Blythe, Feb. 2005 (more information <a href="http://books.elsevier.com/us/mk/us/subindex.asp?maintarget=&isbn=1558606599">here</a>)
+  <LI><a href="http://www.mcshaffry.com/GameCode/">Game Coding Complete</a>,
+by Mike McShaffry, January 2005 (<a href="http://www.amazon.com/exec/obidos/tg/detail/-/1932111913?tag=somebooksilike">Amazon link</a>).
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1558607323?tag=somebooksilike">Real-Time Collision Detection</a>, by Christer Ericson, Dec. 2004 (the <a href="http://realtimecollisiondetection.net/">companion website</a> has additional information).
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1568812345?tag=somebooksilike">Practical Linear Algebra: A Geometry Toolbox</a>, by Gerald Farin and Dianne Hansford, Dec. 2004 (<a href="http://vidya.prism.asu.edu/~farin/pla/">Sample chapters</a>).
+  <LI><a href="http://www.charlesriver.com/Books/BookDetail.aspx?productID=91312">Programming a Multiplayer FPS in DirectX</a>, by Vaughan Young, Dec. 2004 (<a href="http://www.gamasutra.com/features/20050411/young_01.shtml">excerpt</a>, <a href="http://www.amazon.com/exec/obidos/tg/detail/-/1584503637?tag=somebooksilike">Amazon link</a>)
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/012229064X?tag=somebooksilike">3D Game Engine Architecture</a>, by Dave Eberly, Dec. 2004 (<a href="http://www.geometrictools.com/Books.html">companion web site</a>)
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1584503572?tag=somebooksilike">ShaderX<sup>3</sup></a>, edited by Wolfgang Engel et alia, November 2004 (more information <a href="http://www.shaderx3.com/">here</a>).
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1556222920?tag=somebooksilike">Advanced Lighting and Materials With Shaders</a>,
+by Kelly Dempski and Emmanuel Viale, November 2004 (<a href="http://www.advancedrenderingtechniques.com/">website here</a>).
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1592003702?tag=somebooksilike">OpenGL ES Game Development</a>,
+by Dave Astle and Dave Durnil, September 2004 (a little more info <a href="http://www.courseptr.com/ptr_detail.cfm?group=Game%20Development&subcat=Wireless&isbn=1-59200-370-2">here</a>).
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1568812299/">Metaprogramming GPUs with Sh</a>, by Michael McCool and Stefanus Du Toit, August 2004.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1932111859?tag=somebooksilike">3D Game-Based Filmmaking: The Art of Machinima</a>, by Paul Marino, July 2004.
+  <LI><a href="http://www.amazon.com/exec/obidos/ASIN/0672326019?tag=somebooksilike">OpenGL 
+    SuperBible, Third Edition</a></I>, by Richard S. Wright Jr., Benjamin Lipchak, Sams 
+    Press, 2004.
+  <LI><a href="http://www.evenlakestudios.com/books/">Demoscene: the art of real-time</a>, edited by Lassi Tasajärvi, June 2004 (U.S. residents buy it <a href="http://www.fusecon.com/products/demobooks/">here</a>).
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1592000924?tag=somebooksilike">Shaders for Game Programmers and Artists</a>
+by Sebastien St-Laurent, May 2004.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1592003494?tag=somebooksilike">Beginning DirectX 9</a>, by Wendy Jones, April 2004. Gamasutra review <a href="http://www.gamasutra.com/columns/books/20040616/index.shtml">here</a>.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0321237625?tag=somebooksilike">OpenGL: A Primer</a>, by Edward Angel, April 2004.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1584502959?tag=somebooksilike">Game Programming Gems 4</a>, edited by Andrew Kirmse, March 2004. A little more info <a href="http://www.charlesriver.com/titles/gamegems4.html">here</a>.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0735713901/">Beginning Math and Physics for Game Programmers</a>, by Wendy Stahler, March 2004.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1592003699?tag=somebooksilike">Beginning OpenGL Game Programming</a>, by Dave Astle and Kevin Hawkins, March 2004 (<a href="http://glbook.gamedev.net/boglgp/">table of contents</a> and <a href="http://www.gamasutra.com/features/20040817/lloyd_01.shtml">review</a>).
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/155860863X?tag=somebooksilike">Essential Mathematics for Games and Interactive Applications</a>, Jim Van Verth and Lars Bishop, March 2004
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0321228324?tag=somebooksilike">GPU Gems: Programming Techniques, Tips, and Tricks for Real-Time Graphics</a>, edited by Randima Fernando, March 2004 (excerpts and more at <a href="http://developer.nvidia.com/object/gpu_gems_home.html">NVIDIA's site</a>)
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1558607404?tag=somebooksilike">Game
+    Physics</a>, by Dave Eberly, Dec. 2003 (<a href="http://www.geometrictools.com/Books.html">companion web site</a>)
+  <LI><a href="http://www.terathon.com/books/mathgames2.html">Mathematics for 3D Game Programming and Computer Graphics, Second Edition,</a> Eric Lengyel, Nov. 2003. (<a href="http://www.amazon.com/exec/obidos/tg/detail/-/1584502770?tag=somebooksilike">Amazon link</a>)
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0130153907?tag=somebooksilike">Computer Graphics with OpenGL (3rd Edition)</a>, by Donald Hearn and M. Pauline Baker, August 2003.
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0521821037?tag=somebooksilike">3D Computer Graphics: A Mathematical Introduction with OpenGL</a>,
+by Samuel R. Buss, June 2003 (<a href="http://uk.cambridge.org/computerscience/buss/">sample code, etc.</a>)
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1558605940?tag=somebooksilike">Geometric
+    Tools for Computer Graphics</a>, by Philip Schneider and David Eberly, Sept.
+    2002 (<a href="http://www.geometrictools.com/Books.html">companion web site</a>)
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1558608605?tag=somebooksilike">Jim Blinn's Corner: Notation, Notation, Notation</a>, by Jim Blinn, July 2002
+  <LI><a href="http://www.amazon.com/exec/obidos/tg/detail/-/3540656200?tag=somebooksilike">Computational
+    Geometry: Algorithms and Applications</a>, by deBerg, Van Kreveld, Overmars,
+    and Schwarzkopf, 2000
+
+</UL>
+We also maintain a <a href="books.html">recommended book list</a> (somewhat dated at this point), with brief
+reviews. The <a href="http://www.geometryalgorithms.com/">Dan Sunday's Geometry Algorithms site</a> gives <a href="http://www.geometryalgorithms.com/books_top_10.htm">a good list</a> of some of the best books on, what else, geometry algorithms, as well as a <a href="http://www.geometryalgorithms.com/books.htm#BestBuys">best buys list</a>. They also highly recommend the new <a href="http://www.amazon.com/exec/obidos/tg/detail/-/1558605940?tag=somebooksilike">Schneider and Eberly book</a> (as do we).
+
+<a NAME="rendpipe">
+<h2> Rendering Pipeline</h2>
+</a>
+<p><font color="#C850C8">Alexey Busygin tracks a wide range of <a href="http://www.devmaster.net/engines/">current 3D engines</a>.</font> Karsten Isakovic maintains an all-encompassing <a href="http://cg.cs.tu-berlin.de/~ki/engines.html">3D
+  engines list</a>, many with source code available (though not updated since
+  mid-2000). <a href="http://www.garagegames.com/index.php?sec=mg&mod=resource&page=category&qid=80">GarageGames</a>
+  has a newer list. One free source engine worth pointing
+  out is <a href="http://www.mesa3d.org/">Mesa</a>, an OpenGL clone which runs
+  on almost everything and even has some accelerator support. SGI themselves have
+  released a <a href="http://oss.sgi.com/projects/ogl-sample/">sample OpenGL implementation</a>
+  to the open source community, to <a href="http://www.sgi.com/newsroom/press_releases/2000/january/ogl_sample.html">encourage
+  Linux driver creation</a>. </p>
+<P>The <a href="http://msdn.microsoft.com/library/techart/d3dxfrm6.htm">Direct3D
+  pipeline</a> is detailed online, with supporting equations. Similar treatment
+  for OpenGL can be found in the <a href="http://www.gamedev.net/download/redbook.pdf">online
+  version of the Red Book</a>, in Chapter 3, Viewing.
+<p><a href="http://www.doomworld.com/">Doom</a> is the <a href="http://www.cs.unm.edu/~dlchao/flake/doom/">3D
+  killer app</a> for system administration. Source code for <a href="http://www.idsoftware.com/games/wolfenstein/rtcw/">Castle
+  Wolfenstein 3D</a>, <a href="http://www.doomworld.com/">DOOM</a>, <a href="http://www.idsoftware.com/games/hexen/hexen2/">Heretic and Hexen</a>, <font color="#c850c8">and <a href="http://www.idsoftware.com/business/techdownloads/">Quakes I through III</a></font> are
+  available for download under GPL. <font color="#c850c8">There are also <a href="http://www.doomworld.com/classicdoom/ports/">ports of DOOM</a> to a huge number of platforms.</font> More coolness: the <a href="http://www.theoperative.com/">source
+  code for "No One Lives Forever"</a> has been released to the public.</p>
+<P><font color="#c850c8">Mike McShaffry has <a href="http://www.mcshaffry.com/GameCode/">game code related to his book</a> free to download and reuse under Creative Commons.</font>
+<P> <a href="http://genesis3d.com/">Genesis3D</a> is a commercial rendering engine
+  that has an open source license. <a href="http://www.wildtangent.com/">WildTangent</a>
+  has purchased Genesis3D and developed an interesting system which runs DirectX
+  in a browser window, and is developing an inexpensive game development platform.
+  Sourceforge has <a href="http://sourceforge.net/softwaremap/trove_list.php?form_cat=110">any number of renderers</a> (also check <a href="http://3d.foundries.sourceforge.net/">here</a>), such as <a href="http://sourceforge.net/projects/orion3d/">Orion3D</a>.
+  The portable <a href="http://g3d-cpp.sourceforge.net/">G3D C++ library</a>
+  gives many tools for vector/quaternion/matrix math, collision detection, shader programming, and
+  other common graphics tasks. For fast, cross-platform access to the frame-buffer, try
+  the open-source <a href="http://www.libsdl.org/index.php">SDL</a> (Simple DirectMedia
+  Layer); Marius Andra has <a href="http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/gfxsdl/index">some
+  tutorials</a> about it. <a href="http://www.renderware.com/">RenderWare</a>, <a href="http://www.unrealtechnology.com/html/technology/ue30.shtml">Unreal
+  engine</a>, <a href="http://www.lithtech.com/">LithTech engine</a>, <a href="http://www.idsoftware.com/business">Quake</a>, and <a href="http://members.shaw.ca/merconconsulting/Lugh3D.htm">Lugh3D
+  engines</a> are some commercial renderers with many special effects.
+  Commercial general purpose game engines include the extremely inexpensive ($100) <a href="http://www.garagegames.com/mg/projects/torque1/">GarageGames' Torque engine</a>
+<font color="#a043a0"> (<a href="http://www.garagegames.com/pg/demo.php?id=1">here's how to get a demo license</a>)</font>,
+  <a href="http://www.egerter.com/">Egerter's Power
+  Render engine</a>, <a href="http://www.ndl.com/">NetImmerse</a>
+  (now with Gamecube support), and <a href="http://www.snsys.com/">SN Systems</a>.
+  An interesting
+  (though now dead) offshoot from gaming engines is that <a href="http://www.unrealty.net/">the
+  Unreal engine was used for interactive architectural walkthroughs.</a>
+<P> <a href="http://www.anfyteam.com/panfy3d.html">Anfy 3D</a> is a small, fast
+  software-only 3D renderer in Java. The open source <a href="http://gl4java.sourceforge.net/">GL4Java</a> system
+  can provide hardware support for Java applications.
+<P> Michael Wimmer has a somewhat dated, but fairly complete <a href="http://www.cg.tuwien.ac.at/~wimmer/apis/API_Summary.html">list
+  of graphics APIs and scene graphs</a>. The well-know <a href="http://oss.sgi.com/projects/inventor/">Open
+  Inventor</a> scene graph system is now open source. <a href="http://www.openscenegraph.org">Open
+  Scene Graph</a> and <a href="http://sourceforge.net/projects/sgl/">SGL</a> are
+  both free, open source scene graph systems.
+  <a href="http://ogre.sourceforge.net/">OGRE</a> is a modern object-oriented system
+  for developing interactive applications, especially games.
+  <a href="http://www.coin3d.org/">Coin</a>
+  is an open source retained mode scene graph library based on Open Inventor.
+  <a href="http://www.hoops3d.com">The Hoops3D application framework</a>,
+  a professional scene graph system used in CAD applications, is now open source
+  and free for personal use on Linux systems. Ur Studios has announced <a href="http://www.urstudios.com/">GEL
+  (Graph Evaluation Language)</a>, an open-source scene graph API which supports
+  multi-user distributed processing. <a href="http://www.sgi.com/software/performer/">SGI's
+  Performer</a> is available in demo form to develop on for free, running on Linux
+  and IRIX. <a href="http://www.intrinsic.com/">Intrinsic Graphics</a>, formed
+  by some of the designers of SGI's Performer, has announced a graphics development
+  system for games with Performer-like capabilities and more.
+  <font color="#a043a0">Yet another engine is the <a href="http://g3d-cpp.sourceforge.net/">G3D</a> provided by Morgan McGuire.</font>
+<P>An excellent article on <a href="http://www.cbloom.com/3d/techdocs/pipeline.txt">pure
+  software rendering</a>, with all its tricks and pitfalls, is presented by Charles
+  Bloom. Software rendering is not dead; for example, see <a href="http://www.flipcode.com/cgi-bin/msg.cgi?showThread=11-12-2002&forum=iotd&id=-1">Nicolas Capens' efforts</a>. <font color="#c850c8">Brian Collins has also made a <a href="http://hatchbackjack.com/?page_id=4">software-only renderer, SGS</a>, with many features.</font> <font color="#7a357a">Another software-only renderer: <a href="http://www.aceshardware.com/read.jsp?id=45000330">Kribi</a>.</font>
+  <a href="http://www.radgametools.com/pixomain.htm">Pixomatic</a> is a new commercial product that
+  takes a similar approach; see some benchmarks</a>
+  at <a href="http://www.radgametools.com/pixofeat.htm">the bottom of this page</a>. It's available in
+  <a href="http://www.ataricommunity.com/forums/showthread.php?threadid=295832">UT2003</a>, for example,
+  allowing people with old graphics cards and portables to still play newer games.
+
+<a NAME="xforms">
+<h2> Transforms</h2>
+</a>
+<P>The <a href="http://www.cs.brown.edu/exploratories/freeSoftware/catalogs/repositoryApplets.html">Exploratory</a>
+  has a number of tutorial applets related to linear algebra and transforms.
+<P><a href="http://www.geometrictools.com">Dave Eberly's site</a> has useful
+  papers and code on a wide variety of geometric operations, including quaternion
+  interpolation. Nick Bobick also has a nice article on <a href="http://www.gamasutra.com/features/19980703/quaternions_01.htm">quaternion
+  rotation and interpolation</a>.
+  <a href="http://fileadmin.cs.lth.se/cs/Personal/Tomas_Akenine-Moller/code/">Code</a> for rotating
+  from one vector to another rapidly using quaternions (as described in the book)
+  is available online. If you need a further explanation of quaternions, you might
+  try <a href="http://www.gamedev.net/reference/programming/features/whyquats/default.asp">this
+  article</a>.
+<P>Scott Johnson discusses <a href="http://www.gamasutra.com/features/20020510/johnson_01.htm">ways to make creating transforms easier</a>, including a shorthand notation used in robotics.
+<P>Flipcode has a <a href="http://www.flipcode.com/geometry/">3D geometry primer</a>
+  online. Animats has a <a href="http://www.animats.com/topics/developers.html">C++
+  version</a> of the speedy and useful Dou&eacute;'s Graphics Gems <a href="http://www1.acm.org/pubs/tog/GraphicsGems/gemsiv/vec_mat/">vector
+  manipulation classes</a> (if you prefer pure C, consider using <a href="http://www1.acm.org/pubs/tog/GraphicsGems/gemsiii/vector.h">Hollasch's
+  vector macros</a>). The <a href="http://plib.sourceforge.net/">Portable Game
+  Library</a> includes code for a <a href="http://plib.sourceforge.net/sg/index.html">Simple
+  Geometry library</a>. The Math3d library is open source and includes C++ classes
+  for vector, quaternion, matrix, ray, line, plane, and AABB's (however, such
+  operations as intersection between these objects are currently not implemented).
+<P>MSDN Magazine has a tutorial on <a href="http://msdn.microsoft.com/msdnmag/issues/01/06/Matrix/Matrix.asp">skinning
+  with vertex shaders</a>. <font color="#a043a0">Intel has an article on <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/172123.htm">CPU-side skinning</a>.</font>
+  Keshav Channa has a <a href="http://www.flipcode.com/tutorials/tut_dx8shaders.shtml">tutorial
+  on skinning</a> using DirectX 8.0.
+  <a href="http://www.idiom.com/~zilla/Work/PSD/PSD_WEBNOTES/index.html">Pose
+  Space Deformation</a> is another approach to the problem which overcomes some
+  problems with skinning. And, you name it, they have it, SourceForge hosts a
+  free, open-source <a href="http://cal3d.sourceforge.net">skeletal animation
+  system</a>.
+<P><a href="http://www.swin.edu.au/astronomy/pbourke/">Paul Bourke's site</a>
+  includes information on geometry and projection, and includes many basic geometric
+  operations as well as more advanced (e.g. <a href="http://www.swin.edu.au/astronomy/pbourke/projection/anamorphism/">anamorphic
+  projections</a>).
+<P> The <a href="http://tog.acm.org/GraphicsGems/">Graphics Gems</A> book
+  series contains a number of good articles on transformations, with code online.
+  <font color="#a043a0">Sample chapters from the book <a href="http://vidya.prism.asu.edu/~farin/pla/">
+  <I>Practical Linear Algebra</I></a> are available.</font> The book <a href="http://www.nr.com/"><i>Numerical
+  Recipes</i></a> is available online, and contains information on topics such
+  as linear and spline interpolation (and much else).
+<P>A comparison of the cost of Cramer's Rule vs. Gaussian Elimination for different
+  size matrices can be found in an <a href="http://ceee.rice.edu/Books/CS/chapter5/cost6.html">online
+  version of a book on computational science</a>.
+<P>Putting your z-buffer's near plane as far from the eye as possible is a good idea.
+  Steve Baker has an <a href="http://www.sjbaker.org/steve/omniv/love_your_z_buffer.html">article
+  on this topic</a>.
+<P>For more transform related information, see the <a href="#linalg">Linear Algebra</a>
+  section.
+
+<a NAME="visapp">
+<h2> Visual Appearance</h2>
+<P><font color="#c850c8">Lacroix has an article about modern <a href="http://www.gamasutra.com/features/20050729/lacroix_01.shtml">dynamic lighting on the GPU</a>.</font>
+<P>
+</a> The <a href="http://www.cs.brown.edu/exploratory/">Exploratory</a> has applets
+that <a href="http://www.cs.brown.edu/exploratories/freeSoftware/catalogs/repositoryApplets.html">teach
+about lighting models and signal processing</a>, among other topics. <a href="http://tog.acm.org/resources/applets/vrml/pellucid.html">Pellucid</a>
+is a Java applet that allows you to manipulate the VRML lighting model, which
+is similar to the lighting model covered in this chapter.
+<P> Scott R. Nelson's <a href="http://jgt.akpeters.com/papers/Nelson97/">antialiased
+  line code</a> is available for download. Here is a comparison generated using
+  his program of lines improperly drawn with <a href="gamma10.png">gamma=1.0</a>
+  (note the severe roping and Mo&iacute;re patterns) and properly drawn with <a href="gamma22.png">gamma=2.2</a>.
+  Note that you must view these files with a 2.2 gamma display system (e.g. on
+  a PC). <font color="#a043a0">Eric Chan has <a href="http://graphics.csail.mit.edu/~ericchan/articles/prefilter/">a piece of code and a description of a technique</a> for drawing antialiased lines with the GPU.
+  </font>
+<P>24 bits of color is usually enough, but not always. Here's an <a href="cubes.gif">image
+  showing concentric bands</a> only one pixel value apart; look in particular at the
+  bottom half of the large cube in the center.
+<P>The <a href="http://research.compaq.com/wrl/people/jouppi/Z3.html">Z3 paper</a>
+  by Jouppi and Chang has a good summary of many previous antialiasing techniques.
+<P>Sun Microsystems' new <a href="http://www.sun.com/aboutsun/media/presskits/siggraph2002/">XVR-4000 machine</a> has some interesting features. It uses a 5x5 filtering kernel to reconstruct an antialiased image in real-time. It's brute force, using up to 400 samples per pixel, but looks great.
+<P>Akenine-Möller has an <a href="http://graphics.cs.lth.se/research/mobile/">inexpensive multisampling scheme</a> (1.25 samples per pixel) that compares favorably with Quincunx sampling.
+<P><font color="#7a357a">Extremetech made an interesting <a href="http://www.extremetech.com/article2/0,1558,1607374,00.asp">side-by-side comparison</a> of filtering techniques used by ATI and NVIDIA.</font>
+<P>Baker and Boyd discuss ways to create <a href="http://www.gamasutra.com/features/20011003/boyd_01.htm">volumetric fog</a>, where only a
+given volume of space has fog in it.
+<P>Transparency is difficult to perform correctly in a single pass when using
+  a Z-buffer. Steve Baker gives a <a href="http://www.sjbaker.org/steve/omniv/alpha_sorting.html">good
+  summary</a> of the various approaches to solve this problem.
+<P>Poynton's web site talks about <a href="http://www.poynton.com/GammaFAQ.html">gamma correction</a> and <a href="http://www.poynton.com/ColorFAQ.html">color spaces</a>.
+  <a href="http://chriscox.org/gamma/">Chris Cox</a> also
+  has a useful page, with links to many resources. <a href="http://www.graphics.cornell.edu/%7Ewestin/gamma/gamma.html">Steve
+  Westin</a> has a nice page for setting the black level of your monitor and determining
+  the gamma value for your viewing environment.
+
+<a NAME="texture">
+<h2> Texturing</h2>
+</a> The SIGGRAPH course notes for <I>Advanced Graphics Programming Techniques
+Using OpenGL</I>
+are <a href="http://www.opengl.org/resources/code/samples/sig99/advanced99/notes/notes.html">available
+online</a>. These contain an incredible amount of information on shading, texturing,
+and special effects. Sadly, the SIGGRAPH '99 course notes for <I>Lighting and Shading Techniques for Interactive Applications</I> are no longer on the web (that I could find).
+<P><a href="http://developer.nvidia.com/">NVIDIA</a>'s, <a href="http://www.ati.com/developer/index.html">ATI</a>'s, 
+  and <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/resources/index.htm">Intel</a>'s (especially <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/resources/graphics/index.htm">here</a>)
+  developers' sites include demos, white papers, and presentations on texturing,
+  environment and bump mapping, and much more. These sites are invaluable for
+  technical information and code samples. Gamasutra has a old but informative
+  article on the theory and practice of <a href="http://www.gamasutra.com/features/19981211/flavell_01.htm">mipmapping</a>.
+<P><a href="http://www.vrvis.at/vis/research/hq-hw-reco/">Hadwiger et al.</a>
+  present an algorithm which can use graphics hardware to accelerate arbitrary
+  filter kernels (e.g. bicubic) for magnification. The method can also be applied
+  to volume visualization.
+<P>NVIDIA has a <a href="http://developer.nvidia.com/object/presentations.html">presentation
+  from GDC 2003</a> about using their hardware to implement summed area tables.
+<P><font color="#7a357a">An <a href="http://developer.nvidia.com/object/normalization_heuristics.html">article</a> from NVIDIA discusses when it is more efficient to use a cube map lookup for normalizing a vector.</font>
+<P> <a href="http://hpl.hp.com/ptm/">Polynomial Texture Mapping</a> by Malzbender
+  et alia at SIGGRAPH 2001 looks to be a promising approach for realistic display
+  and capture of bump maps from actual models. A <a href="http://hpl.hp.com/ptm/downloads/agreement.htm">runnable
+  demo</a> of their work is available for a variety of systems.
+<P>Rupert Paget has a good collection of <a href="http://www.vision.ee.ethz.ch/~rpaget/links.htm">links to research about texture synthesis</a> on his web site, which also presents his own approaches to the problem.
+<P> Some fascinating applications of texture mapping can be seen on <a href="http://www.dorbie.com/">Angus
+  Dorbie's site</a>.
+<P>S3TC texture compression has become a standard part of DirectX, and is now
+  called DXTn texture compression. Information about the DXTn format can be found
+  at <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dx8_c/directx_cpp/Graphics/ProgrammersGuide/UsingDirect3D/Textures/Compressed/CompressedTextureFormats.asp">Microsoft's
+  site</a>. A free <a href="http://developer.nvidia.com/view.asp?IO=ps_texture_compression_plugin">Photoshop
+  plugin</a> and compression library is available for manipulating DXTn (DDS) format
+  textures (the package also converts heightfields to normal maps). Aleksey Berillo
+  has a thorough <a href="http://www.digit-life.com/articles/reviews3tcfxt1/">comparison
+  of S3TC and FXT1</a>. <font color="#c850c8">The Unreal developer network has an excellent article on <a href="http://udn.epicgames.com/Two/TextureComparison">DXTC compression and quality comparison</a>.</font>
+  NVIDIA has sample code for
+  <a href="http://developer.nvidia.com/view.asp?IO=dxtc_decompression_code">reading DDS
+  format image files</a>. <font color="#c850c8">Gamasutra has a <a href="http://www.gamasutra.com/features/20051228/sherrod_01.shtml?sssdmh=dm4.162072">techniques and tips</a> article about texture compression.</font> <a href="http://openil.sourceforge.net/">DevIL</a> is an open-source
+  image conversion library that reads and writes DDS and many other formats.
+  If you are interested in compression in general, go to
+  <a href="http://datacompression.info/index.shtml">DataCompression.info</a>.
+<P>The <a href="http://www.openexr.com">OpenEXR</a> image format, developed by ILM, allows higher
+  precision formats to be written and read, including support for the 16-bit floating point "half"
+  format used in NVIDIA's Cg format. It is an extensible format that allows arbitrary buffers of data.
+  The latest version's "exrdisplay" program uses hardware acceleration to implement the display pipeline.
+<P>Heckbert has written a worthwhile <a href="http://www.cs.cmu.edu/~ph/#papers"><i>Survey
+  of Texture Mapping</i></a> and a more in-depth work, <a href="http://www.cs.cmu.edu/~ph/#papers"><i>Fundamentals
+  of Texture Mapping and Image Warping</i></a>. Many interesting applications
+  of texture mapping are discussed at <a href="http://www.sgi.com/grafica/texmap/index.html">Paul
+  Haeberli's site</a>.
+<P>Light maps can be applied a number of ways: by doing multitexturing on the
+  fly, or by combining the illumination and surface texture map once and caching
+  the resulting single texture. <a href="http://www.fluidstudios.com/publications.html">Fluid
+  Studios</a> discusses their KAGE surface caching system to manage these derived
+  textures. Michael Herf gives a more <a href="http://www.stereopsis.com/ProcBlend.html">elaborate
+  method of using light maps</a> effectively, a software approach that might be
+  doable with pixel shaders. Luke Hodorowicz gives a number of techniques for
+  using <a href="http://www.flipcode.com/tutorials/tut_advlightmaps.shtml">dynamic
+  light maps</a>.
+<P> A great <a href="http://www.debevec.org/ReflectionMapping/">history
+  of reflection mapping</a> is available from Paul Debevec's site. Some normally
+  difficult to obtain early papers and videos can be found here. High dynamic
+  range environment map image data is also <a href="http://www.debevec.org/Probes/">available
+  at Paul's site</a>, along with 8 bit/channel spherical map images. His <a href="http://www.debevec.org/HDRShop/">HDRShop
+  program</a> is useful for creating and manipulating environment maps of different
+  types (including the ability to make irradiance maps); free for non-commercial
+  use. Michael Herf has <a href="http://www.stereopsis.com/sblur/">Photoshop plugins</a>
+  for more artistic blurs and Fresnel effects. Masa has a <a href="http://www.daionet.gr.jp/~masa/rthdribl/index.html">great demo</a> showing HDR lighting,
+glare, depth of field, motion blur, Fresnel effects, and more. Riguer <a href="http://www.ati.com/developer/Guennadi_Mojo.pdf">gave a talk</a> discussing his method of using pixel shader blurs to simulate depth of field.
+<P><font color="#7a357a">What makes a great technical demo? <a href="http://www.firingsquad.com/features/art_of_tech_demo/">One person's opinion.</a></font>
+<P>A clever thing: Mark VandeWettering took <a href="http://brainwagon.org/images/escher.jpg">Escher's mirrored ball</a> and reversed the mapping,
+to obtain <a href="http://brainwagon.org/images/escher.env.jpg">a cube map of the scene</a>.
+<P>The VTP site notes a number of <a href="http://vterrain.org/Textures/spherical.html">other
+  ways to map to a sphere</a>, with pros and cons of each.
+<P><a href="http://www.gamasutra.com/features/20030813/hargreaves_01.shtml">Hargreaves gives methods</a> for quick approximation of color bleeding for objects moving through an outdoor environment.
+<P>Paul Baker has an article about <a href="http://www.paulsprojects.net/tutorials/simplebump/simplebump.html">how to perform bump mapping</a> using the ARB OpenGL extensions. He also has code for <a href="http://www.paulsprojects.net/opengl/bumpatten/bumpatten.html">per pixel lighting with bump maps</a> using NVIDIA extensions. <font color="#7a357a">NVIDIA has an <a href="http://developer.nvidia.com/object/mipmapping_normal_maps.html">article</a> about mipmapping normal maps.</font> <font color="#a043a0">NVIDIA explores simple <a href="http://developer.nvidia.com/object/bump_map_compression.html">compression techniques for bump maps</a> to achieve better quality at a cheaper cost.</font>
+<P><font color="#c850c8">A new family of bump-mapping techniques are based on <a href="http://vrsj.t.u-tokyo.ac.jp/ic-at/ICAT2003/papers/01205.pdf">Kaneko's parallax bump-mapping work</a> in 2001. The underlying concept is to do a simplified ray trace of the bump map surface's heightfield, finding which texel is actually visible at each pixel. There are a number of schemes to accelerate this process. <a href="<a href="http://www.infiscape.com/rd.html">Welsh</a> gives a basic solution to the problem using the GPU, providing bits of source code. <a href="http://download.nvidia.com/developer/GPU_Gems_2/GPU_Gems2_ch08.pdf">Donnelly</a> creates a 3D distance map to more rapidly find the closest ray/heighfield intersection, at the cost of additional storage. <a href="http://www.inf.ufrgs.br/~oliveira/RTM.html">Oliveira, Policarpo, and others</a> call the algorithm "relief texture mapping" (RTM). They use an approach of sampling the texture heightfield along the projection of the ray onto the surface, using these samples to approximate where the first intersection is located. They have a <a href="http://www.shadertech.com/contest/#reliefmapping">implementation available in Cg, along with a video</a>. They have also done some work on handling curved surfaces, a trickier case. See <a href="http://fabio.policarpo.nom.br/relief/index.htm">Policarpo's site</a> for more demos and papers. Tatarchuk and Brawley have published work in the area, including <a href="http://www.ati.com/developer/gdc/Tatarchuk-ParallaxOcclusionMapping-FINAL_Print.pdf">this article</a> and <a href="http://www.ati.com/developer/SIGGRAPH05/Tatarchuk-ParallaxOcclusionMapping-Sketch-print.pdf">this presentation</a>, showing ways to perform convincing self-shadowing and improve quality and speed. Tatarchuk and others at ATI have also made a <a href="http://www.ati.com/designpartners/media/edudemos/RadeonX1k.html#">Toyshop video</a> showing the effect. Morgan and Max McGuire <a href="http://graphics.cs.brown.edu/games/SteepParallax/index.html">have a poster</a> describing a similar technique, and provide source code.</font>
+<P> Gamasutra has a pair of articles on <a href="http://www.gamasutra.com/features/20001117/oliveira_01.htm">performing
+  refractive mapping</a>.
+<P><a href="http://www.ludicon.com/castano/files/magica/">Ignacio Castaño</a> has made some free 3DSMAX tools
+  to convert a highly polygonalized model to a bump map texture. ATI has a program
+  called <a href="http://www.ati.com/developer/">NormalMapper</a> which generates
+  bump maps from a high and low resolution model.
+<P>There are many sites with free textures out there. NVIDIA has a <a href="http://developer.nvidia.com/view.asp?IO=IO_TTVol_01">set
+  of over 200 free tiling textures</a>, in the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dx8_c/directx_cpp/Graphics/ProgrammersGuide/Appendix/DDSFileFormat/ovwDDSFileFormat.asp">DirectDraw
+  Surface</a> (DDS) format, with a liberal license. Another good place to
+  look are <a href="http://www.3dcafe.com">3D Cafe</a>, <a href="http://www.3dspot.com/main.html">The
+  New Graphics BBS</a>.
+<P>Tom Nuydens
+  has a <a href="http://www.delphi3d.net/download/perlin.zip">demo in Delphi</a>
+  that renders animated Perlin noise. There is also an Intel article on <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/resources/graphics/20247.htm">making noise</a> and on <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/20534.htm">generating 
+  procedural cloud textures</a>.
+  James and Harris presented at GDC 2003 <a href="http://www.cs.unc.edu/~harrism/gdc2003/">a number of uses</a> of procedural texture generation for animation.
+  There is <a href="http://www.bhusa.com/mk/us/subindex.asp?maintarget=companions/defaultindividual.asp&isbn=1558608486&country=United+States&srccode=&ref=&subcode=&head=&pdf=&basiccode=&txtSearch=&SearchField=&operator=">a companion web site</a> for the book <a href="http://www.bhusa.com/mk/us/subindex.asp?maintarget=bookscat%2Fsearch%2Fresults%2Easp&country=United+States&ref=&mscssid=FHSBRTGHPLAX9GBN9465J857HGTCANB7">Texturing
+    &amp; Modeling: A Procedural Approach, 3rd Edition</a>, which has much information on procedural
+texture generation.
+
+<a NAME="specfx">
+<h2> Advanced Lighting and Shading</h2>
+</a>
+<p>Phil Dutre's <a href="http://www.cs.kuleuven.ac.be/~phil/GI/">Global Illumination
+  Compendium</a>, mentioned in &quot;Further Resources&quot;, has much useful
+  information on BRDFs and other facets global illumination theory.
+<p>For more on radiometry definitions, <a href="http://www.optics.arizona.edu/Palmer/rpfaq/rpfaq.htm#radiometry">James
+  Palmer's site</a> is one place to look. The Brown Exploratory has an <a href="http://www.cs.brown.edu/exploratories/freeSoftware/catalogs/repositoryApplets.html">interactive
+  tutorial on color perception</a>, using Java applets to illustrate various concepts.
+<p>There is a color space FAQ available. Well, two: <a href="http://www.poynton.com/ColorFAQ.html">Poynton's</a>
+  and <a href="http://www.neuro.sfc.keio.ac.jp/%7Ealy/polygon/info/color-space-faq.html">Bourgin's</a>.
+  Poynton's is maintained and more extensive, Bourgin's has some tidbits on different
+  color space conversions. The <a href="http://www.cvrl.org/">CVRL website</a>
+  has a huge amount of easily downloadable primary research data relating to color.
+  A <a href="http://www.cs.rit.edu/%7Encs/color/a_chroma.html">chromaticity diagram
+  applet</a> made the image used in the book. ExtremeTech has a recent article
+  on <a href="http://www.extremetech.com/article2/0,3973,15467,00.asp">color
+  matching</a>. There is information about the <a href="http://www.microsoft.com/hwdev/tech/color/sRGB64.asp">sRGB64
+  color management standard</a> at Microsoft's site.
+<p>Stanford and Berkeley's <a href="http://graphics.stanford.EDU/courses/cs448c-00-fall/">Appearance
+  Models course</a> reading list is a good place to start for information on material
+  appearance. NIST maintains some <a href="http://slp.nist.gov/appearance/links.html">links
+  to BRDF information</a>. Steve Westin has some good information on <a href="http://www.graphics.cornell.edu/~westin/fresnel.html">Fresnel
+  reflectance</a>. BRDF data is available from <a href="http://www.graphics.cornell.edu/online/measurements/reflectance/index.html">Cornell</a>
+  and <a href="http://www.cs.columbia.edu/CAVE/curet/">Columbia</a> Universities.
+<p> Sloan, Kautz, and Snyder have a paper in SIGGRAPH 2002 called <a href="http://research.microsoft.com/%7Eppsloan/"><i>Precomputed
+  Radiance Transfer for Real-Time Rendering in Dynamic, Low-Frequency Lighting
+  Environments</i></a>, which discusses how to implement some global illumination
+  effects at interactive rates.
+  Kautz, Sloan, and Snyder's paper <a href="http://research.microsoft.com/%7Eppsloan/">Fast,
+  Arbitrary BRDF Shading for Low-Frequency Lighting Using Spherical Harmonics</a>
+  discuss using spherical harmonics to evaluate anisotropic BRDFs, as well as
+  perform self-shadowing.
+  Sloan et al. follow up in SIGGRAPH 2003 with
+  <a href="http://research.microsoft.com/~ppsloan/">Clustered Principal Components for
+  Precomputed Radiance Transfer</a>, which gives considerably more efficient ways of
+  using such algorithms.
+  <font color="#c850c8">A very nice tutorial on precomputed radiance transfer is <a href="http://www.research.scea.com/gdc2003/spherical-harmonic-lighting.html">available from SCEA.</a></font>
+  <font color="#c850c8">Steve Hill has written <a href="http://www.gamasutra.com/features/20040319/hill_03.shtml">an article</a> about using hardware-accelerated precomputed radiance transfer (PRT)
+  for game art production.</font>
+<P>Dave McAllister presents a method called
+  <a href="http://www.cs.unc.edu/~davemc/SBRDF/">SBRDF</a> about implementing the Lafortune lobe model for hardware accelerated BRDFs.
+  <font color="#a043a0"><a href="http://www.cs.unc.edu/~davemc/Pubs.html">His thesis</a> on the subject is also available.</font>
+<P>There is a <a href="http://www.cgl.uwaterloo.ca/Projects/rendering/Shading/database.html">repository
+  of factored BRDFs</a> available for download; the page also gives worthwhile implementation details.
+<P><font color="#7a357a">An excerpt from <I><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0321228324?tag=somebooksilike">GPU Gems</a></I> is available, about <a href="http://developer.nvidia.com/object/GPU_Gems_Samples.html">rendering skin</a> using a number of advanced techniques.</font>
+<p><a href="http://gamasutra.com/features/19991112/pallister_01.htm">Kim Pallister's
+  article</a> gives a good overview of techniques for rendering to a texture. Older information on <a href="http://www.mesa3d.org/brianp/sig97/offscrn.htm">offscreen 
+  rendering in general</a> is presented in Brian Paul's 1997 course notes.
+<p>Wolfgang Engel has a good series of articles about <a href="http://www.gamedev.net/columns/">vertex
+  and pixel shaders</a>. You can find another <a href="http://www.cfxweb.net/modules.php?name=News&file=article&sid=1305">introductory shader article</a> by Adrian Boeing. MSDN has a tutorial on <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dndrive/html/directx02192001.asp">vertex shaders</a>. <a href="http://developer.nvidia.com/">NVIDIA</a>'s and
+  <a href="http://www.ati.com/developer/index.html">ATI</a>'s sites both have
+  a huge amount of information on advanced techniques (in particular, see the
+  <a href="http://developer.nvidia.com/view.asp?IO=NVEffectsBrowser_3">NVEffectsBrowser</a>
+  for a way to quickly access a wide range of effects);
+keep visiting these sites, as they are frequently updated. <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/resources/index.htm">Intel</a>'s 
+also has some worthwhile articles, <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/resources/graphics/index.htm">especially here</a>. <a href="http://opengl.nutty.org/opengl.html">Nutty.org</a> 
+and <a href="http://esprit.campus.luth.se/%7Ehumus/">Humus</a> both have some
+other examples of advanced effects. An article about <a href="http://www.gamasutra.com/features/20020801/beaudoin_01.htm">non-integer power functions</a>
+is excerpted from the <a href="http://www.amazon.com/exec/obidos/tg/detail/-/1556220413?tag=somebooksilike">ShaderX book</a>.
+<p>ATI's <a href="http://www.ati.com/developer/rendermonkey/index.html">RenderMonkey
+  toolset</a> provides shader development tools for all DirectX 9.0 compliant
+  graphics cards. The toolset allows compilation and previewing of shaders, and
+  comes with a large number of sample shaders. NVIDIA's <a href="http://developer.nvidia.com/object/IO_CgFXViewer.html">CgFX Viewer</a> is a related program. <a href="http://www.shaderstudio.com/">Shader Studio</a> is another utility for developing shaders, and <a href="http://www.shaderworks.com/">ShaderWorks</a> is yet another tool. Wolfgang Engel has an article on Gamasutra
+  about <a href="http://www.gamasutra.com/features/20030418/engel_01.shtml"><I>Implementing Lighting Models With HLSL</I></a>. <font color="#7a357a">Michal Valient <a href="http://www.dimension3.sk/web/news.php">has a thesis (and more)</a> discussing using DirectX 9 to implement various shading models.</font>
+  <a href="http://www.shaderx.com/direct3d.net/index.html">He also has a tutorial</a>
+  for Microsoft's HLSL (High Level Shading Language) in DirectX 9 using RenderMonkey.
+  Ron Fosner also writes about <a href="http://www.gamasutra.com/features/20030514/fosner_01.shtml"><i>Implementing
+  HLSL with RenderMonkey</i></a>. <font color="#a043a0">What you probably really want to be doing for production rendering
+  is create <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/graphics/reference/EffectFileReference/EffectFileReference.asp">effects files</a> instead, which give you a higher level of abstraction.</font>
+<P><font color="#c850c8"><a href="http//www.gpgpu.org/">GPGPU.org</a> is an excellent site for information on using GPUs for general purpose computation. Their <a href="http://www.gpgpu.org/wiki/FAQ">FAQ</a> and <a href="http://www.gpgpu.org/w/index.php/Main_Page">wiki</a> are particularly useful.</font>
+<P><font color="#7a357a">The <a href="http://www.3dshaders.com/">3D Shaders</a> site is the online part of the <I><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0321197895?tag=somebooksilike">OpenGL Shading Language</a></I> book. There's source code, shaders, errata, and useful links here.</font>
+<p>NVIDIA's <a href="http://developer.nvidia.com/view.asp?IO=cg_about">Cg programming language</a>
+  is one higher level solution for programming vertex and pixel shaders for OpenGL
+  and DirectX. <a href="http://www.amazon.com/exec/obidos/tg/detail/-/0321194969?tag=somebooksilike">The Cg Tutorial</a> book is a well-written guide to this language. This compiler has been open sourced. A <a href="http://www.cgshaders.org/">shader repository</a> has
+been created specifically for this language.
+At SIGGRAPH 2003 <a href="http://www.cs.utexas.edu/users/billmark/papers/Cg/">Mark et al.</a> presented a paper on the Cg system. Other <a href="http://developer.nvidia.com/object/presentations.html">Cg related presentations</a> are also available. The graphics3d site has a <a href="http://graphics3d.com/guides/cg/index.html">tutorial
+  on Cg</a>, and Tom Nuydens has an <a href="http://www.delphi3d.net/">example
+  Cg program in Delphi</a> available for his height fog method. <a href="http://developer.nvidia.com/object/SIG2003_cg_sessions.html">Cg sessions at SIGGRAPH</a> are also available. <font color="#7a357a">There is even a <a href="http://graphics.cs.lth.se/pyfx/">Python framework</a> for writing Cg effects.</font> For inspiration
+  on shaders, visit the <a href="http://www.renderman.org/">Renderman.org site</a>.
+  <font color="#7a357a">Speaking of RenderMan, it can be implemented (to a fair extent) even on a PS2.</font>
+<P><font color="#7a357a"><a href="http://conal.net/Vertigo/">Vertigo</a> is a shading language from Microsoft Research that focusses on procedural modeling, shading, and texturing.</font>
+
+<P>The University of Waterloo has developed <a href="http://libsh.sourceforge.net">Sh</a>, a metaprogramming language for GPU programming. McCool et al. discuss in <a href="http://www.cgl.uwaterloo.ca/Projects/rendering/Papers/"><I>Shader Metaprogramming</i></a> a way to
+  define a high-level shading language in C++ and shows the advantages of their approach. <font color="#7a357a">A nuts-and-bolts <a href="http://www.gamasutra.com/features/20040716/mccool_01.shtml">description</a> of their <I>Sh</I> system is on Gamasutra. The <a href="http://libsh.org">Sh website</a> is where to get the software.</font>
+
+<P>Stanford has an <a href="http://graphics.stanford.edu/projects/shading/#Downloads">executable version</a> of their real-time shading language available.
+
+<p> <font color="#a043a0"> Texture fetches in the vertex shader are now possible with the Shader Model 3.0. NVIDIA has a nice
+    <a href="http://developer.nvidia.com/object/using_vertex_textures.html">tutorial on this topic</a></font>
+
+<P><a href="http://developer.nvidia.com/view.asp?IO=nvparse">NVParse</a> is a tool from
+NVIDIA that simplifies the process of configuring texture shaders and register combiners, and
+gives improved error reporting for vertex shaders.
+<P><a href="http://developer.nvidia.com/view.asp?IO=presentations">NVIDIA</a> and <a href="http://www.ati.com/developer/techpapers.html">ATI</a>
+  each have a large number of new presentations
+  from GDC 2003 about shaders and related topics.
+<p> <font color="#a043a0">The <a href="http://graphics.stanford.edu/projects/brookgpu/">BrookGPU</a> is a system (language, compiler, runtime) for general-purpose computations on the GPU. </font>
+
+<P><font color="#c850c8">The Mac OS X
+release of the Graphing Calculator will, when possible, <a href="http://pacifict.com/Shaders.html">generate GPU programs on the fly</a> from typed equations.</font> 
+<P><font color="#a043a0">There is a large variety of <a href="http://www.opengl.org/resources/tutorials/">OpenGL tutorials</a> on advanced techniques at the <a href="http://www.opengl.org/">OpenGL.org site</a>.</font>
+<P><font color="#a043a0"><a href="http://www.paulsprojects.net/oldnews.html">Paul Baker's site</a> has a large number of different demos and code for advanced techniques.</font>
+<P><a href="http://www.sgi.com/software/clearcoat/index.html">ClearCoat</a> is
+  SGI's (now free) implementation of Cabral et alia's 1999 SIGGRAPH paper, in
+  which they create realistic BRDFs by blending spherical environment maps for
+  different viewpoints.
+<P><a href="http://www.cs.brown.edu/%7Etor/sig2002/ea-shader.pdf">Paul Lalonde</a>
+  has a paper in SIGGRAPH 2002 about creating shaders for multiple platforms from
+  a single set of data. Florian Sauer and Sigmund Vik discuss <a href="http://www.gamasutra.com/features/20021002/sauer_01.htm">managing different
+  shading techniques on the Nintendo Gamecube</a>.
+<P>To see the original soft reflection and transparency images by Paul Diefenbach,
+  visit <a href="http://www.openworlds.com/employees/paul/index.html">his site</a>.
+  He gives other interesting experiments in using graphics accelerators for global
+  illumination, as well as his seminal thesis on the subject and a shorter, summary
+  article.
+<P><a href="http://www.gamasutra.com/gdce/jensen/jensen_01.htm">Jensen and Golias's
+  article</a> on simulating water gives a detailed approach to the problem.
+<p>Heckbert maintains a (fairly dated, unfortunately) <a href="http://www.cs.cmu.edu/%7Eph/shadow.html">page
+  on shadowing techniques</a>, as well as links to Herf &amp; his own work. Charles
+  Bloom has a useful "how to" guide for <a href="http://www.cbloom.com/3d/techdocs/shadowmap.txt">generating
+  shadow textures</a>.
+<p>The best recent article on shadow volume theory and implementation is <a href="http://developer.nvidia.com/object/robust_shadow_volumes.html">Everitt
+  and Kilgard's</a>. Also at this paper's site is the otherwise difficult-to-find
+  Heidmann paper (the first on stencil buffered shadows) and Carmack's
+  original thoughts on doing z-fail counting.
+  <a href="http://www.gamasutra.com/features/20021011/lengyel_01.htm">Eric Lengyel has an article</a> further discussing
+  implementation details and optimizations for shadow volumes.
+  There is also <a href="http://www.gamedev.net/columns/hardcore/shadowvolume/">an extremely thorough article</a> about z-fail shadow volumes and related topics
+  at GameDev.net.
+NVIDIA has also introduced <a href="http://www.nvidia.com/page/search.html?keywords=ultrashadow">ultrashadows</a>, which helps trim the amount of fill needed for shadow volume computation. <font color="#7a357a">Brandon Lloyd et alia <a href="http://gamma.cs.unc.edu/ccsv/">discuss a number of improvements</a> that can be made when using shadow volumes in complex environments.</font>
+<p> <a href="http://www9.informatik.uni-erlangen.de/Persons/Stamminger/Publications/psm.pdf">Perspective shadow maps</a> is an algorithm from 2002 that makes better use for the texels in the shadow map. This is done by creating the shadow maps in post-perspective space. <font color="#a043a0">Several improvements of perspective maps have been presented, including <a href="http://www.cg.tuwien.ac.at/research/vr/lispsm/">LISPSMs</a>, <a href="http://www.comp.nus.edu.sg/~tants/tsm.html">trapezoidal shadow maps</a>, and <a href="http://www.cs.harvard.edu/~sjg/papers.html">A Lixel for Every Pixel</a>.
+To do shadow mapping with optimal use of the samples, <a href="http://www.tml.hut.fi/~timo/">alias free shadow maps</a> is the way to go.
+<a href="http://www.cs.utexas.edu/users/billmark/papers/ism-TR/">The irregular Z-buffer</a> is the same idea, but presents how you can
+actually build hardware for it.
+</font>
+<p><font color="#a043a0">For better performance when using shadow volumes, a <a href="http://graphics.cs.lth.se/research/shadows/">hierarchical shadow volume algorithm</a> has been developed. The idea is to perform per-pixel work only in tiles where there are shadow boundaries (however, new hardware is required for this). Chan and Durand use a similar idea, but <a href="http://graphics.csail.mit.edu/~ericchan/papers/smapSV/">combines the best of shadow volumes and shadow maps</a>.
+</font>
+<P>Akenine-M&ouml;ller and Assarsson <a href="http://graphics.cs.lth.se/research/shadows/">have a number of papers</a> on their techniques for creating soft shadows with modified shadow volumes<font color="#a043a0"> as well as <a href="http://graphics.cs.lth.se/research/shadows/">source code</a></font>.
+<P>At SIGGRAPH 2003 Govindaraju et al. <a href="http://gamma.cs.unc.edu/Shadow/">presented LOD and visibility culling methods</a> to accelerate shadow algorithms for large environments.
+<P>Masaki Kawase has a <a href="http://www.daionet.gr.jp/%7Emasa/ishadowmap/index.html">demo
+  (including source)</a> for NVIDIA cards of projective texturing, indexed shadow
+  mapping using an alpha priority buffer, reflection, anisotropic filtering, and
+  other effects. Ron Frazier has a <a href="http://www.ronfrazier.net/apparition/index.asp?appmain=research/index_cube_shadow_mapping.html">number
+  of articles (and code)</a> discussing how NVIDIA's register combiners can be
+  used to produce complex shading, lighting, and shadowing effects.
+  Riguer <a href="http://www.ati.com/developer/Guennadi_Mojo.pdf">presents a method</a> and <font color="#c850c8">Fernando <a href="http://developer.nvidia.com/object/siggraph_2005_presentations.html">gives an efficient method</a> for performing percentage closer filtering for shadow maps.</font>
+<P>Hasenfratz et al. have written <a href="http://w3imagis.imag.fr/Publications/2003/HLHS03/index.fr.html">A Survey of Real-Time Soft Shadow Algorithms</a>. Chan and Durand <a href="http://graphics.lcs.mit.edu/%7Eericchan/papers/index.html">extend the shadow map</a> to rapidly generate reasonable soft shadows. Cg code is included. Wyman and Hansen similarly extend the shadow map <a href="http://www.cs.utah.edu/~wyman/publications/">to create penumbral shadows</a>.
+<font color="#7a357a">Brabec and Seidel have a <a href="http://www.mpi-sb.mpg.de/~brabec/doc/brabec_cgi01.pdf">paper</a> on antialiasing shadow map edges.</font>
+<font color="#c850c8">Willem De Boer has an article about creating <a href="http://whdeboer.com/papers/smooth_penumbra_trans.pdf">smooth penumbrae with shadow maps</a> in image space.</font>
+<P> A software-only <a href="http://www.anfyjava.com/anj/anfy3d/anfy3d.html">Java
+  applet</a> that shows real-time mirror reflection works surprisingly quickly
+  on fast machines. The trailing accumulation buffer technique for motion blur
+  can be seen in another <a href="http://www.anfyteam.com/an3d/index2.html">Java
+  applet</a> using this same package.
+<P>Sanchez-Crespo has <a href="http://www.gamasutra.com/features/20030903/crespo_01.shtml">an article about his approach</a> for creating underwater caustics using Cg.
+<P>Ingo Wald and Philipp Slusallek have a nice summary of current ray-tracing
+  research in their <a href="http://graphics.cs.uni-sb.de/Publications/index.html">"State
+  of the Art in Interactive Ray Tracing" report</a>. Their <a href="http://graphics.cs.uni-sb.de/rtrt/">own
+  work</a> is also of interest, and see <a href="http://graphics.cs.uni-sb.de/%7Ewald/Publications/RW2001_IDRTHCM/Gallery.html">their
+  gallery</a> for some impressive results beyond what is in our book. Researchers
+  at <a href="http://graphics.stanford.edu/papers/rtongfx/">Stanford</a> and the
+  <a href="http://graphics.cs.uiuc.edu/%7Ejch/papers/rt2/">University of Illinois</a>
+  are examing hardware ray tracing by using pixel shaders and texturing.
+  <font color="#c850c8">There is <a href="http://ompf.org/forum">an active research forum</a> on the topic of real-time ray
+  tracing.</font>
+<P><a href="http://freespace.virgin.net/hugo.elias/radiosity/radiosity.htm">Hugo
+  Elias</a> has a longer one with practical tips, and <a href="http://www.fluidstudios.com/publications.html">Paul
+  Nettle</a> has another one specifically aimed at games. Paul also has a <a href="http://www.fluidstudios.com/publications.html">radiosity
+  processor</a> that generates light maps and is highly automated.
+  Coombe et al. discuss <a href="http://www.cs.unc.edu/~coombe/research/radiosity/">computing radiosity using the GPU</a>. Hart has his <a href="http://graphics.cs.uiuc.edu/~jch/">slides about
+  global illumination on the GPU</a> on his web site.
+  There are links
+  to other <a href="http://tog.acm.org/Software.html#rad">radiosity</a> and
+  <a href="http://tog.acm.org/Software.html#ray">ray tracing resources</a>
+  at the ACM TOG site.
+<P>Color bleeding takes on a whole new meaning when a classic radiosity test-case is used as a <a href="http://www.sync.dk/~khn/stuff/">game environment</a>.
+<P>A new way of simulating radiosity effects that is rapidly becoming popular is the class of "ambient occlusion" or "obscurance" techniques. We mention this idea briefly on p. 284-5 of the 2nd edition. The basic idea is to examine the nearby geometry for a given point on a surface and precompute approximately how much this geometry will affect how much ambient light reaches this point. <a href="http://ima.udg.es/iiia/GGG/UsersDocs/mateu/obscurances.pdf">Iones et al.</a> gives one method of performing this type of computation, <a href="http://www.rhythm.com/~ivan/visMaps.html">Neulander</a> another. ATI's free <a href="http://www.ati.com/developer/tools.html">normal mapper</a> now supports generation of ambient occlusion. This technique is also used for <a href="http://www-viz.tamu.edu/students/bmoyer/617/ambocc/">non-interactive rendering</a> (more information <a href="http://www.andrew-whitehurst.net/amb_occlude.html">here</a> and <a href="http://zj.deathfall.com/depthbasedOcc.htm">here</a>).
+<p> <font color="#a043a0">Sub-surface scattering is a phenomena where photons are enter into some medium (e.g., skin or marble), bounces
+around inside the media, and then exits at some point other than the entry point. For real-time rendering, many proposals to handle
+this effect have been suggested, including <a href="http://www9.informatik.uni-erlangen.de/Persons/Stamminger/Research/Research/tsm"> translucent shadow maps</a>, <a href="http://lumumba.luc.ac.be/~tommertens/itrans/index.html"> Merten et al's technique</a>, and
+<a href="http://www.cs.umd.edu/projects/gvil/projects/translucency.shtml">Hao et al's technique</a>.
+</font>
+<p> <font color="#a043a0">To create depth of field, one can render the scene, build a mipmap, and then sample the
+mipmap hierarchy according to the distance the pixel's depth from some focal plane. The closer to the focal plane, the less blur.
+Such techniques have been described by <a href="http://ducati.doc.ntu.ac.uk/uksim/dad/webpagepapers/Game-18.pdf">Cant et al.</a> and
+by <a href="http://developer.nvidia.com/docs/IO/8230/GDC2003_Demos.pdf">Demers, in the "Ogres and Fairies"</a> presentation from GDC2003.
+A (quite) similar technique is presented by <a href="http://homepages.cwi.nl/~mullie/Work/Pubs/Papers/VRST00/dofPaper.pdf">Mulder and van Liere</a>.
+An <a href="http://www.cgg.cvut.cz/~zara/papers/KrivanekZaraBouatouch-CGI03a.pdf">algorithm for depth of field for point surfaces</a> has
+also been presented.
+    </font>
+<P>At SIGGRAPH 2002 Tim Purcell et alia showed an ATI Radeon 9700 performing
+  <a href="http://graphics.stanford.edu/papers/rtongfx/">ray tracing at interactive
+  rates</a>, accelerated by graphics hardware. CPU-side interactive ray tracing
+  research also continues; for example, visit <a href="http://graphics.cs.uni-sb.de/RTRT/">Philip
+  Slussalek's page</a> on this topic and for <a href="http://www.openrt.de/">OpenRT</a>.
+  Realstorm's free <a href="http://www.realtimeraytrace.de/">Benchmark
+  ray tracing program</a> is also impressive for showing how fast complex scene
+  ray tracing can be.
+<P><a href="http://tog.acm.org/resources/RTNews/demos/overview.htm">Real-time
+  ray-tracing demos</a> have been around on a small scale since 1995. Picard
+  gives a fascinating explanation of <a href="http://www.demoscene.hu/%7Epicard/h7/">how
+  the ray tracing intro "Heaven Seven" works</a>. An amazing thing: a <a href="http://www.pouet.net/prod.php?which=3397">256
+  <i>byte</i> program</a> that ray traces a tube structure in real-time (and there
+  is a site <a href="http://www.256b.com/">dedicated to these</a>).
+
+<a NAME="npr">
+<h2> Non-Photorealistic Rendering</h2>
+</a>
+<P> An excellent <a href="http://www.red3d.com/cwr/npr/">non-photorealistic rendering</a>
+  (NPR) resources page has been put together by Craig Reynolds. Amy and Bruce
+  Gooch have a <a href="http://www.cs.utah.edu/npr/">nicely organized NPR page</a>.
+  Mario Costa Sousa has an <a href="http://pages.cpsc.ucalgary.ca/~mario/npr/bib/">extensive
+  NPR bibliography</a> available. Stefan Schlechtweg's <a href="http://216.239.63.104/search?q=cache:M--coIjJEKUJ:isgwww.cs.uni-magdeburg.de/~stefans/publi/nprliterature.html+Stefan+Schlechtweg+NPR&hl=en">NPR papers page</a> is less extensive, but has
+  the excellent feature of including the abstracts of many papers.
+<P>More details about ATI's image-based NPR technique are available in
+  <a href="http://www.ati.com/developer/techpapers.html">ATI's technical papers collection</a>.
+<P>Jeff Lander has online <a href="http://www.darwin3d.com/gdm2000.htm#gdm0200">two
+  articles, executable, and sample code</a> showing one technique for NPR. Later,
+  related code (without the articles online) can be found at the <i><a href="http://www.gdmag.com/code.htm">Game
+  Developer</a></i><a href="http://www.gdmag.com/code.htm"> code area</a> under
+  his name.
+<P>Paul Baker has code for <a href="http://www.paulsprojects.net/oldnews.html">performing cel shading and painterly rendering</a>.
+<P>The image filtering method for edge detection, developed by ATI, can also be
+  performed on a GeForce 3 or better: <a href="http://www.delphi3d.net/download/convolve.zip">Tom
+  Nuydens</a> has a demo. <font color="#c850c8">NVIDIA has sample code showing <a href="http://developer.nvidia.com/object/convolution_filters.html">convolution filtering</a> using OpenGL and Cg.</font>
+<P><a href="http://www.cs.princeton.edu/gfx/proj/wnpr/">Princeton and Brown collaborated</a>
+  to create a system to enable an artist to define a stroke style
+  and have the system automatically use this for rendering.
+<P>Kalnins et al. have a paper in SIGGRAPH 2003 about
+  <a href="http://www.cs.princeton.edu/gfx/proj/css/">rendering stylized silhouettes</a> with temporal coherence
+  in real-time. Tom Hall has a demo and paper on <a href="http://www.geocities.com/tom_j_hall/">rapid approximate silhouette tracking</a>.
+<P>Paul Heckbert has a collection of old but valuable news posts on <a href="http://www.cs.cmu.edu/afs/cs/user/ph/www/src/edge/">accurate
+  polygon edging techniques</a>, including code examples.
+<P> Even gibbets can be stylized, see <a href="http://www.cs.wisc.edu/graphics/Gallery/NPRQuake/whatIsIt.html">NPRQuake</a>.
+
+<a NAME="ibr">
+<h2> Image-Based Rendering</h2>
+</a>
+<P>The open-source <a href="http://www.talula.demon.co.uk/allegro/">Allegro</a> 
+  game programming library implements many sprite-related functions (see the <a href="http://www.gamasutra.com/features/19991026/allegro_01.htm">Gamasutra
+  article</a> for more about this package). <a href="http://sourceforge.net/projects/openptc/">OpenPTC</a>
+  is an open source library for quick blitting to the screen; Windows, X11, and
+  Java versions are available. <a href="http://www.gaffer.org/tinyptc/">TinyPTC</a>
+  is a small subset that is simple and fast.
+<P>D&eacute;coret et al. present at SIGGRAPH 2003 a method for
+  <a href="http://www-imagis.imag.fr/Publications/2003/DDSD03/index.fr.html">generating billboard clouds</a>. Wang discusses how <I>Microsoft Flight Simulator 2004</I> does its
+<a href="http://ofb.net/~eggplant/clouds/">cloud rendering</a> via a mix of billboard and impostor techniques (<a href="http://jgt.akpeters.com/papers/Wang04/">paper abstract here</a>).
+<P>Andrew Glassner has more on <i><a href="http://www.glassner.com/andrew/media/chicken/chicken.htm">Chicken
+  Crossing</a></i>, a film made using image layers on a Talisman simulator. UNC
+  Chapel Hill is one research lab with many <a href="http://www.cs.unc.edu/%7Eibr/pubs.html">papers
+  on IBR related techniques</a>. Paul Heckbert has a somewhat dated set of links
+  to <a href="http://www-2.cs.cmu.edu/%7Eph/869/www/misc.html">image based rendering
+  and modeling resources</a>.
+<p>Some excellent QuickTime VR
+  panoramas (including the one shown in the book) are available for viewing on
+  <a href="http://www.worldserver.com/turk/quicktimevr/index.html">Ken Turkowski's
+  page</a>. <font color="#c850c8">The <a href="http://ivrpa.org/">IVRPA</a> is a great place to see panorama images and learn about how to make them.</font>
+<p>To get a flavor of image based rendering, see the <a href="http://www.virtualcamera.com/">Virtual
+  Camera site's demos</a>. Though there is little going on here algorithmically,
+  it shows the power of capturing a scene from many angles at once.
+<p>William Damon has an article on <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/20219.htm">impostors 
+  and render to texture</a>, and how to do it if render target textures is unavailable.
+<font color="#c850c8">GPGPU.org has a <a href="http://www.gpgpu.org/wiki/FAQ">FAQ</a> on their wiki which includes information
+on how to use render to texture.</a></font>
+<p>Mark Harris' web page about the use of <a href="http://www.cs.unc.edu/~harrism/clouds/">impostors
+  for cloud simulation</a> is both educational and beautiful. <a href="http://www.glexcess.com/">GL
+  Excess</a> is a fun demo showing off a wide range of image-based and special
+  effects.
+<P>Sean O'Neil has an article about <a href="http://www.gamasutra.com/features/20020712/oneil_01.htm">procedural rendering with impostors</a>. This article also has some interesting references and links on related topics, such as terrain and tree rendering.
+<P>A <a href="http://www.geocities.com/starlinesinc/index.html">free program</a> to generate a set of textures showing an animated explosion is
+available for download.
+<p>Particle systems code can be found in the <a href="http://www.gdmag.com/code.htm"><i>Game
+  Developer</i> magazine code site</a> in the <a href="ftp://ftp.mfi.com/pub/gamedev/src/jul98.zip">July
+  1998 archive</a>. John van der Burg discusses <a href="http://www.gamasutra.com/features/20000623/vanderburg_01.htm">data
+  structures for particle systems</a> on Gamasutra. A cool <a href="http://www.anfyjava.com/anj/galaxy/galaxy.html">Java
+  applet</a> shows particle systems in action. David McAllister has a <a href="http://www.cs.unc.edu/~davemc/Particle/">particle
+  API</a> available, along with some nice screen shots and links. <a href="http://www.particlesystems.com/">Particlesystems.com</a> 
+  tracks news and information on particle systems in general. <font color="#7a357a">Lutz Latta discusses how to use the GPU to <a href="http://www.gamasutra.com/features/20040728/latta_01.shtml">compute particle
+  paths rapidly<a/>.</font>
+<P>Dean Calver <a href="http://www.beyond3d.com/articles/deflight/">has an article</a> about the pros and cons of using textures storing surface attributes in textures in order to perform deferred rendering.
+<p>Related to image-based rendering is image-based modeling, a.k.a. photogrammetry.
+  One product that reconstruct models from images:
+  <a href="http://www.realviz.com/products/im/index.php">RealViz</a>; there are undoubtedly others.
+<p> For volume rendering information, look at the <a href="http://tog.acm.org/Software.html#vol">ACM
+  TOG software page</a> for some leads. <font color="#a043a0">The <a href="http://teem.sourceforge.net">Teem Toolkit</a> has many
+useful routines for volume rendering.</font> The <a href="http://www.sgi.com/software/volumizer/">OpenGL
+  Volumizer</a> has some interesting technical information on how SGI is approaching
+  the volume visualization problem. <a href="http://www.ngrain.com">NGRAIN</a> is a product that uses CPU-side voxel rendering for visualization.
+<P>ATI has <a href="http://www.ati.com/developer/techpapers.html">two presentations</a> about
+  real-time post-processing and video image processing from GDC 2003. <font color="#7a357a">Greg James and John O'Rorke describe how the <a href="http://www.gamasutra.com/features/20040526/james_01.shtml">real-time glow effect</a> for the game <I>Tron</I> was done (this article is excerpted from <I><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0321228324?tag=somebooksilike">GPU Gems</a></I>).</font>
+<P>A solution in search of a problem (actually,
+  I just thought it was cool): a <a href="http://www.math.uwaterloo.ca/%7Ewgilbert/Research/HilbertCurve/HilbertCurve.html">3D
+  space filling Hilbert curve</a>.
+<p><a href="http://www.gamasutra.com/features/20010209/evans_01.htm">Alex Evans</a>
+  has an interesting article about quick ways to do blurs in software and hardware.
+<P><a href="http://www.cs.unc.edu/%7Eharrism/cml/">Researchers at UNC Chapel
+  Hill</a> are using graphics hardware to simulate various physical phenomena
+  such as cloud formation and reaction-diffusion.
+<P>The <a href="http://www.jahshaka.com">Jahshaka system</a> is an open-source project to use graphics hardware to help create and preview video effects and perform editing in real-time.
+
+<a NAME="speed">
+<h2> Acceleration Algorithms</h2>
+</a>
+<P>The recent book <a href="http://www.amazon.com/exec/obidos/tg/detail/-/1558608389?tag=somebooksilike">Level
+    of Detail for 3D Graphics</a>, by David Luebke et al., does a good job of discussing level of detail algorithms in depth.
+This book has <a href="http://lodbook.com/">a companion web site</a>.
+<P><font color="#c850c8">Vaughan Young has an article on Gamasutra <a href="http://www.gamasutra.com/features/20050411/young_01.shtml">summarizing culling techniques</a> for first-person shooter games, excerpted from <a href="http://www.charlesriver.com/Books/BookDetail.aspx?productID=91312">his book</a>.</font>
+<P>Scalability is a key idea necessary when building an application for a wide
+  range of processor and graphics accelerator speeds. <a href="http://www.gamasutra.com/features/19991124/pallistermacri_01.htm">Gamasutra</a> has an introduction to the subject. 
+  <a href="http://home.comcast.net/~tom_forsyth/VIPM_root.html">Tom Forsyth</a> 
+  has talks on this subject, and some additional notes. 
+<P> Bretton Wade's <a href="http://www.faqs.org/faqs/graphics/bsptree-faq/">BSP
+  FAQ</a> is somewhat dated, but still a good place to start for binary space
+  partitioning algorithm information. Adam James' 1999 <a href="http://www.erichaines.com/bsp/aj.pdf">Ph.D.
+  thesis on BSP tree techniques for rendering</a> is available online. It has
+  a thorough overview of previous and related work. 
+  Some <a href="http://www.cs.umd.edu/~brabec/quadtree/index.html">applets</a>
+  for visualizing spatial indexing schemes are available on the web.
+<P>An <a href="http://www.nvnews.net/previews/geforce3/occlusion_culling.shtml">in-depth
+  analysis</a> shows how the GeForce 2 and 3 benefit from drawing objects in a
+  front to back order.
+<P>Michael Abrash has an illustrated account of how the <a href="http://www.bluesnews.com/abrash/">Quake
+  rendering engine works</a>, excerpted from his (now ancient) <I><A href="http://www.amazon.com/exec/obidos/tg/detail/-/1576101746?tag=somebooksilike">Black
+  Book</a></I>; he also has a shorter <a href="http://www.gamers.org/dEngine/quake/papers/mikeab-cgdc.html">outline
+  version</a>. This engine uses an interesting mix of BSP-trees and Z-buffering.
+  Many other old <a href="http://www.gamers.org/dEngine/quake/">Quake programming
+  related papers</a> are available.
+  <font color="#c850c8"><a href="http://www.idsoftware.com/business/techdownloads/">Quakes I through III</a> are
+  available for download under GPL.</font>
+<P> A fascinating, readable overview of the tricks and techniques used in making
+  high-end flight simulators over the years is available online. Carl Mueller's
+  "Architectures of Image Generators for Flight Simulators" is available in <a href=ftp://ftp.cs.unc.edu/pub/publications/techreports/95-015.tar.gz>postscript
+  form</a> from <a href="http://www.cs.unc.edu/Research/tech-report.html">UNC
+  Chapel Hill's Technical Reports library</a>.
+<p><font color="#a043a0">A <a href="http://graphics.lcs.mit.edu/~fredo/PUBLI/surveyTVCG.pdf">survey on occlusion culling</a>
+     algorithms is available.</font>
+<a href="http://graphics.lcs.mit.edu/%7Eseth/pubs/pubs.html">Seth Teller's
+  publications page</a> has a number of articles on occlusion culling and portals,
+  including his thesis. <a href="http://graphics.lcs.mit.edu/~fredo/THESE/">Fr&eacute;do
+  Durand's thesis</a> has a good in-depth survey of visibility techniques. <a href="http://www.cbloom.com/3d/">Charles
+  Bloom </a>has a number of demos and articles on practical implementation of
+  portals, LOD techniques, etc.
+<P> If you use SGI's <a href="http://www.sgi.com/software/performer/">Performer</a>
+  software, you may be interested in David Luebke's <a href="http://www.cs.virginia.edu/~luebke/visibility.html">pfPortals</A>
+  extension, which does portal and cell culling.
+<P> The <a href="http://www.flipcode.com">flipcode site</a> has a set of tutorials
+  on <a href="http://www.flipcode.com/portal/">portals,</a> <a href="http://www.flipcode.com/harmless/">BSP
+  trees, and related schemes</a> (and <a href="http://www.flipcode.com/dp/">more</a>). [These links are old,
+  but are more direct than the main <a href="http://www.flipcode.com/articles/">flipcode articles page</a>.]
+<P>Michael Bacik has an article on Gamasutra about <a href="http://www.gamasutra.com/features/20020717/bacik_01.htm">occlusion culling in outdoor
+  environments</a>.
+<P>Hybrid Graphics sells <a href="http://www.hybrid.fi/main/products/devtools.php">dPVS</a>, a system
+  for accelerating visibility and occlusion testing. The <a href="http://www.hybrid.fi/main/download/docs.php">dVPS manual</a>
+  includes a 130 page section near the end which details visibility theory and
+  the algorithms used in their library. <font color="#a043a0">The dPVS system is also described in
+  <a href="http://www.hybrid.fi/main/research/papers.php#dpvs">an IEEE CG&amp;A paper</a>.</font>
+  Their <a href="http://www.hybrid.fi/main/download/demos.php">demos</a>
+  are excellent aids for understanding how these algorithms work. In related work, Aila et al. have <a href="http://www.hybrid.fi/main/research/papers.php#delays">a paper
+  in SIGGRAPH 2003</a> about how delaying triangles between the vertex and pixel shader can result
+  in reducing the use of fill rate by performing occlusion culling.
+<P>In Feb. 2002 NVIDIA made public its <a href="http://www.nvidia.com/dev_content/nvopenglspecs/GL_NV_occlusion_query.txt">extension
+  to test object visibility using hardware</a>.
+  <font color="#a043a0">There is also small tutorial on how to use
+  <a href="http://www.gamedev.net/reference/programming/features/occlusionculling/">occlusion
+  queries in DirectX</a>.</font>
+<P> Anselmo Lastra's talk of <i><a href="http://www.graphics.cornell.edu/workshop/talks/complexity/lastra.pdf">All
+  the Triangles in the World</a></i> gives a brief overview on the use and blending
+  of different rendering techniques such as impostors, level of detail, etc.
+<P> For information on multiresolution modeling (LODs and more), see <a href="http://www.cs.cmu.edu/%7Egarland/multires/index.html">Garland
+  and Heckbert's site</a>. There are links here to papers, free and commercial
+  software, and much else. Note that this page has not been updated since 1997,
+  but it's a place to start.
+<P> Source code and a demo for the point rendering system <a href="http://graphics.stanford.EDU/software/qsplat/">QSplat</a>
+  is available for download. <a href="http://www.pointstream.net/">Pointstream</a>
+  also has an interesting renderer that uses a point cloud representation instead
+  of polygons. <a href="http://graphics.ethz.ch/pointshop3d/">Pointshop3D</a>
+  is a package that performs interactive editing of point-based surfaces.
+
+<a NAME="pipeopt">
+<h2> Pipeline Optimization</h2>
+
+NVIDIA has a profiling tool called <a href="http://developer.nvidia.com/object/devnews013.html">NVPerfHUD</a>, available to registered developers. John Spitzer's slides about bottleneck detection are <a href="http://developer.nvidia.com/docs/IO/8343/Performance-Optimisation.pdf">available at NVIDIA's site</a>.
+ATI has a presentation about <a href="http://www.ati.com/developer/techpapers.html">Direct3D Performance</a>
+from GDC 2003. <P><a href="http://www.entechtaiwan.com/ps.htm">PowerStrip</a> is a shareware program
+  which provides a huge number of controls over a wide range of graphics cards. What's particularly useful for pipeline optimization is that you can reduce
+the speed of the GPU and see its effect on performance.
+
+<P>
+</a> <a href="http://www.d6.com/users/checker/misctech.htm">Chris Hecker</a> has
+written a number of excellent articles on compilers and speed-up techniques for
+the PC. For example, his <a href="http://www.d6.com/users/checker/pdfs/gdmcomp2.pdf"><I>More
+Compiler Results, and What To Do About It</I></A> article shows how the simple
+operation of transforming a set of three vectors by a matrix could be made 3 times
+faster by trying different forms of the same code. Haim Barad presented an <a href="http://www.gamasutra.com/features/20000131/barad_01.htm">optimized
+matrix library (with source) for the Pentium III.</a> For extensive coverage of
+how compilers optimize source code, see the <a href="http://www.nullstone.com/htmls/category.htm">Nullstone
+site</a>. Tomas Arce has an interesting article on <a href="http://www.flipcode.com/tutorials/tut_fastmath.shtml">optimizing
+a C++ vector class</a>, building and improving upon Jim Blinn's <i>Optimizing
+C++ vector Expressions</i> article in IEEE CG&amp;A.
+<P> Though dated, the <a href="http://www.west.net/%7Ebrittain/3dsmax2.htm">3D
+  Studio MAX R2 display architecture</a> page is a fascinating case study (as
+  is the <a href="http://www.west.net/%7Ebrittain/3dsmax1.htm">R1 page</a>), showing
+  how a wide range of hardware is accommodated in making a modeler's user interface
+  fast. It talks about pipeline optimization issues, software vs. hardware acceleration,
+  Direct3D vs. OpenGL, and much else of interest.
+<P>An article on <a href="http://gamasutra.com/features/19991221/barad_01.htm">cleaning 
+  memory and partial register stalls</a> discusses assembly level optimizations
+  for Intel processors. There are tons of <a href="http://www.azillionmonkeys.com/qed/asm.html">articles
+  and resources for x86 assembler</a>. Michael Herf has a solid article about <a href="http://www.stereopsis.com/FPU.html">floating 
+  point precision control</a> and in-depth coverage of fast float to int conversion.
+  Michael has other <a href="http://www.stereopsis.com/graphics.html">nice optimization
+  tricks</a> on his page. Rob Wyatt has a practical overview of the <a href="http://www.gamasutra.com/features/wyatts_world/19990528/pentium3_01.htm">Pentium
+  III architecture</a>. Baker and Pallister discuss <a href="http://www.gamasutra.com/features/19990326/katmai_01.htm">optimizing
+  games</a> on the Pentium III. Zohar and Barad discuss the use of SSE (Katmai)
+  instructions in <I><a href="http://gamasutra.com/features/19990416/intel_simd_01.htm">Implementing
+  a 3D SIMD Geometry and Lighting Pipeline</a></I>, and Gross has an article on
+  <a href="http://gamasutra.com/features/19990730/sse_prefetch_01.htm">Pentium
+  III prefetch optimizations</a>. The slides and other materials for the SIGGRAPH
+  courses <a href="http://optimizations.webjump.com/"><I>Aggressive Performance
+  Optimizations for 3D Graphics</I></a> and <a href="ftp://ftp.sgi.com/sgi/opengl/contrib/cok/s2001/index.htm"><I>Developing
+  Efficient Graphics Software</I></a> are available online. AMD's <a href="http://www.3dnow.net/">3DNow! 
+  technology</a> speeds a number of common graphics operations. Dr. Dobb's Journal
+  has an article about <a href="http://www.ddj.com/documents/s=882/ddj0008c/">optimizing
+  for 3DNow!</a>, with the code listings available online. The <a href="http://msdn.microsoft.com/vstudio/downloads/ppack/default.asp">processor
+  pack</a> for Visual C++ 6.0 provides support for 3DNow! and SSE instruction
+  sets. Intel has a free <a href="http://developer.intel.com/design/Pentium4/devtools/">approximate
+  math library</a>, with source, for fast math function calculation with SSE.
+  Intel has a tutorial on <a href="http://www.intel.com/software/products/college/sse2_3d/index.htm">optimizing
+  double-precision 3D transforms</a> using SSE2.
+  Other assembly language related
+  information can be found in the <a href="http://directory.google.com/Top/Computers/Programming/Languages/Assembly/x86/FAQs,_Help,_and_Tutorials/">Google
+  Directory</a>.
+<P> An in-depth article on various <a href="http://www.azillionmonkeys.com/qed/sqroot.html">sqrt()
+  replacements</a> is available on A Zillion Monkeys. See the <a href="http://tog.acm.org/GraphicsGems/">Graphics
+  Gems</a> series for code for quicker square roots and inverse square roots (search
+  the <a href="http://tog.acm.org/GraphicsGems/AllGems.TOC">tables of contents</a>
+  for "square"). On Intel processors, sqrt() takes about 70 cycles, and reciprocal
+  square root 109 cycles through the FPU (according to <a href="http://developer.nvidia.com/">Huddy's
+  Scalability talk</a>, which has some other good code optimization techniques).
+  Richard Huddy of NVIDIA has provided us with their <a href="sqrt.c">improved
+  fast square root code</a>. It avoids the odd/even exponent headaches of Lalonde's
+  <I><a href="http://www.graphicsgems.org">Graphics Gems</a></i> approach by using
+  the low order bit of the exponent as a part of the look up table, too. <font color="#7a357a"><a href="http://www.math.purdue.edu/~clomont/Math/Papers/2003/InvSqrt.pdf">Look here</a> for a paper by Chris Dumont
+  for an in-depth discussion and comparison of fast inverse square root computation.</font>
+<P> Gamasutra has an article about using <a href="http://gamasutra.com/features/19990409/cache_01.htm">cache
+  memory</a>, something that can make a huge difference in performance. It is 
+  also important to <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/dc/games/optimization/20410.htm">perform 
+  AGP writes correctly</a>. Hixon discusses <a href="http://www.gamasutra.com/features/20020802/hixon_01.htm">general memory management principles</a> for game consoles.
+<P><a href="http://softwire.sourceforge.net/">SoftWire</a> is a tool for compiling optimized
+inner loops for software renderers.
+<P> Intel's <a href="http://developer.intel.com/software/products/vtune/index.htm">VTune</a>
+  is a popular inner loop optimization tool, with a <a href="http://developer.intel.com/software/products/global/eval.htm">free 30-day evaluation</a> for Windows and Linux. Andi Smithers has an <a href="http://www.gamasutra.com/features/20021023/smithers_01.htm">article at Gamasutra</a> about the
+latest version of VTune.
+  There are many general code profiling
+  tools, such as <a href="http://www.compuware.com/products/devpartner/visualc/truetimevc.htm">NuMega's
+  <I>TrueTime</I></a> and <a href="http://directory.google.com/Top/Computers/Programming/Software_Testing/Software_Testing_Tools/">others</a>.
+
+<a NAME="polytech">
+<h2> Polygonal Techniques</h2>
+</a>
+<p><a href="http://www.cs.unc.edu/%7Edm/CODE/GEM/chapter.html">Narkhede and Manocha's
+  polygon tessellator code</a> in <I>Graphics Gems V</I> has been improved to
+  handle holes. O'Rourke has a <a href="http://cs.smith.edu/~orourke/books/ftp.html">tessellator</a>
+  available online, from his (wonderful) book <i>Computational Geometry in C</I>,
+  but it is mostly for educational purposes. <a href="http://www.cosy.sbg.ac.at/~held/publications.html">Held</a>
+  has a paper on the current state of polygon triangulation research, as well
+  as his own solution. Or just have <a href="http://www.flipcode.com/tutorials/tut_tesselation.shtml">OpenGL
+  do your tessellation for you</a>. Incidentally, we've heard it said that the
+  <a href="http://oss.sgi.com/projects/ogl-sample/">SGI reference implementation
+  triangulator</a> seems more robust than <a href="http://www.mesa3d.org/">Mesa's</a>.
+  <a href="http://www.cgal.org">CGAL</a> has a computational geometry bias, but
+  supports many operations on polygonal models. If you need meshes with various
+  constraints (e.g., avoiding long, thin polygons), try Jonathan Shewchuk's <a href="http://www-2.cs.cmu.edu/%7Equake/triangle.html">Triangle</a>
+  software.
+
+<P>There are a number of free modelers available for low-polygon-count models, such as <a href="http://sourceforge.net/projects/aztec/">Aztec</a> (<a href="http://aztec.sourceforge.net/aztec.php">feature set here</a>), <a href="http://www.swissquake.ch/chumbalum-soft/ms3d/index.html">MilkShape 3D</a>, and <a href="http://sourceforge.net/softwaremap/trove_list.php?form_cat=109">many others</a>.
+
+<P> For file format information, start at <a href="http://www.wotsit.org/">Wotsit's
+  Format</a> or the <a href="http://www.dcs.ed.ac.uk/home/mxr/gfx/index-hi.html">Graphics
+  File Format Page</a>; for CAD files see the <a href="http://www.cadcamcenter.com/cadcam/toc.htm">CADCAM
+  Information Center</a>.
+  <font color="#a043a0">Check out the <a href="http://collada.org/">COLLADA</a> project (involving many large companies),
+  which is a file format that will include, among other things, some support for programmable shading.</font>
+  For translating various file formats, 3D Links has a good <a href="http://www.3dlinks.com/software_converters.cfm">list
+  of available software</a>. If you need large models for testing algorithms,
+  visit the <a href="http://www.cc.gatech.edu/projects/large_models/">Large Geometric
+  Models Archive</a>. For particular objects, you might check the free collections
+  at <a href="http://www.3dcafe.com/">3D Cafe</a>, and <a href="http://www.help3d.com/">Help3D</a>.
+<P> Nate Robins has an interesting online document on <a href="http://www.cs.utah.edu/~narobins/smooth.html">surface
+  smoothing</a>. Gavin Bell describes a bit more about how to get the <a href="http://tog.acm.org/resources/RTNews/html/rtnv7n5.html#art16">normals
+  to point outwards</a>, along with sample code.
+<P>Search <a href="http://developer.nvidia.com">NVIDIA's
+  developer site for OpenGL vertex array range and fence
+  extension information, and for DirectX vertex buffer information.
+<P>NVIDIA has a number of
+  <a href="http://www.nvidia.com/object/presentations.html">presentations
+  from GDC 2003</a> about batching, buffers, and the proposed <a href="http://developer.nvidia.com/docs/IO/8229/Data-Xfer-Store.pdf">superbuffers</a> OpenGL extension.
+<P> There are a number of papers summarizing simplification research to date.
+  <a href="http://www.cs.virginia.edu/%7Eluebke/publications/pdf/cg%2Ba.2001.pdf">Luebke's</a>
+  is a good one (and the most recent), but there are also summaries by <a href="http://www.cs.cmu.edu/%7Egarland/">Garland
+  and Heckbert</a>, <a href="http://www.acm.org/crossroads/xrds3-4/levdet.html">Krus
+  et al.</A>, <a href="http://www.cs.unc.edu/~eriksonc/Research/Paper/Index.html">Erikson</a>
+  (look for &quot;Overview&quot;), <a href="http://cs.smith.edu/%7Eorourke/papers.html">O'Rourke</a>
+  (&quot;Column 33&quot;), and <a href="http://www.cg.tuwien.ac.at/studentwork/VisFoSe98/msh/">Hadwiger</a>.
+<P> <a href="http://gts.sourceforge.net/">GTS</a> is an open-source, LGPL polygonal
+  manipulation library that does VIPM, stripification, hierarchical bounding box
+  generation, and more.
+<P>For more information on multiresolution modeling and simplification, <a href="http://www.cs.cmu.edu/~garland/multires/index.html">Garland
+  and Heckbert's site</a> has links to older papers, free and commercial software,
+  bibliography, and more. Garland's <a href="http://graphics.cs.uiuc.edu/%7Egarland/software/qslim.html">QSlim</a>
+  is one of the fastest algorithms for simplification (but is GPL). Mark
+  Duchaineau's free <a href="http://www.cognigraph.com/LibGen/">LibGen</a> has
+  simplification code buried in it (see the &quot;surf&quot; library and &quot;surftools&quot;
+  commands). <a href="http://www.melax.com/polychop/index.html">Melax's free demo</a>
+  does a good job of showing decimation and geomorphs in action. His <a href="http://www.melax.com/polychop/feedback/index.html">feedback
+  page</a> is also interesting, in that it discusses practical problems and solutions
+  concerning mesh decimation. Another free mesh simplifier is available at <a href="http://klaudius.free.fr/">The
+  Klaudius Page</a>. Commercial versions include <a href="http://www.awaron.de/">Awaron's
+  <i>RXpolyred</i></a> decimator, <a href="http://www.sim.no/">Systems in Motion's
+  <i>Rational Reducer</i></a>, and <a href="http://www.trianglesoftware.com">Triangle Software's</a>. Intel has tutorials 
+  on <a href="http://or1cedar.intel.com/media/training/anim_mrm/tutorial/index.htm">multi-resolution meshes</a> and <a href="http://or1cedar.intel.com/media/training/detail_level_sds/tutorial/index.htm">subdivision surfaces</a>, for use in <a href="http://www.macromedia.com/software/director/">Shockwave 
+  Studio</a>.
+  <font color="#c850c8">Martin Isenburg has a <a href="http://www.cs.unc.edu/~isenburg/pmc/pmc.html">benchmark model compressor</a> where you can set the number of bits per coordinate and
+  view the results of using <a href="http://www.cs.unc.edu/~isenburg/research/polygonmeshcompression/">his algorithm</a>.</font>
+<P> <a href="http://research.microsoft.com/~hoppe/">Hoppe's site</a> has a number
+  of papers on simplification and related topics. More technical papers and demos
+  can be found at <a href="http://www.cc.gatech.edu/~lindstro/">Lindstrom's</a>
+  and <a href="http://www.cs.unc.edu/~cohenj/">Jon Cohen's</a> sites. Luebke has
+  a <a href="http://vdslib.virginia.edu/">library available</a> related to his
+  view-dependent simplification research.
+<P> Brad Grantham has code available for <a href="http://www.plunk.org/%7Egrantham/public/actc/">stripification</a>,
+  which has gone through a few iterations of improvement. Another approach to
+  <a href="http://www.dlc.fi/%7Edkpa/strip/strip.html">stripification</a> is available
+  from David Kormann, and includes a demo. <a href="http://www.cs.unc.edu/%7Eisenburg/trianglestripcompression/">Martin
+  Isenburg</a> has done research on compressed transmission of mesh data along
+  with stripification information. <a href="http://codercorner.com/CodeArticles.htm">Pierre
+  Terdiman</a> has one, too.
+<P>The <a href="http://www.vterrain.org/">Virtual Terrain Project</a> has a huge
+  amount of useful information about terrain storage and rendering, as well as
+  source code.
+  <font color="#7a357a">Henri Hakl has written an <a href="http://www.devmaster.net/articles/graphics_alg/">overview</a> of some well-know level-of-detail and culling techniques.</font>
+  One scheme by Duchaineau is
+  the <a href="http://www.llnl.gov/graphics/ROAM/">ROAM</a> method, which has
+  an <a href="http://www.cognigraph.com/ROAM_homepage">excellent web site</a>
+  associated with it. It is <a href="http://www.gamasutra.com/features/20000403/turner_01.htm">explained
+  in depth</a> (and with more sample code) by Turner. Gyurchev gives <a href="http://www.flipcode.com/tutorials/tut_roamopt.shtml">ROAM
+  implementation optimizations</a>. Sander Mar&eacute;chal discusses the advantages of <a href="http://www.gamedev.net/reference/programming/features/bruteforce/page2.asp">brute
+  force terrain rendering</a>. Thatcher Ulrich has an article, demo, and source code for <a href="http://www.gamasutra.com/features/20000228/ulrich_01.htm">using
+  LOD techniques</a> for terrain models. He also has a <a href="http://sourceforge.net/projects/tu-testbed">chunked
+  LOD terrain demo</a> at SourceForge, and <a href="http://www.tulrich.com/geekstuff/chunklod.html">updated
+  code</a> from his presentation at SIGGRAPH 2002. It can handle the <a href="http://vterrain.org/BT/index.html">large
+  terrain datasets</a> at VTP. Seumas McNally uses <a href="http://www.longbowdigitalarts.com/seumas/progbintri.html">binary
+  triangle trees</a> for terrain data management. <a href="http://www.cc.gatech.edu/gvu/people/peter.lindstrom/">Peter
+  Lindstrom</a> has extensively researched terrain simplification and LOD techniques.
+  Mike Rayner discusses using
+  <a href="http://www.gamasutra.com/gdc2002/features/rayner/rayner_01.htm">B&eacute;zier patches
+  in a terrain level of detail system</a>.
+  <font color="#c850c8">Scheider and Westermann have researched a more <a href="http://wwwcg.in.tum.de/people/Schneider">GPU-friendly terrain rendering algorithm</a>.</font>
+<P> <a href="http://ddg.sourceforge.net">DDG</a> is an open source toolkit for
+  graphics development, and includes a terrain rendering engine. The <a href="http://www.coin3d.org">Coin
+  scene graph system</a> has CLOD terrain extensions. Beyond the <a href="http://www.vterrain.org/Elevation/artificial.html">VTP
+  page listing</a>, Intel has an article on <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/resources/graphics/20246.htm">terrain 
+  synthesis</a>, as do <a href="http://astronomy.swin.edu.au/%7Epbourke/terrain/">Paul 
+  Bourke</a>
+  and <a href="http://www.cix.co.uk/%7Eglennc/gdcetalk.htm">Glenn Corpes</a>.
+  There are many <a href="http://www.vterrain.org/Packages/noncommercial.html">noncommercial</a>
+  and <a href="http://www.vterrain.org/Packages/index.html">commercial</a> packages
+  for terrain rendering (one nice one missing from the commercial list: <a href="http://www.3dnature.com">3DNature</a>).
+  One open source project to create a flight simulator is <a href="http://www.flightgear.org">FlightGear</a>.
+<P>A number of companies are working on polygonal model compression, simplification,
+  and streaming of 3D or pseudo-3D over the web: <a href="http://www.viewpoint.com/">Viewpoint</a>
+  (was: Metastream), <a href="http://www.wildtangent.com/">Wild Tangent</a>, <a href="http://www.cycore.com/">Cycore
+  Cult3D</a>, <a href="http://www.3dgroove.com/">3D Groove</a>, <a href="http://www.pulse3d.com">Pulse3D</a>,
+  <a href="http://www.realitywave.com/">RealityWave</a>, <a href="http://www.richfx.com/">RichFX</a>,
+  and <a href="http://www.vecta3d.com/">Ideaworks VECTA3D</a>. The <a href="http://www.web3d.org/">Web3D
+  Consortium</a>, in charge of VRML standards, continues on.
+<P>Mesh simplification and compression is an ongoing area of study. For some of the latest research,
+  check the <a href="http://www.cs.brown.edu/~tor/sig2003.html">SIGGRAPH 2003 papers</a>.
+<a NAME="curves">
+<h2> Curves and Curved Surfaces</h2>
+</a>
+<P>Gabe Kruger's tutorial on <a href="http://www.gamasutra.com/features/19990611/bezier_01.htm">B&eacute;zier
+  spline surfaces</a> is a practical introduction to these surfaces, as is <a href="http://www.gamasutra.com/features/19991027/deloura_01.htm">Mark
+  DeLoura's article</a> on bicubic B&eacute;zier surfaces and <a href="http://www.gamasutra.com/features/20000530/sharp_01.htm">Sharp's
+  article</a> on Hermites and B&eacute;ziers. Justin Reynen also wrote an <a href="http://www.gamedev.net/reference/programming/features/unrav_bezier/">introduction
+  to B&eacute;ziers</a>, as has <a href="http://freespace.virgin.net/hugo.elias/graphics/x_bezier.htm">Hugo
+  Elias</a>. Nils Pipenbrinck has a useful <a href="http://www.cubic.org/%7Esubmissive/sourcerer/hermite.htm">tutorial
+  on Hermites</a>, especially on how to use them for path control in animation.
+  <a href="http://www.gignews.com/parametric.htm">Ismail Ziauddin</a> gives some
+  implementation details.
+<p> Mark DeLoura presents a good introduction to <a href="http://www.gamasutra.com/features/19991027/deloura_01.htm">bicubic
+  B&eacute;zier surfaces</a>. ATI has information on their version of <a href="http://www.ati.com/developer/PNTriangles.html">DirectX
+  8 N-Patch tessellation</a>.
+<p> SIGGRAPH course notes for <a href="http://www.multires.caltech.edu/teaching/courses/subdivision/">subdivision
+  surfaces</a> are available on the web. <a href="http://www.subdivision.org">Warren and Weimer's companion website</a> for their book on subdivision surfaces includes a discussion board, links to researchers, and demos and images. Brian Sharp has two excellent articles
+  on subdivision surfaces: <a href="http://www.gamasutra.com/features/20000411/sharp_01.htm">one
+  on the theory</a>, <a href="http://www.gamasutra.com/features/20000425/sharp_01.htm">another
+  on implementation</a>. Aaron Lee has an <a href="http://gamasutra.com/features/20000908/lee_01.htm">article</a>
+  online on subdivision surfaces and progressive meshing. David Brickhill's article
+  <a href="http://www.gamasutra.com/features/20020410/brickhill_01.htm">"Incredibly Dense Meshes"</a>
+  discusses Loop subdivision and includes code samples. The NYU MRL site has a <a href="http://mrl.nyu.edu/projects/subdivision/">subdivision
+  surfaces page</a> with many resources and links. Shiue et al. discuss <a href="http://www.cise.ufl.edu/research/SurfLab/papers/03hwMesh.pdf">generating subdivision surface meshes</a> on the GPU, once random read/write to video memory is available.
+  <font color="#c850c8">Joseph Baumgartner has a good <a href="http://www.ecclectica.ca/issues/2004/2/baumgarnter.asp">overview article</a> on subdivision surfaces, which includes many good online references.</font>
+<p><a href="http://developer.nvidia.com/docs/IO/8229/Data-Xfer-Store.pdf">Superbuffers</a> point the way towards "drawing" geometric data to a vertex array instead of an image.
+<p>A white paper and a number of related demos of <a href="http://www.matrox.com/mga/products/parhelia512/technology/disp_map.cfm">Matrox's
+  hardware displacement mapping</a> feature, used in their Parhelia chipset, are
+  available. <a href="http://finger.planetquake.com/plan.asp?userid=johnc&id=16039">Carmack
+  comments</a> in his .plan file.
+<P>Paul Baker has a <a href="http://www.paulsprojects.net/opengl/metaballs/metaballs.html">demonstration program with source</a> that tessellates and
+renders metaballs.
+<p>We do not cover NURBS in our book (in the long-run subdivision surfaces may
+  well replace them), but these are important in modeling. Dean Macri has an article
+  on using NURBS in real-time applications at <a href="http://www.gamasutra.com/features/19991117/macri_01.htm">Gamasutra's
+  site</a> and a longer version on <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/resources/graphics/20544.htm">Intel's 
+  site</a>. <font color="#a043a0">There is also an article at Intel's site about <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/resources/graphics/19068.htm">using SSE to generate
+NURBS</a>.</font> Vincent Prat also has a tutorial on <a href="http://www.flipcode.com/tutorials/tut_tnurbs.shtml">NURBS
+  and trimming</a>. The <a href="http://www.nar-associates.com/nurbs/c_code.html">source
+  code</a> for the book <i><a href="http://www.nar-associates.com/nurbs/nurbs.html">An
+  Introduction to NURBS</a></i> is available online. There is an entire <a href="http://libnurbs.sourceforge.net/">NURBS
+  manipulation library</a> in SourceForge.
+<p>There is a short history online of the most famous spline surface model, the
+  <a href="http://www.sjbaker.org/teapot/">Utah Teapot</a>; a program to generate
+  it is available for <a href="http://tog.acm.org/resources/SPD/overview.html">download</a>.
+
+<a NAME="isect">
+<h2> Intersection Testing</h2>
+</a> We created a <a href="http://www.realtimerendering.com/int/">3D Object Intersection
+page</a>, giving references and pointers to code for a wide variety of object/object
+intersection tests.
+<P> <a href="http://www.geometrictools.com">Dave Eberly's site</a> has code for
+  many <a href="http://www.geometrictools.com/Intersection.html">object/object
+  intersection tests</a>. He also has code for <a href="http://www.geometrictools.com/SourceCode.html">many other operations</a>. The <a href="http://geometryalgorithms.com/algorithm_archive.htm">Geometry
+  Algorithms site</a> has articles about many useful operations, as well as an <a href="http://www.geometryalgorithms.com/websites.htm">excellent links page</a>. Paul Bourke's
+  <a href="http://astronomy.swin.edu.au/%7Epbourke/geometry/">geometry page</a>
+  describes a number of common geometric operations (scroll to the bottom).
+<P> The <a href="http://tog.acm.org/GraphicsGems/">Graphics Gems</A> book
+  series covers a number of ray/object intersections (e.g. polygon, box, polyhedron,
+  quadric, cylinder). See the <a href="http://www.acm.org/pubs/tog/GraphicsGems/category.html#3D%20Geometry_link">category
+  list</a> online; code is also available for download. Another source for ray/object
+  intersection routines is ray tracer code; see the <A href="http://tog.acm.org/Software.html#ray">ray
+  tracer list</A> at ACM TOG for places to look. <font color="#a043a0">The <a href="http://g3d-cpp.sourceforge.net/">G3D library</a> is an open
+  source graphics library that includes some collision detection and response methods.</font>
+<P>Jorrit Rouw&eacute; has a paper on
+  <a href="http://www.three14.demon.nl/sweptellipsoid/SweptEllipsoid.pdf">swept sphere and ellipsoid collision detection</a>.
+<P> M&ouml;ller and Trumbore's <a href="http://www.graphics.cornell.edu/pubs/1997/MT97.html">ray-triangle
+  intersection paper</a> is available online, as is their <a href="http://jgt.akpeters.com/papers/MollerTrumbore97/">code</A>.
+  <a href="http://fileadmin.cs.lth.se/cs/Personal/Tomas_Akenine-Moller/raytri/">Extensive testing of
+  variants</a> was also done by M&ouml;ller.
+<P> Code for <a href="http://fileadmin.cs.lth.se/cs/Personal/Tomas_Akenine-Moller/code/">triangle-triangle
+  intersection</a> is available online. Code for an OBB/OBB overlap test is available
+  in the <a href="http://www.cs.unc.edu/~geom/OBB/OBBT.html">RAPID collision detection
+  package</a> and in <a href="http://www.oxforddynamics.co.uk/demos_for_pc.htm">FastCar's
+  multi-body package (trial version)</a>; FastCar also has code for a number of other intersection.
+<P><a href="http://codercorner.com/CodeArticles.htm">Pierre Terdiman</a> has
+  code for triangle/box intersection and ray/AABB intersection.
+<P>Held has published a paper about <a href="http://jgt.akpeters.com/papers/Held97/">ERIT</a>,
+  which deals with a wide range of intersection tests. Source code is available
+  from the author on request.
+<P><a href="http://www2.ravensoft.com/users/ggribb/plane%20extraction.pdf">Fast
+  extraction of the viewing frustum planes</a> from the view matrix is presented
+  by Gribb and Hartmann (this is discussed in the book, but is worth mentioning
+  again here).
+<P> Steve Baker has an article on <a href="http://www.sjbaker.org/steve/omniv/frustcull.html">frustum
+  culling and performing sphere/frustum intersection testing</a>.
+<P> Miguel Gomez has an <a href="http://gamasutra.com/features/19991018/Gomez_1.htm">article
+  on dynamic collision intersection tests</a> for spheres and boxes. Telemachos
+  has an article on <a href="http://www.peroxide.dk/download/tutorials/tut10/pxdtut10.html">dynamic
+  collision detection and response for ellipsoids and triangles</a>.
+<P><a href="http://geometryalgorithms.com/">Dan Sunday's GeometryAlgorithms.com</a>
+  has some good summaries of algorithms for <a href="http://softsurfer.com/Archive/algorithm_0107/algorithm_0107.htm">making
+  bounding containers</a> for various geometric primitives.
+
+<a NAME="colldet">
+<h2> Collision Detection</h2>
+</a>
+<P><font color="#c850c8">The <a href="http://www.continuousphysics.com/Bullet/phpBB2/index.php">Physics Simulation Forum</a> has many threads about collision detection and physical simulation. The <a href="http://www.continuousphysics.com/">Bullet Physics Library</a> at this site is a library for performing rigid-body collision detection and response. The reference implementation is open source and free for commercial use, and is integrated with Blender and COLLADA.</font>
+<P><font color="#c850c8"><a href="http//www.gpgpu.org/">GPGPU.org</a> is an excellent site for information on using GPUs for general purpose computation, including collision detection.</font>
+<P><font color="#c850c8">One noteworthy announcement has been the <a href="http://www.ageia.com/">introduction of the AGEIA PhysX processor</a>, a dedicated physics action accelerator. <a href="http://www.rojakpot.com/showarticle.aspx?artno=303&pgno=0">NVIDIA announced SLI physics</a>, where physics computations are offloaded to a GPU. <a href="http://www.gamespot.com/news/6136639.html">Havok</a>, who provide a commercial software collision detection library, plans to support GPU-accelerated physics in their HavokFX product.</font>
+<p><a href="http://users.comlab.ox.ac.uk/stephen.cameron/distances.html">The GJK
+  algorithm</a> is a general way to determine the distance between two convex
+  polyhedra; code available. <a href="http://www.amazon.com/exec/obidos/tg/detail/-/155860801X?tag=somebooksilike">Gino
+  van den Bergen</a> has a book coming out in 2003 devoted to this algorithm.</p>
+<p>Stan Melax presents a practical technique (used in MDK2) for <a href="http://www.melax.com/bsp">using
+  BSP trees for collision detection</a> with a variety of different sized and
+  shaped objects, with little additional memory cost (article's also on <a href="http://www.gamasutra.com/features/20010324/melax_01.htm">Gamasutra</a>).</p>
+<P>Jeff Lander has written a good set of articles about <a href="http://www.gamasutra.com/features/20000210/lander_01.htm">polygon
+  collisions</a> (though really more on point in polygon), <a href="http://www.gamasutra.com/features/20000203/lander_01.htm">collision
+  detection using AABB's and separating planes</a>, and <a href="http://www.gamasutra.com/features/20000208/lander_01.htm">collision
+  response</a>. Nick Bobic's article is a good place to go next for more on <a href="http://www.gamasutra.com/features/20000330/bobic_01.htm">collision
+  detection techniques</a>. Thatcher Ulrich's <a href="http://www.tulrich.com/geekstuff/partitioning.html">loose
+  octrees</a> concept gives a useful data structure for dynamic collision detection,
+  as the structure allows O(1) insertion and deletion of objects. A fuller version
+  of this article is in <I><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1584500492?tag=somebooksilike">Game
+  Programming Gems</a></I>. <a href="http://www.cs.unc.edu/%7Elin/papers.html">Ming
+  Lin's paper collection</a> has many articles on collision detection.
+<P> A number of free collision detection packages are available on the Web. These
+  include source, and most have limitations on commercial reuse:
+<UL>
+  <LI> Collision Detection Packages <a href="http://www.cs.unc.edu/%7Egeom/collide/packages.html">from
+    UNC Chapel Hill</a> (this is an extensive, ever-growing collection).
+  <LI> <font color="#c850c8"><a href="http://www.continuousphysics.com/">Bullet Physics Library</a> - library for performing rigid-body collision detection and response.</font>
+  <LI> <a href="http://www.dtecta.com/">SOLID</a> - Software Library
+    for Interference Detection. Now a commercial product, <font color="#7a357a">and GPL'ed with source available</font>.
+  <LI> <a href="http://www.merl.com/projects/vclip/">V-clip</a> - a low level
+    object collision library.
+  <LI><a href="http://www.codercorner.com/Opcode.htm">OPCODE</a> - more memory-friendly
+    and often faster than SOLID and RAPID, free for reuse in any application.
+  <LI><a href="http://www.q12.org/ode/ode.html">ODE</a> - a free rigid body dynamics
+    package which includes collision detection.
+  <LI><a href="http://photoneffect.com/coldet/">ColDet</a> - a free collision
+    detection library for generic polyhedra.
+  <LI><a href="http://www.ams.sunysb.edu/%7Ejklosow/quickcd/QuickCD.html">QuickCD</a>
+    - uses a hierarchy of k-dops to speed collision detection.
+  <LI><a href="http://robotics.stanford.edu/%7Ekuffner/software/">Multibody Dynamics
+    Package</a> - based on Brian Mirtich's research.
+  <LI><a href="http://www.oxforddynamics.co.uk/download.htm">FastCar's multi-body
+    package</a> - for single rigid body simulation and collision.
+  <LI><a href="http://www.fluidstudios.com/publications.html">Fluid Studio's CD
+    package</a> - has a software version with full source and a hardware version.
+</ul>
+<P>Lander and Hecker have pointers to and comments on some <a href="http://www.gamasutra.com/features/20000920/lander_01.htm">commercial
+  collision detection and response packages</a> (a.k.a. physics engines). The
+  article's a little old, but is a good place to start. One not listed is <a href="http://www.oxforddynamics.co.uk/">FastCar</a>,
+  for vehicle simulation, which has a free downloadable version.
+<P>Chris Hecker has some older introductory articles on rigid body dynamics and
+  <a href="http://www.d6.com/users/checker/dynamics.htm">collision response</a>.
+  There are many articles on simulating physics for games, etc, as well as <a href="#books">books</a>.
+  Older notes from a <a href="http://www-2.cs.cmu.edu/afs/cs/user/baraff/www/pbm/pbm.html">SIGGRAPH
+  course on physically based modelling</a> are online. <a href="http://www.gamasutra.com/resource_guide/20030121/">Gamasutra</a> also has a number of
+articles on physics.
+<P>Related to collision detection, <a href="http://www.geom.umn.edu/software/qhull/">Qhull</a>
+  implements the Quickhull algorithm for finding convex hulls quickly. The <a href="http://www.cs.sunysb.edu/~algorith/">Stony
+  Brook Algorithm Repository</a> has convex hull and other code in its computational
+  geometry section.
+<P><a href="http://www.gamasutra.com/features/20020118/vandenhuevel_01.htm">Collision detection and response for spheres</a> is discussed by van den Heuvel and Jackson.
+
+<a NAME="gfxhw">
+<h2> Graphics Hardware</h2>
+</a>
+<P><font color="#c850c8">Some worthwhile <a href="http://www.cs.lth.se/EDA075/">nuts and bolts information on hardware and algorithms</a> can be found on Tomas' Mobile Graphics course site. A good site for game platform architecture is <a href="http://www.arstechnica.com/">Ars Technica</a>. Their <a href="http://arstechnica.com/articles/paedia.ars">Paedia</a> area has particularly chewy articles.</font>
+<P>
+Why is hardware so fast? <a href="http://www.graphics.stanford.edu/~hanrahan/talks/why/">Pat Hanrahan</a> has an interesting talk about this subject, and how stream processing figures into it.
+David Kirk has <a href="http://www.extremetech.com/print_article/0,3998,a=41828,00.asp">a nice
+summary</a> of where hardware is right now and where it's going.
+<P>
+<font color="#c850c8">An interesting concept: open source <a href="http://wiki.duskglow.com/tiki-index.php?page=OGPN17">graphics <i>hardware</i></a>.</font>
+<P>
+<font color="#c850c8">Tech Power Up has an <a href="http://www.techpowerup.com/gpudb/">up-to-date summary</a> of the clock speed, memory size, and other characteristics for every major PC GPU. Rojakpot goes a step further, with <a href="http://www.rojakpot.com/showarticle.aspx?artno=88&pgno=0">GPU information</a> about peak fill rates, memory bandwidth, and more. They have a similar chart for <a href="http://www.rojakpot.com/showarticle.aspx?artno=98&pgno=0">laptop GPUs</a>. ExtremeTech gives a reasonable summary of <a href="http://www.extremetech.com/article2/0,1697,1905095,00.asp">how GPUs evolved in 2005</a> and what to look for in 2006.</font>
+<P>
+For some speculation on what the next generation of graphics hardware holds,
+see <a href="http://tech-report.com/etc/2002q3/nextgen-gpus/index.x?pg=4">Scott
+Wasson's</a> article. I disagree with his belief that Pixar-level quality is just
+around the corner - we need more memory for textures and geometry (say a gigabyte
+for each - doable in a few years), and much more sampling and filtering per pixel
+(which will suck up a lot of compute power) to achieve this goal. It's still a
+good overview of the current state of the art, and discusses a fair bit about
+the GeForce FX (then NV30) vs. ATI's R300 (i.e. the Radeon 9700).
+<P><font color="#c850c8">NVIDIA has gone one step beyond madness for the &uuml;bergamer: <a href="http://www.pcper.com/article.php?aid=195">Quad SLI</a>, in which four high-end graphics chips work on the same frame at once. 2 GB on-board memory, 96 pixel pipelines, 5.2 teraflops, and 6-speed F1-derived gearbox (wait, that last one's for the F430 Ferrari).</font>
+<P>There are a number of papers at <a href="http://www.cs.brown.edu/~tor/sig2003.html">SIGGRAPH 2003</a>
+ about using the GPU for implementing classical numerical algorithms, such as sparse matrix solvers.
+ Mark Harris has made an extensive research and resources site about <a href="http://www.gpgpu.org/">using
+  GPUs to rapidly solve non-graphical problems</a>. <font color="#c850c8">Their wikified <a href="http://www.gpgpu.org/wiki/FAQ">FAQ</a> is particularly helpful.</font> Also see <a href="http://www.cs.unc.edu/~geom/hardware/index.shtml">UNC Chapel Hill's page.
+<font color="#c850c8">One of the first commercial products using the GPU for something other than 3D rendering is ATI's
+<a href="http://www.extremetech.com/article2/0,1697,1880668,00.asp">Avivo product</a>. Admittedly, this product
+doesn't wander far from the GPU's original purpose, converting video files to other formats, about five times faster than the CPU can do this operation.</font>
+<P><font color="#c850c8">What's Sony's Playstation 3 like technically? <a href="http://home.btconnect.com/hgi/ps3/ps3overview.html">Here's a quick summary</a>, and Wikipedia has a fair amount of <a href="http://en.wikipedia.org/wiki/Playstation_3">data on the console</a>.</font>
+See <a href="http://www.arstechnica.com/archive/news/1042179801.html">Ars Technica</a> (and <a href="http://www.arstechnica.com/wankerdesk/3q02/playstation3.html">here</a>) for more on this architecture.
+<P>
+ Speaking of massively parallel, read about
+  <a href="http://www.acm.org/technews/articles/2003-5/0528w.html#item4">how to use 70 Playstation 2's to make a supercomputer</a>.
+<P><font color="#c850c8">Steve Collins has a <a href="http://isg.cs.tcd.ie/scollins/papers/8-bit.pdf">fascinating look at ancient consoles</a> from a programmer's perspective.</font> There are many sites about old console architectures, including: <a href="http://www.videotopia.com/">Videotopia</a>, <a href="http://www.icwhen.com/index.shtml">ICWhen</a>, <a href="http://www.geocities.com/SiliconValley/Vista/3015/atari.html">Planet Irata</a>, <a href="http://www.nvg.ntnu.no/sinclair/">Planet Sinclair</a>, <a href="http://www.hut.fi/Misc/cbm/docs/index.html">Commodore 64</a>. Emulators for many old machines can
+be found at <a href="http://www.classicgaming.com/vault/emulate.shtml">Classic Gaming</a>.
+<P>An article on <a href="http://www.gamespy.com/articles/july03/25smartest/index19.shtml">3dfx</a> gives a glimpse at what propelled 3D graphics cards to being a consumer product.
+
+<p>Anselmo Lastra's talk of <i><a href="http://www.graphics.cornell.edu/workshop/talks/complexity/lastra.pdf">All
+  the Triangles in the World</a></i> has a clever slide showing how graphics accelerators
+  have outstripped Moore's Law for decades, and how some of the gains have been turned into
+  quality improvements.</p>
+<p>Some good tutorials on CPUs, memory, and other hardware elements are available
+  at <a href="http://arstechnica.com/paedia/index.html">Ars Technica</a>. There
+  are also some in-depth articles there on the <a href="http://arstechnica.com/paedia/3dtech.html">Playstation2's
+  architecture</a>, an interesting beastie. Paul Hsieh has a nice <a href="http://www.azillionmonkeys.com/qed/accelerator.html">tutorial
+  on graphics accelerators</a> - a bit dated (remember the T-buffer? Fahrenheit?),
+  but still good.</p>
+<p>A fascinating piece of <a href="http://valve.speakeasy.net/survey/">market
+  info is provided by Valve</a>: everyone loading new patches of <i>Half-Life</i>
+  from mid-2001 on could respond to a mostly-automatic survey. Over a million
+  people replied. Admittedly, these are perhaps fairly hardcore gamers (though,
+  on the other hand, <i>Half-Life</i> is pretty ancient), but the results are
+  surprising.</p>
+<P><font color="#c850c8">One reason little is published about commercial graphics hardware architectures is that there are trade
+  secrets and possible patent infringement involved. The <a href="http://www.patentarcade.com/">Patent Arcade</a>
+  site tracks patent infringement, copyright infringement, and other videogame related legal issues.</font>
+<P> Many of the papers at the <a href="http://www.graphicshardware.org/">Eurographics/SIGGRAPH
+  Graphics Hardware Workshop</a> are available on the web through <a href="http://www.cs.brown.edu/people/tor/">Tim Rowley's page</a>.
+<P>3dlabs is going the route of more GPU programmability with their <a href="http://www.anandtech.com/video/showdoc.html?i=1614">P10
+  architecture</a> (a little more info is at <a href="http://www.3dlabs.com/whatsnew/pressreleases/pr02/02-05-03-vpu.htm">3dlabs'
+  site</a>).
+<P>24 bits of color is usually enough, but not always. Here's an <a href="cubes.gif">image
+  showing concentric bands</a> only one pixel value apart. <a href="http://www.matrox.com/mga/products/parhelia512/home.cfm">Matrox's
+  Parhelia graphics accelerator</a> includes the ability to output 10 bits per
+  channel, as does the <a href="http://tech-report.com/etc/2002q3/nextgen-gpus/index.x?pg=3">P10</a>
+  (also see the <a href="http://www.tomshardware.com/graphic/02q2/020514/">Tom's
+  Hardware</a> and <a href="http://www.anandtech.com/video/showdoc.html?i=1620&p=2">Anandtech</a>
+  articles).
+<P><a href="http://www.d6.com/users/checker/misctech.htm">Chris Hecker</a> has
+  written extensively on perspective correct texture mapping. An example of the
+  errors caused by not correcting for perspective when texturing can be seen in
+  <a href="http://www.erichaines.com/">the spinning head</a>.
+<P><font color="#7a357a"><a href="http://www.gamasutra.com/features/20040603/pournelle_01.shtml">Microsoft's plans</a> for using CPU hardware (e.g. 64 bits) is detailed by Alex Pournelle. Also available are Microsoft's <a href="http://www.microsoft.com/whdc/device/display/graphics-reqs.mspx">graphics hardware requirements</a> for Longhorn and related efforts.</font>
+<P>The <a href="http://news.com.com/2100-1040-931296.html">Xbox's security systems
+  have been cracked</a>, and <a href="http://news.com.com/2100-1040-978957.html">there's money to be made</a> cracking it further.
+<font color="#a043a0">There is <a href="http://www.xbox-linux.org/">another site</a> dedicated to running Linux on the Xbox.</font>
+<font color="#7a357a">There's even a <a href="http://www.amazon.com/exec/obidos/tg/detail/-/1931836310?tag=somebooksilike">book</a> about it and some other consoles, and <a href="http://www.amazon.com/exec/obidos/tg/detail/-/0764578065/">another one</a> on still other consoles.</font>
+<P>One case study in the second edition is about the Kyro family of chipsets,
+  based on the PowerVR tiling architecture. Also available is the <a href="http://www.pvrdev.com/">PowerVR
+  SDK</a>. (The <a href="http://www.siliconstrategies.com/story/OEG20020208S0016">bad
+  news</a> is that they didn't win the war.)
+<P><font color="#a043a0">Intel's Extreme Graphics accelerator uses <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/168252.htm">zone graphics</a> to subdivide the screen and so save graphics memory bandwidth.</font>
+
+<P><font color="#a043a0">Z-fighting (where the z-depths match but you want one surface to lie atop another) can be ameliorated with z-biasing. Intel has an <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/168495.htm">article about driver independent methods</a> of doing z-biasing with DirectX.</font>
+<P>If you have a hankering to overclock or tweak your graphics accelerator, you
+  could start at <a href="http://www4.tomshardware.com/guides/overclocking/">Tom's
+  Hardware</a> and <a href="http://www.tweaktown.com/">Tweaktown</a>.
+<P>Immersive Technologies announced the <a href="http://www.immersiveweb.com/home/products_services/hyperion.asp">Hyperion
+  system</a> at SIGGRAPH 2001, which is a system that is for computing global
+  illumination solutions at interactive rates (they're aiming it at entertainment,
+  i.e. games). They're trying to do this by using custom hardware, a server with
+  lots of processors, a fast network connection, and patent-pending algorithms
+  that allow faster intersection. Check out the <a href="http://www.immersiveweb.com/home/products_services/documents/GlobalIllumination-Gaming.pdf">whitepaper</a>
+  for their vision. Researchers at <a href="http://graphics.stanford.edu/papers/rtongfx/">Stanford</a>
+  and the <a href="http://graphics.cs.uiuc.edu/%7Ejch/papers/rt2/">University
+  of Illinois</a> are examing hardware ray tracing by using pixel shaders and
+  texturing.
+<P> The <a href="http://sourceforge.net/projects/chromium/">Chromium</a> project
+  is exploring cluster rendering systems using a tiled screen approach; there
+  is a <a href="http://graphics.stanford.edu/papers/cr/">SIGGRAPH 2002 paper</a>
+  on the concepts. The <a href="http://graphics.stanford.EDU/projects/flashg/">Stanford
+  FLASH project</a> is researching hardware for data parallel rendering algorithms.
+<P><font color="#a043a0">Intel has a good summary of the <a href="http://developer.intel.com/technology/pciexpress/devnet/desktop.htm">PCI Express
+  interface</a>.</font> For hardcore semiconductor news, try <a href="http://www.eetimes.com/">the
+  EE Times</a>. The <a href="http://public.itrs.net/">International Technology
+  Roadmap for Semiconductors</a> shows some of the hurdles ahead to maintaining
+  Moore's Law, and where the law may break down.
+<P> Roy Latham outlines 12 features he considers important for high-end simulation
+  work in a brief, readable <a href="http://www.cgsd.com/CGSDnews/CGSDnews6.html#IG Features in PC Graphics">4
+  page article</a>.
+<P> Paul Hsieh has written a good Web article on <a href="http://www.azillionmonkeys.com/qed/flicker.html">triple
+  buffering</a> and related subjects. Michael Bacik discusses handling different
+  color depths and screen sizes in his <a href="http://gamasutra.com/features/19990521/pixel_conversion_01.htm">Run-Time
+  Pixel Format Conversion</a> article.
+<P>A fascinating property of LCDs is that <a href="http://grc.com/cleartype.htm">subpixel
+  resolution rendering</a> is possible; this is the underlying technology for
+  Microsoft's ClearType.
+<P> An article by Joshua Walrath on <a href="http://www.daniele.ch/school/30vs60/30vs60_1.html">how
+  many frames per second we can perceive</a> discusses how 60 FPS is still perceptible,
+  but 72 FPS is sufficient (though as the screen size grows, this number needs
+  to increase). There's a <a href="http://amo.net/NT/02-21-01FPS.html">related article here</a>.
+<P><a href="http://www.entechtaiwan.com/ps.htm">PowerStrip</a> is a shareware program
+  which provides a huge number of controls over a wide range of graphics cards.
+<P> For Mac developers, <a href="http://www.mactech.com/articles/develop/index.html"><i>develop</i>
+  magazine archives</a> are maintained at the <a href="http://www.mactech.com/">MacTech
+  magazine</a> site.
+<P><font color="#c850c8">Two new APIs worth note: <a href="http://en.wikipedia.org/wiki/OpenMAX">OpenMAX</a>, which is a 
+cross-platform system for using audio and video streams, and <a href="http://en.wikipedia.org/wiki/OpenVG">OpenVG, which is for hardware accelerated 2D graphics.</font>
+<P><a href="http://www6.tomshardware.com/graphic/00q3/000704/index.html">Tom's
+  Hardware</a> has an article on what affects benchmarking tests. Particularly
+  interesting is the increasing effect of memory bandwidth. One of the most popular
+  gaming benchmarks is <a href="http://www.futuremark.com/download/?3dmark03.shtml">MadOnion's
+  3DMark</a> - it also has some fun eye-candy. However, even this benchmark <a href="http://www.pcworld.com/news/article/0,aid,110896,00.asp">can be manipulated a bit.</a>
+  A good list of <a href="http://www.majorgeeks.com/showfiles.php?cat=4&sort=5">benchmark
+  tests for gaming and professional accelerator boards</a> can be found on Major
+  Geeks. Many of the PC accelerator web sites (see below), such as <a href="http://www2.tomshardware.com/">Tom's
+  Hardware</a>, measure the performance of the latest boards. Michael Herf's <a href="http://www.stereopsis.com/blttest/index.html">BltTest</a>
+  code is useful for measuring raw blit speed.
+<P>Two software-only solutions for making movies of interactive programs are
+  <a href="http://www.fraps.com/">FRAPS</a> and
+  <a href="http://www.hyperionics.com">HyperCam</a>. FRAPS also measures and displays the frame rate of any 3D application.
+<a name="ihv">
+<h3>IHVs and News</h3>
+</a> PC and console chip manufacturer sites include
+<a href="http://www.nvidia.com/">NVIDIA</a>/<a href="http://www.nvnews.net/">nV
+News</a>/<a href="http://www.riva3d.com/">RIVA 3D</a>, <a href="http://www.atitech.com/">ATI
+Tech</a>/<a href="http://www.rage3d.com/">Rage3D</a>, <a href="http://www.matrox.com/">Matrox</a>/<a href="http://www.matroxusers.com/">Matrox
+Users Resource Centre</a>, <a href="http://www.3dlabs.com/">3Dlabs</a>, <a href="http://www.powervr.com/">Imagination
+Technologies</a>, as well as a &quot;theoretical&quot; manufacturer, <a href="http://www.bitboys.fi/">Bitboys</a>.
+<P> For pure PC graphics accelerator coverage, try <a href="http://www.sharkyextreme.com/">Sharky
+  Extreme</a>, <a href="http://www.tomshardware.com/">Tom's Hardware Guide</a>,
+  <a href="http://www.anandtech.com/">AnandTech</a>, <a href="http://www.hardocp.com/">[H]ARD|OCP</a>,
+  <a href="http://www.hothardware.com/">HotHardware</a>,
+  <a href="http://www.beyond3d.com/">Beyond 3D</a>,
+  <a href="http://www.tweak3d.net/">Tweak3D</a>, <a href="http://www.bjorn3d.com/">Bj&ouml;rn's
+  3D World</a>, <a href="http://www.extremetech.com/">ExtremeTech</a>,
+  <a href="http://www.gamespy.com/hardware/">PlanetHardware</a>, <a href="http://www.hardwarecentral.com/">Hardware
+  Central</a>, <a href="http://www.gamersdepot.com/">Gamers Depot</a>, <a href="http://www.firingsquad.com/">FiringSquad</a>,
+  <a href="http://www.deviantforums.com/index.php">Deviant PC Forums</a>,
+  <a href="http://3dgpu.com">3DGPU</a>,
+and <a href="http://www.gamepc.com/">GamePC</a>,
+  to name too many. To see all sorts of information about your motherboard (including
+  temperatures), try the <a href="http://mbm.livewiredev.com/">Motherboard Monitor</a>.
+  <font color="#c850c8">For buying graphics cards, I personally prefer <a href="http://www.newegg.com/ProductSort/Category.asp?Category=38">newegg.com</a>.</font>
+<P> There are also <a href="http://home.planet.nl/~mourits/koelkast/">many fine
+  uses for old hardware</a>.
+<a NAME="future">
+<h2>The Future (resources)</h2>
+</a>
+<P><font color="#7a357a">On the games front, there is an interesting <a href="http://www.beyond3d.com/interviews/sweeney04/">interview with Tim Sweeney</a>, chief architect of the <a href="http://www.unrealtechnology.com/html/technology/ue30.shtml">Unreal Engines</a>, which talks about the near future.</font>
+<p>One part of the future is certainly about graphics on handhelds. On the research front, Akenine-M&ouml;ller and others have begun
+  <a href="http://graphics.cs.lth.se/research/mobile/">a page of links</a> to handheld graphics research and resources. He is also a coauthor of <a href="http://fileadmin.cs.lth.se/cs/Personal/Tomas_Akenine-Moller/pubs/masses.pdf">"Graphics for the Masses: A Hardware Rasterization Architecture for Mobile Phones"</a>, which appears in <a href="http://www.cs.brown.edu/~tor/sig2003.html">SIGGRAPH 2003</a>.
+<p>There are many sites related to computer games programming (and graphics programming
+  in general), including (in approximate order of usefulness) <a href="http://www.gdmag.com"><i>Game
+  Developer</i> magazine's site</a> and the related <a href="http://www.gamasutra.com">Gamasutra
+  site</a> (especially their <a href="http://www.gamasutra.com/php-bin/article_display.php?category=7">Programming
+  area</a>, their <a href="http://www.gamasutra.com/php-bin/article_display.php">articles area</a>, their <a href="http://www.gamasutra.com/features/index_gdc.htm">GDC page</a>, and their <a href="http://www.gamasutra.com/features/index_gdmag.htm">Game Developer magazine reprint page</a>), <a href="http://www.gamedev.net/">GameDev.net</a> (especially their <a href="http://www.gamedev.net/reference/list.asp?categoryid=40">Graphics area</a>), <a href="http://www.flipcode.com/">flipcode</a>
+  (especially their <a href="http://www.flipcode.com/articles">tutorials</a>),
+  <a href="http://www.cfxweb.net/">CFXweb</a>, <a href="http://www.gignews.com/">GIG</a>, and <a href="http://gpp.netfirms.com/">Games++</a>.
+  For even more sites and resources, see the nicely organized <a href="http://www.gdse.com/">Game
+  Development Search Engine</a>. If you just want to see what the best games are,
+  try <a href="http://www.gamerankings.com/itemrankings/stats.asp">GameRankings.com</a>.
+
+<p> For general console and computer game news, see <a href="http://gamespot.com/">Gamespot</a>,
+  <a href="http://www.gamespy.com/">GameSpy</a>, <a href="http://www.gamesdomain.co.uk/">Games
+  Domain</a>, <a href="http://www.pcgamer.com/">PC Gamer</a>,
+  or <a href="http://www.ugo.com/channels/games/">UGO</a>, among many others.
+  For the latest news and demos of purely 3D games, see <a href="http://www.3dfiles.com/">3D
+  Files</a>. Other fun demo/screensaver/eye-candy site include <a href="http://www.demonews.com/">DemoNews</a>. Other 3D gaming news
+  sites include the <a href="http://www.avault.com/">Adrenaline Vault</a> and
+  <a href="http://www.bluesnews.com/">Blue's News</a>. The largest collection
+  of demos, patches, trailers, etc, is <a href="http://www.fileplanet.com/">FilePlanet</a>.
+
+<p><a href="http://www.gamasutra.com/php-bin/article_display.php?category=7">Gamasutra's
+  programming area</a> has a wide variety of easily approachable technical articles
+  on many facets of real-time rendering. The <a href="http://www.gdmag.com/code.htm"><i>Game
+  Developer</i> magazine code site</a> is an excellent collection of source code
+  and demonstration programs illustrating various techniques. This magazine is
+  free to qualified readers, and is highly recommended. <a href="http://www.darwin3d.com/gamedev.htm">Jeff
+  Landers' site</a> has his code and executables distributed by <i>Game Developer</i>,
+  plus additional notes and screen shots. <a href="http://www.programmersheaven.com/">Programmers
+  Heaven</a> has resources and links to programming information on a wide variety
+  of topics.
+
+<p>The <a href="http://lists.sourceforge.net/mailman/listinfo/gdalgorithms-list/">GDAlgorithms
+  mailing list</a> is a superb place for information on interactive computer graphics.
+  Search their <a href="http://sourceforge.net/mailarchive/forum.php?forum_id=6188">archives</a>
+  (also viewable <a href="http://www.geocrawler.com/lists/3/SourceForge/4856/0/">here</a>)
+  for information on all sorts of topics. <a href="http://www.flipcode.com/forums/">Flipcode's
+  forums</a> have threads on a wide variety of game development topics, especially
+  graphics, as does <a href="http://www.gamedev.net/community/forums/forum.asp?forum_id=12">GameDev.net</a>
+  and <a href="http://www.mrgamemaker.com/">Mr Gamemaker's</a>. A small collection
+  of papers is located at the <a href="http://www.graphicspapers.com/">Graphics
+  Papers</a> site.
+<p>There are link collections to the papers from
+<a href="http://www.cs.brown.edu/~tor/sig2003.html">SIGGRAPH 2003</a>,
+<a href="http://www.cs.brown.edu/~tor/sig2002.html">SIGGRAPH 2002</a>,
+ <a href="http://www.cs.brown.edu/~tor/sig2001.html">SIGGRAPH
+  2001</a>, <a href="http://www.cs.brown.edu/~tor/sig2000.html">SIGGRAPH 2000</a>,
+  and <a href="http://www.graphics.lcs.mit.edu/~fredo/Book/publi.html#online">previous
+  SIGGRAPHs and other conferences</a>. <a href="http://www.siggraph.org/publications/bibliography/">SIGGRAPH's
+  bibliography searcher</a> searches against 13,000 computer graphics articles
+  and books (not just SIGGRAPH publications). All papers from recent
+  <a href="http://www.graphicsinterface.org"><I>Graphics Interface</I> conferences</a> are
+  available for free online. <a href="http://www.graphics.lcs.mit.edu/~fredo/book.html">Fr&eacute;do
+  Durand's</a> site is a good jump-off point for publications, researchers, and
+  other graphics research related topics. The ACM TOG's <a href="http://tog.acm.org/#resources">Resources</a>
+  section has pointers to much other material and research labs. See this page's
+  <a href="#refs">Bibliography</a> section for more information about where to
+  get articles online. Links to some conferences of interest: <a href="http://www.siggraph.org/calendar/">numerous
+  SIGGRAPH-affiliated conferences</a> such as <a href="http://www.siggraph.org/s2002/">SIGGRAPH
+  itself</a> and <a href="http://www.siggraph.org/conferences/i3d/">I3D</a>, <a href="http://www.eg.org">Eurographics</a>,
+  and the <a href="http://www.gdconf.com/">Game Developers Conference</a>. <a href="http://www.gamasutra.com/features/index_gdc.htm">Some presentations
+  from older GDCs</a> are available at the Gamasutra site (<a href="http://www.gamasutra.com/php-bin/article_display.php?category=gdc">programming specific talks here</a>). The <a href="http://www.cgmi.inf.uni-konstanz.de/egsr2005/">Eurographics
+  Symposium on Rendering</a> is another good source of information. <font color="#7a357a">The <a href="http://techsem.com/">Game Technology Seminars</a> will be happening again during 2004.</font>
+
+<P><a href="http://www.gdmag.com/">"Game Developer Magazine"</a> has some excellent, approachable articles on
+interactive computer graphics algorithms. <a href="http://www.gamasutra.com/php-bin/article_display.php?category=30">Some of these articles</a> have been reprinted on Gamasutra's site. A <a href="http://www.gdmag.com/subs/">free subscription</a> is available to professionals working in the industry. <font color="#7a357a">If you're deeply into game industry news, check out <a href="http://www.gamesindustry.biz/">GamesIndustry</a>.</font>
+<p>To see what games graphics programmers are thinking about, check their <a href="http://finger.planetquake.com/">plan
+  files</a>. John Carmack of <a href="http://finger.planetquake.com/company.asp?id=1">id
+  Software</a> has one of the longest running <a href="http://finger.planetquake.com/plan.asp?userid=johnc&id=16040">plan
+  files</a>, which contains much interesting material in it.
+
+<p>Two online news magazines which include material of relevance to real-time
+  rendering are <a href="http://www.wave-report.com/">The WAVE Report</a> (<a href="http://www.3dlinks.com/wave.cfm">searchable</a>
+  from the <a href="http://www.3dlinks.com/">3D Links site</a>), and David Duberman's
+  <a href="http://www.3dlinks.com/spectrum/index.cfm">Spectrum Report</a>. Both
+  are worthwhile, and both are free. <a href="http://www.cgw.com">Computer
+  Graphics World</a> tracks commercial developments in the computer graphics industry
+  in general, though it's easier to just read the magazine.
+
+<P><a href="http://www.gamasutra.com/jobsearch">Gamasutra</a> lists a number
+  games industry employment opportunities.
+  <a href="http://www.games-match.com/">games-match.com</a> tries to match up
+  employers and job seekers.
+<p>We discuss using hardware renderers for movie-making. An interesting related
+  phenomenon is <a href="http://www.machinima.com/">Machinima</a>,
+  making movies using real-time rendering engines from 3D shooters to generate
+  or display the frames. <font color="#c850c8">See the <a href="http://www.machinima.org/machinima-faq.html">FAQ</a>
+  for more info.</font> An older, related phenomenon is the <a href="http://www.oldskool.org/demos/explained/#whatisademo">Demo
+  Scene</a>; read about it in <a href="http://www.gamasutra.com/features/20010216/scheib_01.htm">Gamasutra</a>
+  and check out the demos linked there. Also see <a href="http://www.igda.org/SIGs/demoscene.htm">the
+  IGDA's DemoScene page</a> for some reasonable information, including their <a href="http://www.igda.org/SIGs/demoscene/demoscene_links.htm">links</a>
+  page. <a href="http://www.scene.org/news.php">Scene.org</a> is one of the best
+  sites for Demo Scene news and a storehouse for a huge number of demos. <a href="http://ths.demoscene.org/start.html">Two
+  Headed Squirrel</a> provides commentary and screen shots of many demos, and
+  <a href="http://www.pouet.net/top10.php">Pou&euml;t</a> and <a href="http://www.calodox.org/demoo/">Demoo</a>
+  give nice lists of demos worth seeing. There are even <a href="http://www.yodel.net/downloads.asp">demos on cell phones</a>; Septima uses summed-area
+  tables to do blurs in real-time. <font color="#7a357a">Also impressive is <a href="http://theprodukkt.com/">.kkrieger</a>, a 96K first person shooter game developed by a demo group.</font>
+<p>For an overview of the computational and resource costs of <i>A Bug's Life</i>,
+  see <a href="http://www.graphics.cornell.edu/workshop/talks/reality/gritz.pdf">Larry
+  Gritz's talk</a> at the <a href="http://www.graphics.cornell.edu/workshop/">Workshop
+  on Rendering, Perception, and Measurement</a>. Also from this workshop, Anselmo
+  Lastra provided an <a href="http://www.graphics.cornell.edu/workshop/talks/complexity/lastra.pdf">interesting
+  chart by John Poulton</a> showing how graphics accelerators have been beating
+  Moore's Law over the years.
+<p>The results of Stanford's graphics course <a href="http://graphics.stanford.edu/demos/">video
+  game competition</a> for past years are available for download. These are entertaining
+  and educational, and many come with source code.</p>
+<p>For a nicely annotated set of graphics related links, see the <a href="http://freespace.virgin.net/hugo.elias/links/l_main.htm">good-looking
+  textured light-sourced bouncy fun smart and stretchy links page</a>. Many
+  game development links can be found at the <a href="http://www.cyberloonies.com/english.html">Cyber
+  Loonies site</a>. <font color="#7a357a">Yet more links
+  <a href="http://www.dimension3.sk/web/links.php">here</a>, from Michal Valient.</font>
+  Then go visit <a href="http://www.geocities.com/TimesSquare/Castle/1427/pamming.htm">this
+  one</a>.
+<P>Have you read our book cover to cover? You can <a href="http://www.acm.org/pubs/tog/editors/erich/SubtleTools.zip">test your knowledge</a> with the five questions in this talk.
+<P>The highest resolution full-color display device appears to be the IBM's T221, which has
+a resolution of 3840x2400, and can be driven by a set of processors running in parallel, using
+<a href="http://sourceforge.net/projects/chromium/">Chromium</a>.
+<p>The non-profit organization <a href="http://www.igda.org/">IDGA</a> supports
+  various game development activities.
+<p>An open question is what is the primitive of the future: polygons, fragments,
+  voxel splats, or something else? One man's answer: <a href="http://webpages.mr.net/bobz/ttyquake/">ASCII</a>.
+</p>
+<a name="faq">
+<h3>FAQs and Related Sites</h3>
+</a>
+<P>The home for the most current graphics FAQs is the <a href="http://www.faqs.org/faqs/graphics/">Internet
+  FAQ Archives</a>.
+<p> There are a number of online glossaries of terms. Apple has a <a href="http://developer.apple.com/techpubs/mac/Sprockets/GameSprockets-317.html">Mac
+  oriented one</a>, and <a href="http://webopedia.internet.com/Graphics/">Webopedia</a>
+  a short general one. Schorsch has a <a href="http://www.schorsch.com/kbase/glossary/index.html">glossary
+  of lighting design terms</a> available online.
+<P> Usenet news has 2% pure gold, information you cannot find anywhere else. The
+  newsgroup <a href="news:comp.graphics.algorithms">comp.graphics.algorithms</a>
+  is just what it sounds like, and often has interesting threads. <a href="http://stevehollasch.com/cgindex/index.html">Much
+  of the gold</a> has been collected in one spot by Steve Hollasch. The newsgroups
+  <a href="news:comp.games.development.programming.algorithms">comp.games.development.programming.algorithms</a>
+  and <a href="news:comp.games.development.programming.misc">comp.games.development.programming.misc</a>
+  have good material about real-time programming. If you have a specific topic
+  in mind, <a href="http://groups.google.com/">Google Groups</a> is a good way
+  to search Usenet news for it.
+<a NAME="opengl">
+<h3>OpenGL</h3>
+</a>
+<p>The best source for OpenGL information is <a href="http://www.opengl.org/">OpenGL.org</a>.
+  <font color="#c850c8">The latest <a href="http://www.opengl.org/documentation/opengl_current_version.html">OpenGL specification</a> lives there, among much else.</font>
+  A handy resource is all the <a href="http://developer.3dlabs.com/documents/index.htm">OpenGL
+  reference documentation</a> online and hyperlinked (there are a number of variants
+  on this, <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/opengl/glfunc02_5ub8.asp">Microsoft's</a>;
+  search <a href="http://www.google.com/">Google</a> on &quot;glGet&quot; for
+  more). The 1.1 (i.e. pretty ancient) version of the entire <a href="http://acm.up.edu/redbook/">Red
+  Book</a> is available online.
+<p>A good way to learn OpenGL is to use it; <a href="http://www.xmission.com/~nate/tutors.html">Nate
+  Robins's tutorials</a> are an excellent starting place. Another good set of OpenGL tutorials
+  can be found on <a href="http://nehe.gamedev.net/">Neon Helium's site</a>. There's also a short
+  <a href="http://www.nullterminator.net/opengl32.html">OpenGL Win32 tutorial</a>.
+  Tom Nuydens has many
+  <a href="http://www.delphi3d.net/listfiles.php?category=2">code examples</a>
+  of OpenGL functionality done in Delphi.
+<p><a href="http://www.delphi3d.net/hardware/index.php">The OpenGL Hardware Registry</a>
+  lists the OpenGL capabilities for many different graphics cards. There are also a
+  <a href="http://www.delphi3d.net/download.php">large number of demos</a> available,
+  showing the use of many different API calls.
+  A list of all <a href="http://oss.sgi.com/projects/ogl-sample/registry/">OpenGL
+  extensions</a> is maintained at SGI's site. The <a href="http://glew.sourceforge.net">GLEW library</a> is an open source project which helps with the use of OpenGL extensions. NVIDIA's extensions and a huge amount
+  of other <a href="http://developer.nvidia.com/view.asp?PAGE=opengl">OpenGL related
+  information</a> is available at their site
+<p>Mark Kilgard's <a href="http://www.opengl.org/resources/libraries/glut/glut_downloads.html">GLUT
+  (GL Utilities Toolkit)</a> is another good way to try out and experiment with
+  code for many advanced features in OpenGL, and provides a basic platform independent
+  windowing API for OpenGL. There is a <a href="http://www.opengl.org/resources/libraries/glut/glut_faq.html">FAQ</a> about GLUT.
+  A newer version of GLUT is on SourceForge, called
+  <a href="http://freeglut.sourceforge.net/">freeglut</a>.
+  <a href="http://www.cs.unc.edu/~rademach/glui/">GLUI</a>
+  is an interface library built on top of GLUT, for making user interface buttons,
+  checkboxes, arcballs, etc. The <a href="http://www.fltk.org/">Fast Light Toolkit</a>
+  is a GUI toolkit that has GLUT emulation.
+<P>
+For testing the speed of an OpenGL feature, try the <a href="http://www.berkelium.com/OpenGL/isfast.html">isfast
+  and pdb</a> packages.
+<P>The
+  author of the <I><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1571691642?tag=somebooksilike">OpenGL
+  Superbible</a></I> <a href="http://starstonesoftware.com/OpenGL/">has a website</a>
+  with some tidbits on it.
+<p>Opengl.org hosts a number of useful <a href="http://www.opengl.org/resources/faq/">OpenGL
+  FAQs</a>. SGI also has an <a href="http://www.sgi.com/software/opengl/faq.html">OpenGL
+  FAQ</a> which is of more general interest, talking about the ARB and other non-technical matters. Inactive OpenGL FAQs, but still possibly of interest: the <a href="http://www.geocities.com/SiliconValley/Park/5625/opengl/">EFnet
+  FAQ</a>, and the <a href="http://www.faqs.org/faqs/graphics/opengl-faq/part1/">extremely
+  ancient newsgroup FAQ</a>.
+<p>To see what makes OpenGL tick, take a look at <a href="http://mesa3d.sourceforge.net/">Mesa</a>
+  or <a href="http://oss.sgi.com/projects/ogl-sample/">SGI's sample implementation</a>.
+  SGI's reference implementation is not meant to be fast, but is useful for understanding
+  what various commands do. SGI's old but fast software <a href="http://www.berkelium.com/OpenGL/sgi-opengl.html">OpenGL
+  for Windows</a> is available for download. Mesa's is more practical, and the
+  (poorly named) <a href="http://utah-glx.sourceforge.net/">Utah-GLX project</a>
+  is actively working on drivers for Mesa.</p>
+<p>OpenGL continues to evolve, with a <a href="http://developer.3dlabs.com/openGL2/index.htm">2.0
+  specification</a>.</p>
+<P>SGI's publicly available <a href="http://techpubs.sgi.com/library/">technical
+  publications</a> are a useful collection of tutorials and articles. This library
+  includes <a href="http://techpubs.sgi.com/library/dynaweb_bin/0640/bin/nph-dynaweb.cgi/dynaweb/SGI_Developer/OpenGLonSGI/@Generic__BookView"><i>OpenGL
+  on Silicon Graphics Systems</i></a>, which has chapters on optimization.
+<P>The OpenGL newsgroup is <a href="news:comp.graphics.api.opengl">comp.graphics.api.opengl</a>.
+  SGI-specific OpenGL questions can be posted to <a href="news:comp.sys.sgi.graphics">comp.sys.sgi.graphics</a>.
+  An <a href="http://groups.yahoo.com/group/opengl-gamedev-l/">active mailing
+  list for OpenGL game developers</a> is open to all.
+<P><font color="#7a357a">OpenGL can be called from a number of languages other than C, such as Java via <a href="http://gl4java.sourceforge.net/">GL4Java</a>, Perl via <a href="http://graphcomp.com/pogl.cgi?v=0111s1m1">POGL</a> or <a href="http://linux.maruhn.com/sec/perl-opengl.html">CPAN's Perl-OpenGL</a>, Python via <a href="http://pyopengl.sourceforge.net/">PyOpenGL</a>.
+  The best place for OS support and language binding information is on the <a href="http://www.opengl.org/documentation/implementations.html">OpenGL site</a>.</font>
+  In addition, Sun's <a href="http://java.sun.com/products/java-media/3D/">Java3D</a> also
+  calls OpenGL or Direct3D, but is more a scene graph and world building interface
+  than a renderer.
+<P>Hybrid has released their <a href="http://www.hybrid.fi/main/download/tools.php">implementations of OpenGL ES 1.0 and 1.1</a> for free evaluation and noncommercial use. They also host a <a href="http://forum.hybrid.fi/">forum for mobile graphics</a>.
+<P>Subsets of OpenGL have been written for the Palm: <a href="http://www.dsbox.com/minigl.html">miniGL</a>
+  and <a href="http://fabrice.bellard.free.fr/TinyGL/">tinyGL</a>.
+  In related
+  news, Microsoft announced it is adding <a href="http://www.gamasutra.com/newswire/bit_blasts/20000302/index3.htm">DirectX
+  capabilities to Windows CE</a>. Microwindows is an open source project to bring
+  MS Windows' API to smaller devices.
+<P>Mason Woo has an <a href="http://www.woo.com/errata.html">errata site</a> for
+  the <i>OpenGL Programming Guide</i>. <a href="ftp://ftp.sgi.com/opengl/">Code
+  examples from this book</a> and other OpenGL related documents and executables
+  are also available. <a href="http://www.gamedev.net/opengl/">Druid's GL Journal</a>
+  has a number of interesting articles and links for OpenGL. A tutorial on <a href="http://gamasutra.com/features/19990723/opengl_texture_objects_01.htm">OpenGL
+  texture objects</a> is available from Gamasutra's site.
+<P> <a href="http://glean.sourceforge.net/">Glean</a> is a free OpenGL conformance
+  test suite. <a href="http://www.glsetup.com/">GLSetup</a> detects the graphics
+  card and installs the matching OpenGL drivers (though this site hasn't been
+  updated for almost a year, so...). <a href="http://glean.sourceforge.net/"></a>
+<P>A large number of IHVs has announced the formation of the <a href="http://www.khronos.org/">Khronos
+  Group SIG</a> to develop <a href="http://www.gamasutra.com/newswire/bit_blasts/20000414/index4.htm">OpenML</a>,
+  an API for integrating OpenGL graphics with video and audio.
+<P><a href="http://www.xglspec.org/">XGL</a> is meant for representing scenes by using an XML format that
+  maps easily to OpenGL calls.
+<P><font color="#c850c8">For porting to the Mac, <a href="http://www.macdx.com/">MacDx</a> takes your DirectX
+  calls and converts them to OpenGL</font>.
+<P>To convert OpenGL calls into vector-based Postscript, use <a href="http://www.geuz.org/gl2ps/">GL2PS</a>.
+<P>Here's a resource guide for <a href="http://homepages.paradise.net.nz/henryj/links/">OpenGL
+  on the Mac</a>. There is also a <a href="http://www.lists.apple.com/mailman/listinfo/mac-games-dev">games
+  developers' mailing list</a> for the Mac.
+<P>Available on the web is <a href="http://www.xmission.com/~legalize/d3d-vs-opengl.html">a
+  succinct summary</a> of Direct3D and OpenGL and the differences between the
+  two. For a brief (and biased) history of OpenGL and the API wars, see <a href="http://www.vcnet.com/bms/features/3d.html"><i>Microsoft
+  and 3D Graphics</i></a>. Conflict continues, with <a href="http://zdnet.com.com/2100-1104-943111.html">Microsoft
+  claiming patents on vertex and pixel shading</a>, so putting <a href="http://www.3dlabs.com/support/developer/ogl2/index.htm">OpenGL
+  2.0</a>'s future in doubt.
+<a NAME="directx">
+<h3>DirectX</h3>
+</a>
+<p>Microsoft maintains DirectX sites for <a href="http://msdn.microsoft.com/directx/">developers</a>
+  and for <a href="http://www.microsoft.com/windows/directx/">users</a>. <a href="http://www.microsoft.com/windows/directx/downloads">DirectX
+  10</a> is the newest release available. Extensive <a href="http://msdn.microsoft.com/directx/">DirectX
+  documentation</a> is online. The newsgroups to read are <a href="news:microsoft.public.win32.programmer.directx">microsoft.public.win32.programmer.directx</a>
+  and <a href="news:microsoft.public.directx">microsoft.public.directx</a>. The
+  <a href="http://discuss.microsoft.com/archives/directxdev.html">DirectX Dev
+  mailing list</a> is another useful resource, and you can <a href="http://discuss.microsoft.com/SCRIPTS/WA-MSD.EXE?S1=directxdev">search</a>
+  the archives. </p>
+<P><a href="http://www.nvidia.com/object/presentations.html">NVIDIA</a> and <a href="http://www.ati.com/developer/techpapers.html">ATI</a>
+  each have a large number of presentations about using DirectX.
+<P>Some detailed <a href="http://www.xmission.com/~legalize/book/preview/poster/index.html">DirectX
+  reference posters</a> are available for download.
+
+<a NAME="linalg">
+<h2>Linear Algebra</h2>
+</a> Also see the <a href="#xforms">Transforms</a> section.
+<P>Dan Sunday has an <a href="http://www.geometryalgorithms.com/Archive/Linear%20Algebra/LinearAlgebra.pdf">introductory guide to linear algebra</a> available from his (quite useful) <a href="http://www.geometryalgorithms.com/">Geometry Algorithms site</a>.
+<P><a href="http://www.mathworld.com/">Eric Weisstein's World of Mathematics</a>
+  is an incredible resource for mathematical definitions, hopefully back on the
+  web for good.
+<P>Paul Bourke's <a href="http://astronomy.swin.edu.au/%7Epbourke/geometry/">geometry
+  page</a> describes a number of common geometric operations (scroll to the bottom).
+<P>Macsyma is free at last. It's now called <a href="http://sourceforge.net/projects/maxima/">Maxima</a>.
+  Macsyma is an symbolic computation program, like Mathematica and Maple: you
+  define equations and can easily combine them, integrate, take the derivative,
+  etc. Maxima is GNU source now, and free is cheaper than the $1495 price for
+  Mathematica.
+<P>You
+  can find a small collection of math related term definitions at <a href="http://www.cut-the-knot.com/glossary/atop.html">Cut
+  the Knot</a>. All sorts of mathematically related links can be found at the
+  <a href="http://www.math.niu.edu/~rusin/known-math/collection/master.html">Math
+  Atlas site</a>. Historical roots of mathematical terms can be found at the <a href="http://members.aol.com/jeff570/mathword.html">Math
+  Word site</a>.
+<P> The <a href="http://www.cs.brown.edu/exploratories/freeSoftware/catalogs/repositoryApplets.html">Exploratory</a>
+  has a few tutorial applets related to linear algebra and transforms. These applets
+  are good for building an intuition and understanding of various topics.
+  <font color="#a043a0"> There is a nice applet for <a href="http://www.falstad.com/dotproduct/">visualizing the dot product</a>.
+  </font>
+
+<a NAME="trigo">
+<h2>Trigonometry</h2>
+</a> Trig formulas, tables, and other mathematical reference material can be found
+at <a href="http://www.sisweb.com/math/tables.htm">Dave's Math Tables</a>. <a NAME="refs">
+<h2>Bibliography</h2>
+</a> <a href="http://www.graphics.lcs.mit.edu/~fredo/book.html">Fr&eacute;do Durand's</a>
+page has links to researchers, labs, conferences, and publications. <a href="http://www2.iro.umontreal.ca/~ratib/code/">Karim
+Ratib's page</a> (look under Applications/Computer Graphics) has lists and links
+to many journal articles available online (see his <i>Publications</i> subdirectory).
+<i><a href="http://computer.org/cga/">IEEE Computer Graphics and Applications</a></i>
+has issues from 1995 to the present available online to members. The <a href="http://www.acm.org/dl/">ACM
+Digital Library</a> is a paid service offering ACM proceedings and journals electronically,
+back to the 1980's; it is searchable for free by anyone. A yearly subscription
+is available (a particular bargain for students) or articles can be purchased
+individually. The site can also be searched and browsed by non-subscribers. <a href="http://www.gamasutra.com/php-bin/article_display.php?category=gdc">Some presentations
+  from GDC</a> are available at the Gamasutra site. These contain some fascinating bits of information not available
+elsewhere.
+<P> WPI's <a href="http://www.cs.wpi.edu/%7Ematt/courses/cs563/">"Advanced Topics
+  in Computer Graphics" page</a> has some interesting material. Under "Presentation
+  Summaries" there are many paper summaries on a wide variety of rendering related
+  topics.
+<p> SIGGRAPH's <a href="http://www.siggraph.org/publications/bibliography/">Bibliography
+  Database Search</a> is focused on computer graphics references. A general <a href="http://liinwww.ira.uka.de/bibliography/">computer
+  science reference search engine</a> has references to many other computer graphics
+  and computer science related sources. <a href="http://citeseer.ist.psu.edu/">CiteSeer</a>
+  is a useful article searcher, showing both articles and letting you know what
+  articles cite a given article. <font color="#c850c8">In the same vein,
+  <a href="http://scholar.google.com/">Google Scholar</a> lets you search research articles.</font>
+  <a href="http://www.graphicspapers.com/">GraphicsPapers</a>
+  searches for paper titles and gives likely URLs for their location - nice for
+  if Google fails you.
+<P> <a href="http://tog.acm.org/"><img src="http://tog.acm.org/acm40.gif" height=40 width=40 alt="TOG logo" ALIGN="CENTER"></a>
+  Thanks to <a href="http://tog.acm.org/">ACM TOG</a> for providing a home
+  for these web pages.
+<P>
+  <!--WEBBOT bot="HTMLMarkup" startspan ALT="Site Meter" -->
+  <script type="text/javascript" language="JavaScript">var site="sm1realtime"</script>
+  <script type="text/javascript" language="JavaScript1.2" src="http://sm1.sitemeter.com/js/counter.js?site=sm1realtime">
+</script>
+  <noscript> <a href="http://sm1.sitemeter.com/stats.asp?site=sm1realtime" target="_top">
+  <img src="http://sm1.sitemeter.com/meter.asp?site=sm1realtime" alt="Site Meter" border=0></a>
+  </noscript>
+  <!-- Copyright (c)2000 Site Meter -->
+  <!--WEBBOT bot="HTMLMarkup" Endspan -->
+  - A site counter thingy. Click it to see page visits, etc.
+<P>
+</font>
+<hr>
+<address>
+webslaves: <a href="http://www.erichaines.com/">Eric Haines</a>
+/ <a href="mailto:erich@acm.org">erich@acm.org</a>
+
+<br>
+<a href="http://www.cs.lth.se/~tam">Tomas Akenine-M&ouml;ller</a>
+/ <a href="mailto:tompa@acm.org">tompa@acm.org</a> </address>
+
+<p>Last changed: <i>November 18, 2007</i>
+</body></html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Golden Paint Spectra</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="rtr3.css" type="text/css"/>
+</head>
+<body bgcolor="#C0DFFD">
+<div id="wrapper">
+<div id="header">
+<div id="rtr3-header-image">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr bgcolor="#003F50">
+<td>
+<a href="http://www.realtimerendering.com/blog">
+<img src="rtr-header.png" alt="Header image" width="410" height="106"/>
+</a>
+</td>
+</tr>
+</table>
+</div>
+<div id="navigation" class="clearfix">
+<ul class="primary">
+<li><a href="http://www.realtimerendering.com/blog/" rel="home">Blog</a></li>
+<li><a title="Information about the third edition" href="book.html">Book Information</a></li>
+<li><a title="Recommended books" href="books.html">Graphics Books</a></li>
+<li><a class="nav-current" title="Object / object intersection page" href="intersections.html">Intersections</a></li>
+<li><a title="Sites we like" href="portal.html">Portal</a></li>
+<li><a title="Main resources page" href="index.html">Resources</a></li>
+<ul>
+</div>
+</div>
+<div id="content" class="clearfix">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pageName">Golden Paint Spectra</td>
+</tr>
+<tr>
+<td valign="top"><img src="spacer.gif" alt="" height="6" border="0"/><br/>
+</tr>
+<tr>
+<td class="bodyText">
+<div class="metadata">
+Last changed: June 8, 2014
+</div>
+<P>
+<i>by <a href="http://www.glassner.com/">Andrew Glassner</a> and <a href="mailto:erich@acm.org">Eric Haines</a></i>
+<P>
+<a href="http://www.goldenpaints.com/">Golden Artist Colors, Inc.</a>, has kindly given us spectral data for their acrylic paints, and they have allowed us to share these with others. Thank you, Golden!
+<P>
+<B><a href="downloads/GoldenSpectra.zip">Download the data</a></B>
+<P>
+Golden is interested in hearing what work gets done with the data, so we'd appreciate it if you <a href="mailto:erich@acm.org">let us know</a> - we'll pass it on.
+<P>
+The data is in a spreadsheet, with one row for each of <a href="http://www.goldenpaints.com/products/color/heavybody/heavybody.php">78 Golden acrylic paints</a>. 
+<P>
+Each row contains three types of data: CIE L*a*b* coordinates, point samples of reflected light from 400 to 700nm, and K/S values for Kubelka-Munk mixing. These are all discussed below.
+<p>
+The spreadsheet is named "HB 10 mil Drawdowns over White." Let's unpack this one phrase at a time.  
+<ul>
+<li><b>HB:</b> These samples were all drawn from Golden's <a href="http://www.goldenpaints.com/products/color/heavybody/index.php">"heavy body"</a> (or HB) products. These are the kinds of thick paints that you squeeze out of a tube or scoop from a jar. Golden also manufactures a line of liquid acrylic paints. Quoting Golden, the measured results for "the liquid acrylics (which you squirt from a bottle) would be essentially, if not identically, the same [as the HB paints]." </li>
+<li><b>10 mil:</b> A "mil" is 1/1000 of an inch (note that this is not a millimeter!). This figure is potentially confusing because it describes the thickness of the wet paint that was originally laid on the backing card, not the thickness of the dry paint that was measured. The difference is due to evaporation: acrylic paints are water-based, so as the paint dries it loses water and thickness. When dried and ready for measurement, each sample had thinned down to only 6 mils thick. This 6 mil sample is what was actually measured. For reference, 6 mils is about the thickness of two sheets of standard copier paper.</li>
+<li><b>Drawdowns:</b> When a layer of paint is prepared in this way, it's called a "drawdown."</li>
+<li><b>over White:</b> Each layer of paint was applied on top of an industry-standard card that is made just for this kind of work. In this case, Golden used a white drawdown card manufactured by <a href="http://opacity.leneta.com/category/opacity-charts">Leneta</a>.</li>
+</ul>
+<P> 
+Once each sample was prepared, it was illuminated with a standard <a href="http://en.wikipedia.org/wiki/Illuminant_D65">D65</a> light source and and measured with a <a href="http://en.wikipedia.org/wiki/Spectrometer">spectrometer</a> for a 10 degree observer. The samples were taken at 10 nm intervals from 400 to 700 nm.  Golden states, "We have not factored in the reflectivity spectrum of the card and by the time one has a drawdown of paint on top, the main influence will be similar to an underlying titanium white surface." For convenience, the spreadsheet also includes two forms of data derived from each spectrum: the overall <a href="http://en.wikipedia.org/wiki/L*a*b*">L*a*b* color space</a> values, and the K/S values used by the Kubelka-Munk theory.
+<P> 
+Note that Golden does not consider these measurements to represent the color of opaque paint. Quoting Golden again, "We do not have any guidance on how the curves would change if the paint was truly cast as opaque, the definition there being that a reading over the black and white areas of a drawdown card being equal." They continue that "[when measuring a dry 6 mil sample] the white of the card definitely influences the reading of more transparent colors. For many calculations, however, one would want to have readings based on truly opaque films. Unfortunately those are things we currently do not have available." This means that the spreadsheet data inherently includes the D65 illuminant spectrum and the white backing card's reflective spectrum. Most calculations will want the paint's own spectrum, which means you'll need to factor out the illuminant and the backing card.
+<P>
+Computing a perceived color consists (at its simplest) of multiply a material's spectrum by a light's spectrum and then applying the three typical <a href="http://en.wikipedia.org/wiki/Trichromatic_theory">response curves</a> of human cone cells, integrating the responses to get a <a href="http://en.wikipedia.org/wiki/CIE_1931_color_space">CIE-XYZ color</a>. We've noted some of the complicating factors here, such as the reflectivity of the drawdown card and the D65 light's spectrum, but the basic process is relatively straightforward.
+<P>
+Predicting the perceived color of mixed paints is not trivial. A popular model for paint mixing is the Kubelka-Munk theory. You can read about this in the (now free!) book, <a href="http://realtimerendering.com/Principles_of_Digital_Image_Synthesis_v1.0.1.pdf">Principles of Digital Image Synthesis</a>. The Kubelka-Munk theory seems to work well for acrylic paints, as reported in <a href="http://art-si.org/PDFs/Processing/KMreport_10_01.pdf">this paper</a>. Golden also suggests looking at <a href="http://art-si.org/PDFs/Processing/OkumuraThesis05.pdf">this thesis</a>, since (quoting Golden), "it involved calculations based on our paints, albeit working off of our Matte Fluids."</div>
+<P>
+<img src="golden_spectra_sample.png">
+</div>  
+</body>
+</html>

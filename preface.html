@@ -1,0 +1,322 @@
+<html>
+
+<head>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+   <meta name="description" content="Real-Time Rendering Resources">
+
+   <meta name="keywords" content="computer graphics, real-time, real time, rendering, interactive, accelerator, hardware, OpenGL, DirectX, Direct3D, Glide">
+
+   <title>Real-Time Rendering Preface</title>
+
+</head>
+
+<body bgcolor="#FFFFFF" link="#2D4280" vlink="#9A6D03" alink="#2D92A0" background="background.jpg">
+
+
+
+
+<h1>
+
+<font face="LUCIDA, ARIAL, HELVETICA"><font color="#0D3256"><font size=+2>Real-Time
+
+Rendering Preface</font></font></font></h1>
+
+<font face="LUCIDA, ARIAL, HELVETICA">
+
+
+
+
+This is the preface from the book
+
+<a href="index.html"><font size=+1><i>Real-Time Rendering</i></font></a>, by
+
+<a href="mailto:tompa@acm.org">Tomas
+
+M&ouml;ller</a> and
+
+<a href="http://www.erichaines.com/">Eric
+
+Haines</a>, from <a href="http://www.akpeters.com">A.K. Peters Ltd.</a>
+
+
+
+
+</font>
+
+
+
+
+<hr>
+
+The title <I>Real-Time Rendering</I> pretty much sums it up. This
+
+book is about algorithms which create synthetic images fast enough
+
+that the viewer can interact with a virtual environment. We have
+
+focused on three dimensional rendering and, to a limited extent, user
+
+interaction. Modeling, animation, and many other areas are
+
+important to the process of making a real-time application, but
+
+are beyond the scope of this book.
+
+
+
+
+<P>
+
+This field is rapidly evolving and so is a moving target. Graphics
+
+accelerators for the consumer market are currently doubling in speed every
+
+six months. Graphics libraries appear, evolve, and often die out.
+
+For these reasons we have avoided describing specific APIs,
+
+chipsets, buses, memory architectures, etc., except where it
+
+serves the goal of informing you, the reader, about some general
+
+concept. We have endeavored to describe algorithms that, by their
+
+popularity or lasting value, are likely to be used for some time to
+
+come.
+
+
+
+
+<P>
+
+We expect you to have some basic understanding of computer
+
+graphics before reading this book. The equivalent of a semester
+
+course in graphics should be sufficient, though we cannot
+
+guarantee we will not sometimes lose you along the way. Some of the later
+
+chapters in particular are meant for implementors of various
+
+complex algorithms. If some text does pass you by, skim on
+
+through. One of the most valuable services we feel we can provide is
+
+to at least
+
+let you realize what you do not yet know, and so know where to look for it later.
+
+
+
+
+<P>
+
+This book does not exist in a vacuum; we make a point of
+
+referencing relevant material wherever possible, as well as
+
+providing a summary of further reading and resources at the end of
+
+most chapters. We also spent much time searching for reference
+
+locations on the Web; many current papers are available there for
+
+free. The days are coming to an end when only those living near a good research library
+
+could learn about various algorithms.
+
+
+
+
+<P>
+
+Because Web resources are notoriously transient and because the
+
+field is evolving so rapidly, we maintain a Web site related to
+
+this book. At <a href="http://www.realtimerendering.com">http://www.realtimerendering.com</a>,
+
+the site contains links to tutorials,
+
+demonstration programs, code samples, software libraries, and much
+
+more.
+
+
+
+
+<P>
+
+
+Our true goal and guiding light while writing this book was
+
+simple. We wanted to write a book that we wished we had owned when
+
+we had started out, a book that was both unified and crammed with
+
+details not found in introductory texts. We hope that you will find
+
+this book, our view of the world, of some use in your travels.
+
+
+
+
+
+
+
+<H2>Acknowledgements</H2>
+
+
+
+
+Many people helped in making this book. Some of the greatest
+
+contributions were made by those who reviewed parts of it. The
+
+reviewers willingly gave the benefit of their expertise, helping
+
+to significantly improve both content and style. We wish to thank
+
+(in alphabetical order) Thomas Barregren, Michael Cohen, Walt
+
+Donovan, Angus Dorbie, Michael Garland, Stefan Gottschalk, Ned
+
+Greene, Ming C. Lin, Jason L. Mitchell, Liang Peng, Keith Rule, Ken Shoemake,
+
+John Stone, Phil Taylor, Ben Trumbore, Jorrit Tyberghein, and Nick
+
+Wilt. We cannot thank you enough.
+
+
+
+
+<P>
+
+Many other people contributed their time and labor to this
+
+project. Some let us use images, others provided models, still
+
+others pointed out important resources or connected us with people
+
+who could help. In addition to the people listed above, we wish to acknowledge the help of Tony
+
+Barkans, Daniel Baum, Nelson Beebe, Curtis Beeson, Tor Berg, David Blythe,
+
+Chas. Boyd, Don Brittain, Ian
+
+Bullard, Javier Castellar, Satyan Coorg, Jason Della Rocca, Paul Diefenbach,
+
+Alyssa Donovan, Dave Eberly, Kells Elmquist, Stuart Feldman, Fred Fisher,
+
+Tom Forsyth, Marty Franz, Thomas
+
+Funkhouser, Andrew Glassner, Bruce Gooch, Larry Gritz, Robert
+
+Grzeszczuk, Paul Haeberli, Evan Hart, Paul Heckbert, Chris Hecker, Joachim
+
+Helenklaken, Hugues Hoppe, John Jack, Mark Kilgard, David Kirk,
+
+James Klosowski, Subodh Kumar, Andr&eacute; LaMothe, Jeff Lander, Jens Larsson, Jed
+
+Lengyel, Fredrik Liliegren, David Luebke, Thomas Lundqvist,
+
+Tom McReynolds,
+
+Stan Melax, Don Mitchell, Andr&eacute; M&ouml;ller, Steve Molnar, Scott R. Nelson, Hubert
+
+Nguyen, Doug Rogers, Holly Rushmeier, Gernot
+
+Schaufler, Jonas Skeppstedt, Stephen Spencer, Per Stenstr&ouml;m, Jacob Str&ouml;m,
+
+Filippo Tampieri, Gary Tarolli, Ken Turkowski, Turner Whitted,
+
+Agata and Andrzej Wojaczek, Andrew Woo, Steve Worley, Brian Yen,
+
+Hans-Philip Zachau, Gabriel Zachmann, and Al Zimmerman. We also
+
+
+wish to thank the journal <I><a href="http://tog.acm.org/">ACM Transactions on Graphics</a></i> for
+
+providing a stable Web site for this book.
+
+
+
+
+<P>
+
+Alice and Klaus Peters and the staff at A.K. Peters, particularly
+
+Carolyn Artin and Sarah Gillis, have been instrumental in
+
+making this book a reality. To all of you, thanks.
+
+
+
+
+<P>
+
+Finally, our deepest thanks go to our families and friends for
+
+providing support throughout this incredible, sometimes grueling,
+
+often exhilarating process.
+
+
+
+
+<blockquote>
+
+March, 1999
+
+<br>
+
+Tomas M&ouml;ller
+
+<br>
+
+Eric Haines
+
+</blockquote>
+
+
+
+
+<P>
+
+<font face="LUCIDA, ARIAL, HELVETICA">
+
+on to the <a href="intro.html">chapter overview</a> or back to the <a href="index.html"><i>Real-Time Rendering homepage</i></a>.
+
+</font>
+
+
+
+
+<hr>
+
+<address>
+
+webslaves: <a href="http://www.erichaines.com/">Eric Haines</a>
+
+/ <a href="mailto:erich@acm.org">erich@acm.org</a>
+
+
+
+
+<br>Tomas M&ouml;ller / <a href="mailto:tompa@acm.org">tompa@acm.org</a>
+
+</address>
+
+
+
+
+<p>Last change: <i>April 12, 1999</i>
+
+</body>
+
+</html>
+

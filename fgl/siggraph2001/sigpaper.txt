@@ -1,0 +1,347 @@
+Visual Simulation of Smoke
+Ronald Fedkiw
+Henrik Wann Jensen
+Jos Stam
+
+Practical Animation of Liquids
+Nick Foster
+Ronald Fedkiw
+
+Dynamic Real-Time Deformations Using Space and Time Adaptive Sampling
+Gilles Debunne
+Marie-Paule Cani
+Mathieu Desbrun
+Alan H. Barr
+
+Optimization-Based Animation
+Victor Milenkovic
+Harald Schmidl
+
+Kizamu: A System for Sculpting Digital Characters
+Ron Perry
+Sarah Frisken
+
+Feature-Sensitive Surface Extraction From Volume Data
+Leif Kobbelt
+Mario Botsch
+Ulrich Schwanecke
+Hans-Peter Seidel
+
+Reconstruction and Representation of 3D Objects With Radial Basis Functions
+Jonathan C. Carr
+Tim J. Mitchell
+Richard K. Beatson
+Jon B. Cherrie
+W. Richard Fright
+Bruce C. McCallum
+Tim R. Evans
+
+Reliable Graphing Methods for Two-Dimensional Implicit Relations
+Jeff Tupper
+
+Scanning Physical Interaction Behavior of 3D Objects
+Dinesh K. Pai
+Kees van den Doel
+Doug L. James
+Jochen Lang
+John E. Lloyd
+Joshua L. Richmond
+Som H. Yau
+
+Synthesizing Bidirectional Texture Functions for Real-World Surfaces
+Xinguo Liu
+Heung-Yeung Shum
+Yizhou Yu
+
+Image-Based Rendering of Diffuse, Specular and Glossy Surfaces From a Single Image
+Samuel Boivin
+André Gagalowicz
+
+A Signal-Processing Framework for Inverse Rendering
+Ravi Ramamoorthi
+Pat Hanrahan
+
+WireGL: A Scalable Graphics System for Clusters
+Greg Humphreys
+Matthew Eldridge
+Ian Buck
+Matthew Everett
+Pat Hanrahan
+Gordon Stoll
+
+Lightning-2: A High-Performance Display Subsystem for PC Clusters
+Gordon Stoll
+Dan Patterson
+Art Webb
+Chris Caywood
+Milton Taveira
+Steve Hunt
+Matthew Eldridge
+Pat Hanrahan
+Steven Berman
+Richard Levy
+
+A User-Programmable Vertex Engine
+Erik Lindholm
+Mark Kilgard
+Henry Moreton
+
+A Real-Time Procedural Shading System for Programmable Graphics Hardware
+Kekoa Proudfoot
+William R. Mark
+Pat Hanrahan
+Svetoslav Tzvetkov
+
+Homomorphic Factorization of BRDFs for High-performance Rendering
+Michael D. McCool
+Jason Ang
+Anis Ahmad
+
+Consistent Mesh Parameterization
+Emil Praun
+Wim Sweldens
+Peter Schröder
+
+Approximate Boolean Operations on Free-Form Solids
+Daniel Kristjansson
+Henning Biermann
+Denis Zorin
+
+Progressive Compression for Lossless Transmission of Triangle Meshes
+Pierre Alliez
+Mathieu Desbrun
+
+Topology Matching for Fully Automatic Similarity Estimation of 3D Shapes
+Masaki Hilaga
+Yoshihisa Shinagawa
+Taku Kohmura
+Tosiyasu L. Kunii
+
+Measuring and Predicting Visual Fidelity
+Benjamin Watson
+Alinda Friedman
+Aaron McGaffey
+
+Perception-Guided Global Illumination Solution for Animation Rendering
+Karol Myszkowski
+Takehiro Tawara
+Hiroyuki Akamine
+Hans-Peter Seidel
+
+Interactive Stereoscopic Display for Three or More Users
+Yoshifumi Kitamura
+Sumihiko Yamamoto
+Fumio Kishino
+Takashige Konishi
+
+Rendering Effective Route Maps: Improving Usability Through Generalization
+Maneesh Agrawala
+Chris Stolte
+
+Composable Controller for Physics-Based Character Animation
+Petros Faloutsos
+Michiel van de Panne
+Demetri Terzopoulos
+
+Automating Gait Animation
+Harold C. Sun
+Dimitris Metaxas
+
+Expressive Expression Mapping With Ratio Images
+Zicheng Liu
+Ying Shan
+Zhengyou Zhang
+
+Expression Cloning
+Jun-yong Noh
+Ulrich Neumann
+
+The Use of Positional Information in the Modeling of Plants
+Przemyslaw Prusinkiewicz
+Lars Muendermann
+Radoslaw Karwowski
+Brendan Lane
+
+Procedural Modeling of Cities
+Yoav Parish
+Pascal Mueller
+
+Feature-Based Cellular Texturing for Architectural Models
+Justin Legakis
+Julie Dorsey
+Steven J. Gortler
+
+Integrating Shape and Pattern in Mammalian Models
+Marcelo Walter
+Alain Fournier
+Daniel Menevaux
+
+Image Analogies
+Aaron Hertzmann
+Charles E. Jacobs
+Nuria Oliver
+Brian Curless
+David H. Salesin
+
+Quilting for Texture Synthesis and Transfer
+Alexei A. Efros
+W. Freeman
+
+Texture Synthesis on Surfaces
+Greg Turk
+
+Texture Synthesis Over Arbitrary Manifold Surfaces
+Li-Yi Wei
+Marc Levoy
+
+The Randomized Z-Buffer Algorithm: Interactive Rendering of Highly Complex Scenes
+Michael Wand
+Ingmar Peter
+Wolfgang Straßer
+Matthias Fischer
+
+Surface Splatting
+Matthias Zwicker
+Markus H. Gross
+Hanspeter Pfister
+Jeroen van Baar
+
+Spectral Processing of Point-Sampled Geometry
+Mark Pauly
+Markus H. Gross
+
+Adaptive Shadow Maps
+Pemith Randima Fernando
+Sebastian Fernandez
+Kavita Bala
+Donald P. Greenberg
+
+Photo-Realistic Rendering of Knitwear Using the Lumislice
+Ying-Qing Xu
+Yanyun Chen
+Steve Lin
+Hua Zhong
+Enhua Wu
+Baining Guo
+Heung-Yeung Shum
+
+A Physically-Based Night Sky Model
+Henrik Wann Jensen
+Michael M. Stark
+Simon Premoze
+Peter Shirley
+Frédo Durand
+Julie Dorsey
+
+Texture Mapping Progressive Meshes
+Pedro V. Sander
+Steven J. Gortler
+John M. Snyder
+Hugues Hoppe
+
+Constrained Texture Mapping for Polygonal Meshes
+Bruno Lévy
+
+Unstructured Lumigraph Rendering
+Chris Buehler
+Michael Bosse
+Leonard McMillan
+Steven J. Gortler
+Michael F. Cohen
+
+An Image-Based Modeling and Photo-Editing System
+Byong Mok Oh
+Max Chen
+Julie Dorsey
+Frédo Durand
+
+Plenoptic Stitching: A Scalable Method for Reconstructing 3D Interactive Walkthroughs
+Daniel G. Aliaga
+Ingrid Carlbom
+
+Hybrid Stereo Camera: An IBR Approach for Synthesis of Very-High-Resolution Stereoscopic Image Sequences
+Harpreet S. Sawhney
+Yanlin Guo
+Keith Hanna
+Rakesh Kumar
+Sean Adkins
+Samuel Zhou
+
+DAB: Interactive Haptic Painting With 3D Virtual Brushes
+William Baxter
+Vincent Scheib
+Ming Lin
+Dinesh Manocha
+
+Project FEELEX: Adding Haptic Surface to Graphics
+Hiroo Iwata
+Hiroaki Yano
+Fumitaka Nakaizumi
+Ryo Kawamura
+
+BEAT: The Behavior Expression Animation Toolkit
+Justine Cassell
+Hannes Vilhjalmsson
+Tim Bickmore
+
+Wordseye: A Text-to-Scene Conversion System
+Bob Coyne
+Richard Sproat
+
+An Efficient Representation for Irradiance Environment Maps
+Ravi Ramamoorthi
+Pat Hanrahan
+
+Applying Appearance Standards to Light Reflection Models
+Harold B. Westlund
+Gary W. Meyer
+
+A Practical Model for Subsurface Light Transport
+Henrik Wann Jensen
+Steve Marschner
+Marc Levoy
+Pat Hanrahan
+
+Polynomial Texture Maps
+Tom Malzbender
+Dan Gelb
+Hans Wolters
+
+Synthesizing Sounds From Physically Based Motion
+James F. O'Brien
+Perry R. Cook
+Georg Essl
+
+Physically-Based Sound Effects for Interactive Simulation and Animation
+Kees van den Doel
+Paul G. Kry
+Dinesh K. Pai
+
+Modeling Acoustics in Virtual Environments Using the Uniform Theory of Diffraction
+Nicolas Tsingos
+Ingrid Carlbom
+Thomas A. Funkhouser
+Addy Ngan
+
+An Immersive, Multi-User, Musical Stage Environment
+Matt Reynolds
+Bernd Schoner
+Joey Richards
+Kelly Dobson
+Neil Gershenfeld
+
+Image-Based Motion Blur for Stop Motion Animation
+Gabriel Brostow
+Irfan Essa
+
+A Simple and Efficient Error-Diffusion Algorithm
+Victor Ostromoukhov
+
+Simulating Decorative Mosaics
+Alejo Hausner
+
+Real-Time Hatching
+Emil Praun
+Matthew Webb
+Adam Finkelstein
+Hugues Hoppe

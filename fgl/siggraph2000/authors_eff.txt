@@ -1,0 +1,83 @@
+Authors ranked by efficiency
+### Value Cost Efficiency Name
+==============================
+ 30 60.00    5  12.0000   Brian Mirtich
+352 60.00   10   6.0000   Peter Lindstrom
+265 60.00   15   4.0000   Leif Kobbelt
+340 30.00   10   3.0000   Oliver Deussen
+366 30.00   15   2.0000   Reid Gershbein
+306 20.00   10   2.0000   Mel Slater
+467 32.00   20   1.6000   Yoshinori Dobashi
+274 15.00   10   1.5000   Markus H. Gross
+407 44.00   30   1.4667   Steven J. Gortler
+363 12.00   10   1.2000   Ramesh Raskar
+342  6.00    5   1.2000   Paul A. Beardsley
+185  6.00    5   1.2000   Joe Marks
+301 30.00   25   1.2000   Matt Pharr
+266 32.00   30   1.0667   Leonard McMillan
+169 15.00   15   1.0000   Hanspeter Pfister
+233 20.00   20   1.0000   Joseph F. Laszlo
+  4 60.00   60   1.0000   Aaron Hertzmann
+ 79 20.00   20   1.0000   Daniel Cohen-Or
+116 20.00   20   1.0000   Emil Praun
+324 20.00   20   1.0000   Michiel van de Panne
+379 15.00   15   1.0000   Ronald Perry
+112 30.00   35   0.8571   Douglas E. Zongker
+  5 20.00   25   0.8000   Aaron W.F. Lee
+136 15.00   20   0.7500   Frédo Durand
+ 70 15.00   20   0.7500   Claude Puech
+182 15.00   20   0.7500   Igor Guskov
+217 15.00   20   0.7500   John Airey
+292 15.00   20   0.7500   Mark Peercy
+100 50.00   70   0.7143   Denis Zorin
+429 10.00   15   0.6667   Tim Hawkins
+447 10.00   15   0.6667   Wagner Toledo Corrêa
+437 12.00   20   0.6000   Tomoyuki Nishita
+  6 45.00   85   0.5294   Adam Finkelstein
+ 45 23.57   45   0.5238   Brian Curless
+ 78 20.00   40   0.5000   Dani Lischinski
+278 15.00   30   0.5000   Maneesh Agrawala
+460 15.00   30   0.5000   Wolfgang Heidrich
+302 30.00   60   0.5000   Matthew Brand
+123 30.00   60   0.5000   Eric Veach
+259 15.00   30   0.5000   Lance Williams
+ 91  5.00   10   0.5000   David Koller
+345 80.00  160   0.5000   Pat Hanrahan
+392  5.00   10   0.5000   Sean E. Anderson
+187 15.00   30   0.5000   Jack Tumblin
+355 40.00   85   0.4706   Peter Shirley
+465 20.00   45   0.4444   Yizhou Yu
+280 65.00  150   0.4333   Marc Levoy
+433  8.57   20   0.4286   Tom Duchamp
+451  8.57   20   0.4286   Werner Stuetzle
+409 12.00   30   0.4000   Steven M. Seitz
+188 20.00   50   0.4000   James A. Ferwerda
+371 25.00   70   0.3571   Richard Szeliski
+ 82  8.57   25   0.3429   Daniel N. Wood
+167 15.00   45   0.3333   Hans-Peter Seidel
+246 20.00   60   0.3333   Ken Perlin
+  8 20.00   60   0.3333   Adi Levin
+207 26.00   80   0.3250   Jessica K. Hodgins
+ 88 83.57  270   0.3095   David H. Salesin
+236 12.00   40   0.3000   Jovan Popovic
+459 35.00  120   0.2917   Wim Sweldens
+354 35.00  130   0.2692   Peter Schröder
+191 20.00   75   0.2667   James F. O'Brien
+177 20.00   80   0.2500   Homan Igehy
+125 20.00   80   0.2500   Eugene Fiume
+238 15.00   60   0.2500   Julie Dorsey
+365 15.00   60   0.2500   Ravi Ramamoorthi
+109 35.00  150   0.2333   Donald P. Greenberg
+412 15.00   70   0.2143   Sumanta N. Pattanaik
+281 15.00   70   0.2143   Marc Olano
+231  5.00   25   0.2000   Jonathan W. Shade
+471 12.00   60   0.2000   Zoran Popovic
+179 52.00  270   0.1926   Hugues Hoppe
+147 15.00   80   0.1875   George Drettakis
+134 15.00   90   0.1667   François X. Sillion
+141 20.00  140   0.1429   Gary Bishop
+ 23 10.00   80   0.1250   Anselmo Lastra
+421 10.00   90   0.1111   Thomas A. Funkhouser
+ 20 12.00  110   0.1091   Andrew Witkin
+223 12.00  130   0.0923   John M. Snyder
+348 10.00  130   0.0769   Paul E. Debevec

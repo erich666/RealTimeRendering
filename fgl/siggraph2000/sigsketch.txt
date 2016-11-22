@@ -1,0 +1,320 @@
+Recreation of the World's First Panoramic Immersive Virtual Environment Using Contemporary VR Technology
+Mark Wright
+
+Panoscope 360°
+Luc Courchesne
+
+Water Dome Project
+Yuki Sugihara
+
+The Metric Cursor
+Terii Stein
+
+Combination of Two- and Three-Dimensional Space for Solid Modeling
+Hayato Yoshimori
+
+Natural Interfaces via Real-Time Video
+Richard L. Marks
+
+Gesture-Based Ping-Pong Game Using a Real-Time Depth-Image Input Device
+Yasunobu Yamauchi
+
+Integrated Pose-Driven Character Dynamics
+Robert Vogt
+
+Clothing Simulations in "Shrek"
+William Seneshen
+
+Getting Shrek Muddy
+Juan Buhler
+
+Building "Shrek's" Natural Environment (Trees, Plants, and Grass)
+Scott Peterson
+
+Super Bodies
+Alexander Tsiaras
+
+Cephalic Visitors
+Alexander Tsiaras
+
+Conception to Birth
+Alexander Tsiaras
+
+A Realistic 3D Spatial/Symbolic Model of the Visible Human
+Ulf Tiede
+
+Real-Time Painterly Rendering
+Joshua Michaels
+
+Volumetric Modeling of Additional Techniques in Colored Pencil Drawing
+Saeko Takagi
+
+Artistic Rendering of Dynamic Motion
+Alan Chen
+
+Behavioral Animation by Constraint-Based Adaptive Search
+Philippe Codognet
+
+VScape Autonomous Intelligent Behavior in Virtual Worlds
+Peter Forte
+
+The Puppeteer Behind the Avatar
+Guillaume Chicoisne
+
+The Role of Eye Gaze in Avatar Mediated Conversational Interfaces
+Alex Colburn
+
+Bringing the Rock Monster to Life in "Galaxy Quest"
+Chris Armstrong
+
+Major Damage: The Virtual Garage Studio Processes for Producing Animations
+Kellie-Bea Cooper
+
+Leveraging the Team Across the World: Creature Development for "Pitch Black"
+Paul Franklin
+
+Going One-on-One in "Raptor vs. Raptor"
+Leandro Estebecorena
+
+The NAVE: Design and Implementation of a Non-Expensive Immersive Virtual Environment
+Jarrell Pair
+
+An Optical See-Through Display for Mixed Reality
+Kiyoshi Kiyokawa
+
+Autostereoscopic Display with Real-Image Screen
+Hideki Kakeya
+
+Dynamic Animation and Control Environment (DANCE)
+Victor Ng-Thow-Hing
+
+Real-Time Interactive Grid-Free Fluid Dynamics
+Bryan Marshall
+
+Scalable Motion Simulation
+Okan Arakin
+
+The Museum as Information Architecture
+Kevin Walker
+
+The Met
+Lisa Waltuch
+
+GINGA
+Fumio Matsumoto
+
+Bunshin: A Believable Avatar Surrogate for Both Scripted and On-the-Fly Pen-Based Control in a Presentation Environment
+Francis Quek
+
+Painting Space With BLUI
+Bill Brody
+
+A Constructive Approach To Playing Dynamic Graphics
+Fred Collopy
+
+Time Document: New Media for Dynamic Public Art
+Mats Nordahl
+
+Liquid Time: An Exploration of Video Cubism
+Camille Utterback
+
+Polytope Sections
+Russell Towle
+
+Near Real-Time Cutting
+Paul F. Neumann
+
+A Solution to the Vertex Path Problem Using a Dependency Graph
+Henry Johan
+
+"MeshSweeper:" Fast Closest Point on a Polygonal Mesh
+Andre Gueziec
+
+Enhancement of Virtual Interaction Devices Using Pseudo Force Sensation
+Mika Sugimoto
+
+Virtual Human That Can Predict Comfort and Pain Level
+Ema Kato
+
+On Determining the Haptic Smoothness of Force Shaded Surfaces
+Juli Yamashita
+
+Displacement Mapping Rendering Hardware Using Adaptive Tessellation
+Michael Doggett
+
+Visibility Driven Rasterization
+Michael Meissner
+
+Interactive Rendering of Shafts of Light Using a Hardware-Accelerated Volume Rendering Technique
+Yoshinori Dobashi
+
+Hardware-Accelerated Silhouette Matching
+Hendrik Lensch
+
+Directing the Digital Actor: Real World and Digital Challenges
+Scott E. Anderson
+
+Modeling With Guts: The Complete Replication of an Actors Biology
+Wayne Kennedy
+
+Building a Digital Actor From the Inside Out
+Josh Reiss
+
+An Insight Into Physiquing a Digital Human for "The Hollow Man"
+Ken Hahn
+
+Six Layers of Kevin Bacon: A Digital Human Going Invisible
+Laurence Treweek
+
+Shedding Light on Image-Based Rendering
+David Kriegman
+
+3D Plenoptic Functions With Cylindrical Maps
+Yunjin Lee
+
+A Low-Cost, Portable Light Field Capture Device
+Jason Yang
+
+Presence and Task Performance in Virtual Environments: A Reality-Centered Approach
+Katerina Mania
+
+Flexible Application Design Using VR Juggler
+Christopher Just
+
+Building Usable Objects for Virtual Environments
+Shamus P. Smith
+
+A Virtual Reality Interface for Analyzing Remotely Sensed Forestry Data
+Margaret Watson
+
+The Use of Spryticle in the Visual Effects for "The Road to El Dorado"
+Jennifer Cohen
+
+The Use of Traditional and 2D CG Effects as to Create the Magic in "The Road to El Dorado"
+Jennifer Cohen
+
+TimingChart: Timing Animation via Traditional Methods
+Michael Blum
+
+Snap To It! Automatic 3D Object and Silhouette Registration
+Galen Gornowicz
+
+Better Blending of Implicit Objects at Different Scales
+Brian Wyvill
+
+A Method of Generating Pavement Textures Using the Square Packing Technique
+Kazunori Miyata
+
+Adaptive Visualization of Large Dynamic Non-Manifold Models
+Hong-Qian (Karen) Lu
+
+Efficient Out-of-Core Build of a Topological Data Structure
+Sara McMains
+
+4D Swathing to Automatically Inject Character Into Animations
+Neill Campbell
+
+From Motion Capture to Motion Texture
+Kathy Pullen
+
+Motion Adaptation With Self-Intersection Avoidance
+Kyuman Jeong
+
+A Match Moving Technique for Human Body Images
+Jun'ichi Hoshino
+
+Fitting Catmull-Clark Surfaces to Laser-Scanned Data from 3D Models
+Miguel Angel Sepulveda
+
+"Sleepy Hollow:" Digital Blood (Dynamic) Simulations and Volumetric Rendering
+David Frederick Horsley
+
+"Toy Story 2" Technical Challenges
+Guido Quaroni
+
+Sort-First Parallel Rendering With a Cluster of PCs
+Rudrajit Samanta
+
+Interactive 3D Rendering on PDA Platforms
+Michael Sherman
+
+Implementing the OpenGL API With Direct Rendering in Linux
+Daryll Strauss
+
+Heuristic Backface Culling for Animated Subdivision Surfaces
+Tomas Möller
+
+Real-Time Human Hair Modeling and Animation
+Zhiyong Huang
+
+Line Art Rendering Using a Modified A-Buffer
+Mayur N. Patel
+
+Compressing Texture Maps for Large Real Environments
+Yizhou Yu
+
+GeoSCAPE: 3D Visualization of On-Site Archaelogical Excavation Using a Vectorizing Tape Measure
+Jay Lee
+
+Tailored Virtual Tours in Cultural Heritage Worlds
+Antonella Guidazzoli
+
+MorphZhapes
+Kostas Terzidis
+
+"la_alma" Interactive Book
+Lisa Moren
+
+Survivors: Testimonies of the Holocaust "Humanity through Technology"
+Stephanie Barish
+
+What is "Tal Vez Mañana?"
+Gonzalo Varela
+
+City of Brass: Hieroglyphic Perceptions in Digital Cinema
+Hisham Bizri
+
+A Branching Cellular Texture Basis Function
+Thomas Burge
+
+Texture Mixing and Texture Movie Synthesis Using Statistical Learning
+Dani Lischinski
+
+Bresenham Noise
+Masaki Kameya
+
+Corrective Texturing
+Marc Stamminger
+
+Acting Rehearsal in Virtual Reality
+Mel Slater
+
+Staging the Space of Mixed Reality
+Wolfgang Strauss
+
+The Mixed Reality Stage
+Wolfgang Broll
+
+i2TV: Experiments in New Formats for Connected Communities
+Jasminko Novak
+
+Evaluating Image Quality Metrics Vs. Human Evaluation
+Ann McNamara
+
+Illustrating Uncertainty
+Geoff Wyvill
+
+Robust Invisible Watermarking of Volume Data
+Zhiyong Huang
+
+Fast Multi-Resolution Operations on Images in the Wavelet Domain
+Iddo Drori
+
+MorphAd: A New Concept in Product Advertisement for E-commerce
+Kuntal Sengupta
+
+An XML Render e-Service
+Michael Murphy
+
+Visapult: A Prototype Remote and Distributed Visualization Application and Framework
+Wes Bethel

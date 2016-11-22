@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Alphas</title>
+</head>
+<body>
+<div>
+For <a href="http://www.realtimerendering.com/blog/wp-content/uploads/2016/02/sampler_with_gamma_srgb_chunks.png">this test image</a>, which has the follow colors in its four quadrants:<P>
+<img src="http://www.realtimerendering.com/blog/wp-content/uploads/2016/02/sampler_labeled-2.png">
+<P>
+Below is how it composites on top of a black, white, and half gray (187 and 128) background.
+<P>
+The two squares on the left should approximately match, if you blur your eyes a bit. This won't be true if the image is not being rendered at one texel per pixel (because filtering software is usually implemented incorrectly), or because your monitor is not around a 2.2-2.4 gamma. Test your monitor with <a href="http://www.graphics.cornell.edu/~westin/gamma/gamma.html">this page</a>.
+<P>
+If PNG display is implemented properly (unlikely!), the lower-right square against the black background should be the same 187-gray as in the lower-left; against the white background the upper-right should be the same 187-gray as the lower-left (assuming a normal monitor). The problem on all browsers is that linearization is not performed.
+<P>
+See <a href="http://www.realtimerendering.com/blog/png-srgb-cutoutdecal-aa-problematic/">this article</a> for more information.
+<P>
+</div>
+<div>
+<P>
+Black background:
+<P>
+</div>
+<div style="background-color: black">
+<img src="http://www.realtimerendering.com/blog/wp-content/uploads/2016/02/sampler_with_gamma_srgb_chunks.png">
+</div>
+<div>
+<P>
+White background:
+<P>
+</div>
+<div style="background-color: white">
+<img src="http://www.realtimerendering.com/blog/wp-content/uploads/2016/02/sampler_with_gamma_srgb_chunks.png">
+</div>
+<div>
+<P>
+187-Gray background:
+<P>
+</div>
+<div style="background-color: #BBBBBB">
+<img src="http://www.realtimerendering.com/blog/wp-content/uploads/2016/02/sampler_with_gamma_srgb_chunks.png">
+</div>
+<div>
+<P>
+128-Gray background:
+<P>
+</div>
+<div style="background-color: #808080">
+<img src="http://www.realtimerendering.com/blog/wp-content/uploads/2016/02/sampler_with_gamma_srgb_chunks.png">
+</div>
+</body>
+</html>
