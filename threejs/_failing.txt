@@ -1,0 +1,20 @@
+Demos failing:
+
+http://threejs.org/examples/#webgl_geometry_extrude_shapes
+http://threejs.org/examples/#webgl_interactive_draggablecubes
+http://threejs.org/examples/#webgl_loader_collada_keyframe
+http://threejs.org/examples/#webgl_loader_md2
+http://threejs.org/examples/#webgl_loader_scene
+http://threejs.org/examples/#webgl_lod
+http://threejs.org/examples/#webgl_effects_parallaxbarrier and http://threejs.org/examples/#webgl_materials_cars - partial models, shader failures
+http://threejs.org/examples/#webgl_materials_cubemap - head doesn't appear
+http://threejs.org/examples/#webgl_materials_cubemap_dynamic
+http://threejs.org/examples/#webgl_materials_texture_pvrtc - STILL FAILS
+http://threejs.org/examples/#webgl_materials_variations_lambert
+http://threejs.org/examples/#webgl_morphtargets
+http://threejs.org/examples/#webgl_shaders_tonemapping
+http://threejs.org/examples/#webgl_shadowmap - definitely used to work
+http://threejs.org/examples/#webgl_shadowmap_performance
+http://threejs.org/examples/#webgl_terrain_dynamic
+http://threejs.org/examples/#css3d_panorama_deviceorientation
+http://threejs.org/examples/#misc_animation_keys - warnings, doesn't look like much

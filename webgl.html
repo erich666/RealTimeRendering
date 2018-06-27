@@ -44,7 +44,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: November 21, 2016
+Last changed: May 30, 2018
 </div>
 <div>
 I run across WebGL resources and then tend to lose track of them, so I made this page. Feel free to <a href="mailto:erich@acm.org">send me suggestions</a> at erich@acm.org.
@@ -59,19 +59,29 @@ What browser versions support WebGL? Find out <a href="http://caniuse.com/#feat=
 <br>
 What are the statistics on WebGL support for mobile devices and PCs? Find out <a href="http://webglstats.com/">here</a>.
 <br>
-How do I start up my browser for local development? Chrome: <b>--allow-file-access-from-files</b> else check <a href="https://www.udacity.com/wiki/cs291/enabling-webgl">Udacity page</a> and <a href="https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally">three.js page</a>.
+How do I start up my browser for local development? Chrome: <b>--allow-file-access-from-files</b> else check the <a href="https://threejs.org/docs/#manual/introduction/How-to-run-thing-locally">three.js page</a> or <a href="https://www.udacity.com/wiki/cs291/enabling-webgl">Udacity page</a>.
 <br>
 What's my GPU info on Chrome? Paste in this URL: chrome://gpu/
 <br>
 How do I use native OpenGL instead of ANGLE for Windows Chrome and Firefox? Find out <a href="http://www.geeks3d.com/20130611/webgl-how-to-enable-native-opengl-in-your-browser-windows/">here</a>.
 <br>
+What other command line options are there for Chrome? Find out <a href="http://peter.sh/experiments/chromium-command-line-switches">here</a>.
+<br>
+You just want eye candy? Try <a href="https://www.chromeexperiments.com/webgl">here</a> for starters.
+<br>
 
 <h2>Reference Pages</h2>
+<a href="https://www.khronos.org/webgl/wiki/Main_Page">Khronos Wiki</a>.
+<br>
 <a href="https://www.khronos.org/webgl/wiki/BlacklistsAndWhitelists">Blacklist</a> of GPUs that don't run WebGL.
 <br>
 <a href="http://www.shaderific.com/glsl-functions/">OpenGL ES Shading Language functions</a>, used for WebGL/Three.js shaders.
 
 <h2>Tools</h2>
+<a href="http://spector.babylonjs.com/">Spector.js</a> for examining renders and state. <a href="http://www.realtimerendering.com/blog/debugging-webgl-with-spectorjs/">Documentation</a>.
+<br>
+<a href="https://www.html5rocks.com/en/tutorials/games/abouttracing/">about:tracing</a> in Google Chrome, for examining GPU and CPU usage.
+<br>
 <a href="http://www.realtimerendering.com/blog/webgl-debugging-and-profiling-tools/">Debuggers and profilers</a>, <a href="http://www.realtimerendering.com/blog/webgl-browser-editors/">browser editors</a>, <a href="http://www.realtimerendering.com/blog/webgl-resources/">Cozzi's list</a> (old)
 <br>
 <a href="https://hacks.mozilla.org/2014/03/introducing-the-canvas-debugger-in-firefox-developer-tools/">Firefox Canvas Debugger</a>
@@ -87,13 +97,17 @@ How do I use native OpenGL instead of ANGLE for Windows Chrome and Firefox? Find
 <h2>Courses and Tutorials</h2>
 <a href="https://www.coursera.org/course/webgl">Ed Angel's Coursera course</a> and <a href="http://www.realtimerendering.com/blog/reflections-on-a-webgl-mooc/">reflections</a>
 <br>
-<a href="http://bit.ly/ericity">Udacity three.js MOOC course signup</a>, <a href="https://www.udacity.com/wiki/cs291">resources</a>, and <a href="https://www.udacity.com/wiki/cs291/syllabus">syllabus</a>
+<a href="https://www.udacity.com/course/interactive-3d-graphics--cs291">Udacity three.js MOOC course signup</a>, <a href="https://www.udacity.com/wiki/cs291">resources</a>, and <a href="https://www.udacity.com/wiki/cs291/syllabus">syllabus</a>
 <br>
 <a href="https://www.futurelearn.com/courses/3d-graphics-web-programmers/">Barcelona MOOC course homepage</a>
+<br>
+<a href="https://github.com/Jam3/jam3-lesson-webgl-shader-threejs">WebGL Lessons: Three.js Shaders</a> on github
 <br>
 David Scott Lyons' <a href="http://davidscottlyons.com/threejs/presentations/frontporch14/#slide-0">amazing slideset intro to Three.js</a>
 <br>
 Steven Wittens' <a href="http://acko.net/files/fullfrontal/fullfrontal/webglmath/online.html">lovely computer graphics lessons</a> using Three.js, and <a href="http://acko.net/blog/on-webgl/">WebGL intro</a> demofest
+<br>
+Tarek Sherif's <a href="https://tsherif.github.io/khronos-webgl-workshop1/#/">tutorial slide presentation</a> and <a href="https://github.com/tsherif/khronos-webgl-workshop1">repository</a>.
 <br>
 <a href="https://www.youtube.com/watch?v=tgVLb6fOVVc&feature=youtu.be">SIGGRAPH University introduction to WebGL</a>
 
@@ -103,9 +117,11 @@ Steven Wittens' <a href="http://acko.net/files/fullfrontal/fullfrontal/webglmath
 <h2>Three.js</h2>
 <b><a href="http://threejs.org">Homepage</a></b>, <a href="http://stemkoski.github.io/Three.js/">Lee Stemkoski's demos</a>, <a href="http://yomotsu.github.io/threejs-examples/">Yomotsu examples</a>
 <br>
-<a href="https://www.udacity.com/wiki/cs291/threejs-reference">Quick reference</a>, alphabetical <a href="http://threejsdoc.appspot.com/doc/index.html">xref</a> and <a href="http://www.staunsholm.dk/THREE/jsdoc/">API</a>, <a href="https://github.com/mrdoob/three.js/wiki">wiki docs</a>
+<a href="https://www.udacity.com/wiki/cs291/threejs-reference">Quick reference</a>, alphabetical <a href="http://threejsdoc.appspot.com/doc/index.html">xref</a> and <a href="http://www.staunsholm.dk/THREE/jsdoc/">API</a>, <a href="https://github.com/mrdoob/three.js/wiki">wiki docs</a>, <a href="http://ushiroad.com/3j/">object overview</a>
 <br>
 <a href="http://www.realtimerendering.com/threejs/">Thumbnails of examples</a>
+<br>
+<a href="https://threejs.org/docs/#manual/introduction/Useful-links">useful links page</a>
 <br>
 Demos: <a href="https://plus.google.com/+ThreejsOrg/posts">Google+</a>, at <a href="http://learningthreejs.com/">Learning Three.js</a>, <a href="http://gearaward.com/inspiration.html">curated gallery</a>, <a href="http://lmv.rocks/">lmv.rocks</a>
 <br>
@@ -118,25 +134,44 @@ Twitter news: <a href="https://twitter.com/search?q=%23threejs&src=typd">#threej
 <a href="http://fhtr.org/BasicsOfThreeJS">Intro "live" slideset</a> (and <a href="http://www.realtimerendering.com/basics3js">my own fork</a>), <a href="https://aerotwist.com/tutorials/getting-started-with-three-js/">basics article</a>.
 
 <h2>Other Frameworks</h2>
-<a href="https://en.wikipedia.org/wiki/List_of_WebGL_frameworks">Wikipedia list</a>, <a href="http://www.webgl-game-engines.com/">game engine list<br>
-<a href="http://osgjs.org/">OSG.JS</a>, used by Sketchfab and others<br>
+<a href="https://www.shadertoy.com/">Shadertoy</a> - play with, test, and share procedural shaders<br>
+<a href="http://osgjs.org/">OSG.JS</a> - used by Sketchfab and others; <a href="http://osgjs.org/#examples">examples</a><br>
 <a href="http://www.babylonjs.com/">babylon.js</a><br>
 <a href="https://playcanvas.com/">PlayCanvas</a><br>
 <a href="https://webglstudio.org/">WebGLStudio.js</a><br>
 <a href="https://goocreate.com/">Goo Create</a> - for game creation<br>
 <a href="https://whsjs.io/#/">WhitestormJS</a> - add physics atop Three.js<br>
 <a href="https://aframe.io/">A-FRAME</a> - for VR, built atop three.js<br>
+<a href="http://cesiumjs.org/">Cesium</a> - for globes and maps<br>
+<a href="https://uber.github.io/deck.gl/#/">deck.gl</a> - by Uber, for large data set visualization<br>
+<a href="https://hackernoon.com/five-ways-to-build-webgl-apps-4c7eb541d193">Still more options</a><br>
+<a href="https://en.wikipedia.org/wiki/List_of_WebGL_frameworks">Wikipedia list</a>, <a href="http://www.webgl-game-engines.com/">game engine list<br>
 
 <h2>File Formats</h2>
 <a href="https://github.com/KhronosGroup/glTF">glTF</a>
+
+<h2>Compression</h2>
+<a href="https://github.com/KhronosGroup/glTF/wiki/Open-3D-Graphics-Compression">Open3DGC</a>
+<br>
+<a href="http://openctm.sourceforge.net/">OpenCTM</a>
+<br>
+<a href="https://github.com/google/draco">Draco</a>
 
 <h2>WebGL 2</h2>
 <P>
 Does this browser support WebGL 2? Test <a href="http://webglreport.com/?v=2">here</a>.
 <br>
+What percentage of various systems support WebGL 2 and its various extensions? Check <a href="https://webglstats.com/webgl2">here</a>.
+<br>
 <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">Specification</a>, related <a href="https://www.khronos.org/registry/gles/specs/3.0/es_spec_3.0.0.pdf">OpenGL ES 3.0 specification</a>
 <br>
-<a href="https://github.com/WebGLSamples/WebGL2Samples">Samples</a>
+<a href="https://github.com/shrekshao/MoveWebGL1EngineToWebGL2/blob/master/Move-a-WebGL-1-Engine-To-WebGL-2-Blog-1.md">How to start using WebGL 2.</a>
+<br>
+<a href="https://github.com/shrekshao/MoveWebGL1EngineToWebGL2/blob/master/Move-a-WebGL-1-Engine-To-WebGL-2-Blog-2.md">New features in WebGL 2.</a>
+<br>
+<a href="https://github.com/WebGLSamples/WebGL2Samples">Samples</a> and <a href="https://github.com/tsherif/webgl2examples">examples</a>, and <a href="https://github.com/tsherif/webgl2bugs">bugs</a>.
+<P>
+<a href="https://tsherif.github.io/picogl.js/">PicoGL.js</a> - a minimal WebGL 2 rendering library; <a href="https://tsherif.wordpress.com/2017/07/26/webgl-2-development-with-picogl-js/">tutorial</a>
 <br>
 <a href="https://www.youtube.com/watch?v=0eWUzCa_M0E">SIGGRAPH 2016 Birds of a Feather video</a>
 <br>
@@ -144,8 +179,10 @@ Does this browser support WebGL 2? Test <a href="http://webglreport.com/?v=2">he
 <br>
 How Cesium creates <a href="https://github.com/AnalyticalGraphicsInc/cesium/blob/master/Source/Renderer/Context.js#L205-L221">a WebGL 2 context</a>
 
+<h2>WebVR</h2>
+<a href="https://webvr.info/">Info.</a>
+
 <h2>Books</h2>
-Newest first, very oldest left off.
 <P>
 <table>
 <tr><td>
@@ -157,8 +194,10 @@ Newest first, very oldest left off.
 
 <tr><td>
 <a href="http://smile.amazon.com/WebGL-Insights-Patrick-Cozzi/dp/1498716075?tag=realtimerenderin"><img src="AmazonImages/51FPoi7JfuL._SL50_.jpg" alt="cover" height="50" align=left border=0></a>
-<img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
-<b><a href="http://smile.amazon.com/WebGL-Insights-Patrick-Cozzi/dp/1498716075?tag=realtimerenderin">WebGL Insights</a></b> (<a href="http://smile.amazon.com/WebGL-Insights-Patrick-Cozzi-ebook/dp/B00YRJ6XV0?tag=realtimerenderin">Kindle</a>), edited by Patrick Cozzi, CRC Press, July 2015 (<a href="http://www.webglinsights.com/">book's website</a>, <a href="http://webglinsights.blogspot.com/">blog</a>, <a href="https://books.google.com/books?id=6crECQAAQBAJ&printsec=frontcover">Google Books sample</a>).
+  <img src="spacer.gif" alt="" height="55" width="14" align=left border=0>
+  <a href="https://github.com/WebGLInsights/WebGLInsights.github.io/releases/download/v1.0/WebGL.Insights.-.Patrick.Cozzi.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
+<b><a href="http://smile.amazon.com/WebGL-Insights-Patrick-Cozzi/dp/1498716075?tag=realtimerenderin">WebGL Insights</a></b>, edited by Patrick Cozzi, CRC Press, July 2015 (<a href="http://www.webglinsights.com/">book's website</a>, <a href="http://webglinsights.blogspot.com/">blog</a>), <a href="https://github.com/WebGLInsights/WebGLInsights.github.io/releases/download/v1.0/WebGL.Insights.-.Patrick.Cozzi.pdf">download for free</a>.
 </td></tr>
 
 <tr><td>

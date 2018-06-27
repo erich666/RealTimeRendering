@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<title>Real Artifacts</title>
+<body bgcolor=#FFFFFF>
+<h1>Real Artifacts</h1>
+<hr width = 70% NOSHADE align=left color=#000000>
+
+<font face="Arial">
+<i><p>Rendering is hard, partly because the real world doesn't look as good as we think it does.  I find real phenomena that resemble computer graphics artifacts amusing.  Here are some real photographs that look like rendered images, sometimes because the photographer was trying to make it look synthetic, and sometimes because life can imitate the "errors" of computer graphics.</p> </i>
+
+<blockquote>
+<table>
+<tr valign=top><td><a href="refl.jpg"><img src="refl.jpg" width="100" border="1"></a></td><td>That was not the color of caustic that I expected. Perhaps the posters have radically different glossy and diffuse reflection colors?</td></tr>
+
+<tr valign=top><td><a href="tumblr_nqm3zscD531t7b5qro3_1280.jpg"><img src="tumblr_nqm3zscD531t7b5qro3_1280.jpg" width="100" border="1"></a></td><td>The studio-level lighting, exotic costume, short hair, and plasticy skin (from makeup) conspire to make this cosplayer read as a high-quality CG render. <a href="http://pixalry.io/post/122617677518/dragon-age-cassandra-pentaghast-cosplay">Source</a></td></tr>
+
+<tr valign=top><td><a href="ChVLYwfU8AANlSY.jpg"><img src="ChVLYwfU8AANlSY.jpg" width="100" border="1"></a></td><td>These clouds just look wrong!</td></tr>
+
+<tr valign=top><td><a href="salt.png"><img src="salt.png" width="100" border="1"></a></td><td>A thin layer of water on a salt lake creates a mirrored surface that looks like an overly glossy desert sand BRDF. <a href="https://vimeo.com/126061288">Source</a></td></tr>
+
+<tr valign=top><td><a href="http://i.imgur.com/eT5G5aX.jpg"><img src="http://i.imgur.com/eT5G5aX.jpg" width="100" border="1"></a></td><td>This car's mirror surface looks like the material artist got too carried away with chrome. <a href="http://i.imgur.com/eT5G5aX.jpg">Source</a></td></tr>
+
+<tr valign=top><td><a href="table.png"><img src="table.png" width="100" border="1"></a></td><td>Color bleeding? Wireframe? Ambient occlusion? This looks like a beautiful radiosity test. <a href="http://www.fastcodesign.com/3044648/wanted/nendos-new-glass-tables-bring-a-little-bit-of-miami-vice-to-your-living-room">Source</a></td></tr>
+
+<tr valign=top><td><a href="zfight.jpg"><img src="zfight.jpg" width="100" border="1"></a></td><td>These interleaved post-it notes create an effect that resembles z-fighting (thanks, Tomasz). Original at <a href="http://i.imgur.com/fhLbgu4.jpg">http://i.imgur.com/fhLbgu4.jpg</a></td></tr>
+
+<tr valign=top><td><a href="rays.png"><img src="rays.png" width="100" border="1"></a></td><td>The focused crepuscular rays through the atmosphere created by reflection from that building look fake</td></tr>
+
+<tr valign=top><td><a href="carpet.jpg"><img src="carpet.jpg" width="100" border="1"></a></td><td>This carpet's pattern resembles incorrectly assigned texture coordinates or a bug in a projection matrix computation</td></tr>
+
+<tr valign=top><td><a href="expressive-bag.jpg"><img src="expressive-bag.jpg" width="100" border="1"></a></td><td>A real, 3D shoulder bag designed in a style that looks like hand-drawn animation</td></tr>
+
+<tr valign=top><td><a href="http://psgraphics.blogspot.com/2014/08/color-bleeding-looks-like-bug.html"><img src="redlight.jpg" width="100" border="1"></a></td><td>A colored glossy reflection creates an unexpected red wall paper pattern (thanks, Pete)</td></tr>
+
+<tr valign=top><td><a href="aniso.jpg"><img src="aniso.jpg" width="100" border="1"></a></td><td>Peter Shirley took this photograph in which the glossy highlight on the metal building appears to be too bright and in the wrong place because it is brushed metal (better check your surface normals, Pete!)</td></tr>
+
+<tr valign=top><td><a href="https://pbs.twimg.com/media/Bpo38ofCYAACQN2.jpg"><img src="https://pbs.twimg.com/media/Bpo38ofCYAACQN2.jpg" width="100" border="1"></a></td><td>Adam Sawicki sends this real life shadow that looks like the aliasing artifacts from low-resolution PCF shadow maps.</td></tr>
+
+<tr valign=top><td><a href="potatomarching.jpg"><img src="potatomarching.jpg" width="100" border="1"></a></td><td>Padraic Hennessey sends these peeled potatoes, which look like they have been ray marched with too few iterations.</td></tr>
+
+<tr valign=top><td><a href="http://aras-p.info/img/blog/2013-08/iceland-viti.jpg"><img src="http://aras-p.info/img/blog/2013-08/iceland-viti.jpg" width=100 border=1></a></td><td>The reflections in the lake look like undersampled stochastic reflections.  From <a>Aras Pranckevičius' blog</a>.</td></tr>
+
+<tr valign=top><td><a href="http://www.tomassaraceno.com/"><img src="http://uploads.neatorama.com/images/posts/694/63/63694/1374939432-0.jpg" width=100 border=1></a></td><td>Tomás saraceno's net installations look like Photoshop disasters when photographed.</td></tr>
+
+<tr valign=top><td><a href="http://www.flickr.com/photos/tendril/6544259905/in/photostream"><img src="bleeding.png" width=100 border=1></a></td><td>This kind of boosted-saturation color bleeding usually only happens in CG.</td></tr>
+
+<tr valign=top><td><a href="http://i.imgur.com/C2YiMqb.jpg"><img src="http://i.imgur.com/C2YiMqb.jpg" width=100 border=1></a></td><td>Here's that path tracer reflection test that you rendered (Thanks, Eric).</td></tr>
+
+<tr valign=top><td><a href="ao.png"><img src="ao.png" width=100 border=1></a></td><td>A snowy scene looks a lot like an ambient occlusion-only rendering (Thanks, Mauricio).</td></tr>
+
+<tr valign=top><td><a href="leaks.jpg"><img src="leaks.jpg" width=100 border=1></a></td><td>Eric Haines needs better shadow-map biasing, since he's getting single-texel light leaks.  Or maybe there are tiny holes in his window blinds.</td></tr>
+
+<tr valign=top><td><a href="http://boingboing.net/2012/07/11/trees-stained-by-a-toxic-spill.html"><img src="http://craphound.com/images/gMdN6.jpg" width=100 border=1></a></td><td>The camera is exactly at the height of a former flood line, making the picture look like there was a bit error leading to incorrect decoding of the lower scan lines.  From <i>The Line</i> by Palindromo Meszaros. (Thanks, Eric)</td></tr>
+
+<tr valign=top><td><a href="http://dabroz.scythe.pl/upload/2011/10/boat.jpg"><img src="http://dabroz.scythe.pl/upload/2011/10/boat.jpg" width=100 border=1></a></td><td>The water is so clear that it looks like the shadow-map bias was cranked up too high (Thanks, Tomasz "Dab" Dąbrowski)</td></tr>
+
+<tr valign=top><td><a href="http://ngm.nationalgeographic.com/2011/06/namibia-park/lanting-photography"><img src="http://i.huffpost.com/gen/281062/NATIONAL-GEOGRAPHIC-PHOTO.jpg" width=100 border=1></a></td><td>Camel thorn trees against an orange dune at sunrise look like a painting (Thanks, Aaron Size)</td></tr>
+
+<tr valign=top><td><a href="aliased-baseball-shadows.jpg"><img src="aliased-baseball-shadows.jpg" width=100 border=1></a></td><td>Aliased shadows look like bad shadow map filtering; taken in the stands of a baseball stadium. (Thanks, Padraic Hennessy)</td></tr>
+
+<tr valign=top><td><a href="http://dabroz.scythe.pl/upload/2011/07/pcf-fail.jpg"><img src="http://dabroz.scythe.pl/upload/2011/07/pcf-fail.jpg" width=100 border=1></a></td><td>Pretty much everything about this image and <a href="http://www.youtube.com/watch?v=VCveRpdWLgE">associated video</a> looks like a modeling or rendering artifact. (Thanks, Tomasz Dabrowski)</td></tr>
+
+<tr valign=top><td><a href="http://gomadnomad.com/wp-content/uploads/2010/03/no.-ireland0001.bmp"><img src="http://gomadnomad.com/wp-content/uploads/2010/03/no.-ireland0001.bmp" width=100 border=1></a></td><td>Basalt pillars appear as hexagonal voxels.</td></tr>
+
+<tr valign=top><td><a href="http://www.asawicki.info/pub/Linked/ladder.jpg"><img src="http://www.asawicki.info/pub/Linked/ladder.jpg" width=100 border=1></a></td><td>Real-world interpenetration (Thanks, Adam)</td></tr>
+
+<tr valign=top><td><a href="http://www.nytimes.com/2010/12/30/nyregion/30ride.html?hp"><img src="http://graphics8.nytimes.com/images/2010/12/30/nyregion/30ride3/30ride3-articleLarge.jpg" width=100 border=1></a></td><td>Strobing lights create the appearance of temporal undersampling artifacts on the blurred snow.</td></tr>
+
+<tr valign=top><td><a href="http://museumpublicity.com/wp-content/uploads/2010/09/Federico-Diaz.jpg"><img src="http://museumpublicity.com/wp-content/uploads/2010/09/Federico-Diaz.jpg" width=100 border=1></a></td><td> Federico Diaz's sculpture at MoCA.  This image is a visualization; the real sculpture is also made of voxels but has a different shape. (Thanks, Adam)</td></tr>
+
+<tr valign=top><td><a href="http://www.flickr.com/photos/justinharder/4844541087/"><img src="http://farm5.static.flickr.com/4149/4844541087_17e371e903_m.jpg" width=100 border=1></a></td><td> Justin Harder's voxel motorbike (Thanks, Adam)</td></tr>
+
+<tr valign=top><td><a href="http://www.realtimerendering.com/blog/wp-content/uploads/2010/06/shanghaiDistort.jpg"><img src="http://www.realtimerendering.com/blog/wp-content/uploads/2010/06/shanghaiDistort.jpg" width=100 border=1></a></td><td> Horizontally scrambled sculpture: forgot your end of row padding again? (Thanks, Eric)</td></tr>
+
+<tr valign=top><td><a href="http://news.nationalgeographic.com/news/2010/06/photogalleries/100601-sinkhole-in-guatemala-2010-pictures-world/#guatemala-city-sinkhole-2010-aerial-close_21124_600x450.jpg"><img src="http://s.ngeo.com/wpf/media-live/photos/000/211/cache/guatemala-city-sinkhole-2010-aerial-close_21124_600x450.jpg" width=100 border=1></a></td><td> Giant 30-story sinkhole in Guatemala is so perfectly cylindrical that it looks artificial</td></tr>
+
+
+<tr valign=top><td><a href="http://www.niklasroy.com/project/32/grafikdemo"><img src="http://niklasroy.com/objekte/grafikdemo.jpg" width=100 border=1></a></td><td> Real animated 3D sculpture that looks like a rendered wireframe teapot. (Thanks, Spike) </td></tr>
+
+<tr valign=top><td><a href="http://blog.icare3d.org/2010/05/curse-of-stanford-bunny.html"><img src="http://1.bp.blogspot.com/_nCQ30r-tJ0Y/S_TsYcKh-yI/AAAAAAAAE9Q/NmF6P9gvnzo/s320/HickingBunny.jpg" width=100 border=1></a></td><td> The tree in the midground looks like the Stanford Bunny, a common rendering test object. (Thanks, Adam Sawicki)</td></tr>
+
+<tr valign=top><td><a href="http://www.realtimerendering.com/blog/one-that-fooled-me/"><img src="http://www.realtimerendering.com/blog/wp-content/uploads/2010/03/sculpture90.jpg" width=100 border=1></a></td><td> Looks like radiosity---a fact that was not lost on Cindy Goral. Click through to the comparable image from her seminal thesis.</td></tr>
+
+<tr valign=top><td><a href="http://projects.wilsonbrothers.co.uk/projects/F1-Car-d"><img src="http://projects.wilsonbrothers.co.uk/store/image/file/09/fg/o6pi72/car_1.jpg" width=100 border=1></a></td><td> Voxel/oct-tree car--check out the shadow (thanks Eric Haines)</td></tr>
+
+
+<tr valign=top><td><a href="http://www.moillusions.com/2010/02/cool-optical-illusion-bro.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+OpticalIllusions+(Optical+Illusions)"><img src="dude-fly.jpg" width=100 border=1></a></td><td> Floating man optical illusion / bad shadow map bias (thanks Eric Haines and Pete Shirley)</td></tr>
+
+<tr valign=top><td><a href="http://www.neatorama.com/2010/02/19/real-life-painting/"><img src="http://farm5.static.flickr.com/4060/4371080690_0e2e768b8e_o.jpg" width=100 border=1></a></td><td> NPR female model (thanks Eric Haines)</td></tr>
+
+<tr valign=top><td><a href="synthetic-house.jpg"><img src="synthetic-house.jpg" width=100 border=1></a></td><td> Synthetic-looking real house (thanks David Luebke)</td></tr>
+
+<tr valign=top><td><a href="http://www.moillusions.com/2008/05/national-geographics-shadow-zebras.html"><img src="http://www.moillusions.com/wp-content/uploads/i207.photobucket.com/albums/bb234/vurdlak8/illusions/zebras.jpg" width=100 border=1></a></td><td> Hard stenciled shadows in the desert again (thanks Eric)</td></tr>
+
+<tr valign=top><td><a href="giraffe.png"><img src="giraffe.png" width=100 border=1></a></td><td> "Undersampled" shadows in Pete Shirley's living room due to his window blinds.</td></tr>
+
+
+<tr valign=top><td><a href="Fractal_Plant.jpg"><img src="Fractal_Plant.jpg" width=100 border=1></a></td><td> "L-System Plant" by Adam Sawicki
+
+<tr valign=top><td><a href="Low_Res_Shadow_Map.jpg"><img src="Low_Res_Shadow_Map.jpg" width=100 border=1></a></td><td> "Percentage Closer Filtering" by Adam Sawicki
+
+<tr valign=top><td><a href="http://farm3.static.flickr.com/2633/4067409759_1d194f2342_o.jpg"><img src="http://farm3.static.flickr.com/2633/4067409759_1d194f2342_o.jpg" width=100 border=1></a></td><td> Eric Testroete's "Low Poly Head"
+
+<tr valign=top><td><a href="Voronoi_Diagram.jpg"><img src="Voronoi_Diagram.jpg" width=100 border=1></a></td><td> "Voronoi Diagram Model" by Adam Sawicki (although my colleague <a href="http://math.williams.edu/morgan/">Frank Morgan</a> would tell you that bubbles are not voronoi!)
+
+<tr valign=top><td><a href="wire-frame-toyota.jpg"><img src="wire-frame-toyota.jpg" width=100 border=1></a></td><td> Benedict Radcliffe's wireframe car.</td></tr>
+
+<tr valign=top><td><a href="watson.jpg"><img src="watson.jpg" width=100 border=1></a></td><td> Sara Watson's "invisible car" (from <a href="http://www.dailymail.co.uk/news/article-1176328/Artists-turns-old-Skoda-Fabia-invisible-car.html">DailyMail</a>).</td></tr>
+
+<tr valign=top><td><a href="children_f.jpg"><img src="children_f.jpg" width=100 border=1></a></td><td> "Undersampled" shadows in the Seattle Public Library's Faye G. Allen Children's Center (picture from the <a href="http://www.spl.org/images/slideshow/slideshow.asp?index=12">library webpage</a>)</td></tr>
+
+</table>
+
+
+<a href="http://weburbanist.com/2009/06/28/fauxtoshop-15-more-real-photos-that-look-faked/">more...</a>
+
+</html>

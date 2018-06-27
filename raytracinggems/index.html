@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- from https://www.w3schools.com/w3css/w3css_templates.asp, the Jane Doe template -->
+<html>
+<title>Ray Tracing Gems</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/Den4b7BXUAErujs.jpg');
+    min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+
+  <!-- Header -->
+  <header class="w3-container w3-left" id="home">
+    <h1 class="w3-jumbo"><b>Ray Tracing Gems</b></h1>
+    <p>A book about ray tracing edited by Eric Haines and Tomas Akenine-M&ouml;ller, from Apress</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-left w3-padding-32" id="about">
+    <div>
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>This is a book in development, with this page pointing at relevant resources.
+    </p>
+    <h3 class="w3-padding-16">Deadlines</h3>
+    The next major deadline is <b>October 15, 2018</b>, when paper submissions are due.
+    
+    <h3 class="w3-padding-16">Links</h3>
+    <UL>
+	<LI>The official <b><a href="https://developer.nvidia.com/raytracinggems">call for papers</a></b> and <b>full timeline</b>.
+	<LI>An informal <a href="http://www.realtimerendering.com/blog/one-week-to-go-submit/">what we'd like</a> posting.
+	<LI>An <a href="http://www.realtimerendering.com/blog/ray-tracing-gems-book-call-for-participation/">earlier post</a> about real-time ray tracing and the book project.
+	<LI>A <a href="http://www.realtimerendering.com/blog/ray-tracing-at-gdc/">DXR resources page</a> collecting announcements from around March 2018.
+	</UL>
+	<P>
+	</div>
+    
+    <div class="w3-container w3-light-grey w3-opacity">
+	<P>
+	  <i class="fa fa-twitter w3-hover-opacity"><a href="https://twitter.com/pointinpolygon">@pointinpolygon</a></i><br>
+	  <i class="fa fa-twitter w3-hover-opacity"><a href="https://twitter.com/inversepixel">@inversepixel</a></i>
+    </div>
+	
+    <div>
+	<P>
+	Image from <a href="https://twitter.com/NVIDIAGameDev/status/1002605553124892672">NVIDIA Game Dev</a><P>
+	<i>Page last updated 6/20/2018</i>
+	</div>
+
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Us</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: raytracinggems@nvidia.com</p>
+    </div>
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+
+</body>
+</html>
