@@ -194,7 +194,7 @@ sub OUTPUTLINES {
       <td class="bodyText">
 
 <div class="metadata">
-Last changed: November 21, 2016
+Last changed: June 28, 2017
 </div>
 
 <P>
@@ -204,15 +204,22 @@ Last changed: November 21, 2016
 
 
 This page gives a grid of intersection routines for various popular objects, pointing to resources
-in books and on the web. For a unified static and dynamic object intersection and distance library (non-commercial use only, though), see
-the <a href="http://www.andrewaye.com/Teikitu%20Gaming%20System/index.html">TGS collision system</a>. The most comprehensive books on the subject are <I>Geometric Tools for Computer Graphics</I> (GTCG) and <I>Real-Time Collision Detection</I> (RTCD); the former is all-encompassing, the latter more approachable and focused.
+in books and on the web. The most comprehensive books on the subject are
+<a href="http://www.geometrictools.com/Books/Books.html"><I>Geometric Tools for Computer Graphics</I></a> (GTCG) and
+<a href="http://realtimecollisiondetection.net/"><I>Real-Time Collision Detection</I></a> (RTCD);
+the former is all-encompassing, the latter more approachable and focused.
+A newer book focused in large part on object/object intersection tests is the
+<I><a href="https://gamephysicscookbook.github.io/">Game Physics Cookbook</a></I> (GPC),
+with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a> -
+see its <a href="https://github.com/gszauer/GamePhysicsCookbook#collision-detection">giant grid</a> for what intersections it covers.
 <P>
 Guide to source abbreviations:
 <UL>
 <LI><B>3DG</B> - <a href="http://www.amazon.com/exec/obidos/ASIN/0201619210?tag=somebooksilike"><I>3D Games: Real-time Rendering and Software Technology</I></a>, Alan Watt and Fabio Policarpo, Addison-Wesley, 2001.
 
-<LI><B>GPG</B> - <a href="http://www.amazon.com/exec/obidos/ASIN/1584500492?tag=somebooksilike"><I>Game Programming Gems</I></a>, ed. Mark DeLoura, Charles River
-Media, 2000.
+<LI><B>GPC</B> - <I><a href="https://gamephysicscookbook.github.io/">Game Physics Cookbook</a></I>, by Gabor Szauer, Packt Publishing, March 2017, with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a>
+
+<LI><B>GPG</B> - <a href="http://www.amazon.com/exec/obidos/ASIN/1584500492?tag=somebooksilike"><I>Game Programming Gems</I></a>, ed. Mark DeLoura, Charles River Media, 2000.
 
 <LI><B>GTCG</B> - <a href="http://www.geometrictools.com/Books/Books.html"><I>Geometric Tools for Computer Graphics</I></a>, Philip J. Schneider and David H. Eberly, Morgan Kaufmann Publishers, 2002. Good, comprehensive book on this topic.
 
@@ -299,14 +306,14 @@ space), so we do not list these in the table.
 
 <H2>Dynamic Object Intersections</H2>
 
-These are intersections in which the objects are moving relative to one another. Linear motion (only) is assumed; there is research on rotational motion collision detection, not covered here. The <a href="http://www.andrewaye.com/Teikitu%20Gaming%20System/index.html">TGS</a> collision system (non-commercial use only) has many methods in this area, and the book <I>Real-Time Collision Detection</I> covers the subject in some depth. One principle is that even if both objects are moving, only one has to be considered moving. That is, one object's movement vector can be subtracted from both objects, leaving one object at rest. Another principle is to perform a <a href="http://www.cs.sunysb.edu/~algorith/files/minkowski-sum.shtml">Minkowski sum</a> of the moving sphere with the other object, then shrink the sphere to a ray. A set of static intersection tests are used in many of these tests, so look in the table above for these. The tests below are categorized as <I>boolean</I>, i.e., whether the objects intersect at all, or <I>location</I>, where the actual intersection location where the two moving objects first hit is formed. <I>(Please let me know if you have simple ways of making a given boolean test into a location test.)</I>
+These are intersections in which the objects are moving relative to one another. Linear motion (only) is assumed; there is research on rotational motion collision detection, not covered here. The <a href="http://www.andrewaye.com/Teikitu%20Gaming%20System/index.html">TGS</a> collision system (non-commercial use only) has many methods in this area, and the book <I>Real-Time Collision Detection</I> covers the subject in some depth. One principle is that even if both objects are moving, only one has to be considered moving. That is, one object's movement vector can be subtracted from both objects, leaving one object at rest. Another principle is to perform a <a href="http://www.cs.sunysb.edu/~algorith/files/minkowski-sum.shtml">Minkowski sum</a> (or <a href="http://twvideo01.ubm-us.net/o1/vault/gdc2013/slides/822403Gregorius_Dirk_TheSeparatingAxisTest.pdf">Minkowski difference</a>) of the moving sphere with the other object, essentially shrinking the moving sphere to a ray. A set of static intersection tests are used in many of these tests, so look in the table above for these. The tests below are categorized as <I>boolean</I>, i.e., whether the objects intersect at all, or <I>location</I>, where the actual intersection location where the two moving objects first hit is formed. <I>(Please let me know if you have simple ways of making a given boolean test into a location test.)</I>
 
 <P>
-<B>Ray/Moving Sphere:</B> <I>(location)</I> Form a cylinder between the two spheres, intersect the two spheres and cylinder with the ray.<br>
+<B>Ray/Moving Sphere:</B> <I>(location)</I> Form a cylinder between the two spheres, intersect the two spheres and cylinder with the ray. See <a href="http://media.steampowered.com/apps/valve/2015/DirkGregorius_Contacts.pdf">Gregorius 2015</a>.<br>
 <B>Ray/Moving Triangle:</B> <I>(boolean)</I> If each triangle is entirely on one side of the plane formed by the other triangle, form the polyhedron between the two triangles. The connecting faces are formed by all the combinations of an edge on one triangle and a vertex on the other. Discard any separating planes formed (i.e., use only planes in which both triangles are on the same side of the plane). Shoot the ray against it using <a href="http://www.realtimerendering.com/intersections.html#II247">ray/polyhedron testing</a>. <I>(Short of splitting the triangles into two parts each and forming volumes amongst these, is there an elegant way to perform this operation when one triangle's plane splits the other triangle?)</I><br>
 <B>Ray/Moving AABB:</B> <I>(boolean)</I> Form a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB and shoot the ray against it using <a href="http://www.realtimerendering.com/intersections.html#II247">ray/polyhedron testing</a>. See RTR3, p. 778 (RTR2, p. 614).<br>
 <B>Ray/Moving OBB:</B> <I>(boolean)</I> An inelegant way is to form all combinations of edge/vertex pairs and form planes to bound the OBBs (see Ray/Moving triangle, above).</br>
-<B>Ray/Moving Polyhedron:</B> Take the convex hull of each polyhedron and then the convex hull of both of these. <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=504">Glassner</a> is the earliest reference I know.
+<B>Ray/Moving Polyhedron:</B> Take the convex hull of each polyhedron and then the convex hull of both of these. <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=504">Glassner</a> is the earliest reference I know. See <a href="http://media.steampowered.com/apps/valve/2015/DirkGregorius_Contacts.pdf">Gregorius 2015</a> for a modern treatment.
 
 <P>
 <B>Plane/Moving Sphere:</B> <I>(location)</I> Transform the problem into changing the plane into a thick slab, of thickness equal to the radius of the sphere. Change the sphere's path into a line segment. Perform slab/line segment intersection, i.e., ray/plane intersection for the two sides of the slab. See <a href="http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a>; and RTR3, p. 784 (RTR2, p. 621).<br>
@@ -315,14 +322,25 @@ These are intersections in which the objects are moving relative to one another.
 <P>
 The general principal of intersecting a moving sphere against an object is to simplify thinking about the problem by making the sphere into a line segment between its center's start and end locations, while "adding" this sphere (a <a href="http://www.cs.sunysb.edu/~algorith/files/minkowski-sum.shtml">Minkowski sum</a>) to the other object.<br>
 <B>Moving Sphere/Sphere:</B> <I>(location)</I> Add the radius of the moving sphere to the static sphere, and treat the moving sphere as a ray. Use this ray to perform ray/sphere intersection. See <a href="http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a> and RTR3, p. 785 (RTR2, p. 622).<br>
-<B>Moving Sphere/Triangle:</B> <I>(location)</I> Similar to above, turn the sphere into a ray. The triangle turns into a solid defined by a set of spheres at the vertices, cylinders along the edges, and a slab for the interior of the triangle. See <a href="https://github.com/jrouwe/SweptEllipsoid">Rouw&eacute;'s article and code</a> and RTR3, p. 787 (RTR2 p. 624).<br>
+<B>Moving Sphere/Triangle:</B> <I>(location)</I> Similar to above, turn the sphere into a ray. The triangle turns into a solid defined by a set of spheres at the vertices, cylinders along the edges, and a slab for the interior of the triangle. See <a href="https://github.com/jrouwe/SweptEllipsoid">Rouw&eacute;'s article and code</a>; <a href="https://www.geometrictools.com/Documentation/IntersectionMovingSphereTriangle.pdf">GTWeb doc</a>; RTR3, p. 787 (RTR2 p. 624); <a href="http://twvideo01.ubm-us.net/o1/vault/gdc2013/slides/822403Gregorius_Dirk_TheSeparatingAxisTest.pdf">Gregorius 2012</a>.<br>
 <B>Moving Sphere/AABB:</B> <I>(boolean)</I> A conservative test (i.e., no false misses, but can give false hits when there actually is no overlap) is to make the AABB move, so forming a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB. Test the static sphere with shaft testing. See RTR3, p. 778 (RTR2, p. 614).<br>
+
+<P>
+<B>Moving Triangle/Triangle:</B> See <a href="https://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">GTweb doc</a> and <a href="https://code.google.com/archive/p/box2d/downloads">Catto 2013</a>.
 
 <P>
 <B>Moving AABB/AABB:</B> <I>(location)</I> See <a href="http://www.gamasutra.com/features/19991018/Gomez_3.htm">Gomez</a> for a use of the Separating Axis Theorem to solve this problem. <I>(boolean)</I> Form a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB and compare the static AABB against it with shaft testing. See RTR3, p. 778 (RTR2, p. 614).<br>
 
+
 <P>
-<B>Moving Convex Polyhedra/Convex Polyhedra:</B> <I>(boolean)</I> The GTCG book, p. 615 on, gives pseudocode for using the method of separating axes to solve this problem.
+<B>Moving OBB/OBB:</B> <I>(location)</I> See <a href="https://www.geometrictools.com/Documentation/IntersectionRotatingBoxes.pdf">GTweb doc</a>.<br>
+
+
+<P>
+<B>Moving Convex Polyhedra/Convex Polyhedra:</B> <I>(boolean)</I> The GTCG book, p. 615 on, gives pseudocode for using the method of separating axes to solve this problem. See <a href="https://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">GTweb doc</a>.<br>
+
+<P>
+<a href="http://media.steampowered.com/apps/valve/2015/DirkGregorius_Contacts.pdf">Gregorius 2015</a> covers computing contact points among spheres, capsules, convex hulls, and meshes.
 
 <P>
 Many of the non-curved objects which are moving can be treated as forming <a href="http://www.erichaines.com/ShaftCulling.pdf">shafts</a> between the starting and ending locations, and then the shaft can be tested against a ray simply enough, or against another non-curved object by using the polyhedron/polyhedron test in <a href="#IV83">Gems IV p.83</a>. Another approach is to use the <a href="http://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">Separating Axis Theorem</a> (also see <a href="http://www.gamasutra.com/features/20000330/bobic_01.htm">Bobic</a>) to tell if the two objects overlap. However, all of these approaches are just <I>boolean</I> tests. Also see RTR3, p. 780 (RTR2, p. 626).
@@ -359,7 +377,7 @@ Many of the non-curved objects which are moving can be treated as forming <a hre
 <B>Triangle/frustum:</B> <a name="I84">Paul Heckbert</a>, <I>Generic Convex Polygon Scan Conversion and Clipping</I>, Graphics Gems, pp. 84-86, <a href="https://github.com/erich666/GraphicsGems/tree/master/gems/PolyScan/">includes code</a>.<br>
 
 <P>
-<B>Polyhedron/polyhedron:</B> <a name="IV83">Rich Rabbitz</a>, <I>Fast Collision Detection of Moving Convex Polyhedra</I>, Graphics Gems, pp. 83-109, <a href="https://github.com/erich666/GraphicsGems/tree/master/gemsiv/collide.c">includes code</a>.<br>
+<B>Polyhedron/polyhedron:</B> <a name="IV83">Rich Rabbitz</a>, <I>Fast Collision Detection of Moving Convex Polyhedra</I>, Graphics Gems IV, pp. 83-109, <a href="https://github.com/erich666/GraphicsGems/tree/master/gemsiv/collide.c">includes code</a>.<br>
 
 <P>
 <H2>Algorithms</H2>
