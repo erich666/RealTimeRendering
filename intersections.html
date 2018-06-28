@@ -50,7 +50,7 @@
       <td class="bodyText">
 
 <div class="metadata">
-Last changed: April 20, 2017
+Last changed: June 28, 2018
 </div>
 
 <P>
@@ -68,8 +68,6 @@ A newer book focused in large part on object/object intersection tests is the
 <I><a href="https://gamephysicscookbook.github.io/">Game Physics Cookbook</a></I> (GPC),
 with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a> -
 see its <a href="https://github.com/gszauer/GamePhysicsCookbook#collision-detection">giant grid</a> for what intersections it covers.
-For a unified static and dynamic object intersection and distance library (non-commercial use only, though), see
-the <a href="http://www.andrewaye.com/Teikitu%20Gaming%20System/index.html">TGS collision system</a>. 
 <P>
 Guide to source abbreviations:
 <UL>
@@ -315,7 +313,7 @@ The general principal of intersecting a moving sphere against an object is to si
 <B>Moving Sphere/AABB:</B> <I>(boolean)</I> A conservative test (i.e., no false misses, but can give false hits when there actually is no overlap) is to make the AABB move, so forming a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB. Test the static sphere with shaft testing. See RTR3, p. 778 (RTR2, p. 614).<br>
 
 <P>
-<B>Moving Triangle/Triangle:</B> See <a href="https://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">GTweb doc</a> and <a href="https://code.google.com/archive/p/box2d/downloads>Catto 2013</a>.
+<B>Moving Triangle/Triangle:</B> See <a href="https://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">GTweb doc</a> and <a href="https://code.google.com/archive/p/box2d/downloads">Catto 2013</a>.
 
 <P>
 <B>Moving AABB/AABB:</B> <I>(location)</I> See <a href="http://www.gamasutra.com/features/19991018/Gomez_3.htm">Gomez</a> for a use of the Separating Axis Theorem to solve this problem. <I>(boolean)</I> Form a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB and compare the static AABB against it with shaft testing. See RTR3, p. 778 (RTR2, p. 614).<br>
