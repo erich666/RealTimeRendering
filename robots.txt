@@ -1,2 +1,4 @@
+# robots.txt
+
 User-agent: *
-Disallow: /rtr4review
+Disallow: /rtr4_staging/ # this will soon disappear

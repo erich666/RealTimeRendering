@@ -5,16 +5,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="rtr3.css" type="text/css" />
+<link rel="stylesheet" href="rtr4.css" type="text/css" />
 </head>
-<body bgcolor="#C0DFFD">
-
+<body>
 <div id="wrapper">
 
   <div id="header">
     <div id="rtr3-header-image">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr bgcolor="#003F50">
+        <tr bgcolor="#10304B">
           <td>
             <a href="http://www.realtimerendering.com/blog">
               <img src="rtr-header.png" alt="Header image" width="410" height="106" />
@@ -26,7 +25,6 @@
     <div id="navigation" class="clearfix">
       <ul class="primary">
         <li><a href="http://www.realtimerendering.com/blog/" rel="home">Blog</a></li>
-        <li><a title="Information about the third edition"  href="book.html">Book Information</a></li>
         <li><a title="Recommended books"  href="books.html">Graphics Books</a></li>
         <li><a class="nav-current" title="Object / object intersection page"  href="intersections.html">Intersections</a></li>
         <li><a title="Sites we like"  href="portal.html">Portal</a></li>
@@ -293,7 +291,9 @@ space), so we do not list these in the table.
 
 <H2>Dynamic Object Intersections</H2>
 
-These are intersections in which the objects are moving relative to one another. Linear motion (only) is assumed; there is research on rotational motion collision detection, not covered here. The <a href="http://www.andrewaye.com/Teikitu%20Gaming%20System/index.html">TGS</a> collision system (non-commercial use only) has many methods in this area, and the book <I>Real-Time Collision Detection</I> covers the subject in some depth. One principle is that even if both objects are moving, only one has to be considered moving. That is, one object's movement vector can be subtracted from both objects, leaving one object at rest. Another principle is to perform a <a href="http://www.cs.sunysb.edu/~algorith/files/minkowski-sum.shtml">Minkowski sum</a> (or <a href="http://twvideo01.ubm-us.net/o1/vault/gdc2013/slides/822403Gregorius_Dirk_TheSeparatingAxisTest.pdf">Minkowski difference</a>) of the moving sphere with the other object, essentially shrinking the moving sphere to a ray. A set of static intersection tests are used in many of these tests, so look in the table above for these. The tests below are categorized as <I>boolean</I>, i.e., whether the objects intersect at all, or <I>location</I>, where the actual intersection location where the two moving objects first hit is formed. <I>(Please let me know if you have simple ways of making a given boolean test into a location test.)</I>
+These are intersections in which the objects are moving relative to one another. Linear motion (only) is assumed; there is research on rotational motion collision detection, not covered here. The <a href="http://www.andrewaye.com/Teikitu%20Gaming%20System/index.html">TGS</a> collision system (non-commercial use only) has many methods in this area, and the book <I>Real-Time Collision Detection</I> covers the subject in some depth.
+Other relevant presentations can be found on the <a href="https://www.essentialmath.com/tutorial.htm">Essential Math for Games Programmers</a> site.
+One principle is that even if both objects are moving, only one has to be considered moving. That is, one object's movement vector can be subtracted from both objects, leaving one object at rest. Another principle is to perform a <a href="http://www.cs.sunysb.edu/~algorith/files/minkowski-sum.shtml">Minkowski sum</a> (or <a href="http://twvideo01.ubm-us.net/o1/vault/gdc2013/slides/822403Gregorius_Dirk_TheSeparatingAxisTest.pdf">Minkowski difference</a>) of the moving sphere with the other object, essentially shrinking the moving sphere to a ray. A set of static intersection tests are used in many of these tests, so look in the table above for these. The tests below are categorized as <I>boolean</I>, i.e., whether the objects intersect at all, or <I>location</I>, where the actual intersection location where the two moving objects first hit is formed. <I>(Please let me know if you have simple ways of making a given boolean test into a location test.)</I>
 
 <P>
 <B>Ray/Moving Sphere:</B> <I>(location)</I> Form a cylinder between the two spheres, intersect the two spheres and cylinder with the ray. See <a href="http://media.steampowered.com/apps/valve/2015/DirkGregorius_Contacts.pdf">Gregorius 2015</a>.<br>
