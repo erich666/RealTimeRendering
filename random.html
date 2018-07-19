@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Real-Time Rendering Bibliography - 4th Edition</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="rtr4.css" type="text/css" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script lang="text/javascript">
+
+// Call initialize() after the page has loaded.
+$(initialize);
+
+// Initializes the randomizer button.
+function initialize()
+{
+    // Load the references page into a <div>, and set up the randomizer button when done loading.
+    var $refs = $('<div>');
+    $refs.load( 'refs.html', function()
+    {
+        // Get the list of <a> tags nested directly inside <ol> and <li> tags.
+        var $links = $refs.find('ol > li > a');
+
+        // Get the randomizer button, enable it, and set a click handler.
+        var $button = $('#randomizer');
+        $button.prop('disabled', false).click( function()
+        {
+            // Select a random <a> tag from the list, using the list length.
+            var link = $links[Math.floor(Math.random() * $links.length)];
+
+            // Open a new window with the link's href.
+            window.open(link.href, '_blank');
+        });
+    });
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="rtr3-header-image">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr bgcolor="#10304B">
+<td>
+<a href="http://www.realtimerendering.com/blog">
+<img src="rtr-header.png" alt="Header image" width="410" height="106" />
+</a>
+</td>
+</tr>
+</table>
+</div>
+<div id="navigation" class="clearfix">
+<ul class="primary">
+<li><a href="http://www.realtimerendering.com/blog/" rel="home">Blog</a></li>
+<li><a title="Recommended books" href="books.html">Graphics Books</a></li>
+<li><a title="Object / object intersection page" href="intersections.html">Intersections</a></li>
+<li><a title="Sites we like" href="portal.html">Portal</a></li>
+<li><a title="Main resources page" href="index.html">Resources</a></li>
+<li><a title="WebGL/three.js Resources" href="webgl.html">WebGL</a></li>
+<ul>
+</div>
+</div>
+<div id="content" class="clearfix">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pageName">Random Reference from the Bibliography</td>
+</tr>
+<tr>
+<td valign="top"><img src="spacer.gif" alt="" height="6" border="0" /><br />
+</tr>
+<tr>
+<td class="bodyText">
+<P>There are <a href="refs.html">over 2,000 references</a> in <i>Real-Time Rendering 4th Edition</i>, which together provide extensive coverage of the field of interactive computer graphics. So a fun (albeit inefficient) way to learn about computer graphics is to select one reference at random, which you can do here by clicking the button below.
+<P><button id="randomizer" style="font-size: 24px" disabled>Take me to a random reference!</button>
+<P>
+<I>(thanks, <a href="https://twitter.com/pixnblox">Mauricio</a>!)</I>
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="spacer.gif" alt="" height="1" border="0" /><br />
+&nbsp;<br /></td>
+</tr>
+</table>
+</table>
+</div> 
+<div id="footer" class="clearfix">
+<ul>
+<li>Contacts:</li>
+<li><a href="/cdn-cgi/l/email-protection#82f6e3efaceef6eaacf1e7">Tomas</a></li>
+<li><a href="/cdn-cgi/l/email-protection#5f3a2d363c3771302d38">Eric</a></li>
+<li><a href="/cdn-cgi/l/email-protection#94e6e0e6a7baf7fbf9">Naty</a></li>
+</ul>
+</div> 
+</div> 
+<script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script></body>
+</html>

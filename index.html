@@ -49,7 +49,7 @@
       <td class="bodyText">
       
 <div class="metadata">
-Last changed: July 12, 2018
+Last changed: July 19, 2018
 </div>
 
 
@@ -66,6 +66,8 @@ Last changed: July 12, 2018
   ISBN-13: 978-1138627000, ISBN-10: 1138627003, list price $89.95.
   <a href="rtr4.jpg">View cover</a>.
   <a href="bibtex_rtr4.txt">BibTeX entry</a>.
+  
+<P>The red betta fish in our website's banner is by <a href="https://sketchfab.com/elqui">Elinor Quittner</a>, and can be <a href="https://skfb.ly/6tpNY">viewed in 3D</a>.
 
 <TABLE ALIGN="RIGHT" BORDER="0" WIDTH="200">
   <TR ALIGN="CENTER" VALIGN="TOP">
@@ -79,9 +81,9 @@ Last changed: July 12, 2018
 
 <P>Two chapters and two appendices are available <i>only</i> online, for free:
 <UL>
-  <LI><B><a href="./Real-Time_Rendering_4th-Collision_Detection.pdf">Collision Detection</a></B> - The 3rd edition's chapter on this subject has been fully updated, but could not fit in the bounds of the physical book, so we offer it here.
+  <LI><B><a href="./Real-Time_Rendering_4th-Collision_Detection.pdf">Collision Detection</a></B> - The 3rd edition's chapter on this subject has been fully updated, but could not fit in the bounds of the physical book, so we offer it here, along with its <a href="refs.html#colldet">hyperlinked bibliography</a>.
   <LI><B>Real-Time Ray Tracing</B> <I>(coming soon)</I> - API support for this area was <a href="http://www.realtimerendering.com/blog/ray-tracing-at-gdc/">announced in March 2018</a>, too late for inclusion in the book, so we wrote an additional chapter about the subject as a whole.
-  <LI><B><a href="./Real-Time_Rendering_4th-Appendices.pdf">Appendices</a></B> - The two appendices, <I>Some Linear Algebra</I> and <I>Trigonometry</I>, also had to be cut from the physical book. They have both been updated (a small bit) from the 3rd edition.
+  <LI><B><a href="./Real-Time_Rendering_4th-Appendices.pdf">Appendices</a></B> - The two appendices, <I>Some Linear Algebra</I> and <I>Trigonometry</I>, also had to be cut from the physical book. They have both been updated (a small bit) from the 3rd edition. The <a href="refs.html#appendices">hyperlinked bibliography</a> is also available.
 </UL>
 <P>We talk more <a href="http://www.realtimerendering.com/blog/real-time-rendering-4th-edition-available-in-august-2018/">about changes in this new edition</a> on our blog. Information about the previous, third edition of this book <a href="book_rtr3.html">can be found here</a>.
 
@@ -102,7 +104,7 @@ Last changed: July 12, 2018
     computer graphics; we would appreciate your comments.
   <LI>The <a href="intersections.html"><b>object/object intersection
     page</b></a> for information on 3D object intersections.
-  <LI>An <b>archive of most of the figures</b> <I>(coming soon)</I> from the fourth edition, provided for <a href="http://en.wikipedia.org/wiki/Fair_use">Fair Use</a>. Read the <a href="http://www.realtimerendering.com/blog/our-books-figures-now-downloadable-for-fair-use/">README</a> for more details.
+  <LI>An <b><a href="figures.html">downloadable set of over 400 of the figures</a></b> from the fourth edition, provided for <a href="http://en.wikipedia.org/wiki/Fair_use">Fair Use</a>. Read the information there and our <a href="http://www.realtimerendering.com/blog/our-books-figures-now-downloadable-for-fair-use/">blog</a> for more details.
   <LI>Tomas' <a href="http://fileadmin.cs.lth.se/cs/Personal/Tomas_Akenine-Moller/RTR/RTRslides.zip"><b>Powerpoint slides</b></a> for a semester's course derived from the second edition of book. Dated in spots, but useful as a place to start.
   <LI>The <a href="refs.html"><b>bibliography</b></a> of the book, with hyperlinked
     resources (the <a href="refs3.html">Third</a> <a href="refs2.html">Second</a>, and <a href="refs1.html">First</a> Edition bibliographies are also available).
@@ -325,6 +327,8 @@ Note that the <a href="http://www.realtimerendering.com/resources/shaderx/">Shad
 <h2 class="subHeader">The Graphics Processing Unit</h2>
 </a>
 
+<P>Figure 3.14, about user-defined clipping planes, was generated with <a href="https://threejs.org/examples/#webgl_clipping">this</a> and <a href="https://threejs.org/examples/#webgl_clipping_intersection">this live interactive three.js demo</a>.
+
 <P>The series <a href="https://fgiesen.wordpress.com/2011/07/09/a-trip-through-the-graphics-pipeline-2011-index/">A trip through the Graphics Pipeline 2011</a> is an excellent in-depth presentation on all the major elements of the GPU.
 <p>The <a href="http://www.humus.name/index.php?page=3D">Humus 3D site</a> has some excellent sample programs that show advanced techniques.
 <p>Guides to tessellation shaders, most with an OpenGL-bias, include <a href="http://ogldev.atspace.co.uk/www/tutorial30/tutorial30.html">this tutorial</a>, <a href="https://www.khronos.org/opengl/wiki/Tessellation">this description</a>, descriptions of <a href="http://prideout.net/blog/?p=48">triangle</a> and <a href="http://prideout.net/blog/?p=49">quad</a> subdivision, <a href="http://web.engr.oregonstate.edu/~mjb/cs519/Handouts/tessellation.1pp.pdf">this more technical set of slides</a>, and <a href="http://reedbeta.com/blog/tess-quick-ref/">this reference/tutorial</a>.
@@ -363,6 +367,13 @@ If you need to start from scratch, Wolfire's blog has a basic two-part tutorial 
 <h2 class="subHeader">Texturing</h2>
 </a> 
 
+<P>Live interactive demos associated with this chapter's contents:
+<UL>
+<LI><a href="https://threejs.org/examples/#webgl_materials_texture_anisotropy">The three.js anisotropy demo</a> for Figure 6.19.
+<LI><a href="https://www.shadertoy.com/view/MtX3Ws">St&eacute;phane Guillitte's "Playing Marble" shadertoy</a> for Figure 6.24.
+<LI><a href="https://threejs.org/examples/#webgl_tonemapping">The three.js demo showing multiple texture types</a> for Figure 6.25.
+</UL>
+
 <P>S3TC texture compression is a standard part of DirectX, renamed DXTn texture compression.
   An outdated but free <a href="http://developer.nvidia.com/object/texture_tools.html">manipulation and compression library</a> is available for manipulating DXTn (DDS) format textures (the package also converts heightfields to normal maps). <a href="http://code.google.com/p/nvidia-texture-tools/">Source code</a> is available.
   The Unreal developer network has an excellent article on <a href="http://udn.epicgames.com/Two/TextureComparison.html">DXTC compression and quality comparison</a>.
@@ -372,11 +383,13 @@ If you need to start from scratch, Wolfire's blog has a basic two-part tutorial 
 <P>Just because a paper is ancient does not mean it's dated - math doesn't rot. Heckbert has written a worthwhile <a href="http://www.cs.cmu.edu/~ph/#papers"><i>Survey of Texture Mapping</i></a> and a more in-depth work, <a href="http://www.cs.cmu.edu/~ph/#papers"><i>Fundamentals of Texture Mapping and Image Warping</i></a>.
   Many classic applications of texture mapping are discussed at <a href="http://www.graficaobscura.com/texmap/index.html">Paul Haeberli's site</a>.
 <P>AMD has an old program called <a href="https://gpuopen.com/archive/gamescgi/amd-gpu-meshmapper/">MeshMapper</a> which generates normal, displacement, and ambient occlusion maps from a low and high resolution model. I know I've seen this somewhere in a newer open-source version, but can't find it... (help appreciated)
-<P>Megatexturing is something id has been promoting, but with little technical description. <a href="http://silverspaceship.com/src/svt/">An implementation</a> that appears similar is available.
+<P>An <a href="http://silverspaceship.com/src/svt/">implementation of megatexturing</a> is available.
 
 <a NAME="shadows">
 <h2 class="subHeader">Shadows</h2>
 </a>
+
+<P>Figure 7.12 was generated with <a href="http://momentsingraphics.de/?p=175">this demo by Christoph Peters</a> using the Sintel model. Another good shadow exploration tool is <a href="https://mynameismjp.wordpress.com/2015/02/18/shadow-sample-update/">Matt Pettineo's sample app</a>.
 
 <P>Lauritzen and all have copious notes and demo code for their <a href="https://software.intel.com/en-us/articles/sample-distribution-shadow-maps">Sample Distribution Shadow Maps scheme</a>.
 
@@ -406,6 +419,8 @@ If you need to start from scratch, Wolfire's blog has a basic two-part tutorial 
 <h2 class="subHeader">Local Illumination</h2>
 </a>
 
+<P>Figure 10.24 is from <a href="https://threejs.org/examples/#webgl_materials_displacementmap">this interactive three.js demo</a>, with a few of our own modifications. Figure 10.32 was derived from <a href="https://www.shadertoy.com/view/4dBXWD">this Shadertoy by Nimitz</a>.
+
 <P>A great <a href="http://www.debevec.org/ReflectionMapping/">history of reflection mapping</a> is available from Paul Debevec's site. Some normally difficult to obtain early papers and videos can be found here. High dynamic range environment map image data is <a href="http://www.debevec.org/Probes/">available at this site</a>, along with 8 bit/channel spherical map images.
 <P>Humus has a <a href="http://www.humus.name/index.php?page=Textures">large set of cube maps</a> available for experimentation.
 <p>The <a href="http://ivrpa.org/">IVRPA</a> is a good place to see panorama images and learn about how to make them. <a href="http://www.360cities.net/">360 Cities</a> also has panoramas.
@@ -414,6 +429,8 @@ If you need to start from scratch, Wolfire's blog has a basic two-part tutorial 
 <a NAME="global">
 <h2 class="subHeader">Global Illumination</h2>
 </a>
+
+<P>Figure 11.27 showing light baking was generated using content from <a href="https://threejs.org/examples/#webgl_materials_lightmap">this live interactive three.js demo</a>.
 
 <P>Phil Dutre's old <a href="https://people.cs.kuleuven.be/~philip.dutre/GI/">Global Illumination Compendium</a>, mentioned in "Further Resources", has much useful information on BRDFs and other facets global illumination theory. 
 <P>A pleasant <a href="http://www.math.harvard.edu/archive/21a_spring_06/exhibits/coffeecup/index.html">visualization</a> of how the coffee-cup caustic is formed is available.
@@ -424,14 +441,17 @@ If you need to start from scratch, Wolfire's blog has a basic two-part tutorial 
 <h2 class="subHeader">Image-Space Effects</h2>
 </a>
 
+<P>Matt Pettineo's <a href="https://mynameismjp.wordpress.com/2016/10/09/sg-series-part-6-step-into-the-baking-lab/">BakingLab demo</a> generated Figure 12.16, and is a good way to play with depth of field, tone mapping, and many other effects.
+
 <P>Tarek Sherif's <a href="https://tsherif.github.io/webgl2examples/dof.html">depth of field demo</a> runs in the browser, so is just a click away. It is part of his set of <a href="https://github.com/tsherif/webgl2examples">WebGL 2 examples</a>.
-<P>Matt Pettineo's <a href="https://mynameismjp.wordpress.com/2016/10/09/sg-series-part-6-step-into-the-baking-lab/">Baking Lab demo</a> is a good way to explore depth of field, tone mapping, and other effects. <a href="https://casual-effects.com/g3d/www/index.html">G3D</a> takes more work to get going, but also include depth of field, motion blur, and many other effects.
+
+<P>Matt Pettineo's <a href="https://mynameismjp.wordpress.com/2016/10/09/sg-series-part-6-step-into-the-baking-lab/">Baking Lab demo</a> lets you explore depth of field, tone mapping, and other effects. <a href="https://casual-effects.com/g3d/www/index.html">G3D</a> takes more work to get going, but also include depth of field, motion blur, and many other effects.
 
 <a NAME="ibr">
 <h2 class="subHeader">Beyond Polygons</h2>
 </a>
 
-<P>The particle system images shown in the book are better enjoyed as animated programs that run in your browser (i.e., just a click away):
+<P>The particle system images shown in Figure 13.4 of the book are better enjoyed as animated programs that run in your browser (i.e., just a click away):
 <UL>
 <LI><a href="http://edankwan.com/experiments/the-spirit/">"The Spirit"</a> by Edan Kwan (<a href="http://edankwan.com/">more demos</a>).
 <LI><a href="https://experiments.withgoogle.com/fluid-particles">"Fluid Particles"</a> by David Li.
@@ -452,6 +472,10 @@ If you want to play with source, start with <a href="https://threejs.org/example
 <h2 class="subHeader">Volumetric and Translucency Rendering</h2>
 </a>
 
+<P>Figure 14.37, refractive glass angels, is from a tweaked version of <a href="https://threejs.org/examples/#webgl_materials_cubemap_refraction">this live, interactive three.js demo</a> and from <a href="http://stemkoski.github.io/Three.js/Bubble.html">Lee Stemkoski's Bubble demo</a> at <a href="http://stemkoski.github.io/Three.js">his site</a>.
+
+<P>Figure 14.40, water ripples, is from <a href="http://madebyevan.com/webgl-water/">Evan Wallace's live WebGL demo</a>, <a href="https://medium.com/@evanwallace/rendering-realtime-caustics-in-webgl-2a99a29a0b2c">explained here</a>.
+
 <p>If you want to know just a bit about volume rendering, Kyle Hayward's old <a href="http://graphicsrunner.blogspot.com/2009/01/volume-rendering-101.html">101</a> and <a href="http://graphicsrunner.blogspot.com/2009/01/volume-rendering-102-transfer-functions.html">102</a> tutorials are worth a look.
 
 <P>Compared to polygon rendering, volume-related test data is relatively rare. <a href="https://www.disneyanimation.com/technology/datasets">Disney</a> provides a volumetric cloud dataset at different resolutions. The <a href="http://www-scf.usc.edu/~liwenhu/SHM/database.html">USC-HairSalon</a> is a set of 343 hair models.
@@ -460,9 +484,16 @@ If you want to play with source, start with <a href="https://threejs.org/example
 <h2 class="subHeader">Non-Photorealistic Rendering</h2>
 </a>
 
-<P>See the <a href="http://kesen.realtimerendering.com/">Non-Photorealistic Animation and Rendering Proceedings</a> for the latest on NPR research. One important new area in NPR that we mostly ignore in the book is style transfer, mostly because it's much more related to image processing and deep learning. <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf">This</a> is the seminal paper, and there's now even an app, <a href="https://shafeentejani.github.io/2016-12-27/style-transfer/">Prisma</a>.
+<P>See the <a href="http://kesen.realtimerendering.com/">Non-Photorealistic Animation and Rendering Proceedings</a> for the latest on NPR research.
+
+<P>One important new area in NPR that we mostly ignore in the book is style transfer, mostly because it's much more related to image processing and deep learning. <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf">This</a> is the seminal paper, and there's now even an app, <a href="https://shafeentejani.github.io/2016-12-27/style-transfer/">Prisma</a>.
+
+<P>Aaron Hertzmann has a recent three-part series on image stylization. Here is <a href="https://research.adobe.com/image-stylization-history-and-future/">part 1</a>, <a href="https://research.adobe.com/image-stylization-history-and-future-part-2/">part 2</a>, and the third part <a href="https://research.adobe.com/news/">to appear</a>.
+
 <P>The old <a href="http://stylized.realtimerendering.com/">Stylized Rendering in Games</a> SIGGRAPH 2010 course materials have a number of worthwhile presentations.
+
 <P> A dated but worthwhile <a href="http://www.red3d.com/cwr/npr/">NPR resources page</a> has been put together by Craig Reynolds.
+
 <P>Even gibbets can be stylized, see <a href="http://www.cs.wisc.edu/graphics/Gallery/NPRQuake/whatIsIt.html">NPRQuake</a>.
 
 
@@ -494,6 +525,8 @@ Gavin Bell describes a bit more about how to get the <a href="http://www.realtim
 <a NAME="curves">
 <h2 class="subHeader"> Curves and Curved Surfaces</h2>
 </a>
+
+<P>Figure 17.32 was generated using <a href="https://perso.telecom-paristech.fr/boubek/tessellation/">Tamy Boubekeur's Phong tessellation Windows demo</a>. Figure 17.37 was generated from I&ntilde;igo Quilez's shadertoys <a href="https://www.shadertoy.com/view/4ttSWf">rainforest</a> and <a href="https://www.shadertoy.com/view/ld3Gz2">Snail</a>.
 
 <p>Pixar's <a href="https://graphics.pixar.com/opensubdiv/docs/intro.html">Open Subdiv open source libraries</a> site includes a <a href="https://graphics.pixar.com/opensubdiv/docs/subdivision_surfaces.html">tutorial on subdivision surfaces</a>.
 <P>Paul Baker has an old <a href="http://www.paulsprojects.net/metaballs2/metaballs2.html">demonstration program with source</a> that tessellates and renders metaballs.
@@ -531,6 +564,9 @@ Gavin Bell describes a bit more about how to get the <a href="http://www.realtim
 <LI><a href="https://crimild.wordpress.com/2016/06/16/praise-the-metal-part-7-profiling-and-optimizing-our-app/">Metal System Trace</a> - provides tracing information from the application, driver, and GPU for Metal applications.
 </UL>
 
+<P>For profiling, <a href="https://wadeb.com/blog/blog/warp-trace-for-pc/">this tool</a> allows you to see how the waves (warps) are executed; the documentation explains various stalls and other problems that can happen. The <a href="https://documentation.help/CodeXL/gpu-profiler-kernel-occupancy-viewer.htm">Kernel Occupancy Viewer</a> is aimed at determining occupancy, how many warps are available for processing. This <a href="https://web.archive.org/web/20170619202400/http://developer.amd.com/tools-and-sdks/archive/compute/amd-app-profiler/user-guide/app-profiler-kernel-occupancy/">archived page on occupancy</a> describes how this can be measured and expressed.
+
+
 <P>There are a fair number of in-depth articles on how various engines perform rendering:
 <UL>
 <LI><a href="http://www.adriancourreges.com/blog/2015/11/02/gta-v-graphics-study/">GTA V - Graphics Study</a>
@@ -547,11 +583,17 @@ Gavin Bell describes a bit more about how to get the <a href="http://www.realtim
 <P>Noel Llopis explains the <a href="http://www.gamasutra.com/view/feature/3975/data_alignment_part_2_objects_on_.php">basics of data alignment</a> and what to know to improve efficiency.
 <P>Concurrency now needs to be designed into rendering systems from the start. <a href="http://www.gotw.ca/publications/concurrency-ddj.htm">Herb Sutter's classic article</a> is a good start as to why this is now so.
   One popular tool for programming in parallel is <a href="http://www.threadingbuildingblocks.org/">Intel's Threading Building Blocks</a>.
+  
+<P>YCoCg compression can be explored with <a href="http://jcgt.org/published/0001/01/02/webdemo/">this interactive WebGL demo</a>, explained <a href="http://jcgt.org/published/0001/01/02/">here</a>.
+
+<P>Matt Pharr describes <a href="http://pharr.org/matt/blog/2018/07/16/moana-island-pbrt-all.html">the challenges of reading an extremely large dataset</a>, the Moana island scene. While focused on his ray tracer's performance, the issues of profiling and finding the bottleneck affect all graphics applications.
 
   
 <a NAME="speed">
 <h2 class="subHeader">Acceleration Algorithms</h2>
 </a>
+
+<P>The Windows demo used to generate Figure 19.33 still works and <a href="http://www.melax.com/polychop">can be found here</a>. Quick to download and run, and to the point.
 
 <P>The old-but-good book <a href="http://smile.amazon.com/exec/obidos/tg/detail/-/1558608389?tag=realtimerenderin">Level of Detail for 3D Graphics</a> covers many aspects of level of detail algorithms in depth.
   This book has <a href="http://lodbook.com/">a companion web site</a>.
@@ -565,6 +607,7 @@ Some <a href="http://www.cg.tuwien.ac.at/research/vr/unpopping/examples/examples
 </a>
 
 <P>Matt Pettineo has <a href="https://mynameismjp.wordpress.com/2012/03/31/light-indexed-deferred-rendering/">an in-depth rundown</a> of his and others' experiments with various light deferred shading techniques, and provides a demo for testing. He also has an article and <a href="https://mynameismjp.wordpress.com/2016/03/25/bindless-texturing-for-deferred-rendering-and-decals/">code for efficient rendering of deferred decals</a>.
+<P>Other demos and code are available, such as <a href="https://software.intel.com/en-us/articles/deferred-rendering-for-current-and-future-rendering-pipelines/">Andrew Lauritzen's</a>, <a href="https://software.intel.com/en-us/articles/forward-clustered-shading">Marc Fauconneau Dufresne's</a>, <a href="http://www.humus.name/index.php?page=3D&ID=90">Emil Persson's</a>, and <a href="https://www.3dgep.com/volume-tiled-forward-shading/">Jeremiah van Oosten's</a>.
 <P>Sebastian Sylvan <a href="https://www.sebastiansylvan.com/post/light_culling/">gives an overview of Drobot's approach</a> and explains why clustering is so useful.
 <P>If you want more on micropolygons, <a href="http://www.cs.cmu.edu/afs/cs/academic/class/15418-s12/www/lectures/25_micropolygons.pdf">these lecture slides from CMU</a> describe the challenges of using this technique on the GPU.
 
@@ -597,8 +640,11 @@ Some <a href="http://www.cg.tuwien.ac.at/research/vr/unpopping/examples/examples
   The <a href="http://www.patentarcade.com/">Patent Arcade</a> site tracks patent infringement, copyright infringement, and other videogame related legal issues. Knowingly violating patents causes triple damages, so you've been warned.
 <P>24 bits of color is usually enough, but not always. Here's an <a href="cubes.gif">image showing concentric bands</a> only one pixel value apart. On most displays some area of the image will exhibit banding.
 <P>A good resource on graphics hardware architectures is the course notes for the <a href="http://bps12.idav.ucdavis.edu/">Beyond Programmable Shading</a> course at SIGGRAPH.
-<P><a href="http://www.geforce.com/hardware/technology">NVIDIA's list of technologies</a> gives some information about each.
+<P><a href="http://www.geforce.com/hardware/technology">NVIDIA's list of technologies</a> gives some information about each. They also have a light overview of <a href="https://developer.nvidia.com/content/dont-be-conservative-conservative-rasterization">conservative rasterization</a>.
 <P><a href="http://www.ozone3d.net/benchmarks/fur/">FurMark</a> is a free OpenGL stress test. One popular gaming benchmark is <a href="https://benchmarks.ul.com/">3DMark</a> - it also has some fun eye-candy.
+<P>Already mentioned in "Pipeline Optimization" but worth a repeat: <a href="https://wadeb.com/blog/blog/warp-trace-for-pc/">This tool</a> allows you to see how the waves (warps) are executed; the documentation explains various stalls and other problems that can happen. The <a href="https://documentation.help/CodeXL/gpu-profiler-kernel-occupancy-viewer.htm">Kernel Occupancy Viewer</a> is aimed at determining occupancy, how many warps are available for processing.
+<P>A recent paper by Zhe Jia et al. dissects <a href="https://arxiv.org/abs/1804.06826">various elements of the NVIDIA Volta</a> and compares it to its predecessors.
+<P>Matt Pharr's <a href="http://pharr.org/matt/blog/2018/04/30/ispc-all.html">The story of ispc</a> discusses the failure of Larrabee, and his subsequent project of making a better compiler for SIMD. Along the way he describes the various political factors that went into decisions. A worthwhile read on a number of levels.
 <P>Two software-only solutions for making movies of interactive programs are <a href="http://www.fraps.com/">FRAPS</a> and <a href="http://www.hyperionics.com">HyperCam</a>.
   FRAPS also measures and displays the frame rate of any 3D application. 
 <P>There are many little utilities for checking various hardware capabilities, mostly for overclocking but also just educational to examine. <a href="http://www.techpowerup.com/gpuz/">GPU-Z</a> displays the GPU's capabilities and monitors temperatures and voltages of various components.
@@ -612,6 +658,9 @@ Steve Collins has a <a href="http://www.irishheart.ie/iopen24/pub/volunteers/8bi
 </a>
 
 <P>Our still image from Claybook doesn't capture its dynamic nature, so <a href="https://youtu.be/3wfq52vxL4M">check out the preview</a>.
+<P>GPUs have improving in speed faster than Moore's Law, and <a href="https://spectrum.ieee.org/view-from-the-valley/computing/hardware/move-over-moores-law-make-way-for-huangs-law">this brief article</a> summarizes some reasons why.
+<P>For a glimpse at what goes into a AAA title game, <a href="https://www.youtube.com/watch?v=nFQBtDVPTRM">this short (and old, 2013, but worthwhile) video</a> shows some of the many elements involved.
+<P>Inspired to go write some code? Consider studying <a href="https://www.unrealengine.com/en-US/ue4-on-github">the Unreal Engine</a> (some <a href="https://www.unrealengine.com/marketplace/free">free assets</a>) or <a href="https://unity3d.com/get-unity/download">Unity</a>, each for free.
 <P>Almost last mention: don't forget <a href="portal.html">our portal</a> for a list of some of the best resources.
 
 
@@ -639,8 +688,11 @@ Steve Collins has a <a href="http://www.irishheart.ie/iopen24/pub/volunteers/8bi
 <h2 class="subHeader">Real-Time Ray Tracing</h2>
 </a>
 
-<P><a href="http://www.realtimerendering.com/blog/ray-tracing-at-gdc/">Our blog entry</a> on DXR contains a wide range of links to resources and related articles.
+<P><a href="http://www.realtimerendering.com/blog/ray-tracing-at-gdc/">Our blog entry</a> on DXR contains a large set of links to resources and related articles. If you're using DXR or VKRT, please do <a href="http://raytracinggems.com">consider submitting an article</a> on the subject.
+
 <P>NVIDIA's <a href="https://developer.nvidia.com/falcor">Falcor</a> gives access to DXR ray tracing capabilities.
+
+<P>Enscape <a href="https://gpuopen.com/deferred-path-tracing-enscape/">provides a rundown</a> of their approach to building an interactive hybrid raster/path-tracing system.
   
 <a NAME="linalg">
 <h2 class="subHeader">Linear Algebra</h2>
