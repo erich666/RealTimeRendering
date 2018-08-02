@@ -49,7 +49,7 @@
       <td class="bodyText">
       
 <div class="metadata">
-Last changed: July 19, 2018
+Last changed: August 2, 2018
 </div>
 
 
@@ -63,7 +63,7 @@ Last changed: July 19, 2018
   <a href="https://twitter.com/miwanicki">Micha&lstrok; Iwanicki</a>, and
   <a href="https://sebh.github.io/">S&eacute;bastien Hillaire</a>,
   1178 pages, from <a href="https://www.crcpress.com/Real-Time-Rendering-Fourth-Edition/Akenine-Moller-Haines-Hoffman/p/book/9781138627000">A K Peters/CRC Press</a>,
-  ISBN-13: 978-1138627000, ISBN-10: 1138627003, list price $89.95.
+  ISBN-13: 978-1138627000, ISBN-10: 1138627003, list price $89.95 (<A HREF="https://smile.amazon.com/Real-Time-Rendering-Fourth-Tomas-Akenine-Möller/dp/1138627003?tag=realtimerenderin">Amazon $85.45</a>; <a href="https://smile.amazon.com/Real-Time-Rendering-Fourth-Tomas-Akenine-Mo-ebook/dp/B07FSKB982/ref=mt_kindle?tag=realtimerenderin">Kindle $43.41</a>, <b><a href="https://smile.amazon.com/Real-Time-Rendering-Fourth-Tomas-Akenine-Mo-ebook/dp/B07FSKB982/ref=mt_kindle?tag=realtimerenderin">free sample</a></b>).
   <a href="rtr4.jpg">View cover</a>.
   <a href="bibtex_rtr4.txt">BibTeX entry</a>.
   
@@ -76,6 +76,8 @@ Last changed: July 19, 2018
     </TD>
   </TR>
 </TABLE>
+
+<P>The <b><a href="https://smile.amazon.com/Real-Time-Rendering-Fourth-Tomas-Akenine-M%C3%B6ller/dp/1138627003?tag=realtimerenderin">Amazon "Look inside" link</a></b> and the <b>free <a href="https://smile.amazon.com/Real-Time-Rendering-Fourth-Tomas-Akenine-Mo-ebook/dp/B07FSKB982/ref=mt_kindle?tag=realtimerenderin">Kindle sample</a></b> includes around the first 80 pages of the book, including the first three chapters.
 
 <P>The <b>Table of Contents</b>, <b>Preface</b>, the <b>Introduction</b>, <b>Bibliography</b>, and <b>Index</b> are <a href="./Real-Time_Rendering_4th-TOC_Preface_Intro_Bib_Index.pdf">available in a PDF</a>. You can also view the <a href="#toc">Table of Contents below</a>.
 
@@ -194,7 +196,7 @@ See our <b><a href="books.html">graphics book list</a></b> for upcoming, recent,
 <tr><td>
   <a href="https://web.archive.org/web/20150225192611/http://www.arcsynthesis.org/gltut/index.html"><img src="AmazonImages/NoCover50.jpg" alt="cover" align=left border=0></a>
   <img src="spacer.gif" alt="" height="55" width="14" align=left border=0>
-  <a href="http://www.pdfiles.com/pdf/files/English/Designing_&_Graphics/Learning_Modern_3D_Graphics_Programming.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
+  <a href="http://www.cse.chalmers.se/edu/year/2017/course/TDA361/LearningModern3DGraphicsProgramming.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
   <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
   <b><a href="https://web.archive.org/web/20150225192611/http://www.arcsynthesis.org/gltut/index.html">Learning Modern 3D Graphics Programming</a></b>, by Jason L. McKesson, 2012.
 </td></tr>
@@ -356,12 +358,19 @@ If you need to start from scratch, Wolfire's blog has a basic two-part tutorial 
 </a>
 
 <P>We drew upon Tarek Sherif's <a href="https://github.com/tsherif/webgl2examples">WebGL 2 Examples</a> for our shader examples. This code is an easy way to start playing with shaders.
+<P>Dealing with the explosion of shaders caused by material systems is an ongoing concern. <a href="https://dolphin-emu.org/blog/2017/07/30/ubershaders/">This article</a> discusses the problem in depth and offers solutions.
 <P>Storing semitransparent textures so that the colors are premultiplied by the alphas makes compositing and blending operations much faster to compute. Tom Forsyth gives a rundown of the <a href="https://tomforsyth1000.github.io/blog.wiki.html">math and formats involved</a> (search "Premultiplied alpha part 2").
 <P>Transparency is difficult to perform correctly in a single pass when using a Z-buffer. Steve Baker gives a <a href="http://www.sjbaker.org/steve/omniv/alpha_sorting.html">good summary</a> of the basics of the problem and traditional solutions. <a href="http://developer.download.nvidia.com/SDK/10/direct3d/samples.html">NVIDIA's developer site</a> and the <a href="http://www.humus.name/index.php?page=3D">Humus 3D site</a> each have sample code for using stencil routing to provide order-independent transparency.
+<P>NVIDIA provides a good summary of <a href="https://developer.nvidia.com/content/transparency-or-translucency-rendering">basic techniques for transparency</a> and some common optimizations. This article at Sketchfab gives <a href="https://blog.sketchfab.com/real-time-transparency-make-fast-beautiful/">an artist's view of transparency</a> and using blending modes to simulate it.
+<P>The dangers of improperly accounting for alpha in cutouts is <a href="http://www.adriancourreges.com/blog/2017/05/09/beware-of-transparent-pixels/">lavishly illustrated in this blog post</a>.
 <P>24 bits of color is usually enough, but not always. Here's an <a href="cubes.gif">image showing concentric bands</a> only one pixel intensity value apart. Most monitors will show some banding somewhere on the image.
 <P>Here is a comparison generated using <a href="http://www.tandfonline.com/toc/ujgt19/2/1">Scott R. Nelson's</a> program of lines drawn with <a href="gamma10.png">gamma=1.0</a> (note the severe roping and Mo&iacute;re patterns) and properly drawn with <a href="gamma22.png">gamma=2.2</a>. I find this pretty convincing.
-<P>Larry Gritz's article <a href="https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch24.html">The Importance of Being Linear</a> is an excellent explanation of gamma correction and other monitor transforms. <a href="http://chriscox.org/gamma/">Chris Cox</a> also has a useful page, with links to many resources.
+<P>Larry Gritz's article <a href="https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch24.html">The Importance of Being Linear</a> is an excellent explanation of gamma correction and other monitor transforms. If that article doesn't click for you, maybe <a href="http://filmicworlds.com/blog/linear-space-lighting-i-e-gamma/">this one</a> will.
+<P>The difference between linear, sRGB, and gamma 2.2 are <a href="https://www.shadertoy.com/view/lsd3zN">shown in this Shadertoy</a>.
+<P>The chart on <a href="https://techreport.com/review/12458/amd-radeon-hd-2900-xt-graphics-processor/6">this page</a> shows different MSAA patterns used on various vendors' GPUs. Lots more on <a href="https://cs.dartmouth.edu/~wjarosz/publications/subr16fourier-slides-2-patterns.pdf">sampling pattern theory here</a>. This <a href="http://international.download.nvidia.com/geforce-com/international/comparisons/watch-dogs/watch-dogs-anti-aliasing-comparison-1-smaa-vs-fxaa.html">FXAA vs. SMAA</a> interactive demo lets you examine the differences. Matt Pettineo's blog post describes the <a href="https://mynameismjp.wordpress.com/2012/10/24/msaa-overview/">problems with MLAA approaches under animation</a>. The <a href="http://www.highperformancegraphics.org/wp-content/uploads/2017/Retrospective/HPG2017_Jimenez_MLAARetrospective.pdf">retrospective here</a> gives a thorough history of the use of MLAA techniques in games.
+<P>This <a href="https://medium.com/@bgolus/anti-aliased-alpha-test-the-esoteric-alpha-to-coverage-8b177335ae4f">article on alpha coverage</a> includes some excellent animations and figures showing various problems and solutions.
 <P>Font antialiasing via sub-pixel LCD rendering is dealt with in depth on the <a href="http://www.antigrain.com/research/font_rasterization/index.html">Anti-Grain Geometry site</a>. GPU-accelerated 2D engines include <a href="http://wdobbie.com/post/gpu-text-rendering-with-vector-textures/">Will Dobbie's</a> (try the <a href="http://wdobbie.com/warandpeace/"><I>War and Peace</I> demo</a>, YMMV).
+<P>Code that demonstrates the MSAA and temporal antialiasing techniques used in "The Order: 1886" can <a href="https://github.com/TheRealMJP/MSAAFilter">be found here</a>. The <a href="https://blog.sketchfab.com/introducing-temporal-anti-aliasing/">demos here</a> are not truly temporal antialiasing, but rather progressive antialiasing, and still worth a look to see the improvement over time.
 
 <a NAME="texture">
 <h2 class="subHeader">Texturing</h2>
@@ -586,7 +595,7 @@ Gavin Bell describes a bit more about how to get the <a href="http://www.realtim
   
 <P>YCoCg compression can be explored with <a href="http://jcgt.org/published/0001/01/02/webdemo/">this interactive WebGL demo</a>, explained <a href="http://jcgt.org/published/0001/01/02/">here</a>.
 
-<P>Matt Pharr describes <a href="http://pharr.org/matt/blog/2018/07/16/moana-island-pbrt-all.html">the challenges of reading an extremely large dataset</a>, the Moana island scene. While focused on his ray tracer's performance, the issues of profiling and finding the bottleneck affect all graphics applications.
+<P>Matt Pharr describes <a href="http://pharr.org/matt/blog/2018/07/16/moana-island-pbrt-all.html">the challenges of reading an extremely large dataset</a>, the Moana island scene. While focused on his ray tracer's performance, the issues of profiling and finding the bottlenecks and memory wasters affect all graphics applications.
 
   
 <a NAME="speed">
@@ -641,7 +650,7 @@ Some <a href="http://www.cg.tuwien.ac.at/research/vr/unpopping/examples/examples
 <P>24 bits of color is usually enough, but not always. Here's an <a href="cubes.gif">image showing concentric bands</a> only one pixel value apart. On most displays some area of the image will exhibit banding.
 <P>A good resource on graphics hardware architectures is the course notes for the <a href="http://bps12.idav.ucdavis.edu/">Beyond Programmable Shading</a> course at SIGGRAPH.
 <P><a href="http://www.geforce.com/hardware/technology">NVIDIA's list of technologies</a> gives some information about each. They also have a light overview of <a href="https://developer.nvidia.com/content/dont-be-conservative-conservative-rasterization">conservative rasterization</a>.
-<P><a href="http://www.ozone3d.net/benchmarks/fur/">FurMark</a> is a free OpenGL stress test. One popular gaming benchmark is <a href="https://benchmarks.ul.com/">3DMark</a> - it also has some fun eye-candy.
+<P>The <a href="http://www.userbenchmark.com">UserBenchmark</a> site provides benchmarking, along with GPU ratings, and can find performance problems on systems. <a href="http://www.ozone3d.net/benchmarks/fur/">FurMark</a> is a free OpenGL stress test. 
 <P>Already mentioned in "Pipeline Optimization" but worth a repeat: <a href="https://wadeb.com/blog/blog/warp-trace-for-pc/">This tool</a> allows you to see how the waves (warps) are executed; the documentation explains various stalls and other problems that can happen. The <a href="https://documentation.help/CodeXL/gpu-profiler-kernel-occupancy-viewer.htm">Kernel Occupancy Viewer</a> is aimed at determining occupancy, how many warps are available for processing.
 <P>A recent paper by Zhe Jia et al. dissects <a href="https://arxiv.org/abs/1804.06826">various elements of the NVIDIA Volta</a> and compares it to its predecessors.
 <P>Matt Pharr's <a href="http://pharr.org/matt/blog/2018/04/30/ispc-all.html">The story of ispc</a> discusses the failure of Larrabee, and his subsequent project of making a better compiler for SIMD. Along the way he describes the various political factors that went into decisions. A worthwhile read on a number of levels.
