@@ -1,0 +1,249 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ray Tracing Resources Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="rtr4.css" type="text/css"/>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="rtr3-header-image">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr bgcolor="#10304B">
+<td>
+<a href="http://www.realtimerendering.com/blog">
+<img src="rtr-header.png" alt="Header image" width="410" height="106"/>
+</a>
+</td>
+</tr>
+</table>
+</div>
+<div id="navigation" class="clearfix">
+<ul class="primary">
+<li><a href="http://www.realtimerendering.com/blog/" rel="home">Blog</a></li>
+<li><a title="Recommended books" href="books.html">Graphics books</a></li>
+<li><a title="Object / object intersection page" href="intersections.html">Intersections</a></li>
+<li><a title="Sites we like" href="portal.html">Portal</a></li>
+<li><a class="nav-current" title="Ray Tracing Resources" href="raytracing.html">Ray tracing</a></li>
+<li><a title="Main resources page" href="index.html">Resources</a></li>
+<li><a title="WebGL/three.js Resources"  href="webgl.html">WebGL</a></li>
+<ul>
+</div>
+</div>
+<div id="content" class="clearfix">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pageName">Ray Tracing Resources Page</td>
+</tr>
+<tr>
+<td valign="top"><img src="spacer.gif" alt="" height="6" border="0"/><br/>
+</tr>
+<tr>
+<td class="bodyText">
+<div class="metadata">
+Last changed: September 3, 2018
+</div>
+<P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
+
+<P>We wrote a free chapter called <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf"><I>Real-Time Ray Tracing</I></a> for <a href="index.html">our book</a>, as events after the manuscript was delivered to the publisher practically demanded it. The <a href="http://www.realtimerendering.com/refs.html#raytracing">online references page</a> for this chapter provides URLs for references cited.
+
+<a NAME="basics">
+<H1 class="subHeader">Basics</H2>
+</a>
+<a href="#recent">Peter Shirley's free books</a> are an inexpensive way to dig into the topic and learn by coding. There are plenty of more books listed in <a href="#recent">our books section</a>, with <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Kevin Suffern's book</a> being a slightly-dated but good choice for a more in-depth introductory book focused on the topic.
+Other short tutorials can be found at <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel</a>.
+
+<P>For basic ray/object intersection algorithm references, see <a href="intersections.html">our object/object intersection page</a>. Morgan McGuire's <a href="https://graphicscodex.com/">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets. 
+
+<P>For pure amusement, <a href="http://eastfarthing.com/blog/2016-01-12-card/">Andrew Kensler's minimal ray tracer</a> is worth a look. Taking it a step further, <a href="http://www.kevinbeason.com/smallpt/">smallpt</a> provides global illumination in 99 lines.
+
+<P>Once you are past the basics, dig into the literature. Newer papers are usually found in conference proceedings,
+such as <a href="https://www.highperformancegraphics.org/2018/program/">High Performance Graphics 2018</a>. These can also serve as a guide to important papers in their areas, as each article begins with a summary of previous work.
+Older courses such as <a href="https://sites.google.com/site/raytracingcourse/">this from SIGGRAPH 2013</a> can have information of interest. 
+
+<P>Much useful information can be found in blogs
+such as <a href="https://pharr.org/matt/blog/">Matt Pharr's</a>, <a href="http://psgraphics.blogspot.com/">Peter Shirley's</a>, as well as pieces such as as Anders Lindqvist's <a href="https://www.breakin.se/learn/pathtracing-coherency.html">path tracing article</a>.
+Aras Pranckevi&#269;ius has a recent <a href="https://aras-p.info/blog/2018/08/01/Pathtracer-15-Pause--Links/">an in-depth series</a> on writing a path tracer, with many more links to resources (which we mostly will not copy here).
+
+<a NAME="realtime">
+<H1 class="subHeader">Real-Time</H2>
+</a>
+With <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/">Microsoft's announcement of the DXR ray tracing API for DirectX</a> in March 2018 at the <I>Games Developers Conference</I></a>, real-time ray tracing has become synonymous with this effort, along with initiatives in Vulkan <a href="http://on-demand.gputechconf.com/gtc/2018/presentation/s8521-advanced-graphics-extensions-for-vulkan.pdf">such as NVIDIA's</a> (<a href="http://on-demand.gputechconf.com/gtc/2018/video/S8521/">video here</a>).
+
+<a NAME="realtime">
+<H2 class="subHeader">DXR-Specific</H2>
+</a>
+
+<P><a href="http://www.realtimerendering.com/blog/ray-tracing-at-gdc/">Our blog entry</a> on DXR contains a large set of links to resources, demos, and related articles that came out around or soon after GDC 2018.
+
+<P>There have been <a href="https://www.youtube.com/results?search_query=dxr+ray+tracing">many recent videos</a> about DXR effects and demos. Digital Foundry's <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns">runthrough of <I>Battlefield V</I></a> has fairly detailed explanations of effects and how they were done with DXR.
+
+<P>DXR implies GPU hardware dedicated to improving ray tracing performance, such as <a href="https://developer.nvidia.com/rtx/raytracing">NVIDIA's RTX</a>. However, for simpler scenes, or for powerful clusters of machines, interactive ray tracing is possible using traditional CPUs or less-specialize GPUs.
+
+<P>The SIGGRAPH 2018 course <I>Introduction to DirectX RayTracing</I> has <a href="http://intro-to-dxr.cwyman.org/">notes and sample code available</a>, as well as much other useful information for getting started. You can <a href="https://youtu.be/Q1cuuepVNoY">watch the entire course</a> on YouTube.
+
+<P>The DXR Functional Spec is <a href="https://github.com/ConfettiFX/The-Forge/blob/master/CommonRaytracing_3/ThirdParty/DXR/doc/D3D12%20Raytracing%20Functional%20Spec.docx">available here</a> without having to sign up to be a developer.
+
+<P>NVIDIA's <a href="https://developer.nvidia.com/falcor">Falcor</a> gives access to DXR ray tracing capabilities.
+
+<P>Denoising is critical for real-time DXR performance when using path tracing or other Monte Carlo techniques. <a href="https://cs.dartmouth.edu/~wjarosz/publications/zwicker15star.html">Zwicker et al.</a> give a state of the art report about this area; note that it is from 2015, however, so is not fully up to date.
+
+
+<a NAME="interactive">
+<H2 class="subHeader">Interactive</H2>
+
+<P>
+"Interactive" here means "not DXR-based."
+
+<P>A number of hardware vendors provide free ray tracing software in various forms:
+<UL>
+<LI>AMD's <a href="https://gpuopen.com/gaming-product/radeon-rays/">Radeon-Rays</a> is an open-source library for ray tracing based on OpenCL.
+<LI>Intel's <a href="https://embree.github.io/">Embree</a> provides a collection of kernels designed for efficient ray tracing on CPUs.
+<LI>NVIDIA's <a href="https://developer.nvidia.com/optix">OptiX</a> SDK focuses on using CUDA for ray tracing.
+</UL>
+
+<P>Enscape <a href="https://gpuopen.com/deferred-path-tracing-enscape/">provides a rundown</a> of their approach to building an interactive hybrid raster/path-tracing system.
+
+<P><a href="https://www.keyshot.com/">KeyShot</a> uses ray tracing for all rendering, even when positioning objects and lights in a scene. Nice <a href="https://www.keyshot.com/gallery/">eye candy</a>, too.
+
+<P>Many <a href="https://www.shadertoy.com/results?query=ray">shadertoy demos</a> are based on ray marching or other ray casting techniques run in (often complex) shaders.
+
+<P>Historically, the idea of interactive ray tracing has been around for over thirty years, with the introduction of <a href="http://bitsavers.org/pdf/att/pixel_machine/Pixel_Machine_Brochure_1987.pdf">AT&amp;T's Pixel Machine</a>.
+There have been other (commercially unsuccessful) efforts over the years, such as <a href="https://www.highperformancegraphics.org/wp-content/uploads/2018/Hot3D/HPG2018_RenderDrive.pdf">ART's RenderDrive</a> from 1998, and <a href="https://97da0272-a-62cb3a1a-s-sites.googlegroups.com/site/raytracingcourse/Low%20Power%20Raytracing.pdf?attachauth=ANoY7crjeugQ50Uzms9pM9cF4EvxRtB10sisEHmdImLEEvD1LCd6s2dawXfEbAF9H36TJZR8yjYYSRJ5Vz35tWAJx5ex3vm0tqpCe7Tr2RikDkTCPZN76o7ELnkNcchHJC2d5IbLzBMvkrZ-zWI_nUOPG6PDBCumPeJQIY9OiaD7QAIG2oyIXMJGKLHkxfWK0ZTZHkdsvOHMI4bJHR7YfA-KbirnBnLjbaKeSDKFVbJ5qEylbhSQ_uY%3D&attredirects=0">Imagination Technologies' mobile (!) offering</a> from 2013.
+
+<P>
+The <a href="https://en.wikipedia.org/wiki/Demoscene">demoscene</a> has had simple <a href="http://www.realtimerendering.com/resources/RTNews/demos/overview.htm">interactive ray traced demos</a> since 1995.
+Don't bother trying to download and run code, though; better is to <a href="https://aras-p.info/blog/2018/08/03/Random-list-of-Demoscene-Demos/">watch these on YouTube</a>.
+With the rise of the GPU, many efforts have become more shader based---see the <a href="https://youtu.be/yqA71-HHY2Q?t=157">SIGGRAPH 2018 session</a> for technical details---so we expect to start seeing DXR-based demoscene entries.
+
+
+<a NAME="batch">
+<H1 class="subHeader">Batch</H2>
+</a>
+
+Ray tracing has been used in film production for decades, first seen in <a href="https://www.21cf.com/blog/2017/03/31/blue-sky-studios-academy-award-winning-cgi-studio-renderer-story/">Blue Sky Studio's work</a> which won an Oscar in 1998. Ray tracing is now the standard way CGI effects are rendered by every major studio. Frames are computed on render farms, clusters of
+upwards of <a href="https://www.engadget.com/2014/10/18/disney-big-hero-6/">tens of thousands of processors</a>.
+
+<P>For technical information, the <a href="https://jo.dreggn.org/path-tracing-in-production/">notes from the <I>Path Tracing in Production</I></a> SIGGRAPH courses give valuable information about techniques used in film production. Another worthwhile resource is the <a href="https://dl.acm.org/citation.cfm?id=3243123&picked=prox">Special Issue On Production Rendering</a> in <I>ACM TOG</I>.
+
+<P>There are a wide range of batch rendering systems, based on ray and path tracing and other related techniques. Here's a short list:
+<UL>
+<LI><a href="https://github.com/wjakob/nori">Nori</a> is a simple C++ ray tracer, written for educational purposes.
+<LI><a href="http://www.pbrt.org/resources.html">pbrt</a> is well-established, with <a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin">a great book</a> about the code.
+<LI><a href="https://www.mitsuba-renderer.org/">Mitsuba</a> - a research-oriented ray tracer which is somewhat like pbrt.
+<LI><a href="https://github.com/google/filament">Filament</a> is a new entry, with physically-based material theory impressively well-documented online.
+<LI><a href="https://luxcorerender.org/">Lux</a> works with Blender.
+<LI><a href="https://appleseedhq.net/">Appleseed</a> works with Maya.
+</UL>
+
+<P>There are <a href="https://github.com/search?o=desc&q=ray+tracer&s=stars&type=Repositories">thousands of other ray tracers</a> on Github alone - let me know which you think is the best.
+Back in the day <a href="http://www.povray.org/">POV-Ray</a> was a popular hobbyist ray tracer, and is now over 30 years old; the <a href="https://github.com/POV-Ray/povray">Github repository</a> still shows activity and the code works fine.
+This ray tracer
+and older resources such as the <a href="">Ray Tracing News</a> helped lure people such as <a href="http://www.realtimerendering.com/resources/RTNews/html/rtnv23n1.html#art3">Marcos Fajardo</a> to get into the field.
+
+<P>
+There's even a path tracer <a href="https://chunky.llbit.se/">specifically for rendering Minecraft worlds</a> - a few examples <a href="https://chunky.llbit.se/gallery.html">here</a> and <a href="http://www.realtimerendering.com/erich/minecraft/public/chunky/jpegs/">here</a>.
+
+<a NAME="books">
+<H1 class="subHeader">Books</H2>
+</a>
+Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter</a> is just a starting spot, and
+<a href="index.html">our book</a> has but a few more pages on ray tracing.
+<a NAME="upcoming">
+<H2 class="subHeader">Upcoming</H2>
+</a>
+Books that have not been released yet.
+<P>
+<div id="books-small-table">
+<table>
+<tr><td>
+<img src="AmazonImages/NoCover50.jpg" alt="cover" height="50" align=left border=0>
+<img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
+<a href="http://raytracinggems.com"><b>Ray Tracing Gems</b></a>, edited by Eric Haines and Tomas Akenine-M&ouml;ller, APress, March 2019 (<a href="http://raytracinggems.com">Call for Participation</a>, <a href="http://www.realtimerendering.com/blog/ray-tracing-gems-book-call-for-participation/">blog article</a>). First deadline is <B>October 15, 2018</B> - consider contributing!
+</td></tr>
+</table>
+
+<a NAME="recent">
+<H2 class="subHeader">Released</H2>
+</a>
+<P>These are books still in print focused on the subject of ray tracing and related algorithms, in year order of the latest edition.
+<table>
+
+<tr><td>
+<a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin"><img src="AmazonImages/518R06K3wgL._SL50_.jpg" alt="cover" height="50" align=left border=0></a>
+<img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
+<b><a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin">Physically Based Rendering, Third Edition: from Theory to Implementation</a></b>, by Matt Pharr, Wenzel Jakob, and Greg Humphreys, Morgan Kaufmann, November 2016 (<a href="http://www.pbrt.org/">more information</a>, <a href="https://books.google.com/books?id=iNMVBQAAQBAJ&printsec=frontcover">Google Books sample</a>). A classic, presenting best practices and showing what goes into a professional rendering system, with well-documented code.
+</td></tr>
+
+<tr><td>
+	<a href="https://smile.amazon.com/Ray-Tracing-Next-Week-Minibooks-ebook/dp/B01CO7PQ8C?tag=realtimerenderin"><img src="AmazonImages/41a5yvVUxrL._SL50_.jpg" alt="cover" height="50" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="55" width="14" align=left border=0>
+  <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing_%20the%20Rest%20of%20Your%20Life.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
+<b><a href="https://smile.amazon.com/Ray-Tracing-Next-Week-Minibooks-ebook/dp/B01CO7PQ8C?tag=realtimerenderin">Ray Tracing: The Rest Of Your Life</a></b>, by Peter Shirley, March 2016 (<a href="https://github.com/petershirley/raytracingtherestofyourlife/releases">Code</a>, <a href="https://twitter.com/Peter_shirley/status/1029342221139509249">tweet</a>, <a href="http://in1weekend.blogspot.com/2016/03/ray-tracing-rest-of-your-life.html">blog</a>), <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing_%20the%20Rest%20of%20Your%20Life.pdf">download for free</a>. Last in the series.
+</td></tr>
+
+<tr><td>
+	<a href="https://smile.amazon.com/Ray-Tracing-Next-Week-Minibooks-ebook/dp/B01CO7PQ8C?tag=realtimerenderin"><img src="AmazonImages/41T83nzgx6L._SL50_.jpg" alt="cover" height="50" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="55" width="14" align=left border=0>
+  <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing_%20The%20Next%20Week.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
+<b><a href="https://smile.amazon.com/Ray-Tracing-Next-Week-Minibooks-ebook/dp/B01CO7PQ8C?tag=realtimerenderin">Ray Tracing: the Next Week</a></b>, by Peter Shirley, March 2016 (<a href="https://github.com/petershirley/raytracingthenextweek/releases">Code</a>, <a href="https://twitter.com/Peter_shirley/status/1029342221139509249">tweet</a>, <a href="http://in1weekend.blogspot.com/2016/01/ray-tracing-second-weekend.html">blog</a>), <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing_%20The%20Next%20Week.pdf">download for free</a>. Second in the series.
+</td></tr>
+
+<tr><td>
+	<a href="https://smile.amazon.com/Ray-Tracing-Weekend-Minibooks-Book-ebook/dp/B01B5AODD8?tag=realtimerenderin"><img src="AmazonImages/414m4ETx0AL._SL50_.jpg" alt="cover" height="50" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="55" width="14" align=left border=0>
+  <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing%20in%20a%20Weekend.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
+<b><a href="https://smile.amazon.com/Ray-Tracing-Weekend-Minibooks-Book-ebook/dp/B01B5AODD8?tag=realtimerenderin">Ray Tracing in One Weekend</a></b>, by Peter Shirley, January 2016 (<a href="https://github.com/petershirley/raytracinginoneweekend/releases">Code</a>, <a href="https://twitter.com/Peter_shirley/status/1029342221139509249">tweet</a>, <a href="http://in1weekend.blogspot.com/2016/01/ray-tracing-in-one-weekend.html">blog</a>), <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing%20in%20a%20Weekend.pdf">download for free</a>. Start with this one.
+</td></tr>
+
+<tr><td>
+<a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin"><img src="AmazonImages/51uMmA02wLL_SL50.jpg" alt="cover" height="50" align=left border=0></a>
+<img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
+<b><a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Ray Tracing from the Ground Up </a></b>, by Kevin Suffern, September 2007 (<a href="http://www.raytracegroundup.com/">author's site</a>, <a href="https://books.google.com/books?id=_RDYCwAAQBAJ&printsec=frontcover">Google Books sample</a>). Old, but walks through the process of implementing classical ray tracing in detail, warning of problems along the way.
+</td></tr>
+
+
+<tr><td>
+<a href="https://smile.amazon.com/Advanced-Global-Illumination-Philip-Dutre/dp/1568813074?tag=realtimerenderin"><img src="AmazonImages/51DCPCwB8JL_SL50.jpg" alt="cover" height="50" align=left border=0></a>
+<img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
+<b><a href="https://smile.amazon.com/Advanced-Global-Illumination-Philip-Dutre/dp/1568813074?tag=realtimerenderin">Advanced Global Illumination, Second Edition</a></b>, by Philip Dutr&eacute;, Kavita Bala, and Philippe Bekaert, A.K. Peters, August 2006 (<a href="https://pdfs.semanticscholar.org/9efb/ca496b1c2385d2a32de039e3c1bdaaba1ad2.pdf">extensive lecture notes</a>, <a href="http://graphics.cs.kuleuven.be/publications/AGI2E/index.html">authors' site</a>, <a href="https://books.google.com/books?id=TB1jDAAAQBAJ&printsec=frontcover">Google Books sample</a>). Old, but still a valid overview of theory and a variety of global illumination techniques (some now out of style).
+</td></tr>
+
+
+<tr><td>
+  <a href="http://smile.amazon.com/exec/obidos/ASIN/1558602763?tag=realtimerenderin"><img src="AmazonImages/41NJZBE31HL._SL50_.jpg" alt="cover" height="50" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="50" width="6" align=left border=0>
+  <a href="http://realtimerendering.com/Principles_of_Digital_Image_Synthesis_v1.0.1.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
+  <b><a href="http://smile.amazon.com/Principles-Synthesis-Kaufmann-Computer-Graphics/dp/1558602763?tag=realtimerenderin">Principles of Digital Image Synthesis</a></b>, by Andrew S. Glassner, Morgan Kaufmann, 1995: <b><i><a href="http://realtimerendering.com/Principles_of_Digital_Image_Synthesis_v1.0.1.pdf">download for free</a></i></b>. An incredible book, and physics doesn't change (much), so despite its age this book is full of useful information.
+</td></tr>
+
+<tr>
+<td valign="top"><img src="spacer.gif" alt="" height="1" border="0"/><br/>
+&nbsp;<br/></td>
+</tr>
+</table>
+</div>  
+<div id="footer" class="clearfix">
+<ul>
+<li>Contacts:</li>
+<li><a href="http://www.cloudflare.com/email-protection#8afeebe7cae9f9a4e6fee2a4f9ef">Tomas</a></li>
+<li><a href="http://www.cloudflare.com/email-protection#6104130802092100020c4f0e1306">Eric</a></li>
+<li><a href="http://www.cloudflare.com/email-protection#d5a7a1a7e695a7b0bbb1b0a7a2babbbefbb6bab8">Naty</a></li>
+</ul>
+</div>  
+</div>  
+<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&"www.cloudflare.com/email-protection"==a.substr(7 ,35)){s='';j=43;r=parseInt(a.substr(j,2),16);for(j+=2;a.length-j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>
