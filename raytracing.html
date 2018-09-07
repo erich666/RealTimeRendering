@@ -45,7 +45,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: September 3, 2018
+Last changed: September 6, 2018
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
@@ -80,7 +80,7 @@ With <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-mic
 
 <P><a href="http://www.realtimerendering.com/blog/ray-tracing-at-gdc/">Our blog entry</a> on DXR contains a large set of links to resources, demos, and related articles that came out around or soon after GDC 2018.
 
-<P>There have been <a href="https://www.youtube.com/results?search_query=dxr+ray+tracing">many recent videos</a> about DXR effects and demos. Digital Foundry's <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns">runthrough of <I>Battlefield V</I></a> has fairly detailed explanations of effects and how they were done with DXR.
+<P>There have been <a href="https://www.youtube.com/results?search_query=dxr+ray+tracing">many recent videos</a> about DXR effects and demos. Digital Foundry's <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns">runthrough of <I>Battlefield V</I></a> has fairly detailed explanations of effects and how they were done with DXR, though one or two things appear incorrect, e.g., <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns&feature=youtu.be&t=669">BVH varying with image resolution</a>.
 
 <P>DXR implies GPU hardware dedicated to improving ray tracing performance, such as <a href="https://developer.nvidia.com/rtx/raytracing">NVIDIA's RTX</a>. However, for simpler scenes, or for powerful clusters of machines, interactive ray tracing is possible using traditional CPUs or less-specialize GPUs.
 
@@ -121,8 +121,8 @@ Don't bother trying to download and run code, though; better is to <a href="http
 With the rise of the GPU, many efforts have become more shader based---see the <a href="https://youtu.be/yqA71-HHY2Q?t=157">SIGGRAPH 2018 session</a> for technical details---so we expect to start seeing DXR-based demoscene entries.
 
 
-<a NAME="batch">
-<H1 class="subHeader">Batch</H2>
+<a NAME="offline">
+<H1 class="subHeader">Non-Interactive</H2>
 </a>
 
 Ray tracing has been used in film production for decades, first seen in <a href="https://www.21cf.com/blog/2017/03/31/blue-sky-studios-academy-award-winning-cgi-studio-renderer-story/">Blue Sky Studio's work</a> which won an Oscar in 1998. Ray tracing is now the standard way CGI effects are rendered by every major studio. Frames are computed on render farms, clusters of
@@ -130,12 +130,11 @@ upwards of <a href="https://www.engadget.com/2014/10/18/disney-big-hero-6/">tens
 
 <P>For technical information, the <a href="https://jo.dreggn.org/path-tracing-in-production/">notes from the <I>Path Tracing in Production</I></a> SIGGRAPH courses give valuable information about techniques used in film production. Another worthwhile resource is the <a href="https://dl.acm.org/citation.cfm?id=3243123&picked=prox">Special Issue On Production Rendering</a> in <I>ACM TOG</I>.
 
-<P>There are a wide range of batch rendering systems, based on ray and path tracing and other related techniques. Here's a short list:
+<P>There are a wide range of offline rendering systems, based on ray and path tracing and other related techniques. Here's a short list:
 <UL>
 <LI><a href="https://github.com/wjakob/nori">Nori</a> is a simple C++ ray tracer, written for educational purposes.
 <LI><a href="http://www.pbrt.org/resources.html">pbrt</a> is well-established, with <a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin">a great book</a> about the code.
 <LI><a href="https://www.mitsuba-renderer.org/">Mitsuba</a> - a research-oriented ray tracer which is somewhat like pbrt.
-<LI><a href="https://github.com/google/filament">Filament</a> is a new entry, with physically-based material theory impressively well-documented online.
 <LI><a href="https://luxcorerender.org/">Lux</a> works with Blender.
 <LI><a href="https://appleseedhq.net/">Appleseed</a> works with Maya.
 </UL>
