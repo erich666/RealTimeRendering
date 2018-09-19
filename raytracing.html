@@ -45,7 +45,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: September 6, 2018
+Last changed: September 19, 2018
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
@@ -57,16 +57,16 @@ Last changed: September 6, 2018
 <a href="#recent">Peter Shirley's free books</a> are an inexpensive way to dig into the topic and learn by coding. There are plenty of more books listed in <a href="#recent">our books section</a>, with <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Kevin Suffern's book</a> being a slightly-dated but good choice for a more in-depth introductory book focused on the topic.
 Other short tutorials can be found at <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel</a>.
 
-<P>For basic ray/object intersection algorithm references, see <a href="intersections.html">our object/object intersection page</a>. Morgan McGuire's <a href="https://graphicscodex.com/">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets. 
+<P>For basic ray/object intersection algorithm references, see <a href="intersections.html">our object/object intersection page</a>. Morgan McGuire's <a href="https://graphicscodex.com/">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets.
 
 <P>For pure amusement, <a href="http://eastfarthing.com/blog/2016-01-12-card/">Andrew Kensler's minimal ray tracer</a> is worth a look. Taking it a step further, <a href="http://www.kevinbeason.com/smallpt/">smallpt</a> provides global illumination in 99 lines.
 
 <P>Once you are past the basics, dig into the literature. Newer papers are usually found in conference proceedings,
 such as <a href="https://www.highperformancegraphics.org/2018/program/">High Performance Graphics 2018</a>. These can also serve as a guide to important papers in their areas, as each article begins with a summary of previous work.
-Older courses such as <a href="https://sites.google.com/site/raytracingcourse/">this from SIGGRAPH 2013</a> can have information of interest. 
+Older courses such as <a href="https://sites.google.com/site/raytracingcourse/">this from SIGGRAPH 2013</a> can have information of interest.
 
 <P>Much useful information can be found in blogs
-such as <a href="https://pharr.org/matt/blog/">Matt Pharr's</a>, <a href="http://psgraphics.blogspot.com/">Peter Shirley's</a>, as well as pieces such as as Anders Lindqvist's <a href="https://www.breakin.se/learn/pathtracing-coherency.html">path tracing article</a>.
+such as <a href="https://pharr.org/matt/blog/">Matt Pharr's</a>, <a href="http://psgraphics.blogspot.com/">Peter Shirley's</a>, as well as pieces such as as Demofox's <a href="https://blog.demofox.org/2016/09/21/path-tracing-getting-started-with-diffuse-and-emissive/">Path Tracing – Getting Started With Diffuse and Emissive</a> and Anders Lindqvist's <a href="https://www.breakin.se/learn/pathtracing-coherency.html">Pathtracing Coherency</a>.
 Aras Pranckevi&#269;ius has a recent <a href="https://aras-p.info/blog/2018/08/01/Pathtracer-15-Pause--Links/">an in-depth series</a> on writing a path tracer, with many more links to resources (which we mostly will not copy here).
 
 <a NAME="realtime">
@@ -74,7 +74,7 @@ Aras Pranckevi&#269;ius has a recent <a href="https://aras-p.info/blog/2018/08/0
 </a>
 With <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/">Microsoft's announcement of the DXR ray tracing API for DirectX</a> in March 2018 at the <I>Games Developers Conference</I></a>, real-time ray tracing has become synonymous with this effort, along with initiatives in Vulkan <a href="http://on-demand.gputechconf.com/gtc/2018/presentation/s8521-advanced-graphics-extensions-for-vulkan.pdf">such as NVIDIA's</a> (<a href="http://on-demand.gputechconf.com/gtc/2018/video/S8521/">video here</a>).
 
-<a NAME="realtime">
+<a NAME="dxr">
 <H2 class="subHeader">DXR-Specific</H2>
 </a>
 
@@ -84,7 +84,11 @@ With <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-mic
 
 <P>DXR implies GPU hardware dedicated to improving ray tracing performance, such as <a href="https://developer.nvidia.com/rtx/raytracing">NVIDIA's RTX</a>. However, for simpler scenes, or for powerful clusters of machines, interactive ray tracing is possible using traditional CPUs or less-specialize GPUs.
 
-<P>The SIGGRAPH 2018 course <I>Introduction to DirectX RayTracing</I> has <a href="http://intro-to-dxr.cwyman.org/">notes and sample code available</a>, as well as much other useful information for getting started. You can <a href="https://youtu.be/Q1cuuepVNoY">watch the entire course</a> on YouTube.
+<P>The SIGGRAPH 2018 course <I>Introduction to DirectX RayTracing</I> has <a href="http://intro-to-dxr.cwyman.org/">notes and sample code available</a>, as well as much other useful information for getting started with DXR shaders. You can <a href="https://youtu.be/Q1cuuepVNoY">watch the entire course</a> on YouTube. NVIDIA's <a href="https://www.nvidia.com/en-us/events/siggraph/schedule/?session-type=course">Wednesday SIGGRAPH courses</a> have more recorded presentations on real-time ray tracing.
+
+<P>Microsoft provides a set of <a href="https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12Raytracing">D3D12 Raytracing Samples</a>. NVIDIA has tutorials <a href="https://github.com/NVIDIAGameWorks/DxrTutorials">on Github</a> for learning about more low-level DXR calls. They also provide <a href="https://developer.nvidia.com/rtx/raytracing/dxr/DX12-Raytracing-tutorial-Part-1">a standalone tutorial</a>.
+
+<P>Eric has a <a href="http://erich.realtimerendering.com/rtrt/index.html">gallery of real-time ray tracing</a> images he's been making.
 
 <P>The DXR Functional Spec is <a href="https://github.com/ConfettiFX/The-Forge/blob/master/CommonRaytracing_3/ThirdParty/DXR/doc/D3D12%20Raytracing%20Functional%20Spec.docx">available here</a> without having to sign up to be a developer.
 
@@ -95,6 +99,7 @@ With <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-mic
 
 <a NAME="interactive">
 <H2 class="subHeader">Interactive</H2>
+</a>
 
 <P>
 "Interactive" here means "not DXR-based."
@@ -110,7 +115,7 @@ With <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-mic
 
 <P><a href="https://www.keyshot.com/">KeyShot</a> uses ray tracing for all rendering, even when positioning objects and lights in a scene. Nice <a href="https://www.keyshot.com/gallery/">eye candy</a>, too.
 
-<P>Many <a href="https://www.shadertoy.com/results?query=ray">shadertoy demos</a> are based on ray marching or other ray casting techniques run in (often complex) shaders.
+<P>Many <a href="https://www.shadertoy.com/results?query=ray">shadertoy demos</a> are based on ray marching or other ray casting techniques run in (often complex) shaders. Mikael Christensen has a <a href="http://blog.hvidtfeldts.net/index.php/2011/08/distance-estimated-3d-fractals-iii-folding-space/">series of articles</a> on modeling surfaces for such rendering.
 
 <P>Historically, the idea of interactive ray tracing has been around for over thirty years, with the introduction of <a href="http://bitsavers.org/pdf/att/pixel_machine/Pixel_Machine_Brochure_1987.pdf">AT&amp;T's Pixel Machine</a>.
 There have been other (commercially unsuccessful) efforts over the years, such as <a href="https://www.highperformancegraphics.org/wp-content/uploads/2018/Hot3D/HPG2018_RenderDrive.pdf">ART's RenderDrive</a> from 1998, and <a href="https://97da0272-a-62cb3a1a-s-sites.googlegroups.com/site/raytracingcourse/Low%20Power%20Raytracing.pdf?attachauth=ANoY7crjeugQ50Uzms9pM9cF4EvxRtB10sisEHmdImLEEvD1LCd6s2dawXfEbAF9H36TJZR8yjYYSRJ5Vz35tWAJx5ex3vm0tqpCe7Tr2RikDkTCPZN76o7ELnkNcchHJC2d5IbLzBMvkrZ-zWI_nUOPG6PDBCumPeJQIY9OiaD7QAIG2oyIXMJGKLHkxfWK0ZTZHkdsvOHMI4bJHR7YfA-KbirnBnLjbaKeSDKFVbJ5qEylbhSQ_uY%3D&attredirects=0">Imagination Technologies' mobile (!) offering</a> from 2013.
@@ -128,13 +133,14 @@ With the rise of the GPU, many efforts have become more shader based---see the <
 Ray tracing has been used in film production for decades, first seen in <a href="https://www.21cf.com/blog/2017/03/31/blue-sky-studios-academy-award-winning-cgi-studio-renderer-story/">Blue Sky Studio's work</a> which won an Oscar in 1998. Ray tracing is now the standard way CGI effects are rendered by every major studio. Frames are computed on render farms, clusters of
 upwards of <a href="https://www.engadget.com/2014/10/18/disney-big-hero-6/">tens of thousands of processors</a>.
 
-<P>For technical information, the <a href="https://jo.dreggn.org/path-tracing-in-production/">notes from the <I>Path Tracing in Production</I></a> SIGGRAPH courses give valuable information about techniques used in film production. Another worthwhile resource is the <a href="https://dl.acm.org/citation.cfm?id=3243123&picked=prox">Special Issue On Production Rendering</a> in <I>ACM TOG</I>.
+<P>For technical information, the <a href="https://jo.dreggn.org/path-tracing-in-production/">notes from the <I>Path Tracing in Production</I></a> SIGGRAPH course give valuable information about techniques used in film production. Another worthwhile resource is the <a href="https://dl.acm.org/citation.cfm?id=3243123&picked=prox">Special Issue On Production Rendering</a> in <I>ACM TOG</I>. NVIDIA's <a href="https://www.nvidia.com/en-us/events/siggraph/schedule/?session-type=course">Tuesday SIGGRAPH courses</a> have more recorded presentations on GPU ray tracing for production.
 
 <P>There are a wide range of offline rendering systems, based on ray and path tracing and other related techniques. Here's a short list:
 <UL>
 <LI><a href="https://github.com/wjakob/nori">Nori</a> is a simple C++ ray tracer, written for educational purposes.
 <LI><a href="http://www.pbrt.org/resources.html">pbrt</a> is well-established, with <a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin">a great book</a> about the code.
 <LI><a href="https://www.mitsuba-renderer.org/">Mitsuba</a> - a research-oriented ray tracer which is somewhat like pbrt.
+<LI><a href="https://www.ospray.org/">OSPRay</a> is geared towards scientific visualization.
 <LI><a href="https://luxcorerender.org/">Lux</a> works with Blender.
 <LI><a href="https://appleseedhq.net/">Appleseed</a> works with Maya.
 </UL>
