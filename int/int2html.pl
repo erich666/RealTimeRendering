@@ -146,56 +146,49 @@ sub OUTPUTLINES {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Object/Object Intersection</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="rtr3.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="rtr4.css" type="text/css"/>
 </head>
-<body bgcolor="#C0DFFD">
-
+<body>
 <div id="wrapper">
-
-  <div id="header">
-    <div id="rtr3-header-image">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr bgcolor="#003F50">
-          <td>
-            <a href="http://www.realtimerendering.com/blog">
-              <img src="rtr-header.png" alt="Header image" width="410" height="106" />
-            </a>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div id="navigation" class="clearfix">
-      <ul class="primary">
-        <li><a href="http://www.realtimerendering.com/blog/" rel="home">Blog</a></li>
-        <li><a title="Information about the third edition"  href="book.html">Book Information</a></li>
-        <li><a title="Recommended books"  href="books.html">Graphics Books</a></li>
-        <li><a class="nav-current" title="Object / object intersection page"  href="intersections.html">Intersections</a></li>
-        <li><a title="Sites we like"  href="portal.html">Portal</a></li>
-		<li><a title="Ray Tracing Resources"  href="raytracing.html">Ray tracing</a></li>
-		<li><a title="Main resources page"  href="index.html">Resources</a></li>
-		<li><a title="WebGL/three.js Resources"  href="webgl.html">WebGL</a></li>
-      <ul>
-    </div>
-  </div>
-
-<div id="content" class="clearfix">
-
+<div id="header">
+<div id="rtr3-header-image">
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td class="pageName">Object/Object Intersection</td>
-    </tr>
-    <tr>
-      <td valign="top"><img src="spacer.gif" alt="" height="6" border="0" /><br />   
-    </tr>
-    
-    <tr>
-      <td class="bodyText">
-
+<tr bgcolor="#10304B">
+<td>
+<a href="http://www.realtimerendering.com/blog">
+<img src="rtr-header.png" alt="Header image" width="410" height="106"/>
+</a>
+</td>
+</tr>
+</table>
+</div>
+<div id="navigation" class="clearfix">
+<ul class="primary">
+<li><a href="http://www.realtimerendering.com/blog/" rel="home">Blog</a></li>
+<li><a title="Recommended books" href="books.html">Graphics books</a></li>
+<li><a class="nav-current" title="Object / object intersection page" href="intersections.html">Intersections</a></li>
+<li><a title="Sites we like" href="portal.html">Portal</a></li>
+<li><a title="Ray Tracing Resources" href="raytracing.html">Ray tracing</a></li>
+<li><a title="Main resources page" href="index.html">Resources</a></li>
+<li><a title="WebGL/three.js Resources"  href="webgl.html">WebGL</a></li>
+<ul>
+</div>
+</div>
+<div id="content" class="clearfix">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pageName">Ray Tracing Resources Page</td>
+</tr>
+<tr>
+<td valign="top"><img src="spacer.gif" alt="" height="6" border="0"/><br/>
+</tr>
+<tr>
+<td class="bodyText">
 <div class="metadata">
-Last changed: June 28, 2017
+Last changed: October 12, 2018
 </div>
 
 <P>
@@ -218,7 +211,7 @@ Guide to source abbreviations:
 <UL>
 <LI><B>3DG</B> - <a href="http://www.amazon.com/exec/obidos/ASIN/0201619210?tag=somebooksilike"><I>3D Games: Real-time Rendering and Software Technology</I></a>, Alan Watt and Fabio Policarpo, Addison-Wesley, 2001.
 
-<LI><B>GPC</B> - <I><a href="https://gamephysicscookbook.github.io/">Game Physics Cookbook</a></I>, by Gabor Szauer, Packt Publishing, March 2017, with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a>
+<LI><B>GPC</B> - <I><a href="https://web.archive.org/web/20180307234515/https://gamephysicscookbook.github.io/">Game Physics Cookbook</a></I>, by Gabor Szauer, Packt Publishing, March 2017, with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a>
 
 <LI><B>GPG</B> - <a href="http://www.amazon.com/exec/obidos/ASIN/1584500492?tag=somebooksilike"><I>Game Programming Gems</I></a>, ed. Mark DeLoura, Charles River Media, 2000.
 
@@ -236,9 +229,7 @@ Guide to source abbreviations:
 
 <LI><B>RTCD</B> - <a href="http://realtimecollisiondetection.net/"><I>Real-Time Collision Detection</I></a>, by Christer Ericson, Morgan Kaufmann Publishers, 2004.
 
-<LI><B>RTR</B> - <a href="http://www.realtimerendering.com/"><I>Real-Time Rendering, Third Edition</I></a>, by <a href="http://cs.lth.se/tomas_akenine-moller">Tomas M&ouml;ller</a>, <a href="http://erichaines.com">Eric Haines</a>, and Naty Hoffman, <a href="https://www.crcpress.com/">A.K. Peters Ltd.</a>, 2008.
-
-<LI><B>RTR2</B> - <a href="http://www.realtimerendering.com/"><I>Real-Time Rendering, Second Edition</I></a>, by <a href="http://cs.lth.se/tomas_akenine-moller">Tomas Akenine-M&ouml;ller</a> and <a href="http://erichaines.com">Eric Haines</a>, <a href="https://www.crcpress.com/">A.K. Peters Ltd.</a>, 2002.
+<LI><B>RTR4</B> - <a href="http://www.realtimerendering.com/"><I>Real-Time Rendering, Fourth Edition</I></a>, by <a href="http://cs.lth.se/tomas_akenine-moller">Tomas M&ouml;ller</a>, <a href="http://erichaines.com">Eric Haines</a>,  Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire <a href="https://www.crcpress.com/">A.K. Peters/CRC Press</a>, 2018.
 
 <LI><B>SG</B> - <a href="http://plib.sourceforge.net/sg/index.html">Simple Geometry library</a>, Steve Baker's vector, matrix, and quaternion manipulation library.
 
@@ -314,25 +305,25 @@ One principle is that even if both objects are moving, only one has to be consid
 <P>
 <B>Ray/Moving Sphere:</B> <I>(location)</I> Form a cylinder between the two spheres, intersect the two spheres and cylinder with the ray. See <a href="http://media.steampowered.com/apps/valve/2015/DirkGregorius_Contacts.pdf">Gregorius 2015</a>.<br>
 <B>Ray/Moving Triangle:</B> <I>(boolean)</I> If each triangle is entirely on one side of the plane formed by the other triangle, form the polyhedron between the two triangles. The connecting faces are formed by all the combinations of an edge on one triangle and a vertex on the other. Discard any separating planes formed (i.e., use only planes in which both triangles are on the same side of the plane). Shoot the ray against it using <a href="http://www.realtimerendering.com/intersections.html#II247">ray/polyhedron testing</a>. <I>(Short of splitting the triangles into two parts each and forming volumes amongst these, is there an elegant way to perform this operation when one triangle's plane splits the other triangle?)</I><br>
-<B>Ray/Moving AABB:</B> <I>(boolean)</I> Form a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB and shoot the ray against it using <a href="http://www.realtimerendering.com/intersections.html#II247">ray/polyhedron testing</a>. See RTR3, p. 778 (RTR2, p. 614).<br>
+<B>Ray/Moving AABB:</B> <I>(boolean)</I> Form a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB and shoot the ray against it using <a href="http://www.realtimerendering.com/intersections.html#II247">ray/polyhedron testing</a>. See <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>.<br>
 <B>Ray/Moving OBB:</B> <I>(boolean)</I> An inelegant way is to form all combinations of edge/vertex pairs and form planes to bound the OBBs (see Ray/Moving triangle, above).</br>
 <B>Ray/Moving Polyhedron:</B> Take the convex hull of each polyhedron and then the convex hull of both of these. <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=504">Glassner</a> is the earliest reference I know. See <a href="http://media.steampowered.com/apps/valve/2015/DirkGregorius_Contacts.pdf">Gregorius 2015</a> for a modern treatment.
 
 <P>
-<B>Plane/Moving Sphere:</B> <I>(location)</I> Transform the problem into changing the plane into a thick slab, of thickness equal to the radius of the sphere. Change the sphere's path into a line segment. Perform slab/line segment intersection, i.e., ray/plane intersection for the two sides of the slab. See <a href="http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a>; and RTR3, p. 784 (RTR2, p. 621).<br>
+<B>Plane/Moving Sphere:</B> <I>(location)</I> Transform the problem into changing the plane into a thick slab, of thickness equal to the radius of the sphere. Change the sphere's path into a line segment. Perform slab/line segment intersection, i.e., ray/plane intersection for the two sides of the slab. See <a href="http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a>; and <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>..<br>
 <B>Plane/Moving AABB:</B> <I>(location)</I> If the plane's normal is along one of the primary axes, e.g., it is [0 1 0], [0 0 -1], etc., then turn the problem into slab/line segment intersection, similar to plane/moving sphere above. That is, take the thickness of the AABB and make the plane this thick.<br>
 
 <P>
 The general principal of intersecting a moving sphere against an object is to simplify thinking about the problem by making the sphere into a line segment between its center's start and end locations, while "adding" this sphere (a <a href="http://www.cs.sunysb.edu/~algorith/files/minkowski-sum.shtml">Minkowski sum</a>) to the other object.<br>
-<B>Moving Sphere/Sphere:</B> <I>(location)</I> Add the radius of the moving sphere to the static sphere, and treat the moving sphere as a ray. Use this ray to perform ray/sphere intersection. See <a href="http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a> and RTR3, p. 785 (RTR2, p. 622).<br>
-<B>Moving Sphere/Triangle:</B> <I>(location)</I> Similar to above, turn the sphere into a ray. The triangle turns into a solid defined by a set of spheres at the vertices, cylinders along the edges, and a slab for the interior of the triangle. See <a href="https://github.com/jrouwe/SweptEllipsoid">Rouw&eacute;'s article and code</a>; <a href="https://www.geometrictools.com/Documentation/IntersectionMovingSphereTriangle.pdf">GTWeb doc</a>; RTR3, p. 787 (RTR2 p. 624); <a href="http://twvideo01.ubm-us.net/o1/vault/gdc2013/slides/822403Gregorius_Dirk_TheSeparatingAxisTest.pdf">Gregorius 2012</a>.<br>
-<B>Moving Sphere/AABB:</B> <I>(boolean)</I> A conservative test (i.e., no false misses, but can give false hits when there actually is no overlap) is to make the AABB move, so forming a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB. Test the static sphere with shaft testing. See RTR3, p. 778 (RTR2, p. 614).<br>
+<B>Moving Sphere/Sphere:</B> <I>(location)</I> Add the radius of the moving sphere to the static sphere, and treat the moving sphere as a ray. Use this ray to perform ray/sphere intersection. See <a href="http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a> and <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>..<br>
+<B>Moving Sphere/Triangle:</B> <I>(location)</I> Similar to above, turn the sphere into a ray. The triangle turns into a solid defined by a set of spheres at the vertices, cylinders along the edges, and a slab for the interior of the triangle. See <a href="https://github.com/jrouwe/SweptEllipsoid">Rouw&eacute;'s article and code</a>; <a href="https://www.geometrictools.com/Documentation/IntersectionMovingSphereTriangle.pdf">GTWeb doc</a>; <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>.; <a href="http://twvideo01.ubm-us.net/o1/vault/gdc2013/slides/822403Gregorius_Dirk_TheSeparatingAxisTest.pdf">Gregorius 2012</a>.<br>
+<B>Moving Sphere/AABB:</B> <I>(boolean)</I> A conservative test (i.e., no false misses, but can give false hits when there actually is no overlap) is to make the AABB move, so forming a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB. Test the static sphere with shaft testing.<br>
 
 <P>
 <B>Moving Triangle/Triangle:</B> See <a href="https://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">GTweb doc</a> and <a href="https://code.google.com/archive/p/box2d/downloads">Catto 2013</a>.
 
 <P>
-<B>Moving AABB/AABB:</B> <I>(location)</I> See <a href="http://www.gamasutra.com/features/19991018/Gomez_3.htm">Gomez</a> for a use of the Separating Axis Theorem to solve this problem. <I>(boolean)</I> Form a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB and compare the static AABB against it with shaft testing. See RTR3, p. 778 (RTR2, p. 614).<br>
+<B>Moving AABB/AABB:</B> <I>(location)</I> See <a href="http://www.gamasutra.com/features/19991018/Gomez_3.htm">Gomez</a> for a use of the Separating Axis Theorem to solve this problem. <I>(boolean)</I> Form a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB and compare the static AABB against it with shaft testing.<br>
 
 
 <P>
@@ -346,7 +337,7 @@ The general principal of intersecting a moving sphere against an object is to si
 <a href="http://media.steampowered.com/apps/valve/2015/DirkGregorius_Contacts.pdf">Gregorius 2015</a> covers computing contact points among spheres, capsules, convex hulls, and meshes.
 
 <P>
-Many of the non-curved objects which are moving can be treated as forming <a href="http://www.erichaines.com/ShaftCulling.pdf">shafts</a> between the starting and ending locations, and then the shaft can be tested against a ray simply enough, or against another non-curved object by using the polyhedron/polyhedron test in <a href="#IV83">Gems IV p.83</a>. Another approach is to use the <a href="http://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">Separating Axis Theorem</a> (also see <a href="http://www.gamasutra.com/features/20000330/bobic_01.htm">Bobic</a>) to tell if the two objects overlap. However, all of these approaches are just <I>boolean</I> tests. Also see RTR3, p. 780 (RTR2, p. 626).
+Many of the non-curved objects which are moving can be treated as forming <a href="http://www.erichaines.com/ShaftCulling.pdf">shafts</a> between the starting and ending locations, and then the shaft can be tested against a ray simply enough, or against another non-curved object by using the polyhedron/polyhedron test in <a href="#IV83">Gems IV p.83</a>. Another approach is to use the <a href="http://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">Separating Axis Theorem</a> (also see <a href="http://www.gamasutra.com/features/20000330/bobic_01.htm">Bobic</a>) to tell if the two objects overlap. However, all of these approaches are just <I>boolean</I> tests.
 
 <P>
 <H2>Article references</H2>
