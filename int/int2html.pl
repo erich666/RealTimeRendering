@@ -188,7 +188,7 @@ sub OUTPUTLINES {
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: October 12, 2018
+Last changed: October 17, 2018
 </div>
 
 <P>
@@ -405,16 +405,13 @@ If the lines do not intersect, <I>t1</I> and <I>t2</I> mark the points of closes
 	&nbsp;<br /></td>
     </tr>
 </table>
-
+<!-- <P>
+<iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/4dSGW1?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe> -->
 </div> <!-- /content -->
 
 <div id="footer" class="clearfix">
-  <ul>
-    <li>Contacts:</li>
-    <li><a href="mailto:tam\@cs.lth.se">Tomas</a></li>
-    <li><a href="mailto:erich\@acm.org">Eric</a></li>
-    <li><a href="mailto:rtr3\@renderwonk.com">Naty</a></li>
-  </ul>		
+<HR>
+Contact: <a href="mailto:erich\@acm.org">Eric</a></li>
 </div> <!-- /footer -->
 
 </div> <!-- /wrapper -->
