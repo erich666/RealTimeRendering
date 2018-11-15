@@ -188,7 +188,7 @@ sub OUTPUTLINES {
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: October 17, 2018
+Last changed: November 10, 2018
 </div>
 
 <P>
@@ -206,6 +206,7 @@ A newer book focused in large part on object/object intersection tests is the
 <I><a href="https://gamephysicscookbook.github.io/">Game Physics Cookbook</a></I> (GPC),
 with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a> -
 see its <a href="https://github.com/gszauer/GamePhysicsCookbook#collision-detection">giant grid</a> for what intersections it covers.
+<a href="http://www.iquilezles.org/www/articles/intersectors/intersectors.htm">Qu&iacute;lez</a> has a bunch of shader-based ray/object intersectors, including ones (beyond those listed in the table) for the torus, disk, and capsule. 
 <P>
 Guide to source abbreviations:
 <UL>
@@ -232,6 +233,8 @@ Guide to source abbreviations:
 <LI><B>RTR4</B> - <a href="http://www.realtimerendering.com/"><I>Real-Time Rendering, Fourth Edition</I></a>, by <a href="http://cs.lth.se/tomas_akenine-moller">Tomas M&ouml;ller</a>, <a href="http://erichaines.com">Eric Haines</a>,  Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire <a href="https://www.crcpress.com/">A.K. Peters/CRC Press</a>, 2018.
 
 <LI><B>SG</B> - <a href="http://plib.sourceforge.net/sg/index.html">Simple Geometry library</a>, Steve Baker's vector, matrix, and quaternion manipulation library.
+
+<LI><B>Shadertoy</B> - <a href="http://www.iquilezles.org/www/articles/intersectors/intersectors.htm">Qu&iacute;lez</a> gives code snippets and shader-based demos, runnable in your browser (best on Chrome).
 
 <LI><B>TGS</B> - <a href="http://www.andrewaye.com/Teikitu%20Gaming%20System/index.html">Teikitu Gaming System Collision</a>, Andrew Aye's object/object intersection/distance and sweep/penetration software (non-commercial use only).
 
