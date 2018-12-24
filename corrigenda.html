@@ -42,7 +42,7 @@
 <div class="bodyText"> 
  
 <div class="metadata"> 
-Last changed: October 10, 2018
+Last changed: December 24, 2018
 </div> 
  
 <br> 
@@ -64,8 +64,16 @@ S&eacute;bastien Hillaire (4th).
 <P>Significant errors:
 <UL>
 <LI>Page 67: There is a sign error in the view vector. Change "and $\mb v$ with $(0,0,1)$" to "and $\mb v$ with $(0,0,-1)$". In the left matrix that follows, change "v_x & v_y & v_z & 0" to "-v_x & -v_y & -v_z & 0". In the right matrix, change "v_x & v_y & v_z & -\mb t\cdot\mb v" to "-v_x & -v_y & -v_z & \mb t\cdot\mb v".
+<LI>Page 242: "by slicing it parallel to the view direction" to "by slicing it perpendicular to the view direction".
 <LI>Page 256: "Called an exponential shadow map (ESM) or exponential variance shadow map (EVSM)" - remove "or exponential variance shadow map (EVSM)".
 <LI>Page 256: "compares this new approach with ESM", change to "compares this new approach with another method, the exponential variance shadow map (EVSM)".
+<LI>Page 429: "Figure 10.43 shows how an irradiance map -derived directly compares to one synthesized by the nine-term function." to "See Figure 10.45 for a comparison of an irradiance map derived by integration with one expressed by a nine-term spherical harmonic function."
+<LI>Page 727: "the right tangent at the join has to be twice as long as the left tangent." to "the right difference vector between the control points at the join has to be twice as long as the left difference vector between the control points."
+<LI>Page 733: "square function" to "box function".
+<LI>Page 733: "is created by integrating $\beta_0(t)$" to "is created by convolving $\beta_0(t)$ with $\beta_0(t)$", and "is created by integrating $\beta_1(t)$" to "is created by convolving $\beta_1(t)$ with $\beta_0(t)$".
+<LI>Page 751: Equation 17.56, the expression should be divided by "2 \epsilon".
+<LI>Page 767 and 777: "The normal is then found as the cross product between those vectors." to "... between these." (tangent patches)
+<LI>Page 1092: Reference 793, these course notes are no longer online, so this reference should be replaced by reference 903, Kirk, David, and Wen-Mei Hwu, <I>Programming Massively Parallel Processors: A Hands-on Approach</I>, Morgan-Kaufmann, 2016 <br><a href="https://books.google.com/books?hl=en&lr=&id=wcS_DAAAQBAJ&oi=fnd&pg=PP1&dq=%22Programming+Massively+Parallel+Processors%22&ots=Hk9StFFM-x&sig=eFl3IKb4SDCmmvm7TGO7F_sQ8l0#v=onepage&q&f=false">(see Google Book excerpt here)</a>.
 <LI>Page 1133: Reference 1580, the author of these slides should be Eitan Grinspun; Peter Schr&ouml;der ran the course. (Not fixed in any printing, as the reference order then needs to be changed.)*
 </UL>
 
@@ -76,9 +84,20 @@ S&eacute;bastien Hillaire (4th).
 <LI>Page 131: "goal of this sampling process is" - unexpected line break.
 <LI>Page 145: "Interleaved samplingindexsampling!interleaved" - typographical error.
 <LI>Page 160: "multiplied by the stored alpha before being display" - should be "displayed".
+<LI>Page 265: "We have avoiding" to "We have avoided".
 <LI>Page 239: "depth layer between the occlude and receiver" - missing letter, change to "occluder".
 <LI>Page 247: "function of what proportion of the light's area" - change "proportion" to "portion".
+<LI>Page 333: "is the {\em distribution of visible normals}" to "is related to the {\em distribution of visible normals}".
+<LI>Page 351: "Equations 9.62 and 9.63 result in a uniform distribution of" to "Equation 9.62 results in a uniform distribution of".
+<LI>Page 494: "diffuse and reflective surfaces" - "reflective" to "specular".
+<LI>Page 615: "used to stored" - should be "store".
+<LI>Page 616: "simulated using participating media" to "represented as participating media".
 <LI>Page 785: RenderDoc, "Windows debugger" to "Windows, Linux, and Android debugger".
+<LI>Page 819: "Construction time of a spatial data structure can be expensive" to "... can be long".
+<LI>Page 820: "children nodes" to "child nodes".
+<LI>Page 823: "or games like DOOM (2016), back when there was no hardware z-buffer" - remove "(2016)" ;-)
+<LI>Page 830: "not considered to contribute" to "considered to not contribute".
+<LI>Page 910: "Clarberg et al. [271] present hardware extensions..." The rest of this paragraph should follow the next paragraph, "Andersson et al.", (as a separate paragraph), instead of preceding it.
 <LI>Page 970: nine lines down, "curves!B&eacute;zier" should not be visible; it was a poorly-formatted index entry.
 <LI>Page 1054: Reference 68, a new edition of this book has appeared, and the chapter is now Chapter 35. The editors and full title are:
     Dinesh P. Mehta and Sartaj Sahni, eds., <i>Handbook of Data Structures and Applications</i>, Second Edition, Chapman and Hall/CRC Press, 2018.
@@ -108,18 +127,23 @@ S&eacute;bastien Hillaire (4th).
 <LI>Page 140 (3rd printing): Figure 5.24, "per pixel, and as can be seen, two of" to "per pixel. Two of".
 <LI>Page 237: Figure 7.12 could include a reference to Christoph Peters' page <a href="http://momentsingraphics.de/?p=175">http://momentsingraphics.de/?p=175</a>.*
 <LI>Page 397: "(see [1838]):" should be "[1838]:", as we never consider a citation something we point at.
+<LI>Page 485: "an unique" to "a unique".
 <LI>Page 473: Figure 11.21's hemisphere is squashed, it should be truly a round hemisphere.*
 <LI>Page 505: Figure 11.39, extend the black ground plane line to the right so it perfectly matches the blue rectangle below.
+<LI>Page 616: "featuring high-scattering coefficients" - remove hyphen.
 <LI>Page 626: Figure 14.35, image should be centered (missing "\centerline").
 <LI>Page 658: Figure 15.8, the two triangles should be aligned horizontally.
 <LI>Page 704: Figure 16.15, the line of text beginning "The triangles could" should be shifted to the left, to match the left margin of the other lines of text.
 <LI>Page 749: Figure 17.32 could include a reference to Tamy Boubekeur's page <a href="https://perso.telecom-paristech.fr/boubek/tessellation/">https://perso.telecom-paristech.fr/boubek/tessellation/</a>.*
 <LI>Page 756 (3rd printing): Figure 17.38, "As can be seen, the" to "The".
+<LI>Page 767: "over the surface The same" - add a period after "surface".
+<LI>Page 767 and 777: "The normal is then found as the cross product..." - these next few sentences are identical between these pages. The later one should be revised. Not touched for pagination reasons.*
 <LI>Page 772 (3rd printing): Figure 17.58, "As can be seen in" to "As seen in".
 <LI>Page 783 (3rd printing): Figure 17.70, "As can be seen, there" to "There".
 <LI>Page 785: "Xcode on OSX" to "Xcode on macOS", since <a href="https://help.apple.com/instruments/mac/current/#/dev7b09c84f5">Apple's renamed things</a>.
 <LI>Page 843: Figure 19.21 could probably just be pseudocode in the text instead of a figure, as done in the Intersection Test Methods chapter, for example.*
 <LI>Page 844 (3rd printing): Figure 19.20, replace "As can be seen, the" to simple "The".
+<LI>Page 865: "time-critical rendering.." - remove a period.
 <LI>Page 874: Figure 19.46 could include a reference to <a href="http://hhoppe.com/proj/geomclipmap/">Losasso et al.</a> or the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52336">program itself</a>.*
 <LI>Page 889: Figure 20.3, "As can be seen, anything" to "Any values".
 <LI>Page 915: Figure 21.1, the first two images are the tiniest bit from the top edge, the last the tiniest bit from the bottom edge.
@@ -158,7 +182,7 @@ S&eacute;bastien Hillaire (4th).
 
 <P> Errors followed by a "*" have not been fixed internally yet and are likely to be deferred until a future fifth edition (no, none is planned right now), as they could affect pagination. Otherwise, fixes are in place in online materials (e.g., references and figures)
 
-<P><I>Thanks to Evgenii Golubev and others for reporting errors.</I>
+<P><I>Thanks to Evgenii Golubev, Alex Yang, and others for reporting errors.</I>
 
 
  

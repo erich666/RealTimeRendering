@@ -188,7 +188,7 @@ sub OUTPUTLINES {
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: November 10, 2018
+Last changed: December 5, 2018
 </div>
 
 <P>

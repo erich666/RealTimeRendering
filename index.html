@@ -50,7 +50,7 @@
       <td class="bodyText">
       
 <div class="metadata">
-Last changed: November 5, 2018
+Last changed: November 24, 2018
 </div>
 
 
@@ -405,7 +405,7 @@ If you need to start from scratch, Wolfire's blog has a basic two-part tutorial 
 <P>We drew upon Tarek Sherif's <a href="https://github.com/tsherif/webgl2examples">WebGL 2 Examples</a> for our shader examples. This code is an easy way to start playing with shaders.
 <P>Dealing with the explosion of shaders caused by material systems is an ongoing concern. <a href="https://dolphin-emu.org/blog/2017/07/30/ubershaders/">This article</a> discusses the problem in depth and offers solutions.
 <P>Storing semitransparent textures so that the colors are premultiplied by the alphas makes compositing and blending operations much faster to compute. Tom Forsyth gives a rundown of the <a href="https://tomforsyth1000.github.io/blog.wiki.html">math and formats involved</a> (search "Premultiplied alpha part 2").
-<P>Transparency is difficult to perform correctly in a single pass when using a Z-buffer. Steve Baker gives a <a href="http://www.sjbaker.org/steve/omniv/alpha_sorting.html">good summary</a> of the basics of the problem and traditional solutions. <a href="http://developer.download.nvidia.com/SDK/10/direct3d/samples.html">NVIDIA's developer site</a> and the <a href="http://www.humus.name/index.php?page=3D">Humus 3D site</a> each have sample code for using stencil routing to provide order-independent transparency.
+<P>Transparency is difficult to perform correctly in a single pass when using a Z-buffer. Steve Baker gives a <a href="http://www.sjbaker.org/steve/omniv/alpha_sorting.html">good summary</a> of the basics of the problem and traditional solutions. <a href="http://developer.download.nvidia.com/SDK/10/direct3d/samples.html">NVIDIA's developer site</a> and the <a href="http://www.humus.name/index.php?page=3D">Humus 3D site</a> each have sample code for using stencil routing to provide order-independent transparency. Tarek Sherif made a <a href="https://tsherif.github.io/webgl2examples/oit-dual-depth-peeling.html">WebGL 2 browser demo of depth peeled transparency</a>.
 <P>NVIDIA provides a good summary of <a href="https://developer.nvidia.com/content/transparency-or-translucency-rendering">basic techniques for transparency</a> and some common optimizations. This article at Sketchfab gives <a href="https://blog.sketchfab.com/real-time-transparency-make-fast-beautiful/">an artist's view of transparency</a> and using blending modes to simulate it.
 <P>The dangers of improperly accounting for alpha in cutouts is <a href="http://www.adriancourreges.com/blog/2017/05/09/beware-of-transparent-pixels/">lavishly illustrated in this blog post</a>.
 <P>24 bits of color is usually enough, but not always. Here's an <a href="cubes.gif">image showing concentric bands</a> only one pixel intensity value apart. Most monitors will show some banding somewhere on the image.
