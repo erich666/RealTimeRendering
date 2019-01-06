@@ -188,7 +188,7 @@ sub OUTPUTLINES {
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: December 5, 2018
+Last changed: January 5, 2019
 </div>
 
 <P>
@@ -202,8 +202,8 @@ in books and on the web. The most comprehensive books on the subject are
 <a href="http://www.geometrictools.com/Books/Books.html"><I>Geometric Tools for Computer Graphics</I></a> (GTCG) and
 <a href="http://realtimecollisiondetection.net/"><I>Real-Time Collision Detection</I></a> (RTCD);
 the former is all-encompassing, the latter more approachable and focused.
-A newer book focused in large part on object/object intersection tests is the
-<I><a href="https://gamephysicscookbook.github.io/">Game Physics Cookbook</a></I> (GPC),
+A book focused in large part on object/object intersection tests is the
+<I><a href="https://www.packtpub.com/game-development/game-physics-cookbook">Game Physics Cookbook</a></I> (GPC),
 with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a> -
 see its <a href="https://github.com/gszauer/GamePhysicsCookbook#collision-detection">giant grid</a> for what intersections it covers.
 <a href="http://www.iquilezles.org/www/articles/intersectors/intersectors.htm">Qu&iacute;lez</a> has a bunch of shader-based ray/object intersectors, including ones (beyond those listed in the table) for the torus, disk, and capsule. 
@@ -212,7 +212,7 @@ Guide to source abbreviations:
 <UL>
 <LI><B>3DG</B> - <a href="http://www.amazon.com/exec/obidos/ASIN/0201619210?tag=somebooksilike"><I>3D Games: Real-time Rendering and Software Technology</I></a>, Alan Watt and Fabio Policarpo, Addison-Wesley, 2001.
 
-<LI><B>GPC</B> - <I><a href="https://web.archive.org/web/20180307234515/https://gamephysicscookbook.github.io/">Game Physics Cookbook</a></I>, by Gabor Szauer, Packt Publishing, March 2017, with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a>
+<LI><B>GPC</B> - <I><a href="https://www.packtpub.com/game-development/game-physics-cookbook">Game Physics Cookbook</a></I>, by Gabor Szauer, Packt Publishing, March 2017, with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a>
 
 <LI><B>GPG</B> - <a href="http://www.amazon.com/exec/obidos/ASIN/1584500492?tag=somebooksilike"><I>Game Programming Gems</I></a>, ed. Mark DeLoura, Charles River Media, 2000.
 
