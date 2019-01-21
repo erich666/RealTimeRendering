@@ -45,7 +45,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: December 24, 2018
+Last changed: January 20, 2019
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
@@ -54,9 +54,9 @@ Last changed: December 24, 2018
 <a NAME="basics">
 <H1 class="subHeader">Basics</H2>
 </a>
-<a href="#recent">Peter Shirley's free books</a> are a fast and free way to dig into the topic and learn by coding; there's even <a href="https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/">a CUDA</a> and <a ref="https://github.com/ingowald/RTOW-OptiX">OptiX</a> implementation. There are plenty of more books listed in <a href="#recent">our books section</a>, with <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Kevin Suffern's book</a> being a slightly-dated but good choice for a more in-depth introductory book focused on the topic.
+<a href="#books">Peter Shirley's free books</a> are a fast and free way to dig into the topic and learn by coding; there's even <a href="https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/">a CUDA</a> and <a ref="https://github.com/ingowald/RTOW-OptiX">OptiX</a> implementation. 
 Other short tutorials can be found at <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel</a>.
-Morgan McGuire's <a href="https://graphicscodex.com/">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets. See our <a href="#books">full book listing</a> for more resources, including other now-free books.
+Morgan McGuire's <a href="https://graphicscodex.com/">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets. There are plenty of more books, some now free, listed in <a href="#books">our books section</a>, with <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Kevin Suffern's book</a> being a slightly-dated but good choice for a more in-depth introductory book focused on the topic.
 
 <P><b>Blogs</b> related to ray tracing: <a href="http://aras-p.info/blog/">Aras's</a>, <a href="http://psgraphics.blogspot.com/">Pete Shirley's</a>, <a href="https://ingowald.blog/">Ingo Wald's</a>, <a href="http://diaryofagraphicsprogrammer.blogspot.com/">Wolfgang Engel's</a>, <a href="https://blog.demofox.org/2018/11/16/how-to-data-lookups-via-raytracing/">Alan Wolfe's</a>, <a href="https://blogs.msdn.microsoft.com/DirectX/">Microsoft</a>, <a href="https://devblogs.nvidia.com/">NVIDIA</a>. Resources: <a href="https://blog.selfshadow.com/">SIGGRAPH 2018 links</a>, <a href="https://jendrikillner.bitbucket.io/post/">Jendrik Illner's summaries</a>.
 
@@ -70,12 +70,16 @@ Older courses such as <a href="https://sites.google.com/site/raytracingcourse/">
 
 <P>Much useful information can be found in blogs
 such as <a href="https://pharr.org/matt/blog/">Matt Pharr's</a>, <a href="http://psgraphics.blogspot.com/">Peter Shirley's</a>, as well as pieces such as as Demofox's <a href="https://blog.demofox.org/2016/09/21/path-tracing-getting-started-with-diffuse-and-emissive/">Path Tracing – Getting Started With Diffuse and Emissive</a> and Anders Lindqvist's <a href="https://www.breakin.se/learn/pathtracing-coherency.html">Pathtracing Coherency</a>.
-Aras Pranckevi&#269;ius has a recent <a href="https://aras-p.info/blog/2018/08/01/Pathtracer-15-Pause--Links/">an in-depth series</a> on writing a path tracer, with many more links to resources (which we mostly will not copy here).
+Aras Pranckevi&#269;ius has a recent <a href="https://aras-p.info/blog/2018/08/01/Pathtracer-15-Pause--Links/">an in-depth series</a> on writing a path tracer, with many more links to resources (which we mostly will not copy here). Matt Petineo also has <a href="https://github.com/TheRealMJP/DXRPathTracer">a path tracer using DXR</a>.
 
 <a NAME="realtime">
 <H1 class="subHeader">Real-Time</H2>
 </a>
+For newer articles, I highly recommend <a href="https://www.jendrikillner.com/tags/weekly/">Jendrik Illner's weekly reports</a>. These often contain links to interactive ray tracing articles.
+<P>
 With <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/">Microsoft's announcement of the DXR ray tracing API for DirectX</a> in March 2018 at the <I>Games Developers Conference</I></a>, real-time ray tracing has become synonymous with this effort, along with initiatives in Vulkan <a href="http://on-demand.gputechconf.com/gtc/2018/presentation/s8521-advanced-graphics-extensions-for-vulkan.pdf">such as NVIDIA's</a> (<a href="http://on-demand.gputechconf.com/siggraph/2018/video/sig1826-nuno-subtil-vulkan.html">video here</a>). There are <a href="https://blog.icare3d.org/2018/09/nvidia-turing-vulkanopengl-extensions.html">NVIDIA-specific extensions for Vulkan ray tracing</a> and other features, supported for their Turing architecture. NVIDIA has <a href="https://developer.nvidia.com/vulkan-turing">more information</a> on their developer page. Basic <a href="https://github.com/iOrange/rtxON/tree/Version_2_2">Vulkan ray tracing tutorials</a> are available from one user.
+
+<P>Christoph Schied and many others have released <a href="http://brechpunkt.de/q2vkpt/?fbclid=IwAR3xxHReJSb4TZulhXCEa57wL4pWndJrcNu2sObt0u3ezhlAZhvjRXehkxo">open-source for a fully ray traced</a> version of Quake 2, on Vulkan.
 
 <P>There are other efforts out there, such as <a href="https://developer.apple.com/documentation/metalperformanceshaders/metal_for_accelerating_ray_tracing">Apple's support for ray tracing</a> in their Metal API.
 
@@ -162,7 +166,7 @@ There's even a path tracer <a href="https://chunky.llbit.se/">specifically for r
 <a NAME="books">
 <H1 class="subHeader">Books</H2>
 </a>
-Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter</a> is just a starting spot, and
+Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter on interactive ray tracing</a> is just a starting spot, and
 <a href="index.html">our book</a> has but a few more pages on ray tracing.
 <a NAME="upcoming">
 <H2 class="subHeader">Upcoming</H2>
@@ -178,7 +182,7 @@ Books that have not been released yet.
 </td></tr>
 </table>
 
-<a NAME="recent">
+<a NAME="books">
 <H2 class="subHeader">Released</H2>
 </a>
 <P>These are books still in print focused on the subject of ray tracing and related algorithms, in year order of the latest edition.
@@ -264,9 +268,11 @@ entries</a>.
 
 <tr><td>
 <a href="https://smile.amazon.com/gp/product/0122861604?tag=realtimerenderin"><img src="AmazonImages/50KWx2vL_SL50_.jpg" alt="cover" height="50" align=left border=0></a>
-<img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
-<b><a href="https://smile.amazon.com/gp/product/0122861604?tag=realtimerenderin">An Introduction to Ray Tracing</a></b>, edited by Andrew Glassner, Morgan Kaufmann, 1989 (<a href="https://books.google.com/books?id=YPblYyLqBM4C&printsec=frontcover">Google Books sample</a>).
-<P>The first book on ray tracing. Ancient, but most of the information is still valid - math is math, data structures are data structures.
+  <img src="spacer.gif" alt="" height="55" width="14" align=left border=0>
+  <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
+<b><a href="https://smile.amazon.com/gp/product/0122861604?tag=realtimerenderin">An Introduction to Ray Tracing</a></b>, edited by Andrew Glassner, Morgan Kaufmann, 1989.
+<P>The first book on ray tracing. Ancient, but most of the information is still valid - math is math, data structures are data structures. Download the <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf">PDF</a> or <a href="http://www.realtimerendering.com/raytracing/Andrew%20S.%20Glassner%20-%20An%20Introduction%20to%20Ray%20tracing%20(The%20Morgan%20Kaufmann%20Series%20in%20Computer%20Graphics)%20(1989).djvu">DJVU</a> version for free. Andrew Glassner's page on the book <a href="https://www.glassner.com/portfolio/an-introduction-to-ray-tracing/">here</a>, Errata page for first printing <a href="an_intro_to_rt-errata.html">here</a> (all errata are corrected in the PDF and DJVU versions).
 </td></tr>
 
 

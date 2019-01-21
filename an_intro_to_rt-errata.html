@@ -1,0 +1,261 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ray Tracing Resources Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="rtr4.css" type="text/css"/>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="rtr3-header-image">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr bgcolor="#10304B">
+<td>
+<a href="http://www.realtimerendering.com/blog">
+<img src="rtr-header.png" alt="Header image" width="410" height="106"/>
+</a>
+</td>
+</tr>
+</table>
+</div>
+<div id="navigation" class="clearfix">
+<ul class="primary">
+<li><a href="http://www.realtimerendering.com/blog/" rel="home">Blog</a></li>
+<li><a title="Recommended books" href="books.html">Graphics books</a></li>
+<li><a title="Object / object intersection page" href="intersections.html">Intersections</a></li>
+<li><a title="Sites we like" href="portal.html">Portal</a></li>
+<li><a title="Ray Tracing Resources" href="raytracing.html">Ray tracing</a></li>
+<li><a title="Main resources page" href="index.html">Resources</a></li>
+<li><a title="WebGL/three.js Resources"  href="webgl.html">WebGL</a></li>
+<ul>
+</div>
+</div>
+<div id="content" class="clearfix">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pageName">Errata for first printing of "An Introduction to Ray Tracing"</td>
+</tr>
+<tr>
+<td valign="top"><img src="spacer.gif" alt="" height="6" border="0"/><br/>
+</tr>
+<tr>
+<td class="bodyText">
+<div class="metadata">
+Last changed: January 20, 2019
+</div>
+
+<P>
+<a href="https://smile.amazon.com/gp/product/0122861604?tag=realtimerenderin"><img src="AmazonImages/50KWx2vL_SL50_.jpg" alt="cover" height="50" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="55" width="14" align=left border=0>
+  <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
+  <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
+<b><a href="https://smile.amazon.com/gp/product/0122861604?tag=realtimerenderin">An Introduction to Ray Tracing</a></b>, edited by Andrew Glassner, Morgan Kaufmann, 1989 (<a href="https://books.google.com/books?id=YPblYyLqBM4C&printsec=frontcover">Google Books sample</a>).
+<P>The first book on ray tracing. Ancient, but most of the information is still valid - math is math, data structures are data structures. Download the <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf">PDF</a> or <a href="http://www.realtimerendering.com/raytracing/Andrew%20S.%20Glassner%20-%20An%20Introduction%20to%20Ray%20tracing%20(The%20Morgan%20Kaufmann%20Series%20in%20Computer%20Graphics)%20(1989).djvu">DJVU</a> version for free.
+
+<P>Find other ray tracing books, free and otherwise, on our <a href="raytracing.html#recent">Ray Tracing Resources Page</a>.
+<P>
+<b>Errata</b>
+<P>
+This errata listing is originally from <a href="https://web.archive.org/web/19991022234049/http://wuarchive.wustl.edu:80/graphics/graphics/books/erratas/IntroToRT">The Wayback Machine</a>. All of these errors are corrected in the <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf">PDF</a> and <a href="http://www.realtimerendering.com/raytracing/Andrew%20S.%20Glassner%20-%20An%20Introduction%20to%20Ray%20tracing%20(The%20Morgan%20Kaufmann%20Series%20in%20Computer%20Graphics)%20(1989).djvu">DJVU</a> versions. The errata listing is here for people who have the first printing of the book.
+
+<PRE>
+p. 86, last paragraph before Algebraic Surfaces header:  change "where all
+the the intersections of the ray with all the objects in the CSG tree are
+required" to end as "may be required".
+
+-----
+
+p. 88, equation "t = etc":  change from "t = etc" to "t = -etc", i.e. a minus
+sign is missing, so negate the right hand side of the equation.
+
+-----
+
+p. 91, last formula in the Sphere section (in the text):  change to
+
+	x1^2 + y1^2 + z1^2 = 1
+		^
+		subscript was "0"
+
+-----
+
+p. 91, in the Paraboloid section, second equation:  change the two minus signs
+to plus signs (i.e. before z1 and z0).
+
+-----
+
+p. 93, torus equation corrections:  change two equations
+
+        a2 = 2(x1^2+y1^2+z1^2)((x0^2+y0^2+z0^2)-(a^2+b^2)) 
+              + 4 * (x0x1+y0y1+z0z1)^2 + 4a^2z1^2
+		^		    ^^ ^
+		was "2"		   add was "-"
+
+	a1 = 4 * (x0x1+y0y1+z0z1)((x0^2+y0^2+z0^2)-(a^2+b^2))
+              + 8a^2 * z0 * z1
+	      ^
+	      was "-"
+
+	a0 = ((x0^2+y0^2+z0^2)-(a^2+b^2))^2 - 4a^2(b^2-z0^2)
+					  ^
+					  squaring was left off
+
+-----
+	
+p. 95, last sentence before the Simplicial Splines and Steiner Patches
+section:  change "of" to "or, i.e. it should read "numerical techniques or
+subdivision algorithms".
+
+-----
+
+p. 95, last formula on the page:  change to
+	
+	z(u,v) = h y(v)
+		   ^
+		   subscript was "x"
+
+-----
+
+p. 100, Figure 7 is wrong.
+
+The upper figure is in error; the lower part is correct.  In the upper figure,
+the outer contour is the silhouette of a 3D parametric surface.  Curve c1 is
+the intersection of one plane with that surface, and c2 is the intersection of
+another plane, perpendicular to the first.  The line of intersection of the
+two planes is collinear with the ray, indicated by the line with the arrow.
+The other three lines in the figure are extraneous and should be ignored.  The
+lower part of the figure shows the two curves in uv space.
+
+-----
+
+p. 101, the last sentence in the Bicubic Patches section:  change "this can
+involve a loss of extra computation" should be "this can involve extra
+computation".
+
+-----
+
+p. 101, the second equation in the Numerical Methods section:  change the
+second "=" in the line to a "+" (it's the only equation with two "=" in it).
+
+-----
+
+p. 105, the 2-D line equation:  change to
+
+	(y1)x - (x1)y - (x0y1 - y0x1) = 0
+		      ^
+		      was a "+"
+
+-----
+
+p. 108, formula for f:  This does not agree with Fig. 10.  Using the same
+notation as in the figure, change to:
+
+For this shape, f is
+
+                 2           2              2   2
+	(x-r (u)) + (y-r (u))  + (z - r (u)) - a (u) = 0
+            x           y              z
+
+where (r , r , r ) is the center of the sphere and a is the radius.
+        x   y   z
+
+-----
+
+p. 140, equation (7h):  missing right parenthesis, change to "...- 1)))N."
+
+-----
+
+p. 148, section on distribution term D, 8th line:  change "the angle between L
+and H" to "the angle between N and H".
+
+-----
+
+p. 156, section 5.4, 2nd paragraph:  change "spectral transmission curve" to
+"specular transmission curve".
+
+-----
+
+p. 158, in Fdt(lambda) definition:  change "diffuse reflection" to "diffuse
+transmission".
+
+-----
+
+p. 158, line immediately after Fdt(lambda) definition:  change "We note that
+the diffuse reflectance" to "We note that the diffuse transmittance".
+
+-----
+
+p. 238, Fig. 24:  A chunk is missing in the upper left corner.  The labels
+should read:  "Directions crossed with", and "Applies to".
+
+-----
+
+p. 260, reference by Gervautz:  change "Comput. Graph." to "Computers and
+Graphics".
+
+-----
+
+p. 288, immediately after the DERIVATION OF REFRACTION FORMULAS header:  The
+introductory paragraph is missing.  It reads:
+
+We derive three alternative formulas for the refracted ray direction in ray
+tracing in order to prove their equivalence and to demonstrate the process of
+translating physical laws into optimized computational formulas.
+
+It is common knowledge that light rays refract when they strike an interface
+between two different transparent media, such as air-water, air-glass, or
+glass-water.  In 1621 Dutch mathematician Willebrord Snell discovered a
+formula quantifying this observation:  the ratio of the sines of the incident
+and refracted angles equals the ratio of the indices of refraction of the two
+materials.  Snell's law is:
+
+	eta  sin( theta  ) = eta  sin( theta  )
+	   1           1        2           2
+
+where theta-sub-1 is the angle of incidence, theta-sub-2 is the angle of
+refraction (both measured from the perpendicular to the interface) and
+eta-sub-1 and eta-sub-2 are the two indices of refraction on the incident and
+refracted sides of the interface, respectively.
+
+Light passing through a material slows relative to its speed in a vacuum by a
+factor equal to the index of refraction of that material.  In fact, Snell's
+law is a simple consequence of this speed variation and Fermat's _Principle of
+Least Time_, which states that light takes the fastest path to get from one
+point to another [Feynman63].
+
+For computation we need to recast Snell's law in terms of (x,y,z) direction
+vectors.  This can be done in several different ways.  In the derivations
+below we make extensive use of angles and trigonometry, but thankfully, it is
+possible to eliminate all of these terms from the final formulas, so
+theta-sub-1 and theta-sub-2 need never be computed.  As a convention, vectors
+are upper case and scalars are lower case.
+
+-----
+END
+</PRE>
+
+<tr>
+<td valign="top"><img src="spacer.gif" alt="" height="1" border="0"/><br/>
+&nbsp;<br/></td>
+</tr>
+</table>
+</div>  
+<div id="footer" class="clearfix">
+<ul>
+<li>Contacts:</li>
+<li><a href="http://www.cloudflare.com/email-protection#8afeebe7cae9f9a4e6fee2a4f9ef">Tomas</a></li>
+<li><a href="http://www.cloudflare.com/email-protection#6104130802092100020c4f0e1306">Eric</a></li>
+<li><a href="http://www.cloudflare.com/email-protection#d5a7a1a7e695a7b0bbb1b0a7a2babbbefbb6bab8">Naty</a></li>
+</ul>
+</div>  
+</div>  
+<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&"www.cloudflare.com/email-protection"==a.substr(7 ,35)){s='';j=43;r=parseInt(a.substr(j,2),16);for(j+=2;a.length-j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>

@@ -50,7 +50,7 @@
       <td class="bodyText">
       
 <div class="metadata">
-Last changed: January 5, 2019
+Last changed: January 14, 2019
 </div>
 
 
@@ -403,6 +403,7 @@ If you need to start from scratch, Wolfire's blog has a basic two-part tutorial 
 </a>
 
 <P>We drew upon Tarek Sherif's <a href="https://github.com/tsherif/webgl2examples">WebGL 2 Examples</a> for our shader examples. This code is an easy way to start playing with shaders.
+<P>There are many shader tutorials out there. For example, <a href="https://unity3d.com/learn/tutorials/topics/graphics/gentle-introduction-shaders">Unity 3D</a> and <a href="https://learnopengl.com/Getting-started/Shaders">Learn OpenGL</a> provide basics, <a href="https://www.ronja-tutorials.com/">Ronja</a> gives some more elaborate effects. <a href="https://thebookofshaders.com/">The Book of Shaders</a> is an introduction to fragment shaders, under development. <a href="https://www.shadertoy.com/">Shadertoy</a> is at the far end of the spectrum, an interactive web environment doing everything in the fragment shader; <a href="https://gamedevelopment.tutsplus.com/tutorials/a-beginners-guide-to-coding-graphics-shaders--cms-23313">Omar Shehata</a> provides an introduction. Other web-based systems for experimentation include <a href="http://glslsandbox.com/">GLSL Sandbox</a> (similar to Shadertoy), <a href="http://shdr.bkcore.com/">Shdr</a> for basic inputs and meshes to play with, <a href="http://tobyschachman.com/Shadershop/">Shadershop</a> for visualizing shader functions, and <a href="https://www.interactiveshaderformat.com/">ISF</a> for video DJs.
 <P>Dealing with the explosion of shaders caused by material systems is an ongoing concern. <a href="https://dolphin-emu.org/blog/2017/07/30/ubershaders/">This article</a> discusses the problem in depth and offers solutions.
 <P>Storing semitransparent textures so that the colors are premultiplied by the alphas makes compositing and blending operations much faster to compute. Tom Forsyth gives a rundown of the <a href="https://tomforsyth1000.github.io/blog.wiki.html">math and formats involved</a> (search "Premultiplied alpha part 2").
 <P>Transparency is difficult to perform correctly in a single pass when using a Z-buffer. Steve Baker gives a <a href="http://www.sjbaker.org/steve/omniv/alpha_sorting.html">good summary</a> of the basics of the problem and traditional solutions. <a href="http://developer.download.nvidia.com/SDK/10/direct3d/samples.html">NVIDIA's developer site</a> and the <a href="http://www.humus.name/index.php?page=3D">Humus 3D site</a> each have sample code for using stencil routing to provide order-independent transparency. Tarek Sherif made a <a href="https://tsherif.github.io/webgl2examples/oit-dual-depth-peeling.html">WebGL 2 browser demo of depth peeled transparency</a>.
@@ -637,6 +638,7 @@ Gavin Bell describes a bit more about how to get the <a href="http://www.realtim
 <LI><a href="https://80.lv/articles/world-of-tanks-graphical-update-technical-overview/">World of Tanks: Graphical Update Technical Overview</a>
 <LI><a href="https://godotengine.org/article/godot-3-renderer-design-explained">Godot 3's Renderer Design Explained</a>
 <LI><a href="https://www.gamasutra.com/blogs/PavelZagrebelnyy/20171116/309626/Mud_and_Water_of_SpintiresMudRunner.php">Mud and Water of Spintires: MudRunner</a>
+<LI><a href="https://astralcode.blogspot.com/2018/11/reverse-engineering-rendering-of.html">Reverse engineering the rendering of The Witcher 3</a>
 </UL>
 
 <P>Tom Forsyth gives <a href="https://tomforsyth1000.github.io/blog.wiki.html">his view</a> on renderstate change costs (search "Renderstate change costs").
