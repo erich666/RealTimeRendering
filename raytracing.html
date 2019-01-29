@@ -44,7 +44,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: January 27, 2019
+Last changed: January 29, 2019
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
@@ -76,9 +76,7 @@ Aras Pranckevi&#269;ius has a recent <a href="https://aras-p.info/blog/2018/08/0
 </a>
 For newer articles, I highly recommend <a href="https://www.jendrikillner.com/tags/weekly/">Jendrik Illner's weekly reports</a>. These often contain links to interactive ray tracing articles.
 <P>
-With <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/">Microsoft's announcement of the DXR ray tracing API for DirectX</a> in March 2018 at the <I>Games Developers Conference</I></a>, real-time ray tracing has become synonymous with this effort, along with initiatives in Vulkan <a href="http://on-demand.gputechconf.com/gtc/2018/presentation/s8521-advanced-graphics-extensions-for-vulkan.pdf">such as NVIDIA's</a> (<a href="http://on-demand.gputechconf.com/siggraph/2018/video/sig1826-nuno-subtil-vulkan.html">video here</a>). There are <a href="https://blog.icare3d.org/2018/09/nvidia-turing-vulkanopengl-extensions.html">NVIDIA-specific extensions for Vulkan ray tracing</a> and other features, supported for their Turing architecture. NVIDIA has <a href="https://developer.nvidia.com/vulkan-turing">more information</a> on their developer page. Basic <a href="https://github.com/iOrange/rtxON/tree/Version_2_2">Vulkan ray tracing tutorials</a> are available from one user.
-
-<P>Christoph Schied and many others have released <a href="http://brechpunkt.de/q2vkpt/?fbclid=IwAR3xxHReJSb4TZulhXCEa57wL4pWndJrcNu2sObt0u3ezhlAZhvjRXehkxo">open-source for a fully ray traced</a> version of Quake 2, on Vulkan.
+With Microsoft's announcement of <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/">the DXR ray tracing API for DirectX</a> in March 2018 at the <I>Games Developers Conference</I></a>, real-time ray tracing has become synonymous with this effort, along with initiatives in Vulkan <a href="http://on-demand.gputechconf.com/gtc/2018/presentation/s8521-advanced-graphics-extensions-for-vulkan.pdf">such as NVIDIA's</a> (<a href="http://on-demand.gputechconf.com/siggraph/2018/video/sig1826-nuno-subtil-vulkan.html">video here</a>).
 
 <P>There are other efforts out there, such as <a href="https://developer.apple.com/documentation/metalperformanceshaders/metal_for_accelerating_ray_tracing">Apple's support for ray tracing</a> in their Metal API.
 
@@ -101,7 +99,18 @@ With <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-mic
 
 <P>NVIDIA's <a href="https://developer.nvidia.com/falcor">Falcor</a> gives access to DXR ray tracing capabilities. Confetti's <a href="https://github.com/ConfettiFX/The-Forge">The Forge</a> supports DXR and much else.
 
-<P>Denoising is critical for real-time DXR performance when using path tracing or other Monte Carlo techniques. <a href="https://cs.dartmouth.edu/~wjarosz/publications/zwicker15star.html">Zwicker et al.</a> give a state of the art report about this area; note that it is from 2015, however, so is not fully up to date.
+<P>Denoising is critical for real-time DXR performance when using path tracing or other Monte Carlo techniques. <a href="https://cs.dartmouth.edu/~wjarosz/publications/zwicker15star.html">Zwicker et al.</a> give a state of the art report about this area; note that it is from 2015, however, so is not fully up to date. Intel provides free code in their <a href="https://openimagedenoise.github.io/">Open Image Denoise</a>filter collection.
+
+<a NAME="vulkan">
+<H2 class="subHeader">Vulkan-Specific</H2>
+</a>
+
+NVIDIA has an <a href="https://devblogs.nvidia.com/vulkan-raytracing/">introductory article to ray tracing in Vulkan</a>, using their extensions. There's a bit more information about <a href="https://blog.icare3d.org/2018/09/nvidia-turing-vulkanopengl-extensions.html">these extensions</a> and other features, supported for their Turing architecture. NVIDIA has <a href="https://developer.nvidia.com/vulkan-turing">still more information</a> on their developer page.
+
+<P>
+Basic <a href="https://github.com/iOrange/rtxON/tree/Version_2_2">Vulkan ray tracing tutorials</a> with code are available from one user.
+
+<P>Christoph Schied and many others have released <a href="http://brechpunkt.de/q2vkpt/?fbclid=IwAR3xxHReJSb4TZulhXCEa57wL4pWndJrcNu2sObt0u3ezhlAZhvjRXehkxo">open-source for a fully ray traced</a> version of Quake 2, on Vulkan.
 
 
 <a NAME="interactive">
@@ -122,7 +131,7 @@ With <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-mic
 
 <P><a href="https://www.keyshot.com/">KeyShot</a> uses ray tracing for all rendering, even when positioning objects and lights in a scene. Nice <a href="https://www.keyshot.com/gallery/">eye candy</a>, too.
 
-<P>Many <a href="https://www.shadertoy.com/results?query=ray">shadertoy demos</a> are based on ray marching or other ray casting techniques run in (often complex) shaders. Mikael Christensen has a <a href="http://blog.hvidtfeldts.net/index.php/2011/08/distance-estimated-3d-fractals-iii-folding-space/">series of articles</a> on modeling surfaces for such rendering.
+<P>Many <a href="https://www.shadertoy.com/results?query=ray">shadertoy demos</a> are based on ray marching or other ray casting techniques run in (often complex) shaders. Mikael Christensen has a <a href="http://blog.hvidtfeldts.net/index.php/2011/08/distance-estimated-3d-fractals-iii-folding-space/">series of articles</a> on modeling surfaces for such rendering. Electric Square provides <a href="https://github.com/ajweeks/RaymarchingWorkshop">a tutorial on ray marching techniques</a>.
 
 <P>Historically, the idea of interactive ray tracing has been around for over thirty years, with the introduction of <a href="http://bitsavers.org/pdf/att/pixel_machine/Pixel_Machine_Brochure_1987.pdf">AT&amp;T's Pixel Machine</a>.
 There have been other (commercially unsuccessful) efforts over the years, such as <a href="https://www.highperformancegraphics.org/wp-content/uploads/2018/Hot3D/HPG2018_RenderDrive.pdf">ART's RenderDrive</a> from 1998, and <a href="https://97da0272-a-62cb3a1a-s-sites.googlegroups.com/site/raytracingcourse/Low%20Power%20Raytracing.pdf?attachauth=ANoY7crjeugQ50Uzms9pM9cF4EvxRtB10sisEHmdImLEEvD1LCd6s2dawXfEbAF9H36TJZR8yjYYSRJ5Vz35tWAJx5ex3vm0tqpCe7Tr2RikDkTCPZN76o7ELnkNcchHJC2d5IbLzBMvkrZ-zWI_nUOPG6PDBCumPeJQIY9OiaD7QAIG2oyIXMJGKLHkxfWK0ZTZHkdsvOHMI4bJHR7YfA-KbirnBnLjbaKeSDKFVbJ5qEylbhSQ_uY%3D&attredirects=0">Imagination Technologies' mobile (!) offering</a> from 2013.
@@ -271,7 +280,7 @@ entries</a>.
   <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
   <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
 <b><a href="https://smile.amazon.com/gp/product/0122861604?tag=realtimerenderin">An Introduction to Ray Tracing</a></b>, edited by Andrew Glassner, Morgan Kaufmann, 1989.
-<P>The first book on ray tracing. Ancient, but most of the information is still valid - math is math, data structures are data structures. Download the <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf">PDF</a> or <a href="http://www.realtimerendering.com/raytracing/Andrew%20S.%20Glassner%20-%20An%20Introduction%20to%20Ray%20tracing%20(The%20Morgan%20Kaufmann%20Series%20in%20Computer%20Graphics)%20(1989).djvu">DJVU</a> version for free. Andrew Glassner's page on the book <a href="https://www.glassner.com/portfolio/an-introduction-to-ray-tracing/">here</a>, Errata page for first printing <a href="an_intro_to_rt-errata.html">here</a> (all errata are corrected in the PDF and DJVU versions).
+<P>The first book on ray tracing. Ancient, but most of the information is still valid - math is math, data structures are data structures. Download the <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf">PDF</a> or <a href="http://www.realtimerendering.com/raytracing/Andrew%20S.%20Glassner%20-%20An%20Introduction%20to%20Ray%20tracing%20(The%20Morgan%20Kaufmann%20Series%20in%20Computer%20Graphics)%20(1989).djvu">DJVU</a> version for free. Andrew Glassner's page on the book <a href="https://www.glassner.com/portfolio/an-introduction-to-ray-tracing/">here</a>, Errata page for first printing <a href="an_intro_to_rt-errata.html">here</a> (all errata are corrected in the PDF and DJVU versions), and review by Matt Pharr <a href="https://pharr.org/matt/blog/2019/01/26/an-introduction-to-ray-tracing.html">here</a>.
 </td></tr>
 
 
