@@ -44,7 +44,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: January 29, 2019
+Last changed: February 10, 2019
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
@@ -88,7 +88,7 @@ With Microsoft's announcement of <a href="https://blogs.msdn.microsoft.com/direc
 
 <P>There have been <a href="https://www.youtube.com/results?search_query=dxr+ray+tracing">many recent videos</a> about DXR effects and demos. SEED's <a href="https://www.youtube.com/watch?v=LXo0WdlELJk">Pica Pica</a> demo gives a quick runthrough of some possible effects and their benefits. Digital Foundry's <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns">runthrough of <I>Battlefield V</I></a> has fairly detailed explanations of effects and how they were done with DXR, though one or two things appear incorrect, e.g., <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns&feature=youtu.be&t=669">BVH varying with image resolution</a>. You can read <a href="https://www.eurogamer.net/articles/digitalfoundry-2018-battlefield-5-rtx-ray-tracing-analysis">an analysis and Q&amp;A here</a>. The <a href="https://youtu.be/1IIiQZw_p_E">Atomic Age explanation</a> is short and sweet, and is particularly good at showing <a href="https://youtu.be/1IIiQZw_p_E?t=123">the limitations of screen-space reflections</a>.
 
-<P>DXR implies GPU hardware dedicated to improving ray tracing performance, such as <a href="https://developer.nvidia.com/rtx/raytracing">NVIDIA's RTX</a>. However, for simpler scenes, or for powerful clusters of machines, interactive ray tracing is possible using traditional CPUs or less-specialize GPUs.
+<P>DXR implies GPU hardware dedicated to improving ray tracing performance, such as <a href="https://developer.nvidia.com/rtx/raytracing">NVIDIA's RTX</a>. However, for simpler scenes, or for powerful clusters of machines, interactive ray tracing is possible using traditional CPUs or less-specialize GPUs. 3Dmark's <a href="https://www.nvidia.com/en-us/geforce/news/nvidia-dlss-3dmark-port-royal-benchmark/">Port Royal benchmark</a> is designed for interactive ray tracing.
 
 <P>The SIGGRAPH 2018 course <I>Introduction to DirectX RayTracing</I> has <a href="http://intro-to-dxr.cwyman.org/">notes and sample code available</a>, as well as much other useful information for getting started with DXR shaders. You can <a href="https://youtu.be/Q1cuuepVNoY">watch the entire course</a> on YouTube. This code has been <a href="https://github.com/NVIDIAGameWorks/GettingStartedWithRTXRayTracing">polished and expanded</a>, and blogged about <a href="https://devblogs.nvidia.com/my-first-ray-tracing-demo/">here</a>. NVIDIA's <a href="https://www.nvidia.com/en-us/events/siggraph/schedule/?session-type=course">Wednesday SIGGRAPH courses</a> have more recorded presentations on real-time ray tracing.
 
@@ -99,7 +99,7 @@ With Microsoft's announcement of <a href="https://blogs.msdn.microsoft.com/direc
 
 <P>NVIDIA's <a href="https://developer.nvidia.com/falcor">Falcor</a> gives access to DXR ray tracing capabilities. Confetti's <a href="https://github.com/ConfettiFX/The-Forge">The Forge</a> supports DXR and much else.
 
-<P>Denoising is critical for real-time DXR performance when using path tracing or other Monte Carlo techniques. <a href="https://cs.dartmouth.edu/~wjarosz/publications/zwicker15star.html">Zwicker et al.</a> give a state of the art report about this area; note that it is from 2015, however, so is not fully up to date. Intel provides free code in their <a href="https://openimagedenoise.github.io/">Open Image Denoise</a>filter collection.
+<P>Denoising is critical for real-time DXR performance when using path tracing or other Monte Carlo techniques. <a href="https://cs.dartmouth.edu/~wjarosz/publications/zwicker15star.html">Zwicker et al.</a> give a state of the art report about this area; note that it is from 2015, however, so is not fully up to date. Intel provides free code in their <a href="https://openimagedenoise.github.io/">Open Image Denoise</a> filter collection.
 
 <a NAME="vulkan">
 <H2 class="subHeader">Vulkan-Specific</H2>
@@ -179,14 +179,14 @@ Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter o
 <a NAME="upcoming">
 <H2 class="subHeader">Upcoming</H2>
 </a>
-Books that have not been released yet.
+Books to be released, or being released as we speak.
 <P>
 <div id="books-small-table">
 <table>
 <tr><td>
-<img src="AmazonImages/NoCover50.jpg" alt="cover" height="50" align=left border=0>
+<a href="http://raytracinggems.com"><img src="AmazonImages/RTG_50.jpg" alt="cover" height="50" align=left border=0></a>
 <img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
-<a href="http://raytracinggems.com"><b>Ray Tracing Gems</b></a>, edited by Eric Haines and Tomas Akenine-M&ouml;ller, APress, March 2019 (<a href="http://raytracinggems.com">Table of Contents</a>).
+<a href="http://raytracinggems.com"><b>Ray Tracing Gems</b></a>, edited by Eric Haines and Tomas Akenine-M&ouml;ller, <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">Apress</a>, March 2019 (<a href="http://raytracinggems.com">Table of Contents</a>, <a href="https://news.developer.nvidia.com/the-authoritative-book-on-real-time-ray-tracing-has-arrived">download preprints</a> (free; requires login, <a href="https://developer.nvidia.com/books/raytracing/raytracing_gems_preview">direct link to PDFs</a>), <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">publisher's page</a>, <a href="https://www.amazon.com/Ray-Tracing-Gems-High-Quality-Real-Time/dp/1484244265?tag=realtimerenderin">Amazon</a>).
 </td></tr>
 </table>
 

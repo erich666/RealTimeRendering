@@ -42,7 +42,7 @@
 <div class="bodyText"> 
  
 <div class="metadata"> 
-Last changed: January 4, 2019
+Last changed: February 11, 2019
 </div> 
  
 <br> 
@@ -64,7 +64,8 @@ S&eacute;bastien Hillaire (4th).
 <P>Significant errors:
 <UL>
 <LI>Pages 16 through 26: change "unit cube" in numerous places, since the cube is 2x2x2, not 1x1x1. What to change it to, I'm not sure. The phrase "canonical view volume" is what this phrase stands for. Maybe "canonical cube" or we could dub it the "standard cube."(This error has been in all four editions, and is one that early versions of the OpenGL Red Book also makes.)*
-<LI>Page 67: There is a sign error in the view vector. Change "and $\mb v$ with $(0,0,1)$" to "and $\mb v$ with $(0,0,-1)$". In the left matrix that follows, change "v_x & v_y & v_z & 0" to "-v_x & -v_y & -v_z & 0". In the right matrix, change "v_x & v_y & v_z & -\mb t\cdot\mb v" to "-v_x & -v_y & -v_z & \mb t\cdot\mb v".
+<LI>Page 67: There is a sign error in the view vector. Change "and $\mb v$ with $(0,0,1)$" to "and $\mb v$ with $(0,0,-1)$". In the left matrix that follows, change "v_x & v_y & v_z & 0" to "-v_x & -v_y & -v_z & 0". In the right matrix, change "v_x & v_y & v_z & -\mb t\cdot\mb v" to "-v_x & -v_y & -v_z & \mb t\cdot\mb v".\
+<LI>Page 214: Equation 6.16, the second component of the normal should be "h_y", not "h_x".
 <LI>Page 242: "by slicing it parallel to the view direction" to "by slicing it perpendicular to the view direction".
 <LI>Page 256: "Called an exponential shadow map (ESM) or exponential variance shadow map (EVSM)" - remove "or exponential variance shadow map (EVSM)".
 <LI>Page 256: "compares this new approach with ESM", change to "compares this new approach with another method, the exponential variance shadow map (EVSM)".
@@ -80,6 +81,9 @@ S&eacute;bastien Hillaire (4th).
 
 <P>Minor errors:
 <UL>
+<LI>Page 21: The end of sentence "where $d$ is the discrete (integer) index of the pixel and $c$ is the
+continuous (floating point) value within the pixel" should have the reference "~\cite{Heckbert90a}." - this is reference #692, "What Are the Coordinates of a Pixel?"
+<LI>Page 22: in Figure 2.8 it says "pixel processing and merging" in the caption, but should say "pixel shading and merging" in order to match the functional stage name.
 <LI>Page 72: "we have a gimbal lock (Section 4.2.2)," - self-reference; remove entire phrase.
 <LI>Page 128: "likely to have lower register occupancy" to "likely to have lower register usage".
 <LI>Page 131: "goal of this sampling process is" - unexpected line break.
@@ -100,6 +104,7 @@ S&eacute;bastien Hillaire (4th).
 <LI>Page 830: "not considered to contribute" to "considered to not contribute".
 <LI>Page 910: "Clarberg et al. [271] present hardware extensions..." The rest of this paragraph should follow the next paragraph, "Andersson et al.", (as a separate paragraph), instead of preceding it.
 <LI>Page 970: nine lines down, "curves!B&eacute;zier" should not be visible; it was a poorly-formatted index entry.
+<LI>Page 999: Figure 23.5 - replace angle "a" with "\alpha", to match the text that follows.
 <LI>Page 1054: Reference 68, a new edition of this book has appeared, and the chapter is now Chapter 35. The editors and full title are:
     Dinesh P. Mehta and Sartaj Sahni, eds., <i>Handbook of Data Structures and Applications</i>, Second Edition, Chapman and Hall/CRC Press, 2018.
 <LI>Page 1061: Reference 199, "The Art and Science of Digital Compositing" is now in a second edition, 2008.
@@ -148,6 +153,9 @@ S&eacute;bastien Hillaire (4th).
 <LI>Page 874: Figure 19.46 could include a reference to <a href="http://hhoppe.com/proj/geomclipmap/">Losasso et al.</a> or the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=52336">program itself</a>.*
 <LI>Page 889: Figure 20.3, "As can be seen, anything" to "Any values".
 <LI>Page 915: Figure 21.1, the first two images are the tiniest bit from the top edge, the last the tiniest bit from the bottom edge.
+<LI>Page 931: "Our eyes have a field of view for binocular vision (where both eyes can see the same object) of
+114 horizontal degrees." to "Our eyes have a horizontal field of view for binocular vision (where both eyes can see the same object) of 114 degrees."
+<LI>Page 985: "frustum sides planes" to "frustum sides' planes".
 <LI>Page 1021: Figure 23.17, the right edge of the figure is clipped.
 <LI>Page 1032: Figure 23.25, the two top bars should be widened on the left a tiny bit, so that they align with the left edges of the mem. controllers (as they are on the right).
 <LI>Page 1051: Reference 15, add pages "pp.~145-149".
@@ -181,9 +189,9 @@ S&eacute;bastien Hillaire (4th).
 <LI>Page 1153: Reference 1950, the title has (inconsistent) capitalization, and should be "Ray Tracing Dynamic Scenes using Selective Restructuring"; the conference should be "{\em EGSR Proceedings of the 18th Eurographics Conference on Rendering Techniques}"
 </UL>
 
-<P> Errors followed by a "*" have not been fixed internally yet and are likely to be deferred until a future fifth edition (no, none is planned right now), as they could affect pagination. Otherwise, fixes are in place in online materials (e.g., references and figures)
+<P> Errors followed by a "*" have not been fixed internally yet and are likely to be deferred until a future fifth edition (no, none is planned right now), as they could affect pagination. Otherwise, fixes are in place in online materials (e.g., references and figures) and will be in future printings, as possible.
 
-<P><I>Thanks to Evgenii Golubev, Alex Yang, Doug Richardson, and others for reporting errors.</I>
+<P><I>Thanks to Evgenii Golubev, Alex Yang, Doug Richardson, Mick Charles Beaver, and others for reporting errors.</I>
 
 
  
