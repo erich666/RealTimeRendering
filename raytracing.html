@@ -44,7 +44,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: February 10, 2019
+Last changed: April 11, 2019
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
@@ -53,6 +53,8 @@ Last changed: February 10, 2019
 <a NAME="basics">
 <H1 class="subHeader">Basics</H2>
 </a>
+First, the <a href="https://www.youtube.com/watch?v=frLwRLS_ZR0">Disney video on path tracing</a> gives an intuitive sense of how this algorithm works. Its 50's style is a treat.
+<P>
 <a href="#books">Peter Shirley's free books</a> are a fast and free way to dig into the topic and learn by coding; there's even <a href="https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/">a CUDA</a> (and <a href="https://github.com/biroeniko/raytracer">another CUDA (and OpenMP)</a>) and <a ref="https://github.com/ingowald/RTOW-OptiX">OptiX</a> (and <a href="https://joaovbs96.github.io/optix/2019/01/12/rest-life.html">another OptiX</a>) implementation. 
 Other short tutorials can be found at <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel</a>.
 Morgan McGuire's <a href="https://graphicscodex.com/">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets. There are plenty of more books, some now free, listed in <a href="#books">our books section</a>, with <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Kevin Suffern's book</a> being a slightly-dated but good choice for a more in-depth introductory book focused on the topic.
@@ -75,18 +77,27 @@ Aras Pranckevi&#269;ius has a recent <a href="https://aras-p.info/blog/2018/08/0
 <H1 class="subHeader">Real-Time</H2>
 </a>
 For newer articles, I highly recommend <a href="https://www.jendrikillner.com/tags/weekly/">Jendrik Illner's weekly reports</a>. These often contain links to interactive ray tracing articles.
+
+<P>Talks from <a href="https://www.gdcvault.com/search.php#&category=free&firstfocus=&keyword=ray+tracing&conference_id=">GDC 2019</a> and <a href="https://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=ray%20tracing&searchItems=&sessionTopic=&sessionEvent=&sessionYear=&sessionFormat=&submit=&select=">GTC 2019</a> are available for viewing and download.
 <P>
 With Microsoft's announcement of <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/">the DXR ray tracing API for DirectX</a> in March 2018 at the <I>Games Developers Conference</I></a>, real-time ray tracing has become synonymous with this effort, along with initiatives in Vulkan <a href="http://on-demand.gputechconf.com/gtc/2018/presentation/s8521-advanced-graphics-extensions-for-vulkan.pdf">such as NVIDIA's</a> (<a href="http://on-demand.gputechconf.com/siggraph/2018/video/sig1826-nuno-subtil-vulkan.html">video here</a>).
+NVIDIA has <a href="https://developer.nvidia.com/rtx/raytracing">much other information</a>.
 
 <P>There are other efforts out there, such as <a href="https://developer.apple.com/documentation/metalperformanceshaders/metal_for_accelerating_ray_tracing">Apple's support for ray tracing</a> in their Metal API.
+
+<P>Unreal Engine 4.22 <a href="https://www.unrealengine.com/en-US/blog/4-22-preview-1-now-available">includes ray tracing support</a>. The <a href="https://www.unrealengine.com/en-US/tech-blog/unreal-engine-gdc-2019-tech-talks-now-available-online">Ray Tracing in Unreal</a> talk from GDC 2019 covers the new features (though <a href="https://www.unrealengine.com/en-US/blog/troll-showcases-unreal-engine-4-22-ray-tracing-with-unprecedented-cinematic-quality-lighting">go here to watch the Troll demo</a>).
+
+<P>Eye candy includes the <a href="https://www.youtube.com/watch?v=lMSuGoYcT3s">Star Wars demo</a> from GDC 2018, the <a href="https://www.youtube.com/watch?time_continue=3&v=Z85aPqqJzs0">Porsche demo</a>, and NVIDIA's <a href="https://www.youtube.com/watch?v=KJRZTkttgLw">Project SOL demo</a> and <a href="https://youtu.be/pNmhJx8yPLk">followup</a>, which includes an explanation.
 
 <a NAME="dxr">
 <H2 class="subHeader">DXR-Specific</H2>
 </a>
 
+<P>A <a href="https://devblogs.nvidia.com/rtx-best-practices/">best practices page</a> was developed by NVIDIA for running DXR on RTX hardware. Freshness date: March 20, 2019.
+
 <P><a href="http://www.realtimerendering.com/blog/ray-tracing-at-gdc/">Our blog entry</a> on DXR contains a large set of links to resources, demos, and related articles that came out around or soon after GDC 2018.
 
-<P>There have been <a href="https://www.youtube.com/results?search_query=dxr+ray+tracing">many recent videos</a> about DXR effects and demos. SEED's <a href="https://www.youtube.com/watch?v=LXo0WdlELJk">Pica Pica</a> demo gives a quick runthrough of some possible effects and their benefits. Digital Foundry's <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns">runthrough of <I>Battlefield V</I></a> has fairly detailed explanations of effects and how they were done with DXR, though one or two things appear incorrect, e.g., <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns&feature=youtu.be&t=669">BVH varying with image resolution</a>. You can read <a href="https://www.eurogamer.net/articles/digitalfoundry-2018-battlefield-5-rtx-ray-tracing-analysis">an analysis and Q&amp;A here</a>. The <a href="https://youtu.be/1IIiQZw_p_E">Atomic Age explanation</a> is short and sweet, and is particularly good at showing <a href="https://youtu.be/1IIiQZw_p_E?t=123">the limitations of screen-space reflections</a>.
+<P>There have been <a href="https://www.youtube.com/results?search_query=dxr+ray+tracing">many videos</a> about DXR effects and demos. SEED's <a href="https://www.youtube.com/watch?v=LXo0WdlELJk">Pica Pica</a> demo gives a quick runthrough of some possible effects and their benefits. Digital Foundry's <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns">runthrough of <I>Battlefield V</I></a> has fairly detailed explanations of effects and how they were done with DXR, though one or two things appear incorrect, e.g., <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns&feature=youtu.be&t=669">BVH varying with image resolution</a>. You can read <a href="https://www.eurogamer.net/articles/digitalfoundry-2018-battlefield-5-rtx-ray-tracing-analysis">an analysis and Q&amp;A here</a>. The <a href="https://youtu.be/1IIiQZw_p_E">Atomic Age explanation</a> is short and sweet, and is particularly good at showing <a href="https://youtu.be/1IIiQZw_p_E?t=123">the limitations of screen-space reflections</a>. Metro Exodus use of ray tracing has a significant effect on the atmosphere of the game; you can <a href="https://www.overclock3d.net/reviews/software/metro_exodus_pc_performance_review_-_rtx_on/7">use a slider to compare</a> the differences yourself. Read about <a href="https://www.eurogamer.net/articles/digitalfoundry-2019-metro-exodus-tech-interview">Metro Exodus's use of ray tracing</a> and other features, and see <a href="https://youtu.be/eiQv32imK2g?t=722">Digital Foundry's video</a>.
 
 <P>DXR implies GPU hardware dedicated to improving ray tracing performance, such as <a href="https://developer.nvidia.com/rtx/raytracing">NVIDIA's RTX</a>. However, for simpler scenes, or for powerful clusters of machines, interactive ray tracing is possible using traditional CPUs or less-specialize GPUs. 3Dmark's <a href="https://www.nvidia.com/en-us/geforce/news/nvidia-dlss-3dmark-port-royal-benchmark/">Port Royal benchmark</a> is designed for interactive ray tracing.
 
@@ -94,10 +105,11 @@ With Microsoft's announcement of <a href="https://blogs.msdn.microsoft.com/direc
 
 <P>Microsoft provides a set of <a href="https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12Raytracing">D3D12 Raytracing Samples</a>. NVIDIA has tutorials <a href="https://github.com/NVIDIAGameWorks/DxrTutorials">on Github</a> for learning about more low-level DXR calls. They also provide <a href="https://developer.nvidia.com/rtx/raytracing/dxr/DX12-Raytracing-tutorial-Part-1">a standalone tutorial</a>.
 
-<P>The DXR 0.09 Functional Spec is <a href="https://github.com/ConfettiFX/The-Forge/blob/master/CommonRaytracing_3/ThirdParty/DXR/doc/D3D12%20Raytracing%20Functional%20Spec.docx">available here</a> and <a href="http://intro-to-dxr.cwyman.org/spec/DXR_FunctionalSpec_v0.09.docx">here</a> without having to sign up to be a developer. Adam Marrs gives <a href="https://github.com/acmarrs/IntroToDXR">a pure DXR tutorial<a href="https://github.com/NVIDIAGameWorks/GettingStartedWithRTXRayTracing"> to allow you to get right into the specification.
+<P>The DXR 0.09 Functional Spec is <a href="https://github.com/ConfettiFX/The-Forge/blob/master/CommonRaytracing_3/ThirdParty/DXR/doc/D3D12%20Raytracing%20Functional%20Spec.docx">available here</a> and <a href="http://intro-to-dxr.cwyman.org/spec/DXR_FunctionalSpec_v0.09.docx">here</a> without having to sign up to be a developer. Adam Marrs gives <a href="https://github.com/acmarrs/IntroToDXR">a pure DXR tutorial<a href="https://github.com/NVIDIAGameWorks/GettingStartedWithRTXRayTracing"> to allow you to get right into the specification. One project built atop this framework is <a href="https://github.com/boksajak/RTAO">ray-traced ambient occlusion</a>.
 
+<P>NVIDIA has a <a href="https://devblogs.nvidia.com/rtx-best-practices/">best practices</a> summary for DXR.
 
-<P>NVIDIA's <a href="https://developer.nvidia.com/falcor">Falcor</a> gives access to DXR ray tracing capabilities. Confetti's <a href="https://github.com/ConfettiFX/The-Forge">The Forge</a> supports DXR and much else.
+<P>NVIDIA's <a href="https://developer.nvidia.com/falcor">Falcor</a> framework gives access to DXR ray tracing capabilities at a higher level. Confetti's <a href="https://github.com/ConfettiFX/The-Forge">The Forge</a> supports DXR and much else.
 
 <P>Denoising is critical for real-time DXR performance when using path tracing or other Monte Carlo techniques. <a href="https://cs.dartmouth.edu/~wjarosz/publications/zwicker15star.html">Zwicker et al.</a> give a state of the art report about this area; note that it is from 2015, however, so is not fully up to date. Intel provides free code in their <a href="https://openimagedenoise.github.io/">Open Image Denoise</a> filter collection.
 
@@ -135,6 +147,8 @@ Basic <a href="https://github.com/iOrange/rtxON/tree/Version_2_2">Vulkan ray tra
 
 <P>Historically, the idea of interactive ray tracing has been around for over thirty years, with the introduction of <a href="http://bitsavers.org/pdf/att/pixel_machine/Pixel_Machine_Brochure_1987.pdf">AT&amp;T's Pixel Machine</a>.
 There have been other (commercially unsuccessful) efforts over the years, such as <a href="https://www.highperformancegraphics.org/wp-content/uploads/2018/Hot3D/HPG2018_RenderDrive.pdf">ART's RenderDrive</a> from 1998, and <a href="https://97da0272-a-62cb3a1a-s-sites.googlegroups.com/site/raytracingcourse/Low%20Power%20Raytracing.pdf?attachauth=ANoY7crjeugQ50Uzms9pM9cF4EvxRtB10sisEHmdImLEEvD1LCd6s2dawXfEbAF9H36TJZR8yjYYSRJ5Vz35tWAJx5ex3vm0tqpCe7Tr2RikDkTCPZN76o7ELnkNcchHJC2d5IbLzBMvkrZ-zWI_nUOPG6PDBCumPeJQIY9OiaD7QAIG2oyIXMJGKLHkxfWK0ZTZHkdsvOHMI4bJHR7YfA-KbirnBnLjbaKeSDKFVbJ5qEylbhSQ_uY%3D&attredirects=0">Imagination Technologies' mobile (!) offering</a> from 2013.
+
+<P>Baking global illumination into models is a common use of ray tracing. One company notes <a href="https://blogs.nvidia.com/blog/2019/02/11/titan-rtx-brings-high-quality-images-to-gameplay-design/">a 50x speed-up in bake time</a> - from 14 minutes down to 16 seconds - in moving from a CPU to GPU baking system.
 
 <P>
 The <a href="https://en.wikipedia.org/wiki/Demoscene">demoscene</a> has had simple <a href="http://www.realtimerendering.com/resources/RTNews/demos/overview.htm">interactive ray traced demos</a> since 1995.
@@ -176,25 +190,18 @@ There's even a path tracer <a href="https://chunky.llbit.se/">specifically for r
 </a>
 Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter on interactive ray tracing</a> is just a starting spot, and
 <a href="index.html">our book</a> has but a few more pages on ray tracing.
-<a NAME="upcoming">
-<H2 class="subHeader">Upcoming</H2>
-</a>
-Books to be released, or being released as we speak.
-<P>
-<div id="books-small-table">
+
+<P>What follows are books focused on the subject of ray tracing and related algorithms, in reverse year order of the latest edition.
 <table>
+
 <tr><td>
 <a href="http://raytracinggems.com"><img src="AmazonImages/RTG_50.jpg" alt="cover" height="50" align=left border=0></a>
-<img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
-<a href="http://raytracinggems.com"><b>Ray Tracing Gems</b></a>, edited by Eric Haines and Tomas Akenine-M&ouml;ller, <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">Apress</a>, March 2019 (<a href="http://raytracinggems.com">Table of Contents</a>, <a href="https://news.developer.nvidia.com/the-authoritative-book-on-real-time-ray-tracing-has-arrived">download preprints</a> (free; requires login, <a href="https://developer.nvidia.com/books/raytracing/raytracing_gems_preview">direct link to PDFs</a>), <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">publisher's page</a>, <a href="https://www.amazon.com/Ray-Tracing-Gems-High-Quality-Real-Time/dp/1484244265?tag=realtimerenderin">Amazon</a>).
+	<img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
+	<a href="http://raytracinggems.com"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
+	<img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
+<a href="http://raytracinggems.com"><b>Ray Tracing Gems</b></a>, edited by Eric Haines and Tomas Akenine-M&ouml;ller, <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">Apress</a>, March 2019 (<a href="http://raytracinggems.com">Book's website</a>, <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">publisher's page</a>, <a href="https://smile.amazon.com/Ray-Tracing-Gems-High-Quality-Real-Time/dp/1484244265?tag=realtimerenderin">Amazon</a>).
+<P>A gems-style collection, one focused on techniques for serious practitioners, helping fill the gap between guides on the basics and research literature.
 </td></tr>
-</table>
-
-<a NAME="books">
-<H2 class="subHeader">Released</H2>
-</a>
-<P>These are books still in print focused on the subject of ray tracing and related algorithms, in year order of the latest edition.
-<table>
 
 <tr><td>
 <a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin"><img src="AmazonImages/518R06K3wgL._SL50_.jpg" alt="cover" height="50" align=left border=0></a>
@@ -266,7 +273,7 @@ entries</a>.
 
 <tr><td>
   <a href="http://smile.amazon.com/exec/obidos/ASIN/1558602763?tag=realtimerenderin"><img src="AmazonImages/41NJZBE31HL._SL50_.jpg" alt="cover" height="50" align=left border=0></a>
-  <img src="spacer.gif" alt="" height="50" width="6" align=left border=0>
+  <img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
   <a href="http://realtimerendering.com/Principles_of_Digital_Image_Synthesis_v1.0.1.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
   <img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
   <b><a href="http://smile.amazon.com/Principles-Synthesis-Kaufmann-Computer-Graphics/dp/1558602763?tag=realtimerenderin">Principles of Digital Image Synthesis</a></b>, by Andrew S. Glassner, Morgan Kaufmann, 1995: <b><i><a href="http://realtimerendering.com/Principles_of_Digital_Image_Synthesis_v1.0.1.pdf">download for free</a></i></b>.
@@ -280,7 +287,7 @@ entries</a>.
   <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
   <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
 <b><a href="https://smile.amazon.com/gp/product/0122861604?tag=realtimerenderin">An Introduction to Ray Tracing</a></b>, edited by Andrew Glassner, Morgan Kaufmann, 1989.
-<P>The first book on ray tracing. Ancient, but most of the information is still valid - math is math, data structures are data structures. Download the <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf">PDF</a> or <a href="http://www.realtimerendering.com/raytracing/Andrew%20S.%20Glassner%20-%20An%20Introduction%20to%20Ray%20tracing%20(The%20Morgan%20Kaufmann%20Series%20in%20Computer%20Graphics)%20(1989).djvu">DJVU</a> version for free. Andrew Glassner's page on the book <a href="https://www.glassner.com/portfolio/an-introduction-to-ray-tracing/">here</a>, Errata page for first printing <a href="an_intro_to_rt-errata.html">here</a> (all errata are corrected in the PDF and DJVU versions), and review by Matt Pharr <a href="https://pharr.org/matt/blog/2019/01/26/an-introduction-to-ray-tracing.html">here</a>.
+<P>The first book on ray tracing. Ancient, but most of the information is still valid - math is math, data structures are data structures. Download the <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf">PDF</a> or <a href="http://www.realtimerendering.com/raytracing/Andrew%20S.%20Glassner%20-%20An%20Introduction%20to%20Ray%20tracing%20(The%20Morgan%20Kaufmann%20Series%20in%20Computer%20Graphics)%20(1989).djvu">DJVU</a> version for free. Andrew Glassner's page on the book <a href="https://www.glassner.com/portfolio/an-introduction-to-ray-tracing/">here</a>, errata page for first printing <a href="an_intro_to_rt-errata.html">here</a> (all errata are corrected in the PDF version); review by Matt Pharr <a href="https://pharr.org/matt/blog/2019/01/26/an-introduction-to-ray-tracing.html">here</a>.
 </td></tr>
 
 

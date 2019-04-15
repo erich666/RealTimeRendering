@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <!-- from https://www.w3schools.com/w3css/w3css_templates.asp, the Jane Doe template -->
 <html>
+<head>
 <title>Ray Tracing Gems</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="sphereflake.ico" type="image/x-icon" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,6 +20,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     min-height: 100%;
 }
 </style>
+</head>
 <body>
 
 <!-- Sidebar with image -->
@@ -45,7 +48,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Header -->
   <header class="w3-container w3-left" id="home">
     <h1 class="w3-jumbo"><b>Ray Tracing Gems</b></h1>
-    <p>A book about ray tracing edited by Eric Haines and Tomas Akenine-M&ouml;ller, from <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">Apress</a>.</p>
+    <p>edited by Eric Haines and Tomas Akenine-M&ouml;ller, from <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">Apress</a>.</p>
   </header>
 
   <!-- About Section -->
@@ -53,11 +56,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div>
     <h2>About</h2>
     <hr class="w3-opacity">
-    <p>This is a book in development, with this page pointing at relevant resources.
-	<a href="https://news.developer.nvidia.com/the-authoritative-book-on-real-time-ray-tracing-has-arrived">Preprints of the book's contents</a> are now available; you need to login (it's a free account) - <a href="https://developer.nvidia.com/books/raytracing/raytracing_gems_preview">direct link to preprint PDFs</a>.
-	You can visit the <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">Apress</a> or <a href="https://www.amazon.com/Ray-Tracing-Gems-High-Quality-Real-Time/dp/1484244265?tag=realtimerenderin">Amazon</a> pages to order the hardcover book (note: the electronic version will be free).
-	The hardcover is scheduled for mid-March, though we expect individual chapters to be available electronically before then. In the meantime, we've <a href="http://www.realtimerendering.com/raytracing.html">collected some ray tracing resources</a> to tide you over.
-    </p>
+	<P>This book is a collection of articles focused on ray tracing techniques for serious practitioners. Like other "gems" books, it focuses on subjects commonly considered too advanced for introductory texts, yet rarely addressed by research papers.
+    <p>The electronic version of this books is free to download, and can be shared under the terms of the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>. We link to two versions:
+	<UL>
+	<LI><b><a href="https://link.springer.com/book/10.1007/978-1-4842-4427-2">The original Apress download page</a></b>. This site links to the PDF of the printed book and PDFs for individual articles, and the book can be searched without any downloading.
+	<LI><b><a href="http://raytracinggems.com/unofficial_RayTracingGems_v1.4.pdf">Unofficial PDF with errata corrected</a></b>. The book is under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">this Open Access license</a>, so we have produced an unofficial, updated PDF version with <a href="https://github.com/Apress/ray-tracing-gems/blob/master/errata.md">all errata</a> corrected in it. The title page has a explanation on the second page and a note of "version 1.4, 3/25/2019."
+	</UL>
+	<P>A free <a href="http://smile.amazon.com/dp/B07P5QV1Z5?tag=realtimerenderin">Kindle version of the book</a> is available (<a href="http://www.amazon.co.uk/dp/B07P5QV1Z5">UK</a>; <a href="http://www.amazon.de/dp/B07P5QV1Z5">Germany</a>).
+	<P>
+	The book has a <a href="https://github.com/Apress/ray-tracing-gems">code repository</a> and <a href="https://github.com/Apress/ray-tracing-gems/blob/master/errata.md">errata page</a>. 
+	<P>
+	To order the hardback edition you can visit <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">Apress</a> or <a href="https://smile.amazon.com/Ray-Tracing-Gems-High-Quality-Real-Time/dp/1484244265?tag=realtimerenderin">Amazon</a>. This version is expected to be available in mid- to late May.
+	<P>
+	This book is not focused on the basics, as there are <a href="http://www.realtimerendering.com/raytracing.html#books">many wonderful books on ray tracing</a>, including a few that are free. We have also  
+	<a href="http://www.realtimerendering.com/raytracing.html">collected together some ray tracing resources</a>.
+    <p>
+	The talk at GDC 2019 running through the book's contents is <a href="https://www.gdcvault.com/search.php#&category=free&firstfocus=&keyword=ray+tracing%2Bgems&conference_id=">viewable for free here</a>.
     
     <h3 class="w3-padding-16">Table of Contents</h3>
     <UL>
@@ -155,7 +169,7 @@ Jasper Bekkers, Tomasz Stachowiak, and Johan Andersson
     <div>
 	<P>
 	Image on left from <a href="https://twitter.com/NVIDIAGameDev/status/1002605553124892672">NVIDIA Game Dev</a> by Alexia Rubod.<P>
-	<i>Page last updated February 8, 2019</i>
+	<i>Page last updated April 11, 2019</i>
 
 
 	</div>
