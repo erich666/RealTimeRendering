@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SIGGRAPH 2019 Ray Tracing Roundup</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="sphereflake.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.metadata {
+	font-size: 0.8em;
+	color: #808080; 
+	}
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div> 
+<H1>SIGGRAPH 2019 Ray Tracing Roundup</H1>
+<div class="metadata">
+Last changed: July 12, 2019
+</div>
+<P>
+This page is a collection of events at SIGGRAPH about ray &amp; path tracing and closely-related topics, such as sampling. Please <a href="mailto:erich@acm.org">let me know</a> of anything to fix or to add.
+<P>
+The short link to this page: <B><a href="http://bit.ly/rtrt2019">http://bit.ly/rtrt2019</a></B>
+<P>
+BTW, here's a link to the (hard for me to find) <a href="https://s2019.siggraph.org/full-program/">SIGGRAPH 2019 Full Program page</a>.
+
+<H2>Sunday, July 28, 2019</H2>
+
+<B>Sunday 9am - 12:15pm, Room 152,</b> SIGGRAPH Course: <b><a href="https://s2019.siggraph.org/presentation/?id=gensub_126&sess=sess188">Are We Done with Ray Tracing?</a></b>
+<BR>
+Description:
+This course will take a look at how far out the future of ray tracing is, review the state of the art, and identify the current challenges for research. Not surprisingly, it looks like we are not done with ray tracing yet. (<a href="siggraph2019/Are_We_Done_with_Raytracing.pdf">extended abstract</a>)
+<UL>
+<LI>9:00 - Are we done with Ray Tracing? Alexander Keller, NVIDIA
+<LI>9:40 - Acceleration Data Structure Hardware, Timo Viitanen, NVIDIA
+<LI>10:15 - Game Ray Tracing: State of the Art, Colin Barré-Brisebois, Electronic Arts
+<LI>break
+<LI>11:05 - Reconstruction for Real-Time Path Tracing, Christoph Schied, Facebook Reality Labs
+<LI>11:40 - From Rasterization to Ray Tracing, Morgan McGuire, NVIDIA
+</UL>
+
+<P>
+<B>Sunday 2pm - 5:15pm, Room 152,</b> SIGGRAPH Course: <b><a href="https://s2019.siggraph.org/presentation/?id=gensub_170&sess=sess362">Introduction to Real-Time Ray Tracing</a></b> 
+<BR>
+Description:
+We explain how to create real-time ray tracing systems using the latest GPU and CPU acceleration APIs, including DirectX 12 ray tracing. You will learn to implement a simple photorealistic renderer from scratch in C, and then how to ray trace video game scenes in real time on a GPU.
+<UL>
+<LI>Ray Tracing Algorithm, Peter Shirley
+<LI>Making Ray Tracing Interactive, Chris Wyman
+<LI>Refactoring the Ray Tracer for parallel throughput on GPU &amp; CPU, and adding full game/film-quality materials, Morgan McGuire
+</UL>
+
+<P>
+<B>Sunday 2pm - 5:15pm, Room 403AB,</b> SIGGRAPH Course: <b><a href="https://s2019.siggraph.org/presentation/?id=gensub_343&sess=sess203">Path Guiding in Production</a></b>
+<BR>
+Description:
+We share our practical experience with path guiding that we gained from production rendering systems at Weta Digital and the Walt Disney Animation Studios and also from our research in this area. We provide suggestions for important avenues of future research. We also cover introduction to path guiding. (<a href="siggraph2019/Path_Guiding_in_Production.pdf">extended abstract</a>)
+<UL>
+<LI>2:00 — Opening statement and introduction, Jiri Vorba, Weta Digital Ltd.
+<LI>2:15 — Theoretical Background, Jaroslav Krivanek, Charles University, Prague Render Legion
+<LI>2:30 — Bayesian Inference in Many-light Sampling, Jaroslav Krivanek
+<LI>2:45 — Guiding and Shadow Rays, Alexander Keller, NVIDIA
+<LI>3:15 — "Practical Path Guiding" in Production, Thomas Müller, NVIDIA (<a href="https://github.com/tom94/practical-path-guiding">code</a>)
+<LI>3:45 — Break
+<LI>4:00 — Volumetric path guiding, Sebastian Herholz, University of Tubingen
+<LI>4:30 — Guiding in path space, Johannes Hanika, Weta Digital Ltd.
+<LI>5:00 — Open problems and future work, Jiri Vorba, Weta Digital Ltd.
+</UL>
+
+<P>
+<B>Sunday 4:30pm - 5:30pm, Room 309, Los Angeles Convention Center,</b> Birds of a Feather:
+<B><a href="https://s2019.siggraph.org/session/?sess=sess427">Demoscene Worldwide</a></b>
+<BR>
+Description: Demoscene was born in the computer underground, and demos are the product of extreme programming and self-expression. This session reveals the best of new and old-school demoscene. (Some demoscene productions are ray traced/marched/cast, e.g., these 256 byte programs: <a href="https://meatfighter.com/puls/">Puls</a> (<a href="https://www.youtube.com/watch?v=R35UuntQQF8">video</a>), <a href="http://www.pouet.net/prod.php?which=3397">Tube</a> (<a href="https://www.youtube.com/watch?v=f1joQfp78Yo">video</a>), <a href="https://www.reddit.com/r/programming/comments/3lgbsi/yet_another_256_byte_dos_program_but_with_sources/">Megapole (<a href="https://www.youtube.com/watch?v=Z8Av7Sc7yGY">video</a>).)
+
+<H2>Monday, July 29, 2019</H2>
+
+<B>Monday 2pm - 5:15pm, Room 501AB,</b> NVIDIA Presents: <b><a href="https://s2019.siggraph.org/session/?sess=sess394">GPU Ray Tracing for Film and Design</a></b>
+<BR>
+Description:
+Ray-tracing renderers are achieving new levels of interactivity and performance using NVIDIA RTX technology. Come hear about high performance techniques using the OptiX ray tracing API, and see the latest results from some of the leaders in film rendering.
+
+<P>
+<B>Monday 3:30pm - 4:30pm, Room 406B,</b> Intel Exhibitor Session: <b><a href="https://s2019.siggraph.org/session/?sess=sess474">Ray Tracing with Intel Embree and Intel OSPRay: Use Cases and Updates</a></b>
+<BR>
+Description: Speaker: Intel
+
+
+<H2>Tuesday, July 30, 2019</H2>
+
+<B>Tuesday 9am - 10:30am, Room 152,</b> <a href="https://s2019.siggraph.org/conference/programs-events/technical-papers/">SIGGRAPH Technical Papers</a>: <b>Advanced Volume Rendering</b>
+<BR>
+Papers:
+<UL>
+<LI><a href="https://s2019.siggraph.org/presentation/?id=paperstog_113&sess=sess215">Volume Path Guiding Based on Zero-Variance Random Walk Theory</a> (<a href="https://cgg.mff.cuni.cz/~oskar/research.html">preview</a>)
+<LI><a href="https://s2019.siggraph.org/presentation/?id=papers_413&sess=sess215">A Null-Scattering Path Integral Formulation of Light Transport</a> (<a href="https://cs.dartmouth.edu/~wjarosz/publications/miller19null.html">preview</a>)
+<LI><a href="https://s2019.siggraph.org/presentation/?id=papers_435&sess=sess215">Fractional Gaussian Fields for Modeling and Rendering of Spatially-Correlated Media</a> (<a href="https://sites.cs.ucsb.edu/~lingqi/#publications">preview</a>)
+<LI><a href="https://s2019.siggraph.org/presentation/?id=papers_488&sess=sess215">Photon Surfaces for Robust, Unbiased Volumetric Density Estimation</a> (<a href="https://cs.dartmouth.edu/~wjarosz/publications/deng19photon.html">preview</a>)
+</UL>
+
+<P>
+<B>Tuesday 10am - 10:30am, NVIDIA booth #1313,</b> Booth Talk: <B>A Fast Forward through <I>Ray Tracing Gems</I></B>, presenter: Eric Haines, NVIDIA
+<BR>
+Description: The new book "Ray Tracing Gems" (<a href="http://raytracinggems.com">free electronically</a>) is a collection of 32 articles by experts in the field. The first editor will give a rapid-fire run-through of its contents.
+
+<P>
+<B>Tuesday 10:30am - 11am, NVIDIA booth #1313,</b> Booth Talk: <B>Physically Accurate Real-Time Ray Tracing for Automotive Visualization</B>, presenter: Lukas Faeth, Autodesk
+<BR>
+Description: Autodesk VRED is the standard software for visualization in the automotive industry. To visualize, evaluate, and showcase digital car prototypes rendering needs to be highly accurate while fast and flexible enough to support design processes driven by rapid iteration. Lukas Faeth, Product Manager for Automotive Visualization at Autodesk, will talk about why those aspects are critical to their customer`s success and how the new NVIDIA Turing technology helped them to overcome a long-standing technical barrier.
+
+<P>
+<B>Tuesday 10:45am - 12:35pm, Room 153,</b> <a href="https://s2019.siggraph.org/conference/programs-events/technical-papers/">SIGGRAPH Technical Papers</a>: <B>High Performance Rendering</B>
+<BR> 
+First paper:
+<UL>
+<LI><a href="https://s2019.siggraph.org/presentation/?id=paperstog_110&sess=sess214">Blockwise Multi-Order Feature Regression for Real-Time Path Tracing Reconstruction</a> (<a href="http://www.tut.fi/vga/publications/Blockwise_Multi-Order_Feature_Regression_for_Real-Time_Path_Tracing_Reconstruction.html">preview</a>)
+</UL>
+
+<P>
+<B>Tuesday 11am - 12 noon, Room 507, Los Angeles Convention Center,</b> Birds of a Feather:
+<B><a href="https://s2019.siggraph.org/presentation/?id=bof_143&sess=sess521">Ray Tracing Roundtable</a></b>
+<BR>
+Description: This informal BOF is a chance to meet and talk with other developers working with ray and path tracing algorithms. (We used to have these from the late 1980's to 2001 - time to bring it back. 60 person room limit.)
+
+<P>
+<B>Tuesday 11:30am - 12:15pm, Room 404A,</b> Autodesk Exhibitor Session: <b><a href="https://s2019.siggraph.org/session/?sess=sess456">What’s new with Arnold GPU</a></b>
+<BR>
+Description: Arnold 5.3 launched the open beta for Arnold GPU, showcasing the potential of rendering workflows combining GPU and CPU. We’ll share the progress we’ve made on Arnold GPU based on beta feedback, and share real world production examples of the impact of Arnold GPU.
+
+<P>
+<B>Tuesday 1pm - 1:30pm, NVIDIA booth #1313,</b> Booth Talk: <B>An RTX-tra Substance Painter Feature</B>, presenter: Nikie Monteleone, DreamWorks Animation TV
+<BR>
+Description: The Surfacing Artist has always been confronted with adapting texture to their 3D content. While Painter has revolutionized 3D painting, getting all the different textures prepared and "baked" for their asset is still a necessary step before and after getting to the actual painting phase. With RTX and hardware accelerated ray tracing now integrated in Painter, times for baking are dramatically reduced, allowing to quickly iterate between modeling and painting phases, much more design iterations and leaving room for actual artistic creativity instead of waiting for long compute times. Nikie will share her first experience with RTX baking in Substance Painter on actual assets and how it impacts her creative workflow.
+
+<P>
+<B>Tuesday 2pm - 5:15pm, Room 403AB,</b> SIGGRAPH Course: <b><a href="https://s2019.siggraph.org/presentation/?id=gensubcur_122&sess=sess345">Open Problems in Real-Time Rendering</a></b>
+<BR>
+Description:
+This year’s course explores open issues in supporting real-time ray tracing in production real-time engines, delving into the open challenges in engine architecture design, material level of detail, light management, and the open research problems in bringing unified physically-based light transport to real-time applications and games.
+
+<P>
+<B>Tuesday 2pm - 3pm, Room 409A,</b> Chaos Group Exhibitor Session: <b><a href="https://s2019.siggraph.org/session/?sess=sess400">Total Chaos @ SIGGRAPH Creating superheroes the V-Ray way (Digital Domain)</a></b>
+<BR>
+Description:
+2019 marks the debut of Total Chaos @ SIGGRAPH, built off of Chaos Group’s inspirational computer graphics conference held in Sofia earlier this year. 10 talks over two days will reveal insight into this year’s biggest CGI projects from top VFX studios. You'll also learn about the latest V-Ray and Corona updates. <a href="http://chaosgroup.com/siggraph2019">Learn more</a>.
+
+<P>
+<B>Tuesday 2:30pm - 3pm, NVIDIA booth #1313,</b> Booth Talk: <B>Real Time Rendering and Raytracing on the Edge</B>, presenter: Raheel Khalid, Verizon
+<BR>
+Description: Verizon will talk about how they created a real time rendering pipeline and raytracer on the Edge Cloud using 5G, Unreal Engine and Nvidia RTX. These developments are now enabling high end RTX experiences on mobile phones and limited compute devices.  The team will show the rendering pipeline, edge management system and Unreal Engine plugin that brings next generation experiences to customers.
+
+<P>
+<B>Tuesday 3pm - 3:30pm, NVIDIA booth #1313,</b> Booth Talk: <B>The Future of GPU Rendering: Real-Time Raytracing, Holographic Displays and Light Field Media</B>, presenter: Jules Urbach, Otoy
+<BR>
+Description: Verizon will talk about how they created a real time rendering pipeline and raytracer on the Edge Cloud using 5G, Unreal Engine and Nvidia RTX. These developments are now enabling high end RTX experiences on mobile phones and limited compute devices.  The team will show the rendering pipeline, edge management system and Unreal Engine plugin that brings next generation experiences to customers.
+
+<P>
+<B>Tuesday 4pm - 4:30pm, NVIDIA booth #1313,</b> Booth Talk: <B>Adding GPU Acceleration to Pixar Renderman</B>, presenter: Max Liani, Pixar
+<BR>
+Description: We'll discuss photo-realistic rendering in modern movie production and present the path that led us to leverage GPUs and CPUs in a new scalable rendering architecture. Learn about RenderMan XPU, Pixar's next-gen physically based production path tracer, and how we solve the problem of heterogeneous compute using a shared code base. We'll also discuss our partnership with NVIDIA to create the technology to enable art and creativity in future feature animation and live-action visual effects blockbusters.
+
+<P>
+<B>Tuesday 4pm - 5pm, Room 409A,</b> Chaos Group Exhibitor Session: <b><a href="https://s2019.siggraph.org/session/?sess=sess402">Total Chaos @ SIGGRAPH Agile workflow tips with V-Ray for Houdini (Ingenuity Studios)</a></b>
+<BR>
+Description:
+2019 marks the debut of Total Chaos @ SIGGRAPH, built off of Chaos Group’s inspirational computer graphics conference held in Sofia earlier this year. 10 talks over two days will reveal insight into this year’s biggest CGI projects from top VFX studios. You'll also learn about the latest V-Ray and Corona updates. <a href="http://chaosgroup.com/siggraph2019">Learn more</a>.
+
+<P>
+<B>Tuesday 5pm - 5:30pm, NVIDIA booth #1313,</b> Booth Talk: <B>3DEXPERIENCE CATIA Adopts RTX</B>, presenter: Xavier Melkonian, Dassault Systèmes
+<BR>
+Description: This year at Siggraph, Dassault Systèmes is presenting how 3DEXPERIENCE CATIA takes benefit of NVIDIA RTX technology for design review on NVIDIA booth with an actual Renault Dacia production car 3D model. Xavier will present the details of the fully working CATIA proof of concept using both Quadro workstation and RTX Server, allowing accurate design decision making with physically correct geometry, material and rendering accelerated by NVIDIA RTX technology.
+
+<P>
+<B>Tuesday 6pm - 7:45pm, West Hall B,</b> Event: <b><a href="https://s2019.siggraph.org/conference/programs-events/real-time-live/">Real-Time Live!</a></b>
+<BR>
+Demos include:
+<UL>
+<LI><a href="https://s2019.siggraph.org/presentation/?id=real_140&sess=sess104">Level Ex: Tracing All Kinds of Rays... On Mobile</a>
+<LI><a href="https://s2019.siggraph.org/presentation/?id=real_143&sess=sess104">"Reality vs. Illusion" Real-Time Ray Tracing</a>
+</UL>
+
+<H2>Wednesday, July 31, 2019</H2>
+
+<B>Wednesday 9am - 12:15pm, Room 403AB,</b> SIGGRAPH Course: <b><a href="https://s2019.siggraph.org/presentation/?id=gensub_286&sess=sess199">Path Tracing in Production Part 1</a></b>
+<BR>
+Description:
+This course gives an introduction to path tracing techniques currently employed in the movie-making industry. First, the basic concepts will be laid out and then we will dive into efficient direct lighting, volume rendering, and scaling up to production needs. This is part one of a full-day course.  (<a href="siggraph2019/Path_Tracing_in_Production_part_1.pdf">extended abstract</a>)
+<UL>
+<LI>09:00 — Opening statement and introduction to path tracing, Johannes Hanika, Weta Digital Ltd.
+<LI>09:30 — A short History of Monte Carlo, Luca Fascione, Weta Digital Ltd.
+<LI>10:00 — Implementing path sampling techniques, Marc Droske, Weta Digital Ltd.
+<LI>10:30 — Break
+<LI>10:45 — Finding good paths, Jorge Schwarzhaupt, Weta Digital Ltd.
+<LI>11:15 — Volumes, Christopher Kulla, Sony Imageworks
+<LI>11:45 — The Ins of Production Rendering at Animal Logic, Daniel Heckenberg, Animal Logic
+</UL>
+
+<P>
+<B>Wednesday 9am - 10:30am, Room 501AB,</b> NVIDIA Presents: <b><a href="https://s2019.siggraph.org/session/?sess=sess416">Latest Advances in Real-Time Ray Tracing</a></b>
+<BR>
+Description:
+The NVIDIA Research and Developer Technology teams will present the latest developments and techniques for ray tracing and their application to real-time rendering for games, simulation, and VR applications.
+
+<P>
+<B>Wednesday 10:30am - 12 noon, Room 501AB,</b> NVIDIA Presents: <b><a href="https://s2019.siggraph.org/session/?sess=sess489">Advanced Real-Time Ray Tracing Tutorial</a></b>
+<BR>
+Description:
+A practical guide on how to get the best performance out of your engine and pipeline, including:
+<UL>
+<LI>Debugging
+<LI>Profiling
+<LI>How to build content
+<LI>How to optimize your pipeline
+</UL>
+
+<P>
+<B>Wednesday 10:30am - 11am, NVIDIA booth #1313,</b> Booth Talk: <B>Bringing the Arnold Renderer to the GPU</B>, presenter: Adrien Herubel, Autodesk
+<BR>
+Description: Join lead engineer for Arnold GPU, Adrien Herubel, to learn all about Arnold, Autodesk's Academy Award winning production renderer for visual effects in film and feature animation. Adrien will cover how Arnold was instrumental in the shift toward physically-based light transport simulation in production rendering, explore its ability to produce artifact-free images of dynamic scenes with massive complexity efficiently, and share an exclusive peek at the latest developments to Arnold GPU, accelerated by NVIDIA OptiX.
+
+<P>
+<B>Wednesday 11:30am - noon, NVIDIA booth #1313,</b> Booth Talk: <B>Prism &amp; RTX</B>, presenter: Victor Yudin, Technicolor/Mill Film
+<BR>
+Description: We'll discuss Prism, a Technicolor initiative to produce a high-end Optix-based path tracer for a fast preview of element, shots or sequences. It incorporates open source technologies like Open Subdivision Surface, Open Shading Language, and Pixar USD to produce a high level of fidelity and realism. We will explain why we chose to develop a modern GPU rendering system and the advantage of using it in collaboration to RTX graphic cards.
+
+<P>
+<B>Wednesday 4:30pm - 5pm, NVIDIA booth #1313,</b> Booth Talk: <B>Pure Ray Tracing in Real-Time with Project Lavina</B>, presenter: Phil Miller, Chaos
+<BR>
+Description: The latest advances in Project Lavina – the first renderer designed specifically for RTX hardware – will be demonstrated and its use of DXR will be explained. This cutting edge research shows how full scenes from any V-Ray enabled tool can be viewed and combined with no additional authoring in a fully ray traced, real-time environment that is free of any compromises from rasterization.  
+
+<P>
+<B>Wednesday noon - 12:30pm, NVIDIA booth #1313,</b> Booth Talk: <B><a href="https://blogs.nvidia.com/blog/2019/03/18/omniverse-collaboration-platform/">NVIDIA Omniverse</a></B>, presenter: Boris Ustaev, NVIDIA
+<BR>
+Description: TBD.
+
+<P>
+<B>Wednesday 2pm - 5:15pm, Room 403AB,</b> SIGGRAPH Course: <b><a href="https://s2019.siggraph.org/presentation/?id=gensub_288&sess=sess201">Path Tracing in Production Part 2</a></b> 
+<BR>
+Description:
+Experts from the movie industry will share their insights and experiences from using path tracing in production. This is the second part of a full-day course, focusing on materials, GPU rendering, non-photorealistic techniques, and fur rendering. (<a href="siggraph2019/Path_Tracing_in_Production_part_2.pdf">extended abstract</a>)
+<UL>
+<LI>2:00 — Opening statement, Luca Fascione, Weta Digital Ltd.
+<LI>2:15 — Capturing and rendering the world of materials, Wenzel Jakob, EPFL
+<LI>2:45 — Production quality materials, Andrea Weidlich, Weta Digital Ltd.
+<LI>3:15 — Introduction to GPU production path tracing at Digital Domain, Hanzhi Tang, Digital Domain
+<LI>3:45 — Break
+<LI>4:00 — From Ray Tracing for Photorealism to Path Tracing for NPR, Andrew Beddini, Blue Sky Studios
+<LI>4:30 — "Everything the Light Touches" – Rendering The Lion King, Rob Pieké, MPC Film
+<LI>5:00 — Q&amp;A with all presenters
+</UL>
+
+<P>
+<B>Wednesday 2pm - 5:15pm, Room 501AB,</b> NVIDIA Presents: <b><a href="https://s2019.siggraph.org/session/?sess=sess417">Ray Tracing Gems 1.1</a></b>
+<BR>
+Description:
+The new book "Ray Tracing Gems" (<a href="http://raytracinggems.com">free electronically</a>) is a collection of 32 articles by experts in the field. Authors of selected articles will discuss their papers and present recent updates to their work.
+<UL>
+<LI>2:00 - Introduction, Eric Haines, NVIDIA
+<LI>2:05 - <a href="https://link.springer.com/chapter/10.1007/978-1-4842-4427-2_10">A Simple Load-Balancing Scheme with High Scaling Efficiency</a>, Alexander Keller, NVIDIA
+<LI>2:25 - <a href="https://link.springer.com/chapter/10.1007/978-1-4842-4427-2_8">Cool Patches: A Geometric Approach to Ray/Bilinear Patch Intersections</a>, Alexander Reshetov, NVIDIA
+<LI>2:45 - <a href="https://link.springer.com/chapter/10.1007/978-1-4842-4427-2_12">A Microfacet-Based Shadowing Function to Solve the Bump Terminator Problem</a>, Clifford Stein, Sony Pictures Imageworks
+<LI>3:05 - <a href="https://research.nvidia.com/publication/2019-07_Dynamic-Many-Light-Sampling">Importance Sampling of Many Lights on the GPU</a>, Matt Pharr, NVIDIA
+<LI>3:35 - break
+<LI>3:35 - <a href="https://link.springer.com/chapter/10.1007/978-1-4842-4427-2_19">Cinematic Rendering in UE4 with Real-Time Ray Tracing and Denoising</a>, speaker from Epic Games, Inc.
+<LI>4:05 - <a href="https://link.springer.com/chapter/10.1007/978-1-4842-4427-2_20">Texture Level of Detail Strategies for Real-Time Ray Tracing</a>, Colin Barré-Brisebois, Electronic Arts
+<LI>4:35 - <a href="https://link.springer.com/chapter/10.1007/978-1-4842-4427-2_22">Improving Temporal Antialiasing with Adaptive Ray Tracing</a>, Josef Spjut, NVIDIA
+</UL>
+
+<P>
+<B>Wednesday 2:30pm - 3pm, NVIDIA booth #1313,</b> Booth Talk: <B>Production-Quality, Final-Frame Rendering on the GPU</B>, presenter: Rob Slater, Redshift
+<BR>
+Description: Learn about the latest features of Redshift, an NVIDIA GPU-Accelerated renderer that is redefining the industry's perception of GPU final-frame rendering. This talk is aimed at industry professionals and software developers who want to learn more about GPU-Accelerated production-quality rendering.
+
+<P>
+<B>Wednesday 4pm - 4:30pm, NVIDIA booth #1313,</b> Booth Talk: <B>Latest RTX Advances in V-Ray GPU</B>, presenter: Phil Miller, Chaos
+<BR>
+Description: The most fully featured GPU renderer, V-Ray GPU, will show its latest results in supporting RT Cores within RTX GPUs, as well as its upcoming support for out of-core for both textures and geometry. The latest and production features in V-Ray Next for Maya and its upcoming progress in V-Ray GPU will also be discussed.  
+
+<P>
+<B>Wednesday 4:30pm - 5pm, NVIDIA booth #1313,</b> Booth Talk: <B>Pure Ray Tracing in Real-Time with Project Lavina</B>, presenter: Phil Miller, Chaos
+<BR>
+Description: The latest advances in Project Lavina – the first renderer designed specifically for RTX hardware – will be demonstrated and its use of DXR will be explained. This cutting edge research shows how full scenes from any V-Ray enabled tool can be viewed and combined with no additional authoring in a fully ray traced, real-time environment that is free of any compromises from rasterization.  
+
+<P>
+<B>Wednesday 5:30pm - 6pm, NVIDIA booth #1313,</b> Booth Talk: <B>MPC Genesis: Real-Time Raytracing in Virtual Production</B>, presenter: Francesco Giordana, MPC Film
+<BR>
+Description: Join Francesco Giordana, MPC Film’s Realtime Software Architect on this talk about Genesis, MPC's virtual production platform. MPC Genesis has been designed as a robust multi-user distributed system that incorporates both modern technologies like mixed reality and more traditional techniques like motion capture and camera operation via encoded hardware devices. Francesco will talk about how MPC is improving the quality of the real-time graphics, with a special attention to lighting. He will explain how they started incorporating elements of real-time ray tracing into the platform, from a live link to Renderman XPU and MPC’s own OptiX-based path tracer, as well as a hybrid approach based on DXR running inside Unity.  
+
+<P>
+<B>Wednesday 5:30pm - 6pm, SIGGRAPH bookseller,</b> Book Signing: <b><i><a href="http://raytracinggems.com">Ray Tracing Gems</a></i></b>
+<BR>
+Description:
+Meet some of the authors and editors of the book <i>Ray Tracing Gems</i>.
+
+<H2>Thursday, August 1, 2019</H2>
+
+<B>Thursday 9am - 5pm, Room 407,</b> Unity Technologies Exhibitor Session: <b><a href="https://s2019.siggraph.org/full-program/">Unity Technologies & NVIDIA Hands-On Workshops</a></b>
+
+<P>
+<B>Thursday 9am - 12:15pm, Theatre 411,</b> SIGGRAPH Course: <b><a href="https://s2019.siggraph.org/presentation/?id=gensub_127&sess=sess191">My Favorite Samples</a></b>
+<BR>
+Description:
+Monte Carlo and quasi-Monte Carlo methods are used in light transport simulation algorithm. The course teaches the sampling algorithms and elaborates on the characteristics of different classes of uniformly-distributed points to help select the points most efficient for a task. (<a href="siggraph2019/My_Favorite_Samples.pdf">extended abstract</a>)
+<UL>
+<LI>9:00 - My favorite Samples, Alexander Keller, NVIDIA
+<LI>9:40 - Blue-Noise Dithered Sampling, Iliyan Georgiev, Autodesk
+<LI>10:15 - Low-Discrepancy Blue Noise Sampling, Abdalla Ahmed, King Abdulla University of Science and Technology
+<LI>break
+<LI>11:05 - Progressive Multi-Jittered Sequences, Per Christensen, Pixar
+<LI>11:40 - <a href="https://link.springer.com/chapter/10.1007/978-1-4842-4427-2_15">The Importance of Sampling</a>, Matt Pharr, NVIDIA
+</UL>
+
+<P>
+<B>Thursday 10am - 10:30am, NVIDIA booth #1313,</b> Booth Talk: <B>Adding RTX acceleration to Iray with OptiX</B>, presenter: Lutz Kettner, NVIDIA
+<BR>
+Description: Used in Siemens NX, Dassault Systèmes Catia and Solidworks, along with other leading product design packages, the Iray rendering engine and MDL (Material Definition Language) deliver predictable, simulation-quality photorealistic imagery with full artistic freedom. In this talk we will present our approach to enable NVIDIA RTX technology and RT Cores within Iray. We will present architectural decisions made to leverage the latest version of OptiX and explain what affects performance in practice.
+
+<P>
+<B>Thursday 11:30am - noon, NVIDIA booth #1313,</b> Booth Talk: <B>RTX, a breakthrough in VFX and animation workflow</B>, presenter: Jean-Colas Prunier, PocketStudio
+<BR>
+Description: PocketStudio is a next generation collaborative edition tool to create 3D animated feature film. This talk will present how this tool revealed at Siggraph 2018 and now in beta, heavily relies on NVIDIA RTX technology to bring real-time GPU ray tracing in an easy-to-use interface for professionals, detailing how existing studios in deployment leverages it in their workflow. Entirely built from the ground up for film artists, it would not serve its purpose of lightspeed professional grade rendering without hardware ray tracing made available in NVIDIA Turing boards.
+
+<P>
+<B>Thursday noon - 12:30pm, NVIDIA booth #1313,</b> Booth Talk: <B>The Diminishing Need For Offline Rendering: Building Real Time Projects for Both Design and Marketing with RTX</B>, presenter: Stephen Phillips, Theia
+<BR>
+Description: The quality gap between real time and offline rendering is narrowing thanks to RTX technology. Modern workflows can allow both VR design review sessions and final marketing renders to come from the same source files without an extra team of artists and redundant software licenses. In this Unreal Engine project breakdown with Theia Interactive, you'll get advanced tips and tricks for planning and executing this efficient new method of delivering the highest quality work for every customer need.
+
+<P>
+<B>Thursday 2pm - 3:30pm, Room 150/151,</b> <a href="https://s2019.siggraph.org/conference/programs-events/technical-papers/">SIGGRAPH Technical Papers</a>: <B>Machine Learning for Rendering</B>
+<BR> 
+Papers:
+<UL>
+<LI><a href="https://s2019.siggraph.org/presentation/?id=papers_185&sess=sess237">Sample-Based Monte Carlo Denoising Using a Kernel-Splatting Network</a> (<a href="https://www.eurekalert.org/pub_releases/2019-06/afcm-ndm061119.php">preview</a>)
+<LI><a href="https://s2019.siggraph.org/presentation/?id=papers_480&sess=sess237">Deep Convolutional Reconstruction for Gradient-Domain Rendering</a>
+<LI><a href="https://s2019.siggraph.org/presentation/?id=paperstog_101&sess=sess237">Neural Importance Sampling</a> (<a href="http://drz.disneyresearch.com/~jnovak/publications/NIS/index.html">preview</a>)
+<LI><a href="https://s2019.siggraph.org/presentation/?id=papers_258&sess=sess237">A Learned Shape-Adaptive Subsurface Scattering Model</a> (<a href="https://rgl.epfl.ch/publications/Vicini2019Learned">preview</a>)
+</UL>
+
+<P>
+<B>Thursday 3:45pm - 5:15pm, Room 153,</b> SIGGRAPH Course: <b><a href="https://s2019.siggraph.org/presentation/?id=gensub_376&sess=sess452">RTX Accelerated Ray Tracing With OptiX</a></b>
+<BR>
+Description:
+This course is aimed at programmers interested in using OptiX to write RTX accelerated ray tracing applications. It will start with the general concepts behind the OptiX API, and then build up to more advanced topics such as how to properly use, and optimize for, the hardware ray tracing cores of modern GPUs.
+
+<P>
+<B>Thursday 3:45pm - 5:15pm, Room 403AB,</b> <a href="https://s2019.siggraph.org/conference/programs-events/talks/">SIGGRAPH Talks</a>: <b>Lucy in the Sky with Diamonds - Processing Visuals</b>
+<BR>
+Four talks:
+<UL>
+<LI><a href="https://s2019.siggraph.org/presentation/?id=gensub_324&sess=sess251">A Low-Discrepancy Sampler That Distributes Monte Carlo Errors as a Blue Noise in Screen Space</a>
+<LI><a href="https://s2019.siggraph.org/presentation/?id=gensub_384&sess=sess251">Global Adaptive Sampling Hierarchies in Production Ray Tracing</a>
+<LI><a href="https://s2019.siggraph.org/presentation/?id=gensub_154&sess=sess251">Machine Learning for Multiple Scattering</a>
+<LI><a href="https://s2019.siggraph.org/presentation/?id=gensub_266&sess=sess251">Taming the Shadow Terminator</a>
+</UL>
+
+<P>
+<H2>Friday</H2>
+SIGGRAPH 2019 is over. Can't get enough? Go <a href="http://realtimerendering.com/raytracing.html">here</a> for more resources and book suggestions for learning more about ray and path tracing.
+</div> <!-- /content -->
+
+<HR>
+<div id="footer" class="clearfix">
+Contact: <a href="mailto:erich@acm.org">Eric Haines</a></li>	
+</div> <!-- /footer -->
+
+</div> <!-- /wrapper -->
+
+</body>
+</html>

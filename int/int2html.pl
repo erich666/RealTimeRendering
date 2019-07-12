@@ -174,7 +174,7 @@ sub OUTPUTLINES {
 <li><a title="Ray Tracing Resources" href="raytracing.html">Ray tracing</a></li>
 <li><a title="Main resources page" href="index.html">Resources</a></li>
 <li><a title="WebGL/three.js Resources"  href="webgl.html">WebGL</a></li>
-<ul>
+</ul>
 </div>
 </div>
 <div id="content" class="clearfix">
@@ -188,7 +188,7 @@ sub OUTPUTLINES {
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: April 12, 2019
+Last changed: July 5, 2019
 </div>
 
 <P>
@@ -320,7 +320,7 @@ One principle is that even if both objects are moving, only one has to be consid
 The general principal of intersecting a moving sphere against an object is to simplify thinking about the problem by making the sphere into a line segment between its center's start and end locations, while "adding" this sphere (a <a href="http://www.cs.sunysb.edu/~algorith/files/minkowski-sum.shtml">Minkowski sum</a>) to the other object.<br>
 <B>Moving Sphere/Sphere:</B> <I>(location)</I> Add the radius of the moving sphere to the static sphere, and treat the moving sphere as a ray. Use this ray to perform ray/sphere intersection. See <a href="http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a> and <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>..<br>
 <B>Moving Sphere/Triangle:</B> <I>(location)</I> Similar to above, turn the sphere into a ray. The triangle turns into a solid defined by a set of spheres at the vertices, cylinders along the edges, and a slab for the interior of the triangle. See <a href="https://github.com/jrouwe/SweptEllipsoid">Rouw&eacute;'s article and code</a>; <a href="https://www.geometrictools.com/Documentation/IntersectionMovingSphereTriangle.pdf">GTWeb doc</a>; <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>.; <a href="http://twvideo01.ubm-us.net/o1/vault/gdc2013/slides/822403Gregorius_Dirk_TheSeparatingAxisTest.pdf">Gregorius 2012</a>.<br>
-<B>Moving Sphere/AABB:</B> <I>(boolean)</I> A conservative test (i.e., no false misses, but can give false hits when there actually is no overlap) is to make the AABB move, so forming a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB. Test the static sphere with shaft testing.<br>
+<B>Moving Sphere/AABB:</B> GTWeb has <a href="https://www.geometrictools.com/Documentation/IntersectionMovingSphereBox.pdf">a more detailed document on this topic. <I>(boolean)</I> A conservative test (i.e., no false misses, but can give false hits when there actually is no overlap) is to make the AABB move, so forming a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB. Test the static sphere with shaft testing. </a><br>
 
 <P>
 <B>Moving Triangle/Triangle:</B> See <a href="https://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">GTweb doc</a> and <a href="https://code.google.com/archive/p/box2d/downloads">Catto 2013</a>.
@@ -404,7 +404,7 @@ If the lines do not intersect, <I>t1</I> and <I>t2</I> mark the points of closes
         </td>
     </tr>
     <tr>
-    	<td valign="top"><img src="spacer.gif" alt="" height="1" border="0" /><br />
+    	<td valign="top"><img src="spacer.gif" alt="" height="1" border="0"></td>
 	&nbsp;<br /></td>
     </tr>
 </table>

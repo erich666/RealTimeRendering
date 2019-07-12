@@ -30,7 +30,7 @@
 <li><a class="nav-current" title="Ray Tracing Resources" href="raytracing.html">Ray tracing</a></li>
 <li><a title="Main resources page" href="index.html">Resources</a></li>
 <li><a title="WebGL/three.js Resources"  href="webgl.html">WebGL</a></li>
-<ul>
+</ul>
 </div>
 </div>
 <div id="content" class="clearfix">
@@ -44,11 +44,13 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: April 11, 2019
+Last changed: June 18, 2019
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
 <P>We wrote a free chapter called <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf"><B><I>Real-Time Ray Tracing</I></B></a> for <a href="index.html">our book</a>, as events after the manuscript was delivered to the publisher practically demanded it. The <a href="http://www.realtimerendering.com/refs.html#raytracing">online references page</a> for this chapter provides URLs for references cited.
+
+<P><B>SIGGRAPH 2019:</B> All ray and path tracing related events <a href="http://www.realtimerendering.com/raytracing/roundup.html">listed here</a>.
 
 <a NAME="basics">
 <H1 class="subHeader">Basics</H2>
@@ -97,7 +99,7 @@ NVIDIA has <a href="https://developer.nvidia.com/rtx/raytracing">much other info
 
 <P><a href="http://www.realtimerendering.com/blog/ray-tracing-at-gdc/">Our blog entry</a> on DXR contains a large set of links to resources, demos, and related articles that came out around or soon after GDC 2018.
 
-<P>There have been <a href="https://www.youtube.com/results?search_query=dxr+ray+tracing">many videos</a> about DXR effects and demos. SEED's <a href="https://www.youtube.com/watch?v=LXo0WdlELJk">Pica Pica</a> demo gives a quick runthrough of some possible effects and their benefits. Digital Foundry's <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns">runthrough of <I>Battlefield V</I></a> has fairly detailed explanations of effects and how they were done with DXR, though one or two things appear incorrect, e.g., <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns&feature=youtu.be&t=669">BVH varying with image resolution</a>. You can read <a href="https://www.eurogamer.net/articles/digitalfoundry-2018-battlefield-5-rtx-ray-tracing-analysis">an analysis and Q&amp;A here</a>. The <a href="https://youtu.be/1IIiQZw_p_E">Atomic Age explanation</a> is short and sweet, and is particularly good at showing <a href="https://youtu.be/1IIiQZw_p_E?t=123">the limitations of screen-space reflections</a>. Metro Exodus use of ray tracing has a significant effect on the atmosphere of the game; you can <a href="https://www.overclock3d.net/reviews/software/metro_exodus_pc_performance_review_-_rtx_on/7">use a slider to compare</a> the differences yourself. Read about <a href="https://www.eurogamer.net/articles/digitalfoundry-2019-metro-exodus-tech-interview">Metro Exodus's use of ray tracing</a> and other features, and see <a href="https://youtu.be/eiQv32imK2g?t=722">Digital Foundry's video</a>.
+<P>There have been <a href="https://www.youtube.com/results?search_query=dxr+ray+tracing">many videos</a> about DXR effects and demos. SEED's <a href="https://www.youtube.com/watch?v=LXo0WdlELJk">Pica Pica</a> demo gives a quick runthrough of some possible effects and their benefits. Digital Foundry's <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns">runthrough of <I>Battlefield V</I></a> has fairly detailed explanations of effects and how they were done with DXR, though one or two things appear incorrect, e.g., <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns&feature=youtu.be&t=669">BVH varying with image resolution</a>. You can read <a href="https://www.eurogamer.net/articles/digitalfoundry-2018-battlefield-5-rtx-ray-tracing-analysis">an analysis and Q&amp;A here</a>. The <a href="https://youtu.be/1IIiQZw_p_E">Atomic Age explanation</a> is short and sweet, and is particularly good at showing <a href="https://youtu.be/1IIiQZw_p_E?t=123">the limitations of screen-space reflections</a>. Metro Exodus use of ray tracing has a significant effect on the atmosphere of the game; you can <a href="https://www.overclock3d.net/reviews/software/metro_exodus_pc_performance_review_-_rtx_on/7">use a slider to compare</a> the differences yourself. Read about <a href="https://www.eurogamer.net/articles/digitalfoundry-2019-metro-exodus-tech-interview">Metro Exodus's use of ray tracing</a> and other features, and see <a href="https://youtu.be/eiQv32imK2g?t=722">Digital Foundry's video</a> and <a href="http://morad.in/2019/03/27/observations-about-the-rendering-of-metro-exodus/">this detailed post</a> that looks under the hood.
 
 <P>DXR implies GPU hardware dedicated to improving ray tracing performance, such as <a href="https://developer.nvidia.com/rtx/raytracing">NVIDIA's RTX</a>. However, for simpler scenes, or for powerful clusters of machines, interactive ray tracing is possible using traditional CPUs or less-specialize GPUs. 3Dmark's <a href="https://www.nvidia.com/en-us/geforce/news/nvidia-dlss-3dmark-port-royal-benchmark/">Port Royal benchmark</a> is designed for interactive ray tracing.
 
@@ -105,7 +107,7 @@ NVIDIA has <a href="https://developer.nvidia.com/rtx/raytracing">much other info
 
 <P>Microsoft provides a set of <a href="https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12Raytracing">D3D12 Raytracing Samples</a>. NVIDIA has tutorials <a href="https://github.com/NVIDIAGameWorks/DxrTutorials">on Github</a> for learning about more low-level DXR calls. They also provide <a href="https://developer.nvidia.com/rtx/raytracing/dxr/DX12-Raytracing-tutorial-Part-1">a standalone tutorial</a>.
 
-<P>The DXR 0.09 Functional Spec is <a href="https://github.com/ConfettiFX/The-Forge/blob/master/CommonRaytracing_3/ThirdParty/DXR/doc/D3D12%20Raytracing%20Functional%20Spec.docx">available here</a> and <a href="http://intro-to-dxr.cwyman.org/spec/DXR_FunctionalSpec_v0.09.docx">here</a> without having to sign up to be a developer. Adam Marrs gives <a href="https://github.com/acmarrs/IntroToDXR">a pure DXR tutorial<a href="https://github.com/NVIDIAGameWorks/GettingStartedWithRTXRayTracing"> to allow you to get right into the specification. One project built atop this framework is <a href="https://github.com/boksajak/RTAO">ray-traced ambient occlusion</a>.
+<P>The DXR 0.09 Functional Spec is <a href="http://intro-to-dxr.cwyman.org/spec/DXR_FunctionalSpec_v0.09.docx">available here</a> without having to sign up to be a developer. The <a href="https://microsoft.github.io/DirectX-Specs/">DirectX-Specs</a> website provides additional documentation in web form. Adam Marrs gives <a href="https://github.com/acmarrs/IntroToDXR">a pure DXR tutorial<a href="https://github.com/NVIDIAGameWorks/GettingStartedWithRTXRayTracing"> to allow you to get right into the specification. One project built atop this framework is <a href="https://github.com/boksajak/RTAO">ray-traced ambient occlusion</a>.
 
 <P>NVIDIA has a <a href="https://devblogs.nvidia.com/rtx-best-practices/">best practices</a> summary for DXR.
 
@@ -193,6 +195,13 @@ Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter o
 
 <P>What follows are books focused on the subject of ray tracing and related algorithms, in reverse year order of the latest edition.
 <table>
+
+<tr><td>
+<a href="https://smile.amazon.com/GPU-Zen-Advanced-Rendering-Techniques/dp/179758314X?tag=realtimerenderin">
+<img src="AmazonImages/41c3UyVBfeL._SL50_.jpg" alt="cover" height="50" align=left border=0></a>
+<img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
+<b><a href="https://smile.amazon.com/Ray-Tracer-Challenge-Test-Driven-Renderer/dp/1680502719?tag=realtimerenderin">The Ray Tracer Challenge: A Test-Driven Guide to Your First 3D Renderer</a></b>, Jamis Buck, Pragmatic Bookshelf, March 2019 (<a href="https://pragprog.com/book/jbtracer/the-ray-tracer-challenge">Publisher's page</a>, <a href="https://youtu.be/MFjmpjPwFEM">video advertisement</a>).
+</td></tr>
 
 <tr><td>
 <a href="http://raytracinggems.com"><img src="AmazonImages/RTG_50.jpg" alt="cover" height="50" align=left border=0></a>
