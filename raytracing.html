@@ -44,13 +44,15 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: July 24, 2019
+Last changed: August 21, 2019
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
 <P>We wrote a free chapter called <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf"><B><I>Real-Time Ray Tracing</I></B></a> for <a href="index.html">our book</a>, as events after the manuscript was delivered to the publisher practically demanded it. The <a href="http://www.realtimerendering.com/refs.html#raytracing">online references page</a> for this chapter provides URLs for references cited.
 
-<P><B>SIGGRAPH 2019:</B> All ray and path tracing related events <a href="http://www.realtimerendering.com/raytracing/roundup.html">listed here</a>.
+<P>We list free (and pay) <a href="#books">books on ray tracing</a>.
+
+<P><B>SIGGRAPH 2019:</B> All ray and path tracing related events and links to slides, notes, and papers <a href="http://www.realtimerendering.com/raytracing/roundup.html">listed here</a>; also see the <a href="https://blog.selfshadow.com/2019/07/30/siggraph-2019-links/">SIGGRAPH 2019 links</a>.
 
 <a NAME="basics">
 <H1 class="subHeader">Basics</H2>
@@ -62,7 +64,7 @@ Next, the <a href="https://www.youtube.com/watch?v=frLwRLS_ZR0">Disney video on 
 Other short tutorials can be found at <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel</a>.
 Morgan McGuire's <a href="https://graphicscodex.com/">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets. There are plenty of more books, some now free, listed in <a href="#books">our books section</a>, with <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Kevin Suffern's book</a> being a slightly-dated but good choice for a more in-depth introductory book focused on the topic.
 
-<P><b>Blogs</b> related to ray tracing: <a href="http://aras-p.info/blog/">Aras's</a>, <a href="http://psgraphics.blogspot.com/">Pete Shirley's</a>, <a href="https://ingowald.blog/">Ingo Wald's</a>, <a href="http://diaryofagraphicsprogrammer.blogspot.com/">Wolfgang Engel's</a>, <a href="https://blog.demofox.org/2018/11/16/how-to-data-lookups-via-raytracing/">Alan Wolfe's</a>, <a href="https://blogs.msdn.microsoft.com/DirectX/">Microsoft</a>, <a href="https://devblogs.nvidia.com/">NVIDIA</a>. Resources: <a href="https://blog.selfshadow.com/">SIGGRAPH 2018 links</a>, <a href="https://jendrikillner.bitbucket.io/post/">Jendrik Illner's summaries</a>.
+<P><b>Blogs</b> related to ray tracing: <a href="http://aras-p.info/blog/">Aras's</a>, <a href="http://psgraphics.blogspot.com/">Pete Shirley's</a>, <a href="https://ingowald.blog/">Ingo Wald's</a>, <a href="http://diaryofagraphicsprogrammer.blogspot.com/">Wolfgang Engel's</a>, <a href="https://blog.demofox.org/2018/11/16/how-to-data-lookups-via-raytracing/">Alan Wolfe's</a>, <a href="https://blogs.msdn.microsoft.com/DirectX/">Microsoft</a>, <a href="https://devblogs.nvidia.com/">NVIDIA</a>. Resources: <a href="https://blog.selfshadow.com/2019/07/30/siggraph-2019-links/">SIGGRAPH 2019 links</a>, <a href="https://jendrikillner.bitbucket.io/post/">Jendrik Illner's summaries</a>.
 
 <P>For basic ray/object intersection algorithm references, see <a href="intersections.html">our object/object intersection page</a>.
 
@@ -84,7 +86,7 @@ For newer articles, I highly recommend <a href="https://www.jendrikillner.com/ta
 <P>Talks from <a href="https://www.gdcvault.com/search.php#&category=free&firstfocus=&keyword=ray+tracing&conference_id=">GDC 2019</a> and <a href="https://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=ray%20tracing&searchItems=&sessionTopic=&sessionEvent=&sessionYear=&sessionFormat=&submit=&select=">GTC 2019</a> are available for viewing and download.
 <P>
 With Microsoft's announcement of <a href="https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/">the DXR ray tracing API for DirectX</a> in March 2018 at the <I>Games Developers Conference</I></a>, real-time ray tracing has become synonymous with this effort, along with initiatives in Vulkan <a href="http://on-demand.gputechconf.com/gtc/2018/presentation/s8521-advanced-graphics-extensions-for-vulkan.pdf">such as NVIDIA's</a> (<a href="http://on-demand.gputechconf.com/siggraph/2018/video/sig1826-nuno-subtil-vulkan.html">video here</a>).
-NVIDIA has <a href="https://developer.nvidia.com/rtx/raytracing">much other information</a>.
+NVIDIA has <a href="https://developer.nvidia.com/rtx/raytracing">much more information</a>.
 
 <P>There are other efforts out there, such as <a href="https://developer.apple.com/documentation/metalperformanceshaders/metal_for_accelerating_ray_tracing">Apple's support for ray tracing</a> in their Metal API.
 
@@ -104,11 +106,11 @@ NVIDIA has <a href="https://developer.nvidia.com/rtx/raytracing">much other info
 
 <P>DXR implies GPU hardware dedicated to improving ray tracing performance, such as <a href="https://developer.nvidia.com/rtx/raytracing">NVIDIA's RTX</a>. However, for simpler scenes, or for powerful clusters of machines, interactive ray tracing is possible using traditional CPUs or less-specialize GPUs. 3Dmark's <a href="https://www.nvidia.com/en-us/geforce/news/nvidia-dlss-3dmark-port-royal-benchmark/">Port Royal benchmark</a> is designed for interactive ray tracing.
 
-<P>The SIGGRAPH 2018 course <I>Introduction to DirectX RayTracing</I> has <a href="http://intro-to-dxr.cwyman.org/">notes and sample code available</a>, as well as much other useful information for getting started with DXR shaders. You can <a href="https://youtu.be/Q1cuuepVNoY">watch the entire course</a> on YouTube. This code has been <a href="https://github.com/NVIDIAGameWorks/GettingStartedWithRTXRayTracing">polished and expanded</a>, and blogged about <a href="https://devblogs.nvidia.com/my-first-ray-tracing-demo/">here</a>. NVIDIA's <a href="https://www.nvidia.com/en-us/events/siggraph/schedule/?session-type=course">Wednesday SIGGRAPH courses</a> have more recorded presentations on real-time ray tracing.
+<P>The SIGGRAPH 2018 course <I>Introduction to DirectX RayTracing</I> has <a href="http://intro-to-dxr.cwyman.org/">notes and sample code available</a>, as well as much other useful information for getting started with DXR shaders. You can <a href="https://youtu.be/Q1cuuepVNoY">watch the entire course</a> on YouTube. This code has been <a href="https://github.com/NVIDIAGameWorks/GettingStartedWithRTXRayTracing">polished and expanded</a>, and blogged about <a href="https://devblogs.nvidia.com/my-first-ray-tracing-demo/">here</a>. NVIDIA's <a href="https://www.nvidia.com/en-us/events/siggraph/schedule/?session-type=course">Wednesday SIGGRAPH 2018 courses</a> have more recorded presentations on real-time ray tracing.
 
 <P>Microsoft provides a set of <a href="https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12Raytracing">D3D12 Raytracing Samples</a>. NVIDIA has tutorials <a href="https://github.com/NVIDIAGameWorks/DxrTutorials">on Github</a> for learning about more low-level DXR calls. They also provide <a href="https://developer.nvidia.com/rtx/raytracing/dxr/DX12-Raytracing-tutorial-Part-1">a standalone tutorial</a>.
 
-<P>The DXR 0.09 Functional Spec is <a href="http://intro-to-dxr.cwyman.org/spec/DXR_FunctionalSpec_v0.09.docx">available here</a> without having to sign up to be a developer. The <a href="https://microsoft.github.io/DirectX-Specs/">DirectX-Specs</a> website provides additional documentation in web form. Adam Marrs gives <a href="https://github.com/acmarrs/IntroToDXR">a pure DXR tutorial<a href="https://github.com/NVIDIAGameWorks/GettingStartedWithRTXRayTracing"> to allow you to get right into the specification. One project built atop this framework is <a href="https://github.com/boksajak/RTAO">ray-traced ambient occlusion</a>.
+<P>The DXR 0.09 Functional Spec is <a href="http://intro-to-dxr.cwyman.org/spec/DXR_FunctionalSpec_v0.09.docx">available here</a> without having to sign up to be a developer. The <a href="https://microsoft.github.io/DirectX-Specs/">DirectX-Specs</a> website provides additional documentation in web form. Adam Marrs gives <a href="https://github.com/acmarrs/IntroToDXR">a pure DXR tutorial</a> to allow you to get right into the specification. Also useful (though needing an update) is the <a href="https://github.com/NVIDIAGameWorks/GettingStartedWithRTXRayTracing">Falcor framework</a>. One project built atop this framework is <a href="https://github.com/boksajak/RTAO">ray-traced ambient occlusion</a>.
 
 <P>NVIDIA has a <a href="https://devblogs.nvidia.com/rtx-best-practices/">best practices</a> summary for DXR.
 
@@ -156,7 +158,6 @@ There have been other (commercially unsuccessful) efforts over the years, such a
 <P>
 The <a href="https://en.wikipedia.org/wiki/Demoscene">demoscene</a> has had simple <a href="http://www.realtimerendering.com/resources/RTNews/demos/overview.htm">interactive ray traced demos</a> since 1995.
 Don't bother trying to download and run code, though; better is to <a href="https://aras-p.info/blog/2018/08/03/Random-list-of-Demoscene-Demos/">watch these on YouTube</a>.
-With the rise of the GPU, many efforts have become more shader based---see the <a href="https://youtu.be/yqA71-HHY2Q?t=157">SIGGRAPH 2018 session</a> for technical details---so we expect to start seeing DXR-based demoscene entries.
 
 
 <a NAME="offline">
@@ -166,7 +167,7 @@ With the rise of the GPU, many efforts have become more shader based---see the <
 Ray tracing has been used in film production for decades, first seen in <a href="https://www.21cf.com/blog/2017/03/31/blue-sky-studios-academy-award-winning-cgi-studio-renderer-story/">Blue Sky Studio's work</a> which won an Oscar in 1998. Ray tracing is now the standard way CGI effects are rendered by every major studio. Frames are computed on render farms, clusters of
 upwards of <a href="https://www.engadget.com/2014/10/18/disney-big-hero-6/">tens of thousands of processors</a>.
 
-<P>For technical information, the <a href="https://jo.dreggn.org/path-tracing-in-production/">notes from the <I>Path Tracing in Production</I></a> SIGGRAPH course give valuable information about techniques used in film production. Another worthwhile resource is the <a href="https://dl.acm.org/citation.cfm?id=3243123&picked=prox">Special Issue On Production Rendering</a> in <I>ACM TOG</I>. NVIDIA's <a href="https://www.nvidia.com/en-us/events/siggraph/schedule/?session-type=course">Tuesday SIGGRAPH courses</a> have more recorded presentations on GPU ray tracing for production.
+<P>For technical information, the <a href="https://jo.dreggn.org/path-tracing-in-production/">notes from the <I>Path Tracing in Production</I></a> SIGGRAPH course give valuable information about techniques used in film production. Another worthwhile resource is the <a href="https://dl.acm.org/citation.cfm?id=3243123&picked=prox">Special Issue On Production Rendering</a> in <I>ACM TOG</I>.
 
 <P>There are a wide range of offline rendering systems, based on ray and path tracing and other related techniques. Here's a short list:
 <UL>
@@ -174,7 +175,9 @@ upwards of <a href="https://www.engadget.com/2014/10/18/disney-big-hero-6/">tens
 <LI><a href="http://www.pbrt.org/resources.html">pbrt</a> is well-established, with <a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin">a great book</a> about the code.
 <LI><a href="https://www.mitsuba-renderer.org/">Mitsuba</a> - a research-oriented ray tracer which is somewhat like pbrt.
 <LI><a href="https://github.com/tunabrain/tungsten">Tungsten</a> is often compared with Mitsuba, built on Embree, with a liberal license.
+<LI><a href="https://developer.nvidia.com/optix">OptiX</a> focuses on GPU acceleration of ray tracing.
 <LI><a href="https://www.ospray.org/">OSPRay</a> is geared towards scientific visualization.
+<LI><a href="https://www.cycles-renderer.org/">Cycles</a> is the standard ray tracer for Blender.
 <LI><a href="https://luxcorerender.org/">Lux</a> works with Blender.
 <LI><a href="https://appleseedhq.net/">Appleseed</a> works with Maya.
 </UL>
@@ -227,7 +230,7 @@ Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter o
   <img src="spacer.gif" alt="" height="55" width="14" align=left border=0>
   <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing_%20the%20Rest%20of%20Your%20Life.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
   <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
-<b><a href="https://smile.amazon.com/Ray-Tracing-Next-Week-Minibooks-ebook/dp/B01CO7PQ8C?tag=realtimerenderin">Ray Tracing: The Rest Of Your Life</a></b>, by Peter Shirley, March 2016 (<a href="https://github.com/petershirley/raytracingtherestofyourlife/releases">Code</a>, <a href="https://twitter.com/Peter_shirley/status/1029342221139509249">tweet</a>, <a href="http://in1weekend.blogspot.com/2016/03/ray-tracing-rest-of-your-life.html">blog</a>), <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing_%20the%20Rest%20of%20Your%20Life.pdf">download for free</a>.
+<b><a href="https://smile.amazon.com/Ray-Tracing-Next-Week-Minibooks-ebook/dp/B01CO7PQ8C?tag=realtimerenderin">Ray Tracing: The Rest Of Your Life</a></b>, by Peter Shirley, March 2016 (<a href="https://github.com/RayTracing/TheRestOfYourLife/releases"</a>, <a href="http://in1weekend.blogspot.com/2016/03/ray-tracing-rest-of-your-life.html">blog</a>), <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing_%20the%20Rest%20of%20Your%20Life.pdf">download for free</a>.
 <P>Last in the series.
 </td></tr>
 
@@ -236,7 +239,7 @@ Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter o
   <img src="spacer.gif" alt="" height="55" width="14" align=left border=0>
   <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing_%20The%20Next%20Week.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
   <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
-<b><a href="https://smile.amazon.com/Ray-Tracing-Next-Week-Minibooks-ebook/dp/B01CO7PQ8C?tag=realtimerenderin">Ray Tracing: the Next Week</a></b>, by Peter Shirley, March 2016 (<a href="https://github.com/petershirley/raytracingthenextweek/releases">Code</a>, <a href="https://twitter.com/Peter_shirley/status/1029342221139509249">tweet</a>, <a href="http://in1weekend.blogspot.com/2016/01/ray-tracing-second-weekend.html">blog</a>), <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing_%20The%20Next%20Week.pdf">download for free</a>.
+<b><a href="https://smile.amazon.com/Ray-Tracing-Next-Week-Minibooks-ebook/dp/B01CO7PQ8C?tag=realtimerenderin">Ray Tracing: the Next Week</a></b>, by Peter Shirley, March 2016 (<a href="https://github.com/raytracing/TheNextWeek/releases/">Code</a>, <a href="https://twitter.com/Peter_shirley/status/1029342221139509249">tweet</a>, <a href="http://in1weekend.blogspot.com/2016/01/ray-tracing-second-weekend.html">blog</a>), <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing_%20The%20Next%20Week.pdf">download for free</a>.
 <P>Second in the series.
 </td></tr>
 
@@ -245,7 +248,7 @@ Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter o
   <img src="spacer.gif" alt="" height="55" width="14" align=left border=0>
   <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing%20in%20a%20Weekend.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
   <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
-<b><a href="https://smile.amazon.com/Ray-Tracing-Weekend-Minibooks-Book-ebook/dp/B01B5AODD8?tag=realtimerenderin">Ray Tracing in One Weekend</a></b>, by Peter Shirley, January 2016 (<a href="https://github.com/petershirley/raytracinginoneweekend/releases">Code</a>, <a href="https://twitter.com/Peter_shirley/status/1029342221139509249">tweet</a>, <a href="http://in1weekend.blogspot.com/2016/01/ray-tracing-in-one-weekend.html">blog</a>, <a href="https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/">CUDA implementation</a>), <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing%20in%20a%20Weekend.pdf">download for free</a>.
+<b><a href="https://smile.amazon.com/Ray-Tracing-Weekend-Minibooks-Book-ebook/dp/B01B5AODD8?tag=realtimerenderin">Ray Tracing in One Weekend</a></b>, by Peter Shirley, January 2016 (<a href="https://github.com/raytracing/InOneWeekend/releases/">Code</a>, <a href="https://twitter.com/Peter_shirley/status/1029342221139509249">tweet</a>, <a href="http://in1weekend.blogspot.com/2016/01/ray-tracing-in-one-weekend.html">blog</a>, <a href="https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/">CUDA implementation</a>), <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing%20in%20a%20Weekend.pdf">download for free</a>.
 <P>Start with this one.
 </td></tr>
 

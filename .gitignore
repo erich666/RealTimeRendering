@@ -1,6 +1,8 @@
+.htaccess
 figures/*
 rtr4_staging/*
 kesen/*
+rtintro/*
 raytracing/siggraph2019/*
 Real-Time_Rendering_4th-*.pdf
 RealTimeRendering4_figures.zip
