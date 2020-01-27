@@ -1,0 +1,50 @@
+html
+{
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	background-color: #f6f6f6;
+	color: #444;
+}
+
+h1
+{
+	font-size:24pt;	
+	line-height:115%;
+	font-weight:bold;
+	color:#004E49;
+}
+
+h2
+{
+	font-size:20pt;
+	line-height:115%;
+	font-weight:bold;
+	color:#004E49;
+}
+
+p a:link,
+p a:visited, 
+p a:active 
+{
+	color: #619900;
+}
+
+p a:hover
+{
+	color: #76B900;
+}
+
+.container
+{
+	min-width: 700px;
+	max-width: 1000px;
+	margin: auto;
+	text-align: justify;
+	padding: 10px;
+}
+
+.header_img
+{
+	width: 100%;
+	height: auto;
+}
