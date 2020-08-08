@@ -44,27 +44,26 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: January 27, 2020
+Last changed: August 5, 2020
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
 <P>We wrote a free chapter called <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf"><B><I>Real-Time Ray Tracing</I></B></a> for <a href="index.html">our book</a>, as events after the manuscript was delivered to the publisher practically demanded it. The <a href="http://www.realtimerendering.com/refs.html#raytracing">online references page</a> for this chapter provides URLs for references cited.
 
-<P>We list free (and pay) <a href="#books">books on ray tracing</a>.
-
-<P><B>SIGGRAPH 2019:</B> All ray and path tracing related events and links to slides, notes, and papers <a href="http://www.realtimerendering.com/raytracing/roundup.html">listed here</a>; also see the <a href="https://blog.selfshadow.com/2019/07/30/siggraph-2019-links/">SIGGRAPH 2019 links</a>.
+<P>We list below free (and non-free) <a href="#books">books on ray tracing</a>.
 
 <a NAME="basics">
 <H1 class="subHeader">Basics</H2>
 </a>
-First, for a quick introduction to what ray tracing is about, watch the <a href="https://news.developer.nvidia.com/ray-tracing-essentials-part-1-basics-of-ray-tracing/">Ray Tracing Essentials</a> series (in progress) (<a href="https://developer.nvidia.com/rtx/raytracing-essentials-part1/cn">Mandarin subtitles</a>), or read <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel's set of six short articles</a>.
+First, for a quick introduction to what ray tracing is about, watch the <a href="https://www.youtube.com/playlist?list=PL5B692fm6--sgm8Uiava0IIvUojjFOCSR">Ray Tracing Essentials</a> series (the first talk also has a version with <a href="https://developer.nvidia.com/rtx/raytracing-essentials-part1/cn">Chinese subtitles</a>), or read <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel's set of six short articles</a>.
 Also, the <a href="https://www.youtube.com/watch?v=frLwRLS_ZR0">Disney video on path tracing</a> gives an intuitive sense of how this algorithm works. Its 50's style is a treat.
 <P>
-<a href="#books">Peter Shirley's free books</a> are a fast and free way to dig into the topic and learn by coding; there's even <a href="https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/">a CUDA</a> (and <a href="https://github.com/biroeniko/raytracer">another CUDA (and OpenMP)</a>) and <a ref="https://github.com/ingowald/RTOW-OptiX">OptiX</a> (and <a href="https://joaovbs96.github.io/optix/2019/01/12/rest-life.html">another OptiX</a>) implementation. 
+<a href="#books">Peter Shirley's free books</a> are a fast and free way to dig into the topic and learn by coding; there's even <a href="https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/">a CUDA</a> (and <a href="https://github.com/biroeniko/raytracer">another CUDA (and OpenMP)</a>) implementation. Google and you'll find more.
+<P>
 Other short tutorials can be found at <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel</a>.
 Morgan McGuire's <a href="https://graphicscodex.com/">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets. There are plenty of more books, some now free, listed in <a href="#books">our books section</a>, with <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Kevin Suffern's book</a> being a slightly-dated but good choice for a more in-depth introductory book focused on the topic.
 
-<P><b>Blogs</b> related to ray tracing: <a href="http://aras-p.info/blog/">Aras's</a>, <a href="http://psgraphics.blogspot.com/">Pete Shirley's</a>, <a href="https://ingowald.blog/">Ingo Wald's</a>, <a href="http://diaryofagraphicsprogrammer.blogspot.com/">Wolfgang Engel's</a>, <a href="https://blog.demofox.org/2018/11/16/how-to-data-lookups-via-raytracing/">Alan Wolfe's</a>, <a href="https://blogs.msdn.microsoft.com/DirectX/">Microsoft</a>, <a href="https://devblogs.nvidia.com/">NVIDIA</a>. Resources: <a href="https://blog.selfshadow.com/2019/07/30/siggraph-2019-links/">SIGGRAPH 2019 links</a>, <a href="https://jendrikillner.bitbucket.io/post/">Jendrik Illner's summaries</a>.
+<P><b>Blogs</b> related to ray tracing: <a href="http://aras-p.info/blog/">Aras's</a>, <a href="http://psgraphics.blogspot.com/">Pete Shirley's</a>, <a href="https://ingowald.blog/">Ingo Wald's</a>, <a href="http://diaryofagraphicsprogrammer.blogspot.com/">Wolfgang Engel's</a>, <a href="https://blog.demofox.org/2018/11/16/how-to-data-lookups-via-raytracing/">Alan Wolfe's</a>, <a href="https://blogs.msdn.microsoft.com/DirectX/">Microsoft</a>, <a href="https://developer.nvidia.com/blog/?search_theme_form=ray+tracing">NVIDIA</a>. Resources: <a href="https://news.developer.nvidia.com/?search_theme_form=ray+tracing&s=ray+tracing">NVIDIA ray tracing articles</a>, <a href="https://blog.selfshadow.com/2019/07/30/siggraph-2019-links/">SIGGRAPH 2019 links</a>, <a href="https://jendrikillner.bitbucket.io/post/">Jendrik Illner's summaries</a>.
 
 <P>For basic ray/object intersection algorithm references, see <a href="intersections.html">our object/object intersection page</a>.
 
@@ -76,17 +75,23 @@ Older courses such as <a href="https://sites.google.com/site/raytracingcourse/">
 
 <P>Much useful information can be found in blogs
 such as <a href="https://pharr.org/matt/blog/">Matt Pharr's</a>, <a href="http://psgraphics.blogspot.com/">Peter Shirley's</a>, as well as pieces such as as Demofox's <a href="https://blog.demofox.org/2016/09/21/path-tracing-getting-started-with-diffuse-and-emissive/">Path Tracing – Getting Started With Diffuse and Emissive</a> and Anders Lindqvist's <a href="https://www.breakin.se/learn/pathtracing-coherency.html">Pathtracing Coherency</a>.
-Aras Pranckevi&#269;ius has a recent <a href="https://aras-p.info/blog/2018/08/01/Pathtracer-15-Pause--Links/">an in-depth series</a> on writing a path tracer, with many more links to resources (which we mostly will not copy here). Matt Petineo also has <a href="https://github.com/TheRealMJP/DXRPathTracer">a path tracer using DXR</a>.
+NVIDIA's <a href="https://devblogs.nvidia.com/category/graphics-simulation/">blog</a> has practical information, such as on <a href="https://devblogs.nvidia.com/profiling-dxr-shaders-with-timer-instrumentation/">profiling ray performance</a> and on <a href="https://devblogs.nvidia.com/implementing-stochastic-lod-with-microsoft-dxr/">stochastic levels of detail</a>.
+Aras Pranckevi&#269;ius has <a href="https://aras-p.info/blog/2018/08/01/Pathtracer-15-Pause--Links/">an in-depth series</a> on writing a path tracer, with many more links to resources (which we mostly will not copy here). Matt Pettineo also has <a href="https://github.com/TheRealMJP/DXRPathTracer">a path tracer using DXR</a>.
+
+<P><B>SIGGRAPH 2019:</B> All ray and path tracing related events and links to slides, notes, and papers <a href="http://www.realtimerendering.com/raytracing/roundup.html">listed here</a>; also see the <a href="https://blog.selfshadow.com/2019/07/30/siggraph-2019-links/">SIGGRAPH 2019 links</a>.
 
 <a NAME="realtime">
 <H1 class="subHeader">Real-Time</H2>
 </a>
-For newer articles, I highly recommend <a href="https://www.jendrikillner.com/tags/weekly/">Jendrik Illner's weekly reports</a>. These often contain links to interactive ray tracing articles.
+For newer articles, I highly recommend <a href="https://www.jendrikillner.com/tags/weekly/">Jendrik Illner's weekly reports</a>. These often contain links to interactive ray tracing articles. <a href="https://www.willusher.io/blog">Will Usher's blog</a> includes articles on using the new ray tracing APIs effectively.
 
 <P>Talks from <a href="https://www.gdcvault.com/search.php#&category=free&firstfocus=&keyword=ray+tracing&conference_id=">GDC 2019</a> and <a href="https://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=ray%20tracing&searchItems=&sessionTopic=&sessionEvent=&sessionYear=&sessionFormat=&submit=&select=">GTC 2019</a> are available for viewing and download.
 <P>
 With Microsoft's announcement of <a href="https://devblogs.microsoft.com/directx/announcing-microsoft-directx-raytracing/">the DXR ray tracing API for DirectX</a> in March 2018 at the <I>Games Developers Conference</I></a>, real-time ray tracing has become synonymous with this effort, along with initiatives in Vulkan <a href="http://on-demand.gputechconf.com/gtc/2018/presentation/s8521-advanced-graphics-extensions-for-vulkan.pdf">such as NVIDIA's</a> (<a href="http://on-demand.gputechconf.com/siggraph/2018/video/sig1826-nuno-subtil-vulkan.html">video here</a>).
-NVIDIA has <a href="https://developer.nvidia.com/rtx/raytracing">much more information</a>.
+NVIDIA has <a href="https://developer.nvidia.com/rtx/raytracing">much more information</a>. Their <a href="https://developer.nvidia.com/nsight-graphics">Nsight Graphics</a> tool has support for ray tracing debugging.
+
+<P>
+Will Usher has <a href="https://www.willusher.io/blog">API-agnostic articles</a> on real-time ray tracing, including one on <a href="https://www.willusher.io/graphics/2019/11/20/the-sbt-three-ways">the shader binding table</a> and on <a href="https://www.willusher.io/graphics/2019/09/06/faster-shadow-rays-on-rtx">faster ways of computing shadows</a>.
 
 <P>There are other efforts out there, such as <a href="https://developer.apple.com/documentation/metalperformanceshaders/metal_for_accelerating_ray_tracing">Apple's support for ray tracing</a> in their Metal API.
 
@@ -94,35 +99,38 @@ NVIDIA has <a href="https://developer.nvidia.com/rtx/raytracing">much more infor
 
 <P>Eye candy includes the <a href="https://www.youtube.com/watch?v=lMSuGoYcT3s">Star Wars demo</a> from GDC 2018, the <a href="https://www.youtube.com/watch?time_continue=3&v=Z85aPqqJzs0">Porsche demo</a>, and NVIDIA's <a href="https://www.youtube.com/watch?v=KJRZTkttgLw">Project SOL demo</a> and <a href="https://youtu.be/pNmhJx8yPLk">followup</a>, which includes an explanation.
 
+<P>For real-time demos using RTX cards, see the path-traced <a href="https://store.steampowered.com/agecheck/app/1089130/">Quake II RTX</a> demo (<a href="https://youtu.be/unGtBbhaPeU">YouTube</a>, source code <a href="https://github.com/NVIDIA/Q2RTX">here</a>) or join the <a href="https://www.reddit.com/r/minecraftRTX/comments/g8ks9d/getting_startedhelpful_guides/">Minecraft RTX beta program</a> (<a href="https://www.nvidia.com/en-us/geforce/news/minecraft-with-rtx-coming-soon-screenshots-and-guides/">tech. talk</a>). NVIDIA provides other <a href="https://www.nvidia.com/en-us/geforce/community/demos/">tech demos</a>, with the newer ones using RTX.
+
+<P>Denoising is critical for real-time DXR performance when using path tracing or other Monte Carlo techniques. Alain Galvan's summary posts on <a href="https://alain.xyz/blog/raytracing-denoising">ray tracing denoising</a> and <a href="https://alain.xyz/blog/machine-learning-denoising">machine-learning denoising</a> are good places to start. <a href="https://cs.dartmouth.edu/~wjarosz/publications/zwicker15star.html">Zwicker et al.</a> give a state of the art report about this area; note that it is from 2015, however, so is not fully up to date. Intel provides free code in their <a href="https://openimagedenoise.github.io/">Open Image Denoise</a> filter collection. The <a href="https://github.com/NVIDIA/Q2RTX">Quake II RTX demo</a> includes shader code for the A-SVGF filter for denoising. NVIDIA has an <a href="https://developer.nvidia.com/gameworks-ray-tracing">early access program</a> for their denoiser.
+
 <a NAME="dxr">
 <H2 class="subHeader">DXR-Specific</H2>
 </a>
+<a href="https://microsoft.github.io/DirectX-Specs/d3d/Raytracing.html">The DirectX Raytracing Functional Spec</a> is a good place to start for learning about DXR. NVIDIA's DXR tutorial <a href="https://developer.nvidia.com/rtx/raytracing/dxr/DX12-Raytracing-tutorial-Part-1">part 1 (setup)</a> and <a href="https://developer.nvidia.com/rtx/raytracing/dxr/DX12-Raytracing-tutorial-Part-2">part 2 (rendering)</a> gets you programming with <a href="https://github.com/Microsoft/DirectX-Graphics-Samples">Microsoft's sample programs</a>. Version 1.1 of DXR 12 <a href="https://devblogs.microsoft.com/directx/dxr-1-1/">adds more features</a>. The <a href="https://microsoft.github.io/DirectX-Specs/">DirectX-Specs</a> website provides additional documentation in web form about other new features, such as mesh shaders.
 
-<P>A <a href="https://devblogs.nvidia.com/rtx-best-practices/">best practices page</a> was developed by NVIDIA for running DXR on RTX hardware. Freshness date: March 20, 2019.
+<P>Adam Marrs gives <a href="http://www.visualextract.com/posts/introduction-to-dxr/">a pure DXR tutorial</a> to allow you to get right into the specification.
+
+<P>The <a href="https://developer.nvidia.com/rtxgi">RTXGI SDK</a> provides real-time global illumination by using ray tracing to form light probes in a way that minimizes light and shadow leaks found in traditional probe systems.
+
+<P>Working with DXR directly can be a bit painful. Confetti's <a href="https://github.com/ConfettiFX/The-Forge">The Forge</a> supports DXR and much else. NVIDIA's <a href="https://github.com/NVIDIAGameWorks/Falcor">Falcor 4.0 framework</a> is useful for research and prototyping. One project built atop this framework is <a href="https://github.com/boksajak/RTAO">ray-traced ambient occlusion</a>, though sadly this project has not been updated to Falcor 4.0.
+
+<P>You can find all DXR-related posts on NVIDIA's website with <a href="https://devblogs.nvidia.com/tag/dxr">this link</a>. A <a href="https://devblogs.nvidia.com/rtx-best-practices/">best practices page</a> was developed by NVIDIA for running DXR on RTX hardware. Freshness date: March 20, 2019. Newer is <a href="https://developer.nvidia.com/gtc/2020/video/s22695">the video</a> for the GTC 2020 talk "RTX Real Time Ray Tracing Best Practices." Older resources follow.
 
 <P><a href="http://www.realtimerendering.com/blog/ray-tracing-at-gdc/">Our blog entry</a> on DXR contains a large set of links to resources, demos, and related articles that came out around or soon after GDC 2018.
 
-<P>There have been <a href="https://www.youtube.com/results?search_query=dxr+ray+tracing">many videos</a> about DXR effects and demos. SEED's <a href="https://www.youtube.com/watch?v=LXo0WdlELJk">Pica Pica</a> demo gives a quick runthrough of some possible effects and their benefits. Digital Foundry's <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns">runthrough of <I>Battlefield V</I></a> has fairly detailed explanations of effects and how they were done with DXR, though one or two things appear incorrect, e.g., <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns&feature=youtu.be&t=669">BVH varying with image resolution</a>. You can read <a href="https://www.eurogamer.net/articles/digitalfoundry-2018-battlefield-5-rtx-ray-tracing-analysis">an analysis and Q&amp;A here</a>. The <a href="https://youtu.be/1IIiQZw_p_E">Atomic Heart explanation</a> is short and sweet, and is particularly good at showing <a href="https://youtu.be/1IIiQZw_p_E?t=123">the limitations of screen-space reflections</a>. Metro Exodus use of ray tracing has a significant effect on the atmosphere of the game; you can <a href="https://www.overclock3d.net/reviews/software/metro_exodus_pc_performance_review_-_rtx_on/7">use a slider to compare</a> the differences yourself. Read about <a href="https://www.eurogamer.net/articles/digitalfoundry-2019-metro-exodus-tech-interview">Metro Exodus's use of ray tracing</a> and other features, and see <a href="https://youtu.be/eiQv32imK2g?t=722">Digital Foundry's video</a> and <a href="http://morad.in/2019/03/27/observations-about-the-rendering-of-metro-exodus/">this detailed post</a> that looks under the hood.
+<P>There have been <a href="https://www.youtube.com/results?search_query=dxr+ray+tracing">many videos</a> about DXR effects and demos. <a href="https://news.developer.nvidia.com/using-real-time-ray-tracing-in-the-production-of-fortnite-game-trailers/">Fortnite uses real-time ray tracing</a> to make trailers. SEED's <a href="https://www.youtube.com/watch?v=LXo0WdlELJk">Pica Pica</a> demo gives a quick runthrough of some possible effects and their benefits. Digital Foundry's <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns">runthrough of <I>Battlefield V</I></a> has fairly detailed explanations of effects and how they were done with DXR, though one or two things appear incorrect, e.g., <a href="https://www.youtube.com/watch?v=8kQ3l6wN6ns&feature=youtu.be&t=669">BVH varying with image resolution</a>. You can read <a href="https://www.eurogamer.net/articles/digitalfoundry-2018-battlefield-5-rtx-ray-tracing-analysis">an analysis and Q&amp;A here</a>. The <a href="https://youtu.be/1IIiQZw_p_E">Atomic Heart explanation</a> is short and sweet, and is particularly good at showing <a href="https://youtu.be/1IIiQZw_p_E?t=123">the limitations of screen-space reflections</a>. Metro Exodus use of ray tracing has a significant effect on the atmosphere of the game; you can <a href="https://www.overclock3d.net/reviews/software/metro_exodus_pc_performance_review_-_rtx_on/7">use a slider to compare</a> the differences yourself. Read about <a href="https://www.eurogamer.net/articles/digitalfoundry-2019-metro-exodus-tech-interview">Metro Exodus's use of ray tracing</a> and other features, watch <a href="https://developer.nvidia.com/gtc/2019/video/S9985">their presentation</a>, and see <a href="https://youtu.be/eiQv32imK2g?t=722">Digital Foundry's video</a> and <a href="http://morad.in/2019/03/27/observations-about-the-rendering-of-metro-exodus/">this post</a> that looks under the hood.
 
 <P>DXR implies GPU hardware dedicated to improving ray tracing performance, such as <a href="https://developer.nvidia.com/rtx/raytracing">NVIDIA's RTX</a>. However, for simpler scenes, or for powerful clusters of machines, interactive ray tracing is possible using traditional CPUs or less-specialize GPUs. 3Dmark's <a href="https://www.nvidia.com/en-us/geforce/news/nvidia-dlss-3dmark-port-royal-benchmark/">Port Royal benchmark</a> is designed for interactive ray tracing.
 
 <P>The SIGGRAPH 2018 course <I>Introduction to DirectX RayTracing</I> has <a href="http://intro-to-dxr.cwyman.org/">notes and sample code available</a>, as well as much other useful information for getting started with DXR shaders. You can <a href="https://youtu.be/Q1cuuepVNoY">watch the entire course</a> on YouTube. This code has been <a href="https://github.com/NVIDIAGameWorks/GettingStartedWithRTXRayTracing">polished and expanded</a>, and blogged about <a href="https://devblogs.nvidia.com/my-first-ray-tracing-demo/">here</a>. NVIDIA's <a href="https://www.nvidia.com/en-us/events/siggraph/schedule/?session-type=course">Wednesday SIGGRAPH 2018 courses</a> have more recorded presentations on real-time ray tracing.
 
-<P>Microsoft provides a set of <a href="https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12Raytracing">D3D12 Raytracing Samples</a>. NVIDIA has tutorials <a href="https://github.com/NVIDIAGameWorks/DxrTutorials">on Github</a> for learning about more low-level DXR calls. They also provide <a href="https://developer.nvidia.com/rtx/raytracing/dxr/DX12-Raytracing-tutorial-Part-1">a standalone tutorial</a>.
-
-<P>The DXR 0.09 Functional Spec is <a href="http://intro-to-dxr.cwyman.org/spec/DXR_FunctionalSpec_v0.09.docx">available here</a> without having to sign up to be a developer. The <a href="https://microsoft.github.io/DirectX-Specs/">DirectX-Specs</a> website provides additional documentation in web form. Adam Marrs gives <a href="http://www.visualextract.com/posts/introduction-to-dxr/">a pure DXR tutorial</a> to allow you to get right into the specification. Also useful (though needing an update) is the <a href="https://github.com/NVIDIAGameWorks/Falcor">Falcor framework</a>. One project built atop this framework is <a href="https://github.com/boksajak/RTAO">ray-traced ambient occlusion</a>.
-
-<P>NVIDIA has a <a href="https://devblogs.nvidia.com/rtx-best-practices/">best practices</a> summary for DXR. You can find all DXR-related posts on their website with <a href="https://devblogs.nvidia.com/tag/dxr">this link</a>
-
-<P>NVIDIA's <a href="https://developer.nvidia.com/falcor">Falcor</a> framework gives access to DXR ray tracing capabilities at a higher level. Confetti's <a href="https://github.com/ConfettiFX/The-Forge">The Forge</a> supports DXR and much else.
-
-<P>Denoising is critical for real-time DXR performance when using path tracing or other Monte Carlo techniques. <a href="https://cs.dartmouth.edu/~wjarosz/publications/zwicker15star.html">Zwicker et al.</a> give a state of the art report about this area; note that it is from 2015, however, so is not fully up to date. Intel provides free code in their <a href="https://openimagedenoise.github.io/">Open Image Denoise</a> filter collection.
+<P>NVIDIA has older tutorials <a href="https://github.com/NVIDIAGameWorks/DxrTutorials">on Github</a> for learning about more low-level DXR calls.
 
 <a NAME="vulkan">
 <H2 class="subHeader">Vulkan-Specific</H2>
 </a>
 
-NVIDIA has an <a href="https://devblogs.nvidia.com/vulkan-raytracing/">introductory article to ray tracing in Vulkan</a>, using their extensions. There's a bit more information about <a href="https://blog.icare3d.org/2018/09/nvidia-turing-vulkanopengl-extensions.html">these extensions</a> and other features, supported for their Turing architecture. NVIDIA has <a href="https://developer.nvidia.com/vulkan-turing">still more information</a> on their developer page.
+NVIDIA has an <a href="https://developer.nvidia.com/rtx/raytracing/vkray">Vulkan ray tracing tutorial</a>, using <a href="https://developer.nvidia.com/vulkan-turing">their extensions</a>. <a href="https://devblogs.nvidia.com/bringing-hlsl-ray-tracing-to-vulkan/">HLSL shaders for ray tracing</a> can now be converted to VKRay. Keep <a href="https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer/">this article</a> in mind for writing an efficient Vulkan renderer in general.
 
 <P>
 Basic <a href="https://github.com/iOrange/rtxON/tree/Version_2_2">Vulkan ray tracing tutorials</a> with code are available from one user.
@@ -141,10 +149,10 @@ Basic <a href="https://github.com/iOrange/rtxON/tree/Version_2_2">Vulkan ray tra
 <UL>
 <LI>AMD's <a href="https://gpuopen.com/gaming-product/radeon-rays/">Radeon-Rays</a> is an open-source library for ray tracing based on OpenCL.
 <LI>Intel's <a href="https://www.embree.org/">Embree</a> provides a collection of kernels designed for efficient ray tracing on CPUs.
-<LI>NVIDIA's <a href="https://developer.nvidia.com/optix">OptiX</a> SDK focuses on using CUDA for ray tracing. Here's <a href="https://docs.nvidia.com/gameworks/content/gameworkslibrary/optix/optix_quickstart.htm">a quick-start guide</a>.
+<LI>NVIDIA's <a href="https://developer.nvidia.com/optix">OptiX</a> SDK focuses on using CUDA for ray tracing. Here's <a href="https://docs.nvidia.com/gameworks/content/gameworkslibrary/optix/optix_quickstart.htm">a quick-start guide</a>. The <a href="https://sites.google.com/view/rtx-acc-ray-tracing-with-optix">SIGGRAPH 2019 course slides</a> and associated <a href="https://gitlab.com/ingowald/optix7course">code repository</a> are also worthwhile for learning how to get up and running.
 </UL>
 
-<P>Enscape <a href="https://gpuopen.com/deferred-path-tracing-enscape/">provides a rundown</a> of their approach to building an interactive hybrid raster/path-tracing system.
+<P><a href="https://enscape3d.com/features/">Enscape</a> provides <a href="https://gpuopen.com/deferred-path-tracing-enscape/">a rundown</a> of their approach to building an interactive hybrid raster/path-tracing system.
 
 <P><a href="https://www.keyshot.com/">KeyShot</a> uses ray tracing for all rendering, even when positioning objects and lights in a scene. Nice <a href="https://www.keyshot.com/gallery/">eye candy</a>, too.
 
@@ -314,9 +322,9 @@ entries</a>.
 <div id="footer" class="clearfix">
 <ul>
 <li>Contacts:</li>
-<li><a href="http://www.cloudflare.com/email-protection#8afeebe7cae9f9a4e6fee2a4f9ef">Tomas</a></li>
-<li><a href="http://www.cloudflare.com/email-protection#6104130802092100020c4f0e1306">Eric</a></li>
-<li><a href="http://www.cloudflare.com/email-protection#d5a7a1a7e695a7b0bbb1b0a7a2babbbefbb6bab8">Naty</a></li>
+    <li><a href="mailto:tam@cs.lth.se">Tomas</a></li>
+    <li><a href="mailto:erich@acm.org">Eric</a></li>
+    <li><a href="mailto:rtr3@renderwonk.com">Naty</a></li>
 </ul>
 </div>  
 </div>  

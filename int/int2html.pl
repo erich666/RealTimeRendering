@@ -188,7 +188,7 @@ sub OUTPUTLINES {
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: July 5, 2019
+Last changed: July 30, 2020
 </div>
 
 <P>
@@ -236,7 +236,7 @@ Guide to source abbreviations:
 
 <LI><B>Shadertoy</B> - <a href="http://www.iquilezles.org/www/articles/intersectors/intersectors.htm">Qu&iacute;lez</a> gives code snippets and shader-based demos, runnable in your browser (best on Chrome).
 
-<LI><B>TGS</B> - <a href="http://www.andrewaye.com/Teikitu%20Gaming%20System/index.html">Teikitu Gaming System Collision</a>, Andrew Aye's object/object intersection/distance and sweep/penetration software (non-commercial use only).
+<LI><B>TGS</B> - <a href="https://github.com/teikitu/teikitu_release/tree/master/teikitu/src/TgS%20COLLISION">Teikitu gaming System COLLISION</a>, Andrew Aye's object/object intersection/distance and sweep/penetration software (non-commercial use only).
 
 <LI><B>TVCG</B> - <a href="http://www2.computer.org/portal/web/tvcg/">IEEE Transactions on Visualization and Computer Graphics</a>.
 

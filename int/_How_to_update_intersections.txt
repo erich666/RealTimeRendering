@@ -1,0 +1,13 @@
+Make fixes to intersections.txt
+
+There are also links in int2html.pl - fix those, too.
+
+Update the date in int2html.pl around line 191
+
+Run: perl int2html.pl
+
+This creates a new intersections.html file. Compare it to the current file in the directory above (i.e., the main directory).
+
+Looks good? Copy this new intersections.html to the directory above (i.e., the main directory).
+
+FTP connect and transfer intersections.html to the site.
