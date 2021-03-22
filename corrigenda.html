@@ -42,7 +42,7 @@
 <div class="bodyText"> 
  
 <div class="metadata"> 
-Last changed: May 29, 2020
+Last changed: March 10, 2021
 </div> 
  
 <br> 
@@ -65,7 +65,7 @@ S&eacute;bastien Hillaire (4th).
 <ul>
 <li>Page 14: change "superscalar" to "multi-core".
 <li>Pages 16 through 26: change "unit cube" in numerous places, since the cube is 2x2x2, not 1x1x1. What to change it to, I'm not sure. The phrase "canonical view volume" is what this phrase stands for. Maybe "canonical cube" or we could dub it the "standard cube."(This error has been in all four editions, and is one that early versions of the OpenGL Red Book also makes.)*
-<li>Page 67: There is a sign error in the view vector. Change "and $\mb v$ with $(0,0,1)$" to "and $\mb v$ with $(0,0,-1)$". In the left matrix that follows, change "v_x & v_y & v_z & 0" to "-v_x & -v_y & -v_z & 0". In the right matrix, change "v_x & v_y & v_z & -\mb t\cdot\mb v" to "-v_x & -v_y & -v_z & \mb t\cdot\mb v".\
+<li>Page 67: There is a sign error in the view vector, which causes a number of rewrites. Change "(c-l) / || c-l ||" to "(l-c) / || l-c ||". Change "r = -(v x u') / || v x u' ||" to "r = (v x u') / || v x u' ||", i.e., remove the minus sign. Change "u = v x r" to "u = r x v". Change "and $\mb v$ with $(0,0,1)$" to "and $\mb v$ with $(0,0,-1)$". In the left matrix that follows, change "v_x & v_y & v_z & 0" to "-v_x & -v_y & -v_z & 0". In the right matrix, change "v_x & v_y & v_z & -\mb t\cdot\mb v" to "-v_x & -v_y & -v_z & \mb t\cdot\mb v".\
 <li>Page 214: Equation 6.16, the second component of the normal should be "h_y", not "h_x".
 <li>Page 242: "by slicing it parallel to the view direction" to "by slicing it perpendicular to the view direction".
 <li>Page 256: "Called an exponential shadow map (ESM) or exponential variance shadow map (EVSM)" - remove "or exponential variance shadow map (EVSM)".
@@ -76,6 +76,7 @@ S&eacute;bastien Hillaire (4th).
 <li>Page 733: "square function" to "box function".
 <li>Page 733: "is created by integrating $\beta_0(t)$" to "is created by convolving $\beta_0(t)$ with $\beta_0(t)$", and "is created by integrating $\beta_1(t)$" to "is created by convolving $\beta_1(t)$ with $\beta_0(t)$".
 <li>Page 751: Equation 17.56, the expression should be divided by "2 \epsilon".
+<li>Page 752: Equation 17.57, the last part on the second line should change sign to be negative, i.e., "- r_b h (1 - h)".
 <li>Page 767 and 777: "The normal is then found as the cross product between those vectors." to "... between these." (tangent patches)
 <li>Page 1092: Reference 793, these course notes are no longer online, so this reference should be replaced by reference 903, Kirk, David, and Wen-Mei Hwu, <I>Programming Massively Parallel Processors: A Hands-on Approach</I>, Morgan-Kaufmann, 2016 <br><a href="https://books.google.com/books?hl=en&lr=&id=wcS_DAAAQBAJ&oi=fnd&pg=PP1&dq=%22Programming+Massively+Parallel+Processors%22&ots=Hk9StFFM-x&sig=eFl3IKb4SDCmmvm7TGO7F_sQ8l0#v=onepage&q&f=false">(see Google Book excerpt here)</a>.
 <li>Page 1133: Reference 1580, the author of these slides should be Eitan Grinspun; Peter Schr&ouml;der ran the course. (Not fixed in any printing, as the reference order then needs to be changed.)*
@@ -87,8 +88,13 @@ S&eacute;bastien Hillaire (4th).
 continuous (floating point) value within the pixel" should have the reference "~\cite{Heckbert90a}." - this is reference #692, "What Are the Coordinates of a Pixel?"
 <li>Page 22: in Figure 2.8 it says "pixel processing and merging" in the caption, but should say "pixel shading and merging" in order to match the functional stage name.
 <li>Page 72: "we have a gimbal lock (Section 4.2.2)," - self-reference; remove entire phrase.
+<li>Page 77: "from the multiplication seen in Equation 4.3.1" should be "... Equation 4.32".
+<li>Page 100: "and the constants d and f" to "and the constants d and e", with "e" being derived from n and f, as shown further on.
+<li>Page 108: last sentence in Figure 5.4, "the light and view vectors" should be "the light and surface normal vectors."</li>
+<li>Page 111: below equation 5.12, "the Unreal game engine uses \epsilon = 1 cm", the unit should be "1 cm^2".</li>
 <li>Page 128: "likely to have lower register occupancy" to "likely to have lower register usage".
 <li>Page 131: "goal of this sampling process is" - unexpected line break.
+<li>Page 144: Figure 5.28, "The green square ... and the red squares" - change squares to dots.</li>
 <li>Page 145: "Interleaved samplingindexsampling!interleaved" - typographical error.
 <li>Page 160: "multiplied by the stored alpha before being display" - should be "displayed".
 <li>Page 265: "We have avoiding" to "We have avoided".
@@ -124,7 +130,7 @@ continuous (floating point) value within the pixel" should have the reference "~
 <li>Page 1146: Reference 1829, change "Johnsson" to "Johnson".
 </ul>
 
-<p>Very minor errors (only the authors should care, for future revisions):
+<p>Very minor errors (small readability errors, probably not worth your time correcting in your own copy):
 <ul>
 <li>Page xiv: the phrase "who helped us along the way" is repeated; replace the second instance with "involved", i.e. "about everyone involved". Michael Drobot is thanked twice, and Wolfgang Engel's name was slightly out of order.
 <li>Page 3: "And after" to simply "After".
@@ -133,6 +139,7 @@ continuous (floating point) value within the pixel" should have the reference "~
 <li>Page 94: Figure 4.18, the "z" axis labels should all be italicized, "<i>z</i>".
 <li>Pages 102, 159, 404, 420, 421, 452, 512, 767: avoid "et al.'s" by rewording. 
 <li>Page 140 (3rd printing): Figure 5.24, "per pixel, and as can be seen, two of" to "per pixel. Two of".
+<li>Page 145: "One solution is use a different sampling pattern at each pixel" to "One solution is to use..."</li>
 <li>Page 237: Figure 7.12 could include a reference to Christoph Peters' page <a href="http://momentsingraphics.de/?p=175">http://momentsingraphics.de/?p=175</a>.*
 <li>Page 397: "(see [1838]):" should be "[1838]:", as we never consider a citation something we point at.
 <li>Page 485: "an unique" to "a unique".
@@ -193,7 +200,7 @@ continuous (floating point) value within the pixel" should have the reference "~
 
 <p> Errors followed by a "*" have not been fixed internally yet and are likely to be deferred until a future fifth edition (no, none is planned right now), as they could affect pagination. Otherwise, fixes are in place in online materials (e.g., references and figures) and will be in future printings, as possible.
 
-<p><I>Thanks to Evgenii Golubev, Alex Yang, Doug Richardson, Mick Charles Beaver, Yuhao Zhu, and others for reporting errors.</I>
+<p><I>Thanks to Evgenii Golubev, Alex Yang, Doug Richardson, Mick Charles Beaver, Yuhao Zhu, Feiyun Wang, and others for reporting errors.</I>
 
 
  

@@ -44,7 +44,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: August 5, 2020
+Last changed: March 15, 2021
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
@@ -144,6 +144,10 @@ Basic <a href="https://github.com/iOrange/rtxON/tree/Version_2_2">Vulkan ray tra
 
 <P>
 "Interactive" here means "not DXR-based."
+
+<P>If you want to see hardware-independent progressive rendering path tracing, a good place to start is <a href="https://github.com/erichlof/THREE.js-PathTracing-Renderer">Eric Loftis's rendering demos</a>. Go to the <a href="https://github.com/erichlof/THREE.js-PathTracing-Renderer#live-demos">Live Demos section</a> and give them a whirl - they're browser-based, using Javascript and WebGL through three.js, so no installation or download is needed. Open source. One takeaway for me is how the rate of reduction of variance over time decreases, as <a href="https://link.springer.com/chapter/10.1007/978-1-4842-4427-2_15">described in section 15.3 in <I>Ray Tracing Gems</I></a>. That is, it takes a lot more samples later on to decrease noise a bit, which points towards denoising as the other key part of high-performance ray tracing.
+
+<P>In a similar vein, many <a href="https://www.shadertoy.com/results?query=ray">shadertoy demos</a> are based on ray marching or other ray casting techniques run in (often complex) shaders. Mikael Christensen has a <a href="http://blog.hvidtfeldts.net/index.php/2011/08/distance-estimated-3d-fractals-iii-folding-space/">series of articles</a> on modeling surfaces for such rendering. Electric Square provides <a href="https://github.com/electricsquare/raymarching-workshop">a tutorial on ray marching techniques</a>.
 
 <P>A number of hardware vendors provide free ray tracing software in various forms:
 <UL>
@@ -308,7 +312,7 @@ entries</a>.
   <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
   <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
 <b><a href="https://smile.amazon.com/gp/product/0122861604?tag=realtimerenderin">An Introduction to Ray Tracing</a></b>, edited by Andrew Glassner, Morgan Kaufmann, 1989.
-<P>The first book on ray tracing. Ancient, but most of the information is still valid - math is math, data structures are data structures. Download the <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf">PDF</a> or <a href="http://www.realtimerendering.com/raytracing/Andrew%20S.%20Glassner%20-%20An%20Introduction%20to%20Ray%20tracing%20(The%20Morgan%20Kaufmann%20Series%20in%20Computer%20Graphics)%20(1989).djvu">DJVU</a> version for free. Andrew Glassner's page on the book <a href="https://www.glassner.com/portfolio/an-introduction-to-ray-tracing/">here</a>, errata page for first printing <a href="an_intro_to_rt-errata.html">here</a> (all errata are corrected in the PDF version); review by Matt Pharr <a href="https://pharr.org/matt/blog/2019/01/26/an-introduction-to-ray-tracing.html">here</a>.
+<P>The first book on ray tracing. Ancient, but most of the information is still valid - math is math, data structures are data structures. Download the <a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf">PDF</a> or <a href="http://www.realtimerendering.com/raytracing/Andrew%20S.%20Glassner%20-%20An%20Introduction%20to%20Ray%20tracing%20(The%20Morgan%20Kaufmann%20Series%20in%20Computer%20Graphics)%20(1989).djvu">DJVU</a> version. Andrew Glassner's page on the book <a href="https://www.glassner.com/portfolio/an-introduction-to-ray-tracing/">here</a>, errata page for first printing <a href="an_intro_to_rt-errata.html">here</a> (all errata are corrected in the PDF version); review by Matt Pharr <a href="https://pharr.org/matt/blog/2019/01/26/an-introduction-to-ray-tracing.html">here</a>; <b><i><a href="http://www.realtimerendering.com/raytracing/An-Introduction-to-Ray-Tracing-The-Morgan-Kaufmann-Series-in-Computer-Graphics-.pdf">download for free</a></i></b>.
 </td></tr>
 
 
