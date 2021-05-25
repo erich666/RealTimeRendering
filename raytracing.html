@@ -44,7 +44,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: April 19, 2021
+Last changed: May 11, 2021
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
@@ -61,7 +61,7 @@ Also, the <a href="https://www.youtube.com/watch?v=frLwRLS_ZR0">Disney video on 
 <a href="#books">Peter Shirley's free books</a> are a fast and free way to dig into the topic and learn by coding; there's even <a href="https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/">a CUDA</a> (and <a href="https://github.com/biroeniko/raytracer">another CUDA (and OpenMP)</a>) implementation. Google and you'll find more.
 <P>
 Other short tutorials can be found at <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel</a>.
-Morgan McGuire's <a href="https://graphicscodex.com/">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets. There are plenty of more books, some now free, listed in <a href="#books">our books section</a>, with <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Kevin Suffern's book</a> being a slightly-dated but good choice for a more in-depth introductory book focused on the topic.
+Morgan McGuire's now-free <a href="https://graphicscodex.courses.nvidia.com/app.html">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets (<a href="https://graphicscodex.com/">main site</a>). There are plenty of more books, some now free, listed in <a href="#books">our books section</a>, with <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Kevin Suffern's book</a> being a slightly-dated but good choice for a more in-depth introductory book focused on the topic.
 
 <P><b>Blogs</b> related to ray tracing: <a href="http://aras-p.info/blog/">Aras's</a>, <a href="http://psgraphics.blogspot.com/">Pete Shirley's</a>, <a href="https://ingowald.blog/">Ingo Wald's</a>, <a href="http://diaryofagraphicsprogrammer.blogspot.com/">Wolfgang Engel's</a>, <a href="https://blog.demofox.org/2018/11/16/how-to-data-lookups-via-raytracing/">Alan Wolfe's</a>, <a href="https://blogs.msdn.microsoft.com/DirectX/">Microsoft</a>, <a href="https://developer.nvidia.com/blog/?search_theme_form=ray+tracing">NVIDIA</a>. Resources: <a href="https://news.developer.nvidia.com/?search_theme_form=ray+tracing&s=ray+tracing">NVIDIA ray tracing articles</a>, <a href="https://blog.selfshadow.com/2019/07/30/siggraph-2019-links/">SIGGRAPH 2019 links</a>, <a href="https://jendrikillner.bitbucket.io/post/">Jendrik Illner's summaries</a>.
 
@@ -184,7 +184,7 @@ upwards of <a href="https://www.engadget.com/2014/10/18/disney-big-hero-6/">tens
 <P>There are a wide range of offline rendering systems, based on ray and path tracing and other related techniques. Here's a short list:
 <UL>
 <LI><a href="https://github.com/wjakob/nori">Nori</a> is a simple C++ ray tracer, written for educational purposes.
-<LI><a href="https://www.pbrt.org/resources.html">pbrt</a> is well-established, with <a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin">a great book</a> about the code.
+<LI><a href="https://www.pbrt.org/resources.html">pbrt</a> is well-established, with <a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin">a great book</a> about the code, <a href="#books">now free</a>.
 <LI><a href="https://www.mitsuba-renderer.org/">Mitsuba</a> - a research-oriented ray tracer which is somewhat like pbrt.
 <LI><a href="https://github.com/tunabrain/tungsten">Tungsten</a> is often compared with Mitsuba, built on Embree, with a liberal license.
 <LI><a href="https://developer.nvidia.com/optix">OptiX</a> focuses on GPU acceleration of ray tracing.
@@ -218,6 +218,14 @@ Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter o
     <I>Forthcoming:</I> <a href="http://raytracinggems.com"><b>Ray Tracing Gems II</b></a>, edited by Adam Marrs, Peter Shirley, and Ingo Wald, Apress</a>, August 2021 (<a href="http://raytracinggems.com">Book's website</a>).
     </td></tr>
 
+<tr><td>
+<a href="https://graphicscodex.courses.nvidia.com/app.html"><img src="AmazonImages/GraphicsCodexThumb50.jpg" alt="cover" height="50" align=left border=0></a>
+<img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
+	<a href="https://graphicscodex.courses.nvidia.com/app.html"><img src="read_for_free_sm.png" align=left border=0></a>
+	<img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
+<b><a href="https://graphicscodex.courses.nvidia.com/app.html">The Graphics Codex</a></b>, by Morgan McGuire, 2011-2021: <a href="http://graphicscodex.com">main site</a>.
+<p>A site that is both a guide to the basics of computer graphics and a practitioner's reference manual. It is continually updated with mini-tutorials, code snippets, algorithm descriptions, and formulae that the author has found of use. Not about ray tracing per se, but includes elements such as <a href="http://graphicscodex.com/Sample2-RayTriangleIntersection.pdf">ray-triangle intersection</a>.
+</td></tr>
 
 <tr><td>
 <a href="https://smile.amazon.com/GPU-Zen-Advanced-Rendering-Techniques/dp/179758314X?tag=realtimerenderin">
@@ -240,8 +248,8 @@ Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter o
 <img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
 	<a href="http://www.pbr-book.org/"><img src="read_for_free_sm.png" align=left border=0></a>
 	<img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
-<b><a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin">Physically Based Rendering, Third Edition: from Theory to Implementation</a></b>, by Matt Pharr, Wenzel Jakob, and Greg Humphreys, Morgan Kaufmann, November 2016 (<a href="https://www.pbrt.org/">more information</a>, <a href="https://books.google.com/books?id=iNMVBQAAQBAJ&printsec=frontcover">Google Books sample</a>), <a href="http://www.pbr-book.org/">read for free</a>.
-<P>A seminal book, presenting best practices and showing what goes into a professional rendering system, with well-documented code.
+<b><a href="https://smile.amazon.com/Physically-Based-Rendering-Third-Implementation/dp/0128006455?tag=realtimerenderin">Physically Based Rendering, Third Edition: from Theory to Implementation</a></b>, by Matt Pharr, Wenzel Jakob, and Greg Humphreys, Morgan Kaufmann, November 2016 (<a href="https://www.pbrt.org/">more information</a>, <a href="https://books.google.com/books?id=iNMVBQAAQBAJ&printsec=frontcover">Google Books sample</a>), <a href="https://www.patreon.com/pbrbook">Patreon page</a>, <a href="http://www.pbr-book.org/">read for free</a>.
+<P>A seminal, Oscar-winning book, presenting best practices and showing what goes into a professional rendering system, with well-documented code.
 </td></tr>
 
 <tr><td>
@@ -269,14 +277,6 @@ Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter o
   <img src="spacer.gif" alt="" height="55" width="12" align=left border=0>
 <b><a href="https://smile.amazon.com/Ray-Tracing-Weekend-Minibooks-Book-ebook/dp/B01B5AODD8?tag=realtimerenderin">Ray Tracing in One Weekend</a></b>, by Peter Shirley, January 2016 (<a href="https://github.com/raytracing/InOneWeekend/releases/">Code</a>, <a href="https://twitter.com/Peter_shirley/status/1029342221139509249">tweet</a>, <a href="http://in1weekend.blogspot.com/2016/01/ray-tracing-in-one-weekend.html">blog</a>, <a href="https://devblogs.nvidia.com/accelerated-ray-tracing-cuda/">CUDA implementation</a>), <a href="http://www.realtimerendering.com/raytracing/Ray%20Tracing%20in%20a%20Weekend.pdf">download for free</a>.
 <P>Start with this one.
-</td></tr>
-
-<tr><td>
-<a href="http://graphicscodex.com"><img src="AmazonImages/GraphicsCodexThumb50.jpg" alt="cover" height="50" align=left border=0></a>
-<img src="spacer.gif" alt="" height="100" width="12" align=left border=0>
-<b><a href="http://graphicscodex.com">The Graphics Codex</a></b>, V2.15, by Morgan McGuire, 2011-2018: <a href="http://graphicscodex.com">sample
-entries</a>.
-<p>An affordable Ebook/site that is both a guide to the basics of computer graphics and a practitioner's reference manual. It is continually updated with mini-tutorials, code snippets, algorithm descriptions, and formulae that the author has found of use. Not about ray tracing per se, but includes elements such as <a href="http://graphicscodex.com/Sample2-RayTriangleIntersection.pdf">ray-triangle intersection</a>.
 </td></tr>
 
 <tr><td>
