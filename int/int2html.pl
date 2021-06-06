@@ -158,7 +158,7 @@ sub OUTPUTLINES {
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr bgcolor="#10304B">
 <td>
-<a href="http://www.realtimerendering.com/blog">
+<a href="http://www.realtimerendering.com/blog/">
 <img src="rtr-header.png" alt="Header image" width="410" height="106"/>
 </a>
 </td>
@@ -188,7 +188,7 @@ sub OUTPUTLINES {
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: July 30, 2020
+Last changed: June 6, 2021
 </div>
 
 <P>
@@ -199,46 +199,46 @@ Last changed: July 30, 2020
 
 This page gives a grid of intersection routines for various popular objects, pointing to resources
 in books and on the web. The most comprehensive books on the subject are
-<a href="http://www.geometrictools.com/Books/Books.html"><I>Geometric Tools for Computer Graphics</I></a> (GTCG) and
+<a href="https://www.geometrictools.com/Books/Books.html"><I>Geometric Tools for Computer Graphics</I></a> (GTCG) and
 <a href="http://realtimecollisiondetection.net/"><I>Real-Time Collision Detection</I></a> (RTCD);
 the former is all-encompassing, the latter more approachable and focused.
 A book focused in large part on object/object intersection tests is the
-<I><a href="https://www.packtpub.com/game-development/game-physics-cookbook">Game Physics Cookbook</a></I> (GPC),
+<I><a href="https://www.packtpub.com/product/game-physics-cookbook/9781787123663">Game Physics Cookbook</a></I> (GPC),
 with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a> -
 see its <a href="https://github.com/gszauer/GamePhysicsCookbook#collision-detection">giant grid</a> for what intersections it covers.
-<a href="http://www.iquilezles.org/www/articles/intersectors/intersectors.htm">Qu&iacute;lez</a> has a bunch of shader-based ray/object intersectors, including ones (beyond those listed in the table) for the torus, disk, and capsule. 
+<a href="https://www.iquilezles.org/www/articles/intersectors/intersectors.htm">Qu&iacute;lez</a> has a bunch of shader-based ray/object intersectors, including ones (beyond those listed in the table) for the torus, disk, and capsule. 
 <P>
 Guide to source abbreviations:
 <UL>
-<LI><B>3DG</B> - <a href="http://www.amazon.com/exec/obidos/ASIN/0201619210?tag=somebooksilike"><I>3D Games: Real-time Rendering and Software Technology</I></a>, Alan Watt and Fabio Policarpo, Addison-Wesley, 2001.
+<LI><B>3DG</B> - <a href="https://smile.amazon.com/exec/obidos/ASIN/0201619210?tag=realtimerenderin"><I>3D Games: Real-time Rendering and Software Technology</I></a>, Alan Watt and Fabio Policarpo, Addison-Wesley, 2001.
 
-<LI><B>GPC</B> - <I><a href="https://www.packtpub.com/game-development/game-physics-cookbook">Game Physics Cookbook</a></I>, by Gabor Szauer, Packt Publishing, March 2017, with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a>
+<LI><B>GPC</B> - <I><a href="https://www.packtpub.com/product/game-physics-cookbook/9781787123663">Game Physics Cookbook</a></I>, by Gabor Szauer, Packt Publishing, March 2017, with <a href="https://github.com/gszauer/GamePhysicsCookbook">code</a>
 
-<LI><B>GPG</B> - <a href="http://www.amazon.com/exec/obidos/ASIN/1584500492?tag=somebooksilike"><I>Game Programming Gems</I></a>, ed. Mark DeLoura, Charles River Media, 2000.
+<LI><B>GPG</B> - <a href="https://smile.amazon.com/exec/obidos/ASIN/1584500492?tag=realtimerenderin"><I>Game Programming Gems</I></a>, ed. Mark DeLoura, Charles River Media, 2000.
 
-<LI><B>GTCG</B> - <a href="http://www.geometrictools.com/Books/Books.html"><I>Geometric Tools for Computer Graphics</I></a>, Philip J. Schneider and David H. Eberly, Morgan Kaufmann Publishers, 2002. Good, comprehensive book on this topic.
+<LI><B>GTCG</B> - <a href="https://www.geometrictools.com/Books/Books.html"><I>Geometric Tools for Computer Graphics</I></a>, Philip J. Schneider and David H. Eberly, Morgan Kaufmann Publishers, 2002. Good, comprehensive book on this topic.
 
 <LI><B>Gems</B> - <a href="http://www.graphicsgems.org">The <I>Graphics Gems</I> series</a>. See the book's <a href="http://www.graphicsgems.org">website</a> for individual book links and code.
 
-<LI><B>GTweb</B> - <a href="http://www.geometrictools.com/">Geometric Tools</a>, Dave Eberly's online computer graphics related software repository. His book <a href="http://www.geometrictools.com/Books/Books.html"><I>3D Game Engine Design</I></a> also covers these, in a readable format, as well as many other <a href="http://www.geometrictools.com/Samples/Geometrics.html">object/object intersection tests</a>.
+<LI><B>GTweb</B> - <a href="https://www.geometrictools.com/">Geometric Tools</a>, Dave Eberly's online computer graphics related software repository. His book <a href="https://www.geometrictools.com/Books/Books.html"><I>3D Game Engine Design</I></a> also covers these, in a readable format, as well as many other <a href="https://www.geometrictools.com/Samples/Geometrics.html">object/object intersection tests</a>.
 
-<LI><B>IRT</B> - <a href="http://www.amazon.com/exec/obidos/ASIN/0122861604?tag=somebooksilike"><I>An Introduction to Ray Tracing</I></a>, ed. Andrew Glassner, Academic Press, 1989. <a href="http://www.realtimerendering.com/blog/an-introduction-to-ray-tracing-is-now-free-for-download/">Free to download</a>.
+<LI><B>IRT</B> - <a href="https://smile.amazon.com/exec/obidos/ASIN/0122861604?tag=realtimerenderin"><I>An Introduction to Ray Tracing</I></a>, ed. Andrew Glassner, Academic Press, 1989. <a href="http://www.realtimerendering.com/blog/an-introduction-to-ray-tracing-is-now-free-for-download/">Free to download</a>.
 
 <LI><B>JCGT</B> - <a href="http://jcgt.org/"><I>The Journal of Computer Graphics Techniques</I></a>.
 
-<LI><B>jgt</B> - <a href="http://www.tandfonline.com/toc/ujgt21/current"><I>journal of graphics tools</I></a>. A partial <a href="https://github.com/erich666/jgt-code">code repository</a> is available.
+<LI><B>jgt</B> - <a href="https://www.tandfonline.com/toc/ujgt21/current"><I>journal of graphics tools</I></a>. A partial <a href="https://github.com/erich666/jgt-code">code repository</a> is available.
 
 <LI><B>RTCD</B> - <a href="http://realtimecollisiondetection.net/"><I>Real-Time Collision Detection</I></a>, by Christer Ericson, Morgan Kaufmann Publishers, 2004.
 
-<LI><B>RTR4</B> - <a href="http://www.realtimerendering.com/"><I>Real-Time Rendering, Fourth Edition</I></a>, by <a href="http://cs.lth.se/tomas_akenine-moller">Tomas M&ouml;ller</a>, <a href="http://erichaines.com">Eric Haines</a>,  Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire <a href="https://www.crcpress.com/">A.K. Peters/CRC Press</a>, 2018.
+<LI><B>RTR4</B> - <a href="http://www.realtimerendering.com/"><I>Real-Time Rendering, Fourth Edition</I></a>, by <a href="https://cs.lth.se/tomas-akenine-moller/">Tomas M&ouml;ller</a>, <a href="http://erichaines.com">Eric Haines</a>,  Naty Hoffman, Angelo Pesce, Michał Iwanicki, and Sébastien Hillaire <a href="https://www.routledge.com/">A.K. Peters/CRC Press</a>, 2018.
 
 <LI><B>SG</B> - <a href="http://plib.sourceforge.net/sg/index.html">Simple Geometry library</a>, Steve Baker's vector, matrix, and quaternion manipulation library.
 
-<LI><B>Shadertoy</B> - <a href="http://www.iquilezles.org/www/articles/intersectors/intersectors.htm">Qu&iacute;lez</a> gives code snippets and shader-based demos, runnable in your browser (best on Chrome).
+<LI><B>Shadertoy</B> - <a href="https://www.iquilezles.org/www/articles/intersectors/intersectors.htm">Qu&iacute;lez</a> gives code snippets and shader-based demos, runnable in your browser (best on Chrome).
 
-<LI><B>TGS</B> - <a href="https://github.com/teikitu/teikitu_release/tree/master/teikitu/src/TgS%20COLLISION">Teikitu gaming System COLLISION</a>, Andrew Aye's object/object intersection/distance and sweep/penetration software (non-commercial use only).
+<LI><B>TgS</B> - <a href="https://github.com/teikitu/teikitu_release/tree/master/teikitu/src/TgS%20COLLISION">Teikitu gaming System COLLISION</a>, Andrew Aye's object/object intersection/distance and sweep/penetration software (non-commercial use only).
 
-<LI><B>TVCG</B> - <a href="http://www2.computer.org/portal/web/tvcg/">IEEE Transactions on Visualization and Computer Graphics</a>.
+<LI><B>TVCG</B> - <a href="https://www.computer.org/csdl/journal/tg">IEEE Transactions on Visualization and Computer Graphics</a>.
 
 </UL>
 
@@ -301,9 +301,9 @@ space), so we do not list these in the table.
 
 <H2>Dynamic Object Intersections</H2>
 
-These are intersections in which the objects are moving relative to one another. Linear motion (only) is assumed; there is research on rotational motion collision detection, not covered here. The <a href="http://www.andrewaye.com/Teikitu%20Gaming%20System/index.html">TGS</a> collision system (non-commercial use only) has many methods in this area, and the book <I>Real-Time Collision Detection</I> covers the subject in some depth. 
+These are intersections in which the objects are moving relative to one another. Linear motion (only) is assumed; there is research on rotational motion collision detection, not covered here. The <a href="https://github.com/teikitu/teikitu_release/tree/master/teikitu/src/TgS%20COLLISION">TgS</a> collision system (non-commercial use only) has many methods in this area, and the book <I>Real-Time Collision Detection</I> covers the subject in some depth. 
 Other relevant presentations can be found on the <a href="https://www.essentialmath.com/tutorial.htm">Essential Math for Games Programmers</a> site.
-One principle is that even if both objects are moving, only one has to be considered moving. That is, one object's movement vector can be subtracted from both objects, leaving one object at rest. Another principle is to perform a <a href="http://www.cs.sunysb.edu/~algorith/files/minkowski-sum.shtml">Minkowski sum</a> (or <a href="http://twvideo01.ubm-us.net/o1/vault/gdc2013/slides/822403Gregorius_Dirk_TheSeparatingAxisTest.pdf">Minkowski difference</a>) of the moving sphere with the other object, essentially shrinking the moving sphere to a ray. A set of static intersection tests are used in many of these tests, so look in the table above for these. The tests below are categorized as <I>boolean</I>, i.e., whether the objects intersect at all, or <I>location</I>, where the actual intersection location where the two moving objects first hit is formed. <I>(Please let me know if you have simple ways of making a given boolean test into a location test.)</I>
+One principle is that even if both objects are moving, only one has to be considered moving. That is, one object's movement vector can be subtracted from both objects, leaving one object at rest. Another principle is to perform a <a href="https://algorist.com/problems/Minkowski_Sum.html">Minkowski sum</a> (or <a href="http://twvideo01.ubm-us.net/o1/vault/gdc2013/slides/822403Gregorius_Dirk_TheSeparatingAxisTest.pdf">Minkowski difference</a>) of the moving sphere with the other object, essentially shrinking the moving sphere to a ray. A set of static intersection tests are used in many of these tests, so look in the table above for these. The tests below are categorized as <I>boolean</I>, i.e., whether the objects intersect at all, or <I>location</I>, where the actual intersection location where the two moving objects first hit is formed. <I>(Please let me know if you have simple ways of making a given boolean test into a location test.)</I>
 
 <P>
 <B>Ray/Moving Sphere:</B> <I>(location)</I> Form a cylinder between the two spheres, intersect the two spheres and cylinder with the ray. See <a href="http://media.steampowered.com/apps/valve/2015/DirkGregorius_Contacts.pdf">Gregorius 2015</a>.<br>
@@ -313,12 +313,12 @@ One principle is that even if both objects are moving, only one has to be consid
 <B>Ray/Moving Polyhedron:</B> Take the convex hull of each polyhedron and then the convex hull of both of these. <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=504">Glassner</a> is the earliest reference I know. See <a href="http://media.steampowered.com/apps/valve/2015/DirkGregorius_Contacts.pdf">Gregorius 2015</a> for a modern treatment.
 
 <P>
-<B>Plane/Moving Sphere:</B> <I>(location)</I> Transform the problem into changing the plane into a thick slab, of thickness equal to the radius of the sphere. Change the sphere's path into a line segment. Perform slab/line segment intersection, i.e., ray/plane intersection for the two sides of the slab. See <a href="http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a>; and <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>..<br>
+<B>Plane/Moving Sphere:</B> <I>(location)</I> Transform the problem into changing the plane into a thick slab, of thickness equal to the radius of the sphere. Change the sphere's path into a line segment. Perform slab/line segment intersection, i.e., ray/plane intersection for the two sides of the slab. See <a href="https://web.archive.org/web/19991128214140/http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a>; and <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>..<br>
 <B>Plane/Moving AABB:</B> <I>(location)</I> If the plane's normal is along one of the primary axes, e.g., it is [0 1 0], [0 0 -1], etc., then turn the problem into slab/line segment intersection, similar to plane/moving sphere above. That is, take the thickness of the AABB and make the plane this thick.<br>
 
 <P>
-The general principal of intersecting a moving sphere against an object is to simplify thinking about the problem by making the sphere into a line segment between its center's start and end locations, while "adding" this sphere (a <a href="http://www.cs.sunysb.edu/~algorith/files/minkowski-sum.shtml">Minkowski sum</a>) to the other object.<br>
-<B>Moving Sphere/Sphere:</B> <I>(location)</I> Add the radius of the moving sphere to the static sphere, and treat the moving sphere as a ray. Use this ray to perform ray/sphere intersection. See <a href="http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a> and <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>..<br>
+The general principal of intersecting a moving sphere against an object is to simplify thinking about the problem by making the sphere into a line segment between its center's start and end locations, while "adding" this sphere (a <a href="https://algorist.com/problems/Minkowski_Sum.html">Minkowski sum</a>) to the other object.<br>
+<B>Moving Sphere/Sphere:</B> <I>(location)</I> Add the radius of the moving sphere to the static sphere, and treat the moving sphere as a ray. Use this ray to perform ray/sphere intersection. See <a href="https://web.archive.org/web/19991128214140/http://www.gamasutra.com/features/19991018/Gomez_1.htm">Gomez</a> and <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>..<br>
 <B>Moving Sphere/Triangle:</B> <I>(location)</I> Similar to above, turn the sphere into a ray. The triangle turns into a solid defined by a set of spheres at the vertices, cylinders along the edges, and a slab for the interior of the triangle. See <a href="https://github.com/jrouwe/SweptEllipsoid">Rouw&eacute;'s article and code</a>; <a href="https://www.geometrictools.com/Documentation/IntersectionMovingSphereTriangle.pdf">GTWeb doc</a>; <a href="http://www.realtimerendering.com/Real-Time_Rendering_4th-Collision_Detection.pdf">RTR4, free Collision Detection chapter</a>.; <a href="http://twvideo01.ubm-us.net/o1/vault/gdc2013/slides/822403Gregorius_Dirk_TheSeparatingAxisTest.pdf">Gregorius 2012</a>.<br>
 <B>Moving Sphere/AABB:</B> GTWeb has <a href="https://www.geometrictools.com/Documentation/IntersectionMovingSphereBox.pdf">a more detailed document on this topic. <I>(boolean)</I> A conservative test (i.e., no false misses, but can give false hits when there actually is no overlap) is to make the AABB move, so forming a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB. Test the static sphere with shaft testing. </a><br>
 
@@ -326,7 +326,7 @@ The general principal of intersecting a moving sphere against an object is to si
 <B>Moving Triangle/Triangle:</B> See <a href="https://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">GTweb doc</a> and <a href="https://code.google.com/archive/p/box2d/downloads">Catto 2013</a>.
 
 <P>
-<B>Moving AABB/AABB:</B> <I>(location)</I> See <a href="http://www.gamasutra.com/features/19991018/Gomez_3.htm">Gomez</a> for a use of the Separating Axis Theorem to solve this problem. <I>(boolean)</I> Form a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB and compare the static AABB against it with shaft testing.<br>
+<B>Moving AABB/AABB:</B> <I>(location)</I> See <a href="https://web.archive.org/web/19991129002900/http://www.gamasutra.com/features/19991018/Gomez_3.htm">Gomez</a> for a use of the Separating Axis Theorem to solve this problem. <I>(boolean)</I> Form a <a href="http://www.realtimerendering.com/downloads/shaft.zip">shaft</a> (<a href="http://www.erichaines.com/ShaftCulling.pdf">paper</a>) between the beginning and ending position of the AABB and compare the static AABB against it with shaft testing.<br>
 
 
 <P>
@@ -340,14 +340,14 @@ The general principal of intersecting a moving sphere against an object is to si
 <a href="http://media.steampowered.com/apps/valve/2015/DirkGregorius_Contacts.pdf">Gregorius 2015</a> covers computing contact points among spheres, capsules, convex hulls, and meshes.
 
 <P>
-Many of the non-curved objects which are moving can be treated as forming <a href="http://www.erichaines.com/ShaftCulling.pdf">shafts</a> between the starting and ending locations, and then the shaft can be tested against a ray simply enough, or against another non-curved object by using the polyhedron/polyhedron test in <a href="#IV83">Gems IV p.83</a>. Another approach is to use the <a href="http://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">Separating Axis Theorem</a> (also see <a href="http://www.gamasutra.com/features/20000330/bobic_01.htm">Bobic</a>) to tell if the two objects overlap. However, all of these approaches are just <I>boolean</I> tests.
+Many of the non-curved objects which are moving can be treated as forming <a href="http://www.erichaines.com/ShaftCulling.pdf">shafts</a> between the starting and ending locations, and then the shaft can be tested against a ray simply enough, or against another non-curved object by using the polyhedron/polyhedron test in <a href="#IV83">Gems IV p.83</a>. Another approach is to use the <a href="https://www.geometrictools.com/Documentation/MethodOfSeparatingAxes.pdf">Separating Axis Theorem</a> (also see <a href="https://web.archive.org/web/20000510080633/http://www.gamasutra.com/features/20000330/bobic_01.htm">Bobic</a>) to tell if the two objects overlap. However, all of these approaches are just <I>boolean</I> tests.
 
 <P>
 <H2>Article references</H2>
 
-<B>Bobic</B> - Bobic, Nick, <a href="http://www.gamasutra.com/features/20000330/bobic_01.htm">"Advanced Collision Detection Techniques,"</a> <I>Gamasutra</I>, March 2000.</a>
+<B>Bobic</B> - Bobic, Nick, <a href="https://web.archive.org/web/20000510080633/http://www.gamasutra.com/features/20000330/bobic_01.htm">"Advanced Collision Detection Techniques,"</a> <I>Gamasutra</I>, March 2000.</a>
 <BR>
-<B>Gomez</B> - Gomez, Miguel, <a href="http://www.gamasutra.com/features/19991018/Gomez_1.htm">"Simple Intersection Tests for Games,"</a> <I>Gamasutra</I>, October 1999.</a>
+<B>Gomez</B> - Gomez, Miguel, <a href="https://web.archive.org/web/19991128214140/http://www.gamasutra.com/features/19991018/Gomez_1.htm">"Simple Intersection Tests for Games,"</a> <I>Gamasutra</I>, October 1999.</a>
 <BR>
 <B>Schroeder</B> - Schroeder, Tim, "Collision Detection Using Ray Casting," <I>Game Developer Magazine</I>, pp. 50-57, August 2001.
 
@@ -356,25 +356,25 @@ Many of the non-curved objects which are moving can be treated as forming <a hre
 
 <B>Ray/ray:</B> <a name="I304">Ronald Goldman</a>, <I>Intersection of Two Lines in Three-Space</I>, Graphics Gems, p. 304.<br>
 <B>Ray/sphere:</B> <a name="I388">Jeff Hultquist</a>, <I>Intersection of a Ray with a Sphere</I>, Graphics Gems, pp. 388-389.<br>
-<B>Ray/cylinder:</B> <a name="IV356">Joseph M. Cychosz</a> and Warren N. Waggenspack, Jr., <I>Intersecting a Ray with a Cylinder</I>, Graphics Gems IV, pp. 356-365, <a href="https://github.com/erich666/GraphicsGems/tree/master/gemsiv/ray_cyl.c">includes code</a>.<br>
+<B>Ray/cylinder:</B> <a name="IV356">Joseph M. Cychosz</a> and Warren N. Waggenspack, Jr., <I>Intersecting a Ray with a Cylinder</I>, Graphics Gems IV, pp. 356-365, <a href="https://github.com/erich666/GraphicsGems/blob/master/gemsiv/ray_cyl.c">includes code</a>.<br>
 <B>Ray/polygon:</B> <a name="IV24">Eric Haines</a>, <a href="http://www.erichaines.com/ptinpoly"><I>Point in Polygon Strategies</I></a>, Graphics Gems IV, pp. 24-46, <a href="https://github.com/erich666/GraphicsGems/tree/master/gemsiv/ptpoly_haines">includes code</a>.<br>
 <B>Ray/cone:</B> <a name="V227">Ching-Kuang Shene</a>, <I>Computing the Intersection of a Line and a Cone</I>, Graphics Gems V, pp. 227-231.<br>
-<B>Ray/AABB:</B> <a name="I395">Andrew Woo</a>, <I>Fast Ray-Box Intersection</I>, Graphics Gems, pp. 395-396, <a href="https://github.com/erich666/GraphicsGems/tree/master/gems/RayBox.c">includes code</a>.<br>
-<B>Ray/polyhedron:</B> <a name="II247">Eric Haines</a>, <I>Fast Ray-Convex Polyhedron Intersection</I>, Graphics Gems II, pp. 247-250, <a href="https://github.com/erich666/GraphicsGems/tree/master/gemsii/RayCPhdron.c">includes code</a>.<br>
+<B>Ray/AABB:</B> <a name="I395">Andrew Woo</a>, <I>Fast Ray-Box Intersection</I>, Graphics Gems, pp. 395-396, <a href="https://github.com/erich666/GraphicsGems/blob/master/gems/RayBox.c">includes code</a>.<br>
+<B>Ray/polyhedron:</B> <a name="II247">Eric Haines</a>, <I>Fast Ray-Convex Polyhedron Intersection</I>, Graphics Gems II, pp. 247-250, <a href="https://github.com/erich666/GraphicsGems/blob/master/gemsii/RayCPhdron.c">includes code</a>.<br>
 
 <P>
 <B>Plane/AABB and AABB/polyhedron:</B> <a name="IV74">Ned Greene</a>, <I>Detecting Intersection of a Rectangular Solid and a Convex Polyhedron</I>, Graphics Gems IV, pp. 74-82.<br>
 
 <P>
-<B>Sphere/AABB:</B> <a name="I335">Jim Arvo</a>, <I>A Simple Method for Box-Sphere Intersection Testing</I>, Graphics Gems, pp. 247-250, <a href="https://github.com/erich666/GraphicsGems/tree/master/gems/BoxSphere.c">includes code</a>.<br>
+<B>Sphere/AABB:</B> <a name="I335">Jim Arvo</a>, <I>A Simple Method for Box-Sphere Intersection Testing</I>, Graphics Gems, pp. 247-250, <a href="https://github.com/erich666/GraphicsGems/blob/master/gems/BoxSphere.c">includes code</a>.<br>
 
 <P>
-<B>Triangle/AABB:</B> <a name="III236">Doug Voorhies</a>, <I>Triangle-Cube Intersection</I>, Graphics Gems III, pp. 236-239, <a href="https://github.com/erich666/GraphicsGems/tree/master/gemsiii/triangleCube.c">includes code</a>.<br>
+<B>Triangle/AABB:</B> <a name="III236">Doug Voorhies</a>, <I>Triangle-Cube Intersection</I>, Graphics Gems III, pp. 236-239, <a href="https://github.com/erich666/GraphicsGems/blob/master/gemsiii/triangleCube.c">includes code</a>.<br>
 <B>Triangle/AABB and AABB/polyhedron:</B> <a name="V375">Green and Hatch</a>, <I>Fast Polygon-Cube Intersection Testing</I>, Graphics Gems V, pp. 375-379, <a href="https://github.com/erich666/GraphicsGems/tree/master/gemsv/ch7-2/">includes code</a>.<br>
 <B>Triangle/frustum:</B> <a name="I84">Paul Heckbert</a>, <I>Generic Convex Polygon Scan Conversion and Clipping</I>, Graphics Gems, pp. 84-86, <a href="https://github.com/erich666/GraphicsGems/tree/master/gems/PolyScan/">includes code</a>.<br>
 
 <P>
-<B>Polyhedron/polyhedron:</B> <a name="IV83">Rich Rabbitz</a>, <I>Fast Collision Detection of Moving Convex Polyhedra</I>, Graphics Gems IV, pp. 83-109, <a href="https://github.com/erich666/GraphicsGems/tree/master/gemsiv/collide.c">includes code</a>.<br>
+<B>Polyhedron/polyhedron:</B> <a name="IV83">Rich Rabbitz</a>, <I>Fast Collision Detection of Moving Convex Polyhedra</I>, Graphics Gems IV, pp. 83-109, <a href="https://github.com/erich666/GraphicsGems/blob/master/gemsiv/collide.c">includes code</a>.<br>
 
 <P>
 <H2>Algorithms</H2>
