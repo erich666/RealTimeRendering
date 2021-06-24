@@ -42,7 +42,7 @@
 <div class="bodyText"> 
  
 <div class="metadata"> 
-Last changed: March 10, 2021
+Last changed: June 21, 2021
 </div> 
  
 <br> 
@@ -66,6 +66,8 @@ S&eacute;bastien Hillaire (4th).
 <li>Page 14: change "superscalar" to "multi-core".
 <li>Pages 16 through 26: change "unit cube" in numerous places, since the cube is 2x2x2, not 1x1x1. What to change it to, I'm not sure. The phrase "canonical view volume" is what this phrase stands for. Maybe "canonical cube" or we could dub it the "standard cube."(This error has been in all four editions, and is one that early versions of the OpenGL Red Book also makes.)*
 <li>Page 67: There is a sign error in the view vector, which causes a number of rewrites. Change "(c-l) / || c-l ||" to "(l-c) / || l-c ||". Change "r = -(v x u') / || v x u' ||" to "r = (v x u') / || v x u' ||", i.e., remove the minus sign. Change "u = v x r" to "u = r x v". Change "and $\mb v$ with $(0,0,1)$" to "and $\mb v$ with $(0,0,-1)$". In the left matrix that follows, change "v_x & v_y & v_z & 0" to "-v_x & -v_y & -v_z & 0". In the right matrix, change "v_x & v_y & v_z & -\mb t\cdot\mb v" to "-v_x & -v_y & -v_z & \mb t\cdot\mb v".\
+<li>Page 136: Five lines from the bottom, "the width of the low-pass filter is increased" to "the sampling rate of the low pass filter is decreased". Similarly, four lines from the bottom, "As shown in the figure, the filter width... original sampling rate." should simply read "As shown in the figure, the resampling rate is set to half the original sampling rate."
+<li>Page 137: Figure 5.23, change the "On the right,..." sentence to, "On the right, the sampling rate is halved and the sinc filter is scaled horizontally by a factor of two."
 <li>Page 214: Equation 6.16, the second component of the normal should be "h_y", not "h_x".
 <li>Page 242: "by slicing it parallel to the view direction" to "by slicing it perpendicular to the view direction".
 <li>Page 256: "Called an exponential shadow map (ESM) or exponential variance shadow map (EVSM)" - remove "or exponential variance shadow map (EVSM)".
