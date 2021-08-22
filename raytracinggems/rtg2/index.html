@@ -1,69 +1,207 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!DOCTYPE html>
+<!-- from https://www.w3schools.com/w3css/w3css_templates.asp, the Jane Doe template -->
 <html>
 <head>
-<meta charset="utf-8">
-<link href="styles.css" type="text/css" rel="stylesheet" media="screen">
-<title> Call for Participation: Ray Tracing Gems II</title>
+<title>Ray Tracing Gems II</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="sphereflake.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./cover_marbles.jpg');
+    min-height: 100%;
+}
+</style>
 </head>
 <body>
 
-<div class="container">
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
 
-<img class="header_img" src="sol3.jpg" alt="Project Sol 2"></img>
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
 
-<h1>Call for Participation: <i>Ray Tracing Gems II</i></h1>
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
 
-<p>Real-time ray tracing - the holy grail of rendering - is now possible. Thanks to advances
-in GPU hardware and API standards like Microsoft's DirectX Raytracing (DXR)
-and Vulkan Ray Tracing (VKR), the next step forward in
-real-time image quality and content creation is not only possible, but being
-rapidly adopted by developers.</p>
 
-<p>Following the success of the <i>Ray Tracing Gems</i> book (<a target="_blank" href="http://www.realtimerendering.com/raytracinggems/">updated free PDF</a>, <a target="_blank" href="https://www.amazon.com/Ray-Tracing-Gems-High-Quality-Real-Time/dp/1484244265/">physical book</a>), NVIDIA is working with leading graphics developers and researchers to follow up with a
-second book, to be titled <i>Ray Tracing Gems II</i>. To be published by the Game Developers
-Conference (GDC) in March 2021, the book will focus primarily on real-time
-and interactive GPU ray tracing, but also includes valuable information useful
-in any ray tracing setting.</p>
+  <!-- Header -->
+  <header>
+    <div style="font-size:75px;"><b>Ray Tracing Gems II</b></div>
+	<div style="font-size:30px; margin-top:-10px">Next Generation Real-Time Rendering with DXR, Vulkan, and OptiX</div>
+    <div style="font-size:20px;">edited by Adam Marrs, Peter Shirley, and Ingo Wald, from <a target="_blank" href="https://www.apress.com/us/book/9781484271841">Apress</a>.</div>
+  </header>
 
-<p>We invite articles on the following topics:</p>
-<ul>
-<li>Basic ray tracing algorithms (intersection testing, spatial data structures, etc.)</li>
-<li>Unified lighting schemes
-<li>Shadows, reflections, ambient occlusion, etc.</li>
-<li>Reconstruction, denoising, and filtering</li>
-<li>Rasterization and ray tracing hybrids</li>
-<li>Particles, volumetrics, and hair</li>
-<li>Level of detail (geometric, material, and texture)</li>
-<li>Animation schemes</li>
-<li>Global Illumination</li>
-<li>Occlusion Culling</li>
-<li>Materials and BRDFs</li>
-<li>Efficiency and best practices</li>
-<li>Non-graphics applications (audio, collision, physics, etc.)</li>
-<li>Virtual Reality (VR/AR/XR/MR)</li>
-<li>Deep learning</li>
-<li>...and any other notable work related to ray tracing</li>
-</ul>
-
-<p>Articles will be primarily judged on practical utility. Though long articles with novel results are welcome, short practical articles with battle-tested techniques are highly encouraged.</p>
-
-<h2>Sign me up. What's the process?</h2>
-
-<p>Write a short abstract that describes your article and email it to <a href="mailto:raytracinggems@nvidia.com">raytracinggems@nvidia.com</a>. Anyone can submit an article abstract for consideration, and submissions are open starting today.</p>
-
-<p><i>Ray Tracing Gems II</i> will be jointly edited by Adam Marrs, Pete Shirley, and Ingo Wald. The editors will review your abstract submission, provide feedback, and either conditionally accept or reject your article proposal. After receiving conditional acceptance of your article abstract from the editors, you may submit your completed article anytime until <b>Tuesday September 1st, 2020</b>. Submitted articles are not guaranteed to be accepted, and may be rejected based on quality.</p>
-
-<p>Accepted articles will be assigned to section editors for feedback and polishing. We encourage authors to submit their articles as soon as possible to benefit from the input they'll receive from their section editor. After receiving the required edits from your section editor, the final revised article will be due by <b>Tuesday December 1st, 2020</b>.</p>
-
-<p>If you have questions about your article idea, the abstract review process, or the book you can email <a target="_blank" href="mailto:raytracinggems@nvidia.com">raytracinggems@nvidia.com</a> or reach out to the editors <a target="_blank" href="https://twitter.com/acmarrs">@acmarrs</a>, <a target="_blank" href="https://twitter.com/Peter_shirley">@Peter_shirley</a>, and <a target="_blank" href="https://twitter.com/IngoWald">@IngoWald</a> on Twitter.</p>
-
-<h2>About the editors</h2>
-<p>Adam Marrs is a Senior Graphics Engineer in the Game Engines and Core Technology group at NVIDIA. He holds a PhD in computer science, has conducted graphics research in academia and industry, published at HPG, Eurographics, JCGT, and wrote for the <i>GPU Zen 2</i> and <i>Ray Tracing Gems</i> books. He has shipped graphics code in AAA game titles and commercial game engines.</p>
-
-<p>Peter Shirley is a Distinguished Engineer in the Research group at NVIDIA. He holds a PhD in computer science and has worked in academics, startup companies, and industry. He is the author of several books including the recent <i>Ray Tracing in One Weekend</i> series.</p>
-
-<p>Ingo Wald is a Director, Ray Tracing, at NVIDIA. He holds a PhD in computer science, has a long history of ray tracing related research in both academia and industry, and is probably best known for authoring and co-authoring various papers and open-source software project related to rendering, visualization, data structures, and other topics that in one or another form usually involve ray tracing.</p>
-
+  <!-- About Section -->
+  <div class="w3-content w3-left w3-padding-32" style="max-width:1100px" id="about">
+    <div>
+	<h2>Series</h2>
+	Visit <a target="_blank" href="http://raytracinggems.com">this page</a> for all books in the <I>Ray Tracing Gems</I> series.
+	<p>
+    <hr class="w3-opacity">
+    <h2>About</h2>
+	<P><I>Ray Tracing Gems II</I> book is a collection of articles focused on ray tracing techniques for serious practitioners. Written by industry experts with a particular focus on ray tracing, it offers a practical means to master the new capabilities of current and future GPUs with the latest graphics APIs.
+	<BR><BR>
+	What You'll Learn:
+	<UL>
+		<LI>The latest ray tracing techniques for developing real-time applications in multiple domains	
+		<LI>Case studies from developers and studios who have shipped products that use real-time ray tracing.	
+		<LI>Guidance, advice and best practices for rendering applications with various GPU-based ray tracing APIs (DirectX Raytracing, Vulkan Ray Tracing, OptiX)	
+		<LI>High performance graphics for 3D graphics, virtual reality, animation, and more
+	</UL>	
+	<hr class="w3-opacity">
+	
+	<h2>Downloads and Print Copies</h2>
+	<p>The electronic version of this books is free to download, and can be shared under the terms of the <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+	<UL>
+	<LI><b><a href="https://link.springer.com/book/10.1007/978-1-4842-7185-8">Digital Edition PDF (open access)</a></b>
+	</UL>
+	
+	<P>
+	To order the hardcover or softcover print edition, visit <b><a href="https://smile.amazon.com/gp/product/148427184X?tag=realtimerenderin">Amazon</a></b> (paid link) or <b><a href="https://www.apress.com/us/book/9781484271841">Apress</a></b>.	
+	<hr class="w3-opacity">
+	
+	<h2>Source Code</h2>
+	<P>
+	The book has a <b><a target="_blank" href="https://github.com/Apress/Ray-Tracing-Gems-II">source code repository on GitHub</a></b>. 
+	
+    <h3 class="w3-padding-16">Table of Contents</h3>
+    <UL>
+<LI>Preface
+<LI>Foreword by Andrew Glassner and Ignacio Llamas
+<LI>Contributors
+<LI>Notation
+<P>
+<LI><B>PART I: Ray Tracing Foundations</B>, editor: Per Christensen
+<UL>
+<LI>1. A Breakneck Summary of Photographic Terms (and Their Utility to Ray Tracing), by Trevor David Black
+<LI>2. Ray Axis-Aligned Bounding Box Intersection, by Peter Shirley, Ingo Wald, and Adam Marrs
+<LI>3. Essential Ray Generation Shaders, by Morgan McGuire and Zander Majercik
+<LI>4. Hacking the Shadow Terminator, by Johannes Hanika
+<LI>5. Sampling Textures with Missing Derivatives, by Maksim Aizenshtein and Matt Pharr
+<LI>6. Differential Barycentric Coordinates, by Tomas Akenine-M&ouml;ller
+<LI>7. Texture Coordinate Gradients Estimation for Ray Cones, by Wessam Bahnassi
+<li>8. Reflection and Refraction Formulas, by Eric Haines
+<LI>9. The Schlick Fresnel Approximation, by Zander Majercik
+<li>10. Refraction Ray Cones for Texture Level of Detail, by Jakub Boksansky, Cyril Crassin, and Tomas Akenine-M&ouml;ller
+<LI>11. Handling Translucency with Real-Time Ray Tracing, by Tianyi "Tanki" Zhang
+<li>12. Motion Blur Corner Cases, by Christopher Kulla and Thiago Ize
+<LI>13. Fast Spectral Upsampling of Volume Attenuation, by Johannes Jendersie
+<LI>14. The Reference Path Tracer, by Jakub Boksansky and Adam Marrs
+</UL>
+<P>
+<LI><B>PART II: APIs and Tools</B>, editor: David Hart
+<UL>
+<LI>15. The Shader Binding Table Demystified, by Will Usher
+<LI>16. Introduction to Vulkan Ray Tracing, by Matthew Rusch, Neil Bickford, and Nuno Subtil
+<LI>17. Using Bindless Resources with DirectX Raytracing, by Matt Pettineo
+<li>18. WebRays: Ray Tracing on the Web, by Nick Vitsas, Anastasios Gkaravelis, Andreas A. Vasilakis, and Georgios Papaioannou
+<li>19. Visualizing and Communicating Errors in Rendered Images, by Pontus Andersson, Jim Nilsson, and Tomas Akenine-M&ouml;ller
+</UL>
+<P>
+<LI><B>PART III: Sampling</B>, editor: Thomas M&uuml;ller
+<UL>
+<li>20. Multiple Importance Sampling 101, by Anders Lindqvist
+<LI>21. The Alias Method for Sampling Discrete Distributions, by Chris Wyman
+<li>22. Weighted Reservoir Sampling: Randomly Sampling Streams, by Chris Wyman
+<LI>23. Rendering Many Lights with Grid-Based Reservoirs, by Jakub Boksansky, Paula Jukarainen, and Chris Wyman
+<LI>24. Using Blue Noise for Ray Traced Soft Shadows, by Alan Wolfe
+</UL>
+<P>
+<LI><B>PART IV: Shading and Effects</B>, editor: Cem Yuksel
+<UL>
+<LI>25. Temporally Reliable Motion Vectors for Better Use of Temporal Information, by Zheng Zeng, Shiqiu Liu, Jinglei Yang, Lu Wang, and Ling-Qi Yan
+<LI>26. Ray Traced Level of Detail Cross-Fades Made Easy, by Holger Gruen
+<LI>27. Ray Tracing Decals, by Wessam Bahnassi
+<LI>28. Billboard Ray Tracing for Impostors and Volumetric Effects, by Felix Br&uuml;ll, Robin Fynn Diedrichs, and Thorsten Grosch
+<LI>29. Hybrid Ray Traced and Image-Space Refractions, by Daniel Parhizgar and Marcus Svensson
+<LI>30. Real-Time Ray Traced Caustics, by Xueqing Yang and Yaobin Ouyang
+<LI>31. Tilt-Shift Rendering Using a Thin Lens Model, by Andrew Kensler
+</UL>
+<P>
+<LI><B>PART V: Intersection</B>, editor: Angelo Pesce
+<UL>
+<LI>32. Fast and Robust Ray/OBB Intersection Using the Lorentz Transformation, by Rodolfo Sabino, Creto Augusto Vidal, Joaquim Bento Cavalcante-Neto, and Jos&eacute; Gilvan Rodrigues Maia
+<LI>33. Real-Time Rendering of Complex Fractals, by Vinícius da Silva, Tiago Novello, H&eacute;lio Lopes, and Luiz Velho
+<LI>34. Improving Numerical Precision in Intersection Programs, by Ingo Wald
+<LI>35. Ray Tracing of Blobbies, by Manuele Sabbadin and Marc Droske
+<LI>36. Curved Ray Traversal, by Christiaan Gribble
+<LI>37. Ray-Tracing Small Voxel Scenes, by Dylan Lacewell
+</UL> 
+<P>
+<LI><B>PART VI: Performance</B>, editors: Josef Spjut and Michael Vance
+<UL>
+<LI>38. CPU Performance in DXR, by Peter Morley
+<LI>39. Inverse Transform Sampling Using Ray Tracing Hardware, by Nate Morrical and Stefan Zellmann
+<LI>40. Accelerating Boolean Visibility Operations Using RTX Visibility Masks, by Dirk Gerrit van Antwerpen and Oliver Klehm
+<LI>41. Practical Spatial Hash Map Updates, by Pascal Gautron
+<LI>42. Efficient Spectral Rendering on the GPU for Predictive Rendering, by David Murray, Alban Fichet, and Romain Pacanowski
+<LI>43. Efficient Unbiased Volume Path Tracing on the GPU, by Nikolai Hofmann and Alex Evans
+<LI>44. Path Tracing RBF Particle Volumes, by Aaron Knoll, Gregory P. Johnson, and Johannes Meng
+<LI>45. Fast Volumetric Gradient Shading Approximations for Scientific Ray Tracing, by Carson Brownlee and David DeMarle
+</UL> 
+<P>
+<LI><B>PART VII: Ray Tracing in the Wild</B>, editor: Jacob Munkberg
+<UL>
+<LI>46. Ray Tracing in Control, by Juha Sj&ouml;holm, Paula Jukarainen, and Tatu Aalto
+<LI>47. Light Sampling in Quake 2 Using Subset Importance Sampling, by Tobias Zirr
+<LI>48. Ray Tracing in Fortnite, by Patrick Kelly, Yuriy O'Donnell, Kenzo ter Elst, Juan Ca&ntilde;ada, and Evan Hart
+<LI>49. ReBLUR: A Hierarchical Recurrent Denoiser, by Dmitry Zhdan
+<LI>50. Practical Solutions for Ray Tracing Content Compatibility in Unreal Engine 4, by Evan Hart
+</UL> 
+</UL>
+		
+	Bibtex entry:
+	<PRE>
+@book{Marrs2021,
+  title = {Ray Tracing Gems II},
+  editor = {Adam Marrs, Peter Shirley, and Ingo Wald},
+  publisher = {Apress},
+  year = {2021},
+  note ={\url{http://raytracinggems.com/rtg2}},
+}
+	</PRE>
+	</div>
+    
+    <div class="w3-container w3-light-grey w3-opacity">
+	<P>
+	  <i class="fa fa-twitter w3-hover-opacity"><a target="_blank" href="https://twitter.com/acmarrs">@acmarrs</a></i><br>
+	  <i class="fa fa-twitter w3-hover-opacity"><a target="_blank" href="https://twitter.com/Peter_shirley">@Peter_shirley</a></i><br>
+	  <i class="fa fa-twitter w3-hover-opacity"><a target="_blank" href="https://twitter.com/IngoWald">@IngoWald</a></i>
+    </div>
+	
+    <div>
+	<P>
+	Cover image by the NVIDIA Creative team, which includes Gavriil Klimov (Creative Director), Jacob Norris (Lead Environment Artist), Andrej Stefancik (Senior 3D Artist), Gregor Kopka (Lead 3D Artist), Artur Szymczak (Senior Lighting Artist), Chase Telegin (Technical Artist), Alessandro Baldasseroni (Lead 3D Artist), Fred Hooper (Lead VFX Artist), and Ilya Shelementsev (Senior 3D Artist).<P>
+	</div>
+  
+  <div>
+	<P>
+	Webmaster: <a href="mailto:erich@acm.org">Eric Haines</a>
+	<P><i>Page last updated August 22, 2021</i></P>
+  </div>
+  
+<!-- END PAGE CONTENT -->
 </div>
 </body>
 </html>

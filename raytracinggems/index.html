@@ -2,7 +2,7 @@
 <!-- from https://www.w3schools.com/w3css/w3css_templates.asp, the Jane Doe template -->
 <html>
 <head>
-<title>Ray Tracing Gems</title>
+<title>Ray Tracing Gems Series</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="sphereflake.ico" type="image/x-icon" />
@@ -11,173 +11,54 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./images/Den4b7BXUAErujs.jpg');
-    min-height: 100%;
+p {
+  margin-left: 15px;
+}
+h1 {
+  margin-left: 15px;
+}
+#books .bookBox {
+  display: inline-block;
+  text-align: left;
+  width: 580px;
+  vertical-align: top;
+  margin: 15px;
+}
+#books .bookBox span {
+  display: block;
 }
 </style>
 </head>
 <body>
 
-<!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
-</nav>
+<h1 class="w3-jumbo"><b>Ray Tracing Gems Series</b></h1>
 
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav>
+<P>
+Choose which book you want to know more about:
+<div id="books">
+<div class="bookBox">
+<a href="rtg/index.html">
+<h2>Ray Tracing Gems</h2><br>
+<img src="rtg_choose_cover.jpg" alt="Ray Tracing Gems"></a>
+</div>
+<div class="bookBox">
+<a href="rtg2/index.html">
+<h2>Ray Tracing Gems II</h2><br>
+<img src="rtg2_choose_cover.jpg" alt="Ray Tracing Gems II"></a>
+</div>
+</div>
 
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
+</div>
 
-
-  <!-- Header -->
-  <header class="w3-container w3-left" id="home">
-    <h1 class="w3-jumbo"><b>Ray Tracing Gems</b></h1>
-    <p>edited by Eric Haines and Tomas Akenine-M&ouml;ller, from <a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">Apress</a>.</p>
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-left w3-padding-32" id="about">
-    <div>
-	<h2>News</h2>
-	<font size="+2"><I>Ray Tracing Gems II</I> will be available August 4th; <a href="https://developer.nvidia.com/blog/ray-tracing-gems-ii-available-august-4th/">more information here</a>, including a cover shot.</font>
-  <P>The old Call For Participation is <a href="rtg2/index.html">also available</a>.
-	<p>
-    <hr class="w3-opacity">
-    <h2>About</h2>
-	<P>This book is a collection of articles focused on ray tracing techniques for serious practitioners. Like other "gems" books, it focuses on subjects commonly considered too advanced for introductory texts, yet rarely addressed by research papers.
-    <p>The electronic version of this books is free to download, and can be shared under the terms of the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>. We link to two versions:
-	<UL>
-	<LI><b><a href="https://link.springer.com/book/10.1007/978-1-4842-4427-2">The original Apress download page</a></b>. This site links to the PDF of the printed book and PDFs for individual articles, and the book can be searched without any downloading.
-	<LI><b><a href="http://raytracinggems.com/unofficial_RayTracingGems_v1.8.pdf">Unofficial PDF with most errata corrected, v. 1.8</a></b>. The book is under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">this Open Access license</a>, so we have produced an unofficial, updated PDF version with <a href="https://github.com/Apress/ray-tracing-gems/blob/master/errata.md">most errata</a> corrected in it. The title page has an explanation on the second page and a note of "version 1.8, 4/9/2021."
-	</UL>
-	<P>The book is also available for free on <b><a href="https://play.google.com/store/books/details/Eric_Haines_Ray_Tracing_Gems?id=MNqRDwAAQBAJ">Google Play</a></b> and <b><a href="https://smile.amazon.com/dp/B07P5QV1Z5?tag=realtimerenderin">Kindle</a></b> (<a href="http://www.amazon.co.uk/dp/B07P5QV1Z5">UK Kindle</a>; <a href="http://www.amazon.de/dp/B07P5QV1Z5">Germany Kindle</a>).
-	<P>
-	The book has a <b><a href="https://github.com/Apress/ray-tracing-gems">code repository</a></b> and <b><a href="https://github.com/Apress/ray-tracing-gems/blob/master/errata.md">errata page</a></b>. 
-	<P>
-	To order the hardback edition you can visit <b><a href="https://smile.amazon.com/Ray-Tracing-Gems-High-Quality-Real-Time/dp/1484244265?tag=realtimerenderin">Amazon</a></b> (paid link) or <b><a href="https://www.apress.com/us/book/9781484244265#otherversion=9781484244272">Apress</a></b>.
-	<P>
-	This book is not focused on the basics, as there are <a href="http://www.realtimerendering.com/raytracing.html#books">many wonderful books on ray tracing</a>, including a few that are free. We have also  
-	<a href="http://www.realtimerendering.com/raytracing.html">collected together some ray tracing resources</a>.
-    <p>
-    The 25-minute talk at SIGGRAPH 2019, running through the book's contents, is <a href="https://developer.nvidia.com/siggraph/2019/video/sig937b">here</a>, PDF of slides <a href="https://on-demand.gputechconf.com/siggraph/2019/pdf/sig937-ray-tracing-gems.pdf">here</a>.
-    The longer, 50-minute version at GDC 2019 is <a href="https://www.gdcvault.com/browse/gdc-19/play/1026165">here</a>, PDF of slides <a href="https://developer.nvidia.com/video/GDC-19/RAYTRACINGGEMS">here</a>.
-    <p>
-    Videos are available for the <a href="https://www.nvidia.com/en-us/events/siggraph/schedule/">Ray Tracing Gems 1.1</a> session at SIGGRAPH 2019, which presented seven of the articles from the book. Direct links to these videos are given in the Table of Contents below.
-    <h3 class="w3-padding-16">Table of Contents</h3>
-    <UL>
-<LI>Preface
-<LI>Foreword by Turner Whitted and Martin Stich
-<LI>Contributors
-<LI>Notation
-<P>
-<LI>PART 1: RAY TRACING BASICS, editor: Chris Wyman
-<UL>
-<LI>1. Ray Tracing Terminology, by Eric Haines and Peter Shirley
-<LI>2. What is a Ray? by Peter Shirley, Ingo Wald, Tomas Akenine-M&ouml;ller, and Eric Haines
-<LI>3. Introduction to DirectX Raytracing, by Chris Wyman and Adam Marrs
-<LI>4. A Planetarium Dome Master Camera, by John E. Stone
-<LI>5. Computing Minima and Maxima of Subarrays, by Ingo Wald
-</UL>
-<P>
-<LI>PART 2: INTERSECTIONS AND EFFICIENCY, editor: Ingo Wald
-<UL>
-<LI>6. A Fast and Robust Method for Avoiding Self-Intersection, by Carsten W&auml;chter and Nikolaus Binder
-<LI>7. Precision Improvements for Ray/Sphere Intersection, by Eric Haines, Johannes G&uuml;nther, and Tomas Akenine-M&ouml;ller
-<li>8. Cool Patches: A Geometric Approach to Ray/Bilinear Patch Intersections, by Alexander Reshetov (<a href="https://developer.nvidia.com/siggraph/2019/video/sig931-vid">video</a>)
-<LI>9. Multi-Hit Ray Tracing in DXR, by Christiaan Gribble
-<li>10. A Simple Load-Balancing Scheme with High Scaling Efficiency, by Dietger van Antwerpen, Daniel Seibert, and Alexander Keller (<a href="https://developer.nvidia.com/siggraph/2019/video/sig932-vid">video</a>)
-</UL>
-<P>
-<LI>PART 3: REFLECTIONS, REFRACTIONS, AND SHADOWS, editor: Peter Shirley
-<UL>
-<LI>11. Automatic Handling of Materials in Nested Volumes, by Carsten W&auml;chter and Matthias Raab
-<li>12. A Microfacet-Based Shadowing Function to Solve the Bump Terminator Problem, by Alejandro Conty Estevez, Pascal Lecocq, and Clifford Stein (<a href="https://developer.nvidia.com/siggraph/2019/video/sig933-vid">video</a>)
-<LI>13. Ray Traced Shadows: Maintaining Real-Time Frame Rates, by Jakub Boksansky, Michael Wimmer, and Jiri Bittner
-<LI>14. Ray-Guided Volumetric Water Caustics in Single Scattering Media with DXR, by Holger Gruen
-</UL>
-<P>
-<LI>PART 4: SAMPLING, editor: Alexander Keller
-<UL>
-<LI>15. On the Importance of Sampling, by Matt Pharr
-<LI>16. Sample Transformations Zoo, by Peter Shirley, Samuli Laine, David Hart, Matt Pharr, Petrik Clarberg, Eric
-Haines, Matthias Raab, and David Cline
-<LI>17. Ignoring the Inconvenient When Tracing Rays, by Matt Pharr
-<li>18. Importance Sampling of Many Lights on the GPU, by Pierre Moreau and Petrik Clarberg (<a href="https://developer.nvidia.com/siggraph/2019/video/sig934-vid">video</a>)
-</UL>
-<P>
-<LI>PART 5: DENOISING AND FILTERING, editor: Jacob Munkberg
-<UL>
-<li>19. Cinematic Rendering in UE4 with Real-Time Ray Tracing and Denoising, by Edward Liu, Ignacio Llamas, Juan Ca&ntilde;ada, and Patrick Kelly (<a href="https://developer.nvidia.com/siggraph/2019/video/sig935-vid">video</a>)
-<li>20. Texture Level of Detail Strategies for Real-Time Ray Tracing, by Tomas Akenine-M&ouml;ller, Jim Nilsson, Magnus Andersson, Colin Barr&eacute;-Brisebois, Robert Toth, and Tero Karras (<a href="https://developer.nvidia.com/siggraph/2019/video/sig936-vid">video</a>)
-<LI>21. Simple Environment Map Filtering Using Ray Cones and Ray Differentials, by Tomas Akenine-M&ouml;ller and Jim Nilsson
-<li>22. Improving Temporal Antialiasing with Adaptive Ray Tracing, by Adam Marrs, Josef Spjut, Holger Gruen, Rahul Sathe, and Morgan McGuire (<a href="https://developer.nvidia.com/siggraph/2019/video/sig937-vid">video</a>)
-</UL>
-<P>
-<LI>PART 6: HYBRID APPROACHES AND SYSTEMS, editor: Morgan McGuire
-<UL>
-<LI>23. Interactive Light Map and Irradiance Volume Preview in Frostbite, by Diede Apers, Petter Edblom, Charles de Rousiers, and S&eacute;bastien Hillaire
-<LI>24. Real-Time Global Illumination with Photon Mapping, by Niklas Smal and Maksim Aizenshtein
-<LI>25. Hybrid Rendering for Real-Time Ray Tracing, by Colin Barr&eacute;-Brisebois, Henrik Hal&eacute;n, Graham Wihlidal, Andrew Lauritzen,
-Jasper Bekkers, Tomasz Stachowiak, and Johan Andersson
-<LI>26. Deferred Hybrid Path Tracing, by Thomas Willberger, Clemens Musterle, and Stephan Bergmann
-<LI>27. Interactive Ray Tracing Techniques for High-Fidelity Scientific Visualization, by John E. Stone
-</UL>
-<P>
-<LI>PART 7: GLOBAL ILLUMINATION, editor: Matt Pharr
-<UL>
-<LI>28. Ray Tracing Inhomogeneous Volumes, by Matthias Raab
-<LI>29. Efficient Particle Volume Splatting in a Ray Tracer, by Aaron Knoll, R. Keith Morley, Ingo Wald, Nick Leaf, and Peter Messmer
-<LI>30. Caustics Using Screen Space Photon Mapping, by Hyuk Kim
-<LI>31. Variance Reduction via Footprint Estimation in the Presence of Path Reuse, by Johannes Jendersie
-<LI>32. Accurate Real-Time Specular Reflections with Radiance Caching, by Antti Hirvonen, Atte Sepp&auml;l&auml;, Maksim Aizenshtein, and Niklas Smal
-</UL> 
-</UL>
-    
-    <h3 class="w3-padding-16">Cover</h3>
-		<img src="./images/_Ray_Tracing_Gems-cover.jpg">
-		<P>
-		
-	Bibtex entry:
-	<PRE>
-@book{Haines2019,
-  title = {Ray Tracing Gems},
-  editor = {Eric Haines and Tomas Akenine-M\"oller},
-  publisher = {Apress},
-  year = {2019},
-  note ={\url{http://raytracinggems.com}},
-}
-	</PRE>
-	</div>
-    
-    <div class="w3-container w3-light-grey w3-opacity">
-	<P>
-	  <i class="fa fa-twitter w3-hover-opacity"><a href="https://twitter.com/pointinpolygon">@pointinpolygon</a></i><br>
-	  <i class="fa fa-twitter w3-hover-opacity"><a href="https://twitter.com/inversepixel">@inversepixel</a></i>
-    </div>
+<div>
 	
-    <div>
-	<P>
-	Image on left from <a href="https://twitter.com/NVIDIAGameDev/status/1002605553124892672">NVIDIA Game Dev</a> by Alexia Rubod.<P>
-	<i>Page last updated April 12, 2021</i>
+<HR>
+<P>
+Webmaster: <a href="mailto:erich@acm.org">Eric Haines</a>
+<P>
+<i>Page last updated August 4, 2021</i>
 
-
-	</div>
+</div>
   
 <!-- END PAGE CONTENT -->
 </div>
