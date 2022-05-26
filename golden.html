@@ -44,7 +44,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: June 8, 2014
+Last changed: February 28, 2022
 </div>
 <P>
 <i>by <a href="http://www.glassner.com/">Andrew Glassner</a> and <a href="mailto:erich@acm.org">Eric Haines</a></i>
@@ -73,7 +73,13 @@ Note that Golden does not consider these measurements to represent the color of 
 <P>
 Computing a perceived color consists (at its simplest) of multiply a material's spectrum by a light's spectrum and then applying the three typical <a href="http://en.wikipedia.org/wiki/Trichromatic_theory">response curves</a> of human cone cells, integrating the responses to get a <a href="http://en.wikipedia.org/wiki/CIE_1931_color_space">CIE-XYZ color</a>. We've noted some of the complicating factors here, such as the reflectivity of the drawdown card and the D65 light's spectrum, but the basic process is relatively straightforward.
 <P>
-Predicting the perceived color of mixed paints is not trivial. A popular model for paint mixing is the Kubelka-Munk theory. You can read about this in the (now free!) book, <a href="http://realtimerendering.com/Principles_of_Digital_Image_Synthesis_v1.0.1.pdf">Principles of Digital Image Synthesis</a>. The Kubelka-Munk theory seems to work well for acrylic paints, as reported in <a href="http://art-si.org/PDFs/Processing/KMreport_10_01.pdf">this paper</a>. Golden also suggests looking at <a href="http://art-si.org/PDFs/Processing/OkumuraThesis05.pdf">this thesis</a>, since (quoting Golden), "it involved calculations based on our paints, albeit working off of our Matte Fluids."</div>
+Predicting the perceived color of mixed paints is not trivial. A popular model for paint mixing is the Kubelka-Munk theory. You can read about this in the (now free!) book, <a href="http://realtimerendering.com/Principles_of_Digital_Image_Synthesis_v1.0.1.pdf">Principles of Digital Image Synthesis</a>. The Kubelka-Munk theory seems to work well for acrylic paints, as reported in <a href="https://www.researchgate.net/publication/264844752_Verification_of_the_Kubelka-Munk_Turbid_Media_Theory_for_Artist_Acrylic_Paint_Summer_2004">this paper</a> (<a href="https://web.archive.org/web/20160303191412/http://art-si.org/PDFs/Processing/KMreport_10_01.pdf">archive.org</a>),  "Verification of the Kubelka-Munk Turbid Media
+Theory for Artist Acrylic Paint" by Mahnaz Mohammadi and
+Roy S. Berns, Technical Report, Spectral Color Imaging Laboratory Group, Munsell Color Science Laboratory, Chester F. Carlson Center for Imaging Science, Rochester Institute of Technology, Summer 2004. Golden also suggests looking at <a href="https://scholarworks.rit.edu/theses/4892/">this thesis</a> (<a href="https://web.archive.org/web/20161224013105/http://art-si.org/PDFs/Processing/OkumuraThesis05.pdf">archive.org</a>),  "Developing a Spectral and Colorimetric Database
+of Artist Paint Materials" by Yoshio Okumura, M.S. Thesis, Chester F. Carlson Center for Color Science of the College of Science, Rochester Institute of Technology, September 2005, since (quoting Golden), "it involved calculations based on our paints, albeit working off of our Matte Fluids."
+<P>
+Other related resources include this paper, "A tool to create illuminant and reflectance spectra for light-driven
+graphics and visualization", by Steven Bergner, Mark S. Drew, and Torsten Möller, ACM TOG, 28(1), January 2009 (<a href="https://dl.acm.org/doi/10.1145/1477926.1477931">ACM listing</a>). For software, <a href="https://github.com/scrtwpns/pigment-mixing">Mixbox on Github</a> simulates mixing of paints defined by spectra; also note their related <a href="https://scrtwpns.com/mixbox.pdf">paper</a>, presentations, and <a href="https://scrtwpns.com/mixbox/painter/">demo</a> on that site. (<I>thanks to Andrea Weidlich for these pointers.</I>)
 <P>
 <img src="golden_spectra_sample.png">
 </div>  
