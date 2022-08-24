@@ -44,7 +44,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: November 8, 2021
+Last changed: June 22, 2022
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
@@ -79,6 +79,8 @@ Aras Pranckevi&#269;ius has <a href="https://aras-p.info/blog/2018/08/01/Pathtra
 
 <P><B>SIGGRAPH 2019:</B> All ray and path tracing related events and links to slides, notes, and papers <a href="http://www.realtimerendering.com/raytracing/roundup.html">listed here</a>; also see the <a href="https://blog.selfshadow.com/2019/07/30/siggraph-2019-links/">SIGGRAPH 2019 links</a>.
 
+<P>For light transport in general, TU Wien provides <a href="https://www.youtube.com/watch?v=pjc1QAI6zS0&list=PLujxSBD-JXgnGmsn7gEyN28P1DnRZG7qi">39 YouTube videos</a> from their course on light transport, along with <a href="https://www.cg.tuwien.ac.at/courses/Rendering/VU.SS2019.html">slide sets</a> and other resources.
+
 <a NAME="realtime">
 <H1 class="subHeader">Real-Time</H2>
 </a>
@@ -88,6 +90,9 @@ For newer articles, I highly recommend <a href="https://www.jendrikillner.com/ta
 <P>
 With Microsoft's announcement of <a href="https://devblogs.microsoft.com/directx/announcing-microsoft-directx-raytracing/">the DXR ray tracing API for DirectX</a> in March 2018 at the <I>Games Developers Conference</I></a>, real-time ray tracing has become synonymous with this effort, along with initiatives in Vulkan <a href="https://on-demand.gputechconf.com/gtc/2018/presentation/s8521-advanced-graphics-extensions-for-vulkan.pdf">such as NVIDIA's</a> (<a href="https://on-demand.gputechconf.com/siggraph/2018/video/sig1826-nuno-subtil-vulkan.html">video here</a>).
 NVIDIA has <a href="https://developer.nvidia.com/rtx/raytracing">much more information</a>. Their <a href="https://developer.nvidia.com/nsight-graphics">Nsight Graphics</a> tool has support for ray tracing debugging.
+
+<P>
+Jacco Bikker has written <a href="https://jacco.ompf2.com/2022/04/13/how-to-build-a-bvh-part-1-basics/">a set of 10 articles</a> on building and updating a modern bounding volume hierarchy, representing triangles, and much else, and it includes <a href="https://github.com/jbikker/bvh_article">working programs on Windows</a>. Well worth your time.
 
 <P>
 Will Usher has <a href="https://www.willusher.io/blog">API-agnostic articles</a> on real-time ray tracing, including one on <a href="https://www.willusher.io/graphics/2019/11/20/the-sbt-three-ways">the shader binding table</a> and on <a href="https://www.willusher.io/graphics/2019/09/06/faster-shadow-rays-on-rtx">faster ways of computing shadows</a>.
@@ -308,7 +313,7 @@ Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter o
   <img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
   <a href="http://www.realtimerendering.com/Principles_of_Digital_Image_Synthesis_v1.0.1.pdf"><img src="download_for_free_sm.png" alt="download for free" align=left border=0></a>
   <img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
-  <b><a href="http://smile.amazon.com/Principles-Synthesis-Kaufmann-Computer-Graphics/dp/1558602763?tag=realtimerenderin">Principles of Digital Image Synthesis</a></b>, by Andrew S. Glassner, Morgan Kaufmann, 1995: <b><i><a href="http://realtimerendering.com/Principles_of_Digital_Image_Synthesis_v1.0.1.pdf">download for free</a></i></b>.
+  <b><a href="http://smile.amazon.com/Principles-Synthesis-Kaufmann-Computer-Graphics/dp/1558602763?tag=realtimerenderin">Principles of Digital Image Synthesis</a></b>, by Andrew S. Glassner, Morgan Kaufmann, 1995: <b><i><a href="http://realtimerendering.com/Principles_of_Digital_Image_Synthesis_v1.0.1.pdf">download for free</a></i></b>, <a href="https://www.glassner.com/errata-for-principles-of-digital-image-synthesis/">errata</a>.
   <P>An incredible book, and physics doesn't change (much), so despite its age this book is full of useful information.
 </td></tr>
 
