@@ -44,7 +44,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: December 27, 2022
+Last changed: March 1, 2023
 </div>
 <P>This page gathers some resources about ray tracing in its various forms. It is not exhaustive, nor exhausting, but rather sources of information that we have found useful.
 
@@ -58,7 +58,7 @@ Last changed: December 27, 2022
 First, for a quick introduction to what ray tracing is about, watch the <a href="https://www.youtube.com/playlist?list=PL5B692fm6--sgm8Uiava0IIvUojjFOCSR">Ray Tracing Essentials</a> series (the first talk also has a version with <a href="https://developer.nvidia.com/rtx/raytracing-essentials-part1/cn">Chinese subtitles</a>), or read <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel's set of six short articles</a>.
 Also, the <a href="https://www.youtube.com/watch?v=frLwRLS_ZR0">Disney video on path tracing</a> gives an intuitive sense of how this algorithm works. Its 50's style is a treat. For a more comprehensive course on computer graphics in general, see <a href="https://www.youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh">Cem Yuksel's lectures</a> at the University of Utah.
 <P>
-<a href="#books">Peter Shirley's free books</a> are a fast and free way to dig into the topic and learn by coding; there's even <a href="https://developer.nvidia.com/blog/accelerated-ray-tracing-cuda/">a CUDA</a> (and <a href="https://github.com/biroeniko/raytracer">another CUDA (and OpenMP)</a>) implementation. Google and you'll find more. SIGGRAPH has <a href="https://s2021.siggraph.org/program/frontiers/">a free seven-hour course</a> led by Rajesh Sharma; each opens with a ten-minute interview with someone working in the field.
+<a href="#books">Peter Shirley's free books</a> are a fast and free way to dig into the topic and learn by coding; there's even <a href="https://developer.nvidia.com/blog/accelerated-ray-tracing-cuda/">a CUDA</a> (and <a href="https://github.com/biroeniko/raytracer">another CUDA (and OpenMP)</a>) implementation. Google and you'll find more. Christoph Peters led a <a href="https://momentsingraphics.de/PathTracingWorkshop.html">path tracing workshop</a> which has videos and ShaderToy exercises for you to implement. SIGGRAPH has <a href="https://s2021.siggraph.org/program/frontiers/">a free seven-hour course</a> led by Rajesh Sharma; each opens with a ten-minute interview with someone working in the field.
 <P>
 Other short tutorials can be found at <a href="https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing">Scratchapixel</a>.
 Morgan McGuire's now-free <a href="https://graphicscodex.courses.nvidia.com/app.html">Graphics Codex</a> discusses basic ray casting and other related topics, providing code snippets (<a href="https://graphicscodex.com/">main site</a>). There are plenty of more books, some now free, listed in <a href="#books">our books section</a>, with <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Kevin Suffern's book</a> being a slightly-dated but good choice for a more in-depth introductory book focused on the topic.
@@ -74,7 +74,7 @@ such as <a href="https://www.highperformancegraphics.org/2018/program/">High Per
 
 <P>Much useful information can be found in blogs
 such as <a href="https://pharr.org/matt/blog/">Matt Pharr's</a>, <a href="http://psgraphics.blogspot.com/">Peter Shirley's</a>, as well as pieces such as as Demofox's <a href="https://blog.demofox.org/2016/09/21/path-tracing-getting-started-with-diffuse-and-emissive/">Path Tracing – Getting Started With Diffuse and Emissive</a> and Anders Lindqvist's <a href="https://www.breakin.se/learn/pathtracing-coherency.html">Pathtracing Coherency</a>.
-NVIDIA's <a href="https://developer.nvidia.com/blog/category/graphics-simulation/">blog</a> has practical information, such as on <a href="https://developer.nvidia.com/blog/profiling-dxr-shaders-with-timer-instrumentation/">profiling ray performance</a> and on <a href="https://developer.nvidia.com/blog/implementing-stochastic-lod-with-microsoft-dxr/">stochastic levels of detail</a>.
+NVIDIA's <a href="https://developer.nvidia.com/blog/?tags=ray-tracing&categories=">blog</a> has practical information, such as on <a href="https://developer.nvidia.com/blog/profiling-dxr-shaders-with-timer-instrumentation/">profiling ray performance</a> and on <a href="https://developer.nvidia.com/blog/implementing-stochastic-lod-with-microsoft-dxr/">stochastic levels of detail</a>.
 Aras Pranckevi&#269;ius has <a href="https://aras-p.info/blog/2018/08/01/Pathtracer-15-Pause--Links/">an in-depth series</a> on writing a path tracer, with many more links to resources (which we mostly will not copy here). Matt Pettineo also has <a href="https://github.com/TheRealMJP/DXRPathTracer">a path tracer using DXR</a>.
 
 <P><B>SIGGRAPH 2019:</B> All ray and path tracing related events and links to slides, notes, and papers <a href="http://www.realtimerendering.com/raytracing/roundup.html">listed here</a>; also see the <a href="https://blog.selfshadow.com/2019/07/30/siggraph-2019-links/">SIGGRAPH 2019 links</a>.
@@ -287,7 +287,7 @@ Our <a href="./Real-Time_Rendering_4th-Real-Time_Ray_Tracing.pdf">free chapter o
 <tr><td>
 <a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin"><img src="AmazonImages/51uMmA02wLL_SL50.jpg" alt="cover" height="50" align=left border=0></a>
 <img src="spacer.gif" alt="" height="50" width="12" align=left border=0>
-<b><a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Ray Tracing from the Ground Up</a></b>, by Kevin Suffern, September 2007 (<a href="http://www.raytracegroundup.com/">author's site</a>, <a href="https://books.google.com/books?id=_RDYCwAAQBAJ&printsec=frontcover">Google Books sample</a>).
+<b><a href="https://smile.amazon.com/Ray-Tracing-Ground-Kevin-Suffern/dp/1568812728?tag=realtimerenderin">Ray Tracing from the Ground Up</a></b>, by Kevin Suffern, September 2007 (<a href="https://web.archive.org/web/20210506181127/http://www.raytracegroundup.com/">author's site</a>, <a href="https://books.google.com/books?id=_RDYCwAAQBAJ&printsec=frontcover">Google Books sample</a>).
 <P>This book walks through the process of implementing classical ray tracing in detail, warning of problems along the way.
 </td></tr>
 
