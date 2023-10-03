@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>USD and glTF Resources Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="rtr4.css" type="text/css"/>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="rtr3-header-image">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr bgcolor="#10304B">
+<td>
+<a href="http://www.realtimerendering.com/blog/">
+<img src="rtr-header.png" alt="Header image" width="410" height="106"/>
+</a>
+</td>
+</tr>
+</table>
+</div>
+<div id="navigation" class="clearfix">
+<ul class="primary">
+<li><a href="http://www.realtimerendering.com/blog/" rel="home">Blog</a></li>
+<li><a title="Recommended books" href="books.html">Graphics books</a></li>
+<li><a title="Object / object intersection page" href="intersections.html">Intersections</a></li>
+<li><a title="Sites we like" href="portal.html">Portal</a></li>
+<li><a title="Ray Tracing Resources" href="raytracing.html">Ray tracing</a></li>
+<li><a title="Main resources page" href="index.html">Resources</a></li>
+<li><a class="nav-current" title="USD and glTF Resources" href="usd_gltf.html">USD &amp; glTF</a></li>
+<li><a title="WebGL/three.js Resources"  href="webgl.html">WebGL</a></li>
+</ul>
+</div>
+</div>
+<div id="content" class="clearfix">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="pageName">USD and glTF Resources Page</td>
+</tr>
+<tr>
+<td valign="top"><img src="spacer.gif" alt="" height="6" border="0"/></td>
+</tr>
+<tr>
+<td class="bodyText">
+<div class="metadata">
+Last changed: October 3, 2023
+</div>
+<P>This is a collection of links to various glTF and USD resources. These scene description frameworks are more full-featured than older file formats such as OBJ or VRML. I (Eric) find myself having to poke around in my bookmarks too often to get to these URLs, so I decided to gather them in one place. I hope you find them of use. I haven't yet waded through them all myself (especially the tutorials). Write me if you find something great that's missing.
+
+<h1>USD</h1>
+
+First, there's <a href="https://github.com/vfxpro99/usd-resources">a ton of links here</a>, curated by Nick Porcino, and <a href="https://github.com/matiascodesal/awesome-openusd">here</a>, by Matias Codesal. What follows is my own "I found these useful/stuff I should look at" collection.
+
+<h2>Why and What is USD?</h2>
+
+Pixar's <a href="https://github.com/PixarAnimationStudios/OpenUSD">reference docs</a> are important, but tough to read and learn from. For a simple material description, see <a href="https://openusd.org/release/spec_usdpreviewsurface.html">UsdPreviewSurface</a>, though this material <a href="https://github.com/erich666/McUsd#observations">is not tightly specified</a>.
+
+<p><a href="https://remedy-entertainment.github.io/USDBook/index.html">Remedy's Book of USD</a> is supposed to be a good starting spot. I've read a bit and liked it so far.
+
+<p>I've heard <a href="https://www.youtube.com/watch?v=JixC53cQn5U">this video</a> is a good intro.
+
+<p><a href="https://renderman.pixar.com/stories/pixars-usd-pipeline">Another intro</a> from Pixar RenderMan, though quite old by now. Lots of pretty pics, though.
+
+<p>NVIDIA <a href="https://confluence.nvidia.com/display/OMNIVERSE/USD+Lecture+Series">has a lecture series</a>.
+
+<p><a href="https://developer.apple.com/videos/play/wwdc2022/10129">Apple's</a>.
+
+<p>Fun <a href="https://cesium.com/open-metaverse-podcast/the-genesis-of-usd/">history podcast</a> (and transcript) by one of the creators of USD, Guido Quaroni. Learn why it wasn't called Layered Scene Description, though that's perhaps a more descriptive name.
+
+<h3>Asset Structuring</h3>
+
+This <a href="https://rystorm.com/blog/usd-example-assets-v1-1">assets example</a> was recommended to me. An <a href="https://rystorm.com/blog/i-would-like-usd-to-succeed">intro</a> by the same person.
+
+<p>Video on <a href="https://www.youtube.com/watch?v=YgVTS5oIJqM">asset structuring best practices</a>.
+
+<p>Omniverse documentation on <a href="https://docs.omniverse.nvidia.com/usd/latest/learn-openusd/independent/asset-structure-principles.html#summary-of-performance-tradeoffs">performance tradeoffs</a>. Also related, <a href="https://docs.omniverse.nvidia.com/usd/latest/learn-openusd/independent/asset-structure-principles.html">this</a> and <a href="https://github.com/usd-wg/assets/blob/main/docs/asset-structure-guidelines.md">this</a>.
+
+<h3>SIGGRAPH 2023</h3>
+
+There's a <a href="https://forum.aousd.org/t/siggraph-2023-open-source-days-2023-etc-sessions-round-up/366">thorough collection of resources</a> on USD activities at SIGGRAPH 2023.
+
+<p>The <a href="https://github.com/AcademySoftwareFoundation">ASWF</a> has <a href="https://wiki.aswf.io/display/WGUSD/Siggraph+2023">its own page</a>. They're a good public non-profit group for sharing resources.
+
+<h2>USD Testing Resources</h2>
+
+The OpenUSD <a href="https://github.com/PixarAnimationStudios/OpenUSD/tree/b53573ea2a6b29bc4a6b129f604bbb342c35df5c/pxr/usdImaging/usdImagingGL/testenv">test files</a> are comprehensive but a lot to wade through - you could spend a lifetime there. <a href="https://github.com/PixarAnimationStudios/OpenUSD/tree/b53573ea2a6b29bc4a6b129f604bbb342c35df5c/pxr/usdImaging/usdImagingGL/testenv/testUsdImagingGLDomeLight">Here's a pointer</a> to just those for DomeLights alone.
+
+<p>Find a reasonable web browser USD viewer <a href="https://usd-viewer.glitch.me/">here</a>. Drag and drop to load a model. You can also zip (usdzip not required) up your files and drop into this window.
+
+<p>The <a href="https://github.com/usd-wg/assets">USD working group assets repo</a> has a lot of good test files. I submitted McUsd and NormalsTextureBiasAndScale; try <a href="https://erich.realtimerendering.com/mcusd/McUsd_10cm.usdz">the former on your iPhone</a>. Looks mostly good, but there are two missing features in the renderer, unfortunately, which I discuss <a href="https://metaverse-standards.org/wp-content/uploads/USD-and-glTF-Users-Perspective.pdf">here</a>. Which leads to...
+
+<p><a href="https://developer.apple.com/documentation/realitykit/validating-usd-files">Apple feature support</a> - Apple's three different USD-related rendering engines have varying feature support, sometimes missing basic things like double-sided support. I hope they will someday expand these feature sets. That said, <P>Apple's <a href="https://developer.apple.com/augmented-reality/quick-look/">AR Quick Look</a> page has example models that work on the iPhone. I've found these are also good for testing other renderers.
+
+<p>Felix Herbst's <a href="https://asset-explorer.needle.tools/">assets site</a> takes glTF assets and provides Blender, three.js, and other converters' USD files. Good for testing. Particularly nice is that all the assets can be seen and interacted with in (feature complete) renderer running in the browser.
+
+<p>USD lighting is inconsistent and not physically based currently; see <a href="https://github.com/anderslanglands/light_comparison">Anders Langland's page</a> on this. See <a href="https://www.openusd.org/release/wp_usdlux_for_geometry_lights.html">this proposal</a>. My own workaround is to not set the intensity of lights in any model I provide for general use, in hopes that the reader will assign a reasonable default.
+
+<p>USD file load times for various apps are compared in <a href="https://www.youtube.com/watch?v=Lk0zpOCtSE0">this video</a>, for example. Some packages don't fare too well (spoiler: Clarisse and Katana, at that time).
+
+<h2>USD Tools</h2>
+
+My advice is to use UsdView from the <a href="https://www.nvidia.com/en-us/omniverse/download/">Omniverse Launcher</a> instead of trying to build it yourself. It also includes the <a href="https://openusd.org/release/toolset.html">USD toolset</a> such as usdchecker and usdzip. To use these other utilities on Windows I found you must do this sort of thing for <a href="https://openusd.org/release/toolset.html#usdzip">usdzip</a> in a CMD window:
+
+<PRE>
+cd to the directory where you have the USD files you want to zip up
+set PATH=%PATH%;C:\Users\yourname\AppData\Local\ov\pkg\prod-usdview-0.23.8\lib
+C:\Users\yourname\AppData\Local\ov\pkg\prod-usdview-0.23.8\scripts\usdzip.bat McUsd.usdz McUsd.usda McUsd_materials/tex/_domelight.png McUsd_materials/tex/chiseled_quartz_block.png
+</PRE>
+
+Similar commands work for <a href="https://openusd.org/release/toolset.html#usdchecker">usdchecker</a>, etc.
+
+<hr>
+
+<h1>glTF</h1>
+
+<h2>glTF Specifications</h2>
+
+<p><a href="https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html">glTF 2.0 specification</a> - pretty readable.
+
+<p>The physically based rendering material model for glTF is <a href="https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#specular-brdf">specified in detail</a> - start <a href="https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#appendix-b-brdf-implementation">here</a>. This is nice to see, as <a href="https://openusd.org/release/spec_usdpreviewsurface.html">UsdPreviewSurface</a> is looser and harder to pin down. When unclear, I tend to assume that the glTF description is what USD meant.
+
+<h3>Related articles</h3>
+
+<a href="https://www.willusher.io/graphics/2020/06/15/0-to-gltf-triangle">From 0 to glTF with WebGPU: The First Triangle</a> by Will Usher.
+
+<h2>glTF Viewers</h2>
+
+Unlike USD, where UsdView is considered "ground truth," glTF seems to have no single official viewer that's officially fully trusted.
+
+<p>Here are three.js-based ones that are solid - drag and drop a .glb file:
+<UL>
+<LI><a href="https://gltf-viewer.donmccurdy.com/">Don McCurdy's viewer</a> – My favorite overall. Be aware that you probably want to go to Lighting &#8594; environment and pick "None" to turn off the default surrounding lighting if you want to see how incoming lights are treated.
+
+<LI><a href="https://threejs.org/editor/">Three.js editor</a> - nice in that it lets you examine and modify assets such as lights, etc. It doesn't have a default IBL but can load one.
+
+<LI><a href="https://modelviewer.dev/editor/">&lt;model-viewer&gt;</a> - another three.js-based editor Felix mentioned as comparable to the two above. One problem I noticed is that you cannot turn off the environment lighting, you can only choose among a set (or upload your own).
+
+<LI><a href="https://viewer.needle.tools/">Needle viewer</a> – I’ve heard it has some niceties like automatic reloading of changed files, being able to look at the hierarchy, etc. It is also based on three.js so is on par with the others above.<br>
+</UL>
+
+<P>
+Non-three.js:
+<UL>
+<LI><a href="https://gestaltor.io/">Gestaltor</a> – visual editor on Windows and I’ve heard it’s good for casual edits.
+
+<LI><a href="https://sandbox.babylonjs.com/">Babylon.js viewer</a> – I’ve heard this one’s gotten good and is spec complete.
+
+<LI>Khronos has its own <a href="https://github.khronos.org/glTF-Sample-Viewer-Release/">sample glTF viewer</a>, with <a href="https://github.com/KhronosGroup/glTF-Sample-Viewer">code</a>. However, last I checked, it's incomplete, e.g., the <a href="https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/BoxInterleaved">BoxInterleaved model</a> (from Khronos) does not display correctly on it.
+</UL>
+
+<p>For a comprehensive list of (most every) application that writes or reads glTF files in some form, see <a href="https://github.khronos.org/glTF-Project-Explorer/">the Project Explorer page</a> (repo is <a href="https://github.com/KhronosGroup/glTF-Project-Explorer">here</a> - you can submit PRs).
+
+<h2>glTF Testing Resources</h2>
+
+The <a href="https://github.com/KhronosGroup/glTF-Sample-Assets">Khronos Group's glTF V2.0 Sample Models</a> - nearly 100 glTF models testing all sorts of things. Oddly, there's also <a href="https://github.com/KhronosGroup/glTF-Sample-Models">this repo</a> from Khronos, which has glTF 1.0 and 2.0 models. It's updated less frequently, but still updated. I'm not sure the difference - haven't bothered to compare, 2.0 is what I usually use.
+
+<P>Felix Herbst's <a href="https://asset-explorer.needle.tools/">assets site</a> has a bunch of glTF models from the site above, nicely showing each in the browser. A faster way to access many of the models above.
+
+<P><a href="https://github.com/cx20/gltf-test">gltf-test</a> shows various test models and how a variety of packages fare in displaying them. Actively maintained, shows which systems fail in what ways. Pretty cool is <a href="https://cx20.github.io/gltf-test/">this page</a>, where you can test yourself directly.
+
+<h2>glTF Readers/Writers</h2>
+
+To read and write out glTF, I've heard <a href="https://github.com/syoyo/tinygltf">tinygltf</a> is a good one.
+
+<P>Another is <a href="https://github.com/jkuhlmann/cgltf">cgltf</a>, which supports extensions.
+
+<P>Yet another is <a href="https://github.com/jessey-git/fx-gltf">fx-gltf</a>, which looks to use modern C++ and I’ve heard (back in 2018) that it’s faster than tinygltf.
+
+<hr>
+
+<h1>glTF to USD</h1>
+
+Matias Codesal's USD page <a href="https://github.com/matiascodesal/awesome-openusd#converters">has a section</a> on this topic. I haven't found anything more of note. Me, I use <a href="https://www.nvidia.com/en-us/omniverse/download/">Omniverse</a>, since USD Composer is free and easy enough to use to convert in either direction (and, full disclosure, I work at NVIDIA, so am familiar with it).
+
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="spacer.gif" alt="" height="1" border="0"/></td>
+</tr>
+</table>
+</div>  
+<div id="footer" class="clearfix">
+<ul>
+<li>Contacts:</li>
+    <li><a href="mailto:tomas.akenine.moller@gmail.com">Tomas</a></li>
+    <li><a href="mailto:erich@acm.org">Eric</a></li>
+    <li><a href="mailto:rtr3@renderwonk.com">Naty</a></li>
+</ul>
+</div>  
+</div>  
+<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&"www.cloudflare.com/email-protection"==a.substr(7 ,35)){s='';j=43;r=parseInt(a.substr(j,2),16);for(j+=2;a.length-j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>
