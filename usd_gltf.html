@@ -147,14 +147,18 @@ Non-three.js:
 
 <LI><a href="https://sandbox.babylonjs.com/">Babylon.js viewer</a> – I’ve heard this one’s gotten good and is spec complete.
 
-<LI>Khronos has its own <a href="https://github.khronos.org/glTF-Sample-Viewer-Release/">sample glTF viewer</a>, with <a href="https://github.com/KhronosGroup/glTF-Sample-Viewer">code</a>. However, last I checked, it's incomplete, e.g., the <a href="https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/BoxInterleaved">BoxInterleaved model</a> (from Khronos) does not display correctly on it.
+<LI><a href="https://www.gltfeditor.com/">gltfeditor</a> - a hobby project by Andrew Varga. You can edit a bunch of things in your model, and it also exports to USDZ. It is fairly compliant (e.g., the AlphaBlendModeTest model isn't quite right). I want to explore this one more.
+
+<LI>Khronos has an official renderer for glTF, <a href="https://github.khronos.org/glTF-Sample-Viewer-Release/">SampleViewer</a>, with <a href="https://github.com/KhronosGroup/glTF-Sample-Viewer">code</a>. It's mostly good, but incomplete, e.g., last I checked, the <a href="https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/BoxInterleaved">BoxInterleaved model</a> (from Khronos) does not display correctly on it.
 </UL>
 
-<p>For a comprehensive list of (most every) application that writes or reads glTF files in some form, see <a href="https://github.khronos.org/glTF-Project-Explorer/">the Project Explorer page</a> (repo is <a href="https://github.com/KhronosGroup/glTF-Project-Explorer">here</a> - you can submit PRs).
+<p>The <a href="https://modelviewer.dev/fidelity/">Render Fidelity Comparison Results</a> page shows PBR comparisons among renderers. You can pick any two and compare in the browser.
+
+<p>For a comprehensive list of (most every) application that writes or reads glTF files in some form, see <a href="https://ecosystem.khronos.org/">the Project Explorer page</a> (repo is <a href="https://github.com/KhronosGroup/glTF-Project-Explorer">here</a> - you can submit PRs).
 
 <h2>glTF Testing Resources</h2>
 
-The <a href="https://github.com/KhronosGroup/glTF-Sample-Assets">Khronos Group's glTF V2.0 Sample Models</a> - nearly 100 glTF models testing all sorts of things. Oddly, there's also <a href="https://github.com/KhronosGroup/glTF-Sample-Models">this repo</a> from Khronos, which has glTF 1.0 and 2.0 models. It's updated less frequently, but still updated. I'm not sure the difference - haven't bothered to compare, 2.0 is what I usually use.
+The <a href="https://github.com/KhronosGroup/glTF-Sample-Assets">Khronos Group's glTF V2.0 Sample Models</a> - nearly 100 glTF models testing all sorts of things. There's also <a href="https://github.com/KhronosGroup/glTF-Sample-Models">this repo</a> from Khronos, which has glTF 1.0 and 2.0 models. It's updated less frequently, but still updated. I was informed: "The Sample Assets repo (first link) is the evolution of the Sample Model (second link) repo. Khronos made the decision to keep the old repo to preserve links. The Sample Assets repo is focused on glTF 2.0 only, so older models were removed. Also the copyright and licenses of all models were researched and included. Some models were dropped because the license was not suitable for the collection."
 
 <P>Felix Herbst's <a href="https://asset-explorer.needle.tools/">assets site</a> has a bunch of glTF models from the site above, nicely showing each in the browser. A faster way to access many of the models above.
 
@@ -173,6 +177,11 @@ To read and write out glTF, I've heard <a href="https://github.com/syoyo/tinyglt
 <h1>glTF to USD</h1>
 
 Matias Codesal's USD page <a href="https://github.com/matiascodesal/awesome-openusd#converters">has a section</a> on this topic. I haven't found anything more of note. Me, I use <a href="https://www.nvidia.com/en-us/omniverse/download/">Omniverse</a>, since USD Composer is free and easy enough to use to convert in either direction (and, full disclosure, I work at NVIDIA, so am familiar with it).
+
+<p>For ease of use, you might try <a href="https://www.gltfeditor.com/">gltfeditor</a>. It's browser based and you can export to USDZ.
+
+<hr>
+<I>Thanks to Felix Herbst, Leonard Daly, Jeremy Cowles, Ben Houston, Andrew Varga, Nick Porcino, Matias Codesal, Don McCurdy, and many others for contributions and for all the great content you maintain.
 
 </td>
 </tr>
