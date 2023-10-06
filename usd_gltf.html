@@ -45,9 +45,11 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: October 5, 2023
+Last changed: October 6, 2023
 </div>
-<P>This is a collection of links to various glTF and USD resources. A short link for it is <a href="http://bit.ly/usdgltf">http://bit.ly/usdgltf</a>. These scene description frameworks are more full-featured than older file formats such as OBJ or VRML. I (Eric) find myself having to poke around in my bookmarks too often to get to these URLs, so I decided to gather them in one place. I hope you find them of use. I haven't yet waded through them all myself (especially the tutorials). Write me if you find something great that's missing.
+<P>This is a collection of links to various glTF and USD resources. A short link for it is <a href="http://bit.ly/usdgltf">http://bit.ly/usdgltf</a>. These scene description frameworks are more full-featured (e.g., physically based material descriptions are supported) than older file formats such as OBJ or VRML. I (Eric) find myself having to poke around in my bookmarks too often to get to these URLs, so I decided to gather them in one place. I hope you find them of use. I haven't yet waded through them all myself (especially the tutorials) to find the best. Write me if you find something great that's missing.
+
+<P>I list USD first, only because I've been working with it more lately, but both are important. In my experience, glTF is currently more widely implemented (e.g., Blender support) and lighter than USD, which is more film-oriented, e.g., connected meshes are considered subdivision surface descriptions by default.
 
 <h1>USD</h1>
 
@@ -101,15 +103,20 @@ The OpenUSD <a href="https://github.com/PixarAnimationStudios/OpenUSD/tree/b5357
 
 <h2>USD Tools</h2>
 
-My advice is to use UsdView from the <a href="https://www.nvidia.com/en-us/omniverse/download/">Omniverse Launcher</a> instead of trying to build it yourself. It also includes the <a href="https://openusd.org/release/toolset.html">USD toolset</a> such as usdchecker and usdzip. To use these other utilities on Windows I found you must do this sort of thing for <a href="https://openusd.org/release/toolset.html#usdzip">usdzip</a> in a CMD window:
+My advice is to use UsdView from the <a href="https://www.nvidia.com/en-us/omniverse/download/">Omniverse Launcher</a> instead of trying to build it yourself. It also includes the <a href="https://openusd.org/release/toolset.html">USD toolset</a> such as usdchecker and usdzip. To use these other utilities on Windows I found you must do this sort of thing for <a href="https://openusd.org/release/toolset.html#usdchecker">usdchecker</a> in a CMD window, for example (and yes you'll need to change paths to your own machine's):
 
 <PRE>
-cd to the directory where you have the USD files you want to zip up
-set PATH=%PATH%;C:\Users\yourname\AppData\Local\ov\pkg\prod-usdview-0.23.8\lib
-C:\Users\yourname\AppData\Local\ov\pkg\prod-usdview-0.23.8\scripts\usdzip.bat McUsd.usdz McUsd.usda McUsd_materials/tex/_domelight.png McUsd_materials/tex/chiseled_quartz_block.png
+C:\Users\erich\AppData\Roaming\omniverse-launcher\usdview-0.23.8\scripts\usdchecker.bat C:\Users\erich\Documents\GitHub\usd-wg-assets\full_assets\McUsd\McUsd.usda
 </PRE>
 
-Similar commands work for <a href="https://openusd.org/release/toolset.html#usdchecker">usdchecker</a>, etc.
+For <a href="https://openusd.org/release/toolset.html#usdzip">usdzip</a> it's easier to go to the directory where your main USD file is:
+
+<PRE>
+cd C:\Users\erich\Documents\GitHub\usd-wg-assets\full_assets\McUsd                                                
+C:\Users\erich\AppData\Roaming\omniverse-launcher\usdview-0.23.8\scripts\usdzip.bat McUsd.usd McUsd_materials/tex/_domelight.png McUsd_materials/tex/chiseled_quartz_block.png (... rest of textures in a list)
+</PRE>
+
+Note: if this doesn't work for you, try uninstalling and reinstalling UsdView 0.23.8 from the Omniverse Launcher. Also, I've seen "Local" in the path instead of "Roaming". You can use the free (and wonderful) <a href="https://www.voidtools.com/support/everything/">Everything tool</a> on Windows to search for usdchecker.bat to find the path.
 
 <hr>
 
@@ -181,7 +188,7 @@ Matias Codesal's USD page <a href="https://github.com/matiascodesal/awesome-open
 <p>For ease of use, you might try <a href="https://www.gltfeditor.com/">gltfeditor</a>. It's browser based and you can export to USDZ.
 
 <hr>
-<I>Thanks to Felix Herbst, Leonard Daly, Ben Houston, Andrew Varga, Jeremy Cowles, Nick Porcino, Matias Codesal, Don McCurdy, and many others for contributions and for all the great content you maintain.
+<I>Thanks to Felix Herbst, Leonard Daly, Ben Houston, Andrew Varga, Jeremy Cowles, Patrick Cozzi, Nick Porcino, Matias Codesal, Don McCurdy, and many others for contributions and for all the great content you maintain.
 
 </td>
 </tr>
