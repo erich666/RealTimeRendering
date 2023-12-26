@@ -45,7 +45,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: October 12, 2023
+Last changed: December 15, 2023
 </div>
 <P>This is a collection of links to various glTF and USD resources. A short link for it is <a href="http://bit.ly/usdgltf">http://bit.ly/usdgltf</a>. These scene description frameworks are more full-featured (e.g., physically based material descriptions are supported) than older file formats such as OBJ or VRML. I (Eric) find myself having to poke around in my bookmarks too often to get to these URLs, so I decided to gather them in one place. I hope you find them of use. I haven't yet waded through them all myself (especially the tutorials) to find the best. Write me if you find something great that's missing.
 
@@ -57,7 +57,7 @@ First, there's <a href="https://github.com/vfxpro99/usd-resources">a ton of link
 
 <h2>Why and What is USD?</h2>
 
-Pixar's <a href="https://github.com/PixarAnimationStudios/OpenUSD">reference docs</a> are important, but tough to read and learn from. For a simple material description, see <a href="https://openusd.org/release/spec_usdpreviewsurface.html">UsdPreviewSurface</a>, though this material <a href="https://github.com/erich666/McUsd#observations">is not tightly specified</a>.
+Pixar's <a href="https://github.com/PixarAnimationStudios/OpenUSD">reference docs</a> are important, but tough to read and learn from. For a simple material description, see <a href="https://openusd.org/release/spec_usdpreviewsurface.html">UsdPreviewSurface</a>, though this material <a href="https://github.com/erich666/McUsd#observations">is not tightly specified</a>. To understand proper implementation, try this <a href="https://academysoftwarefoundation.github.io/MaterialX/?file=Materials/Examples/UsdPreviewSurface/usd_preview_surface_default.mtlx">MaterialX implementation</a> application, which works in the browser (<a href="https://github.com/AcademySoftwareFoundation/MaterialX">github repo</a>). Open the menu in the upper right, click an attribute, and type in a number (don't try to use sliders). You'll notice interesting (and newly defined, so not implemented everywhere, e.g., not in usdview as of December 2023) behaviors such as setting metallic to 1.0 will make opacity itself not have an effect (i.e., there are no transparent metals, <a href="https://youtu.be/90eg_erObDo?t=228">Star Trek</a> aside).
 
 <p><a href="https://remedy-entertainment.github.io/USDBook/index.html">Remedy's Book of USD</a> is supposed to be a good starting spot. I've read a bit and liked it so far.
 
@@ -126,7 +126,7 @@ Note: if this doesn't work for you, try uninstalling and reinstalling UsdView 0.
 
 <p><a href="https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html">glTF 2.0 specification</a> - pretty readable.
 
-<p>The physically based rendering material model for glTF is <a href="https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#specular-brdf">specified in detail</a> - start <a href="https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#appendix-b-brdf-implementation">here</a>. This is nice to see, as <a href="https://openusd.org/release/spec_usdpreviewsurface.html">UsdPreviewSurface</a> is looser and harder to pin down. When unclear, I tend to assume that the glTF description is what USD meant.
+<p>The physically based rendering material model for glTF is <a href="https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#specular-brdf">specified in detail</a> - start <a href="https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#appendix-b-brdf-implementation">here</a>. This is nice to see, as <a href="https://openusd.org/release/spec_usdpreviewsurface.html">UsdPreviewSurface</a> is looser and sometimes harder to pin down. When unclear, I tend to assume that the glTF description is what USD meant.
 
 <h3>Related articles</h3>
 
