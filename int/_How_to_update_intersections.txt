@@ -1,6 +1,6 @@
 Make fixes to intersections.txt
 
-There are also links in int2html.pl - fix those, too.
+There are also links to other resources in int2html.pl - worth a Xenu check to see what's died.
 
 Update the date in int2html.pl around line 191
 
