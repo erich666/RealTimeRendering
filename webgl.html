@@ -45,7 +45,7 @@
 <tr>
 <td class="bodyText">
 <div class="metadata">
-Last changed: October 7, 2024
+Last changed: December 6, 2024
 </div>
 <div>
 Eric runs across WebGL resources and then tend to lose track of them, so he made this page. Feel free to <a href="mailto:erich@acm.org">send him suggestions</a>.
@@ -54,11 +54,11 @@ Eric runs across WebGL resources and then tend to lose track of them, so he made
 <P>
 Does this browser support WebGL? Test <a href="https://get.webgl.org/">here</a>.
 <br>
-What WebGL extensions does this browser support? Test <a href="https://webglreport.com/">here</a>, and <a href="https://www.khronos.org/registry/webgl/sdk/tests/extra/webgl-info.html">here</a>, and <a href="https://alteredqualia.com/tools/webgl-features/">here</a>.
+What WebGL extensions does this browser support? Test <a href="https://webglreport.com/">here</a>, and <a href="https://registry.khronos.org/webgl/sdk/tests/extra/webgl-info.html">here</a>, and <a href="https://alteredqualia.com/tools/webgl-features/">here</a>.
 <br>
 What browser versions support WebGL? Find out <a href="https://caniuse.com/#feat=webgl">here</a>.
 <br>
-How do I start up my browser for local development? Chrome: <b>--allow-file-access-from-files</b> else check the <a href="https://threejs.org/docs/#manual/introduction/How-to-run-thing-locally">three.js page</a> or <a href="https://www.udacity.com/wiki/cs291/enabling-webgl">Udacity page</a>.
+How do I start up my browser for local development? Chrome: <b>--allow-file-access-from-files</b> else check the <a href="https://threejs.org/docs/#manual/introduction/How-to-run-thing-locally">three.js page</a>.
 <br>
 What's my GPU info on Chrome? Paste in this URL: chrome://gpu/
 <br>
@@ -75,8 +75,6 @@ Khronos <a href="https://www.khronos.org/files/webgl/webgl-reference-card-1_0.pd
 <a href="https://www.khronos.org/webgl/wiki/Main_Page">Khronos Wiki</a>.
 <br>
 <a href="https://www.khronos.org/webgl/wiki/BlacklistsAndWhitelists">Blacklist</a> of GPUs that don't run WebGL.
-<br>
-<a href="https://www.shaderific.com/glsl-functions/">OpenGL ES Shading Language functions</a>, used for WebGL/Three.js shaders.
 
 <h2>Forums and News</h2>
 <a href="https://groups.google.com/forum/#!forum/webgl-dev-list">WebGL Dev List</a> on Google Groups
@@ -86,6 +84,14 @@ Twitter: <a href="https://twitter.com/search?q=%23threejs&src=typd">#threejs</a>
 Reddit: <a href="https://www.reddit.com/r/threejs">three.js</a>, <a href="https://www.reddit.com/r/webgl/">WebGL</a>
 
 <h2>Tools</h2>
+There are lots of Javascript development resources. At a minimum, I recommend putting <a href="https://www.w3schools.com/js/js_strict.asp">"use strict";</a> at the top of your programs.
+<br>
+Use <a href="https://jshint.com/">JSHint</a> to check your code.
+<br>
+To develop locally you'll need to use a local servers. Easy ways to start one are <a href="https://greggman.github.io/servez/">ServeZ</a> on the PC, <a href="https://www.mamp.info/">MAMP</a> on Mac.
+<br>
+A debugger is built into the browser, <a href="https://developer.chrome.com/docs/devtools/javascript">e.g., Chrome</a>. Other graphics-specific tools follow.
+<br>
 <a href="https://spector.babylonjs.com/">Spector.js</a> for examining renders and state. <a href="https://www.realtimerendering.com/blog/debugging-webgl-with-spectorjs/">Documentation</a>.
 <br>
 <a href="https://www.html5rocks.com/en/tutorials/games/abouttracing/">about:tracing</a> in Google Chrome, for examining GPU and CPU usage.
@@ -95,8 +101,6 @@ Reddit: <a href="https://www.reddit.com/r/threejs">three.js</a>, <a href="https:
 <a href="https://hacks.mozilla.org/2014/03/introducing-the-canvas-debugger-in-firefox-developer-tools/">Firefox Canvas Debugger</a>
 <br>
 <a href="https://toji.github.io/shader-perf/">Shader compile/link performance</a>
-<br>
-<a href="https://github.com/spite/ShaderEditorExtension">Chrome shader editor</a>
 <br>
 <a href="https://toji.github.io/texture-tester/">Texture Format Tester</a>
 <br>
@@ -194,7 +198,7 @@ Many more articles can be found at <a href="https://www.jendrikillner.com/articl
 <h2>Compression</h2>
 <a href="https://github.com/KhronosGroup/glTF/wiki/Open-3D-Graphics-Compression">Open3DGC</a>
 <br>
-<a href="http://openctm.sourceforge.net/">OpenCTM</a>
+<a href="https://sourceforge.net/projects/openctm/">OpenCTM</a>
 <br>
 <a href="https://github.com/google/draco">Draco</a>
 
