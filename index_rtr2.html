@@ -32,7 +32,7 @@ Rendering</h1>
 <p>Book related resources include:
 <ul>
   <li><font color="#c850c8">Tomas' <B><a href="http://www.cs.lth.se/home/Tomas_Akenine_Moller/RTR/RTRslides.zip">Powerpoint Slides</a></B> for a semester's course derived from the book.</font>
-  <li>The <B><a href=corrigenda.html">Corrections</a></B>
+  <li>The <B><a href="corrigenda.html">Corrections</a></B>
     area (for first and second editions).
   <li>The <a href="refs2.html"><b>Bibliography</b></a> of the book, with hyperlinked
     resources (the <a href="refs1.html">First Edition</a> bibliography is also
@@ -184,7 +184,7 @@ by Dave Astle and Dave Durnil, September 2004 (a little more info <a href="http:
   <li><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1568812299/">Metaprogramming GPUs with Sh</a>, by Michael McCool and Stefanus Du Toit, August 2004.
   <li><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1932111859?tag=somebooksilike">3D Game-Based Filmmaking: The Art of Machinima</a>, by Paul Marino, July 2004.
   <li><a href="http://www.amazon.com/exec/obidos/ASIN/0672326019?tag=somebooksilike">OpenGL 
-    SuperBible, Third Edition</a></I>, by Richard S. Wright Jr., Benjamin Lipchak, Sams 
+    SuperBible, Third Edition</a>, by Richard S. Wright Jr., Benjamin Lipchak, Sams 
     Press, 2004.
   <li><a href="http://www.evenlakestudios.com/books/">Demoscene: the art of real-time</a>, edited by Lassi Tasajärvi, June 2004 (U.S. residents buy it <a href="http://www.fusecon.com/products/demobooks/">here</a>).
   <li><a href="http://www.amazon.com/exec/obidos/tg/detail/-/1592000924?tag=somebooksilike">Shaders for Game Programmers and Artists</a>
@@ -283,7 +283,7 @@ reviews. The <a href="http://www.geometryalgorithms.com/">Dan Sunday's Geometry 
   software rendering</a>, with all its tricks and pitfalls, is presented by Charles
   Bloom. Software rendering is not dead; for example, see <a href="http://www.flipcode.com/cgi-bin/msg.cgi?showThread=11-12-2002&forum=iotd&id=-1">Nicolas Capens' efforts</a>. <font color="#c850c8">Brian Collins has also made a <a href="http://hatchbackjack.com/?page_id=4">software-only renderer, SGS</a>, with many features.</font> <font color="#7a357a">Another software-only renderer: <a href="http://www.aceshardware.com/read.jsp?id=45000330">Kribi</a>.</font>
   <a href="http://www.radgametools.com/pixomain.htm">Pixomatic</a> is a new commercial product that
-  takes a similar approach; see some benchmarks</a>
+  takes a similar approach; see some benchmarks
   at <a href="http://www.radgametools.com/pixofeat.htm">the bottom of this page</a>. It's available in
   <a href="http://www.ataricommunity.com/forums/showthread.php?threadid=295832">UT2003</a>, for example,
   allowing people with old graphics cards and portables to still play newer games.
@@ -341,15 +341,15 @@ reviews. The <a href="http://www.geometryalgorithms.com/">Dan Sunday's Geometry 
   section.
 
 <a name="visapp">
-<h2> Visual Appearance</h2>
+<h2>Visual Appearance</h2></a>
 <p><font color="#c850c8">Lacroix has an article about modern <a href="http://www.gamasutra.com/features/20050729/lacroix_01.shtml">dynamic lighting on the GPU</a>.</font>
 <p>
-</a> The <a href="http://www.cs.brown.edu/exploratory/">Exploratory</a> has applets
+The <a href="http://www.cs.brown.edu/exploratory/">Exploratory</a> has applets
 that <a href="http://www.cs.brown.edu/exploratories/freeSoftware/catalogs/repositoryApplets.html">teach
 about lighting models and signal processing</a>, among other topics. <a href="http://tog.acm.org/resources/applets/vrml/pellucid.html">Pellucid</a>
 is a Java applet that allows you to manipulate the VRML lighting model, which
 is similar to the lighting model covered in this chapter.
-<p> Scott R. Nelson's <a href="http://jgt.akpeters.com/papers/Nelson97/">antialiased
+<p>Scott R. Nelson's <a href="http://jgt.akpeters.com/papers/Nelson97/">antialiased
   line code</a> is available for download. Here is a comparison generated using
   his program of lines improperly drawn with <a href="gamma10.png">gamma=1.0</a>
   (note the severe roping and Mo&iacute;re patterns) and properly drawn with <a href="gamma22.png">gamma=2.2</a>.
@@ -451,7 +451,7 @@ to obtain <a href="http://brainwagon.org/images/escher.env.jpg">a cube map of th
   ways to map to a sphere</a>, with pros and cons of each.
 <p><a href="http://www.gamasutra.com/features/20030813/hargreaves_01.shtml">Hargreaves gives methods</a> for quick approximation of color bleeding for objects moving through an outdoor environment.
 <p>Paul Baker has an article about <a href="http://www.paulsprojects.net/tutorials/simplebump/simplebump.html">how to perform bump mapping</a> using the ARB OpenGL extensions. He also has code for <a href="http://www.paulsprojects.net/opengl/bumpatten/bumpatten.html">per pixel lighting with bump maps</a> using NVIDIA extensions. <font color="#7a357a">NVIDIA has an <a href="http://developer.nvidia.com/object/mipmapping_normal_maps.html">article</a> about mipmapping normal maps.</font> <font color="#a043a0">NVIDIA explores simple <a href="http://developer.nvidia.com/object/bump_map_compression.html">compression techniques for bump maps</a> to achieve better quality at a cheaper cost.</font>
-<p><font color="#c850c8">A new family of bump-mapping techniques are based on <a href="http://vrsj.t.u-tokyo.ac.jp/ic-at/ICAT2003/papers/01205.pdf">Kaneko's parallax bump-mapping work</a> in 2001. The underlying concept is to do a simplified ray trace of the bump map surface's heightfield, finding which texel is actually visible at each pixel. There are a number of schemes to accelerate this process. <a href="<a href="http://www.infiscape.com/rd.html">Welsh</a> gives a basic solution to the problem using the GPU, providing bits of source code. <a href="http://download.nvidia.com/developer/GPU_Gems_2/GPU_Gems2_ch08.pdf">Donnelly</a> creates a 3D distance map to more rapidly find the closest ray/heighfield intersection, at the cost of additional storage. <a href="http://www.inf.ufrgs.br/~oliveira/RTM.html">Oliveira, Policarpo, and others</a> call the algorithm "relief texture mapping" (RTM). They use an approach of sampling the texture heightfield along the projection of the ray onto the surface, using these samples to approximate where the first intersection is located. They have a <a href="http://www.shadertech.com/contest/#reliefmapping">implementation available in Cg, along with a video</a>. They have also done some work on handling curved surfaces, a trickier case. See <a href="http://fabio.policarpo.nom.br/relief/index.htm">Policarpo's site</a> for more demos and papers. Tatarchuk and Brawley have published work in the area, including <a href="http://www.ati.com/developer/gdc/Tatarchuk-ParallaxOcclusionMapping-FINAL_Print.pdf">this article</a> and <a href="http://www.ati.com/developer/SIGGRAPH05/Tatarchuk-ParallaxOcclusionMapping-Sketch-print.pdf">this presentation</a>, showing ways to perform convincing self-shadowing and improve quality and speed. Tatarchuk and others at ATI have also made a <a href="http://www.ati.com/designpartners/media/edudemos/RadeonX1k.html#">Toyshop video</a> showing the effect. Morgan and Max McGuire <a href="http://graphics.cs.brown.edu/games/SteepParallax/index.html">have a poster</a> describing a similar technique, and provide source code.</font>
+<p><font color="#c850c8">A new family of bump-mapping techniques are based on <a href="http://vrsj.t.u-tokyo.ac.jp/ic-at/ICAT2003/papers/01205.pdf">Kaneko's parallax bump-mapping work</a> in 2001. The underlying concept is to do a simplified ray trace of the bump map surface's heightfield, finding which texel is actually visible at each pixel. There are a number of schemes to accelerate this process. <a href="http://www.infiscape.com/rd.html">Welsh</a> gives a basic solution to the problem using the GPU, providing bits of source code. <a href="http://download.nvidia.com/developer/GPU_Gems_2/GPU_Gems2_ch08.pdf">Donnelly</a> creates a 3D distance map to more rapidly find the closest ray/heighfield intersection, at the cost of additional storage. <a href="http://www.inf.ufrgs.br/~oliveira/RTM.html">Oliveira, Policarpo, and others</a> call the algorithm "relief texture mapping" (RTM). They use an approach of sampling the texture heightfield along the projection of the ray onto the surface, using these samples to approximate where the first intersection is located. They have a <a href="http://www.shadertech.com/contest/#reliefmapping">implementation available in Cg, along with a video</a>. They have also done some work on handling curved surfaces, a trickier case. See <a href="http://fabio.policarpo.nom.br/relief/index.htm">Policarpo's site</a> for more demos and papers. Tatarchuk and Brawley have published work in the area, including <a href="http://www.ati.com/developer/gdc/Tatarchuk-ParallaxOcclusionMapping-FINAL_Print.pdf">this article</a> and <a href="http://www.ati.com/developer/SIGGRAPH05/Tatarchuk-ParallaxOcclusionMapping-Sketch-print.pdf">this presentation</a>, showing ways to perform convincing self-shadowing and improve quality and speed. Tatarchuk and others at ATI have also made a <a href="http://www.ati.com/designpartners/media/edudemos/RadeonX1k.html#">Toyshop video</a> showing the effect. Morgan and Max McGuire <a href="http://graphics.cs.brown.edu/games/SteepParallax/index.html">have a poster</a> describing a similar technique, and provide source code.</font>
 <p> Gamasutra has a pair of articles on <a href="http://www.gamasutra.com/features/20001117/oliveira_01.htm">performing
   refractive mapping</a>.
 <p><a href="http://www.ludicon.com/castano/files/magica/">Ignacio Castaño</a> has made some free 3DSMAX tools
@@ -542,7 +542,7 @@ is excerpted from the <a href="http://www.amazon.com/exec/obidos/tg/detail/-/155
   Ron Fosner also writes about <a href="http://www.gamasutra.com/features/20030514/fosner_01.shtml"><i>Implementing
   HLSL with RenderMonkey</i></a>. <font color="#a043a0">What you probably really want to be doing for production rendering
   is create <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/directx9_c/directx/graphics/reference/EffectFileReference/EffectFileReference.asp">effects files</a> instead, which give you a higher level of abstraction.</font>
-<p><font color="#c850c8"><a href="http//www.gpgpu.org/">GPGPU.org</a> is an excellent site for information on using GPUs for general purpose computation. Their <a href="http://www.gpgpu.org/wiki/FAQ">FAQ</a> and <a href="http://www.gpgpu.org/w/index.php/Main_Page">wiki</a> are particularly useful.</font>
+<p><font color="#c850c8"><a href="http://www.gpgpu.org/">GPGPU.org</a> is an excellent site for information on using GPUs for general purpose computation. Their <a href="http://www.gpgpu.org/wiki/FAQ">FAQ</a> and <a href="http://www.gpgpu.org/w/index.php/Main_Page">wiki</a> are particularly useful.</font>
 <p><font color="#7a357a">The <a href="http://www.3dshaders.com/">3D Shaders</a> site is the online part of the <I><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0321197895?tag=somebooksilike">OpenGL Shading Language</a></I> book. There's source code, shaders, errata, and useful links here.</font>
 <p>NVIDIA's <a href="http://developer.nvidia.com/view.asp?IO=cg_about">Cg programming language</a>
   is one higher level solution for programming vertex and pixel shaders for OpenGL
@@ -736,7 +736,7 @@ also been presented.
 <p>William Damon has an article on <a href="http://www.intel.com/cd/ids/developer/asmo-na/eng/segments/games/20219.htm">impostors 
   and render to texture</a>, and how to do it if render target textures is unavailable.
 <font color="#c850c8">GPGPU.org has a <a href="http://www.gpgpu.org/wiki/FAQ">FAQ</a> on their wiki which includes information
-on how to use render to texture.</a></font>
+on how to use render to texture.</font>
 <p>Mark Harris' web page about the use of <a href="http://www.cs.unc.edu/~harrism/clouds/">impostors
   for cloud simulation</a> is both educational and beautiful. <a href="http://www.glexcess.com/">GL
   Excess</a> is a fun demo showing off a wide range of image-based and special
@@ -751,7 +751,7 @@ available for download.
   applet</a> shows particle systems in action. David McAllister has a <a href="http://www.cs.unc.edu/~davemc/Particle/">particle
   API</a> available, along with some nice screen shots and links. <a href="http://www.particlesystems.com/">Particlesystems.com</a> 
   tracks news and information on particle systems in general. <font color="#7a357a">Lutz Latta discusses how to use the GPU to <a href="http://www.gamasutra.com/features/20040728/latta_01.shtml">compute particle
-  paths rapidly<a/>.</font>
+  paths rapidly</a>.</font>
 <p>Dean Calver <a href="http://www.beyond3d.com/articles/deflight/">has an article</a> about the pros and cons of using textures storing surface attributes in textures in order to perform deferred rendering.
 <p>Related to image-based rendering is image-based modeling, a.k.a. photogrammetry.
   One product that reconstruct models from images:
@@ -853,7 +853,7 @@ This book has <a href="http://lodbook.com/">a companion web site</a>.
 
 <a name="pipeopt">
 <h2> Pipeline Optimization</h2>
-
+</a>
 NVIDIA has a profiling tool called <a href="http://developer.nvidia.com/object/devnews013.html">NVPerfHUD</a>, available to registered developers. John Spitzer's slides about bottleneck detection are <a href="http://developer.nvidia.com/docs/IO/8343/Performance-Optimisation.pdf">available at NVIDIA's site</a>.
 ATI has a presentation about <a href="http://www.ati.com/developer/techpapers.html">Direct3D Performance</a>
 from GDC 2003. <p><a href="http://www.entechtaiwan.com/ps.htm">PowerStrip</a> is a shareware program
@@ -861,7 +861,7 @@ from GDC 2003. <p><a href="http://www.entechtaiwan.com/ps.htm">PowerStrip</a> is
 the speed of the GPU and see its effect on performance.
 
 <p>
-</a> <a href="http://www.d6.com/users/checker/misctech.htm">Chris Hecker</a> has
+<a href="http://www.d6.com/users/checker/misctech.htm">Chris Hecker</a> has
 written a number of excellent articles on compilers and speed-up techniques for
 the PC. For example, his <a href="http://www.d6.com/users/checker/pdfs/gdmcomp2.pdf"><I>More
 Compiler Results, and What To Do About It</I></A> article shows how the simple
@@ -965,7 +965,7 @@ latest version of VTune.
   smoothing</a>. Gavin Bell describes a bit more about how to get the <a href="http://tog.acm.org/resources/RTNews/html/rtnv7n5.html#art16">normals
   to point outwards</a>, along with sample code.
 <p>Search <a href="http://developer.nvidia.com">NVIDIA's
-  developer site for OpenGL vertex array range and fence
+  developer site</a> for OpenGL vertex array range and fence
   extension information, and for DirectX vertex buffer information.
 <p>NVIDIA has a number of
   <a href="http://www.nvidia.com/object/presentations.html">presentations
@@ -1149,7 +1149,7 @@ intersection tests.
 <h2> Collision Detection</h2>
 </a>
 <p><font color="#c850c8">The <a href="http://www.continuousphysics.com/Bullet/phpBB2/index.php">Physics Simulation Forum</a> has many threads about collision detection and physical simulation. The <a href="http://www.continuousphysics.com/">Bullet Physics Library</a> at this site is a library for performing rigid-body collision detection and response. The reference implementation is open source and free for commercial use, and is integrated with Blender and COLLADA.</font>
-<p><font color="#c850c8"><a href="http//www.gpgpu.org/">GPGPU.org</a> is an excellent site for information on using GPUs for general purpose computation, including collision detection.</font>
+<p><font color="#c850c8"><a href="http://www.gpgpu.org/">GPGPU.org</a> is an excellent site for information on using GPUs for general purpose computation, including collision detection.</font>
 <p><font color="#c850c8">One noteworthy announcement has been the <a href="http://www.ageia.com/">introduction of the AGEIA PhysX processor</a>, a dedicated physics action accelerator. <a href="http://www.rojakpot.com/showarticle.aspx?artno=303&pgno=0">NVIDIA announced SLI physics</a>, where physics computations are offloaded to a GPU. <a href="http://www.gamespot.com/news/6136639.html">Havok</a>, who provide a commercial software collision detection library, plans to support GPU-accelerated physics in their HavokFX product.</font>
 <p><a href="http://users.comlab.ox.ac.uk/stephen.cameron/distances.html">The GJK
   algorithm</a> is a general way to determine the distance between two convex
@@ -1234,7 +1234,7 @@ the GeForce FX (then NV30) vs. ATI's R300 (i.e. the Radeon 9700).
 <p>There are a number of papers at <a href="http://www.cs.brown.edu/~tor/sig2003.html">SIGGRAPH 2003</a>
  about using the GPU for implementing classical numerical algorithms, such as sparse matrix solvers.
  Mark Harris has made an extensive research and resources site about <a href="http://www.gpgpu.org/">using
-  GPUs to rapidly solve non-graphical problems</a>. <font color="#c850c8">Their wikified <a href="http://www.gpgpu.org/wiki/FAQ">FAQ</a> is particularly helpful.</font> Also see <a href="http://www.cs.unc.edu/~geom/hardware/index.shtml">UNC Chapel Hill's page.
+  GPUs to rapidly solve non-graphical problems</a>. <font color="#c850c8">Their wikified <a href="http://www.gpgpu.org/wiki/FAQ">FAQ</a> is particularly helpful.</font> Also see <a href="http://www.cs.unc.edu/~geom/hardware/index.shtml">UNC Chapel Hill's page</a>.
 <font color="#c850c8">One of the first commercial products using the GPU for something other than 3D rendering is ATI's
 <a href="http://www.extremetech.com/article2/0,1697,1880668,00.asp">Avivo product</a>. Admittedly, this product
 doesn't wander far from the GPU's original purpose, converting video files to other formats, about five times faster than the CPU can do this operation.</font>
@@ -1318,7 +1318,7 @@ be found at <a href="http://www.classicgaming.com/vault/emulate.shtml">Classic G
   Roadmap for Semiconductors</a> shows some of the hurdles ahead to maintaining
   Moore's Law, and where the law may break down.
 <p> Roy Latham outlines 12 features he considers important for high-end simulation
-  work in a brief, readable <a href="http://www.cgsd.com/CGSDnews/CGSDnews6.html#IG Features in PC Graphics">4
+  work in a brief, readable <a href="http://www.cgsd.com/CGSDnews/CGSDnews6.html">4
   page article</a>.
 <p> Paul Hsieh has written a good Web article on <a href="http://www.azillionmonkeys.com/qed/flicker.html">triple
   buffering</a> and related subjects. Michael Bacik discusses handling different
@@ -1715,7 +1715,6 @@ elsewhere.
   <!--WEBBOT bot="HTMLMarkup" Endspan -->
   - A site counter thingy. Click it to see page visits, etc.
 <p>
-</font>
 <hr>
 <address>
 webslaves: <a href="http://www.erichaines.com/">Eric Haines</a>
